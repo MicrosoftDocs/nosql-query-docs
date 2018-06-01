@@ -1,26 +1,25 @@
 ---
-title: Azure CLI Script-Scale Azure Cosmos DB container throughput | Microsoft Docs
-description: Azure CLI Script Sample - Scale Azure Cosmos DB contianer throughput
+title: Azure CLI Script-Create an Azure Cosmos DB Gremlin API account, database, and collection | Microsoft Docs
+description: Azure CLI Script Sample - Create an Azure Cosmos DB Gremlin API account, database, and collection
 services: cosmos-db
 documentationcenter: cosmosdb
 author: SnehaGunda
 manager: kfile
 tags: azure-service-management
 
-ms.assetid:
 ms.service: cosmos-db
 ms.custom: mvc
 ms.devlang: azurecli
 ms.topic: sample
 ms.tgt_pltfrm: cosmosdb
 ms.workload: database
-ms.date: 05/23/2018
+ms.date: 05/29/2018
 ms.author: sngun
 ---
 
-# Scale Azure Cosmos DB container throughput using the Azure CLI
+# Azure Cosmos DB: Create a Gremlin API account using the Azure CLI
 
-This sample scales container throughput for any kind of Azure Cosmos DB container.  
+This sample CLI script creates an Azure Cosmos DB Gremlin API account, database, and collection. 
 
 [!INCLUDE [cloud-shell-try-it.md](../../../includes/cloud-shell-try-it.md)]
 
@@ -28,25 +27,7 @@ If you choose to install and use the CLI locally, this topic requires that you a
 
 ## Sample script
 
-[!code-azurecli-interactive[main](../../../cli_scripts/cosmosdb/scale-cosmosdb-throughput/scale-cosmosdb-throughput.sh?highlight=40-46 "Scale Azure Cosmos DB throughput")]
-
-Above sample script lets you create and scale a fixed collection. If you want to create and scale a collection with unlimited storage capacity, you must: 
- 
-* Create the collection with at least 1000 RU/s and 
-* Specify a partition key while creating the collection. 
-
-The following command shows an example to create a collection with unlimited storage capacity:
-
-```cli
-az cosmosdb collection create \
-	--collection-name $collectionName \
-	--name $name \
-	--db-name $databaseName \
-	--resource-group $resourceGroupName \
-	--throughput 1000
-	--partition-key-path /deviceId
-
-```
+[!code-azurecli-interactive[main](../../../cli_scripts/cosmosdb/create-cosmosdb-gremlin-account/create-cosmosdb-gremlin-account.sh?highlight=15-35 "Create an Azure Cosmos DB Gremlin API account, database, and collection")]
 
 ## Clean up deployment
 
@@ -63,8 +44,8 @@ This script uses the following commands. Each command in the table links to comm
 | Command | Notes |
 |---|---|
 | [az group create](/cli/azure/group#az_group_create) | Creates a resource group in which all resources are stored. |
-| [az cosmosdb update](https://docs.microsoft.com/cli/azure/cosmosdb#az_cosmosdb_update) | Updates an Azure Cosmos DB account. |
-| [az group delete](https://docs.microsoft.com/cli/azure/group#az_group_delete) | Deletes a resource group including all nested resources. |
+| [az cosmosdb create](/cli/azure/cosmosdb#az_cosmosdb_create) | Creates an Azure Cosmos DB account. |
+| [az group delete](/cli/azure/resource#az_resource_delete) | Deletes a resource group including all nested resources. |
 
 ## Next steps
 
