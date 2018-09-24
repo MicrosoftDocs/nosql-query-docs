@@ -3,13 +3,13 @@ title: Learn how to set time to live value for Azure Cosmos DB documents created
 description: Documentation for the MongoDB per-document TTL feature.
 services: cosmos-db
 author: orestis-ms
-manager: jhubbard
+manager: kfile
 editor: ''
 
 ms.service: cosmos-db
 ms.devlang: javascript
 ms.topic: quickstart
-ms.date: 06/08/2018
+ms.date: 08/10/2018
 ms.author: orkostak
 
 ---
