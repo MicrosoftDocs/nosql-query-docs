@@ -1,26 +1,26 @@
 ---
-title: PowerShell script to create resource lock for Azure Cosmos SQL API database and container
-description: Create resource lock for Azure Cosmos SQL API database and container
+title: PowerShell script to create resource lock for Azure Cosmos Cassandra API keyspace and table
+description: Create resource lock for Azure Cosmos Cassandra API keyspace and table
 author: markjbrown
 ms.author: mjbrown
 ms.service: cosmos-db
-ms.subservice: cosmosdb-sql
+ms.subservice: cosmosdb-cassandra
 ms.topic: sample
 ms.date: 06/12/2020
 ---
 
-# Create a resource lock for Azure Cosmos SQL API database and container using Azure PowerShell
+# Create a resource lock for Azure Cosmos Cassandra API keyspace and table using Azure PowerShell
 
 [!INCLUDE [updated-for-az](../../../../../includes/updated-for-az.md)]
 
 [!INCLUDE [sample-powershell-install](../../../../../includes/sample-powershell-install-no-ssh.md)]
 
 > [!IMPORTANT]
-> Resource locks do not work for changes made by users connecting using any Cosmos DB SDK, any tools that connect via account keys, or the Azure Portal unless the Cosmos DB account is first locked with the `disableKeyBasedMetadataWriteAccess` property enabled. To learn more about how to enable this property see, [Preventing changes from SDKs](../../../role-based-access-control.md#preventing-changes-from-cosmos-sdk).
+> Resource locks do not work for changes made by users connecting using any Cassandra SDK, CQL Shell, or the Azure Portal unless the Cosmos DB account is first locked with the `disableKeyBasedMetadataWriteAccess` property enabled. To learn more about how to enable this property see, [Preventing changes from SDKs](../../../role-based-access-control.md#prevent-sdk-changes).
 
 ## Sample script
 
-[!code-powershell[main](../../../../../powershell_scripts/cosmosdb/sql/ps-sql-lock.ps1 "Create, list, and remove resource locks")]
+[!code-powershell[main](../../../../../powershell_scripts/cosmosdb/cassandra/ps-cassandra-lock.ps1 "Create, list, and remove resource locks")]
 
 ## Clean up deployment
 
