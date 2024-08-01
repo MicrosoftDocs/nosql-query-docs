@@ -1,17 +1,17 @@
 ---
-title: 6.0 server version supported features and syntax in Azure Cosmos DB for MongoDB
-description: Learn about Azure Cosmos DB for MongoDB 6.0 server version supported features and syntax. Learn about supported database commands, query language support, data types, aggregation pipeline commands, and operators.
+title: 7.0 server version supported features and syntax in Azure Cosmos DB for MongoDB
+description: Learn about Azure Cosmos DB for MongoDB 7.0 server version supported features and syntax. Learn about supported database commands, query language support, data types, aggregation pipeline commands, and operators.
 author: avijitgupta
 ms.author: avijitgupta
 ms.reviewer: gahllevy
 ms.service: azure-cosmos-db
 ms.subservice: mongodb
 ms.topic: release-notes
-ms.date: 04/24/2024
+ms.date: 07/30/2024
 ms.custom: build-2024
 ---
 
-# Azure Cosmos DB for MongoDB (6.0 server version): Supported features and syntax
+# Azure Cosmos DB for MongoDB (7.0 server version): Supported features and syntax
 
 [!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
