@@ -1,7 +1,7 @@
 ---
-title: $eq
-titleSuffix: Overview of the $eq query operator in Azure Cosmos DB for MongoDB vCore
-description: The $eq query operator in Azure Cosmos DB for MongoDB vCore compares the value of a field to a specified value
+title: $convert
+titleSuffix: Overview of the $convert operator in Azure Cosmos DB for MongoDB vCore
+description: The $convert operator in Azure Cosmos DB for MongoDB vCore converts an expression into the specified type
 author: abinav2307
 ms.author: abramees
 ms.service: azure-cosmos-db
@@ -10,26 +10,27 @@ ms.topic: conceptual
 ms.date: 02/24/2025
 ---
 
-# $eq (Comparison Query)
-
+# $convert
 [!INCLUDE[MongoDB (vCore)](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb-vcore.md)]
 
-The `$eq` operator is used to match documents where the value of a field is equal to a specified value. This operator is used to filter documents based on exact matches and with query predicates to retrieve documents with specific values, objects and arrays.
+The $convert operator converts an expression into a value of the specified type. The $convert operator also performs a specified action if the conversion of the input expression to the specified type fails.
 
 ## Syntax
 
-The syntax for the `$eq` operator is:
+The syntax for the `$convert` operator is:
 
-```json
-{ "field": { "$eq": "value" } }
+```mongodb
+{ "$convert": {"input": <expression>, "to": <type>, "format": <binData format>, "onError": <value to return on error>, "onNull": <value to return on null> }
 ```
 
 ## Parameters
-
 | Parameter | Description |
 | --- | --- |
-| **`field`** | The field to be compared|
-| **`value`** | The value to compare against|
+| **`input`** | The input value to be converted to the specified type|
+| **`to`** | The type to convert the input value into|
+| **`format`** | (Optional) The binData format of the input or output when converting a value to or from binData|
+| **`onError`** | (Optional) The value to return when the conversion of the input to the specified type fails|
+| **`onNull`** | (Optional) The value to return when the input value to be converted to the specified type is null or missing|
 
 ## Examples
 
@@ -145,81 +146,136 @@ Consider this sample document from the stores collection in the StoreData databa
 }
 ```
 
-### Example 1: Find documents based an equality match on the value of a root level field
-
-To find a store with the name "Boulder Innovations | Home Security Place - Ankundingburgh":
+### Example 1: Convert an Int value into a String
 
 ```javascript
-db.stores.find({ "name": { "$eq": "Boulder Innovations | Home Security Place - Ankundingburgh" } }, {"name": 1})
+db.stores.aggregate([
+{
+    "$match": {
+        "_id": "b0107631-9370-4acd-aafa-8ac3511e623d"
+    }
+},
+{
+    "$project": {
+        "fulltimeStaff": "$staff.totalStaff.fullTime",
+        "fulltimeStaffAsString": {
+            "$convert": {
+                "input": "$staff.totalStaff.fullTime",
+                "to": "string"
+            }
+        }
+    }
+}])
 ```
 
-This returns the following results:
+This query returns the following result:
+
 ```json
 {
-    "_id": "bda56164-954d-4f47-a230-ecf64b317b43",
-    "name": "Boulder Innovations | Home Security Place - Ankundingburgh"
-}
-```
-### Example 2: Find documents based on an equality match on the value of a nested field
-
-To find stores where the total sales amount is exactly $37,015:
-
-```javascript
-db.stores.find({ "sales.totalSales": { "$eq": 37015 } }, {"name": 1, "sales.totalSales": 1})
-```
-
-This returns the following results:
-```json
-{
-    "_id": "bda56164-954d-4f47-a230-ecf64b317b43",
-    "name": "Boulder Innovations | Home Security Place - Ankundingburgh",
-    "sales": { "totalSales": 37015 }
-}
-```
-
-### Example 3: Find documents based on an equality match on any individual item within an array
-
-This query searches for an equality match on any one of the objects within the nested discounts array
-
-```javascript
-db.stores.find({"promotionEvents.discounts": { "$eq": {"categoryName": "Alarm Systems", "discountPercentage": 5}}}, {"name": 1}, {"limit": 2})
-```
-
-This returns the following results:
-```json
-[
-  {
-    "_id": "ece5bf6c-3255-477e-bf2c-d577c82d6995",
-    "name": "Proseware, Inc. | Home Security Boutique - Schambergertown"
-  },
-  {
-    "_id": "7baa8fd8-113a-4b10-a7b9-2c116e976491",
-    "name": "Tailwind Traders | Home Security Pantry - Port Casper"
-  }
-]
-```
-
-### Example 4: Find documents based on an equality on the entire array
-
-This query searches for documents based on exact match on ALL the values within an array.
-
-```javascript
-db.stores.find({"promotionEvents.discounts": { "$eq": [{"categoryName": "Alarm Systems", "discountPercentage": 5}, {"categoryName": "Door Locks", "discountPercentage": 12}]}}, {"name": 1})
-```
-
-This returns the following results:
-```json
-{
-    "_id": "aa9ad64c-29da-42f8-a1f0-30e03bf04a2d",
-    "name": "Boulder Innovations | Home Security Market - East Sheridanborough"
+    "_id": "b0107631-9370-4acd-aafa-8ac3511e623d",
+    "fulltimeStaff": 3,
+    "fulltimeStaffAsString": "3"
 }
 ```
 
-> [!NOTE]
-> For an equality match on an entire array, the order of the specified values in the equality predicates must also be an exact match.
+### Example 2: Convert an Int value into a Boolean value
+
+```javascript
+db.stores.aggregate([
+{
+    "$match": {
+        "_id": "b0107631-9370-4acd-aafa-8ac3511e623d"
+    }
+},
+{
+    "$project": {
+        "fulltimeStaff": "$staff.totalStaff.fullTime",
+        "fulltimeStaffAsBool": {
+            "$convert": {
+                "input": "$staff.totalStaff.fullTime",
+                "to": "bool"
+            }
+        }
+    }
+}])
+```
+
+This query returns the following result:
+
+```json
+{
+    "_id": "b0107631-9370-4acd-aafa-8ac3511e623d",
+    "fulltimeStaff": 3,
+    "fulltimeStaffAsBool": true
+}
+```
+
+### Example 3: Convert an Int value into a Decimal value
+
+```javascript
+db.stores.aggregate([
+{
+    "$match": {
+        "_id": "b0107631-9370-4acd-aafa-8ac3511e623d"
+    }
+},
+{
+    "$project": {
+        "fulltimeStaff": "$staff.totalStaff.fullTime",
+        "fulltimeStaffAsDecimal": {
+            "$convert": {
+                "input": "$staff.totalStaff.fullTime",
+                "to": "decimal"
+            }
+        }
+    }
+}])
+```
+
+This query returns the following result:
+
+```json
+{
+    "_id": "b0107631-9370-4acd-aafa-8ac3511e623d",
+    "fulltimeStaff": 3,
+    "fulltimeStaffAsDecimal": "Decimal128('3')"
+}
+```
+
+### Example 4: Convert an Int value into a Long value
+
+```javascript
+db.stores.aggregate([
+{
+    "$match": {
+        "_id": "b0107631-9370-4acd-aafa-8ac3511e623d"
+    }
+},
+{
+    "$project": {
+        "fulltimeStaff": "$staff.totalStaff.fullTime",
+        "fulltimeStaffAsLong": {
+            "$convert": {
+                "input": "$staff.totalStaff.fullTime",
+                "to": "long"
+            }
+        }
+    }
+}])
+```
+
+This query returns the following result:
+
+```json
+{
+    "_id": "b0107631-9370-4acd-aafa-8ac3511e623d",
+    "fulltimeStaff": 3,
+    "fulltimeStaffAsLong": "Long('3')"
+}
+```
 
 ## Related content
 
 - [Migrate to vCore based Azure Cosmos DB for MongoDB](https://aka.ms/migrate-to-azure-cosmosdb-for-mongodb-vcore)
-- [$gte for greater than or equal to comparisons]($gte.md)
-- [$lte for less than or equal to comparisons]($lte.md)
+- [$type to determine the BSON type of a value]($type.md)
+- [$toInt to convert a value to an Integer type]($toint.md)
