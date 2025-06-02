@@ -1,3 +1,8 @@
-- name: '<please enter product name here>'
-  tocHref: /
-  topicHref: /
+items:
+  - name: NoSQL
+    tocHref: /nosql/
+    topicHref: /nosql/index
+    items:
+      - name: Query language
+        tocHref: /nosql/query/
+        topicHref: /nosql/query/index

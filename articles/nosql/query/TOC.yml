@@ -1,2 +1,5 @@
-- name: Index
-  href: index.md
+### YamlMime:TOC
+- name: NoSQL query language documentation
+  href: index.yml
+- name: Overview
+  href: overview.md
