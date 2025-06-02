@@ -1,9 +1,13 @@
 {
-    "BaseConfiguration": "docutune-default.json",
-    "Docsets": [],
-    "MetadataDelimiter": "\"",
-    "Exclude": [],
-    "PreloadTOCFiles": [],
-    "TermFiles": [],
-    "ApplyPolicies": []
+  "Docsets": [
+    {
+      "DocsetName": "nosql-query",
+      "BuildSourceFolder": "articles/nosql/query"
+    }
+  ],
+  "MetadataDelimiter": "\"",
+  "Exclude": [],
+  "PreloadTOCFiles": [],
+  "TermFiles": [],
+  "ApplyPolicies": []
 }
