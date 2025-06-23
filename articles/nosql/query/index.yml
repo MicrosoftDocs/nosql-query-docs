@@ -27,7 +27,7 @@ productDirectory:
   summary: Learn the fundamentals of finding data using the NoSQL query language.
   items:
     - title: Basic queries
-      imageSrc: ./media/index/
+      imageSrc: ./media/index/query-simple.png
       links:
         - text: Work with JSON
           url: /azure/cosmos-db/nosql/query/working-with-json
@@ -36,7 +36,7 @@ productDirectory:
         - text: Reserved keywords
           url: /azure/cosmos-db/nosql/query/keywords
     - title: Complex queries
-      imageSrc: ./media/index/
+      imageSrc: ./media/index/query-complex.png
       links:
         - text: Cross-product queries (`JOIN`)
           url: /azure/cosmos-db/nosql/query/join
