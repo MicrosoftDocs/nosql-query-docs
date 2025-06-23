@@ -135,7 +135,32 @@
       "author": "seesharprun",
       "ms.author": "sidandrews"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "titleSuffix": {
+        "**/*.{md,yml}": "NoSQL Query Language"
+      },
+      "author": {
+        "**/*.{md,yml}": "seesharprun"
+      },
+      "ms.author": {
+        "**/*.{md,yml}": "sidandrews"
+      },
+      "ms.reviewer": {
+        "**/*.{md,yml}": "jacodel"
+      },
+      "ms.topic": {
+        "functions/**/*.{md,yml}": "generated-reference"
+      },
+      "ai-usage": {
+        "functions/**/*.{md}": "ai-assisted"
+      },
+      "appliesto": {
+        "**/*.{md,yml}": [
+          "Azure Cosmos DB for NoSQL",
+          "Cosmos DB in Fabric"
+        ]
+      }
+    },
     "template": []
   }
 }
