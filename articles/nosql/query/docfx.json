@@ -126,14 +126,7 @@
       "feedback_system": "Standard",
       "feedback_product_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
       "feedback_help_link_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
-      "feedback_help_link_type": "get-help-at-qna",
-      "titleSuffix": "NoSQL",
-      "ms.service": "azure-cosmos-db",
-      "ms.subservice": "nosql",
-      "ms.topic": "language-reference",
-      "ms.devlang": "nosql",
-      "author": "seesharprun",
-      "ms.author": "sidandrews"
+      "feedback_help_link_type": "get-help-at-qna"
     },
     "fileMetadata": {
       "titleSuffix": {
@@ -148,11 +141,21 @@
       "ms.reviewer": {
         "**/*.{md,yml}": "jacodel"
       },
+      "ms.service": {
+        "**/*.{md,yml}": "azure-cosmos-db"
+      },
+      "ms.subservice": {
+        "**/*.{md,yml}": "nosql"
+      },
       "ms.topic": {
+        "**/*.{md,yml}": "language-reference",
         "functions/**/*.{md,yml}": "generated-reference"
       },
+      "ms.devlang": {
+        "**/*.{md,yml}": "nosql"
+      },
       "ai-usage": {
-        "functions/**/*.{md}": "ai-assisted"
+        "functions/**/*.{md,yml}": "ai-assisted"
       },
       "appliesto": {
         "**/*.{md,yml}": [
