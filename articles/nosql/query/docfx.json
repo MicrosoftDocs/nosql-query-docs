@@ -66,6 +66,7 @@
         "dksimpson",
         "garycentric",
         "GitHubber17",
+        "huypub",
         "Jak-MS",
         "JamesJBarnett",
         "JasonWHowell",
@@ -113,7 +114,7 @@
         "v-thepet",
         "v-thpra"
       ],
-      "uhfHeaderId": "NoSQL",
+      "uhfHeaderId": "MSDocsHeader-NoSQL",
       "brand": "Azure",
       "permissioned-type": "public",
       "recommendations": true,
@@ -126,16 +127,47 @@
       "feedback_system": "Standard",
       "feedback_product_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
       "feedback_help_link_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
-      "feedback_help_link_type": "get-help-at-qna",
-      "titleSuffix": "NoSQL",
-      "ms.service": "azure-cosmos-db",
-      "ms.subservice": "nosql",
-      "ms.topic": "language-reference",
-      "ms.devlang": "nosql",
-      "author": "seesharprun",
-      "ms.author": "sidandrews"
+      "feedback_help_link_type": "get-help-at-qna"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "titleSuffix": {
+        "**/*.{md,yml}": "NoSQL Query Language"
+      },
+      "author": {
+        "**/*.{md,yml}": "seesharprun"
+      },
+      "ms.author": {
+        "**/*.{md,yml}": "sidandrews"
+      },
+      "ms.reviewer": {
+        "**/*.{md,yml}": "jacodel"
+      },
+      "ms.service": {
+        "**/*.{md,yml}": "azure-cosmos-db"
+      },
+      "ms.subservice": {
+        "**/*.{md,yml}": "nosql"
+      },
+      "ms.topic": {
+        "**/*.{md,yml}": "language-reference",
+        "functions/**/*.{md,yml}": "generated-reference"
+      },
+      "ms.devlang": {
+        "**/*.{md,yml}": "nosql"
+      },
+      "ms.collection": {
+        "**/*.{md,yml}": "nosql-query-reference"
+      },
+      "ai-usage": {
+        "functions/**/*.{md,yml}": "ai-assisted"
+      },
+      "appliesto": {
+        "**/*.{md,yml}": [
+          "Azure Cosmos DB for NoSQL",
+          "Cosmos DB in Fabric"
+        ]
+      }
+    },
     "template": []
   }
 }
