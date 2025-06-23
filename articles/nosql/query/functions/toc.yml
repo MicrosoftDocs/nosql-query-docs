@@ -1,13 +1,35 @@
 ### YamlMime:TOC
 - name: Functions documentation
   href: index.md
+- name: Mathematical functions
+  items:
+  - name: ABS
+    displayName: abs, mathematical
+    href: abs.md
+  - name: FLOOR
+    displayName: floor, mathematical
+    href: floor.md
 - name: Array functions
   items:
   - name: ARRAY_CONCAT
     displayName: array, array concat, array-concat, arrayconcat, concat
     href: array-concat.md
+  - name: SETUNION
+    displayName: array, setunion
+    href: setunion.md
 - name: Aggregation functions
   items:
   - name: AVG
     displayName: aggregation, avg
     href: avg.md
+  - name: COUNT
+    displayName: aggregation, count
+    href: count.md
+  - name: SUM
+    displayName: aggregation, sum
+    href: sum.md
+- name: Type Checking functions
+  items:
+  - name: IS_NULL
+    displayName: checking, is, is null, is-null, isnull, null, type, type checking, type-checking, typechecking
+    href: is-null.md

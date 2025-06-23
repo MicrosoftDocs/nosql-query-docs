@@ -28,13 +28,13 @@ Consider this sample set of documents within the `Products` collection for these
 [
   {
     "name": "Diannis Watch",
-    "price": 98.0,
-    "category": "apparel"
+    "price": 98,
+    "detailCategory": "apparel-accessories-watches"
   },
   {
     "name": "Confira Watch",
-    "price": 105.0,
-    "category": "apparel"
+    "price": 105,
+    "detailCategory": "apparel-accessories-watches"
   }
 ]
 ```
@@ -48,6 +48,8 @@ SELECT
   AVG(p.price) AS averagePrice
 FROM
   products p
+WHERE
+  p.detailCategory = "apparel-accessories-watches"
 ```
 
 ```json
@@ -67,3 +69,5 @@ FROM
 ## Related content
 
 - [NoSQL query reference](index.md)
+- [`COUNT`](count.md)
+- [`SUM`](sum.md)
