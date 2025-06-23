@@ -114,7 +114,7 @@
         "v-thepet",
         "v-thpra"
       ],
-      "uhfHeaderId": "NoSQL",
+      "uhfHeaderId": "MSDocsHeader-NoSQL",
       "brand": "Azure",
       "permissioned-type": "public",
       "recommendations": true,
