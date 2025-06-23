@@ -118,10 +118,10 @@ conceptualContent:
               url: functions/avg.md
             - text: COUNT
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/count
+              url: functions/count.md
             - text: SUM
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/sum
+              url: functions/sum.md
             - text: MIN
               itemType: reference
               url: /azure/cosmos-db/nosql/query/min
@@ -149,13 +149,13 @@ conceptualContent:
           links:
             - text: ABS
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/abs
+              url: functions/abs.md
             - text: CEILING
               itemType: reference
               url: /azure/cosmos-db/nosql/query/ceiling
             - text: FLOOR
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/floor
+              url: functions/floor.md
             - text: ROUND
               itemType: reference
               url: /azure/cosmos-db/nosql/query/round
@@ -173,6 +173,9 @@ conceptualContent:
             - text: ARRAY_CONCAT
               itemType: reference
               url: functions/array-concat.md
+            - text: SETUNION
+              itemType: reference
+              url: functions/setunion.md
         - title: Date and time functions
           links:
             - text: GETCURRENTTIMESTAMP
@@ -187,3 +190,8 @@ conceptualContent:
             - text: DATE_DIFF
               itemType: reference
               url: /azure/cosmos-db/nosql/query/datetimediff
+        - title: Type checking functions
+          links:
+            - text: IS_NULL
+              itemType: reference
+              url: functions/is-null.md
