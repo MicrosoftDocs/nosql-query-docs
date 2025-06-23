@@ -16,10 +16,10 @@ Here's a list of functions that are currently supported by the NoSQL query langu
 
 | | Description |
 | --- | --- |
-| **[`ARRAY_CONCAT`](array-concat.md.md)** | The `ARRAY_CONCAT` function returns an array that is the result of concatenating two or more array values. |
+| **[`ARRAY_CONCAT`](array-concat.md)** | The `ARRAY_CONCAT` function returns an array that is the result of concatenating two or more array values. |
 
 ### Aggregation functions
 
 | | Description |
 | --- | --- |
-| **[`AVG`](avg.md.md)** | The `AVG` function calculates the average of the values in the expression. |
+| **[`AVG`](avg.md)** | The `AVG` function calculates the average of the values in the expression. |

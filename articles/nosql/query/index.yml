@@ -172,7 +172,7 @@ conceptualContent:
               url: /azure/cosmos-db/nosql/query/array-slice
             - text: ARRAY_CONCAT
               itemType: reference
-              url: functions/array-contact.md
+              url: functions/array-concat.md
         - title: Date and time functions
           links:
             - text: GETCURRENTTIMESTAMP
