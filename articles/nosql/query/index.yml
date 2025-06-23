@@ -13,6 +13,15 @@ highlightedContent:
     - title: Overview
       itemType: overview
       url: overview.md
+    - title: Work with JSON
+      itemType: get-started
+      url: /azure/cosmos-db/nosql/query/working-with-json
+    - title: Vector search
+      itemType: reference
+      url: /azure/cosmos-db/nosql/query/vectordistance
+    - title: Samples
+      itemType: sample
+      url: https://github.com/azure-samples/cosmos-db-nosql-query-samples
 productDirectory:
   title: Fundamentals
   summary: Learn the fundamentals of finding data using the NoSQL query language.
