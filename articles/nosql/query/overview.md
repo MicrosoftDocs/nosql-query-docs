@@ -110,3 +110,7 @@ WHERE EXISTS (
 ## Summary
 
 The NoSQL query language is a flexible, expressive way to retrieve and manipulate JSON data. It combines the familiarity of SQL with the power of querying hierarchical, schema-less data. For more details on each clause and advanced features, see the related articles in this folder.
+
+## Related content
+
+- [System functions](functions/index.md)
