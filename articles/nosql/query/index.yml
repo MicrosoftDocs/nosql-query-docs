@@ -10,6 +10,12 @@ metadata:
   ai-usage: ai-assisted
   no-loc:
     - VECTORDISTANCE
+    - FULLTEXTCONTAINS
+    - FULLTEXTCONTAINSALL
+    - FULLTEXTCONTAINSANY
+    - FULLTEXTSCORE
+    - ORDER BY RANK
+    - RRF
     - AVG
     - COUNT
     - SUM
@@ -68,15 +74,42 @@ productDirectory:
 conceptualContent:
   sections:
     - title: Vector functions
-      summary: Find the similarity score between vectors and perform common vector operations.
+      summary: Find the similarity score between vectors and perform common vector operations for AI and machine learning solutions.
       items:
         - title: Similarity functions
           links:
             - text: VECTORDISTANCE
               itemType: reference
               url: /azure/cosmos-db/nosql/query/vectordistance
+    - title: Full text search functions
+      summary: Query using a specialized text index with support for advanced data querying capabilities like stemming, stop word removal, and tokenization.
+      items:
+        - title: Search functions
+          links:
+            - text: FULLTEXTCONTAINS
+              itemType: reference
+              url: /azure/cosmos-db/nosql/query/fulltextcontains
+            - text: FULLTEXTCONTAINSALL
+              itemType: reference
+              url: /azure/cosmos-db/nosql/query/fulltextcontainsall
+            - text: FULLTEXTCONTAINSANY
+              itemType: reference
+              url: /azure/cosmos-db/nosql/query/fulltextcontainsany
+        - title: Order and rank functions
+          links:
+            - text: FULLTEXTSCORE
+              itemType: reference
+              url: /azure/cosmos-db/nosql/query/fulltextscore
+            - text: ORDER BY RANK
+              itemType: reference
+              url: /azure/cosmos-db/nosql/query/order-by-rank
+        - title: Relevance ranking functions
+          links:
+            - text: RRF
+              itemType: reference
+              url: /azure/cosmos-db/nosql/query/rrf
     - title: System functions
-      summary: Use built-in system functions for common tasks across a wide variety of categories.
+      summary: Use built-in system functions for the most common tasks across a wide variety of scenarios.
       items:
         - title: Aggregation functions
           links:
