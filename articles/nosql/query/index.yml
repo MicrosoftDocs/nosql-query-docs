@@ -71,16 +71,14 @@ conceptualContent:
       items:
         - title: Aggregation functions
           links:
-            - text: |
-                `AVG`
+            - text: "`AVG`"
               itemType: reference
               url: /azure/cosmos-db/nosql/query/average
             - text: |
-                `COUNT`
+                ``COUNT``
               itemType: reference
               url: /azure/cosmos-db/nosql/query/count
-            - text: |
-                `SUM`
+            - text: "``SUM``"
               itemType: reference
               url: /azure/cosmos-db/nosql/query/sum
             - text: |
