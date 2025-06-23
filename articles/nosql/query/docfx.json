@@ -66,6 +66,7 @@
         "dksimpson",
         "garycentric",
         "GitHubber17",
+        "huypub",
         "Jak-MS",
         "JamesJBarnett",
         "JasonWHowell",
@@ -153,6 +154,9 @@
       },
       "ms.devlang": {
         "**/*.{md,yml}": "nosql"
+      },
+      "ms.collection": {
+        "**/*.{md,yml}": "nosql-query-reference"
       },
       "ai-usage": {
         "functions/**/*.{md,yml}": "ai-assisted"
