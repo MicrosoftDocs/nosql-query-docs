@@ -2,7 +2,7 @@
 title: Get started with JSON
 description: 
 ms.devlang: nosql
-ms.date: 06/23/2025
+ms.date: 06/24/2025
 ai-usage: ai-generated
 ---
 
@@ -183,32 +183,6 @@ SELECT
     p.metadata.sku AS modelNumber
 FROM
     products p
-```
-
-If you want to use a property name with spaces or special characters, use a JSON expression:
-
-```nosql
-SELECT VALUE {
-    "Product's name | ": p.name,
-    "Model number => ": p.metadata.sku
-}
-FROM
-    products p
-```
-    p["manufacturer"]["name"] AS bracketReference,
-    p.manufacturer["name"] AS mixedReference
-FROM
-    products p
-```
-
-```json
-[
-  {
-    "dotNotationReference": "AdventureWorks",
-    "bracketReference": "AdventureWorks",
-    "mixedReference": "AdventureWorks"
-  }
-]
 ```
 
 ## JSON expressions
