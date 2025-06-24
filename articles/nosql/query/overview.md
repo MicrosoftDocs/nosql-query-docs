@@ -113,4 +113,5 @@ The NoSQL query language is a flexible, expressive way to retrieve and manipulat
 
 ## Related content
 
+- [Get started with the NoSQL query language](get-started-json.md)
 - [System functions](functions/index.md)

@@ -44,7 +44,7 @@ highlightedContent:
       url: overview.md
     - title: Work with JSON
       itemType: get-started
-      url: /azure/cosmos-db/nosql/query/working-with-json
+      url: get-started-json.md
     - title: Vector search
       itemType: reference
       url: /azure/cosmos-db/nosql/query/vectordistance
@@ -59,7 +59,7 @@ productDirectory:
       imageSrc: ./media/index/query-simple.png
       links:
         - text: Work with JSON
-          url: /azure/cosmos-db/nosql/query/working-with-json
+          url: get-started-json.md
         - text: JSON arrays and nested objects
           url: /azure/cosmos-db/nosql/query/object-array
         - text: Reserved keywords
