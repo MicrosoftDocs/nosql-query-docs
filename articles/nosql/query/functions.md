@@ -1,10 +1,10 @@
 ---
-title: Query language reference
+title: Functions
 description: Azure Cosmos DB for NoSQL provides many built-in functions for common tasks across a wide variety of categories.
-ms.date: 06/23/2025
+ms.date: 06/26/2025
 ---
 
-# NoSQL query language reference
+# NoSQL query language functions
 
 Azure Cosmos DB for NoSQL has the ability to query data by writing queries using a custom NoSQL dialect derived from Structured Query Language (SQL) with JavaScript Object Notation (JSON) as the primary data type language.
 

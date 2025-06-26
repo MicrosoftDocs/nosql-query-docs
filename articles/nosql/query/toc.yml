@@ -4,6 +4,17 @@
 - name: Overview
   displayName: introduction, welcome, start, getting started
   href: overview.md
+- name: Constants
+  displayName: literals, values
+  href: constants.md
+- name: Scalar expressions
+  displayName: scalar values
+  href: scalar.md
+- name: Clauses
+  displayName: clauses, expressions
+  expanded: true
+  href: clauses.yml
 - name: Functions
   displayName: commands, operators
-  href: functions/toc.yml
+  expanded: true
+  href: functions.yml
