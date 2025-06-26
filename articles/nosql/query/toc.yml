@@ -4,6 +4,11 @@
 - name: Overview
   displayName: introduction, welcome, start, getting started
   href: overview.md
+- name: Get started
+  items:
+    - name: Work with JSON
+      displayName: get started, quickstart, first query, JSON, JSON documents, JSON arrays, JSON objects
+      href: get-started-json.md
 - name: Functions
   displayName: commands, operators
   href: functions/toc.yml
