@@ -6,7 +6,7 @@ metadata:
   title: Documentation
   description: Learn about the NoSQL query language used in products like Azure Cosmos DB for NoSQL and Cosmos DB in Fabric. Use familiar ANSI SQL keywords to query loosely structured data.
   ms.topic: hub-page
-  ms.date: 06/24/2025
+  ms.date: 06/23/2025
   ai-usage: ai-assisted
   no-loc:
     - VECTORDISTANCE
@@ -44,7 +44,7 @@ highlightedContent:
       url: overview.md
     - title: Work with JSON
       itemType: get-started
-      url: get-started-json.md
+      url: /azure/cosmos-db/nosql/query/working-with-json
     - title: Vector search
       itemType: reference
       url: /azure/cosmos-db/nosql/query/vectordistance
@@ -59,7 +59,7 @@ productDirectory:
       imageSrc: ./media/index/query-simple.png
       links:
         - text: Work with JSON
-          url: get-started-json.md
+          url: /azure/cosmos-db/nosql/query/working-with-json
         - text: JSON arrays and nested objects
           url: /azure/cosmos-db/nosql/query/object-array
         - text: Reserved keywords
@@ -118,10 +118,10 @@ conceptualContent:
               url: functions/avg.md
             - text: COUNT
               itemType: reference
-              url: functions/count.md
+              url: /azure/cosmos-db/nosql/query/count
             - text: SUM
               itemType: reference
-              url: functions/sum.md
+              url: /azure/cosmos-db/nosql/query/sum
             - text: MIN
               itemType: reference
               url: /azure/cosmos-db/nosql/query/min
@@ -149,13 +149,13 @@ conceptualContent:
           links:
             - text: ABS
               itemType: reference
-              url: functions/abs.md
+              url: /azure/cosmos-db/nosql/query/abs
             - text: CEILING
               itemType: reference
               url: /azure/cosmos-db/nosql/query/ceiling
             - text: FLOOR
               itemType: reference
-              url: functions/floor.md
+              url: /azure/cosmos-db/nosql/query/floor
             - text: ROUND
               itemType: reference
               url: /azure/cosmos-db/nosql/query/round
@@ -173,9 +173,6 @@ conceptualContent:
             - text: ARRAY_CONCAT
               itemType: reference
               url: functions/array-concat.md
-            - text: SETUNION
-              itemType: reference
-              url: functions/setunion.md
         - title: Date and time functions
           links:
             - text: GETCURRENTTIMESTAMP
@@ -190,8 +187,3 @@ conceptualContent:
             - text: DATE_DIFF
               itemType: reference
               url: /azure/cosmos-db/nosql/query/datetimediff
-        - title: Type checking functions
-          links:
-            - text: IS_NULL
-              itemType: reference
-              url: functions/is-null.md
