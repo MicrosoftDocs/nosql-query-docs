@@ -1,13 +1,13 @@
 ### YamlMime:TOC
 - name: Functions documentation
-  href: index.md
+  href: ../functions.md
 - name: Array functions
   items:
   - name: ARRAY_CONCAT
     displayName: array, array concat, array-concat, arrayconcat, concat
-    href: array-concat.md
+    href: ../array-concat.md
 - name: Aggregation functions
   items:
   - name: AVG
     displayName: aggregation, avg
-    href: avg.md
+    href: ../avg.md
