@@ -4,7 +4,7 @@ description: Use the JOIN keyword to perform a self-join on arrays within an ite
 ms.date: 06/26/2025
 ---
 
-
+# Self-joins in the NoSQL query language
 
 
 

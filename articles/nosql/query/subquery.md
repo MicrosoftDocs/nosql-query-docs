@@ -4,7 +4,7 @@ description: Use different types of subqueries for complex query statements in t
 ms.date: 06/26/2025
 ---
 
-#
+# Subqueries in the NoSQL query language
 
 ## Related content
 
