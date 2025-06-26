@@ -48,4 +48,4 @@ SELECT ARRAY_CONCAT(["apples", "strawberries"], ["bananas"]) AS arrayConcat
 
 ## Related content
 
-- [NoSQL query reference](index.md)
+- [NoSQL query reference](functions.md)

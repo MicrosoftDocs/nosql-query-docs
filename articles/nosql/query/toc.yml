@@ -13,8 +13,8 @@
 - name: Clauses
   displayName: clauses, expressions
   expanded: true
-  href: clauses.yml
+  href: toc.clauses.yml
 - name: Functions
   displayName: commands, operators
   expanded: true
-  href: functions.yml
+  href: toc.functions.yml
