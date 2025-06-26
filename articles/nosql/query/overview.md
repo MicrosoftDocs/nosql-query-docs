@@ -1,7 +1,6 @@
 ---
 title: Overview
 description: Discover the NoSQL query language used in Azure Cosmos DB for NoSQL and Cosmos DB in Microsoft Fabric. Learn syntax, features, and best practices.
-ms.devlang: nosql
 ms.date: 06/26/2025
 ai-usage: ai-generated
 ---
@@ -113,5 +112,5 @@ The NoSQL query language is a flexible, expressive way to retrieve and manipulat
 
 ## Related content
 
-- [Get started with the NoSQL query language](get-started-json.md)
+- [Get started with JSON in the NoSQL query language](get-started-json.md)
 - [System functions](functions/index.md)

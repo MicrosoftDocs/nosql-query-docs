@@ -1,7 +1,6 @@
 ---
 title: Get started with JSON
 description: 
-ms.devlang: nosql
 ms.date: 06/26/2025
 ai-usage: ai-generated
 ---
@@ -155,7 +154,7 @@ Which would result in a JSON array like this:
 ]
 ```
 
-To check if a certain value exists in an array, you can use the array in the filter after the `WHERE` keyword:
+To check if a certain value exists in an array, you can use the array in the filter after the `WHERE` keyword. This example uses a [subquery](subquery.md) to filter the array's items:
 
 ```nosql
 SELECT VALUE
@@ -175,9 +174,146 @@ This results in a flat JSON array of strings which would include the item in the
 
 ```json
 [
+  ...,
   "Vencon Kid's Coat"
+  ...
 ]
 ```
+
+Finally, you can construct arrays by combining multiple properties. In this example, multiple properties are combined to form a `metadata` array:
+
+```nosql
+SELECT
+  p.name,
+  [
+    p.category,
+    p.slug,
+    p.metadata.link
+  ] AS metadata
+FROM
+  products p
+WHERE
+  p.name = "Heatker Women's Jacket"
+```
+
+```json
+[
+  {
+    "name": "Heatker Women's Jacket",
+    "metadata": [
+      "apparel",
+      "heatker-women-s-jacket",
+      "https://www.adventure-works.com/heatker-women-s-jacket/68719520138.p"
+    ]
+  }
+]
+```
+
+## Iteration
+
+The NoSQL query language supports iteration over JSON arrays using the `IN` keyword in the `FROM` source.
+
+Consider this example data set:
+
+```json
+[
+  {
+    "name": "Pila Swimsuit",
+    "colors": [
+      "regal-blue",
+      "rose-bud-cherry"
+    ],
+    "sizes": [
+      {
+        "key": "m",
+        "description": "Medium"
+      },
+      {
+        "key": "l",
+        "description": "Large"
+      },
+      {
+        "key": "xl",
+        "description": "Extra Large"
+      }
+    ]
+  },
+  {
+    "name": "Makay Bikini",
+    "colors": [
+      "starship"
+    ],
+    "sizes": [
+      {
+        "key": "s",
+        "description": "Small"
+      },
+      {
+        "key": "m",
+        "description": "Medium"
+      },
+      {
+        "key": "l",
+        "description": "Large"
+      }
+    ]
+  }
+]
+```
+
+Using the `IN` keyword, this first example query performs iteration over the `colors` property for each product
+
+```nosql
+SELECT
+  *
+FROM
+  p IN p.colors
+```
+
+```json
+[
+  "regal-blue",
+  "rose-bud-cherry",
+  "starship"
+]
+```
+
+You can also filter individual entries in the array using the `WHERE` clause. In this example, the `sizes` property is filtered:
+
+```nosql
+SELECT
+  p.key
+FROM
+  p IN p.sizes
+WHERE
+  p.description LIKE "%Large"
+```
+
+```json
+[
+  {
+    "key": "l"
+  },
+  {
+    "key": "xl"
+  },
+  {
+    "key": "l"
+  }
+]
+```
+
+Using the same `IN` keyword, you can aggregate over the result of an array iteration. In this example, the query returns the count of the number of tags summed across all items in the container:
+
+```nosql
+SELECT VALUE
+  COUNT(1)
+FROM
+  p IN p.sizes
+```
+
+> [!NOTE]
+> When using the `IN` keyword for iteration, you cannot filter or project any properties outside of the array. Instead, you should considering using [self-joins](join.md).
 
 ## Null and undefined values
 
@@ -759,4 +895,6 @@ WHERE
 ## Related content
 
 - [What is the NoSQL query language?](overview.md)
+- [Work with subqueries](subquery.md)
+- [Perform self-joins](join.md)
 - [System functions](functions/index.md)
