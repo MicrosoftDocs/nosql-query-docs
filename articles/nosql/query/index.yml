@@ -149,13 +149,13 @@ conceptualContent:
           links:
             - text: ABS
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/abs
+              url: abs.md
             - text: CEILING
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/ceiling
+              url: ceiling.md
             - text: FLOOR
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/floor
+              url: floor.md
             - text: ROUND
               itemType: reference
               url: /azure/cosmos-db/nosql/query/round
