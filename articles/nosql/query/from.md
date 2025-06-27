@@ -71,9 +71,3 @@ In this example, the `FROM` clause is used to enumerate only a subtree in each i
 - A container expression may be container-scoped or item-scoped.
 - An expression is container-scoped, if the underlying source of the container expression is either `ROOT` or `container_name`. Such an expression represents a set of items retrieved from the container directly, and isn't dependent on the processing of other container expressions.
 - An expression is item-scoped, if the underlying source of the container expression is `input_alias` introduced earlier in the query. Such an expression represents a set of items obtained by evaluating the container expression. This evaluation is performed in the scope of each item belonging to the set associated with the aliased container. The resulting set is a union of sets obtained by evaluating the container expression for each of the items in the underlying set.
-
-## Related content
-
-- [NoSQL query reference](index.md)
-- [`SELECT`](select.md)
-- [`WHERE`](where.md)

@@ -1,16 +1,22 @@
 ---
 title: Functions
-description: Azure Cosmos DB for NoSQL provides many built-in functions for common tasks across a wide variety of categories.
-ms.date: 06/26/2025
+description: The NoSQL query language provides many built-in functions for common tasks across a wide variety of categories.
+ms.date: 06/27/2025
 ---
 
 # NoSQL query language functions
 
-Azure Cosmos DB for NoSQL has the ability to query data by writing queries using a custom NoSQL dialect derived from Structured Query Language (SQL) with JavaScript Object Notation (JSON) as the primary data type language.
+The NoSQL query language includes a series of system functions that are built-in to the query language and designd to handle a wide variety of common tasks.
 
 ## Functions
 
 Here's a list of functions that are currently supported by the NoSQL query language.
+
+### Mathematical functions
+
+| | Description |
+| --- | --- |
+| **[`ABS`](abs.md)** | The `ABS` function calculates the absolute (positive) value of the specified numeric expression. |
 
 ### Array functions
 

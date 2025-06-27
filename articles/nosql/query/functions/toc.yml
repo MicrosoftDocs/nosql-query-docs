@@ -1,18 +1,19 @@
 ### YamlMime:TOC
-- name: Functions documentation
-  href: ../functions.md
-- name: Mathematical functions
-  items:
-  - name: ABS
-    displayName: abs, mathematical
-    href: ../abs.md
-- name: Array functions
-  items:
-  - name: ARRAY_CONCAT
-    displayName: array, array concat, array-concat, arrayconcat, concat
-    href: ../array-concat.md
-- name: Aggregation functions
-  items:
-  - name: AVG
-    displayName: aggregation, avg
-    href: ../avg.md
+items:
+  - name: Functions documentation
+    href: ../functions.md
+  - name: Mathematical functions
+    items:
+      - name: ABS
+        displayName: abs, mathematical
+        href: ../abs.md
+  - name: Array functions
+    items:
+      - name: ARRAY_CONCAT
+        displayName: array, array concat, array-concat, arrayconcat, concat
+        href: ../array-concat.md
+  - name: Aggregation functions
+    items:
+      - name: AVG
+        displayName: aggregation, avg
+        href: ../avg.md

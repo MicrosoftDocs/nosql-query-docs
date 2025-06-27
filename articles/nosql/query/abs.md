@@ -53,8 +53,3 @@ SELECT VALUE {
 ## Remarks
 
 - This function benefits from the use of a range index. For more information, see [range indexes](/azure/cosmos-db/index-policy#includeexclude-strategy).
-
-## Related content
-
-- [NoSQL query reference](index.md)
-- [`IS_NUMBER`](is-number.md)
