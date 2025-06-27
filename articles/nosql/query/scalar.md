@@ -7,7 +7,7 @@ ms.date: 06/26/2025
 
 # Scalar expressions in NoSQL query language
 
-The [`SELECT` clause](select.md) supports scalar expressions. A scalar expression is a combination of symbols and operators that can be evaluated to obtain a single value. Examples of scalar expressions include: constants, property references, array element references, alias references, or function calls. Scalar expressions can be combined into complex expressions using operators.
+The [`SELECT`](select.md) clause supports scalar expressions. A scalar expression is a combination of symbols and operators that can be evaluated to obtain a single value. Examples of scalar expressions include: constants, property references, array element references, alias references, or function calls. Scalar expressions can be combined into complex expressions using operators.
 
 ## Syntax
   
