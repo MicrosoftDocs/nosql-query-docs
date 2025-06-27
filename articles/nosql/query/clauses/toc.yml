@@ -1,0 +1,10 @@
+### YamlMime:TOC
+items:
+  - name: Clauses documentation
+    href: ../clauses.md
+  - name: FROM
+    displayName: clause, from
+    href: ../from.md
+  - name: SELECT
+    displayName: clause, select
+    href: ../select.md

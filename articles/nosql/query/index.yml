@@ -115,7 +115,7 @@ conceptualContent:
           links:
             - text: AVG
               itemType: reference
-              url: functions/avg.md
+              url: avg.md
             - text: COUNT
               itemType: reference
               url: /azure/cosmos-db/nosql/query/count
@@ -172,7 +172,7 @@ conceptualContent:
               url: /azure/cosmos-db/nosql/query/array-slice
             - text: ARRAY_CONCAT
               itemType: reference
-              url: functions/array-concat.md
+              url: array-concat.md
         - title: Date and time functions
           links:
             - text: GETCURRENTTIMESTAMP
