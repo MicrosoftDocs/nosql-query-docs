@@ -45,23 +45,45 @@ This section contains examples of how to use this query language construct.
 In this example, the `FROM` clause is used to specify the current container as a source, give it a unique name, and then alias it. The alias is then used to project specific fields in the query results.
 
 ```nosql
--- Example query not available (script file missing)
+SELECT VALUE 
+  p.name
+FROM
+  products p
 ```
 
 ```json
--- Example result not available (script file missing)
+[
+  "Joller Kid's Jacket",
+  "Codlier Kid's Jacket",
+  ...
+]
 ```
 
 ### FROM clause with subroot as source
 
-In this example, the `FROM` clause is used to enumerate only a subtree in each item, using an array or object subroot as a source.
+In this example, the `FROM` clause can also reduce the source to a smaller subset. To enumerate only a subtree in each item, the subroot can become the source. An array or object subroot can be used as a source.
 
 ```nosql
--- Example query not available (script file missing)
+SELECT VALUE
+  s
+FROM
+  products.sizes s
 ```
 
 ```json
--- Example result not available (script file missing)
+[
+  {
+    "key": "65",
+    "description": "6.5",
+    "order": 0
+  },
+  {
+    "key": "75",
+    "description": "7.5",
+    "order": 1
+  },
+  ...
+]
 ```
 
 ## Remarks
