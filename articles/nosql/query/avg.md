@@ -63,7 +63,3 @@ FROM
 - This function benefits from the use of a range index. For more information, see [range indexes](/azure/cosmos-db/index-policy#includeexclude-strategy).
 - If any arguments in `AVG` are string, boolean, or null; the entire aggregation system function returns `undefined`.
 - If any argument has an `undefined` value, that specific value isn&#39;t included in the `AVG` calculation.
-
-## Related content
-
-- [NoSQL query reference](functions.md)

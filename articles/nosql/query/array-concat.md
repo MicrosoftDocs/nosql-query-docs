@@ -45,7 +45,3 @@ SELECT ARRAY_CONCAT(["apples", "strawberries"], ["bananas"]) AS arrayConcat
 ## Remarks
 
 - This function doesn&#39;t utilize the index.
-
-## Related content
-
-- [NoSQL query reference](functions.md)
