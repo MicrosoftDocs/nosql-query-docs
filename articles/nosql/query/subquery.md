@@ -706,4 +706,4 @@ JOIN
 - [What is the NoSQL query language?](overview.md)
 - [Get started with JSON in the NoSQL query language](get-started-json.md)
 - [Perform self-joins](join.md)
-- [System functions](functions/index.md)
+- [System functions](functions.md)

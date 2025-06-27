@@ -897,4 +897,4 @@ WHERE
 - [What is the NoSQL query language?](overview.md)
 - [Work with subqueries](subquery.md)
 - [Perform self-joins](join.md)
-- [System functions](functions/index.md)
+- [System functions](functions.md)
