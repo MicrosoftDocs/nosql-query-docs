@@ -8,7 +8,7 @@ ms.date: 06/27/2025
 
 The `SELECT` clause identifies fields to return in query results. The clause then projects those fields into the JSON result set.
 
-Every query consists of a `SELECT`` clause and optionally `FROM` and `WHERE` clauses, per ANSI SQL standards. Typically, the source in the `FROM` clause is enumerated, and the `WHERE` clause applies a filter on the source to retrieve a subset of JSON items.
+Every query consists of a `SELECT` clause and optionally `FROM` and `WHERE` clauses, per ANSI SQL standards. Typically, the source in the `FROM` clause is enumerated, and the `WHERE` clause applies a filter on the source to retrieve a subset of JSON items.
 
 ## Syntax
 
