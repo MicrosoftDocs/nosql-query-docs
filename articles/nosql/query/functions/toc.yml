@@ -1,6 +1,11 @@
 ### YamlMime:TOC
 - name: Functions documentation
   href: ../functions.md
+- name: Mathematical functions
+  items:
+  - name: ABS
+    displayName: abs, mathematical
+    href: ../abs.md
 - name: Array functions
   items:
   - name: ARRAY_CONCAT

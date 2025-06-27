@@ -1,3 +1,6 @@
 ### YamlMime:TOC
 - name: Clauses documentation
   href: ../clauses.md
+- name: FROM
+  displayName: clause, from
+  href: ../from.md
