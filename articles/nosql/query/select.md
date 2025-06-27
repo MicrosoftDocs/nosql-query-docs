@@ -33,7 +33,7 @@ SELECT <select_specification>
 | **`object_property_list`** | Specifies the list of properties to be retrieved. Each returned value is an object with the properties specified. |
 | **`VALUE`** | Specifies that the JSON value should be retrieved instead of the complete JSON object. This argument, unlike <property_list> doesn't wrap the projected value in an object. |
 | **`DISTINCT`** | Specifies that duplicates of projected properties should be removed. |
-| **`scalar_expression`** | Expression representing the value to be computed. For more information, see [scalar expressions](scalar-expressions.md) section for details. |
+| **`scalar_expression`** | Expression representing the value to be computed. |
 
 ## Return types
 
