@@ -71,7 +71,7 @@ And you would get this expected output:
 
 JSON supports arrays, and you can work with them in your queries. To access a specific element, use its position in the array.
 
-Using the same example from the previous section, we can access an item in the array using its index. For example, if we want to access the first item in the array, we would use an index of `0` since its a **zero-based index** system for arrays in the NoSQL query language:
+Using the same example from the previous section, we can access an item in the array using its index. For example, if we want to access the first item in the array, we would use an index of `0` since it's a **zero-based index** system for arrays in the NoSQL query language:
 
 ```nosql
 SELECT
@@ -83,7 +83,7 @@ WHERE
   p.name = "Heatker Women's Jacket"
 ```
 
-This results in the following JSON object:
+This query results in the following JSON object:
 
 ```json
 [
@@ -125,7 +125,7 @@ Now, let's consider an example with a larger array:
 ```
 
 
-Often, you'll want to use a subquery or a self-join to work with all elements in an array. For example, to get each color as a separate row:
+Often, you want to use a subquery or a self-join to work with all elements in an array. For example, to get each color as a separate row:
 
 ```nosql
 SELECT
@@ -170,7 +170,7 @@ WHERE
     c.description LIKE "%Large")
 ```
 
-This results in a flat JSON array of strings which would include the item in the example:
+This query results in a flat JSON array of strings, which would include the item in the example:
 
 ```json
 [
@@ -261,7 +261,7 @@ Consider this example data set:
 ]
 ```
 
-Using the `IN` keyword, this first example query performs iteration over the `colors` property for each product
+This first example uses the `IN` keyword to perform iteration over the `colors` property for each product:
 
 ```nosql
 SELECT
@@ -313,11 +313,11 @@ FROM
 ```
 
 > [!NOTE]
-> When using the `IN` keyword for iteration, you cannot filter or project any properties outside of the array. Instead, you should considering using [self-joins](join.md).
+> When using the `IN` keyword for iteration, you can't filter or project any properties outside of the array. Instead, you use [self-joins](join.md).
 
 ## Null and undefined values
 
-If a property isn't present in a document, its value is `undefined`. If a property is present but set to `null`, that's an explicitly set value. The distinction between `null` and `undefined` is a very important distinction that can cause confusion in queries.
+If a property isn't present in a document, its value is `undefined`. If a property is present but set to `null`, that's an explicitly set value. The distinction between `null` and `undefined` is an important distinction that can cause confusion in queries.
 
 For example, this JSON object would have a value of `undefined` for the `sku` property because the property was never defined:
 
@@ -330,7 +330,7 @@ For example, this JSON object would have a value of `undefined` for the `sku` pr
 ]
 ```
 
-But this JSON object would have a value of `null` for the same property because it is defined, but not set with a value:
+This JSON object would have a value of `null` for the same property because the property is defined yet not set with a value:
 
 ```json
 [
@@ -345,7 +345,7 @@ But this JSON object would have a value of `null` for the same property because 
 There are built-in functions to check for these cases:
 
 - `IS_NULL` checks if a property is `null`.
-- `IS_DEFINED` checks if a property exists (is not `undefined`).
+- `IS_DEFINED` checks if a property exists (isn't `undefined`).
 
 Here's how you can check for both:
 
@@ -359,7 +359,7 @@ FROM
 
 ## Bracket notation
 
-While most examples will use **dot** notation to specify properties, you can always specify the same properties using **bracket** notation.
+While most examples use **dot** notation to specify properties, you can always specify the same properties using **bracket** notation.
 
 Let's start with a simple object with a nested object as the value of the `metadata` property:
 
@@ -513,7 +513,7 @@ WHERE
 ]
 ```
 
-Going even further, you can use the JSON syntax to "reshape" the result JSON object to include arrays, sub-objects, and other JSON constructs that may not be explicitly defined in the original item. This is a very useful technique if the client application is expecting data in a specific schema that doesn't match the structure of the data that's stored.
+Going even further, you can use the JSON syntax to "reshape" the result JSON object to include arrays, subobjects, and other JSON constructs that might not be explicitly defined in the original item. This technique is useful if the client application is expecting data in a specific schema that doesn't match underlying data.
 
 Consider this JSON schema, for example:
 
@@ -570,7 +570,7 @@ Consider this JSON schema, for example:
 }
 ```
 
-That would allow a JSON object structured in this format:
+That schema would allow a JSON object structured in this format:
 
 ```json
 [
@@ -591,7 +591,7 @@ That would allow a JSON object structured in this format:
 ]
 ```
 
-This NoSQL query will remap the original object\[s\] to be compliant with this new schema:
+This NoSQL query remaps the original object\[s\] to be compliant with this new schema:
 
 ```nosql
 SELECT VALUE {
@@ -651,7 +651,7 @@ WHERE
 
 By default, the term used after the `FROM` keyword references the **container** that's the target of the query. The term itself is **NOT** required to match the name of the container.
 
-For example, if the container is named `products`, any of these queries will work fine and all reference the `products` container as long as that container is the *target* of the query:
+For example, if the container is named `products`, any of these queries work fine and all reference the `products` container as long as that container is the *target* of the query:
 
 ```nosql
 SELECT
@@ -681,7 +681,7 @@ FROM
   targetContainer
 ```
 
-To make your NoSQL query more concise, it's very common to alias the container name with a shorter name. This can be done using the `AS` keyword:
+To make your NoSQL query more concise, it's common to alias the container name with a shorter name. Aliasing can be done using the `AS` keyword:
 
 ```nosql
 SELECT
@@ -690,7 +690,7 @@ FROM
   products AS p
 ```
 
-The NoSQL query language also has a shorthand syntax where the alias can be defined immediately after the target container's reference without the `AS` keyword. This will be functionally equivalent to using the `AS` keyword:
+The NoSQL query language also has a shorthand syntax where the alias can be defined immediately after the target container's reference without the `AS` keyword. This shorthand is functionally equivalent to using the `AS` keyword:
 
 ```nosql
 SELECT
@@ -853,7 +853,7 @@ Consider this sample data:
 > [!NOTE]
 > In this sample data and the query result, multiple properties and values were removed for brevity.
 
-This NoSQL query will return the `p.sizes[].key` and `p.tags[].key` properties in the cross-product result but will alias each `key` property to avoid collisions:
+This NoSQL query returns the `p.sizes[].key` and `p.tags[].key` properties in the cross-product result but will alias each `key` property to avoid collisions:
 
 ```nosql
 SELECT
@@ -894,7 +894,7 @@ WHERE
 
 ## Related content
 
-- [What is the NoSQL query language?](overview.md)
+- [Review the NoSQL query language](overview.md)
 - [Work with subqueries](subquery.md)
 - [Perform self-joins](join.md)
-- [System functions](functions.md)
+- [Explore system functions](functions.md)

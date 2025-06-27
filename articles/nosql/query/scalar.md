@@ -61,7 +61,7 @@ The most common example of a scalar expression is a math equation.
 
 ```nosql
 SELECT VALUE
-    ((2 + 11 % 7) - 2) / 2
+  ((2 + 11 % 7) - 2) / 2
 ```
 
 ```json
@@ -74,8 +74,8 @@ In this next example, the result of the scalar expression is a boolean:
 
 ```nosql
 SELECT
-    ("Redmond" = "WA") AS isCitySameAsState,
-    ("WA" = "WA") AS isStateSameAsState
+  ("Redmond" = "WA") AS isCitySameAsState,
+  ("WA" = "WA") AS isStateSameAsState
 ```
 
 ```json
