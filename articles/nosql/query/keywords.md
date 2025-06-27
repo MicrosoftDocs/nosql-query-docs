@@ -14,3 +14,4 @@ Here's a list of keywords that are currently reserved by the NoSQL query languag
 
 | | Description |
 | --- | --- |
+| **[`BETWEEN`](between.md)** | The `BETWEEN` keyword evaluates to a boolean indicating whether the target value is between two specified values, inclusive. |
