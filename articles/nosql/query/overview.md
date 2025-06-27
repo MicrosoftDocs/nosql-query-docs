@@ -11,11 +11,11 @@ The NoSQL query language provides a powerful, SQL-like syntax for working with J
 
 ## Core concepts of the NoSQL query language
 
-The NoSQL query language is built to provide expressive and efficient access to data stored as JSON documents. At its foundation, the language is designed to work natively with hierarchical and flexible data, supporting both simple and complex queries over documents that may have varying structures.
+The NoSQL query language is built to provide expressive and efficient access to data stored as JSON documents. At its foundation, the language is designed to work natively with hierarchical and flexible data, supporting both simple and complex queries over documents that could have varying structures.
 
-Queries are composed using a familiar SQL-like syntax, but are adapted for the document model. This means that, unlike traditional relational databases, there is no fixed schema—properties can be missing or have different types across documents. The language is case-sensitive and supports referencing nested properties, arrays, and objects directly within queries. Logical, comparison, and arithmetic operators are available, and the language is designed to be intuitive for those with SQL experience while embracing the flexibility of NoSQL data.
+Queries are composed using a familiar SQL-like syntax, but are adapted for the document model. This adaptation means that, unlike traditional relational databases, there's no fixed schema—properties can be missing or have different types across documents. The language is case-sensitive and supports referencing nested properties, arrays, and objects directly within queries. Logical, comparison, and arithmetic operators are available, and the language is designed to be intuitive for those developers with SQL experience while embracing the flexibility of NoSQL data.
 
-The query engine is optimized for high performance and scalability, automatically leveraging indexes to efficiently filter, sort, and aggregate data. It supports a wide range of query patterns, from simple lookups to complex aggregations and subqueries, making it suitable for both transactional and analytical workloads. The language also provides constructs for working with arrays, handling null and undefined values, and projecting results in flexible JSON shapes, enabling developers to retrieve exactly the data they need in the format required by their applications.
+The query engine is optimized for high performance and scalability, automatically using indexes to efficiently filter, sort, and aggregate data. It supports a wide range of query patterns, from simple lookups to complex aggregations and subqueries. This support makes the query engine suitable for both transactional and analytical workloads. The language also provides constructs for working with arrays, handling null and undefined values, and projecting results in flexible JSON shapes. These constructs enable developers to retrieve exactly the data they need in the format required by their applications.
 
 ## Basic Query Structure
 
@@ -106,11 +106,9 @@ WHERE EXISTS (
 )
 ```
 
-## Summary
-
-The NoSQL query language is a flexible, expressive way to retrieve and manipulate JSON data. It combines the familiarity of SQL with the power of querying hierarchical, schema-less data. For more details on each clause and advanced features, see the related articles in this folder.
-
 ## Related content
 
 - [Get started with JSON in the NoSQL query language](get-started-json.md)
-- [System functions](functions.md)
+- [Explore clauses](clauses.md)
+- [Explore keywords](keywords.md)
+- [Explore system functions](functions.md)

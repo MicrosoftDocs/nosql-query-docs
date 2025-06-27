@@ -78,7 +78,7 @@ JOIN
   (SELECT VALUE c FROM c in p.colors WHERE c LIKE "%gray%")
 ```
 
-Assume that only one item in the tags array matches the filter, and there are five items for both quantity and stock arrays. The `JOIN` expressions then expands to **25** tuples using this formula as opposed to **1,000** items in the first query:
+Assume that only one item in the tags array matches the filter, and there are five items for both quantity and stock arrays. The `JOIN` expression then expands to **25** tuples using this formula as opposed to **1,000** items in the first query:
 
 $$1 x 1 x 5 x 5$$
 
@@ -176,7 +176,7 @@ WHERE
 
 ## Scalar subqueries
 
-A scalar subquery expression is a subquery that evaluates to a single value. The value of the scalar subquery expression is the value of the projection (`SELECT` clause) of the subquery.  You can use a scalar subquery expression in many places where a scalar expression is valid. For instance, you can use a scalar subquery in any expression in both the `SELECT` and `WHERE` clauses.
+A scalar subquery expression is a subquery that evaluates to a single value. The value of the scalar subquery expression is the value of the projection (`SELECT` clause) of the subquery. You can use a scalar subquery expression in many places where a scalar expression is valid. For instance, you can use a scalar subquery in any expression in both the `SELECT` and `WHERE` clauses.
 
 Using a scalar subquery doesn't always help optimize your query. For example, passing a scalar subquery as an argument to either a system or user-defined functions provides no benefit in reducing resource unit (RU) consumption or latency.
 
@@ -375,7 +375,7 @@ WHERE
 
 ## EXISTS expression
 
-The NoSQL query language supports `EXISTS` expressions. This expression is an aggregate scalar subquery built into the the NoSQL query language. `EXISTS` takes a subquery expression and returns `true` if the subquery returns any rows. Otherwise, it returns `false`.
+The NoSQL query language supports `EXISTS` expressions. This expression is an aggregate scalar subquery built into the NoSQL query language. `EXISTS` takes a subquery expression and returns `true` if the subquery returns any rows. Otherwise, it returns `false`.
 
 Because the query engine doesn't differentiate between boolean expressions and any other scalar expressions, you can use `EXISTS` in both `SELECT` and `WHERE` clauses. This behavior is unlike T-SQL, where a boolean expression is restricted to only filters.
 
@@ -501,7 +501,7 @@ For each of the items in the collection, a cross-product is performed with its a
 
 $$1,000 x 100$$
 
-Using `EXISTS` can help to avoid this expensive cross-product. In this next example, the query filters on array elements within the `EXISTS` subquery. If an array element matches the filter, then you project it and `EXISTS` evaluates to true.
+Using `EXISTS` helps to avoid this expensive cross-product. In this next example, the query filters on array elements within the `EXISTS` subquery. If an array element matches the filter, then you project it and `EXISTS` evaluates to true.
 
 ```nosql
 SELECT VALUE
@@ -526,7 +526,7 @@ WHERE
 ]
 ```
 
-Queries can also alias `EXISTS` and reference the alias in the projection:
+Queries are allowed to also alias `EXISTS` and reference the alias in the projection:
 
 ```nosql
 SELECT
@@ -703,7 +703,7 @@ JOIN
 
 ## Related content
 
-- [What is the NoSQL query language?](overview.md)
+- [Review the NoSQL query language](overview.md)
 - [Get started with JSON in the NoSQL query language](get-started-json.md)
 - [Perform self-joins](join.md)
-- [System functions](functions.md)
+- [Explore system functions](functions.md)

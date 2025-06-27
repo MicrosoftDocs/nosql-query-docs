@@ -62,10 +62,10 @@ A constant, also known as a literal or a scalar value, is a symbol that represen
     | **Undefined** | Single value: `undefined` |
     | **Null** | Single value: `null` |
     | **Boolean** | Values: `false`, `true`. |
-    | **Number** | A double-precision floating-point number, IEEE 754 standard. |
+    | **Number** | A double-precision floating-point number, Institute of Electrical and Electronics Engineers (IEEE) 754 standard. |
     | **String** | A sequence of zero or more Unicode characters. Strings must be enclosed in single or double quotes.|
     | **Array** | A sequence of zero or more elements. Each element can be a value of any scalar data type, except **undefined**.|
-    | **Object** | An unordered set of zero or more name/value pairs. Name is a Unicode string, value can be of any scalar data type, except **undefined**. |
+    | **Object** | An unordered set of zero or more name/value pairs. Name is a Unicode string. Value can be of any scalar data type, except **undefined**. |
 
 - Here's a list of escape sequences that are allowed for string literals:
 
