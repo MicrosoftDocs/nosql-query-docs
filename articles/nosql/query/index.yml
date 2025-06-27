@@ -105,7 +105,8 @@ conceptualContent:
               url: /azure/cosmos-db/nosql/query/order-by-rank
         - title: Relevance ranking functions
           links:
-            - text: RRF
+            - text: |-
+                `RRF`
               itemType: reference
               url: /azure/cosmos-db/nosql/query/rrf
     - title: System functions
