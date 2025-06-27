@@ -6,7 +6,7 @@ metadata:
   title: Documentation
   description: Learn about the NoSQL query language used in products like Azure Cosmos DB for NoSQL and Cosmos DB in Fabric. Use familiar ANSI SQL keywords to query loosely structured data.
   ms.topic: hub-page
-  ms.date: 06/23/2025
+  ms.date: 06/26/2025
   ai-usage: ai-assisted
   no-loc:
     - VECTORDISTANCE
@@ -44,7 +44,7 @@ highlightedContent:
       url: overview.md
     - title: Work with JSON
       itemType: get-started
-      url: /azure/cosmos-db/nosql/query/working-with-json
+      url: get-started-json.md
     - title: Vector search
       itemType: reference
       url: /azure/cosmos-db/nosql/query/vectordistance
@@ -59,7 +59,7 @@ productDirectory:
       imageSrc: ./media/index/query-simple.png
       links:
         - text: Work with JSON
-          url: /azure/cosmos-db/nosql/query/working-with-json
+          url: get-started-json.md
         - text: JSON arrays and nested objects
           url: /azure/cosmos-db/nosql/query/object-array
         - text: Reserved keywords

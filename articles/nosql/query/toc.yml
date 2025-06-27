@@ -4,6 +4,17 @@
 - name: Overview
   displayName: introduction, welcome, start, getting started
   href: overview.md
+- name: Get started
+  items:
+    - name: Work with JSON
+      displayName: get started, quickstart, first query, JSON, JSON documents, JSON arrays, JSON objects
+      href: get-started-json.md
+    - name: Create subqueries
+      displayName: subqueries, subquery
+      href: subquery.md
+    - name: Perform self-joins
+      displayName: self-joins, join
+      href: join.md
 - name: Constants
   displayName: literals, values
   href: constants.md
