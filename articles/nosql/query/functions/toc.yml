@@ -17,3 +17,35 @@ items:
       - name: AVG
         displayName: aggregation, avg
         href: ../avg.md
+  - name: String functions
+    items:
+      - name: CONCAT
+        displayName: concat, string
+        href: ../concat.md
+      - name: CONTAINS
+        displayName: contains, string
+        href: ../contains.md
+      - name: ENDSWITH
+        displayName: endswith, string
+        href: ../endswith.md
+      - name: INDEX-OF
+        displayName: index, index of, index-of, of, string
+        href: ../index-of.md
+      - name: LEFT
+        displayName: left, string
+        href: ../left.md
+      - name: LENGTH
+        displayName: length, string
+        href: ../length.md
+      - name: LOWER
+        displayName: lower, string
+        href: ../lower.md
+      - name: LTRIM
+        displayName: ltrim, string
+        href: ../ltrim.md
+      - name: REGEXMATCH
+        displayName: regexmatch, string
+        href: ../regexmatch.md
+      - name: REPLACE
+        displayName: replace, string
+        href: ../replace.md
