@@ -6,11 +6,11 @@ ms.date: 06/30/2025
 
 # NoSQL query language clauses
 
-Queries built in the NoSQL query language are constructed of various supported clauses that are built-in to the query language.
+Queries built in the NoSQL query language are constructed of various supported clauses that are built in to the query language.
 
 ## Clauses
 
-Here's a list of clauses that are currently supported by the NoSQL query language.
+Here's a list of clauses that the NoSQL query language currently supports:
 
 | | Description |
 | --- | --- |

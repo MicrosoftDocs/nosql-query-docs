@@ -7,6 +7,36 @@ items:
       - name: ABS
         displayName: abs, mathematical
         href: ../abs.md
+      - name: ACOS
+        displayName: acos, mathematical
+        href: ../acos.md
+      - name: ASIN
+        displayName: asin, mathematical
+        href: ../asin.md
+      - name: ATAN
+        displayName: atan, mathematical
+        href: ../atan.md
+      - name: ATN2
+        displayName: 2, atn, atn 2, atn2, mathematical
+        href: ../atn2.md
+      - name: CEILING
+        displayName: ceiling, mathematical
+        href: ../ceiling.md
+      - name: COS
+        displayName: cos, mathematical
+        href: ../cos.md
+      - name: COT
+        displayName: cot, mathematical
+        href: ../cot.md
+      - name: DEGREES
+        displayName: degrees, mathematical
+        href: ../degrees.md
+      - name: EXP
+        displayName: exp, mathematical
+        href: ../exp.md
+      - name: FLOOR
+        displayName: floor, mathematical
+        href: ../floor.md
   - name: Array functions
     items:
       - name: ARRAY_CONCAT
