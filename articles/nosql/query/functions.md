@@ -1,7 +1,7 @@
 ---
 title: Functions
 description: The NoSQL query language provides many built-in functions for common tasks across a wide variety of categories.
-ms.date: 06/27/2025
+ms.date: 06/30/2025
 ---
 
 # NoSQL query language functions
@@ -29,3 +29,9 @@ Here's a list of functions that are currently supported by the NoSQL query langu
 | | Description |
 | --- | --- |
 | **[`AVG`](avg.md)** | The `AVG` function calculates the average of the values in the expression. |
+
+### Item functions
+
+| | Description |
+| --- | --- |
+| **[`DOCUMENTID`](documentid.md)** | The `DOCUMENTID` function returns the unique document ID for a given item in the container. This can be used for filtering or retrieving the document&#39;s internal identifier. |
