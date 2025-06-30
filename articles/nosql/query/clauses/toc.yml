@@ -8,3 +8,6 @@ items:
   - name: SELECT
     displayName: clause, select
     href: ../select.md
+  - name: ORDER-BY-RANK
+    displayName: by, clause, order, order by rank, order-by-rank, rank
+    href: ../order-by-rank.md
