@@ -60,17 +60,17 @@ productDirectory:
       links:
         - text: Work with JSON
           url: get-started-json.md
-        - text: JavaScript arrays and nested objects
-          url: /azure/cosmos-db/nosql/query/object-array
-        - text: Reserved keywords
-          url: /azure/cosmos-db/nosql/query/keywords
+        - text: Use subqueries
+          url: subquery.md
+        - text: Explore reserved keywords
+          url: keywords.md
     - title: Complex queries
       imageSrc: ./media/index/query-complex.png
       links:
-        - text: Cross-product queries (JOIN)
-          url: /azure/cosmos-db/nosql/query/join
-        - text: Scalar expressions
-          url: /azure/cosmos-db/nosql/query/scalar-expressions
+        - text: Create cross-products with JOIN
+          url: join.md
+        - text: Evaluate scalar expressions
+          url: scalar.md
 conceptualContent:
   sections:
     - title: Vector functions
