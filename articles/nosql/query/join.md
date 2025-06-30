@@ -1,6 +1,6 @@
 ---
 title: Self-joins
-description: Use the JOIN keyword to perform a self-join on arrays within an item in the NoSQL query language.
+description: Use the `JOIN` keyword to perform a self-join on arrays within an item in the NoSQL query language.
 ms.date: 06/26/2025
 ai-usage: ai-assisted
 ---
@@ -56,7 +56,7 @@ WHERE
   p.sizes[3].description LIKE "%Large"
 ```
 
-This technique can become untenable quickly. The complexity or length of the query syntax increases the number of potential items in the array. Also, this query isn't flexible enough to handle future products, which may have more than three sizes.
+This technique can become untenable quickly. The complexity or length of the query syntax increases the number of potential items in the array. Also, this query isn't flexible enough to handle future products, which might have more than three sizes.
 
 In a traditional relational database, the sizes would be separated into a separate table and a cross-table join is performed with a filter applied to the results. In the NoSQl query language, we can perform a self-join operation within the item using the `JOIN` keyword:
 
@@ -160,7 +160,7 @@ Let's move on to a sample where we need to find a value within an array that exi
 
 What if you needed to find every item with a color that includes `blue` in the name? You could manually search for the string `blue`, but you would need to write a complex query that accounts for two characteristics of these items:
 
-- The colors with a `blue` substring occurs at different indexes in each array. For the `Elecy Jacket` product, the color is the second item (index: `1`). For the `Gremon Fins` product, the tag is the first item (index: `0`). The `Tresko Pack` product doesn't have any that contains this substring.
+- The colors with a `blue` substring occur at different indexes in each array. For the `Elecy Jacket` product, the color is the second item (index: `1`). For the `Gremon Fins` product, the tag is the first item (index: `0`). The `Tresko Pack` product doesn't have any that contains this substring.
 
 - The `colors` array for each item is a different length. The `Gremon Fins` and `Elecy Jacket` products both have **two** colors while the `Tresko Pack` product only has **one**.
 
@@ -240,7 +240,7 @@ WHERE
 ]
 ```
 
-This query can be refined even further to just return the names of the products that meet the filter. This example does not project the color values, but the filter still works as expected:
+This query can be refined even further to just return the names of the products that meet the filter. This example doesn't project the color values, but the filter still works as expected:
 
 ```nosql
 SELECT VALUE
@@ -262,7 +262,7 @@ WHERE
 
 ## Related content
 
-- [What is the NoSQL query language?](overview.md)
+- [Review the NoSQL query language](overview.md)
 - [Get started with JSON in the NoSQL query language](get-started-json.md)
 - [Work with subqueries](subquery.md)
-- [System functions](functions.md)
+- [Explore system functions](functions.md)

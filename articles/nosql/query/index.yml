@@ -6,7 +6,7 @@ metadata:
   title: Documentation
   description: Learn about the NoSQL query language used in products like Azure Cosmos DB for NoSQL and Cosmos DB in Fabric. Use familiar ANSI SQL keywords to query loosely structured data.
   ms.topic: hub-page
-  ms.date: 06/26/2025
+  ms.date: 06/27/2025
   ai-usage: ai-assisted
   no-loc:
     - VECTORDISTANCE
@@ -60,7 +60,7 @@ productDirectory:
       links:
         - text: Work with JSON
           url: get-started-json.md
-        - text: JSON arrays and nested objects
+        - text: JavaScript arrays and nested objects
           url: /azure/cosmos-db/nosql/query/object-array
         - text: Reserved keywords
           url: /azure/cosmos-db/nosql/query/keywords
@@ -78,7 +78,8 @@ conceptualContent:
       items:
         - title: Similarity functions
           links:
-            - text: VECTORDISTANCE
+            - text: |-
+                VECTORDISTANCE
               itemType: reference
               url: /azure/cosmos-db/nosql/query/vectordistance
     - title: Full text search functions
@@ -86,26 +87,32 @@ conceptualContent:
       items:
         - title: Search functions
           links:
-            - text: FULLTEXTCONTAINS
+            - text: |-
+                FULLTEXTCONTAINS
               itemType: reference
               url: /azure/cosmos-db/nosql/query/fulltextcontains
-            - text: FULLTEXTCONTAINSALL
+            - text: |-
+                FULLTEXTCONTAINSALL
               itemType: reference
               url: /azure/cosmos-db/nosql/query/fulltextcontainsall
-            - text: FULLTEXTCONTAINSANY
+            - text: |-
+                FULLTEXTCONTAINSANY
               itemType: reference
               url: /azure/cosmos-db/nosql/query/fulltextcontainsany
         - title: Order and rank functions
           links:
-            - text: FULLTEXTSCORE
+            - text: |-
+                FULLTEXTSCORE
               itemType: reference
               url: /azure/cosmos-db/nosql/query/fulltextscore
-            - text: ORDER BY RANK
+            - text: |-
+                ORDER BY RANK
               itemType: reference
               url: /azure/cosmos-db/nosql/query/order-by-rank
-        - title: Relevance ranking functions
+        - title: Relevance ranking functions (RRF)
           links:
-            - text: RRF
+            - text: |-
+                RRF
               itemType: reference
               url: /azure/cosmos-db/nosql/query/rrf
     - title: System functions
@@ -113,77 +120,99 @@ conceptualContent:
       items:
         - title: Aggregation functions
           links:
-            - text: AVG
+            - text: |-
+                AVG
               itemType: reference
               url: avg.md
-            - text: COUNT
+            - text: |-
+                COUNT
               itemType: reference
               url: /azure/cosmos-db/nosql/query/count
-            - text: SUM
+            - text: |-
+                SUM
               itemType: reference
               url: /azure/cosmos-db/nosql/query/sum
-            - text: MIN
+            - text: |-
+                MIN
               itemType: reference
               url: /azure/cosmos-db/nosql/query/min
-            - text: MAX
+            - text: |-
+                MAX
               itemType: reference
               url: /azure/cosmos-db/nosql/query/max
         - title: String functions
           links:
-            - text: CONCAT
+            - text: |-
+                CONCAT
               itemType: reference
               url: /azure/cosmos-db/nosql/query/concat
-            - text: CONTAINS
+            - text: |-
+                CONTAINS
               itemType: reference
               url: /azure/cosmos-db/nosql/query/contains
-            - text: STARTSWITH
+            - text: |-
+                STARTSWITH
               itemType: reference
               url: /azure/cosmos-db/nosql/query/startswith
-            - text: ENDSWITH
+            - text: |-
+                ENDSWITH
               itemType: reference
               url: /azure/cosmos-db/nosql/query/endswith
-            - text: TRIM
+            - text: |-
+                TRIM
               itemType: reference
               url: /azure/cosmos-db/nosql/query/trim
         - title: Mathematical functions
           links:
-            - text: ABS
+            - text: |-
+                ABS
               itemType: reference
               url: /azure/cosmos-db/nosql/query/abs
-            - text: CEILING
+            - text: |-
+                CEILING
               itemType: reference
               url: /azure/cosmos-db/nosql/query/ceiling
-            - text: FLOOR
+            - text: |-
+                FLOOR
               itemType: reference
               url: /azure/cosmos-db/nosql/query/floor
-            - text: ROUND
+            - text: |-
+                ROUND
               itemType: reference
               url: /azure/cosmos-db/nosql/query/round
         - title: Array functions
           links:
-            - text: ARRAY_LENGTH
+            - text: |-
+                ARRAY_LENGTH
               itemType: reference
               url: array-length.md
-            - text: ARRAY_CONTAINS
+            - text: |-
+                ARRAY_CONTAINS
               itemType: reference
               url: array-contains.md
-            - text: ARRAY_SLICE
+            - text: |-
+                ARRAY_SLICE
               itemType: reference
               url: array-slice.md
-            - text: ARRAY_CONCAT
+            - text: |-
+                ARRAY_CONCAT
               itemType: reference
               url: array-concat.md
         - title: Date and time functions
           links:
-            - text: GETCURRENTTIMESTAMP
+            - text: |-
+                GETCURRENTTIMESTAMP
               itemType: reference
               url: /azure/cosmos-db/nosql/query/getcurrenttimestamp
-            - text: GETCURRENTDATETIME
+            - text: |-
+                GETCURRENTDATETIME
               itemType: reference
               url: /azure/cosmos-db/nosql/query/getcurrentdatetime
-            - text: DATE_ADD
+            - text: |-
+                DATE_ADD
               itemType: reference
               url: /azure/cosmos-db/nosql/query/datetimeadd
-            - text: DATE_DIFF
+            - text: |-
+                DATE_DIFF
               itemType: reference
               url: /azure/cosmos-db/nosql/query/datetimediff
