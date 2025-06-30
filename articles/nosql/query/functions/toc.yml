@@ -17,3 +17,15 @@ items:
       - name: AVG
         displayName: aggregation, avg
         href: ../avg.md
+      - name: COUNT
+        displayName: aggregation, count
+        href: ../count.md
+      - name: MAX
+        displayName: aggregation, max
+        href: ../max.md
+      - name: MIN
+        displayName: aggregation, min
+        href: ../min.md
+      - name: SUM
+        displayName: aggregation, sum
+        href: ../sum.md

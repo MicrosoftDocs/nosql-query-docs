@@ -127,19 +127,19 @@ conceptualContent:
             - text: |-
                 COUNT
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/count
+              url: count.md
             - text: |-
                 SUM
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/sum
+              url: sum.md
             - text: |-
                 MIN
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/min
+              url: min.md
             - text: |-
                 MAX
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/max
+              url: max.md
         - title: String functions
           links:
             - text: |-
