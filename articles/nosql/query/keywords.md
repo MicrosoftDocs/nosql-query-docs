@@ -10,7 +10,7 @@ The NoSQL query language's query language includes a set of reserved keywords th
 
 ## Keywords
 
-Here's a list of keywords that are currently reserved by the NoSQL query language.
+Here's a list of keywords that the NoSQL query language currently supports:
 
 | | Description |
 | --- | --- |

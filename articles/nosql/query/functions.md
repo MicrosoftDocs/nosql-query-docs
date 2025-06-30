@@ -6,11 +6,11 @@ ms.date: 06/30/2025
 
 # NoSQL query language functions
 
-The NoSQL query language includes a series of system functions that are built-in to the query language and designd to handle a wide variety of common tasks.
+The NoSQL query language includes a series of system functions that are built in to the query language and designed to handle a wide variety of common tasks.
 
 ## Functions
 
-Here's a list of functions that are currently supported by the NoSQL query language.
+Here's a list of functions that the NoSQL query language currently supports:
 
 ### Mathematical functions
 
