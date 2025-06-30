@@ -17,3 +17,8 @@ items:
       - name: AVG
         displayName: aggregation, avg
         href: ../avg.md
+  - name: Item functions
+    items:
+      - name: DOCUMENTID
+        displayName: documentid, item
+        href: ../documentid.md
