@@ -1,7 +1,7 @@
 ---
 title: SELECT
 description: The `SELECT` clause identifies fields to return in query results. The clause then projects those fields into the JSON result set.
-ms.date: 06/27/2025
+ms.date: 06/30/2025
 ---
 
 # `SELECT` (NoSQL query)
