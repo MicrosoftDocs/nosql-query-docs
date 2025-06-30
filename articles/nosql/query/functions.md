@@ -40,6 +40,12 @@ Here's a list of functions that the NoSQL query language currently supports:
 | --- | --- |
 | **[`AVG`](avg.md)** | The `AVG` function calculates the average of the values in the expression. |
 
+### Conditional functions
+
+| | Description |
+| --- | --- |
+| **[`IIF`](iif.md)** | The `IIF` function returns one of two values, depending on whether the Boolean expression evaluates to true or false. |
+
 ### Type checking functions
 
 | | Description |
