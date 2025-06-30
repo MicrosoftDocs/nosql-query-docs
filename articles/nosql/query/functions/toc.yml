@@ -47,6 +47,11 @@ items:
       - name: AVG
         displayName: aggregation, avg
         href: ../avg.md
+  - name: Conditional functions
+    items:
+      - name: IIF
+        displayName: conditional, iif
+        href: ../iif.md
   - name: Spatial functions
     items:
       - name: ST_AREA
