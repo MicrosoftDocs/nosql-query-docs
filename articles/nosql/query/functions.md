@@ -40,7 +40,7 @@ Here's a list of functions that the NoSQL query language currently supports:
 | --- | --- |
 | **[`AVG`](avg.md)** | The `AVG` function calculates the average of the values in the expression. |
 
-### Full Text Search functions
+### Full text search functions
 
 | | Description |
 | --- | --- |
@@ -49,3 +49,9 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`FULLTEXTCONTAINSANY`](fulltextcontainsany.md)** | The `FULLTEXTCONTAINSANY` function returns a boolean indicating whether any of the provided string expressions are contained in a specified property path. |
 | **[`FULLTEXTSCORE`](fulltextscore.md)** | The `FULLTEXTSCORE` function returns a BM25 score value that can only be used in an `ORDER BY RANK` clause to sort results from highest relevancy to lowest relevancy of the specified terms. |
 | **[`RRF`](rrf.md)** | The `RRF` function returns a fused score by combining two or more scores provided by other functions. |
+
+### Conditional functions
+
+| | Description |
+| --- | --- |
+| **[`IIF`](iif.md)** | The `IIF` function returns one of two values, depending on whether the Boolean expression evaluates to true or false. |

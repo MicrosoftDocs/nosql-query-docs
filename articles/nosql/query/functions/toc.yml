@@ -47,7 +47,7 @@ items:
       - name: AVG
         displayName: aggregation, avg
         href: ../avg.md
-  - name: Full Text Search functions
+  - name: Full text search functions
     items:
       - name: FULLTEXTCONTAINS
         displayName: full, full text search, full-text-search, fulltextcontains, fulltextsearch, search, text
@@ -64,3 +64,8 @@ items:
       - name: RRF
         displayName: full, full text search, full-text-search, fulltextsearch, rrf, search, text
         href: ../rrf.md
+  - name: Conditional functions
+    items:
+      - name: IIF
+        displayName: conditional, iif
+        href: ../iif.md
