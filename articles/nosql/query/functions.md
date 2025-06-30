@@ -45,3 +45,9 @@ Here's a list of functions that the NoSQL query language currently supports:
 | | Description |
 | --- | --- |
 | **[`DOCUMENTID`](documentid.md)** | The `DOCUMENTID` function returns the unique document ID for a given item in the container. This can be used for filtering or retrieving the document&#39;s internal identifier. |
+
+### Conditional functions
+
+| | Description |
+| --- | --- |
+| **[`IIF`](iif.md)** | The `IIF` function returns one of two values, depending on whether the Boolean expression evaluates to true or false. |

@@ -52,3 +52,8 @@ items:
       - name: DOCUMENTID
         displayName: documentid, item
         href: ../documentid.md
+  - name: Conditional functions
+    items:
+      - name: IIF
+        displayName: conditional, iif
+        href: ../iif.md
