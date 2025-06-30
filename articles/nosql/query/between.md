@@ -1,7 +1,7 @@
 ---
 title: BETWEEN
 description: The `BETWEEN` keyword evaluates to a boolean indicating whether the target value is between two specified values, inclusive.
-ms.date: 06/27/2025
+ms.date: 06/30/2025
 ---
 
 # `BETWEEN` (NoSQL query)
@@ -32,7 +32,7 @@ Returns a boolean value.
 
 This section contains examples of how to use this query language construct.
 
-Consider this sample set of documents within the `` collection for these examples.
+Consider this sample set of documents within the `Products` collection for these examples.
 
 ```json
 [
