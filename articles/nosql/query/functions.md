@@ -43,3 +43,9 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`MAX`](max.md)** | The `MAX` function returns the maximum value of the specified expression. |
 | **[`MIN`](min.md)** | The `MIN` function returns the minimum value of the specified expression. |
 | **[`SUM`](sum.md)** | The `SUM` function calculates the sum of the values in the expression. |
+
+### Conditional functions
+
+| | Description |
+| --- | --- |
+| **[`IIF`](iif.md)** | The `IIF` function returns one of two values, depending on whether the Boolean expression evaluates to true or false. |
