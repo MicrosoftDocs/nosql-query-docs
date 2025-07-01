@@ -96,6 +96,38 @@ items:
       - name: IIF
         displayName: conditional, iif
         href: ../iif.md
+  - name: Type Checking functions
+    items:
+      - name: IS_ARRAY
+        displayName: array, checking, is, is array, is-array, isarray, type, type checking, type-checking, typechecking
+        href: ../is-array.md
+      - name: IS_BOOL
+        displayName: bool, checking, is, is bool, is-bool, isbool, type, type checking, type-checking, typechecking
+        href: ../is-bool.md
+      - name: IS_DEFINED
+        displayName: checking, defined, is, is defined, is-defined, isdefined, type, type checking, type-checking, typechecking
+        href: ../is-defined.md
+      - name: IS_FINITE_NUMBER
+        displayName: checking, finite, is, is finite number, is-finite-number, isfinitenumber, number, type, type checking, type-checking, typechecking
+        href: ../is-finite-number.md
+      - name: IS_INTEGER
+        displayName: checking, integer, is, is integer, is-integer, isinteger, type, type checking, type-checking, typechecking
+        href: ../is-integer.md
+      - name: IS_NULL
+        displayName: checking, is, is null, is-null, isnull, null, type, type checking, type-checking, typechecking
+        href: ../is-null.md
+      - name: IS_NUMBER
+        displayName: checking, is, is number, is-number, isnumber, number, type, type checking, type-checking, typechecking
+        href: ../is-number.md
+      - name: IS_OBJECT
+        displayName: checking, is, is object, is-object, isobject, object, type, type checking, type-checking, typechecking
+        href: ../is-object.md
+      - name: IS_PRIMITIVE
+        displayName: checking, is, is primitive, is-primitive, isprimitive, primitive, type, type checking, type-checking, typechecking
+        href: ../is-primitive.md
+      - name: IS_STRING
+        displayName: checking, is, is string, is-string, isstring, string, type, type checking, type-checking, typechecking
+        href: ../is-string.md
   - name: Spatial functions
     items:
       - name: ST_AREA
