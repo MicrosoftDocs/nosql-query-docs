@@ -37,6 +37,16 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`INTDIV`](intdiv.md)** | The `INTDIV` function returns the result of dividing the first integer value by the second. |
 | **[`INTMOD`](intmod.md)** | The `INTMOD` function returns the remainder of dividing the first integer value by the second. |
 | **[`INTMUL`](intmul.md)** | The `INTMUL` function returns the product of two integer values. |
+| **[`INTSUB`](intsub.md)** | The `INTSUB` function returns the result of subtracting the second integer value from the first. |
+| **[`LOG`](log.md)** | The `LOG` function returns the natural logarithm of the specified numeric expression. |
+| **[`LOG10`](log10.md)** | The `LOG10` function returns the base-10 logarithm of the specified numeric expression. |
+| **[`NUMBERBIN`](numberbin.md)** | The `NUMBERBIN` function calculates the input value rounded to a multiple of the specified size. |
+| **[`PI`](pi.md)** | The `PI` function returns the constant value of Pi. |
+| **[`POWER`](power.md)** | The `POWER` function returns the value of the specified expression multipled by itself the given number of times. |
+| **[`RADIANS`](radians.md)** | The `RADIANS` function returns the corresponding angle in radians for an angle specified in degrees. |
+| **[`RAND`](rand.md)** | The `RAND` function returns a randomly generated numeric value from zero to one. |
+| **[`ROUND`](round.md)** | The `ROUND` function returns a numeric value rounded to the closest integer value. |
+| **[`SIGN`](sign.md)** | The `SIGN` function returns the positive (+1), zero (0), or negative (-1) sign of the specified numeric expression. |
 
 ### Array functions
 
@@ -88,6 +98,21 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`STRINGTOARRAY`](stringtoarray.md)** | The `STRINGTOARRAY` function converts a string expression to an array. |
 | **[`STRINGTOBOOLEAN`](stringtoboolean.md)** | The `STRINGTOBOOLEAN` function converts a string expression to a boolean. |
 
+### Date and time functions
+
+| | Description |
+| --- | --- |
+| **[`DATETIMEADD`](datetimeadd.md)** | The `DATETIMEADD` function returns a date and time string value that is the result of adding a specified number value to the provided date and time string. |
+| **[`DATETIMEBIN`](datetimebin.md)** | The `DATETIMEBIN` function returns a date and time string value that is the result of binning (or rounding) a part of the provided date and time string. |
+| **[`DATETIMEDIFF`](datetimediff.md)** | The `DATETIMEDIFF` function returns the difference, as a signed integer, of the specified date and time part between two date and time values. |
+| **[`DATETIMEFROMPARTS`](datetimefromparts.md)** | The `DATETIMEFROMPARTS` function returns a date and time string value constructed from input numeric values for various date and time parts. |
+| **[`DATETIMEPART`](datetimepart.md)** | The `DATETIMEPART` function returns the value of the specified date and time part for the provided date and time. |
+| **[`DATETIMETOTICKS`](datetimetoticks.md)** | The `DATETIMETOTICKS` function converts the specified DateTime to ticks. A single tick represents 100 nanoseconds or 0.0000001 of a second. |
+| **[`DATETIMETOTIMESTAMP`](datetimetotimestamp.md)** | The `DATETIMETOTIMESTAMP` function converts the specified date and time to a numeric timestamp. The timestamp is a signed numeric integer that measures the milliseconds since the Unix epoch. |
+| **[`GETCURRENTDATETIME`](getcurrentdatetime.md)** | The `GETCURRENTDATETIME` function returns the current UTC (Coordinated Universal Time) date and time as an **ISO 8601** string. |
+| **[`GETCURRENTDATETIMESTATIC`](getcurrentdatetimestatic.md)** | The `GETCURRENTDATETIMESTATIC` function returns the same UTC date and time value for all items in the query, as an ISO 8601 string. This is useful for consistent timestamps across query results. |
+| **[`GETCURRENTTICKS`](getcurrentticks.md)** | The `GETCURRENTTICKS` function returns the current UTC time as the number of 100-nanosecond intervals (ticks) that have elapsed since 0001-01-01T00:00:00.0000000Z. |
+
 ### Item functions
 
 | | Description |
@@ -124,6 +149,9 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`IS_OBJECT`](is-object.md)** | The `IS_OBJECT` function returns a boolean value indicating if the type of the specified expression is a JSON object. |
 | **[`IS_PRIMITIVE`](is-primitive.md)** | The `IS_PRIMITIVE` function returns a boolean value indicating if the type of the specified expression is a primitive (string, boolean, numeric, or null). |
 | **[`IS_STRING`](is-string.md)** | The `IS_STRING` function returns a boolean value indicating if the type of the specified expression is a string. |
+| **[`STRINGTONULL`](stringtonull.md)** | The `STRINGTONULL` function converts a string expression to `null`. |
+| **[`STRINGTONUMBER`](stringtonumber.md)** | The `STRINGTONUMBER` function converts a string expression to a number. |
+| **[`STRINGTOOBJECT`](stringtoobject.md)** | The `STRINGTOOBJECT` function converts a string expression to an object. |
 
 ### Spatial functions
 
