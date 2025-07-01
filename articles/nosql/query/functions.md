@@ -77,6 +77,16 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`LTRIM`](ltrim.md)** | The `LTRIM` function returns a string expression after it removes leading whitespace or specified characters. |
 | **[`REGEXMATCH`](regexmatch.md)** | The `REGEXMATCH` function returns a boolean indicating whether the provided string matches the specified regular expression. Regular expressions are a concise and flexible notation for finding patterns of text. |
 | **[`REPLACE`](replace.md)** | The `REPLACE` function returns a string with all occurrences of a specified string replaced. |
+| **[`REPLICATE`](replicate.md)** | The `REPLICATE` function returns a string value repeated a specific number of times. |
+| **[`REVERSE`](reverse.md)** | The `REVERSE` function returns the reverse order of a string value. |
+| **[`RIGHT`](right.md)** | The `RIGHT` function returns the right part of a string up to the specified number of characters. |
+| **[`RTRIM`](rtrim.md)** | The `RTRIM` function returns a string expression after it removes trailing whitespace or specified characters. |
+| **[`STARTSWITH`](startswith.md)** | The `STARTSWITH` function returns a boolean value indicating whether the first string expression starts with the second. |
+| **[`STRINGEQUALS`](stringequals.md)** | The `STRINGEQUALS` function returns a boolean indicating whether the first string expression matches the second. |
+| **[`STRINGJOIN`](stringjoin.md)** | The `STRINGJOIN` function returns a string, which concatenates the elements of a specified array, using the specified separator between each element. |
+| **[`STRINGSPLIT`](stringsplit.md)** | The `STRINGSPLIT` function returns an array of substrings obtained from separating the source string by the specified delimiter. |
+| **[`STRINGTOARRAY`](stringtoarray.md)** | The `STRINGTOARRAY` function converts a string expression to an array. |
+| **[`STRINGTOBOOLEAN`](stringtoboolean.md)** | The `STRINGTOBOOLEAN` function converts a string expression to a boolean. |
 
 ### Item functions
 
