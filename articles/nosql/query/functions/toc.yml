@@ -178,6 +178,36 @@ items:
       - name: REPLACE
         displayName: replace, string
         href: ../replace.md
+      - name: REPLICATE
+        displayName: replicate, string
+        href: ../replicate.md
+      - name: REVERSE
+        displayName: reverse, string
+        href: ../reverse.md
+      - name: RIGHT
+        displayName: right, string
+        href: ../right.md
+      - name: RTRIM
+        displayName: rtrim, string
+        href: ../rtrim.md
+      - name: STARTSWITH
+        displayName: startswith, string
+        href: ../startswith.md
+      - name: STRINGEQUALS
+        displayName: string, stringequals
+        href: ../stringequals.md
+      - name: STRINGJOIN
+        displayName: string, stringjoin
+        href: ../stringjoin.md
+      - name: STRINGSPLIT
+        displayName: string, stringsplit
+        href: ../stringsplit.md
+      - name: STRINGTOARRAY
+        displayName: string, stringtoarray
+        href: ../stringtoarray.md
+      - name: STRINGTOBOOLEAN
+        displayName: string, stringtoboolean
+        href: ../stringtoboolean.md
   - name: Date and time functions
     items:
       - name: DATETIMEADD
