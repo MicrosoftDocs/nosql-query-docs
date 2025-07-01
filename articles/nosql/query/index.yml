@@ -201,18 +201,18 @@ conceptualContent:
         - title: Date and time functions
           links:
             - text: |-
-                GETCURRENTTIMESTAMP
+                GETCURRENTTICKS
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/getcurrenttimestamp
+              url: getcurrentticks.md
             - text: |-
                 GETCURRENTDATETIME
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/getcurrentdatetime
+              url: getcurrentdatetime.md
             - text: |-
-                DATE_ADD
+                DATETIMEADD
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/datetimeadd
+              url: datetimeadd.md
             - text: |-
-                DATE_DIFF
+                DATETIMEDIFF
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/datetimediff
+              url: datetimediff.md

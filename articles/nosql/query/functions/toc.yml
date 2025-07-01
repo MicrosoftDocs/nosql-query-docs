@@ -178,6 +178,38 @@ items:
       - name: REPLACE
         displayName: replace, string
         href: ../replace.md
+  - name: Date and time functions
+    items:
+      - name: DATETIMEADD
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimeadd, time
+        href: ../datetimeadd.md
+      - name: DATETIMEBIN
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimebin, time
+        href: ../datetimebin.md
+      - name: DATETIMEDIFF
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimediff, time
+        href: ../datetimediff.md
+      - name: DATETIMEFROMPARTS
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimefromparts, time
+        href: ../datetimefromparts.md
+      - name: DATETIMEPART
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimepart, time
+        href: ../datetimepart.md
+      - name: DATETIMETOTICKS
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimetoticks, time
+        href: ../datetimetoticks.md
+      - name: DATETIMETOTIMESTAMP
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimetotimestamp, time
+        href: ../datetimetotimestamp.md
+      - name: GETCURRENTDATETIME
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrentdatetime, time
+        href: ../getcurrentdatetime.md
+      - name: GETCURRENTDATETIMESTATIC
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrentdatetimestatic, time
+        href: ../getcurrentdatetimestatic.md
+      - name: GETCURRENTTICKS
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrentticks, time
+        href: ../getcurrentticks.md
   - name: Item functions
     items:
       - name: DOCUMENTID
@@ -205,7 +237,7 @@ items:
       - name: IIF
         displayName: conditional, iif
         href: ../iif.md
-  - name: Type Checking functions
+  - name: Type checking functions
     items:
       - name: IS_ARRAY
         displayName: array, checking, is, is array, is-array, isarray, type, type checking, type-checking, typechecking
