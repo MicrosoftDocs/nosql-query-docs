@@ -179,7 +179,7 @@ conceptualContent:
             - text: |-
                 ROUND
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/round
+              url: round.md
         - title: Array functions
           links:
             - text: |-

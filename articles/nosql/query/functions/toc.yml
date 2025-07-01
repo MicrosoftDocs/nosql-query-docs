@@ -67,6 +67,36 @@ items:
       - name: INTMUL
         displayName: intmul, mathematical
         href: ../intmul.md
+      - name: INTSUB
+        displayName: intsub, mathematical
+        href: ../intsub.md
+      - name: LOG
+        displayName: log, mathematical
+        href: ../log.md
+      - name: LOG10
+        displayName: 10, log, log 10, log10, mathematical
+        href: ../log10.md
+      - name: NUMBERBIN
+        displayName: mathematical, numberbin
+        href: ../numberbin.md
+      - name: PI
+        displayName: mathematical, pi
+        href: ../pi.md
+      - name: POWER
+        displayName: mathematical, power
+        href: ../power.md
+      - name: RADIANS
+        displayName: mathematical, radians
+        href: ../radians.md
+      - name: RAND
+        displayName: mathematical, rand
+        href: ../rand.md
+      - name: ROUND
+        displayName: mathematical, round
+        href: ../round.md
+      - name: SIGN
+        displayName: mathematical, sign
+        href: ../sign.md
   - name: Array functions
     items:
       - name: ARRAY_CONCAT
