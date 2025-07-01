@@ -1,8 +1,7 @@
 ---
 title: Constants
-description: Discover constants in the NoSQL query language.
-ms.devlang: nosql
-ms.date: 06/26/2025
+description: Use literal or scalar value constants in the NoSQL query language to represent a specific data value.
+ms.date: 07/01/2025
 ---
 
 # Constants in NoSQL query language
