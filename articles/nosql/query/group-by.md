@@ -1,7 +1,7 @@
 ---
 title: GROUP BY
 description: The `GROUP BY` clause collects rows that have the same values into summary rows.
-ms.date: 06/30/2025
+ms.date: 07/01/2025
 ---
 
 # `GROUP BY` (NoSQL query)

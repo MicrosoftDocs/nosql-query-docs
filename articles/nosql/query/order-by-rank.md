@@ -1,7 +1,7 @@
 ---
 title: ORDER BY RANK
 description: The `ORDER BY RANK` clause returns the sorted result set of a query based on the rank of scoring functions.
-ms.date: 06/30/2025
+ms.date: 07/01/2025
 ---
 
 # `ORDER BY RANK` (NoSQL query)
