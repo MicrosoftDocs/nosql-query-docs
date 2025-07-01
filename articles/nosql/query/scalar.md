@@ -1,8 +1,7 @@
 ---
 title: Scalar expressions
-description: Discover scalar expressions in the NoSQL query language.
-ms.devlang: nosql
-ms.date: 06/26/2025
+description: Use symbols and operators in scalar expressions within the NoSQL query language to perform complex evaluations to a single result value.
+ms.date: 07/01/2025
 ---
 
 # Scalar expressions in NoSQL query language
