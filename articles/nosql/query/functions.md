@@ -27,6 +27,16 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`DEGREES`](degrees.md)** | The `DEGREES` function calculates the corresponding angle in degrees for an angle specified in radians. |
 | **[`EXP`](exp.md)** | The `EXP` function calculates the exponential value of the specified numeric expression. |
 | **[`FLOOR`](floor.md)** | The `FLOOR` function calculates the largest integer less than or equal to the specified numeric expression. |
+| **[`INTADD`](intadd.md)** | The `INTADD` function returns the sum of two integer values. |
+| **[`INTBITAND`](intbitand.md)** | The `INTBITAND` function returns a comparison of the bits of each operand using an inclusive AND operator. |
+| **[`INTBITLEFTSHIFT`](intbitleftshift.md)** | The `INTBITLEFTSHIFT` function returns the result of a bitwise left shift operation on an integer value. |
+| **[`INTBITNOT`](intbitnot.md)** | The `INTBITNOT` function returns the result of a bitwise NOT operation on an integer value. |
+| **[`INTBITOR`](intbitor.md)** | The `INTBITOR` function returns the result of a bitwise inclusive OR operation on two integer values. |
+| **[`INTBITRIGHTSHIFT`](intbitrightshift.md)** | The `INTBITRIGHTSHIFT` function returns the result of a bitwise right shift operation on an integer value. |
+| **[`INTBITXOR`](intbitxor.md)** | The `INTBITXOR` function returns the result of a bitwise exclusive OR operation on two integer values. |
+| **[`INTDIV`](intdiv.md)** | The `INTDIV` function returns the result of dividing the first integer value by the second. |
+| **[`INTMOD`](intmod.md)** | The `INTMOD` function returns the remainder of dividing the first integer value by the second. |
+| **[`INTMUL`](intmul.md)** | The `INTMUL` function returns the product of two integer values. |
 
 ### Array functions
 
@@ -53,14 +63,66 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`MIN`](min.md)** | The `MIN` function returns the minimum value of the specified expression. |
 | **[`SUM`](sum.md)** | The `SUM` function calculates the sum of the values in the expression. |
 
+### String functions
+
+| | Description |
+| --- | --- |
+| **[`CONCAT`](concat.md)** | The `CONCAT` function returns a string that is the result of concatenating multiple fields from a document. |
+| **[`CONTAINS`](contains.md)** | The `CONTAINS` function returns a boolean indicating whether the first string expression contains the second string expression. |
+| **[`ENDSWITH`](endswith.md)** | The `ENDSWITH` function returns a boolean indicating whether a string ends with the specified suffix. Optionally, the comparison can be case-insensitive. |
+| **[`INDEX-OF`](index-of.md)** | The `INDEX_OF` function returns the index of the first occurrence of a string. |
+| **[`LEFT`](left.md)** | The `LEFT` function returns the left part of a string up to the specified number of characters. |
+| **[`LENGTH`](length.md)** | The `LENGTH` function returns the number of characters in the specified string expression. |
+| **[`LOWER`](lower.md)** | The `LOWER` function returns a string expression after converting uppercase character data to lowercase. |
+| **[`LTRIM`](ltrim.md)** | The `LTRIM` function returns a string expression after it removes leading whitespace or specified characters. |
+| **[`REGEXMATCH`](regexmatch.md)** | The `REGEXMATCH` function returns a boolean indicating whether the provided string matches the specified regular expression. Regular expressions are a concise and flexible notation for finding patterns of text. |
+| **[`REPLACE`](replace.md)** | The `REPLACE` function returns a string with all occurrences of a specified string replaced. |
+
 ### Item functions
 
 | | Description |
 | --- | --- |
-| **[`DOCUMENTID`](documentid.md)** | The `DOCUMENTID` function returns the unique document ID for a given item in the container. This can be used for filtering or retrieving the document&#39;s internal identifier. |
+| **[`DOCUMENTID`](documentid.md)** | The `DOCUMENTID` function returns the unique document ID for a given item in the container. |
+
+### Full text search functions
+
+| | Description |
+| --- | --- |
+| **[`FULLTEXTCONTAINS`](fulltextcontains.md)** | The `FULLTEXTCONTAINS` function returns a boolean indicating whether the keyword string expression is contained in a specified property path. |
+| **[`FULLTEXTCONTAINSALL`](fulltextcontainsall.md)** | The `FULLTEXTCONTAINSALL` function returns a boolean indicating whether all of the provided string expressions are contained in a specified property path. |
+| **[`FULLTEXTCONTAINSANY`](fulltextcontainsany.md)** | The `FULLTEXTCONTAINSANY` function returns a boolean indicating whether any of the provided string expressions are contained in a specified property path. |
+| **[`FULLTEXTSCORE`](fulltextscore.md)** | The `FULLTEXTSCORE` function returns a BM25 score value that can only be used in an `ORDER BY RANK` clause to sort results from highest relevancy to lowest relevancy of the specified terms. |
+| **[`RRF`](rrf.md)** | The `RRF` function returns a fused score by combining two or more scores provided by other functions. |
 
 ### Conditional functions
 
 | | Description |
 | --- | --- |
 | **[`IIF`](iif.md)** | The `IIF` function returns one of two values, depending on whether the Boolean expression evaluates to true or false. |
+
+### Type checking functions
+
+| | Description |
+| --- | --- |
+| **[`IS_ARRAY`](is-array.md)** | The `IS_ARRAY` function returns a boolean value indicating if the type of the specified expression is an array. |
+| **[`IS_BOOL`](is-bool.md)** | The `IS_BOOL` function returns a boolean value indicating if the type of the specified expression is a boolean. |
+| **[`IS_DEFINED`](is-defined.md)** | The `IS_DEFINED` function returns a boolean indicating if the property has been assigned a value. |
+| **[`IS_FINITE_NUMBER`](is-finite-number.md)** | The `IS_FINITE_NUMBER` function returns a boolean indicating if a number is a finite number (not infinite). |
+| **[`IS_INTEGER`](is-integer.md)** | The `IS_INTEGER` function returns a boolean indicating if a number is a 64-bit signed integer. 64-bit signed integers range from `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807`. For more information, see [__int64](/cpp/cpp/int8-int16-int32-int64). |
+| **[`IS_NULL`](is-null.md)** | The `IS_NULL` function returns a boolean value indicating if the type of the specified expression is `null`. |
+| **[`IS_NUMBER`](is-number.md)** | The `IS_NUMBER` function returns a boolean value indicating if the type of the specified expression is a number. |
+| **[`IS_OBJECT`](is-object.md)** | The `IS_OBJECT` function returns a boolean value indicating if the type of the specified expression is a JSON object. |
+| **[`IS_PRIMITIVE`](is-primitive.md)** | The `IS_PRIMITIVE` function returns a boolean value indicating if the type of the specified expression is a primitive (string, boolean, numeric, or null). |
+| **[`IS_STRING`](is-string.md)** | The `IS_STRING` function returns a boolean value indicating if the type of the specified expression is a string. |
+
+### Spatial functions
+
+| | Description |
+| --- | --- |
+| **[`ST_AREA`](st-area.md)** | The `ST_AREA` function returns the total area of a GeoJSON Polygon or MultiPolygon expression. |
+| **[`ST_DISTANCE`](st-distance.md)** | The `ST_DISTANCE` function returns the distance between two GeoJSON Point, Polygon, MultiPolygon or LineString expressions. |
+| **[`ST_INTERSECTS`](st-intersects.md)** | The `ST_INTERSECTS` function returns a boolean indicating whether the GeoJSON object specified in the first argument intersects the GeoJSON object in the second argument. |
+| **[`ST_ISVALID`](st-isvalid.md)** | The `ST_ISVALID` function returns a boolean value indicating whether the specified GeoJSON Point, Polygon, MultiPolygon, or LineString expression is valid. |
+| **[`ST_ISVALIDDETAILED`](st-isvaliddetailed.md)** | The `ST_ISVALIDDETAILED` function returns a JSON value containing a Boolean value if the specified GeoJSON Point, Polygon, or LineString expression is valid, and if invalid, the reason. |
+| **[`ST_WITHIN`](st-within.md)** | The `ST_WITHIN` function returns a boolean expression indicating whether the GeoJSON object specified in the first argument is within the GeoJSON object in the second argument. |
+| **[`VECTORDISTANCE`](vectordistance.md)** | The `VECTORDISTANCE` function returns the similarity score between two specified vectors. |

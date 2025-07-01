@@ -6,7 +6,7 @@ metadata:
   title: Documentation
   description: Learn about the NoSQL query language used in products like Azure Cosmos DB for NoSQL and Cosmos DB in Fabric. Use familiar ANSI SQL keywords to query loosely structured data.
   ms.topic: hub-page
-  ms.date: 06/30/2025
+  ms.date: 07/01/2025
   ai-usage: ai-assisted
   no-loc:
     - VECTORDISTANCE
@@ -83,7 +83,7 @@ conceptualContent:
             - text: |-
                 VECTORDISTANCE
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/vectordistance
+              url: vectordistance.md
     - title: Full text search functions
       summary: Query using a specialized text index with support for advanced data querying capabilities like stemming, stop word removal, and tokenization.
       items:
@@ -92,31 +92,31 @@ conceptualContent:
             - text: |-
                 FULLTEXTCONTAINS
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/fulltextcontains
+              url: fulltextcontains.md
             - text: |-
                 FULLTEXTCONTAINSALL
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/fulltextcontainsall
+              url: fulltextcontainsall.md
             - text: |-
                 FULLTEXTCONTAINSANY
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/fulltextcontainsany
+              url: fulltextcontainsany.md
         - title: Order and rank functions
           links:
             - text: |-
                 FULLTEXTSCORE
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/fulltextscore
+              url: fulltextscore.md
             - text: |-
                 ORDER BY RANK
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/order-by-rank
+              url: order-by-rank.md
         - title: Relevance ranking functions (RRF)
           links:
             - text: |-
                 RRF
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/rrf
+              url: rrf.md
     - title: System functions
       summary: Use built-in system functions for the most common tasks across a wide variety of scenarios.
       items:
@@ -147,11 +147,11 @@ conceptualContent:
             - text: |-
                 CONCAT
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/concat
+              url: concat.md
             - text: |-
                 CONTAINS
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/contains
+              url: contains.md
             - text: |-
                 STARTSWITH
               itemType: reference
@@ -159,7 +159,7 @@ conceptualContent:
             - text: |-
                 ENDSWITH
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/endswith
+              url: endswith.md
             - text: |-
                 TRIM
               itemType: reference
