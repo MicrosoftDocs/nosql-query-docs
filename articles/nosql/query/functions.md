@@ -27,6 +27,16 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`DEGREES`](degrees.md)** | The `DEGREES` function calculates the corresponding angle in degrees for an angle specified in radians. |
 | **[`EXP`](exp.md)** | The `EXP` function calculates the exponential value of the specified numeric expression. |
 | **[`FLOOR`](floor.md)** | The `FLOOR` function calculates the largest integer less than or equal to the specified numeric expression. |
+| **[`INTADD`](intadd.md)** | The `INTADD` function returns the sum of two integer values. |
+| **[`INTBITAND`](intbitand.md)** | The `INTBITAND` function returns a comparison of the bits of each operand using an inclusive AND operator. |
+| **[`INTBITLEFTSHIFT`](intbitleftshift.md)** | The `INTBITLEFTSHIFT` function returns the result of a bitwise left shift operation on an integer value. |
+| **[`INTBITNOT`](intbitnot.md)** | The `INTBITNOT` function returns the result of a bitwise NOT operation on an integer value. |
+| **[`INTBITOR`](intbitor.md)** | The `INTBITOR` function returns the result of a bitwise inclusive OR operation on two integer values. |
+| **[`INTBITRIGHTSHIFT`](intbitrightshift.md)** | The `INTBITRIGHTSHIFT` function returns the result of a bitwise right shift operation on an integer value. |
+| **[`INTBITXOR`](intbitxor.md)** | The `INTBITXOR` function returns the result of a bitwise exclusive OR operation on two integer values. |
+| **[`INTDIV`](intdiv.md)** | The `INTDIV` function returns the result of dividing the first integer value by the second. |
+| **[`INTMOD`](intmod.md)** | The `INTMOD` function returns the remainder of dividing the first integer value by the second. |
+| **[`INTMUL`](intmul.md)** | The `INTMUL` function returns the product of two integer values. |
 
 ### Array functions
 

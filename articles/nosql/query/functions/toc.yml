@@ -37,6 +37,36 @@ items:
       - name: FLOOR
         displayName: floor, mathematical
         href: ../floor.md
+      - name: INTADD
+        displayName: intadd, mathematical
+        href: ../intadd.md
+      - name: INTBITAND
+        displayName: intbitand, mathematical
+        href: ../intbitand.md
+      - name: INTBITLEFTSHIFT
+        displayName: intbitleftshift, mathematical
+        href: ../intbitleftshift.md
+      - name: INTBITNOT
+        displayName: intbitnot, mathematical
+        href: ../intbitnot.md
+      - name: INTBITOR
+        displayName: intbitor, mathematical
+        href: ../intbitor.md
+      - name: INTBITRIGHTSHIFT
+        displayName: intbitrightshift, mathematical
+        href: ../intbitrightshift.md
+      - name: INTBITXOR
+        displayName: intbitxor, mathematical
+        href: ../intbitxor.md
+      - name: INTDIV
+        displayName: intdiv, mathematical
+        href: ../intdiv.md
+      - name: INTMOD
+        displayName: intmod, mathematical
+        href: ../intmod.md
+      - name: INTMUL
+        displayName: intmul, mathematical
+        href: ../intmul.md
   - name: Array functions
     items:
       - name: ARRAY_CONCAT
