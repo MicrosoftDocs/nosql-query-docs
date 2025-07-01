@@ -207,6 +207,15 @@ items:
       - name: IS_STRING
         displayName: checking, is, is string, is-string, isstring, string, type, type checking, type-checking, typechecking
         href: ../is-string.md
+      - name: STRINGTONULL
+        displayName: checking, stringtonull, type, type checking, type-checking, typechecking
+        href: ../stringtonull.md
+      - name: STRINGTONUMBER
+        displayName: checking, stringtonumber, type, type checking, type-checking, typechecking
+        href: ../stringtonumber.md
+      - name: STRINGTOOBJECT
+        displayName: checking, stringtoobject, type, type checking, type-checking, typechecking
+        href: ../stringtoobject.md
   - name: Spatial functions
     items:
       - name: ST_AREA
