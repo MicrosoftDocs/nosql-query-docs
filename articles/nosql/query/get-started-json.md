@@ -1,7 +1,7 @@
 ---
 title: Get started with JSON
 description: Query and access nested JSON properties and use special characters in the NoSQL query language.
-ms.date: 06/26/2025
+ms.date: 07/01/2025
 ai-usage: ai-generated
 ---
 
