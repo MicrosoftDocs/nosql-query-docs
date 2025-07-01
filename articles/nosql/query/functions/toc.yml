@@ -37,6 +37,36 @@ items:
       - name: FLOOR
         displayName: floor, mathematical
         href: ../floor.md
+      - name: INTADD
+        displayName: intadd, mathematical
+        href: ../intadd.md
+      - name: INTBITAND
+        displayName: intbitand, mathematical
+        href: ../intbitand.md
+      - name: INTBITLEFTSHIFT
+        displayName: intbitleftshift, mathematical
+        href: ../intbitleftshift.md
+      - name: INTBITNOT
+        displayName: intbitnot, mathematical
+        href: ../intbitnot.md
+      - name: INTBITOR
+        displayName: intbitor, mathematical
+        href: ../intbitor.md
+      - name: INTBITRIGHTSHIFT
+        displayName: intbitrightshift, mathematical
+        href: ../intbitrightshift.md
+      - name: INTBITXOR
+        displayName: intbitxor, mathematical
+        href: ../intbitxor.md
+      - name: INTDIV
+        displayName: intdiv, mathematical
+        href: ../intdiv.md
+      - name: INTMOD
+        displayName: intmod, mathematical
+        href: ../intmod.md
+      - name: INTMUL
+        displayName: intmul, mathematical
+        href: ../intmul.md
   - name: Array functions
     items:
       - name: ARRAY_CONCAT
@@ -86,7 +116,39 @@ items:
       - name: SUM
         displayName: aggregation, sum
         href: ../sum.md
-  - name: Date and Time functions
+  - name: String functions
+    items:
+      - name: CONCAT
+        displayName: concat, string
+        href: ../concat.md
+      - name: CONTAINS
+        displayName: contains, string
+        href: ../contains.md
+      - name: ENDSWITH
+        displayName: endswith, string
+        href: ../endswith.md
+      - name: INDEX-OF
+        displayName: index, index of, index-of, of, string
+        href: ../index-of.md
+      - name: LEFT
+        displayName: left, string
+        href: ../left.md
+      - name: LENGTH
+        displayName: length, string
+        href: ../length.md
+      - name: LOWER
+        displayName: lower, string
+        href: ../lower.md
+      - name: LTRIM
+        displayName: ltrim, string
+        href: ../ltrim.md
+      - name: REGEXMATCH
+        displayName: regexmatch, string
+        href: ../regexmatch.md
+      - name: REPLACE
+        displayName: replace, string
+        href: ../replace.md
+  - name: Date and time functions
     items:
       - name: DATETIMEADD
         displayName: and, date, date and time, date-and-time, dateandtime, datetimeadd, time
@@ -123,11 +185,60 @@ items:
       - name: DOCUMENTID
         displayName: documentid, item
         href: ../documentid.md
+  - name: Full text search functions
+    items:
+      - name: FULLTEXTCONTAINS
+        displayName: full, full text search, full-text-search, fulltextcontains, fulltextsearch, search, text
+        href: ../fulltextcontains.md
+      - name: FULLTEXTCONTAINSALL
+        displayName: full, full text search, full-text-search, fulltextcontainsall, fulltextsearch, search, text
+        href: ../fulltextcontainsall.md
+      - name: FULLTEXTCONTAINSANY
+        displayName: full, full text search, full-text-search, fulltextcontainsany, fulltextsearch, search, text
+        href: ../fulltextcontainsany.md
+      - name: FULLTEXTSCORE
+        displayName: full, full text search, full-text-search, fulltextscore, fulltextsearch, search, text
+        href: ../fulltextscore.md
+      - name: RRF
+        displayName: full, full text search, full-text-search, fulltextsearch, rrf, search, text
+        href: ../rrf.md
   - name: Conditional functions
     items:
       - name: IIF
         displayName: conditional, iif
         href: ../iif.md
+  - name: Type checking functions
+    items:
+      - name: IS_ARRAY
+        displayName: array, checking, is, is array, is-array, isarray, type, type checking, type-checking, typechecking
+        href: ../is-array.md
+      - name: IS_BOOL
+        displayName: bool, checking, is, is bool, is-bool, isbool, type, type checking, type-checking, typechecking
+        href: ../is-bool.md
+      - name: IS_DEFINED
+        displayName: checking, defined, is, is defined, is-defined, isdefined, type, type checking, type-checking, typechecking
+        href: ../is-defined.md
+      - name: IS_FINITE_NUMBER
+        displayName: checking, finite, is, is finite number, is-finite-number, isfinitenumber, number, type, type checking, type-checking, typechecking
+        href: ../is-finite-number.md
+      - name: IS_INTEGER
+        displayName: checking, integer, is, is integer, is-integer, isinteger, type, type checking, type-checking, typechecking
+        href: ../is-integer.md
+      - name: IS_NULL
+        displayName: checking, is, is null, is-null, isnull, null, type, type checking, type-checking, typechecking
+        href: ../is-null.md
+      - name: IS_NUMBER
+        displayName: checking, is, is number, is-number, isnumber, number, type, type checking, type-checking, typechecking
+        href: ../is-number.md
+      - name: IS_OBJECT
+        displayName: checking, is, is object, is-object, isobject, object, type, type checking, type-checking, typechecking
+        href: ../is-object.md
+      - name: IS_PRIMITIVE
+        displayName: checking, is, is primitive, is-primitive, isprimitive, primitive, type, type checking, type-checking, typechecking
+        href: ../is-primitive.md
+      - name: IS_STRING
+        displayName: checking, is, is string, is-string, isstring, string, type, type checking, type-checking, typechecking
+        href: ../is-string.md
   - name: Spatial functions
     items:
       - name: ST_AREA
