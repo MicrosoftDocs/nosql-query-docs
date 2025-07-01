@@ -92,6 +92,11 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`GETCURRENTDATETIME`](getcurrentdatetime.md)** | The `GETCURRENTDATETIME` function returns the current UTC (Coordinated Universal Time) date and time as an **ISO 8601** string. |
 | **[`GETCURRENTDATETIMESTATIC`](getcurrentdatetimestatic.md)** | The `GETCURRENTDATETIMESTATIC` function returns the same UTC date and time value for all items in the query, as an ISO 8601 string. This is useful for consistent timestamps across query results. |
 | **[`GETCURRENTTICKS`](getcurrentticks.md)** | The `GETCURRENTTICKS` function returns the current UTC time as the number of 100-nanosecond intervals (ticks) that have elapsed since 0001-01-01T00:00:00.0000000Z. |
+| **[`GETCURRENTTICKSSTATIC`](getcurrentticksstatic.md)** | The `GETCURRENTTICKSSTATIC` function returns a static nanosecond ticks value (100-nanosecond intervals since the Unix epoch) for all items in the same partition. |
+| **[`GETCURRENTTIMESTAMP`](getcurrenttimestamp.md)** | The `GETCURRENTTIMESTAMP` function returns the current timestamp in milliseconds since the Unix epoch. |
+| **[`GETCURRENTTIMESTAMPSTATIC`](getcurrenttimestampstatic.md)** | The `GETCURRENTTIMESTAMPSTATIC` function returns a static timestamp value (milliseconds since the Unix epoch) for all items in the same partition. |
+| **[`TICKSTODATETIME`](tickstodatetime.md)** | The `TICKSTODATETIME` function converts the specified number of ticks to a date and time value. |
+| **[`TIMESTAMPTODATETIME`](timestamptodatetime.md)** | The `TIMESTAMPTODATETIME` function converts the specified timestamp to a date and time value. |
 
 ### Item functions
 

@@ -180,6 +180,21 @@ items:
       - name: GETCURRENTTICKS
         displayName: and, date, date and time, date-and-time, dateandtime, getcurrentticks, time
         href: ../getcurrentticks.md
+      - name: GETCURRENTTICKSSTATIC
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrentticksstatic, time
+        href: ../getcurrentticksstatic.md
+      - name: GETCURRENTTIMESTAMP
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrenttimestamp, time
+        href: ../getcurrenttimestamp.md
+      - name: GETCURRENTTIMESTAMPSTATIC
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrenttimestampstatic, time
+        href: ../getcurrenttimestampstatic.md
+      - name: TICKSTODATETIME
+        displayName: and, date, date and time, date-and-time, dateandtime, tickstodatetime, time
+        href: ../tickstodatetime.md
+      - name: TIMESTAMPTODATETIME
+        displayName: and, date, date and time, date-and-time, dateandtime, time, timestamptodatetime
+        href: ../timestamptodatetime.md
   - name: Item functions
     items:
       - name: DOCUMENTID
