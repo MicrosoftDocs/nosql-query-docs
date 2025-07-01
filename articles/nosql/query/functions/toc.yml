@@ -178,6 +178,18 @@ items:
       - name: STRINGTOBOOLEAN
         displayName: string, stringtoboolean
         href: ../stringtoboolean.md
+      - name: SUBSTRING
+        displayName: string, substring
+        href: ../substring.md
+      - name: TOSTRING
+        displayName: string, tostring
+        href: ../tostring.md
+      - name: TRIM
+        displayName: string, trim
+        href: ../trim.md
+      - name: UPPER
+        displayName: string, upper
+        href: ../upper.md
   - name: Item functions
     items:
       - name: DOCUMENTID

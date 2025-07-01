@@ -161,7 +161,7 @@ conceptualContent:
             - text: |-
                 TRIM
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/trim
+              url: trim.md
         - title: Mathematical functions
           links:
             - text: |-

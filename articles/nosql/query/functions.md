@@ -87,6 +87,10 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`STRINGSPLIT`](stringsplit.md)** | The `STRINGSPLIT` function returns an array of substrings obtained from separating the source string by the specified delimiter. |
 | **[`STRINGTOARRAY`](stringtoarray.md)** | The `STRINGTOARRAY` function converts a string expression to an array. |
 | **[`STRINGTOBOOLEAN`](stringtoboolean.md)** | The `STRINGTOBOOLEAN` function converts a string expression to a boolean. |
+| **[`SUBSTRING`](substring.md)** | The `SUBSTRING` function returns part of a string expression starting at the specified position and of the specified length, or to the end of the string. |
+| **[`TOSTRING`](tostring.md)** | The `TOSTRING` function returns a string representation of a value. |
+| **[`TRIM`](trim.md)** | The `TRIM` function returns a string expression after it removes leading and trailing whitespace or custom characters. |
+| **[`UPPER`](upper.md)** | The `UPPER` function returns a string expression after converting lowercase character data to uppercase. |
 
 ### Item functions
 
