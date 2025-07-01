@@ -124,6 +124,9 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`IS_OBJECT`](is-object.md)** | The `IS_OBJECT` function returns a boolean value indicating if the type of the specified expression is a JSON object. |
 | **[`IS_PRIMITIVE`](is-primitive.md)** | The `IS_PRIMITIVE` function returns a boolean value indicating if the type of the specified expression is a primitive (string, boolean, numeric, or null). |
 | **[`IS_STRING`](is-string.md)** | The `IS_STRING` function returns a boolean value indicating if the type of the specified expression is a string. |
+| **[`STRINGTONULL`](stringtonull.md)** | The `STRINGTONULL` function converts a string expression to `null`. |
+| **[`STRINGTONUMBER`](stringtonumber.md)** | The `STRINGTONUMBER` function converts a string expression to a number. |
+| **[`STRINGTOOBJECT`](stringtoobject.md)** | The `STRINGTOOBJECT` function converts a string expression to an object. |
 
 ### Spatial functions
 
