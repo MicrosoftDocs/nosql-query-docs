@@ -1,7 +1,7 @@
 ---
 title: Clauses
 description: The NoSQL query language provides many language clauses that can be used to build complex query language expressions.
-ms.date: 06/30/2025
+ms.date: 07/01/2025
 ---
 
 # NoSQL query language clauses
