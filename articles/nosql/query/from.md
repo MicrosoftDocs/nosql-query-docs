@@ -1,7 +1,7 @@
 ---
 title: FROM
 description: The `FROM` clause identifies the source of data for a query.
-ms.date: 06/27/2025
+ms.date: 06/30/2025
 ---
 
 # `FROM` (NoSQL query)

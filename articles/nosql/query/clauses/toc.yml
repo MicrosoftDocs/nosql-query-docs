@@ -5,6 +5,24 @@ items:
   - name: FROM
     displayName: clause, from
     href: ../from.md
+  - name: GROUP-BY
+    displayName: by, clause, group, group by, group-by
+    href: ../group-by.md
+  - name: OFFSET-LIMIT
+    displayName: clause, limit, offset, offset limit, offset-limit
+    href: ../offset-limit.md
+  - name: ORDER-BY-RANK
+    displayName: by, clause, order, order by rank, order-by-rank, rank
+    href: ../order-by-rank.md
+  - name: ORDER-BY
+    displayName: by, clause, order, order by, order-by
+    href: ../order-by.md
   - name: SELECT
     displayName: clause, select
     href: ../select.md
+  - name: SUBQUERY
+    displayName: clause, subquery
+    href: ../subquery.md
+  - name: WHERE
+    displayName: clause, where
+    href: ../where.md
