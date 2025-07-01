@@ -145,11 +145,11 @@ conceptualContent:
             - text: |-
                 CONCAT
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/concat
+              url: concat.md
             - text: |-
                 CONTAINS
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/contains
+              url: contains.md
             - text: |-
                 STARTSWITH
               itemType: reference
@@ -157,7 +157,7 @@ conceptualContent:
             - text: |-
                 ENDSWITH
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/endswith
+              url: endswith.md
             - text: |-
                 TRIM
               itemType: reference
