@@ -37,6 +37,16 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`INTDIV`](intdiv.md)** | The `INTDIV` function returns the result of dividing the first integer value by the second. |
 | **[`INTMOD`](intmod.md)** | The `INTMOD` function returns the remainder of dividing the first integer value by the second. |
 | **[`INTMUL`](intmul.md)** | The `INTMUL` function returns the product of two integer values. |
+| **[`INTSUB`](intsub.md)** | The `INTSUB` function returns the result of subtracting the second integer value from the first. |
+| **[`LOG`](log.md)** | The `LOG` function returns the natural logarithm of the specified numeric expression. |
+| **[`LOG10`](log10.md)** | The `LOG10` function returns the base-10 logarithm of the specified numeric expression. |
+| **[`NUMBERBIN`](numberbin.md)** | The `NUMBERBIN` function calculates the input value rounded to a multiple of the specified size. |
+| **[`PI`](pi.md)** | The `PI` function returns the constant value of Pi. |
+| **[`POWER`](power.md)** | The `POWER` function returns the value of the specified expression multipled by itself the given number of times. |
+| **[`RADIANS`](radians.md)** | The `RADIANS` function returns the corresponding angle in radians for an angle specified in degrees. |
+| **[`RAND`](rand.md)** | The `RAND` function returns a randomly generated numeric value from zero to one. |
+| **[`ROUND`](round.md)** | The `ROUND` function returns a numeric value rounded to the closest integer value. |
+| **[`SIGN`](sign.md)** | The `SIGN` function returns the positive (+1), zero (0), or negative (-1) sign of the specified numeric expression. |
 
 ### Array functions
 
