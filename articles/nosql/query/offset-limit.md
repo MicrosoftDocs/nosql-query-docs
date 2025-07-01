@@ -1,10 +1,10 @@
 ---
-title: OFFSET-LIMIT
+title: OFFSET LIMIT
 description: The `OFFSET LIMIT` clause returns a subset of the result set by skipping a specified number of results and then taking a specified number of results.
 ms.date: 06/30/2025
 ---
 
-# `OFFSET-LIMIT` (NoSQL query)
+# `OFFSET LIMIT` (NoSQL query)
 
 The `OFFSET LIMIT` clause returns a subset of the result set by skipping a specified number of results and then taking a specified number of results.
 
