@@ -86,6 +86,11 @@ items:
       - name: SUM
         displayName: aggregation, sum
         href: ../sum.md
+  - name: Item functions
+    items:
+      - name: DOCUMENTID
+        displayName: documentid, item
+        href: ../documentid.md
   - name: Full text search functions
     items:
       - name: FULLTEXTCONTAINS
@@ -108,3 +113,26 @@ items:
       - name: IIF
         displayName: conditional, iif
         href: ../iif.md
+  - name: Spatial functions
+    items:
+      - name: ST_AREA
+        displayName: area, spatial, st, st area, st-area, starea
+        href: ../st-area.md
+      - name: ST_DISTANCE
+        displayName: distance, spatial, st, st distance, st-distance, stdistance
+        href: ../st-distance.md
+      - name: ST_INTERSECTS
+        displayName: intersects, spatial, st, st intersects, st-intersects, stintersects
+        href: ../st-intersects.md
+      - name: ST_ISVALID
+        displayName: isvalid, spatial, st, st isvalid, st-isvalid, stisvalid
+        href: ../st-isvalid.md
+      - name: ST_ISVALIDDETAILED
+        displayName: isvaliddetailed, spatial, st, st isvaliddetailed, st-isvaliddetailed, stisvaliddetailed
+        href: ../st-isvaliddetailed.md
+      - name: ST_WITHIN
+        displayName: spatial, st, st within, st-within, stwithin, within
+        href: ../st-within.md
+      - name: VECTORDISTANCE
+        displayName: spatial, vectordistance
+        href: ../vectordistance.md
