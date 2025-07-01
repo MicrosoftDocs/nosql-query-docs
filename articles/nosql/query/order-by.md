@@ -1,10 +1,10 @@
 ---
-title: ORDER-BY
+title: ORDER BY
 description: The `ORDER BY` clause returns the sorted result set of a query based on one or more expressions.
 ms.date: 06/30/2025
 ---
 
-# `ORDER-BY` (NoSQL query)
+# `ORDER BY` (NoSQL query)
 
 The `ORDER BY` clause returns the sorted result set of a query based on one or more expressions.
 
