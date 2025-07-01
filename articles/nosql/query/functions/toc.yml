@@ -42,11 +42,50 @@ items:
       - name: ARRAY_CONCAT
         displayName: array, array concat, array-concat, arrayconcat, concat
         href: ../array-concat.md
+      - name: ARRAY_CONTAINS_ALL
+        displayName: all, array, array contains all, array-contains-all, arraycontainsall, contains
+        href: ../array-contains-all.md
+      - name: ARRAY_CONTAINS_ANY
+        displayName: any, array, array contains any, array-contains-any, arraycontainsany, contains
+        href: ../array-contains-any.md
+      - name: ARRAY_CONTAINS
+        displayName: array, array contains, array-contains, arraycontains, contains
+        href: ../array-contains.md
+      - name: ARRAY_LENGTH
+        displayName: array, array length, array-length, arraylength, length
+        href: ../array-length.md
+      - name: ARRAY_SLICE
+        displayName: array, array slice, array-slice, arrayslice, slice
+        href: ../array-slice.md
+      - name: CHOOSE
+        displayName: array, choose
+        href: ../choose.md
+      - name: OBJECTTOARRAY
+        displayName: array, objecttoarray
+        href: ../objecttoarray.md
+      - name: SETINTERSECT
+        displayName: array, setintersect
+        href: ../setintersect.md
+      - name: SETUNION
+        displayName: array, setunion
+        href: ../setunion.md
   - name: Aggregation functions
     items:
       - name: AVG
         displayName: aggregation, avg
         href: ../avg.md
+      - name: COUNT
+        displayName: aggregation, count
+        href: ../count.md
+      - name: MAX
+        displayName: aggregation, max
+        href: ../max.md
+      - name: MIN
+        displayName: aggregation, min
+        href: ../min.md
+      - name: SUM
+        displayName: aggregation, sum
+        href: ../sum.md
   - name: String functions
     items:
       - name: CONCAT
