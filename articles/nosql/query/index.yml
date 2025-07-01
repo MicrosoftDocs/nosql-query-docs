@@ -64,6 +64,8 @@ productDirectory:
           url: subquery.md
         - text: Explore reserved keywords
           url: keywords.md
+        - text: Discover clauses
+          url: clauses.md
     - title: Complex queries
       imageSrc: ./media/index/query-complex.png
       links:
