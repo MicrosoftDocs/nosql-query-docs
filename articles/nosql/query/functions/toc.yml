@@ -123,6 +123,23 @@ items:
       - name: DOCUMENTID
         displayName: documentid, item
         href: ../documentid.md
+  - name: Full text search functions
+    items:
+      - name: FULLTEXTCONTAINS
+        displayName: full, full text search, full-text-search, fulltextcontains, fulltextsearch, search, text
+        href: ../fulltextcontains.md
+      - name: FULLTEXTCONTAINSALL
+        displayName: full, full text search, full-text-search, fulltextcontainsall, fulltextsearch, search, text
+        href: ../fulltextcontainsall.md
+      - name: FULLTEXTCONTAINSANY
+        displayName: full, full text search, full-text-search, fulltextcontainsany, fulltextsearch, search, text
+        href: ../fulltextcontainsany.md
+      - name: FULLTEXTSCORE
+        displayName: full, full text search, full-text-search, fulltextscore, fulltextsearch, search, text
+        href: ../fulltextscore.md
+      - name: RRF
+        displayName: full, full text search, full-text-search, fulltextsearch, rrf, search, text
+        href: ../rrf.md
   - name: Conditional functions
     items:
       - name: IIF

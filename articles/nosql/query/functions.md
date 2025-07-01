@@ -74,6 +74,16 @@ Here's a list of functions that the NoSQL query language currently supports:
 | --- | --- |
 | **[`DOCUMENTID`](documentid.md)** | The `DOCUMENTID` function returns the unique document ID for a given item in the container. |
 
+### Full text search functions
+
+| | Description |
+| --- | --- |
+| **[`FULLTEXTCONTAINS`](fulltextcontains.md)** | The `FULLTEXTCONTAINS` function returns a boolean indicating whether the keyword string expression is contained in a specified property path. |
+| **[`FULLTEXTCONTAINSALL`](fulltextcontainsall.md)** | The `FULLTEXTCONTAINSALL` function returns a boolean indicating whether all of the provided string expressions are contained in a specified property path. |
+| **[`FULLTEXTCONTAINSANY`](fulltextcontainsany.md)** | The `FULLTEXTCONTAINSANY` function returns a boolean indicating whether any of the provided string expressions are contained in a specified property path. |
+| **[`FULLTEXTSCORE`](fulltextscore.md)** | The `FULLTEXTSCORE` function returns a BM25 score value that can only be used in an `ORDER BY RANK` clause to sort results from highest relevancy to lowest relevancy of the specified terms. |
+| **[`RRF`](rrf.md)** | The `RRF` function returns a fused score by combining two or more scores provided by other functions. |
+
 ### Conditional functions
 
 | | Description |

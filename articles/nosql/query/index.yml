@@ -90,31 +90,31 @@ conceptualContent:
             - text: |-
                 FULLTEXTCONTAINS
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/fulltextcontains
+              url: fulltextcontains.md
             - text: |-
                 FULLTEXTCONTAINSALL
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/fulltextcontainsall
+              url: fulltextcontainsall.md
             - text: |-
                 FULLTEXTCONTAINSANY
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/fulltextcontainsany
+              url: fulltextcontainsany.md
         - title: Order and rank functions
           links:
             - text: |-
                 FULLTEXTSCORE
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/fulltextscore
+              url: fulltextscore.md
             - text: |-
                 ORDER BY RANK
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/order-by-rank
+              url: order-by-rank.md
         - title: Relevance ranking functions (RRF)
           links:
             - text: |-
                 RRF
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/rrf
+              url: rrf.md
     - title: System functions
       summary: Use built-in system functions for the most common tasks across a wide variety of scenarios.
       items:
