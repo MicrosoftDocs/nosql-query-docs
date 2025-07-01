@@ -67,6 +67,36 @@ items:
       - name: INTMUL
         displayName: intmul, mathematical
         href: ../intmul.md
+      - name: INTSUB
+        displayName: intsub, mathematical
+        href: ../intsub.md
+      - name: LOG
+        displayName: log, mathematical
+        href: ../log.md
+      - name: LOG10
+        displayName: 10, log, log 10, log10, mathematical
+        href: ../log10.md
+      - name: NUMBERBIN
+        displayName: mathematical, numberbin
+        href: ../numberbin.md
+      - name: PI
+        displayName: mathematical, pi
+        href: ../pi.md
+      - name: POWER
+        displayName: mathematical, power
+        href: ../power.md
+      - name: RADIANS
+        displayName: mathematical, radians
+        href: ../radians.md
+      - name: RAND
+        displayName: mathematical, rand
+        href: ../rand.md
+      - name: ROUND
+        displayName: mathematical, round
+        href: ../round.md
+      - name: SIGN
+        displayName: mathematical, sign
+        href: ../sign.md
   - name: Array functions
     items:
       - name: ARRAY_CONCAT
@@ -148,6 +178,38 @@ items:
       - name: REPLACE
         displayName: replace, string
         href: ../replace.md
+  - name: Date and time functions
+    items:
+      - name: DATETIMEADD
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimeadd, time
+        href: ../datetimeadd.md
+      - name: DATETIMEBIN
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimebin, time
+        href: ../datetimebin.md
+      - name: DATETIMEDIFF
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimediff, time
+        href: ../datetimediff.md
+      - name: DATETIMEFROMPARTS
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimefromparts, time
+        href: ../datetimefromparts.md
+      - name: DATETIMEPART
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimepart, time
+        href: ../datetimepart.md
+      - name: DATETIMETOTICKS
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimetoticks, time
+        href: ../datetimetoticks.md
+      - name: DATETIMETOTIMESTAMP
+        displayName: and, date, date and time, date-and-time, dateandtime, datetimetotimestamp, time
+        href: ../datetimetotimestamp.md
+      - name: GETCURRENTDATETIME
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrentdatetime, time
+        href: ../getcurrentdatetime.md
+      - name: GETCURRENTDATETIMESTATIC
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrentdatetimestatic, time
+        href: ../getcurrentdatetimestatic.md
+      - name: GETCURRENTTICKS
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrentticks, time
+        href: ../getcurrentticks.md
   - name: Item functions
     items:
       - name: DOCUMENTID
@@ -175,7 +237,7 @@ items:
       - name: IIF
         displayName: conditional, iif
         href: ../iif.md
-  - name: Type Checking functions
+  - name: Type checking functions
     items:
       - name: IS_ARRAY
         displayName: array, checking, is, is array, is-array, isarray, type, type checking, type-checking, typechecking
@@ -207,6 +269,15 @@ items:
       - name: IS_STRING
         displayName: checking, is, is string, is-string, isstring, string, type, type checking, type-checking, typechecking
         href: ../is-string.md
+      - name: STRINGTONULL
+        displayName: checking, stringtonull, type, type checking, type-checking, typechecking
+        href: ../stringtonull.md
+      - name: STRINGTONUMBER
+        displayName: checking, stringtonumber, type, type checking, type-checking, typechecking
+        href: ../stringtonumber.md
+      - name: STRINGTOOBJECT
+        displayName: checking, stringtoobject, type, type checking, type-checking, typechecking
+        href: ../stringtoobject.md
   - name: Spatial functions
     items:
       - name: ST_AREA
