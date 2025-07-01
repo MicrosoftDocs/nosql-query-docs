@@ -64,3 +64,15 @@ Here's a list of functions that the NoSQL query language currently supports:
 | | Description |
 | --- | --- |
 | **[`IIF`](iif.md)** | The `IIF` function returns one of two values, depending on whether the Boolean expression evaluates to true or false. |
+
+### Spatial functions
+
+| | Description |
+| --- | --- |
+| **[`ST_AREA`](st-area.md)** | The `ST_AREA` function returns the total area of a GeoJSON Polygon or MultiPolygon expression. |
+| **[`ST_DISTANCE`](st-distance.md)** | The `ST_DISTANCE` function returns the distance between two GeoJSON Point, Polygon, MultiPolygon or LineString expressions. |
+| **[`ST_INTERSECTS`](st-intersects.md)** | The `ST_INTERSECTS` function returns a boolean indicating whether the GeoJSON object specified in the first argument intersects the GeoJSON object in the second argument. |
+| **[`ST_ISVALID`](st-isvalid.md)** | The `ST_ISVALID` function returns a boolean value indicating whether the specified GeoJSON Point, Polygon, MultiPolygon, or LineString expression is valid. |
+| **[`ST_ISVALIDDETAILED`](st-isvaliddetailed.md)** | The `ST_ISVALIDDETAILED` function returns a JSON value containing a Boolean value if the specified GeoJSON Point, Polygon, or LineString expression is valid, and if invalid, the reason. |
+| **[`ST_WITHIN`](st-within.md)** | The `ST_WITHIN` function returns a boolean expression indicating whether the GeoJSON object specified in the first argument is within the GeoJSON object in the second argument. |
+| **[`VECTORDISTANCE`](vectordistance.md)** | The `VECTORDISTANCE` function returns the similarity score between two specified vectors. |

@@ -81,7 +81,7 @@ conceptualContent:
             - text: |-
                 VECTORDISTANCE
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/vectordistance
+              url: vectordistance.md
     - title: Full text search functions
       summary: Query using a specialized text index with support for advanced data querying capabilities like stemming, stop word removal, and tokenization.
       items:
