@@ -86,6 +86,11 @@ items:
       - name: SUM
         displayName: aggregation, sum
         href: ../sum.md
+  - name: Item functions
+    items:
+      - name: DOCUMENTID
+        displayName: documentid, item
+        href: ../documentid.md
   - name: Conditional functions
     items:
       - name: IIF
