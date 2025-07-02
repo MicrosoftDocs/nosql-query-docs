@@ -1,0 +1,83 @@
+### YamlMime:Hub
+title: NoSQL Documentation
+summary: NoSQL databases are designed to handle large volumes of data and provide flexible schemas, making them suitable for modern applications. Use Microsoft's NoSQL offerings to build scalable solutions that meet your growing data estate needs.
+brand: azure
+metadata:
+  title: Documentation
+  titleSuffix: NoSQL
+  author: seesharprun
+  ms.author: sidandrews
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ms.topic: hub-page
+  ms.date: 07/02/2025
+  ai-usage: ai-assisted
+highlightedContent:
+  items:
+    - title: Azure Cosmos DB for NoSQL
+      itemType: overview
+      url: /azure/cosmos-db/nosql
+    - title: Cosmos DB in Microsoft Fabric
+      itemType: overview
+      url: /fabric/databases/cosmos-db
+    - title: DocumentDB
+      itemType: reference
+      url: https://github.com/microsoft/documentdb
+    - title: Azure Cosmos DB for MongoDB vCore
+      itemType: overview
+      url: /azure/cosmos-db/mongodb/vcore
+    - title: Azure Redis
+      itemType: overview
+      url: /azure/redis
+    - title: Azure HDInsight
+      itemType: overview
+      url: /azure/hdinsight
+additionalContent:
+  sections:
+    - title: Azure Cosmos DB for NoSQL
+      summary: Azure Cosmos DB for NoSQL is a fully managed NoSQL database service that offers high availability, low latency, and global distribution.
+      items:
+        - title: Get started
+          links:
+            - text: Overview
+              url: /azure/cosmos-db/nosql/overview
+            - text: Deploy a .NET application template
+              url: /azure/cosmos-db/nosql/quickstart-dotnet
+            - text: Deploy a Node.js application template
+              url: /azure/cosmos-db/nosql/quickstart-nodejs
+            - text: Deploy a Python application template
+              url: /azure/cosmos-db/nosql/quickstart-python
+        - title: Query data
+          links:
+            - text: NoSQL query language
+              url: /azure/cosmos-db/nosql/query/working-with-json
+            - text: Functions
+              url: /azure/cosmos-db/nosql/query/system-functions
+            - text: Use Copilot to query data
+              url: /azure/cosmos-db/nosql/query/how-to-enable-use-copilot
+        - title: Samples
+          links:
+            - text: Solution accelerators
+              url: /azure/cosmos-db/solutions?pivots=api-nosql
+    - title: Azure Cosmos DB for MongoDB vCore
+      summary: Azure Cosmos DB for MongoDB vCore is a managed MongoDB-compatible database service with flexible scaling and high availability.
+      items:
+        - title: Get started
+          links:
+            - text: Overview
+              url: /azure/cosmos-db/mongodb/vcore/introduction
+        - title: Query data
+          links:
+            - text: MongoDB query language
+              url: /azure/cosmos-db/mongodb/vcore/commands/
+    - title: Cosmos DB in Microsoft Fabric
+      summary: Cosmos DB in Microsoft Fabric provides a unified data platform for building and deploying applications with NoSQL capabilities.
+      items:
+        - title: Get started
+          links:
+            - text: Overview
+              url: /fabric/database/cosmos-db/overview
+            - text: Create a Cosmos DB database in Microsoft Fabric
+              url: /fabric/databases/cosmos-db/quickstart-portal
+            - text: Connect from your local development environment
+              url: /fabric/databases/cosmos-db/how-to-connect-development
