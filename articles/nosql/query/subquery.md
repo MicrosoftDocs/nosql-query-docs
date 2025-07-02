@@ -2,7 +2,7 @@
 title: Subqueries
 description: Use different types of subqueries for complex query statements in the NoSQL query language.
 ms.date: 07/02/2025
-ai-usage: ai-assisted
+ai-usage: ai-generated
 show_latex: true
 ---
 
