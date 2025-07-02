@@ -155,10 +155,8 @@
         "**/*.yml": "nosql"
       },
       "ms.topic": {
-        "**/*.md": "language-reference",
-        "**/*.yml": "language-reference",
-        "functions/**/*.md": "generated-reference",
-        "functions/**/*.yml": "generated-reference"
+        "**/*.md": "generated-reference",
+        "**/*.yml": "generated-reference"
       },
       "ms.devlang": {
         "**/*.md": "nosql",
@@ -169,8 +167,8 @@
         "**/*.yml": "nosql-query-reference"
       },
       "ai-usage": {
-        "functions/**/*.md": "ai-assisted",
-        "functions/**/*.yml": "ai-assisted"
+        "**/*.md": "ai-assisted",
+        "**/*.yml": "ai-assisted"
       },
       "appliesto": {
         "**/*.md": [
