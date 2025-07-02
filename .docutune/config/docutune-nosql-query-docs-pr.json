@@ -1,6 +1,10 @@
 {
   "Docsets": [
     {
+      "DocsetName": "nosql",
+      "BuildSourceFolder": "nosql"
+    },
+    {
       "DocsetName": "nosql-query",
       "BuildSourceFolder": "articles/nosql/query"
     }
