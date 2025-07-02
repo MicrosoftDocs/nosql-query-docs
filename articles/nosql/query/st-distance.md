@@ -1,7 +1,7 @@
 ---
 title: ST_DISTANCE
 description: The `ST_DISTANCE` function returns the distance between two GeoJSON Point, Polygon, MultiPolygon or LineString expressions.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `ST_DISTANCE` (NoSQL query)

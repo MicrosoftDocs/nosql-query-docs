@@ -1,7 +1,7 @@
 ---
 title: Scalar expressions
 description: Use symbols and operators in scalar expressions within the NoSQL query language to perform complex evaluations to a single result value.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # Scalar expressions in NoSQL query language

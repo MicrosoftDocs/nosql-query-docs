@@ -1,7 +1,7 @@
 ---
 title: ST_ISVALID
 description: The `ST_ISVALID` function returns a boolean value indicating whether the specified GeoJSON Point, Polygon, MultiPolygon, or LineString expression is valid.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `ST_ISVALID` (NoSQL query)
