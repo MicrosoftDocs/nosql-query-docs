@@ -1,7 +1,7 @@
 ---
 title: VECTORDISTANCE
 description: The `VECTORDISTANCE` function returns the similarity score between two specified vectors.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `VECTORDISTANCE` (NoSQL query)

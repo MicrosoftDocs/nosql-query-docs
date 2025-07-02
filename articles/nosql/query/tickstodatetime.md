@@ -1,7 +1,7 @@
 ---
 title: TICKSTODATETIME
 description: The `TICKSTODATETIME` function converts the specified number of ticks to a date and time value.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `TICKSTODATETIME` (NoSQL query)
