@@ -1,7 +1,7 @@
 ---
 title: ARRAY_CONTAINS_ANY
 description: The `ARRAY_CONTAINS_ANY` function returns a boolean indicating whether the array contains any of the specified values.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `ARRAY_CONTAINS_ANY` (NoSQL query)
