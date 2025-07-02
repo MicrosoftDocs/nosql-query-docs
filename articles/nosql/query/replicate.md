@@ -1,7 +1,7 @@
 ---
 title: REPLICATE
 description: The `REPLICATE` function returns a string value repeated a specific number of times.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `REPLICATE` (NoSQL query)
