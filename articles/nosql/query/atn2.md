@@ -1,7 +1,7 @@
 ---
 title: ATN2
 description: The `ATN2` function calculates the principal value of the arctangent of `y/x`, expressed in radians.
-ms.date: 06/27/2025
+ms.date: 07/02/2025
 ---
 
 # `ATN2` (NoSQL query)
