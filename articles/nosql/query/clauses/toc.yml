@@ -6,16 +6,16 @@ items:
     displayName: clause, from
     href: ../from.md
   - name: GROUP BY
-    displayName: by, clause, group, group by, group-by
+    displayName: by, clause, group, group by, group-by, groupby
     href: ../group-by.md
   - name: OFFSET LIMIT
-    displayName: clause, limit, offset, offset limit, offset-limit
+    displayName: clause, limit, offset, offset limit, offset-limit, offsetlimit
     href: ../offset-limit.md
   - name: ORDER BY RANK
-    displayName: by, clause, order, order by rank, order-by-rank, rank
+    displayName: by, clause, order, order by rank, order-by-rank, orderbyrank, rank
     href: ../order-by-rank.md
   - name: ORDER BY
-    displayName: by, clause, order, order by, order-by
+    displayName: by, clause, order, order by, order-by, orderby
     href: ../order-by.md
   - name: SELECT
     displayName: clause, select
