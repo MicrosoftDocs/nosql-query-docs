@@ -1,7 +1,7 @@
 ---
 title: DATETIMEBIN
 description: The `DATETIMEBIN` function returns a date and time string value that is the result of binning (or rounding) a part of the provided date and time string.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `DATETIMEBIN` (NoSQL query)

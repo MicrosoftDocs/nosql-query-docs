@@ -1,7 +1,7 @@
 ---
 title: POWER
 description: The `POWER` function returns the value of the specified expression multipled by itself the given number of times.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `POWER` (NoSQL query)

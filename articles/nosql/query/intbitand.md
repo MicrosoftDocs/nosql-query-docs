@@ -1,7 +1,7 @@
 ---
 title: INTBITAND
 description: The `INTBITAND` function returns a comparison of the bits of each operand using an inclusive AND operator.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `INTBITAND` (NoSQL query)

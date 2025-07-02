@@ -1,7 +1,7 @@
 ---
 title: Functions
 description: The NoSQL query language provides many built-in functions for common tasks across a wide variety of categories.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # NoSQL query language functions

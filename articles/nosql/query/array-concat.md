@@ -1,7 +1,7 @@
 ---
 title: ARRAY_CONCAT
 description: The `ARRAY_CONCAT` function returns an array that is the result of concatenating two or more array values.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `ARRAY_CONCAT` (NoSQL query)

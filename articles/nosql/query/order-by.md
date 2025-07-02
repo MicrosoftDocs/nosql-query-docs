@@ -1,7 +1,7 @@
 ---
 title: ORDER BY
 description: The `ORDER BY` clause returns the sorted result set of a query based on one or more expressions.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `ORDER BY` (NoSQL query)

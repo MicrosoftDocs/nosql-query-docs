@@ -1,7 +1,7 @@
 ---
 title: ST_INTERSECTS
 description: The `ST_INTERSECTS` function returns a boolean indicating whether the GeoJSON object specified in the first argument intersects the GeoJSON object in the second argument.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `ST_INTERSECTS` (NoSQL query)

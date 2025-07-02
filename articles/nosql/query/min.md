@@ -1,7 +1,7 @@
 ---
 title: MIN
 description: The `MIN` function returns the minimum value of the specified expression.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `MIN` (NoSQL query)

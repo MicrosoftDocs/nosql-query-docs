@@ -1,7 +1,7 @@
 ---
 title: BETWEEN
 description: The `BETWEEN` keyword evaluates to a boolean indicating whether the target value is between two specified values, inclusive.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `BETWEEN` (NoSQL query)

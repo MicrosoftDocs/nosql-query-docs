@@ -1,7 +1,7 @@
 ---
 title: DATETIMEFROMPARTS
 description: The `DATETIMEFROMPARTS` function returns a date and time string value constructed from input numeric values for various date and time parts.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `DATETIMEFROMPARTS` (NoSQL query)

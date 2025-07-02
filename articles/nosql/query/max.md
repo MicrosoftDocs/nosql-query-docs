@@ -1,7 +1,7 @@
 ---
 title: MAX
 description: The `MAX` function returns the maximum value of the specified expression.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `MAX` (NoSQL query)

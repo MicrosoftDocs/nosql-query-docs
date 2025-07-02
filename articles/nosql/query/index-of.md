@@ -1,7 +1,7 @@
 ---
 title: INDEX-OF
 description: The `INDEX_OF` function returns the index of the first occurrence of a string.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `INDEX-OF` (NoSQL query)

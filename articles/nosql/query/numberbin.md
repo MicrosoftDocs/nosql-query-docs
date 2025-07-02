@@ -1,7 +1,7 @@
 ---
 title: NUMBERBIN
 description: The `NUMBERBIN` function calculates the input value rounded to a multiple of the specified size.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `NUMBERBIN` (NoSQL query)

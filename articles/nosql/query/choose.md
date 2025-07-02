@@ -1,7 +1,7 @@
 ---
 title: CHOOSE
 description: The `CHOOSE` function returns the expression at the specified index of a list, or Undefined if the index exceeds the bounds of the list.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `CHOOSE` (NoSQL query)

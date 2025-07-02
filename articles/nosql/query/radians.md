@@ -1,7 +1,7 @@
 ---
 title: RADIANS
 description: The `RADIANS` function returns the corresponding angle in radians for an angle specified in degrees.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `RADIANS` (NoSQL query)

@@ -1,7 +1,7 @@
 ---
 title: IS_DEFINED
 description: The `IS_DEFINED` function returns a boolean indicating if the property has been assigned a value.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `IS_DEFINED` (NoSQL query)

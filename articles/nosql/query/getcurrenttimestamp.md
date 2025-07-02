@@ -1,7 +1,7 @@
 ---
 title: GETCURRENTTIMESTAMP
 description: The `GETCURRENTTIMESTAMP` function returns the current timestamp in milliseconds since the Unix epoch.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `GETCURRENTTIMESTAMP` (NoSQL query)

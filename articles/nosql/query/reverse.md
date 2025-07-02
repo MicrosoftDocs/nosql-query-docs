@@ -1,7 +1,7 @@
 ---
 title: REVERSE
 description: The `REVERSE` function returns the reverse order of a string value.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `REVERSE` (NoSQL query)

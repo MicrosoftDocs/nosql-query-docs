@@ -1,7 +1,7 @@
 ---
 title: OBJECTTOARRAY
 description: The `OBJECTTOARRAY` function converts field/value pairs in a JSON object to a JSON array.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `OBJECTTOARRAY` (NoSQL query)

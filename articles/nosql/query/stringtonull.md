@@ -1,7 +1,7 @@
 ---
 title: STRINGTONULL
 description: The `STRINGTONULL` function converts a string expression to `null`.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `STRINGTONULL` (NoSQL query)

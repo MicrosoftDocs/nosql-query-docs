@@ -1,7 +1,7 @@
 ---
 title: ROUND
 description: The `ROUND` function returns a numeric value rounded to the closest integer value.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `ROUND` (NoSQL query)

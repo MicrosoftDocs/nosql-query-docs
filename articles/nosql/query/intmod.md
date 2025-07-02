@@ -1,7 +1,7 @@
 ---
 title: INTMOD
 description: The `INTMOD` function returns the remainder of dividing the first integer value by the second.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `INTMOD` (NoSQL query)
