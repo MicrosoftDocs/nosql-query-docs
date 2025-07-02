@@ -1,7 +1,7 @@
 ---
 title: Constants
 description: Use literal or scalar value constants in the NoSQL query language to represent a specific data value.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # Constants in NoSQL query language

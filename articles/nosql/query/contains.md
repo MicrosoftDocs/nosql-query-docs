@@ -1,7 +1,7 @@
 ---
 title: CONTAINS
 description: The `CONTAINS` function returns a boolean indicating whether the first string expression contains the second string expression.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `CONTAINS` (NoSQL query)
