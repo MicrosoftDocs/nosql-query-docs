@@ -1,7 +1,7 @@
 ---
 title: STRINGTOOBJECT
 description: The `STRINGTOOBJECT` function converts a string expression to an object.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `STRINGTOOBJECT` (NoSQL query)

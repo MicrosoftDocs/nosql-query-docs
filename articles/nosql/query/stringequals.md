@@ -1,7 +1,7 @@
 ---
 title: STRINGEQUALS
 description: The `STRINGEQUALS` function returns a boolean indicating whether the first string expression matches the second.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `STRINGEQUALS` (NoSQL query)
