@@ -20,9 +20,6 @@ items:
   - name: SELECT
     displayName: clause, select
     href: ../select.md
-  - name: SUBQUERY
-    displayName: clause, subquery
-    href: ../subquery.md
   - name: WHERE
     displayName: clause, where
     href: ../where.md
