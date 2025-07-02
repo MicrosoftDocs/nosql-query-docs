@@ -1,7 +1,7 @@
 ---
 title: GETCURRENTTICKS
 description: The `GETCURRENTTICKS` function returns the current UTC time as the number of 100-nanosecond intervals (ticks) that have elapsed since 0001-01-01T00:00:00.0000000Z.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `GETCURRENTTICKS` (NoSQL query)
