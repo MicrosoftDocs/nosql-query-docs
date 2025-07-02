@@ -1,7 +1,7 @@
 ---
 title: IS_STRING
 description: The `IS_STRING` function returns a boolean value indicating if the type of the specified expression is a string.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `IS_STRING` (NoSQL query)
