@@ -97,6 +97,21 @@ items:
       - name: SIGN
         displayName: mathematical, sign
         href: ../sign.md
+      - name: SIN
+        displayName: mathematical, sin
+        href: ../sin.md
+      - name: SQRT
+        displayName: mathematical, sqrt
+        href: ../sqrt.md
+      - name: SQUARE
+        displayName: mathematical, square
+        href: ../square.md
+      - name: TAN
+        displayName: mathematical, tan
+        href: ../tan.md
+      - name: TRUNC
+        displayName: mathematical, trunc
+        href: ../trunc.md
   - name: Array functions
     items:
       - name: ARRAY_CONCAT

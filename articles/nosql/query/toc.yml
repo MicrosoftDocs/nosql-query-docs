@@ -22,6 +22,9 @@ items:
   - name: Scalar expressions
     displayName: scalar values
     href: scalar.md
+  - name: Subqueries
+    displayName: clause, subquery
+    href: subquery.md
   - name: Clauses
     displayName: clauses, expressions
     expanded: true
