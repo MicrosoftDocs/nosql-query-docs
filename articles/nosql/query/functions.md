@@ -47,6 +47,11 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`RAND`](rand.md)** | The `RAND` function returns a randomly generated numeric value from zero to one. |
 | **[`ROUND`](round.md)** | The `ROUND` function returns a numeric value rounded to the closest integer value. |
 | **[`SIGN`](sign.md)** | The `SIGN` function returns the positive (+1), zero (0), or negative (-1) sign of the specified numeric expression. |
+| **[`SIN`](sin.md)** | The `SIN` function returns the trigonometric sine of the specified angle in radians. |
+| **[`SQRT`](sqrt.md)** | The `SQRT` function returns the square root of the specified numeric value. |
+| **[`SQUARE`](square.md)** | The `SQUARE` function returns the square of the specified numeric value. |
+| **[`TAN`](tan.md)** | The `TAN` function returns the trigonometric tangent of the specified angle in radians. |
+| **[`TRUNC`](trunc.md)** | The `TRUNC` function returns a numeric value truncated to the closest integer value. |
 
 ### Array functions
 
