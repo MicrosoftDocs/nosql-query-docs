@@ -1,7 +1,7 @@
 ---
 title: ST_AREA
 description: The `ST_AREA` function returns the total area of a GeoJSON Polygon or MultiPolygon expression.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `ST_AREA` (NoSQL query)

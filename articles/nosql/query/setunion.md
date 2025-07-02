@@ -1,7 +1,7 @@
 ---
 title: SETUNION
 description: The `SETUNION` function returns a set of expressions containing all expressions from two gathered sets with no duplicates.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `SETUNION` (NoSQL query)

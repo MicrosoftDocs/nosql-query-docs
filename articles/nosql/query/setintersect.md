@@ -1,7 +1,7 @@
 ---
 title: SETINTERSECT
 description: The `SETINTERSECT` function returns the set of expressions that is contained in both input arrays with no duplicates.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `SETINTERSECT` (NoSQL query)
