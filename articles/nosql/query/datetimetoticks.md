@@ -1,7 +1,7 @@
 ---
 title: DATETIMETOTICKS
 description: The `DATETIMETOTICKS` function converts the specified DateTime to ticks. A single tick represents 100 nanoseconds or 0.0000001 of a second.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `DATETIMETOTICKS` (NoSQL query)

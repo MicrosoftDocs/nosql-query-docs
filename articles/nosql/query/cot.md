@@ -1,7 +1,7 @@
 ---
 title: COT
 description: The `COT` function calculates the trigonometric cotangent of the specified angle in radians.
-ms.date: 06/27/2025
+ms.date: 07/02/2025
 ---
 
 # `COT` (NoSQL query)
