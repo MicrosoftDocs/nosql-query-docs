@@ -1,7 +1,7 @@
 ---
 title: ACOS
 description: The `ACOS` function calculates the trigonometric arccosine of the specified numeric value. The arccosine is the angle, in radians, whose cosine is the specified numeric expression.
-ms.date: 06/27/2025
+ms.date: 07/02/2025
 ---
 
 # `ACOS` (NoSQL query)

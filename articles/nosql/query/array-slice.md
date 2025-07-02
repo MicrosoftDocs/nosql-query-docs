@@ -1,7 +1,7 @@
 ---
 title: ARRAY_SLICE
 description: The `ARRAY_SLICE` function returns a subset of an array expression using the index and length specified.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `ARRAY_SLICE` (NoSQL query)
