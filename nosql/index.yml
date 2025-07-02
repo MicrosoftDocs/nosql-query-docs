@@ -18,8 +18,8 @@ highlightedContent:
       itemType: overview
       url: /azure/cosmos-db/nosql
     - title: Cosmos DB in Microsoft Fabric
-      itemType: overview
-      url: /fabric/databases/cosmos-db
+      itemType: whats-new
+      url: https://blog.fabric.microsoft.com/blog/22987
     - title: DocumentDB
       itemType: reference
       url: https://github.com/microsoft/documentdb
@@ -50,11 +50,11 @@ additionalContent:
         - title: Query data
           links:
             - text: NoSQL query language
-              url: /azure/cosmos-db/nosql/query/working-with-json
+              url: /nosql/query
+            - text: Get started with JSON
+              url: /nosql/query/get-started-json
             - text: Functions
-              url: /azure/cosmos-db/nosql/query/system-functions
-            - text: Use Copilot to query data
-              url: /azure/cosmos-db/nosql/query/how-to-enable-use-copilot
+              url: /nosql/query/functions
         - title: Samples
           links:
             - text: Solution accelerators
@@ -73,11 +73,7 @@ additionalContent:
     - title: Cosmos DB in Microsoft Fabric
       summary: Cosmos DB in Microsoft Fabric provides a unified data platform for building and deploying applications with NoSQL capabilities.
       items:
-        - title: Get started
+        - title: Learn more
           links:
-            - text: Overview
-              url: /fabric/database/cosmos-db/overview
-            - text: Create a Cosmos DB database in Microsoft Fabric
-              url: /fabric/databases/cosmos-db/quickstart-portal
-            - text: Connect from your local development environment
-              url: /fabric/databases/cosmos-db/how-to-connect-development
+            - text: Announcement
+              url: https://blog.fabric.microsoft.com/blog/22987
