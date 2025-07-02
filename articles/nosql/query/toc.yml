@@ -24,7 +24,7 @@ items:
     href: scalar.md
   - name: Subqueries
     displayName: clause, subquery
-    href: ../subquery.md
+    href: subquery.md
   - name: Clauses
     displayName: clauses, expressions
     expanded: true
