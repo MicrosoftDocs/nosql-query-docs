@@ -1,7 +1,7 @@
 ---
 title: STRINGTOBOOLEAN
 description: The `STRINGTOBOOLEAN` function converts a string expression to a boolean.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `STRINGTOBOOLEAN` (NoSQL query)

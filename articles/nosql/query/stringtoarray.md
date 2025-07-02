@@ -1,7 +1,7 @@
 ---
 title: STRINGTOARRAY
 description: The `STRINGTOARRAY` function converts a string expression to an array.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `STRINGTOARRAY` (NoSQL query)

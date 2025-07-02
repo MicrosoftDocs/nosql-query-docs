@@ -1,7 +1,7 @@
 ---
 title: STRINGSPLIT
 description: The `STRINGSPLIT` function returns an array of substrings obtained from separating the source string by the specified delimiter.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `STRINGSPLIT` (NoSQL query)
