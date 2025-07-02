@@ -1,7 +1,7 @@
 ---
 title: IS_NULL
 description: The `IS_NULL` function returns a boolean value indicating if the type of the specified expression is `null`.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `IS_NULL` (NoSQL query)

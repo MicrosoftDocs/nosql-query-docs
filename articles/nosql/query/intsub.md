@@ -1,7 +1,7 @@
 ---
 title: INTSUB
 description: The `INTSUB` function returns the result of subtracting the second integer value from the first.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `INTSUB` (NoSQL query)

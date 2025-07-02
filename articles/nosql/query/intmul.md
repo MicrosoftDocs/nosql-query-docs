@@ -1,7 +1,7 @@
 ---
 title: INTMUL
 description: The `INTMUL` function returns the product of two integer values.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `INTMUL` (NoSQL query)

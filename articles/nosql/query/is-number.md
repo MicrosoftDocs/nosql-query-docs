@@ -1,7 +1,7 @@
 ---
 title: IS_NUMBER
 description: The `IS_NUMBER` function returns a boolean value indicating if the type of the specified expression is a number.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `IS_NUMBER` (NoSQL query)
