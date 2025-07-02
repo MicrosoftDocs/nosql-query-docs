@@ -20,8 +20,8 @@ VECTORDISTANCE(<vector_expr_1>, <vector_expr_2>, <bool_expr>, <obj_expr>)
 
 | | Description |
 | --- | --- |
-| **`vector_expr_1`** | An array of `float32` or smaller. |
-| **`vector_expr_2`** | An array of `float32` or smaller. |
+| **`vector_expr_1`** | An one-dimensional array of `float32` or smaller. |
+| **`vector_expr_2`** | An one-dimensional array of `float32` or smaller. |
 | **`bool_expr`** | An optional boolean specifying how the computed value is used in an ORDER BY expression. If `true`, then brute force is used. A value of `false` uses any index defined on the vector property, if it exists. Default value is `false`. |
 | **`obj_expr`** | An optional JSON formatted object literal used to specify options for the vector distance calculation. Valid items include `distanceFunction`, `dataType`, and `searchListSizeMultiplier`. |
 
@@ -58,3 +58,7 @@ ORDER BY VECTORDISTANCE(c.vector, [1,2,3]) AS SimilarityScore
   }
 ]
 ```
+
+## Remarks
+
+- If a multi-dimension array is provided for `vector_expr_1` or `vector_expr_2`, the function will not return a `SimularityScore` value and will not return an error.
