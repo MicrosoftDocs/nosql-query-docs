@@ -1,7 +1,7 @@
 ---
 title: SUBSTRING
 description: The `SUBSTRING` function returns part of a string expression starting at the specified position and of the specified length, or to the end of the string.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `SUBSTRING` (NoSQL query)

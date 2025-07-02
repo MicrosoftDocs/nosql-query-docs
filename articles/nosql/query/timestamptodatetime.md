@@ -1,7 +1,7 @@
 ---
 title: TIMESTAMPTODATETIME
 description: The `TIMESTAMPTODATETIME` function converts the specified timestamp to a date and time value.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `TIMESTAMPTODATETIME` (NoSQL query)

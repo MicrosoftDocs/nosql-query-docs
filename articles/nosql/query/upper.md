@@ -1,7 +1,7 @@
 ---
 title: UPPER
 description: The `UPPER` function returns a string expression after converting lowercase character data to uppercase.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # `UPPER` (NoSQL query)
