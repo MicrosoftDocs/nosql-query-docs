@@ -1,7 +1,7 @@
 ---
 title: Self-joins
 description: Use the `JOIN` keyword to perform a self-join on arrays within an item in the NoSQL query language.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ai-usage: ai-assisted
 ---
 

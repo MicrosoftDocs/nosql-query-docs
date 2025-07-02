@@ -1,7 +1,7 @@
 ---
 title: LENGTH
 description: The `LENGTH` function returns the number of characters in the specified string expression.
-ms.date: 06/30/2025
+ms.date: 07/02/2025
 ---
 
 # `LENGTH` (NoSQL query)
