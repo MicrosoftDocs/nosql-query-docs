@@ -155,7 +155,7 @@ conceptualContent:
             - text: |-
                 STARTSWITH
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/startswith
+              url: startswith.md
             - text: |-
                 ENDSWITH
               itemType: reference
@@ -163,7 +163,7 @@ conceptualContent:
             - text: |-
                 TRIM
               itemType: reference
-              url: /azure/cosmos-db/nosql/query/trim
+              url: trim.md
         - title: Mathematical functions
           links:
             - text: |-

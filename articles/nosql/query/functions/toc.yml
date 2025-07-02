@@ -178,6 +178,48 @@ items:
       - name: REPLACE
         displayName: replace, string
         href: ../replace.md
+      - name: REPLICATE
+        displayName: replicate, string
+        href: ../replicate.md
+      - name: REVERSE
+        displayName: reverse, string
+        href: ../reverse.md
+      - name: RIGHT
+        displayName: right, string
+        href: ../right.md
+      - name: RTRIM
+        displayName: rtrim, string
+        href: ../rtrim.md
+      - name: STARTSWITH
+        displayName: startswith, string
+        href: ../startswith.md
+      - name: STRINGEQUALS
+        displayName: string, stringequals
+        href: ../stringequals.md
+      - name: STRINGJOIN
+        displayName: string, stringjoin
+        href: ../stringjoin.md
+      - name: STRINGSPLIT
+        displayName: string, stringsplit
+        href: ../stringsplit.md
+      - name: STRINGTOARRAY
+        displayName: string, stringtoarray
+        href: ../stringtoarray.md
+      - name: STRINGTOBOOLEAN
+        displayName: string, stringtoboolean
+        href: ../stringtoboolean.md
+      - name: SUBSTRING
+        displayName: string, substring
+        href: ../substring.md
+      - name: TOSTRING
+        displayName: string, tostring
+        href: ../tostring.md
+      - name: TRIM
+        displayName: string, trim
+        href: ../trim.md
+      - name: UPPER
+        displayName: string, upper
+        href: ../upper.md
   - name: Date and time functions
     items:
       - name: DATETIMEADD
@@ -210,6 +252,21 @@ items:
       - name: GETCURRENTTICKS
         displayName: and, date, date and time, date-and-time, dateandtime, getcurrentticks, time
         href: ../getcurrentticks.md
+      - name: GETCURRENTTICKSSTATIC
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrentticksstatic, time
+        href: ../getcurrentticksstatic.md
+      - name: GETCURRENTTIMESTAMP
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrenttimestamp, time
+        href: ../getcurrenttimestamp.md
+      - name: GETCURRENTTIMESTAMPSTATIC
+        displayName: and, date, date and time, date-and-time, dateandtime, getcurrenttimestampstatic, time
+        href: ../getcurrenttimestampstatic.md
+      - name: TICKSTODATETIME
+        displayName: and, date, date and time, date-and-time, dateandtime, tickstodatetime, time
+        href: ../tickstodatetime.md
+      - name: TIMESTAMPTODATETIME
+        displayName: and, date, date and time, date-and-time, dateandtime, time, timestamptodatetime
+        href: ../timestamptodatetime.md
   - name: Item functions
     items:
       - name: DOCUMENTID

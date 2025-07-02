@@ -87,6 +87,20 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`LTRIM`](ltrim.md)** | The `LTRIM` function returns a string expression after it removes leading whitespace or specified characters. |
 | **[`REGEXMATCH`](regexmatch.md)** | The `REGEXMATCH` function returns a boolean indicating whether the provided string matches the specified regular expression. Regular expressions are a concise and flexible notation for finding patterns of text. |
 | **[`REPLACE`](replace.md)** | The `REPLACE` function returns a string with all occurrences of a specified string replaced. |
+| **[`REPLICATE`](replicate.md)** | The `REPLICATE` function returns a string value repeated a specific number of times. |
+| **[`REVERSE`](reverse.md)** | The `REVERSE` function returns the reverse order of a string value. |
+| **[`RIGHT`](right.md)** | The `RIGHT` function returns the right part of a string up to the specified number of characters. |
+| **[`RTRIM`](rtrim.md)** | The `RTRIM` function returns a string expression after it removes trailing whitespace or specified characters. |
+| **[`STARTSWITH`](startswith.md)** | The `STARTSWITH` function returns a boolean value indicating whether the first string expression starts with the second. |
+| **[`STRINGEQUALS`](stringequals.md)** | The `STRINGEQUALS` function returns a boolean indicating whether the first string expression matches the second. |
+| **[`STRINGJOIN`](stringjoin.md)** | The `STRINGJOIN` function returns a string, which concatenates the elements of a specified array, using the specified separator between each element. |
+| **[`STRINGSPLIT`](stringsplit.md)** | The `STRINGSPLIT` function returns an array of substrings obtained from separating the source string by the specified delimiter. |
+| **[`STRINGTOARRAY`](stringtoarray.md)** | The `STRINGTOARRAY` function converts a string expression to an array. |
+| **[`STRINGTOBOOLEAN`](stringtoboolean.md)** | The `STRINGTOBOOLEAN` function converts a string expression to a boolean. |
+| **[`SUBSTRING`](substring.md)** | The `SUBSTRING` function returns part of a string expression starting at the specified position and of the specified length, or to the end of the string. |
+| **[`TOSTRING`](tostring.md)** | The `TOSTRING` function returns a string representation of a value. |
+| **[`TRIM`](trim.md)** | The `TRIM` function returns a string expression after it removes leading and trailing whitespace or custom characters. |
+| **[`UPPER`](upper.md)** | The `UPPER` function returns a string expression after converting lowercase character data to uppercase. |
 
 ### Date and time functions
 
@@ -102,6 +116,11 @@ Here's a list of functions that the NoSQL query language currently supports:
 | **[`GETCURRENTDATETIME`](getcurrentdatetime.md)** | The `GETCURRENTDATETIME` function returns the current UTC (Coordinated Universal Time) date and time as an **ISO 8601** string. |
 | **[`GETCURRENTDATETIMESTATIC`](getcurrentdatetimestatic.md)** | The `GETCURRENTDATETIMESTATIC` function returns the same UTC date and time value for all items in the query, as an ISO 8601 string. This is useful for consistent timestamps across query results. |
 | **[`GETCURRENTTICKS`](getcurrentticks.md)** | The `GETCURRENTTICKS` function returns the current UTC time as the number of 100-nanosecond intervals (ticks) that have elapsed since 0001-01-01T00:00:00.0000000Z. |
+| **[`GETCURRENTTICKSSTATIC`](getcurrentticksstatic.md)** | The `GETCURRENTTICKSSTATIC` function returns a static nanosecond ticks value (100-nanosecond intervals since the Unix epoch) for all items in the same partition. |
+| **[`GETCURRENTTIMESTAMP`](getcurrenttimestamp.md)** | The `GETCURRENTTIMESTAMP` function returns the current timestamp in milliseconds since the Unix epoch. |
+| **[`GETCURRENTTIMESTAMPSTATIC`](getcurrenttimestampstatic.md)** | The `GETCURRENTTIMESTAMPSTATIC` function returns a static timestamp value (milliseconds since the Unix epoch) for all items in the same partition. |
+| **[`TICKSTODATETIME`](tickstodatetime.md)** | The `TICKSTODATETIME` function converts the specified number of ticks to a date and time value. |
+| **[`TIMESTAMPTODATETIME`](timestamptodatetime.md)** | The `TIMESTAMPTODATETIME` function converts the specified timestamp to a date and time value. |
 
 ### Item functions
 
