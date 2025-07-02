@@ -30,7 +30,7 @@ Returns an expression, which could be of any type.
 
 This section contains examples of how to use this query language construct.
 
-Consider this sample set of documents within the `` collection for these examples.
+Consider this sample set of documents within the `Products` collection for these examples.
 
 ```json
 [

@@ -1,12 +1,14 @@
 ---
 title: DOCUMENTID
-description: The `DOCUMENTID` function returns the unique document ID for a given item in the container. This can be used for filtering or retrieving the document&#39;s internal identifier.
+description: The `DOCUMENTID` function returns the unique document ID for a given item in the container.
 ms.date: 07/02/2025
 ---
 
 # `DOCUMENTID` (NoSQL query)
 
-The `DOCUMENTID` function returns the unique document ID for a given item in the container. This can be used for filtering or retrieving the document's internal identifier.
+The `DOCUMENTID` function returns the unique document ID for a given item in the container.
+
+This can be used for filtering or retrieving the document's internal identifier.
 
 ## Syntax
 
