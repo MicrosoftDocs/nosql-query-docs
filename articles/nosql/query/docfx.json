@@ -131,38 +131,53 @@
     },
     "fileMetadata": {
       "titleSuffix": {
-        "**/*.{md,yml}": "NoSQL Query Language"
+        "**/*.md": "NoSQL Query Language",
+        "**/*.yml": "NoSQL Query Language"
       },
       "author": {
-        "**/*.{md,yml}": "seesharprun"
+        "**/*.md": "seesharprun",
+        "**/*.yml": "seesharprun"
       },
       "ms.author": {
-        "**/*.{md,yml}": "sidandrews"
+        "**/*.md": "sidandrews",
+        "**/*.yml": "sidandrews"
       },
       "ms.reviewer": {
-        "**/*.{md,yml}": "jacodel"
+        "**/*.md": "jacodel",
+        "**/*.yml": "jacodel"
       },
       "ms.service": {
-        "**/*.{md,yml}": "azure-cosmos-db"
+        "**/*.md": "azure-cosmos-db",
+        "**/*.yml": "azure-cosmos-db"
       },
       "ms.subservice": {
-        "**/*.{md,yml}": "nosql"
+        "**/*.md": "nosql",
+        "**/*.yml": "nosql"
       },
       "ms.topic": {
-        "**/*.{md,yml}": "language-reference",
-        "functions/**/*.{md,yml}": "generated-reference"
+        "**/*.md": "language-reference",
+        "**/*.yml": "language-reference",
+        "functions/**/*.md": "generated-reference",
+        "functions/**/*.yml": "generated-reference"
       },
       "ms.devlang": {
-        "**/*.{md,yml}": "nosql"
+        "**/*.md": "nosql",
+        "**/*.yml": "nosql"
       },
       "ms.collection": {
-        "**/*.{md,yml}": "nosql-query-reference"
+        "**/*.md": "nosql-query-reference",
+        "**/*.yml": "nosql-query-reference"
       },
       "ai-usage": {
-        "functions/**/*.{md,yml}": "ai-assisted"
+        "functions/**/*.md": "ai-assisted",
+        "functions/**/*.yml": "ai-assisted"
       },
       "appliesto": {
-        "**/*.{md,yml}": [
+        "**/*.md": [
+          "Azure Cosmos DB for NoSQL",
+          "Cosmos DB in Fabric"
+        ],
+        "**/*.yml": [
           "Azure Cosmos DB for NoSQL",
           "Cosmos DB in Fabric"
         ]
