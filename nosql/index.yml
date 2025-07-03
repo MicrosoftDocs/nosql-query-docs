@@ -4,11 +4,6 @@ summary: NoSQL databases are designed to handle large volumes of data and provid
 brand: azure
 metadata:
   title: Documentation
-  titleSuffix: NoSQL
-  author: seesharprun
-  ms.author: sidandrews
-  ms.service: azure-cosmos-db
-  ms.subservice: nosql
   ms.topic: hub-page
   ms.date: 07/02/2025
   ai-usage: ai-assisted
