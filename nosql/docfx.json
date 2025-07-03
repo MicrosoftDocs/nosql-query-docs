@@ -23,8 +23,11 @@
     "resource": [
       {
         "files": [
+          "**/*.gif",
+          "**/*.jpeg",
+          "**/*.jpg",
           "**/*.png",
-          "**/*.jpg"
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -38,11 +41,50 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-NoSQL",
+      "brand": "Azure",
+      "permissioned-type": "public",
+      "recommendations": true,
+      "recommendation_types": [
+        "Training",
+        "Certification"
+      ],
       "breadcrumb_path": "~/breadcrumb/nosql/toc.yml",
       "feedback_system": "Standard",
-      "permissioned-type": "public"
+      "feedback_product_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
+      "feedback_help_link_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
+      "feedback_help_link_type": "get-help-at-qna"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "titleSuffix": {
+        "**/*.md": "NoSQL",
+        "**/*.yml": "NoSQL"
+      },
+      "author": {
+        "**/*.md": "seesharprun",
+        "**/*.yml": "seesharprun"
+      },
+      "ms.author": {
+        "**/*.md": "sidandrews",
+        "**/*.yml": "sidandrews"
+      },
+      "ms.reviewer": {
+        "**/*.md": "mjbrown",
+        "**/*.yml": "mjbrown"
+      },
+      "ms.service": {
+        "**/*.md": "azure-cosmos-db",
+        "**/*.yml": "azure-cosmos-db"
+      },
+      "ms.subservice": {
+        "**/*.md": "nosql",
+        "**/*.yml": "nosql"
+      },
+      "ms.devlang": {
+        "**/*.md": "nosql",
+        "**/*.yml": "nosql"
+      }
+    },
     "template": []
   }
 }
