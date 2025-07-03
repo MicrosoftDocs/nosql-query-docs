@@ -83,10 +83,6 @@
       "ms.devlang": {
         "**/*.md": "nosql",
         "**/*.yml": "nosql"
-      },
-      "ai-usage": {
-        "**/*.md": "ai-assisted",
-        "**/*.yml": "ai-assisted"
       }
     },
     "template": []
