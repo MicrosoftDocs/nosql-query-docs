@@ -1,1 +1,13 @@
-{"BaseConfigruation":null,"Docsets":[{"DocsetName":"nosql","BuildSourceFolder":"nosql","BasePath":null}],"MetadataDelimiter":"\"","Exclude":[],"PreloadTOCFiles":[],"TermFiles":[],"ApplyPolicies":[]}
+{
+  "Docsets": [
+    {
+      "DocsetName": "nosql",
+      "BuildSourceFolder": "nosql"
+    }
+  ],
+  "MetadataDelimiter": "\"",
+  "Exclude": [],
+  "PreloadTOCFiles": [],
+  "TermFiles": [],
+  "ApplyPolicies": []
+}
