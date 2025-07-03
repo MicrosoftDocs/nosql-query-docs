@@ -1,17 +1,1 @@
-{
-  "Docsets": [
-    {
-      "DocsetName": "nosql",
-      "BuildSourceFolder": "nosql"
-    },
-    {
-      "DocsetName": "nosql-query",
-      "BuildSourceFolder": "articles/nosql/query"
-    }
-  ],
-  "MetadataDelimiter": "\"",
-  "Exclude": [],
-  "PreloadTOCFiles": [],
-  "TermFiles": [],
-  "ApplyPolicies": []
-}
+{"BaseConfigruation":null,"Docsets":[{"DocsetName":"nosql","BuildSourceFolder":"nosql","BasePath":null}],"MetadataDelimiter":"\"","Exclude":[],"PreloadTOCFiles":[],"TermFiles":[],"ApplyPolicies":[]}
