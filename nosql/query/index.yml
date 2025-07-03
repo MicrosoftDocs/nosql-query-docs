@@ -1,0 +1,220 @@
+### YamlMime:Hub
+title: NoSQL Query Language Documentation
+summary: Learn about the NoSQL query language used throughout products like Azure Cosmos DB for NoSQL and Cosmos DB in Fabric. Use the NoSQL query language to query data in loosely structured schemas while still using familiar American National Standards Institute (ANSI) Structured Query Language (SQL) keywords.
+brand: sql
+metadata:
+  title: Documentation
+  description: Learn about the NoSQL query language used in products like Azure Cosmos DB for NoSQL and Cosmos DB in Fabric. Use familiar ANSI SQL keywords to query loosely structured data.
+  ms.topic: hub-page
+  ms.date: 07/02/2025
+  ai-usage: ai-generated
+  no-loc:
+    - VECTORDISTANCE
+    - FULLTEXTCONTAINS
+    - FULLTEXTCONTAINSALL
+    - FULLTEXTCONTAINSANY
+    - FULLTEXTSCORE
+    - ORDER BY RANK
+    - RRF
+    - AVG
+    - COUNT
+    - SUM
+    - MIN
+    - MAX
+    - CONCAT
+    - CONTAINS
+    - STARTSWITH
+    - ENDSWITH
+    - TRIM
+    - ABS
+    - CEILING
+    - FLOOR
+    - ROUND
+    - ARRAY_LENGTH
+    - ARRAY_CONTAINS
+    - ARRAY_SLICE
+    - GETCURRENTTIMESTAMP
+    - GETCURRENTDATETIME
+    - DATE_ADD
+    - DATE_DIFF
+highlightedContent:
+  items:
+    - title: Overview
+      itemType: overview
+      url: overview.md
+    - title: Work with JSON
+      itemType: get-started
+      url: get-started-json.md
+    - title: Vector search
+      itemType: reference
+      url: vectordistance.md
+    - title: Samples
+      itemType: sample
+      url: https://github.com/azure-samples/cosmos-db-nosql-query-samples
+productDirectory:
+  title: Fundamentals
+  summary: Learn the fundamentals of finding data using the NoSQL query language.
+  items:
+    - title: Basic queries
+      imageSrc: ./media/index/query-simple.png
+      links:
+        - text: Work with JSON
+          url: get-started-json.md
+        - text: Use subqueries
+          url: subquery.md
+        - text: Explore reserved keywords
+          url: keywords.md
+        - text: Discover clauses
+          url: clauses.md
+    - title: Complex queries
+      imageSrc: ./media/index/query-complex.png
+      links:
+        - text: Create cross-products with JOIN
+          url: join.md
+        - text: Evaluate scalar expressions
+          url: scalar.md
+conceptualContent:
+  sections:
+    - title: Vector functions
+      summary: Find the similarity score between vectors and perform common vector operations for AI and machine learning solutions.
+      items:
+        - title: Similarity functions
+          links:
+            - text: |-
+                VECTORDISTANCE
+              itemType: reference
+              url: vectordistance.md
+    - title: Full text search functions
+      summary: Query using a specialized text index with support for advanced data querying capabilities like stemming, stop word removal, and tokenization.
+      items:
+        - title: Search functions
+          links:
+            - text: |-
+                FULLTEXTCONTAINS
+              itemType: reference
+              url: fulltextcontains.md
+            - text: |-
+                FULLTEXTCONTAINSALL
+              itemType: reference
+              url: fulltextcontainsall.md
+            - text: |-
+                FULLTEXTCONTAINSANY
+              itemType: reference
+              url: fulltextcontainsany.md
+        - title: Order and rank functions
+          links:
+            - text: |-
+                FULLTEXTSCORE
+              itemType: reference
+              url: fulltextscore.md
+            - text: |-
+                ORDER BY RANK
+              itemType: reference
+              url: order-by-rank.md
+        - title: Relevance ranking functions (RRF)
+          links:
+            - text: |-
+                RRF
+              itemType: reference
+              url: rrf.md
+    - title: System functions
+      summary: Use built-in system functions for the most common tasks across a wide variety of scenarios.
+      items:
+        - title: Aggregation functions
+          links:
+            - text: |-
+                AVG
+              itemType: reference
+              url: avg.md
+            - text: |-
+                COUNT
+              itemType: reference
+              url: count.md
+            - text: |-
+                SUM
+              itemType: reference
+              url: sum.md
+            - text: |-
+                MIN
+              itemType: reference
+              url: min.md
+            - text: |-
+                MAX
+              itemType: reference
+              url: max.md
+        - title: String functions
+          links:
+            - text: |-
+                CONCAT
+              itemType: reference
+              url: concat.md
+            - text: |-
+                CONTAINS
+              itemType: reference
+              url: contains.md
+            - text: |-
+                STARTSWITH
+              itemType: reference
+              url: startswith.md
+            - text: |-
+                ENDSWITH
+              itemType: reference
+              url: endswith.md
+            - text: |-
+                TRIM
+              itemType: reference
+              url: trim.md
+        - title: Mathematical functions
+          links:
+            - text: |-
+                ABS
+              itemType: reference
+              url: abs.md
+            - text: |-
+                CEILING
+              itemType: reference
+              url: ceiling.md
+            - text: |-
+                FLOOR
+              itemType: reference
+              url: floor.md
+            - text: |-
+                ROUND
+              itemType: reference
+              url: round.md
+        - title: Array functions
+          links:
+            - text: |-
+                ARRAY_LENGTH
+              itemType: reference
+              url: array-length.md
+            - text: |-
+                ARRAY_CONTAINS
+              itemType: reference
+              url: array-contains.md
+            - text: |-
+                ARRAY_SLICE
+              itemType: reference
+              url: array-slice.md
+            - text: |-
+                ARRAY_CONCAT
+              itemType: reference
+              url: array-concat.md
+        - title: Date and time functions
+          links:
+            - text: |-
+                GETCURRENTTICKS
+              itemType: reference
+              url: getcurrentticks.md
+            - text: |-
+                GETCURRENTDATETIME
+              itemType: reference
+              url: getcurrentdatetime.md
+            - text: |-
+                DATETIMEADD
+              itemType: reference
+              url: datetimeadd.md
+            - text: |-
+                DATETIMEDIFF
+              itemType: reference
+              url: datetimediff.md

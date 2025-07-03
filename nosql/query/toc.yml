@@ -1,0 +1,39 @@
+### YamlMime:TOC
+items:
+  - name: NoSQL query language documentation
+    href: index.yml
+  - name: Overview
+    displayName: introduction, welcome, start, getting started
+    href: overview.md
+  - name: Get started
+    items:
+      - name: Work with JSON
+        displayName: get started, quickstart, first query, JSON, JSON documents, JSON arrays, JSON objects
+        href: get-started-json.md
+      - name: Create subqueries
+        displayName: subqueries, subquery
+        href: subquery.md
+      - name: Perform self-joins
+        displayName: self-joins, join
+        href: join.md
+  - name: Constants
+    displayName: literals, values
+    href: constants.md
+  - name: Scalar expressions
+    displayName: scalar values
+    href: scalar.md
+  - name: Subqueries
+    displayName: clause, subquery
+    href: subquery.md
+  - name: Clauses
+    displayName: clauses, expressions
+    expanded: true
+    href: clauses/toc.yml
+  - name: Keywords
+    displayName: keywords, reserved words
+    expanded: true
+    href: keywords/toc.yml
+  - name: Functions
+    displayName: commands, operators
+    expanded: true
+    href: functions/toc.yml
