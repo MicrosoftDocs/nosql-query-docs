@@ -18,6 +18,13 @@
           "ThirdPartyNotices.md",
           "SECURITY.md"
         ]
+      },
+      {
+        "files": [
+          "zone-pivot-groups.yml"
+        ],
+        "src": "zone-pivots",
+        "dest": "zone-pivots/nosql/"
       }
     ],
     "resource": [
@@ -50,6 +57,7 @@
         "Certification"
       ],
       "breadcrumb_path": "~/breadcrumb/nosql/toc.yml",
+      "zone_pivot_group_filename": "zone-pivots/zone-pivot-groups.json",
       "feedback_system": "Standard",
       "feedback_product_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
       "feedback_help_link_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
@@ -58,7 +66,9 @@
     "fileMetadata": {
       "titleSuffix": {
         "**/*.md": "NoSQL",
-        "**/*.yml": "NoSQL"
+        "**/*.yml": "NoSQL",
+        "query/**/*.md": "NoSQL Query Language",
+        "query/**/*.yml": "NoSQL Query Language"
       },
       "author": {
         "**/*.md": "seesharprun",
@@ -69,8 +79,10 @@
         "**/*.yml": "sidandrews"
       },
       "ms.reviewer": {
-        "**/*.md": "mjbrown",
-        "**/*.yml": "mjbrown"
+        "*.md": "mjbrown",
+        "*.yml": "mjbrown",
+        "query/**/*.md": "jacodel",
+        "query/**/*.yml": "jacodel"
       },
       "ms.service": {
         "**/*.md": "azure-cosmos-db",
@@ -80,9 +92,31 @@
         "**/*.md": "nosql",
         "**/*.yml": "nosql"
       },
+      "ms.topic": {
+        "query/**/*.md": "generated-reference",
+        "query/**/*.yml": "generated-reference"
+      },
       "ms.devlang": {
         "**/*.md": "nosql",
         "**/*.yml": "nosql"
+      },
+      "ms.collection": {
+        "query/**/*.md": "nosql-query-reference",
+        "query/**/*.yml": "nosql-query-reference"
+      },
+      "ai-usage": {
+        "query/**/*.md": "ai-assisted",
+        "query/**/*.yml": "ai-assisted"
+      },
+      "appliesto": {
+        "query/**/*.md": [
+          "Azure Cosmos DB for NoSQL",
+          "Cosmos DB in Fabric"
+        ],
+        "query/**/*.yml": [
+          "Azure Cosmos DB for NoSQL",
+          "Cosmos DB in Fabric"
+        ]
       }
     },
     "template": []
