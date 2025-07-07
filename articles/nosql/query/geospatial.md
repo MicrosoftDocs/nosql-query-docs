@@ -6,43 +6,59 @@ ms.date: 07/07/2025
 
 # Geospatial data in NoSQL query language
 
-The NoSQL query langauge has built-in geospatial functionality to represent geometric shapes or actual locations/polygons on a map. Geospatial data often involves proximity queries. For example, the question "find all retail locations near my current location" is answered using a proximity query over multiple geospatial data object.
+The NoSQL query language has built-in geospatial functionality to represent geometric shapes or actual locations/polygons on a map. Geospatial data often involves proximity queries. For example, the question "find all retail locations near my current location" is answered using a proximity query over multiple geospatial data object.
 
 ## Use cases
 
 Common geospatial use cases include, but aren't limited to:
 
 - **Geolocation analytics**, driving specific location-based marketing initiatives.
+
 - **Location-based personalization**, for industries like retail and healthcare to improve user experience.
+
 - **Logistics enhancement**, for industries like transportation where optimization is critical.
+
 - **Risk Analysis**, for industries like insurance and finance to supplement other metadata.
+
 - **Situational awareness***, for proximity-based alerts and notifications.
 
 ## Introduction to spatial data
 
-Spatial data describes the position and shape of objects in space. In most applications, these points and shapes correspond to objects on the earth and geospatial data. Spatial data can be used to represent the location of a person, a place of interest, or the boundary of a city, or a lake.
+Spatial data describes the position and shape of objects in space. In most applications, these points and shapes correspond to objects on the earth and geospatial data. 
 
-The NoSQL query langauge supports two spatial data types: the **geometry** data type and the **geography** data type.
+Spatial data can be used to represent:
+
+- The location of a person
+
+- A place of interest
+
+- The boundary of a city, or a lake
+
+The NoSQL query language supports two spatial data types: the **geometry** data type and the **geography** data type.
 
 - The **geometry** type represents data in a Euclidean (flat) coordinate system. This type is useful for common geometric tasks, like measuring lines, intersecting polygons, and measuring distance between points.
+
 - The **geography** type represents data in a round-earth coordinate system. This type is useful for common geographical tasks, like determining if a location is within specific bounds and measuring distance between locations.
 
 ## Supported data types
 
-The NoSQL query langauge supports indexing and querying of geospatial point data that's represented using the [GeoJSON specification](https://tools.ietf.org/html/rfc7946). GeoJSON data structures are always valid JSON objects, so they can be stored and queried using the NoSQL query language without any specialized tools or libraries.
+The NoSQL query language supports indexing and querying geospatial point data represented using the [GeoJSON specification](https://tools.ietf.org/html/rfc7946). GeoJSON data structures are valid JSON objects, so you can store and query them using the NoSQL query language without any specialized tools or libraries.
 
 The NoSQL query language supports the following spatial data types:
 
 - **Point**
+
 - **LineString**
+
 - **Polygon**
+
 - **MultiPolygon**
 
 ### Points
 
-A **Point** denotes a single position in space. In geospatial data, a Point represents the exact location, which could be a street address of a grocery store, a kiosk, an automobile, or a city.  A point is represented in GeoJSON (and The NoSQL query langauge) using its coordinate pair (**longitude** and **latitude**).
+A **Point** denotes a single position in space. In geospatial data, a Point represents the exact location, which could be a street address of a grocery store, a kiosk, an automobile, or a city. A point is represented in GeoJSON (and The NoSQL query language) using its coordinate pair (**longitude** and **latitude**).
 
-Consider this example GeoJSON point. The longitude is ``-122.12826822304672`` and the latitude is ``47.63980239335718``.
+Consider this example GeoJSON point. The longitude is `-122.12826822304672` and the latitude is `47.63980239335718`.
 
 ```json
 {
@@ -55,7 +71,7 @@ Consider this example GeoJSON point. The longitude is ``-122.12826822304672`` an
 ```
 
 > [!TIP]
-> For the **geography** data type, GeoJSON specification specifies longitude first and latitude second. Like in other mapping applications, longitude and latitude are angles and represented in terms of degrees. Longitude values are measured from the Prime Meridian and are between ``-180`` degrees and ``180.0`` degrees, and latitude values are measured from the equator and are between ``-90.0`` degrees and ``90.0`` degrees.
+> For the **geography** data type, GeoJSON specification specifies longitude first and latitude second. Like in other mapping applications, longitude and latitude are angles and represented in terms of degrees. Longitude values are measured from the Prime Meridian and are between `-180` degrees and `180.0` degrees, and latitude values are measured from the equator and are between `-90.0` degrees and `90.0` degrees.
 >
 > For the **geometry** data type, GeoJSON specification specifies the horizontal axis first and the vertical axis second.
 
@@ -75,7 +91,7 @@ Spatial data types can be embedded in an item as shown in this example of a faci
 }
 ```
 
-The NoSQL query langauge interprets coordinates as represented per the WGS-84 reference system. For more information, see [coordinate reference systems](#coordinate-reference-systems).
+The NoSQL query language interprets coordinates as represented per the WGS-84 reference system. For more information, see [coordinate reference systems](#coordinate-reference-systems).
 
 ### LineStrings
 
@@ -103,14 +119,14 @@ In this example, a polygon is created by connecting multiple points.
 
 ```json
 {
-    "type":"Polygon",
-    "coordinates":[ [
-        [ 31.8, -5 ],
-        [ 32, -5 ],
-        [ 32, -4.7 ],
-        [ 31.8, -4.7 ],
-        [ 31.8, -5 ]
-    ] ]
+  "type":"Polygon",
+  "coordinates":[[
+    [ 31.8, -5 ],
+    [ 32, -5 ],
+    [ 32, -4.7 ],
+    [ 31.8, -4.7 ],
+    [ 31.8, -5 ]
+  ]]
 }
 ```
 
@@ -119,27 +135,29 @@ In this example, a polygon is created by connecting multiple points.
 
 ### MultiPolygons
 
-A **MultiPolygon** is an array of zero or more Polygons. **MultiPolygons** can't overlap sides or have any common area. They may touch at one or more points.
+A **MultiPolygon** is an array of zero or more Polygons. **MultiPolygons** can't overlap sides or have any common area. They could touch at one or more points.
 
 Here's an example of a MultiPolygon.
 
 ```json
 {
     "type":"MultiPolygon",
-    "coordinates":[[[
-            [52.0, 12.0],
-            [53.0, 12.0],
-            [53.0, 13.0],
-            [52.0, 13.0],
-            [52.0, 12.0]
-        ]],
-        [[
-            [50.0, 0.0],
-            [51.0, 0.0],
-            [51.0, 5.0],
-            [50.0, 5.0],
-            [50.0, 0.0]
-        ]]]
+    "coordinates":[
+      [[
+          [52.0, 12.0],
+          [53.0, 12.0],
+          [53.0, 13.0],
+          [52.0, 13.0],
+          [52.0, 12.0]
+      ]],
+      [[
+          [50.0, 0.0],
+          [51.0, 0.0],
+          [51.0, 5.0],
+          [50.0, 5.0],
+          [50.0, 0.0]
+      ]]
+    ]
 }
 ```
 
@@ -147,4 +165,4 @@ Here's an example of a MultiPolygon.
 
 Since the shape of the earth is irregular, coordinates of geography geospatial data are represented in many coordinate reference systems (CRS). Each CRS has their own frames of reference and units of measurement. For example, the "National Grid of Britain" is a reference system is accurate for the United Kingdom, but not outside it.
 
-The most popular CRS in use today is the World Geodetic System [WGS-84](https://earth-info.nga.mil/GandG/update/index.php). GPS devices, and many mapping services including Google Maps and Bing Maps APIs use WGS-84. The NoSQL query langauge supports indexing and querying of geography geospatial data using the WGS-84 CRS only.
+The most popular CRS in use today is the World Geodetic System [WGS-84](https://earth-info.nga.mil/GandG/update/index.php). GPS devices, and many mapping services including Google Maps and Bing Maps APIs use WGS-84. The NoSQL query language supports indexing and querying of geography geospatial data using the WGS-84 CRS only.
