@@ -25,6 +25,9 @@ items:
   - name: Subqueries
     displayName: clause, subquery
     href: subquery.md
+  - name: Geospatial data
+    displayName: spatial, polygon, line, geojson, geometry, geography, location, geo
+    href: geospatial.md
   - name: Clauses
     displayName: clauses, expressions
     expanded: true

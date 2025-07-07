@@ -73,6 +73,8 @@ productDirectory:
           url: join.md
         - text: Evaluate scalar expressions
           url: scalar.md
+        - text: Geospatial data
+          url: geospatial.md
 conceptualContent:
   sections:
     - title: Vector functions
