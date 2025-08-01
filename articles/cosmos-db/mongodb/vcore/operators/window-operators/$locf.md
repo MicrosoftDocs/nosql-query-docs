@@ -1,33 +1,36 @@
---- 
-title: $subtract
-titleSuffix: Overview of the $subtract operator in Azure Cosmos DB for MongoDB (vCore)
-description: The $subtract operator subtracts two numbers and returns the result.
-author: khelanmodi
-ms.author: khelanmodi
+---
+title: $locf
+titleSuffix: Overview of the $locf operator in Azure Cosmos DB for MongoDB (vCore)
+description: The $locf operator propagates the last observed non-null value forward within a partition in a windowed query.
+author: niklarin
+ms.author: nlarin
 ms.service: azure-cosmos-db
 ms.subservice: mongodb-vcore
-ms.topic: language-reference
-ms.date: 09/27/2024
+ms.topic: reference
+ms.date: 06/28/2025
 ---
 
-# $subtract
+# $locf
 
-The `$subtract` operator is used to subtract two numbers and return the result. 
+The `$locf` operator propagates the last observed non-null value forward within a partition in a windowed query. The $locf operator is particularly useful in filling missing data points in time-series data or other datasets with gaps.
 
 ## Syntax
 
 ```javascript
 {
-  $subtract: [ <expression 1>, <expression 2> ]
+  $locf: {
+    input: <expression>,
+    sortBy: <document>
+  }
 }
 ```
 
-## Parameters
+## Parameters  
 
 | Parameter | Description |
 | --- | --- |
-| **`<expression 1>`** | The minuend (the number from which another number is to be subtracted). |
-| **`<expression 2>`** | The subtrahend (the number to be subtracted). |
+| **`input`** | The expression that resolves to the field whose value you want to propagate. |
+| **`sortBy`** | A document that specifies the sort order for the partition. |
 
 ## Examples
 
@@ -143,9 +146,9 @@ Consider this sample document from the stores collection.
 }
 ```
 
-### Example 1: Calculating the difference between full time and part time staff
+### Example 1: Using `$locf` to fill missing time series data
 
-To calculate the absolute difference in part time and full time staff for stores within the "First Up Consultants" company, first run a query to filter stores by the company name. Then, use the $diff operator along with the $abs operator to calculate the absolute difference between the full time and part time staff for each store.
+To propagate the most recent non-null value for the lastUpdated field across stores within the "First Up Consultants" company, first run a query to partition the stores within the company. Then, use the $lecf operator to propagate the last non-null value for the field for all stores within the partition.
 
 ```javascript
 db.stores.aggregate([{
@@ -155,14 +158,24 @@ db.stores.aggregate([{
         }
     }
 }, {
-    "$project": {
-        "name": 1,
-        "staff": 1,
-        "staffCountDiff": {
-            $abs: {
-                "$subtract": ["$staff.employeeCount.fullTime", "$staff.employeeCount.partTime"]
+    "$setWindowFields": {
+        "partitionBy": "$name",
+        "sortBy": {
+            "sales.revenue": 1
+        },
+        "output": {
+            "lastUpdatedDate": {
+                "$locf": {
+                    "lastUpdated": 1
+                }
             }
         }
+    }
+}, {
+    "$project": {
+        "company": 1,
+        "name": 1,
+        "lastObservedDiscount": 1
     }
 }])
 ```
@@ -172,40 +185,23 @@ The first three results returned by this query are:
 ```json
 [
     {
-        "_id": "62438f5f-0c56-4a21-8c6c-6bfa479494ad",
-        "name": "First Up Consultants | Plumbing Supply Shoppe - New Ubaldofort",
-        "staff": {
-            "employeeCount": {
-                "fullTime": 20,
-                "partTime": 18
-            }
-        },
-        "staffCountDiff": 2
+        "_id": "0f4c48fe-c43b-4083-a856-afe6dd902077",
+        "name": "First Up Consultants | Appliance Bargains - Feilmouth",
+        "company": "First Up Consultants"
     },
     {
-        "_id": "bfb213fa-8db8-419f-8e5b-e7096120bad2",
-        "name": "First Up Consultants | Beauty Product Shop - Hansenton",
-        "staff": {
-            "employeeCount": {
-                "fullTime": 18,
-                "partTime": 10
-            }
-        },
-        "staffCountDiff": 8
+        "_id": "c4883253-7ccd-4054-a7e0-8aeb202307b5",
+        "name": "First Up Consultants | Appliance Bargains - New Kari",
+        "company": "First Up Consultants"
     },
     {
-        "_id": "14ab145b-0819-4d22-9e02-9ae0725fcda9",
-        "name": "First Up Consultants | Flooring Haven - Otisville",
-        "staff": {
-            "employeeCount": {
-                "fullTime": 19,
-                "partTime": 10
-            }
-        },
-        "staffCountDiff": 9
+        "_id": "a159ff5c-6ec5-4ca8-9672-e8903a54dd90",
+        "name": "First Up Consultants | Appliance Bargains - Schadenstad",
+        "company": "First Up Consultants"
     }
 ]
 ```
 
 ## Related content
+
 [!INCLUDE[Related content](../includes/related-content.md)]

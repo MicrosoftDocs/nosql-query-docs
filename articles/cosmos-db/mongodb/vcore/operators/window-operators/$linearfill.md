@@ -1,38 +1,42 @@
 ---
-title: $type
-titleSuffix: Overview of the $type operator in Azure Cosmos DB for MongoDB vCore
-description: The $type operator in Azure Cosmos DB for MongoDB vCore returns the type of the specified value
-author: abinav2307
-ms.author: abramees
+title: $linearFill
+titleSuffix: Overview of the $linearFill operator in Azure Cosmos DB for MongoDB (vCore)
+description: The $linearFill operator interpolates missing values in a sequence of documents using linear interpolation.
+author: niklarin
+ms.author: nlarin
 ms.service: azure-cosmos-db
 ms.subservice: mongodb-vcore
-ms.topic: language-reference
-ms.date: 02/24/2025
+ms.topic: reference
+ms.date: 06/28/2025
 ---
 
-# $type
+# $linearFill
 
-[!INCLUDE[MongoDB (vCore)](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb-vcore.md)]
-
-The `$type` operator returns the type of the value specified in the expression.
+The `$linearFill` operator interpolates missing values in a sequence of documents. The $linearFill operator performs linear interpolation for missing data, making it useful for datasets with gaps in values, such as time-series data.
 
 ## Syntax
 
-The syntax for the `$type` operator is:
-
-```mongodb
-{ "$type": <expression> }
+```javascript
+{
+    $linearFill: {
+        input: < expression > ,
+        sortBy: {
+            < field >: < 1 or - 1 >
+        }
+    }
+}
 ```
 
-## Parameters
+## Parameters  
 
 | Parameter | Description |
 | --- | --- |
-| **`expression`** | The specified value whose type to retrieve|
+| **`input`** | The field or expression to interpolate missing values for. |
+| **`sortBy`** | Specifies the field by which the data is sorted for interpolation, along with the sort order (1 for ascending, -1 for descending). |
 
 ## Examples
 
-Consider this sample document from the stores collection in the StoreData database.
+Consider this sample document from the stores collection.
 
 ```json
 {
@@ -144,94 +148,56 @@ Consider this sample document from the stores collection in the StoreData databa
 }
 ```
 
-### Example 1: Get the type of a Double value
-```javascript
-db.stores.aggregate([
-{
-    "$match": {
-        "_id": "b0107631-9370-4acd-aafa-8ac3511e623d"
-    }
-},
-{
-    "$project": {
-        "longitude": "$location.lon",
-        "longitudeType": {
-            "$type": "$location.lon"
-        }
-    }
-}])
-```
+### Example 1: Interpolating missing sales data
 
-This query returns the following result:
-
-```json
-{
-    "_id": "b0107631-9370-4acd-aafa-8ac3511e623d",
-    "longitude": 72.8377,
-    "longitudeType": "double"
-}
-```
-
-### Example 2: Get the type of a String value
+To interpolate missing sales data, run a query to first partition the stores in the dataset by name. Then, use the $linearFill operator to interpolate the missing sales data across the stores within the partition.
 
 ```javascript
-db.stores.aggregate([
-{
-    "$match": {
-        "_id": "b0107631-9370-4acd-aafa-8ac3511e623d"
-    }
-},
-{
-    "$project": {
-        "name": "$name",
-        "nameType": {
-            "$type": "$name"
+db.stores.aggregate([{
+        "$match": {
+            "company": {
+                "$in": ["First Up Consultants"]
+            }
+        }
+    },
+    {
+        "$setWindowFields": {
+            "partitionBy": "$name",
+            "sortBy": {
+                "storeOpeningDate": 1
+            },
+            "output": {
+                "interpolatedSales": {
+                    "$linearFill": "$sales.totalSales"
+                }
+            }
         }
     }
-}])
+])
 ```
 
-This query returns the following result:
+The first three results returned by this query are:
 
 ```json
-{
-    "_id": "b0107631-9370-4acd-aafa-8ac3511e623d",
-    "name": "Wide World Importers | Furniture Bargains - Roobport",
-    "nameType": "string"
-}
-```
-
-### Example 3: Get the type of an Int value
-
-```javascript
-db.stores.aggregate([
-{
-    "$match": {
-        "_id": "b0107631-9370-4acd-aafa-8ac3511e623d"
+[
+    {
+        "_id": "0f4c48fe-c43b-4083-a856-afe6dd902077",
+        "name": "First Up Consultants | Appliance Bargains - Feilmouth",
+        "interpolatedSales": 26630
+    },
+    {
+        "_id": "c4883253-7ccd-4054-a7e0-8aeb202307b5",
+        "name": "First Up Consultants | Appliance Bargains - New Kari",
+        "interpolatedSales": 31568
+    },
+    {
+        "_id": "a159ff5c-6ec5-4ca8-9672-e8903a54dd90",
+        "name": "First Up Consultants | Appliance Bargains - Schadenstad",
+        "interpolatedSales": 59926
     }
-},
-{
-    "$project": {
-        "fullTimeStaff": "$staff.totalStaff.fullTime",
-        "fullTimeStaffType": {
-            "$type": "$staff.totalStaff.fullTime"
-        }
-    }
-}])
-```
-
-This query returns the following result:
-
-```json
-{
-    "_id": "b0107631-9370-4acd-aafa-8ac3511e623d",
-    "fullTimeStaff": 3,
-    "fullTimeStaffType": "int"
-}
+]
 ```
 
 ## Related content
 
-- [Migrate to vCore based Azure Cosmos DB for MongoDB](https://aka.ms/migrate-to-azure-cosmosdb-for-mongodb-vcore)
-- [$convert to convert a value from one type to another]($convert.md)
-
+[!INCLUDE[Related content](../includes/related-content.md)]

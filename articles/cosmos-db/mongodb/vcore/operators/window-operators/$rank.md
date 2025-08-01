@@ -1,33 +1,44 @@
---- 
-title: $subtract
-titleSuffix: Overview of the $subtract operator in Azure Cosmos DB for MongoDB (vCore)
-description: The $subtract operator subtracts two numbers and returns the result.
-author: khelanmodi
-ms.author: khelanmodi
+---
+title: $rank
+titleSuffix: Overview of the $rank operator in Azure Cosmos DB for MongoDB (vCore)
+description: The $rank operator ranks documents within a partition based on a specified sort order.
+author: niklarin
+ms.author: nlarin
 ms.service: azure-cosmos-db
 ms.subservice: mongodb-vcore
-ms.topic: language-reference
-ms.date: 09/27/2024
+ms.topic: reference
+ms.date: 06/28/2025
 ---
 
-# $subtract
+# $rank
 
-The `$subtract` operator is used to subtract two numbers and return the result. 
+The `$rank` operator assigns a rank to each document within a partition of a dataset. The rank is determined based on a specified sort order.
 
 ## Syntax
 
 ```javascript
 {
-  $subtract: [ <expression 1>, <expression 2> ]
+    $setWindowFields: {
+        partitionBy: < expression > ,
+        sortBy: {
+            < field >: < order >
+        },
+        output: {
+            < outputField >: {
+                $rank: {}
+            }
+        }
+    }
 }
 ```
 
-## Parameters
+## Parameters  
 
 | Parameter | Description |
 | --- | --- |
-| **`<expression 1>`** | The minuend (the number from which another number is to be subtracted). |
-| **`<expression 2>`** | The subtrahend (the number to be subtracted). |
+| **`partitionBy`** | Specifies the expression to group documents into partitions. If omitted, all documents are treated as a single partition. |
+| **`sortBy`** | Defines the sort order for ranking. Must be specified for `$rank`. |
+| **`output`** | Contains the field where the rank value is stored. |
 
 ## Examples
 
@@ -143,9 +154,9 @@ Consider this sample document from the stores collection.
 }
 ```
 
-### Example 1: Calculating the difference between full time and part time staff
+### Example 1: Ranking stores by sales volume
 
-To calculate the absolute difference in part time and full time staff for stores within the "First Up Consultants" company, first run a query to filter stores by the company name. Then, use the $diff operator along with the $abs operator to calculate the absolute difference between the full time and part time staff for each store.
+To rank all stores within the "First Up Consultants" company by sales volume, first run a query to partition the stores within the company. Then, sort the resulting stores in ascending order of sales volume and use the $rank operator to rank the sorted documents in the result set.
 
 ```javascript
 db.stores.aggregate([{
@@ -155,14 +166,22 @@ db.stores.aggregate([{
         }
     }
 }, {
-    "$project": {
-        "name": 1,
-        "staff": 1,
-        "staffCountDiff": {
-            $abs: {
-                "$subtract": ["$staff.employeeCount.fullTime", "$staff.employeeCount.partTime"]
+    "$setWindowFields": {
+        "partitionBy": "$company",
+        "sortBy": {
+            "sales.totalSales": -1
+        },
+        "output": {
+            "rankBySales": {
+                "$rank": {}
             }
         }
+    }
+}, {
+    "$project": {
+        "company": 1,
+        "name": 1,
+        "rankBySales": 1
     }
 }])
 ```
@@ -172,40 +191,26 @@ The first three results returned by this query are:
 ```json
 [
     {
-        "_id": "62438f5f-0c56-4a21-8c6c-6bfa479494ad",
-        "name": "First Up Consultants | Plumbing Supply Shoppe - New Ubaldofort",
-        "staff": {
-            "employeeCount": {
-                "fullTime": 20,
-                "partTime": 18
-            }
-        },
-        "staffCountDiff": 2
+        "_id": "a0386810-b6f8-4b05-9d60-e536fb2b0026",
+        "name": "First Up Consultants | Electronics Stop - South Thelma",
+        "company": "First Up Consultants",
+        "rankBySales": 1
     },
     {
-        "_id": "bfb213fa-8db8-419f-8e5b-e7096120bad2",
-        "name": "First Up Consultants | Beauty Product Shop - Hansenton",
-        "staff": {
-            "employeeCount": {
-                "fullTime": 18,
-                "partTime": 10
-            }
-        },
-        "staffCountDiff": 8
+        "_id": "ad8af64a-d5bb-4162-9bb6-e5104126566d",
+        "name": "First Up Consultants | Electronics Emporium - South Carmenview",
+        "company": "First Up Consultants",
+        "rankBySales": 2
     },
     {
-        "_id": "14ab145b-0819-4d22-9e02-9ae0725fcda9",
-        "name": "First Up Consultants | Flooring Haven - Otisville",
-        "staff": {
-            "employeeCount": {
-                "fullTime": 19,
-                "partTime": 10
-            }
-        },
-        "staffCountDiff": 9
+        "_id": "39acb3aa-f350-41cb-9279-9e34c004415a",
+        "name": "First Up Consultants | Bed and Bath Pantry - Port Antone",
+        "company": "First Up Consultants",
+        "rankBySales": 3
     }
 ]
 ```
 
 ## Related content
+
 [!INCLUDE[Related content](../includes/related-content.md)]
