@@ -110,12 +110,12 @@
       },
       "appliesto": {
         "query/**/*.md": [
-          "Azure Cosmos DB for NoSQL",
-          "Cosmos DB in Fabric"
+          "✅ Azure Cosmos DB for NoSQL",
+          "✅ Cosmos DB in Microsoft Fabric"
         ],
         "query/**/*.yml": [
-          "Azure Cosmos DB for NoSQL",
-          "Cosmos DB in Fabric"
+          "✅ Azure Cosmos DB for NoSQL",
+          "✅ Cosmos DB in Microsoft Fabric"
         ]
       }
     },
