@@ -40,3 +40,34 @@ items:
     displayName: commands, operators
     expanded: true
     href: functions/toc.yml
+  - name: Query Advisor
+    displayName: improve query performance, optimize queries
+    expanded: false
+    items:
+      - name: Query Advisor overview
+        displayName: Improve queries with Query Advisor
+        href: advisor.md
+      - name: QA1000 - Array_CONTAINS
+        displayName: ARRAY_CONTAINS, partial match, performance
+        href: advisor/QA1000.md
+      - name: QA1002 - Contains
+        displayName: CONTAINS, string search, performance
+        href: advisor/QA1002.md
+      - name: QA1003 - Case insensitivity
+        displayName: STARTSWITH, StringEquals, case insensitive, performance
+        href: advisor/QA1003.md
+      - name: QA1004 - EndsWith
+        displayName: ENDSWITH, string matching, performance
+        href: advisor/QA1004.md
+      - name: QA1006 - UPPER or LOWER
+        displayName: UPPER, LOWER, case conversion, performance
+        href: advisor/QA1006.md
+      - name: QA1007 - GetCurrentDateTime
+        displayName: GetCurrentDateTime, system function, performance
+        href: advisor/QA1007.md
+      - name: QA1008 - GetCurrentTicks
+        displayName: GetCurrentTicks, system function, performance
+        href: advisor/QA1008.md
+      - name: QA1009 - GetCurrentTimestamp
+        displayName: GetCurrentTimestamp, system function, performance
+        href: advisor/QA1009.md
