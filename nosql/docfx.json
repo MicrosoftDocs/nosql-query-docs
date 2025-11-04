@@ -65,10 +65,10 @@
     },
     "fileMetadata": {
       "titleSuffix": {
-        "**/*.md": "NoSQL",
-        "**/*.yml": "NoSQL",
-        "query/**/*.md": "NoSQL Query Language",
-        "query/**/*.yml": "NoSQL Query Language"
+        "**/*.md": "Cosmos DB (in Azure and Fabric)",
+        "**/*.yml": "Cosmos DB (in Azure and Fabric)",
+        "query/**/*.md": "Query Language for Cosmos DB (in Azure and Fabric)",
+        "query/**/*.yml": "Query Language for Cosmos DB (in Azure and Fabric)"
       },
       "author": {
         "**/*.md": "seesharprun",
@@ -101,8 +101,8 @@
         "**/*.yml": "nosql"
       },
       "ms.collection": {
-        "query/**/*.md": "nosql-query-reference",
-        "query/**/*.yml": "nosql-query-reference"
+        "query/**/*.md": "cosmos-db-query-reference",
+        "query/**/*.yml": "cosmos-db-query-reference"
       },
       "ai-usage": {
         "query/**/*.md": "ai-assisted",
