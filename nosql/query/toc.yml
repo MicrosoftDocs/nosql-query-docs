@@ -42,7 +42,7 @@ items:
     href: functions/toc.yml
   - name: Query Advisor
     displayName: improve query performance, optimize queries
-    expanded: true
+    expanded: false
     items:
       - name: Query Advisor overview
         displayName: Improve queries with Query Advisor
