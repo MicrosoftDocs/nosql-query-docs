@@ -27,10 +27,20 @@ productDirectory:
       url: /azure/cosmos-db/mongodb/vcore
 additionalContent:
   sections:
-    - title: Get started
-      summary: Open-source platform and query language overview and getting started guidance.
+    - title: DocumentDB
+      summary: Accelerate your NoSQL journey by discovering the open-source DocumentDB project, its documentation, and community resources.
       items:
-        - title: Overview
-          links:
-            - text: Overview
-              url: overview.md
+        - title: GitHub repository
+          url: https://github.com/documentdb/documentdb
+        - title: DocumentDB Documentation
+          url: https://documentdb.io/docs
+        - title: Announcement blog post
+          url: https://opensource.microsoft.com/blog/2025/01/23/documentdb-open-source-announcement/
+        - title: Linux Foundation membership blog post
+          url: https://opensource.microsoft.com/blog/2025/08/25/documentdb-joins-the-linux-foundation/
+  footer: |
+    DocumentDB is an open-source powerful, scalable, and MongoDB compatible open-source document database built for modern applications.
+
+    DocumentDB is built on the principles of transparency, developer freedom, and standardization, our mission is to build a MongoDB compatible open source document database based on PostgreSQL.
+
+    To participate in the community, file issues, and contribute to the project, please visit [https://github.com/documentdb](https://github.com/documentdb/documentdb).
