@@ -1,6 +1,18 @@
 {
   "docsets_to_publish": [
     {
+      "docset_name": "cosmos-db",
+      "build_source_folder": "cosmos-db",
+      "build_output_subfolder": "cosmos-db",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs"
+    },
+    {
       "docset_name": "documentdb",
       "build_source_folder": "documentdb",
       "build_output_subfolder": "documentdb",
