@@ -5,9 +5,6 @@ brand: azure
 metadata:
   title: Cosmos DB (in Azure and Fabric)
   description: Learn about the core engine and query language used by Cosmos DB in both Azure Cosmos DB for NoSQL and Cosmos DB in Microsoft Fabric.
-  author: seesharprun
-  ms.author: sidandrews
-  ms.service: azure-cosmos-db
   ms.topic: hub-page
   ms.date: 11/07/2025
   ai-usage: ai-generated
