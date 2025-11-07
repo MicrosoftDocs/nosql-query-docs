@@ -1,0 +1,10 @@
+### YamlMime:ZonePivotGroups
+groups:
+  - id: documentdb-platform
+    title: DocumentDB platforms
+    prompt: Choose a platform
+    pivots:
+      - id: azure-cosmos-db-mongodb-vcore
+        title: Azure Cosmos DB for MongoDB (vCore)
+      - id: documentdb
+        title: DocumentDB
