@@ -19,9 +19,9 @@ productDirectory:
   items:
     - title: Azure Cosmos DB for NoSQL
       summary: Fully managed cloud database service with global distribution, multi-region replication, and fine-grained control over throughput and indexing.
-      imageSrc: media/index/azure.png
+      imageSrc: media/index/azure.svg
       url: /azure/cosmos-db/nosql
     - title: Cosmos DB in Microsoft Fabric
       summary: AI-optimized NoSQL database tightly integrated into Fabric with autonomous defaults, OneLake integration, and built-in AI capabilities.
-      imageSrc: media/index/fabric.png
+      imageSrc: media/index/fabric.svg
       url: /fabric/database/cosmos-db
