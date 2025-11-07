@@ -23,7 +23,7 @@ productDirectory:
   items:
     - title: Azure Cosmos DB for MongoDB (vCore)
       summary: Fully managed MongoDB-compatible database service with vCore architecture, vector search capabilities, and native Azure integration.
-      imageSrc: media/index/azure.png
+      imageSrc: media/index/azure.svg
       url: /azure/cosmos-db/mongodb/vcore
 additionalContent:
   sections:

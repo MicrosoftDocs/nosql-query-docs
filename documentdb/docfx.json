@@ -48,6 +48,14 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-NoSQL",
+      "brand": "Azure",
+      "permissioned-type": "public",
+      "recommendations": true,
+      "recommendation_types": [
+        "Training",
+        "Certification"
+      ],
       "breadcrumb_path": "~/breadcrumb/documentdb/toc.yml",
       "zone_pivot_group_filename": "zone-pivots/zone-pivot-groups.json",
       "feedback_system": "Standard",
