@@ -1,6 +1,10 @@
 {
   "Docsets": [
     {
+      "DocsetName": "documentdb",
+      "BuildSourceFolder": "documentdb"
+    },
+    {
       "DocsetName": "nosql",
       "BuildSourceFolder": "nosql"
     }

@@ -1,6 +1,18 @@
 {
   "docsets_to_publish": [
     {
+      "docset_name": "documentdb",
+      "build_source_folder": "documentdb",
+      "build_output_subfolder": "documentdb",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs"
+    },
+    {
       "docset_name": "nosql",
       "build_source_folder": "nosql",
       "build_output_subfolder": "nosql",
