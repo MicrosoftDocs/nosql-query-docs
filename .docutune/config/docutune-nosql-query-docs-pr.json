@@ -1,6 +1,10 @@
 {
   "Docsets": [
     {
+      "DocsetName": "cosmos-db",
+      "BuildSourceFolder": "cosmos-db"
+    },
+    {
       "DocsetName": "documentdb",
       "BuildSourceFolder": "documentdb"
     },
