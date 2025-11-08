@@ -20,7 +20,7 @@ productDirectory:
     - title: Azure DocumentDB
       summary: Fully managed MongoDB-compatible database service with vCore architecture, vector search capabilities, and native Azure integration.
       imageSrc: media/index/azure.svg
-      url: /azure/documentdb
+      url: /azure/cosmos-db/mongodb/vcore
 additionalContent:
   sections:
     - title: DocumentDB
