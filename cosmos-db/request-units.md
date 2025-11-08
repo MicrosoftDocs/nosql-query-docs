@@ -25,7 +25,7 @@ You can categorize common database operations into specific types and make reaso
 | Delete operation | Consumes a variable number of RUs |
 | Query operation | Consumes a variable number of RUs, potentially more than point operations |
 
-:::image type="complex" source="media/request-units/conceptual-diagram.png" alt-text="diagram showing database operations consuming request units based on CPU, memory, and IOPS.":::
+:::image type="complex" source="media/request-units/conceptual-diagram.svg" lightbox="media/request-units/conceptual-diagram.svg" alt-text="diagram showing database operations consuming request units based on CPU, memory, and IOPS.":::
   The diagram is divided into two main sections:
   
   1. The left section explains that usage is expressed in Request Units (RUs), which are calculated based on percentages of memory, CPU, and IOPS. Icons above a box labeled "Request Unit (RUs)" visually represents these resources.
