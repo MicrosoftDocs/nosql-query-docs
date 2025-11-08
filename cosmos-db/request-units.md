@@ -1,5 +1,5 @@
 ---
-title: Request Units
+title: Request Units (RUs)
 description: Learn how request units function as a currency and how to estimate request unit requirements in your Cosmos DB (in Azure and Fabric) database.
 author: seesharprun
 ms.author: sidandrews
@@ -7,9 +7,9 @@ ms.topic: concept-article
 ms.date: 11/08/2025
 ---
 
-# Request units in Cosmos DB (in Azure and Fabric)
+# Request units (RUs) in Cosmos DB (in Azure and Fabric)
 
-Cosmos DB (in Azure and Fabric) normalizes the cost of all database operations using Request Units (or RUs, for short) and measures cost based on throughput (Request Units per second, RU/s).
+Cosmos DB (in Azure and Fabric) normalizes the cost of all database operations using Request Units (RUs) and measures cost based on throughput (Request Units per second, RU/s).
 
 Request unit is a performance currency abstracting the system resources such as processing (CPU), input/output operations (IOPS), and memory that are required to perform the database operations supported by Cosmos DB. Whether the database operation is a write, point read, or query, operations are always measured in RUs.
 
@@ -60,7 +60,6 @@ While you estimate the number of RUs consumed by your workload, consider the fol
 - **Type of reads**: Point reads cost fewer RUs than queries.
 
 - **Query patterns**: The complexity of a query affects how many RUs are consumed for an operation. Factors that affect the cost of query operations include:
-
 
   - The number of query results
 

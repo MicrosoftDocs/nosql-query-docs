@@ -11,5 +11,5 @@ items:
   - name: Core concepts
     items:
       - name: Request Units
-        displayName: request units, RUs, throughput, capacity, performance
+        displayName: RU, RUs, throughput, capacity, performance
         href: request-units.md
