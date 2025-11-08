@@ -5,6 +5,7 @@ author: seesharprun
 ms.author: sidandrews
 ms.topic: concept-article
 ms.date: 11/08/2025
+ai-usage: ai-assisted
 ---
 
 # Indexing in Cosmos DB (in Azure and Fabric)
@@ -19,38 +20,42 @@ As an example, consider this item:
 
 ```json
 {
-  "locations": [
-    { "country": "Germany", "city": "Berlin" },
-    { "country": "France", "city": "Paris" }
+  "id": "00000000-0000-0000-0000-000000004001",
+  "name": "Raiot Jacket",
+  "tags": [
+    { "category": "clothing", "type": "jacket" },
+    { "category": "outdoor", "type": "winter" }
   ],
-  "headquarters": { "country": "Belgium", "employees": 250 },
-  "exports": [
-    { "city": "Moscow" },
-    { "city": "Athens" }
+  "inventory": { "warehouse": "Seattle", "quantity": 50 },
+  "distributors": [
+    { "name": "Contoso" },
+    { "name": "AdventureWorks" }
   ]
 }
 ```
 
 This conceptual tree represents the sample JSON item:
 
-- *`locations`*
+- *`id`*: `00000000-0000-0000-0000-000000004001`
+- *`name`*: `Raiot Jacket`
+- *`tags`*
   - `0`
-    - *`country`*: `Germany`
-    - *`city`*: `Berlin`
+    - *`category`*: `clothing`
+    - *`type`*: `jacket`
   - `1`
-    - *`country`*: `France`
-    - *`city`*: `Paris`
-- *`headquarters`*
-  - *`country`*: `Belgium`
-  - *`employees`*: `250`
-- *`exports`*
+    - *`category`*: `outdoor`
+    - *`type`*: `winter`
+- *`inventory`*
+  - *`warehouse`*: `Seattle`
+  - *`quantity`*: `50`
+- *`distributors`*
   - `0`
-    - *`city`*: `Moscow`
+    - *`name`*: `Contoso`
   - `1`
-    - *`city`*: `Athens`
+    - *`name`*: `AdventureWorks`
 
-:::image type="complex" source="media/indexing/tree.png" alt-text="Diagram of the tree representation of an item in Cosmos DB. The diagram shows the hierarchical structure of a JSON item in Cosmos DB with branches for locations, headquarters, and exports properties.":::
-  A tree diagram showing a root node with three branches: "locations", "headquarters," and "exports." "Locations" splits into two numbered nodes, each with two location-related subnodes ("Germany or Berlin" and "France or Paris"). "Headquarters" has "Belgium" for its location and "employees" ("250"). "Exports" splits into two numbered nodes, each with a "city" subnode ("Moscow" and "Athens").
+:::image type="complex" source="media/indexing/tree.svg" lightbox="media/indexing/tree.svg" alt-text="Diagram of the tree representation of an item in Cosmos DB. The diagram shows the hierarchical structure of a JSON item in Cosmos DB with branches for ID, name, tags, inventory, and distributors properties.":::
+  A tree diagram showing a root node with five branches: "ID," "name," "tags", "inventory," and "distributors." The "ID" branch shows the value "00000000-0000-0000-0000-000000004001." The "name" branch shows "Raiot Jacket." "Tags" splits into two numbered nodes (0 and 1), each with "category" and "type" subnodes ("clothing/jacket" and "outdoor/winter"). "Inventory" has "warehouse" ("Seattle") and "quantity" ("50"). "Distributors" splits into two numbered nodes (0 and 1), each with a "name" subnode ("Contoso" and "AdventureWorks").
 :::image-end:::
 
 Pay attention to how arrays are encoded in the tree: every entry in an array gets an intermediate node labeled with the index of that entry within the array. For example, the first entry is `0` and the second entry is `1`.
@@ -63,18 +68,20 @@ Here are the paths for each property from the example item described previously:
 
 | Path | Value |
 | --- | --- |
-| `/locations/0/country` | `"Germany"` |
-| `/locations/0/city` | `"Berlin"` |
-| `/locations/1/country` | `"France"` |
-| `/locations/1/city` | `"Paris"` |
-| `/headquarters/country` | `"Belgium"` |
-| `/headquarters/employees` | `250` |
-| `/exports/0/city` | `"Moscow"` |
-| `/exports/1/city` | `"Athens"` |
+| `/id` | `"00000000-0000-0000-0000-000000004001"` |
+| `/name` | `"Raiot Jacket"` |
+| `/tags/0/category` | `"clothing"` |
+| `/tags/0/type` | `"jacket"` |
+| `/tags/1/category` | `"outdoor"` |
+| `/tags/1/type` | `"winter"` |
+| `/inventory/warehouse` | `"Seattle"` |
+| `/inventory/quantity` | `50` |
+| `/distributors/0/name` | `"Contoso"` |
+| `/distributors/1/name` | `"AdventureWorks"` |
 
 Cosmos DB effectively indexes each property's path and its corresponding value when an item is written.
 
-## Index types
+## Index types in Cosmos DB
 
 Cosmos DB currently supports four types of indexes. 
 
@@ -324,7 +331,7 @@ As long as one filter predicate uses one of the index types, the query engine ev
 > [!IMPORTANT]
 > Vector policies and vector indexes are immutable after creation. To make changes, create a new collection.
 
-## Index usage
+## How queries use indexes
 
 There are five ways that the query engine can evaluate query filters, sorted by most-efficient to least-efficient:
 
@@ -358,27 +365,29 @@ Consider these two example items:
 ```json
 [
   {
-    "id": 1,
-    "locations": [
-      { "country": "Germany", "city": "Berlin" },
-      { "country": "France", "city": "Paris" }
+    "id": "00000000-0000-0000-0000-000000004001",
+    "name": "Raiot Jacket",
+    "tags": [
+      { "category": "clothing", "type": "jacket" },
+      { "category": "outdoor", "type": "winter" }
     ],
-    "headquarters": { "country": "Belgium", "employees": 250 },
-    "exports": [
-      { "city": "Moscow" },
-      { "city": "Athens" }
+    "inventory": { "warehouse": "Seattle", "quantity": 50 },
+    "distributors": [
+      { "name": "Contoso" },
+      { "name": "AdventureWorks" }
     ]
   },
   {
-    "id": 2,
-    "locations": [
-      { "country": "Ireland", "city": "Dublin" }
+    "id": "00000000-0000-0000-0000-000000004002",
+    "name": "Potana bike",
+    "tags": [
+      { "category": "cycling", "type": "mountain" }
     ],
-    "headquarters": { "country": "Belgium", "employees": 200 },
-    "exports": [
-      { "city": "Moscow" },
-      { "city": "Athens" },
-      { "city": "London" }
+    "inventory": { "warehouse": "Seattle", "quantity": 30 },
+    "distributors": [
+      { "name": "Contoso" },
+      { "name": "Fabrikam" },
+      { "name": "Northwind" }
     ]
   }
 ]
@@ -388,15 +397,15 @@ Cosmos DB uses an inverted index. The index works by mapping each JSON path to t
 
 | Path | Value | List of item identifiers |
 | --- | --- | --- |
-| `/locations/0/country` | `Germany` | `[1]` |
-| `/locations/0/country` | `Ireland` | `[2]` |
-| `/locations/0/city` | `Berlin` | `[1]` |
-| `/locations/0/city` | `Dublin` | `[2]` |
-| `/locations/1/country` | `France` | `[1]` |
-| `/locations/1/city` | `Paris` | `[1]` |
-| `/headquarters/country` | `Belgium` | `[1, 2]` |
-| `/headquarters/employees` | `200` | `[2]` |
-| `/headquarters/employees` | `250` | `[1]` |
+| `/tags/0/category` | `clothing` | `[00000000-0000-0000-0000-000000004001]` |
+| `/tags/0/category` | `cycling` | `[00000000-0000-0000-0000-000000004002]` |
+| `/tags/0/type` | `jacket` | `[00000000-0000-0000-0000-000000004001]` |
+| `/tags/0/type` | `mountain` | `[00000000-0000-0000-0000-000000004002]` |
+| `/tags/1/category` | `outdoor` | `[00000000-0000-0000-0000-000000004001]` |
+| `/tags/1/type` | `winter` | `[00000000-0000-0000-0000-000000004001]` |
+| `/inventory/warehouse` | `Seattle` | `[00000000-0000-0000-0000-000000004001, 00000000-0000-0000-0000-000000004002]` |
+| `/inventory/quantity` | `30` | `[00000000-0000-0000-0000-000000004002]` |
+| `/inventory/quantity` | `50` | `[00000000-0000-0000-0000-0000-000000004001]` |
 
 The inverted index has two important attributes:
 
@@ -412,24 +421,24 @@ Consider the following query:
 
 ```nosql
 SELECT
-  location
+  tag
 FROM
-  location IN company.locations
+  tag IN product.tags
 WHERE
-  location.country = 'France'
+  tag.category = 'outdoor'
 ```
 
-The query predicate (filtering on items where any location has "France" as its region) would match the path called out here:
+The query predicate (filtering on items where any tag has "outdoor" as its category) would match the path called out here:
 
-- *`locations`*
+- *`tags`*
   - `1`
-    - *`country`*: `France`
+    - *`category`*: `outdoor`
 
-:::image type="complex" source="media/indexing/matching-path.png" alt-text="Diagram of a traversal (search) mhighlighting the path locations/1/country/France in a Cosmos DB item structure":::
-  A tree diagram showing a root node with three branches: "locations", "headquarters," and "exports." "Locations" splits into two numbered nodes, each with two location-related subnodes ("Germany/Berlin" and "France/Paris"). "Headquarters" has "Belgium" for its location and "employees" ("250"). "Exports" splits into two numbered nodes, each with a "city" subnode ("Moscow" and "Athens"). The path for "locations," "1," location, and "France" are highlighted.
+:::image type="complex" source="media/indexing/tree-highlighted.svg" lightbox="media/indexing/tree-highlighted.svg" alt-text="Diagram of a traversal (search) highlighting the path tags/1/category/outdoor in a Cosmos DB item structure":::
+  A tree diagram showing a root node with five branches: "ID," "name," "tags", "inventory," and "distributors." The "ID" branch shows the value "00000000-0000-0000-0000-000000004001." The "name" branch shows "Raiot Jacket." "Tags" splits into two numbered nodes (0 and 1), each with "category" and "type" subnodes ("clothing/jacket" and "outdoor/winter"). "Inventory" has "warehouse" ("Seattle") and "quantity" ("50"). "Distributors" splits into two numbered nodes (0 and 1), each with a "name" subnode ("Contoso" and "AdventureWorks"). The path for "tags," "1," "category," and "outdoor" are highlighted.
 :::image-end:::
 
-Since this query has an equality filter, after traversing this tree, we can quickly identify the index pages that contain the query results. In this case, the query engine would read index pages that contain Item 1. An index seek is the most efficient way to use the index. With an index seek, we only read the necessary index pages and load only the items in the query results. Therefore, the index lookup time and RU charge from index lookup are incredibly low, regardless of the total data volume.
+Since this query has an equality filter, after traversing this tree, we can quickly identify the index pages that contain the query results. In this case, the query engine would read index pages that contain Item `00000000-0000-0000-0000-000000004001`. An index seek is the most efficient way to use the index. With an index seek, we only read the necessary index pages and load only the items in the query results. Therefore, the index lookup time and RU charge from index lookup are incredibly low, regardless of the total data volume.
 
 ### Precise index scan
 
@@ -439,12 +448,12 @@ Consider the following query:
 SELECT
   *
 FROM
-  company
+  product
 WHERE
-  company.headquarters.employees > 200
+  product.inventory.quantity > 30
 ```
 
-The query predicate (filtering on items where there are more than 200 employees) can be evaluated with a precise index scan of the `headquarters/employees` path. When doing a precise index scan, the query engine starts by doing a binary search of the distinct set of possible values to find the location of the value `200` for the `headquarters/employees` path. Since the values for each path are sorted in ascending order, it's easy for the query engine to do a binary search. After the query engine finds the value `200`, it starts reading all remaining index pages (going in the ascending direction).
+The query predicate (filtering on items where there are more than 30 units in inventory) can be evaluated with a precise index scan of the `inventory/quantity` path. When doing a precise index scan, the query engine starts by doing a binary search of the distinct set of possible values to find the location of the value `30` for the `inventory/quantity` path. Since the values for each path are sorted in ascending order, it's easy for the query engine to do a binary search. After the query engine finds the value `30`, it starts reading all remaining index pages (going in the ascending direction).
 
 Because the query engine can do a binary search to avoid scanning unnecessary index pages, precise index scans tend to have comparable latency and RU charges to index seek operations.
 
@@ -456,12 +465,12 @@ Consider the following query:
 SELECT
   *
 FROM
-  company
+  product
 WHERE
-  STARTSWITH(company.headquarters.country, "United", true)
+  STARTSWITH(product.inventory.warehouse, "Sea", true)
 ```
 
-The query predicate (filtering on items that have headquarters in a location that starts with case-insensitive "United") can be evaluated with an expanded index scan of the `headquarters/country` path. Operations that do an expanded index scan have optimizations that can help avoid needs to scan every index page but are slightly more expensive than a precise index scan's binary search.
+The query predicate (filtering on items that have inventory in a warehouse that starts with case-insensitive "Sea") can be evaluated with an expanded index scan of the `inventory/warehouse` path. Operations that do an expanded index scan have optimizations that can help avoid needs to scan every index page but are slightly more expensive than a precise index scan's binary search.
 
 For example, when evaluating case-insensitive `StartsWith`, the query engine checks the index for different possible combinations of uppercase and lowercase values. This optimization allows the query engine to avoid reading most index pages. Different system functions have different optimizations that they can use to avoid reading every index page, so they're broadly categorized as expanded index scan.
 
@@ -473,14 +482,14 @@ Consider the following query:
 SELECT
   *
 FROM
-  company
+  product
 WHERE
-  CONTAINS(company.headquarters.country, "United")
+  CONTAINS(product.inventory.warehouse, "eat")
 ```
 
-The query predicate (filtering on items that have headquarters in a location that contains "United") can be evaluated with an index scan of the `headquarters/country` path. Unlike a precise index scan, a full index scan always scans through the distinct set of possible values to identify the index pages where there are results. In this case, `CONTAINS` is run on the index. The index lookup time and RU charge for index scans increases as the cardinality of the path increases. In other words, the more possible distinct values that the query engine needs to scan, the higher the latency and RU charge involved in doing a full index scan.  
+The query predicate (filtering on items that have inventory in a warehouse that contains "eat") can be evaluated with an index scan of the `inventory/warehouse` path. Unlike a precise index scan, a full index scan always scans through the distinct set of possible values to identify the index pages where there are results. In this case, `CONTAINS` is run on the index. The index lookup time and RU charge for index scans increases as the cardinality of the path increases. In other words, the more possible distinct values that the query engine needs to scan, the higher the latency and RU charge involved in doing a full index scan.  
 
-For example, consider two properties: `town` and `country`. The cardinality of town is 5,000 and the cardinality of `country` is 200. Here are two example queries that each have a [`CONTAINS`](/nosql/query/contains) system function that does a full index scan on the `town` property. The first query uses more request units (RUs) than the second query because the cardinality of town is higher than `country`.
+For example, consider two properties: `name` and `warehouse`. The cardinality of name is 5,000 and the cardinality of `warehouse` is 200. Here are two example queries that each have a [`CONTAINS`](/nosql/query/contains) system function that does a full index scan on the `name` property. The first query uses more request units (RUs) than the second query because the cardinality of name is higher than `warehouse`.
 
 ```nosql
 SELECT
@@ -488,7 +497,7 @@ SELECT
 FROM
   container c
 WHERE
- CONTAINS(c.town, "Red", false)
+ CONTAINS(c.name, "Pack", false)
 ```
 
 ```nosql
@@ -497,7 +506,7 @@ SELECT
 FROM
   c
 WHERE
-  CONTAINS(c.country, "States", false)
+  CONTAINS(c.inventory.warehouse, "Sea", false)
 ```
 
 ### Full scan
@@ -518,12 +527,12 @@ Consider the following query:
 SELECT
   *
 FROM
-  company
+  product
 WHERE
-  company.headquarters.employees = 200 AND CONTAINS(company.headquarters.country, "United")
+  product.inventory.quantity = 50 AND CONTAINS(product.inventory.warehouse, "Sea")
 ```
 
-To execute this query, the query engine must do an index seek on `headquarters/employees` and full index scan on `headquarters/country`. The query engine has internal heuristics that it uses to evaluate the query filter expression as efficiently as possible. In this case, the query engine would avoid needing to read unnecessary index pages by doing the index seek first. If for example, only 50 items matched the equality filter, the query engine would only need to evaluate `CONTAINS` on the index pages that contained those 50 items. A full index scan of the entire container wouldn't be necessary.
+To execute this query, the query engine must do an index seek on `inventory/quantity` and full index scan on `inventory/warehouse`. The query engine has internal heuristics that it uses to evaluate the query filter expression as efficiently as possible. In this case, the query engine would avoid needing to read unnecessary index pages by doing the index seek first. If for example, only 50 items matched the equality filter, the query engine would only need to evaluate `CONTAINS` on the index pages that contained those 50 items. A full index scan of the entire container wouldn't be necessary.
 
 ## Index utilization for scalar aggregate functions
 
@@ -539,9 +548,9 @@ For example, consider the following query:
 SELECT
   *
 FROM
-  company
+  product
 WHERE
-  CONTAINS(company.headquarters.country, "United")
+  CONTAINS(product.inventory.warehouse, "Sea")
 ```
 
 The `CONTAINS` system function might return some false positive matches, so the query engine needs to verify whether each loaded item matches the filter expression. In this example, the query engine might only need to load an extra few items, so the effect on index utilization and RU charge is minimal.
@@ -552,9 +561,9 @@ However, queries with aggregate functions must rely exclusively on the index in 
 SELECT
   COUNT(1)
 FROM
-  company
+  product
 WHERE
-  CONTAINS(company.headquarters.country, "United")
+  CONTAINS(product.inventory.warehouse, "Sea")
 ```
 
 Like in the first example, the `CONTAINS` system function might return some false positive matches. Unlike the `SELECT *` query, however, the `COUNT` query can't evaluate the filter expression on the loaded items to verify all index matches. The `COUNT` query must rely exclusively on the index, so if there's a chance a filter expression returns false positive matches, the query engine resorts to a full scan.
