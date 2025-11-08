@@ -1,16 +1,8 @@
 ---
 title: DocumentDB Overview
-titleSuffix: DocumentDB (in Azure)
 description: Learn how DocumentDB in Azure provides an open-source and MongoDB-compatible platform with advanced indexing, vector search, and geospatial capabilities built on PostgreSQL.
-author: seesharprun
-ms.author: sidandrews
-ms.service: azure-cosmos-db
-ms.subservice: mongodb-vcore
-ms.topic: overview
 ms.date: 11/07/2025
 ai-usage: ai-generated
-applies-to:
-  - ✅ Azure DocumentDB
 ---
 
 # What is DocumentDB (in Azure)
