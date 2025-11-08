@@ -18,9 +18,9 @@ highlightedContent:
     - title: DocumentDB
       itemType: reference
       url: https://github.com/microsoft/documentdb
-    - title: Azure Cosmos DB for MongoDB vCore
+    - title: Azure DocumentDB
       itemType: overview
-      url: /azure/cosmos-db/mongodb/vcore
+      url: /azure/documentdb
     - title: Azure Redis
       itemType: overview
       url: /azure/redis
@@ -54,17 +54,19 @@ additionalContent:
           links:
             - text: Solution accelerators
               url: /azure/cosmos-db/solutions?pivots=api-nosql
-    - title: Azure Cosmos DB for MongoDB vCore
-      summary: Azure Cosmos DB for MongoDB vCore is a managed MongoDB-compatible database service with flexible scaling and high availability.
+    - title: Azure DocumentDB
+      summary: Azure DocumentDB is a managed MongoDB-compatible database service with flexible scaling and high availability.
       items:
         - title: Get started
           links:
             - text: Overview
-              url: /azure/cosmos-db/mongodb/vcore/introduction
+              url: /azure/documentdb/overview
         - title: Query data
           links:
-            - text: MongoDB query language
-              url: /azure/cosmos-db/mongodb/vcore/commands/
+            - text: MongoDB Query Language (MQL) operators
+              url: /azure/documentdb/operators/
+            - text: MongoDB Query Language (MQL) commands
+              url: /azure/documentdb/commands/
     - title: Cosmos DB in Microsoft Fabric
       summary: Cosmos DB in Microsoft Fabric provides a unified data platform for building and deploying applications with NoSQL capabilities.
       items:

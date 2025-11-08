@@ -10,7 +10,7 @@ ms.topic: overview
 ms.date: 11/07/2025
 ai-usage: ai-generated
 applies-to:
-  - ✅ Azure Cosmos DB for MongoDB (vCore)
+  - ✅ Azure DocumentDB
 ---
 
 # What is DocumentDB (in Azure)
@@ -35,8 +35,8 @@ The DocumentDB platform is designed for MongoDB-compatible applications requirin
 
 The DocumentDB open-source platform is implemented in services that use its MongoDB-compatible capabilities while providing managed infrastructure and Azure integration.
 
-### Azure Cosmos DB for MongoDB (vCore)
+### Azure DocumentDB
 
-Azure Cosmos DB for MongoDB (vCore) is a fully managed MongoDB-compatible database service built on the DocumentDB open-source platform. It provides developers with a familiar vCore architecture for building modern applications with native Azure integrations and low total cost of ownership. The service offers an integrated vector database for generative AI applications, enabling efficient indexing and querying without external integrations. Azure Cosmos DB for MongoDB (vCore) features deep integration with Azure products such as Azure Monitor and Azure CLI, provides flexible vertical and horizontal scaling with optional high availability, and supports automatic sharding with no downtime. The service uses the permissive MIT-licensed DocumentDB platform, ensuring developers have complete freedom to use, modify, and distribute their applications without commercial licensing restrictions.
+Azure DocumentDB is a fully managed MongoDB-compatible database service built on the DocumentDB open-source platform. It provides developers with a familiar vCore architecture for building modern applications with native Azure integrations and low total cost of ownership. The service offers an integrated vector database for generative AI applications, enabling efficient indexing and querying without external integrations. Azure DocumentDB features deep integration with Azure products such as Azure Monitor and Azure CLI, provides flexible vertical and horizontal scaling with optional high availability, and supports automatic sharding with no downtime. The service uses the permissive MIT-licensed DocumentDB platform, ensuring developers have complete freedom to use, modify, and distribute their applications without commercial licensing restrictions.
 
-For more information about Azure Cosmos DB for MongoDB (vCore), see [Azure Cosmos DB for MongoDB (vCore) documentation](/azure/cosmos-db/mongodb/vcore).
+For more information about Azure DocumentDB, see [Azure DocumentDB documentation](/azure/documentdb).

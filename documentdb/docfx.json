@@ -114,16 +114,16 @@
       },
       "appliesto": {
         "**/*.md": [
-          "✅ Azure Cosmos DB for MongoDB (vCore)"
+          "✅ Azure DocumentDB"
         ],
         "**/*.yml": [
-          "✅ Azure Cosmos DB for MongoDB (vCore)"
+          "✅ Azure DocumentDB"
         ],
         "query/**/*.md": [
-          "✅ Azure Cosmos DB for MongoDB (vCore)"
+          "✅ Azure DocumentDB"
         ],
         "query/**/*.yml": [
-          "✅ Azure Cosmos DB for MongoDB (vCore)"
+          "✅ Azure DocumentDB"
         ]
       }
     },
