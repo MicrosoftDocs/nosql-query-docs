@@ -1,0 +1,10 @@
+### YamlMime:ZonePivotGroups
+groups:
+  - id: cosmos-db-platform
+    title: Cosmos DB platforms
+    prompt: Choose a platform
+    pivots:
+      - id: azure-cosmos-db-nosql
+        title: Azure Cosmos DB for NoSQL
+      - id: microsoft-fabric-cosmos-db
+        title: Cosmos DB in Microsoft Fabric
