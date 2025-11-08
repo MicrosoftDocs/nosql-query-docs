@@ -238,7 +238,7 @@ Range indexes can be used on scalar values (string or number). The default index
       ST_INTERSECTS(c.property, { 'type':'Polygon', 'coordinates': [[ [31.8, -5], [32, -5], [31.8, -5] ]]  })  
     ```
 
-Spatial indexes can be used on correctly formatted [GeoJSON](indexing-policies.md#spatial-indexes) objects. Points, LineStrings, Polygons, and MultiPolygons are currently supported.
+Spatial indexes can be used on correctly formatted GeoJSON objects. Points, LineStrings, Polygons, and MultiPolygons are currently supported.
 
 ### Composite index
 
