@@ -25,7 +25,7 @@ You can categorize common database operations into specific types and make reaso
 | Delete operation | Consumes a variable number of RUs |
 | Query operation | Consumes a variable number of RUs, potentially more than point operations |
 
-:::image type="complex" source="media/request-units/conceptual-diagram.png" alt-text="Diagram illustrating various database operations and how they consume request units.":::
+:::image type="complex" source="media/request-units/conceptual-diagram.png" alt-text="diagram showing database operations consuming request units based on CPU, memory, and IOPS.":::
   The diagram is divided into two main sections:
   
   1. The left section explains that usage is expressed in Request Units (RUs), which are calculated based on percentages of memory, CPU, and IOPS. Icons above a box labeled "Request Unit (RUs)" visually represents these resources.
@@ -43,7 +43,7 @@ You can categorize common database operations into specific types and make reaso
 
 To manage and plan capacity, Cosmos DB ensures that the number of RUs for a given database operation over a given dataset is deterministic. You can examine the response header to track the number of RUs consumed by any database operation. When you understand the factors that affect RU charges and your application's throughput requirements, you can run your application cost effectively. The next section details the previously mentioned factors that affect RU consumption.
 
-## Considerations
+## Factors that affect request unit consumption
 
 While you estimate the number of RUs consumed by your workload, consider the following factors:
 
@@ -61,15 +61,23 @@ While you estimate the number of RUs consumed by your workload, consider the fol
 
 - **Query patterns**: The complexity of a query affects how many RUs are consumed for an operation. Factors that affect the cost of query operations include:
 
-  * The number of query results
-  * The number of predicates
-  * The nature of the predicates
-  * The number of user-defined functions
-  * The size of the source data
-  * The size of the result set
-  * Projections
 
-  The same query on the same data always costs the same number of RUs on repeated executions.
+  - The number of query results
+
+  - The number of predicates
+
+  - The nature of the predicates
+
+  - The number of user-defined functions
+
+  - The size of the source data
+
+  - The size of the result set
+
+  - Projections
+
+  > [!NOTE]
+  > The same query on the same data always costs the same number of RUs on repeated executions.
 
 - **Script usage**: As with queries, stored procedures and triggers consume RUs based on the complexity of the operations that are performed. As you develop your application, inspect the request charge header to better understand how much RU capacity each operation consumes.
 
