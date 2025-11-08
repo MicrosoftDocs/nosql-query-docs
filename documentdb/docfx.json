@@ -18,13 +18,23 @@
           "ThirdPartyNotices.md",
           "SECURITY.md"
         ]
+      },
+      {
+        "files": [
+          "zone-pivot-groups.yml"
+        ],
+        "src": "zone-pivots",
+        "dest": "zone-pivots/documentdb/"
       }
     ],
     "resource": [
       {
         "files": [
+          "**/*.gif",
+          "**/*.jpeg",
+          "**/*.jpg",
           "**/*.png",
-          "**/*.jpg"
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -38,11 +48,85 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-NoSQL",
+      "brand": "Azure",
+      "permissioned-type": "public",
+      "recommendations": true,
+      "recommendation_types": [
+        "Training",
+        "Certification"
+      ],
       "breadcrumb_path": "~/breadcrumb/documentdb/toc.yml",
+      "zone_pivot_group_filename": "zone-pivots/zone-pivot-groups.json",
       "feedback_system": "Standard",
-      "permissioned-type": "public"
+      "feedback_product_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
+      "feedback_help_link_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
+      "feedback_help_link_type": "get-help-at-qna"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "titleSuffix": {
+        "**/*.md": "DocumentDB (in Azure)",
+        "**/*.yml": "DocumentDB (in Azure)",
+        "query/**/*.md": "MongoDB Query Language (MQL) for DocumentDB (in Azure)",
+        "query/**/*.yml": "MongoDB Query Language (MQL) for DocumentDB (in Azure)"
+      },
+      "author": {
+        "**/*.md": "seesharprun",
+        "**/*.yml": "seesharprun"
+      },
+      "ms.author": {
+        "**/*.md": "sidandrews",
+        "**/*.yml": "sidandrews"
+      },
+      "ms.reviewer": {
+        "*.md": "gahllevy",
+        "*.yml": "gahllevy",
+        "query/**/*.md": "avgupt",
+        "query/**/*.yml": "avgupt"
+      },
+      "ms.service": {
+        "**/*.md": "azure-cosmos-db",
+        "**/*.yml": "azure-cosmos-db"
+      },
+      "ms.subservice": {
+        "**/*.md": "mongodb-vcore",
+        "**/*.yml": "mongodb-vcore"
+      },
+      "ms.topic": {
+        "**/*.md": "reference",
+        "**/*.yml": "reference",
+        "query/**/*.md": "language-reference",
+        "query/**/*.yml": "language-reference"
+      },
+      "ms.devlang": {
+        "query/**/*.md": "nosql",
+        "query/**/*.yml": "nosql"
+      },
+      "ms.collection": {
+        "**/*.md": "documentdb-reference",
+        "**/*.yml": "documentdb-reference",
+        "query/**/*.md": "documentdb-query-reference",
+        "query/**/*.yml": "documentdb-query-reference"
+      },
+      "ai-usage": {
+        "query/**/*.md": "ai-assisted",
+        "query/**/*.yml": "ai-assisted"
+      },
+      "appliesto": {
+        "**/*.md": [
+          "✅ Azure Cosmos DB for MongoDB (vCore)"
+        ],
+        "**/*.yml": [
+          "✅ Azure Cosmos DB for MongoDB (vCore)"
+        ],
+        "query/**/*.md": [
+          "✅ Azure Cosmos DB for MongoDB (vCore)"
+        ],
+        "query/**/*.yml": [
+          "✅ Azure Cosmos DB for MongoDB (vCore)"
+        ]
+      }
+    },
     "template": []
   }
 }
