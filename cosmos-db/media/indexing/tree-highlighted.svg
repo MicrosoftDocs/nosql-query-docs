@@ -1,188 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600">
-  <!-- Define styles -->
-  <defs>
-    <style>
-      .node-rect { fill: #999999; stroke: none; }
-      .node-rect-highlight { fill: #999999; stroke: #CC0000; stroke-width: 4; }
-      .node-text { fill: white; font-family: 'Segoe UI', Arial, sans-serif; font-size: 18px; text-anchor: middle; dominant-baseline: middle; }
-      .edge-line { stroke: #999999; stroke-width: 3; fill: none; }
-      .edge-line-highlight { stroke: #CC0000; stroke-width: 4; fill: none; }
-    </style>
-  </defs>
-  
-  <!-- Root node -->
-  <rect class="node-rect" x="650" y="20" width="100" height="60" rx="5"/>
-  <text class="node-text" x="700" y="50"></text>
-  
-  <!-- Connections from root -->
-  <path class="edge-line" d="M 670 80 Q 670 100 200 120 L 200 140"/>
-  <path class="edge-line" d="M 685 80 Q 685 100 380 120 L 380 140"/>
-  <path class="edge-line-highlight" d="M 700 80 L 700 140"/>
-  <path class="edge-line" d="M 715 80 Q 715 100 1000 120 L 1000 140"/>
-  <path class="edge-line" d="M 730 80 Q 730 100 1280 120 L 1280 140"/>
-  
-  <!-- Level 1 nodes -->
-  <!-- id node -->
-  <rect class="node-rect" x="150" y="140" width="100" height="60" rx="5"/>
-  <text class="node-text" x="200" y="170">id</text>
-  
-  <!-- name node -->
-  <rect class="node-rect" x="330" y="140" width="100" height="60" rx="5"/>
-  <text class="node-text" x="380" y="170">name</text>
-  
-  <!-- tags node - highlighted -->
-  <rect class="node-rect-highlight" x="650" y="140" width="100" height="60" rx="5"/>
-  <text class="node-text" x="700" y="170">tags</text>
-  
-  <!-- inventory node -->
-  <rect class="node-rect" x="950" y="140" width="100" height="60" rx="5"/>
-  <text class="node-text" x="1000" y="170">inventory</text>
-  
-  <!-- distributors node -->
-  <rect class="node-rect" x="1230" y="140" width="150" height="60" rx="5"/>
-  <text class="node-text" x="1305" y="170">distributors</text>
-  
-  <!-- Connections from id -->
-  <path class="edge-line" d="M 200 200 L 200 240"/>
-  
-  <!-- id value node -->
-  <rect class="node-rect" x="70" y="240" width="260" height="60" rx="5"/>
-  <text class="node-text" x="200" y="270" style="font-size: 14px;">00000000-...04368</text>
-  
-  <!-- Connections from name -->
-  <path class="edge-line" d="M 380 200 L 380 240"/>
-  
-  <!-- name value node -->
-  <rect class="node-rect" x="310" y="240" width="140" height="60" rx="5"/>
-  <text class="node-text" x="380" y="270">Cofaz Jacket</text>
-  
-  <!-- Connections from tags -->
-  <path class="edge-line" d="M 680 200 Q 680 220 610 230 L 610 240"/>
-  <path class="edge-line-highlight" d="M 720 200 Q 720 220 790 230 L 790 240"/>
-  
-  <!-- tags[0] node -->
-  <rect class="node-rect" x="560" y="240" width="100" height="60" rx="5"/>
-  <text class="node-text" x="610" y="270">0</text>
-  
-  <!-- tags[1] node - highlighted -->
-  <rect class="node-rect-highlight" x="740" y="240" width="100" height="60" rx="5"/>
-  <text class="node-text" x="790" y="270">1</text>
-  
-  <!-- Connections from tags[0] -->
-  <path class="edge-line" d="M 590 300 Q 590 320 540 330 L 540 340"/>
-  <path class="edge-line" d="M 630 300 Q 630 320 680 330 L 680 340"/>
-  
-  <!-- tags[0]/category node -->
-  <rect class="node-rect" x="480" y="340" width="120" height="60" rx="5"/>
-  <text class="node-text" x="540" y="370">category</text>
-  
-  <!-- tags[0]/type node -->
-  <rect class="node-rect" x="630" y="340" width="100" height="60" rx="5"/>
-  <text class="node-text" x="680" y="370">type</text>
-  
-  <!-- Connections from tags[1] -->
-  <path class="edge-line-highlight" d="M 770 300 Q 770 320 720 330 L 720 340"/>
-  <path class="edge-line" d="M 810 300 Q 810 320 860 330 L 860 340"/>
-  
-  <!-- tags[1]/category node - highlighted -->
-  <rect class="node-rect-highlight" x="660" y="340" width="120" height="60" rx="5"/>
-  <text class="node-text" x="720" y="370">category</text>
-  
-  <!-- tags[1]/type node -->
-  <rect class="node-rect" x="810" y="340" width="100" height="60" rx="5"/>
-  <text class="node-text" x="860" y="370">type</text>
-  
-  <!-- Connections from tags[0]/category -->
-  <path class="edge-line" d="M 540 400 L 540 440"/>
-  
-  <!-- tags[0]/category value -->
-  <rect class="node-rect" x="480" y="440" width="120" height="60" rx="5"/>
-  <text class="node-text" x="540" y="470">clothing</text>
-  
-  <!-- Connections from tags[0]/type -->
-  <path class="edge-line" d="M 680 400 L 680 440"/>
-  
-  <!-- tags[0]/type value -->
-  <rect class="node-rect" x="630" y="440" width="100" height="60" rx="5"/>
-  <text class="node-text" x="680" y="470">jacket</text>
-  
-  <!-- Connections from tags[1]/category -->
-  <path class="edge-line-highlight" d="M 720 400 L 720 440"/>
-  
-  <!-- tags[1]/category value - highlighted -->
-  <rect class="node-rect-highlight" x="660" y="440" width="120" height="60" rx="5"/>
-  <text class="node-text" x="720" y="470">outdoor</text>
-  
-  <!-- Connections from tags[1]/type -->
-  <path class="edge-line" d="M 860 400 L 860 440"/>
-  
-  <!-- tags[1]/type value -->
-  <rect class="node-rect" x="810" y="440" width="100" height="60" rx="5"/>
-  <text class="node-text" x="860" y="470">winter</text>
-  
-  <!-- Connections from inventory -->
-  <path class="edge-line" d="M 980 200 Q 980 220 930 230 L 930 240"/>
-  <path class="edge-line" d="M 1020 200 Q 1020 220 1070 230 L 1070 240"/>
-  
-  <!-- inventory/warehouse node -->
-  <rect class="node-rect" x="850" y="240" width="160" height="60" rx="5"/>
-  <text class="node-text" x="930" y="270">warehouse</text>
-  
-  <!-- inventory/quantity node -->
-  <rect class="node-rect" x="1020" y="240" width="100" height="60" rx="5"/>
-  <text class="node-text" x="1070" y="270">quantity</text>
-  
-  <!-- Connections from inventory/warehouse -->
-  <path class="edge-line" d="M 930 300 L 930 340"/>
-  
-  <!-- inventory/warehouse value -->
-  <rect class="node-rect" x="870" y="340" width="120" height="60" rx="5"/>
-  <text class="node-text" x="930" y="370">Seattle</text>
-  
-  <!-- Connections from inventory/quantity -->
-  <path class="edge-line" d="M 1070 300 L 1070 340"/>
-  
-  <!-- inventory/quantity value -->
-  <rect class="node-rect" x="1020" y="340" width="100" height="60" rx="5"/>
-  <text class="node-text" x="1070" y="370">50</text>
-  
-  <!-- Connections from distributors -->
-  <path class="edge-line" d="M 1285 200 Q 1285 220 1235 230 L 1235 240"/>
-  <path class="edge-line" d="M 1325 200 Q 1325 220 1375 230 L 1375 240"/>
-  
-  <!-- distributors[0] node -->
-  <rect class="node-rect" x="1185" y="240" width="100" height="60" rx="5"/>
-  <text class="node-text" x="1235" y="270">0</text>
-  
-  <!-- distributors[1] node -->
-  <rect class="node-rect" x="1325" y="240" width="100" height="60" rx="5"/>
-  <text class="node-text" x="1375" y="270">1</text>
-  
-  <!-- Connections from distributors[0] -->
-  <path class="edge-line" d="M 1235 300 L 1235 340"/>
-  
-  <!-- distributors[0]/name node -->
-  <rect class="node-rect" x="1185" y="340" width="100" height="60" rx="5"/>
-  <text class="node-text" x="1235" y="370">name</text>
-  
-  <!-- Connections from distributors[1] -->
-  <path class="edge-line" d="M 1375 300 L 1375 340"/>
-  
-  <!-- distributors[1]/name node -->
-  <rect class="node-rect" x="1325" y="340" width="100" height="60" rx="5"/>
-  <text class="node-text" x="1375" y="370">name</text>
-  
-  <!-- Connections from distributors[0]/name -->
-  <path class="edge-line" d="M 1235 400 L 1235 440"/>
-  
-  <!-- distributors[0]/name value -->
-  <rect class="node-rect" x="1165" y="440" width="140" height="60" rx="5"/>
-  <text class="node-text" x="1235" y="470">Contoso</text>
-  
-  <!-- Connections from distributors[1]/name -->
-  <path class="edge-line" d="M 1375 400 L 1375 440"/>
-  
-  <!-- distributors[1]/name value -->
-  <rect class="node-rect" x="1265" y="440" width="220" height="60" rx="5"/>
-  <text class="node-text" x="1375" y="470">AdventureWorks</text>
+   <defs>
+       <style>
+          .background {
+              fill: #FFFFFF;
+              stroke: none;
+          }
+
+          .node-rect {
+              fill: #243A5E;
+              stroke: none;
+          }
+
+          .node-rect-highlight {
+              fill: #D83B01;
+              stroke: #D83B01;
+              stroke-width: 4;
+          }
+
+          .node-text {
+              fill: #fff;
+              font-family: "Segoe UI", Arial, sans-serif;
+              font-size: 18px;
+              text-anchor: middle;
+              dominant-baseline: middle;
+          }
+
+          .edge-line {
+              stroke: #737373;
+              stroke-width: 2;
+              fill: none;
+          }
+
+          .edge-line-highlight {
+              stroke: #D83B01;
+              stroke-width: 3;
+              fill: none;
+          }
+      </style>
+   </defs>
+   <rect width="1400" height="600" x="0" y="0" class="background" rx="0"/>
+   <rect width="100" height="60" x="610.073" y="59.806" z="1" class="node-rect-highlight" rx="5"/>
+   <path d="M 630.073 119.806 C 630.073 133.139 460.575 146.473 121.578 159.806 L 121.578 179.806" class="edge-line"/>
+   <path d="M 645.073 119.806 C 645.073 133.139 516.447 146.473 259.195 159.806 L 259.195 179.806" class="edge-line"/>
+   <path d="M 675.073 119.806 C 675.073 133.139 728.597 146.473 835.646 159.806 L 835.646 179.806" class="edge-line"/>
+   <path d="M 690.073 119.806 C 690.073 133.139 843.077 146.473 1149.08 159.806 L 1149.08 179.806" class="edge-line"/>
+   <rect width="100" height="60" x="72.356" y="180.195" class="node-rect" rx="5"/>
+   <text x="122.356" y="210.195" class="node-text" style="white-space: pre; font-size: 18px;">id</text>
+   <rect width="100" height="60" x="208.418" y="179.806" class="node-rect" rx="5"/>
+   <text x="258.418" y="209.806" class="node-text" style="white-space: pre; font-size: 18px;">name</text>
+   <rect width="100" height="60" x="433.153" y="180.195" class="node-rect-highlight" rx="5"/>
+   <text x="483.153" y="210.195" class="node-text" style="white-space: pre; font-size: 18px;">tags</text>
+   <rect width="100" height="60" x="782.535" y="180.195" class="node-rect" rx="5"/>
+   <text x="832.535" y="210.195" class="node-text" style="white-space: pre; font-size: 18px;">inventory</text>
+   <rect width="150" height="60" x="1072.64" y="180.195" class="node-rect" rx="5"/>
+   <text x="1147.64" y="210.195" class="node-text" style="white-space: pre; font-size: 18px;">distributors</text>
+   <path d="M 122.356 240.195 L 122.356 280.195" class="edge-line"/>
+   <rect width="97.856" height="60" x="72.845" y="280.195" class="node-rect" rx="5"/>
+   <text x="122.356" y="310.195" class="node-text" font-size="14" style="white-space: pre; font-size: 18px;">..04368</text>
+   <path d="M 258.418 239.806 L 258.418 279.806" class="edge-line"/>
+   <rect width="140" height="60" x="188.418" y="279.806" class="node-rect" rx="5"/>
+   <text x="257.251" y="309.806" class="node-text" style="white-space: pre; font-size: 18px;">Cofaz Jacket</text>
+   <path d="M 463.153 240.195 C 463.153 253.528 439.82 263.528 393.153 270.195 L 393.153 280.195" class="edge-line"/>
+   <path d="M 503.153 240.195 C 503.153 253.528 526.486 263.528 573.153 270.195 L 573.153 280.195" class="edge-line-highlight"/>
+   <rect width="100" height="60" x="343.153" y="280.195" class="node-rect" rx="5"/>
+   <text x="393.153" y="310.195" class="node-text" style="white-space: pre; font-size: 18px;">0</text>
+   <rect width="100" height="60" x="523.153" y="280.195" class="node-rect-highlight" rx="5"/>
+   <text x="573.153" y="310.195" class="node-text" style="white-space: pre; font-size: 18px;">1</text>
+   <path d="M 366.376 340.195 C 366.376 353.528 353.783 363.528 328.596 370.195 L 328.596 380.195 M 396.6 340.195 C 396.6 353.528 409.193 363.528 434.379 370.195 L 434.379 380.195" class="edge-line"/>
+   <rect width="120" height="60" x="228.158" y="380.195" class="node-rect" rx="5"/>
+   <text x="288.158" y="410.195" class="node-text" style="white-space: pre; font-size: 18px;">category</text>
+   <rect width="100" height="60" x="359.494" y="379.417" class="node-rect" rx="5"/>
+   <text x="409.494" y="409.417" class="node-text" style="white-space: pre; font-size: 18px;">type</text>
+   <path d="M 553.153 340.195 C 553.153 353.528 536.486 363.528 503.153 370.195 L 503.153 380.195" class="edge-line-highlight"/>
+   <path d="M 593.153 340.195 C 593.153 353.528 609.82 363.528 643.153 370.195 L 643.153 380.195" class="edge-line"/>
+   <rect width="120" height="60" x="467.65" y="380.195" class="node-rect-highlight" rx="5"/>
+   <text x="527.65" y="410.195" class="node-text" style="white-space: pre; font-size: 18px;">category</text>
+   <rect width="100" height="60" x="593.153" y="380.195" class="node-rect" rx="5"/>
+   <text x="643.153" y="410.195" class="node-text" style="white-space: pre; font-size: 18px;">type</text>
+   <path d="M 288.158 440.195 L 288.158 480.195" class="edge-line"/>
+   <rect width="120" height="60" x="228.158" y="480.195" class="node-rect" rx="5"/>
+   <text x="288.158" y="510.195" class="node-text" style="white-space: pre; font-size: 18px;">clothing</text>
+   <path d="M 409.494 439.417 L 409.494 479.417" class="edge-line"/>
+   <rect width="100" height="60" x="359.494" y="479.417" class="node-rect" rx="5"/>
+   <text x="409.494" y="509.417" class="node-text" style="white-space: pre; font-size: 18px;">jacket</text>
+   <path d="M 527.65 440.195 L 527.65 480.195" class="edge-line-highlight"/>
+   <rect width="120" height="60" x="467.65" y="480.195" class="node-rect-highlight" rx="5"/>
+   <text x="527.65" y="510.195" class="node-text" style="white-space: pre; font-size: 18px;">outdoor</text>
+   <path d="M 643.153 440.195 L 643.153 480.195" class="edge-line"/>
+   <rect width="100" height="60" x="593.153" y="480.195" class="node-rect" rx="5"/>
+   <text x="643.153" y="510.195" class="node-text" style="white-space: pre; font-size: 18px;">winter</text>
+   <path d="M 812.535 240.195 C 812.535 253.528 795.868 263.528 762.535 270.195 L 762.535 280.195 M 852.535 240.195 C 852.535 253.528 869.202 263.528 902.535 270.195 L 902.535 280.195" class="edge-line"/>
+   <rect width="160" height="60" x="682.535" y="280.195" class="node-rect" rx="5"/>
+   <text x="762.535" y="310.195" class="node-text" style="white-space: pre; font-size: 18px;">warehouse</text>
+   <rect width="100" height="60" x="852.535" y="280.195" class="node-rect" rx="5"/>
+   <text x="902.535" y="310.195" class="node-text" style="white-space: pre; font-size: 18px;">quantity</text>
+   <path d="M 762.535 340.195 L 762.535 380.195" class="edge-line"/>
+   <rect width="120" height="60" x="702.535" y="380.195" class="node-rect" rx="5"/>
+   <text x="762.535" y="410.195" class="node-text" style="white-space: pre; font-size: 18px;">Seattle</text>
+   <path d="M 902.535 340.195 L 902.535 380.195" class="edge-line"/>
+   <rect width="100" height="60" x="852.535" y="380.195" class="node-rect" rx="5"/>
+   <text x="902.535" y="410.195" class="node-text" style="white-space: pre; font-size: 18px;">50</text>
+   <path d="M 1095.39 240.195 C 1095.39 253.528 1072.75 263.528 1027.48 270.195 L 1027.48 280.195 M 1149.73 240.195 C 1149.73 253.528 1172.37 263.528 1217.64 270.195 L 1217.64 280.195" class="edge-line"/>
+   <rect width="100" height="60" x="977.093" y="280.195" class="node-rect" rx="5"/>
+   <text x="1027.09" y="310.195" class="node-text" style="white-space: pre; font-size: 18px;">0</text>
+   <rect width="100" height="60" x="1167.64" y="280.195" class="node-rect" rx="5"/>
+   <text x="1217.64" y="310.195" class="node-text" style="white-space: pre; font-size: 18px;">1</text>
+   <path d="M 1027.09 340.195 L 1027.09 380.195" class="edge-line"/>
+   <rect width="100" height="60" x="977.093" y="380.195" class="node-rect" rx="5"/>
+   <text x="1027.09" y="410.195" class="node-text" style="white-space: pre; font-size: 18px;">name</text>
+   <path d="M 1217.64 340.195 L 1217.64 380.195" class="edge-line"/>
+   <rect width="100" height="60" x="1167.64" y="380.195" class="node-rect" rx="5"/>
+   <text x="1217.64" y="410.195" class="node-text" style="white-space: pre; font-size: 18px;">name</text>
+   <path d="M 1027.09 440.195 L 1027.09 480.195" class="edge-line"/>
+   <rect width="140" height="60" x="957.094" y="480.195" class="node-rect" rx="5"/>
+   <text x="1027.09" y="510.195" class="node-text" style="white-space: pre; font-size: 18px;">Contoso</text>
+   <path d="M 1217.64 440.195 L 1217.64 480.195" class="edge-line"/>
+   <rect width="220" height="60" x="1107.64" y="480.195" class="node-rect" rx="5"/>
+   <text x="1217.64" y="510.195" class="node-text" style="white-space: pre; font-size: 18px;">AdventureWorks</text>
+   <path d="M 661.219 118.971 C 661.219 132.304 600.898 145.638 480.257 158.971 L 480.257 178.971" class="edge-line-highlight"/>
 </svg>
