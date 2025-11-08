@@ -60,7 +60,7 @@ additionalContent:
         - title: Get started
           links:
             - text: Overview
-              url: /azure/cosmos-db/mongodb/vcore/overview
+              url: /azure/cosmos-db/mongodb/vcore/introduction
         - title: Query data
           links:
             - text: MongoDB Query Language (MQL) operators
