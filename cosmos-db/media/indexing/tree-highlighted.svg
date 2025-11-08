@@ -47,14 +47,14 @@
   
   <!-- id value node -->
   <rect class="node-rect" x="70" y="240" width="260" height="60" rx="5"/>
-  <text class="node-text" x="200" y="270" style="font-size: 14px;">00000000-...04001</text>
+  <text class="node-text" x="200" y="270" style="font-size: 14px;">00000000-...04368</text>
   
   <!-- Connections from name -->
   <path class="edge-line" d="M 380 200 L 380 240"/>
   
   <!-- name value node -->
   <rect class="node-rect" x="310" y="240" width="140" height="60" rx="5"/>
-  <text class="node-text" x="380" y="270">Raiot Jacket</text>
+  <text class="node-text" x="380" y="270">Cofaz Jacket</text>
   
   <!-- Connections from tags -->
   <path class="edge-line" d="M 680 200 Q 680 220 610 230 L 610 240"/>

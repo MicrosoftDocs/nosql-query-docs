@@ -20,8 +20,8 @@ As an example, consider this item:
 
 ```json
 {
-  "id": "00000000-0000-0000-0000-000000004001",
-  "name": "Raiot Jacket",
+  "id": "00000000-0000-0000-0000-000000004368",
+  "name": "Cofaz Jacket",
   "tags": [
     { "category": "clothing", "type": "jacket" },
     { "category": "outdoor", "type": "winter" }
@@ -36,8 +36,8 @@ As an example, consider this item:
 
 This conceptual tree represents the sample JSON item:
 
-- *`id`*: `00000000-0000-0000-0000-000000004001`
-- *`name`*: `Raiot Jacket`
+- *`id`*: `00000000-0000-0000-0000-000000004368`
+- *`name`*: `Cofaz Jacket`
 - *`tags`*
   - `0`
     - *`category`*: `clothing`
@@ -55,7 +55,7 @@ This conceptual tree represents the sample JSON item:
     - *`name`*: `AdventureWorks`
 
 :::image type="complex" source="media/indexing/tree.svg" lightbox="media/indexing/tree.svg" alt-text="Diagram of the tree representation of an item in Cosmos DB. The diagram shows the hierarchical structure of a JSON item in Cosmos DB with branches for ID, name, tags, inventory, and distributors properties.":::
-  A tree diagram showing a root node with five branches: "ID," "name," "tags", "inventory," and "distributors." The "ID" branch shows the value "00000000-0000-0000-0000-000000004001." The "name" branch shows "Raiot Jacket." "Tags" splits into two numbered nodes (0 and 1), each with "category" and "type" subnodes ("clothing/jacket" and "outdoor/winter"). "Inventory" has "warehouse" ("Seattle") and "quantity" ("50"). "Distributors" splits into two numbered nodes (0 and 1), each with a "name" subnode ("Contoso" and "AdventureWorks").
+  A tree diagram showing a root node with five branches: "ID," "name," "tags", "inventory," and "distributors." The "ID" branch shows the value "00000000-0000-0000-0000-000000004368." The "name" branch shows "Cofaz Jacket." "Tags" splits into two numbered nodes (0 and 1), each with "category" and "type" subnodes ("clothing/jacket" and "outdoor/winter"). "Inventory" has "warehouse" ("Seattle") and "quantity" ("50"). "Distributors" splits into two numbered nodes (0 and 1), each with a "name" subnode ("Contoso" and "AdventureWorks").
 :::image-end:::
 
 Pay attention to how arrays are encoded in the tree: every entry in an array gets an intermediate node labeled with the index of that entry within the array. For example, the first entry is `0` and the second entry is `1`.
@@ -68,8 +68,8 @@ Here are the paths for each property from the example item described previously:
 
 | Path | Value |
 | --- | --- |
-| `/id` | `"00000000-0000-0000-0000-000000004001"` |
-| `/name` | `"Raiot Jacket"` |
+| `/id` | `"00000000-0000-0000-0000-000000004368"` |
+| `/name` | `"Cofaz Jacket"` |
 | `/tags/0/category` | `"clothing"` |
 | `/tags/0/type` | `"jacket"` |
 | `/tags/1/category` | `"outdoor"` |
@@ -365,8 +365,8 @@ Consider these two example items:
 ```json
 [
   {
-    "id": "00000000-0000-0000-0000-000000004001",
-    "name": "Raiot Jacket",
+    "id": "00000000-0000-0000-0000-000000004368",
+    "name": "Cofaz Jacket",
     "tags": [
       { "category": "clothing", "type": "jacket" },
       { "category": "outdoor", "type": "winter" }
@@ -397,13 +397,13 @@ Cosmos DB uses an inverted index. The index works by mapping each JSON path to t
 
 | Path | Value | List of item identifiers |
 | --- | --- | --- |
-| `/tags/0/category` | `clothing` | `[00000000-0000-0000-0000-000000004001]` |
+| `/tags/0/category` | `clothing` | `[00000000-0000-0000-0000-000000004368]` |
 | `/tags/0/category` | `cycling` | `[00000000-0000-0000-0000-000000004002]` |
-| `/tags/0/type` | `jacket` | `[00000000-0000-0000-0000-000000004001]` |
+| `/tags/0/type` | `jacket` | `[00000000-0000-0000-0000-000000004368]` |
 | `/tags/0/type` | `mountain` | `[00000000-0000-0000-0000-000000004002]` |
-| `/tags/1/category` | `outdoor` | `[00000000-0000-0000-0000-000000004001]` |
-| `/tags/1/type` | `winter` | `[00000000-0000-0000-0000-000000004001]` |
-| `/inventory/warehouse` | `Seattle` | `[00000000-0000-0000-0000-000000004001, 00000000-0000-0000-0000-000000004002]` |
+| `/tags/1/category` | `outdoor` | `[00000000-0000-0000-0000-000000004368]` |
+| `/tags/1/type` | `winter` | `[00000000-0000-0000-0000-000000004368]` |
+| `/inventory/warehouse` | `Seattle` | `[00000000-0000-0000-0000-000000004368, 00000000-0000-0000-0000-000000004002]` |
 | `/inventory/quantity` | `30` | `[00000000-0000-0000-0000-000000004002]` |
 | `/inventory/quantity` | `50` | `[00000000-0000-0000-0000-0000-000000004001]` |
 
@@ -435,10 +435,10 @@ The query predicate (filtering on items where any tag has "outdoor" as its categ
     - *`category`*: `outdoor`
 
 :::image type="complex" source="media/indexing/tree-highlighted.svg" lightbox="media/indexing/tree-highlighted.svg" alt-text="Diagram of a traversal (search) highlighting the path tags/1/category/outdoor in a Cosmos DB item structure":::
-  A tree diagram showing a root node with five branches: "ID," "name," "tags", "inventory," and "distributors." The "ID" branch shows the value "00000000-0000-0000-0000-000000004001." The "name" branch shows "Raiot Jacket." "Tags" splits into two numbered nodes (0 and 1), each with "category" and "type" subnodes ("clothing/jacket" and "outdoor/winter"). "Inventory" has "warehouse" ("Seattle") and "quantity" ("50"). "Distributors" splits into two numbered nodes (0 and 1), each with a "name" subnode ("Contoso" and "AdventureWorks"). The path for "tags," "1," "category," and "outdoor" are highlighted.
+  A tree diagram showing a root node with five branches: "ID," "name," "tags", "inventory," and "distributors." The "ID" branch shows the value "00000000-0000-0000-0000-000000004368." The "name" branch shows "Cofaz Jacket." "Tags" splits into two numbered nodes (0 and 1), each with "category" and "type" subnodes ("clothing/jacket" and "outdoor/winter"). "Inventory" has "warehouse" ("Seattle") and "quantity" ("50"). "Distributors" splits into two numbered nodes (0 and 1), each with a "name" subnode ("Contoso" and "AdventureWorks"). The path for "tags," "1," "category," and "outdoor" are highlighted.
 :::image-end:::
 
-Since this query has an equality filter, after traversing this tree, we can quickly identify the index pages that contain the query results. In this case, the query engine would read index pages that contain Item `00000000-0000-0000-0000-000000004001`. An index seek is the most efficient way to use the index. With an index seek, we only read the necessary index pages and load only the items in the query results. Therefore, the index lookup time and RU charge from index lookup are incredibly low, regardless of the total data volume.
+Since this query has an equality filter, after traversing this tree, we can quickly identify the index pages that contain the query results. In this case, the query engine would read index pages that contain Item `00000000-0000-0000-0000-000000004368`. An index seek is the most efficient way to use the index. With an index seek, we only read the necessary index pages and load only the items in the query results. Therefore, the index lookup time and RU charge from index lookup are incredibly low, regardless of the total data volume.
 
 ### Precise index scan
 
