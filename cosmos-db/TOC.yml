@@ -10,6 +10,9 @@ items:
         href: overview.md
   - name: Core concepts
     items:
+      - name: Request Units
+        displayName: RU, RUs, throughput, capacity, performance
+        href: request-units.md
       - name: Time to live (TTL)
         displayName: ttl, expiration, data retention
         href: time-to-live.md

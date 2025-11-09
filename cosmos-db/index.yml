@@ -33,6 +33,9 @@ conceptualContent:
         - title: Core concepts
           summary: Understand the fundamental concepts and features of Cosmos DB (in Azure and Fabric) to effectively design and manage your NoSQL databases.
           links:
+            - text: Request units (RUs)
+              itemType: concept
+              url: request-units.md
             - text: Time-to-live (TTL)
               itemType: concept
               url: time-to-live.md
