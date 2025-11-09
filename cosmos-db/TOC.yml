@@ -3,6 +3,7 @@ items:
   - name: Cosmos DB (in Azure and Fabric) documentation
     href: index.yml
   - name: Overview
+    expanded: true
     items:
       - name: What is Cosmos DB (in Azure and Fabric)?
         displayName: introduction, welcome, intro, overview, explore
