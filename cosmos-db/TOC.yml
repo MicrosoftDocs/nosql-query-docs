@@ -10,7 +10,7 @@ items:
         href: overview.md
   - name: Core concepts
     items:
-      - name: Request Units
+      - name: Request Units (RUs)
         displayName: RU, RUs, throughput, capacity, performance
         href: request-units.md
       - name: Indexing
