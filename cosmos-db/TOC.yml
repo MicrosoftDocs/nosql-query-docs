@@ -13,6 +13,9 @@ items:
       - name: Request Units
         displayName: RU, RUs, throughput, capacity, performance
         href: request-units.md
+      - name: Indexing
+        displayName: query performance, data retrieval, tree, hierarchical
+        href: indexing.md
       - name: Time to live (TTL)
         displayName: ttl, expiration, data retention
         href: time-to-live.md
