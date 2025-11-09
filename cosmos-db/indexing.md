@@ -4,7 +4,7 @@ description: Learn how indexing works in Cosmos DB (in Azure and Fabric). Optimi
 author: seesharprun
 ms.author: sidandrews
 ms.topic: concept-article
-ms.date: 11/08/2025
+ms.date: 11/09/2025
 ai-usage: ai-assisted
 ---
 

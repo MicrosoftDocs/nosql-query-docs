@@ -4,7 +4,7 @@ description: Learn how request units function as a currency and how to estimate 
 author: seesharprun
 ms.author: sidandrews
 ms.topic: concept-article
-ms.date: 11/08/2025
+ms.date: 11/09/2025
 ---
 
 # Request units (RUs) in Cosmos DB (in Azure and Fabric)
