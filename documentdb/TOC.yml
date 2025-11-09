@@ -3,6 +3,7 @@ items:
   - name: DocumentDB (in Azure) documentation
     href: index.yml
   - name: Overview
+    expanded: true
     items:
       - name: What is DocumentDB (in Azure)?
         displayName: introduction, welcome, intro, overview, explore
