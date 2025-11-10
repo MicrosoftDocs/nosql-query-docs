@@ -71,39 +71,42 @@ conceptualContent:
           links:
             - text: String functions
               itemType: reference
-              url: query/functions/string.md
+              url: query/functions.md#string-functions
             - text: Mathematical functions
               itemType: reference
-              url: query/functions/mathematical.md
+              url: query/functions.md#mathematical-functions
             - text: Date and time functions
               itemType: reference
-              url: query/functions/date-time.md
+              url: query/functions.md#date-and-time-functions
             - text: Array functions
               itemType: reference
-              url: query/functions/array.md
+              url: query/functions.md#array-functions
             - text: Spatial functions
               itemType: reference
-              url: query/functions/spatial.md
+              url: query/functions.md#spatial-functions
+            - text: Full text search functions
+              itemType: reference
+              url: query/functions.md#full-text-search-functions
         - title: Clauses reference
           links:
             - text: SELECT clause
               itemType: reference
-              url: query/clauses/select.md
+              url: query/select.md
             - text: FROM clause
               itemType: reference
-              url: query/clauses/from.md
+              url: query/from.md
             - text: WHERE clause
               itemType: reference
-              url: query/clauses/where.md
+              url: query/where.md
             - text: ORDER BY clause
               itemType: reference
-              url: query/clauses/order-by.md
+              url: query/order-by.md
             - text: ORDER BY RANK clause
               itemType: reference
-              url: query/clauses/order-by-rank.md
+              url: query/order-by-rank.md
             - text: GROUP BY clause
               itemType: reference
-              url: query/clauses/group-by.md
+              url: query/group-by.md
             - text: OFFSET LIMIT clause
               itemType: reference
-              url: query/clauses/offset-limit.md
+              url: query/offset-limit.md
