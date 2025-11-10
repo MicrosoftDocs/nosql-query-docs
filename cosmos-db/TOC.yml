@@ -16,6 +16,17 @@ items:
       - name: Indexing
         displayName: query performance, data retrieval, tree, hierarchical
         href: indexing.md
+      - name: Indexing policies
+        displayName: JSON, strategy, configuration, settings
+        href: indexing-policies.md
       - name: Time to live (TTL)
         displayName: ttl, expiration, data retention
         href: time-to-live.md
+      - name: Autoscale throughput
+        displayName: auto, scale, auto-scaling, scaling
+        href: autoscale-throughput.md
+  - name: Samples
+    items:
+      - name: Sample indexing policies
+        displayName: examples, templates, JSON
+        href: sample-indexing-policies.md
