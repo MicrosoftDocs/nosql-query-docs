@@ -4,7 +4,7 @@ description: The `OFFSET LIMIT` clause returns a subset of the result set by ski
 ms.date: 11/10/2025
 ---
 
-# `OFFSET LIMIT` (NoSQL query)
+# `OFFSET LIMIT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `OFFSET LIMIT` clause returns a subset of the result set by skipping a specified number of results and then taking a specified number of results.
 

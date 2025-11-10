@@ -4,7 +4,7 @@ description: The `IS_BOOL` function returns a boolean value indicating if the ty
 ms.date: 11/10/2025
 ---
 
-# `IS_BOOL` (NoSQL query)
+# `IS_BOOL` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `IS_BOOL` function returns a boolean value indicating if the type of the specified expression is a boolean.
 

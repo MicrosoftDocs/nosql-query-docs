@@ -4,7 +4,7 @@ description: The `IS_NUMBER` function returns a boolean value indicating if the 
 ms.date: 11/10/2025
 ---
 
-# `IS_NUMBER` (NoSQL query)
+# `IS_NUMBER` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `IS_NUMBER` function returns a boolean value indicating if the type of the specified expression is a number.
 

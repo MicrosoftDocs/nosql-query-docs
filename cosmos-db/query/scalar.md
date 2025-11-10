@@ -1,10 +1,10 @@
 ---
 title: Scalar expressions
-description: Use symbols and operators in scalar expressions within the NoSQL query language to perform complex evaluations to a single result value.
+description: Use symbols and operators in scalar expressions within the query language to perform complex evaluations to a single result value.
 ms.date: 11/10/2025
 ---
 
-# Scalar expressions in NoSQL query language
+# Scalar expressions - Query language in Cosmos DB (in Azure and Fabric)
 
 The [`SELECT`](select.md) clause supports scalar expressions. A scalar expression is a combination of symbols and operators that can be evaluated to obtain a single value. Examples of scalar expressions include: constants, property references, array element references, alias references, or function calls. Scalar expressions can be combined into complex expressions using operators.
 

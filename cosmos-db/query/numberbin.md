@@ -4,7 +4,7 @@ description: The `NUMBERBIN` function calculates the input value rounded to a mu
 ms.date: 11/10/2025
 ---
 
-# `NUMBERBIN` (NoSQL query)
+# `NUMBERBIN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `NUMBERBIN` function calculates the input value rounded to a multiple of the specified size.
 

@@ -13,6 +13,12 @@ highlightedContent:
     - title: Overview
       itemType: overview
       url: overview.md
+    - title: Vector search
+      itemType: concept
+      url: index-vector-data.md
+    - title: Autoscale
+      itemType: concept
+      url: autoscale-throughput.md
 productDirectory:
   title: Implementations
   summary: Explore the two services that use the Cosmos DB engine to provide NoSQL database capabilities in Azure and Microsoft Fabric.
@@ -39,9 +45,30 @@ conceptualContent:
             - text: Indexing
               itemType: concept
               url: indexing.md
+            - text: Indexing policies
+              itemType: concept
+              url: indexing-policies.md
+            - text: Sample indexing policies
+              itemType: sample
+              url: sample-indexing-policies.md
             - text: Time-to-live (TTL)
               itemType: concept
               url: time-to-live.md
+            - text: Autoscale throughput
+              itemType: concept
+              url: autoscale-throughput.md
+        - title: Vector search and Gen AI concepts
+          summary: Explore the vector search and generative AI capabilities of Cosmos DB (in Azure and Fabric) to enhance your applications with advanced search features.
+          links:
+            - text: Full text indexing
+              itemType: concept
+              url: full-text-indexing.md
+            - text: Index vector data
+              itemType: concept
+              url: index-vector-data.md
+            - text: Hybrid search
+              itemType: concept
+              url: hybrid-search.md
     - title: Query data
       summary: Learn how to query and manipulate data stored in Cosmos DB (in Azure and Fabric) using its powerful native query language.
       items:

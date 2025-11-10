@@ -4,7 +4,7 @@ description: The `SETUNION` function returns a set of expressions containing all
 ms.date: 11/10/2025
 ---
 
-# `SETUNION` (NoSQL query)
+# `SETUNION` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `SETUNION` function returns a set of expressions containing all expressions from two gathered sets with no duplicates.
 

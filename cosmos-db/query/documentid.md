@@ -4,7 +4,7 @@ description: The `DOCUMENTID` function returns the unique document ID for a give
 ms.date: 11/10/2025
 ---
 
-# `DOCUMENTID` (NoSQL query)
+# `DOCUMENTID` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `DOCUMENTID` function returns the unique document ID for a given item in the container.
 

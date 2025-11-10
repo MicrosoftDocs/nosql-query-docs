@@ -4,7 +4,7 @@ description: The `RIGHT` function returns the right part of a string up to the s
 ms.date: 11/10/2025
 ---
 
-# `RIGHT` (NoSQL query)
+# `RIGHT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `RIGHT` function returns the right part of a string up to the specified number of characters.
 

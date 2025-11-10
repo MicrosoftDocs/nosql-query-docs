@@ -4,7 +4,7 @@ description: The `SETINTERSECT` function returns the set of expressions that is 
 ms.date: 11/10/2025
 ---
 
-# `SETINTERSECT` (NoSQL query)
+# `SETINTERSECT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `SETINTERSECT` function returns the set of expressions that is contained in both input arrays with no duplicates.
 

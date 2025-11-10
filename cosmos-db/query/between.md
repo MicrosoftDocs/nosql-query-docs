@@ -4,7 +4,7 @@ description: The `BETWEEN` keyword evaluates to a boolean indicating whether the
 ms.date: 11/10/2025
 ---
 
-# `BETWEEN` (NoSQL query)
+# `BETWEEN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `BETWEEN` keyword evaluates to a boolean indicating whether the target value is between two specified values, inclusive.
 

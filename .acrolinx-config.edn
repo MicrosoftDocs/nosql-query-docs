@@ -1,2 +1,2 @@
 {:allowed-branchname-matches ["main" "release-.*"]
- :allowed-filename-matches ["nosql/"]}
+ :allowed-filename-matches ["nosql/" "cosmos-db/" "documentdb/"]}

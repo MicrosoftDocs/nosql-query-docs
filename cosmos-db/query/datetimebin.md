@@ -4,7 +4,7 @@ description: The `DATETIMEBIN` function returns a date and time string value tha
 ms.date: 11/10/2025
 ---
 
-# `DATETIMEBIN` (NoSQL query)
+# `DATETIMEBIN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `DATETIMEBIN` function returns a date and time string value that is the result of binning (or rounding) a part of the provided date and time string.
 

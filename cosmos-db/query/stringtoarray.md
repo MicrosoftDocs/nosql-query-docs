@@ -4,7 +4,7 @@ description: The `STRINGTOARRAY` function converts a string expression to an arr
 ms.date: 11/10/2025
 ---
 
-# `STRINGTOARRAY` (NoSQL query)
+# `STRINGTOARRAY` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `STRINGTOARRAY` function converts a string expression to an array.
 

@@ -4,7 +4,7 @@ description: The `IS_ARRAY` function returns a boolean value indicating if the t
 ms.date: 11/10/2025
 ---
 
-# `IS_ARRAY` (NoSQL query)
+# `IS_ARRAY` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `IS_ARRAY` function returns a boolean value indicating if the type of the specified expression is an array.
 

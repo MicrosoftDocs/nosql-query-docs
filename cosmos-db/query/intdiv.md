@@ -4,7 +4,7 @@ description: The `INTDIV` function returns the result of dividing the first inte
 ms.date: 11/10/2025
 ---
 
-# `INTDIV` (NoSQL query)
+# `INTDIV` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTDIV` function returns the result of dividing the first integer value by the second.
 

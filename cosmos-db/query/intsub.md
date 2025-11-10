@@ -4,7 +4,7 @@ description: The `INTSUB` function returns the result of subtracting the second 
 ms.date: 11/10/2025
 ---
 
-# `INTSUB` (NoSQL query)
+# `INTSUB` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTSUB` function returns the result of subtracting the second integer value from the first.
 

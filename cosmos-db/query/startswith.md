@@ -4,7 +4,7 @@ description: The `STARTSWITH` function returns a boolean value indicating whethe
 ms.date: 11/10/2025
 ---
 
-# `STARTSWITH` (NoSQL query)
+# `STARTSWITH` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `STARTSWITH` function returns a boolean value indicating whether the first string expression starts with the second.
 

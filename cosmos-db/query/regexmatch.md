@@ -4,7 +4,7 @@ description: The `REGEXMATCH` function returns a boolean indicating whether the 
 ms.date: 11/10/2025
 ---
 
-# `REGEXMATCH` (NoSQL query)
+# `REGEXMATCH` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `REGEXMATCH` function returns a boolean indicating whether the provided string matches the specified regular expression. Regular expressions are a concise and flexible notation for finding patterns of text.
 

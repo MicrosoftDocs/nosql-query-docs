@@ -4,7 +4,7 @@ description: The `LOWER` function returns a string expression after converting u
 ms.date: 11/10/2025
 ---
 
-# `LOWER` (NoSQL query)
+# `LOWER` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `LOWER` function returns a string expression after converting uppercase character data to lowercase.
 

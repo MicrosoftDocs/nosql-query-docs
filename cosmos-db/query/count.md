@@ -4,7 +4,7 @@ description: The `COUNT` function returns the count of the values in the express
 ms.date: 11/10/2025
 ---
 
-# `COUNT` (NoSQL query)
+# `COUNT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `COUNT` function returns the count of the values in the expression.
 

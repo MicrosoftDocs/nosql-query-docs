@@ -4,7 +4,7 @@ description: The `ATAN` function calculates the trigonometric arctangent of the 
 ms.date: 11/10/2025
 ---
 
-# `ATAN` (NoSQL query)
+# `ATAN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ATAN` function calculates the trigonometric arctangent of the specified numeric value. The arctangent is the angle, in radians, whose tangent is the specified numeric expression.
 

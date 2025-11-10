@@ -4,7 +4,7 @@ description: The `ARRAY_SLICE` function returns a subset of an array expression 
 ms.date: 11/10/2025
 ---
 
-# `ARRAY_SLICE` (NoSQL query)
+# `ARRAY_SLICE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ARRAY_SLICE` function returns a subset of an array expression using the index and length specified.
 

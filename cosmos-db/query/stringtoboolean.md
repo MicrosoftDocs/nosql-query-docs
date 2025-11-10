@@ -4,7 +4,7 @@ description: The `STRINGTOBOOLEAN` function converts a string expression to a bo
 ms.date: 11/10/2025
 ---
 
-# `STRINGTOBOOLEAN` (NoSQL query)
+# `STRINGTOBOOLEAN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `STRINGTOBOOLEAN` function converts a string expression to a boolean.
 

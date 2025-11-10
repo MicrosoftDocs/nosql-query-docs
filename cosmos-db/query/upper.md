@@ -4,7 +4,7 @@ description: The `UPPER` function returns a string expression after converting l
 ms.date: 11/10/2025
 ---
 
-# `UPPER` (NoSQL query)
+# `UPPER` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `UPPER` function returns a string expression after converting lowercase character data to uppercase.
 

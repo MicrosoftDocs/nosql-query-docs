@@ -1,16 +1,16 @@
 ---
 title: Functions
-description: The NoSQL query language provides many built-in functions for common tasks across a wide variety of categories.
+description: The query language provides many built-in functions for common tasks across a wide variety of categories.
 ms.date: 11/10/2025
 ---
 
-# NoSQL query language functions
+# Functions - Query language in Cosmos DB (in Azure and Fabric)
 
-The NoSQL query language includes a series of system functions that are built in to the query language and designed to handle a wide variety of common tasks.
+The query language includes a series of system functions that are built in to the query language and designed to handle a wide variety of common tasks.
 
 ## Functions
 
-Here's a list of functions that the NoSQL query language currently supports:
+Here's a list of functions that the query language currently supports:
 
 ### Mathematical functions
 

@@ -4,7 +4,7 @@ description: The `INTMOD` function returns the remainder of dividing the first i
 ms.date: 11/10/2025
 ---
 
-# `INTMOD` (NoSQL query)
+# `INTMOD` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTMOD` function returns the remainder of dividing the first integer value by the second.
 
