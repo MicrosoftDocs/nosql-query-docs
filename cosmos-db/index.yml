@@ -6,7 +6,7 @@ metadata:
   title: Cosmos DB (in Azure and Fabric)
   description: Learn about the core engine and query language used by Cosmos DB in both Azure Cosmos DB for NoSQL and Cosmos DB in Microsoft Fabric.
   ms.topic: hub-page
-  ms.date: 11/09/2025
+  ms.date: 11/10/2025
   ai-usage: ai-generated
 highlightedContent:
   items:
@@ -42,3 +42,17 @@ conceptualContent:
             - text: Time-to-live (TTL)
               itemType: concept
               url: time-to-live.md
+    - title: Query data
+      summary: Learn how to query and manipulate data stored in Cosmos DB (in Azure and Fabric) using its powerful native query language.
+      items:
+        - title: Query concepts
+          links:
+            - text: NoSQL query language
+              itemType: concept
+              url: query/index.md
+            - text: Get started with JSON
+              itemType: concept
+              url: query/get-started-json.md
+            - text: Functions
+              itemType: concept
+              url: query/functions.md
