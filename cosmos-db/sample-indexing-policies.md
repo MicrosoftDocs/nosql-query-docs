@@ -7,7 +7,7 @@ ms.date: 11/10/2025
 
 # Sample indexing policies in Cosmos DB (in Azure and Fabric)
 
-Indexing policies in Cosmos DB help you optimize query performance and reduce costs by controlling which properties are indexed. Indexing in Cosmos DB is designed to deliver fast and flexible query performance, no matter how your data evolves. Each sample demonstrates a different way to control which properties are indexed, how, and why, so you can tailor indexing to your specific workload.
+Indexing policies in Cosmos DB (in Azure and Fabric) help you optimize query performance and reduce costs by controlling which properties are indexed. Indexing in Cosmos DB is designed to deliver fast and flexible query performance, no matter how your data evolves. Each sample demonstrates a different way to control which properties are indexed, how, and why, so you can tailor indexing to your specific workload.
 
 ## Index all properties (default)
 
