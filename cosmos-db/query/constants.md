@@ -1,6 +1,6 @@
 ---
 title: Constants
-description: Use literal or scalar value constants in the NoSQL query language to represent a specific data value.
+description: Use literal or scalar value constants in the query language to represent a specific data value.
 ms.date: 11/10/2025
 ---
 

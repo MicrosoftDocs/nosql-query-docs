@@ -1,6 +1,6 @@
 ---
 title: Subqueries
-description: Use different types of subqueries for complex query statements in the NoSQL query language.
+description: Use different types of subqueries for complex query statements in the query language.
 ms.date: 11/10/2025
 ai-usage: ai-generated
 show_latex: true
@@ -8,7 +8,7 @@ show_latex: true
 
 # Subqueries - Query language in Cosmos DB (in Azure and Fabric)
 
-A subquery is a query nested within another query within the NoSQL query language. A subquery is also called an *inner query* or *inner `SELECT`*. The statement that contains a subquery is typically called an *outer query*.
+A subquery is a query nested within another query within the query language. A subquery is also called an *inner query* or *inner `SELECT`*. The statement that contains a subquery is typically called an *outer query*.
 
 ## Types of subqueries
 
@@ -23,7 +23,7 @@ Subqueries can be further classified based on the number of rows and columns tha
 - **Multi-value**: Returns multiple rows and a single column.
 - **Scalar**: Returns a single row and a single column.
 
-Queries in the NoSQL query language always return a single column (either a simple value or a complex item). Therefore, only multi-value and scalar subqueries are applicable. You can use a multi-value subquery only in the `FROM` clause as a relational expression. You can use a scalar subquery as a scalar expression in the `SELECT` or `WHERE` clause, or as a relational expression in the `FROM` clause.
+Queries in the query language always return a single column (either a simple value or a complex item). Therefore, only multi-value and scalar subqueries are applicable. You can use a multi-value subquery only in the `FROM` clause as a relational expression. You can use a scalar subquery as a scalar expression in the `SELECT` or `WHERE` clause, or as a relational expression in the `FROM` clause.
 
 ## Multi-value subqueries
 
@@ -375,7 +375,7 @@ WHERE
 
 ## EXISTS expression
 
-The NoSQL query language supports `EXISTS` expressions. This expression is an aggregate scalar subquery built into the NoSQL query language. `EXISTS` takes a subquery expression and returns `true` if the subquery returns any rows. Otherwise, it returns `false`.
+The query language supports `EXISTS` expressions. This expression is an aggregate scalar subquery built into the query language. `EXISTS` takes a subquery expression and returns `true` if the subquery returns any rows. Otherwise, it returns `false`.
 
 Because the query engine doesn't differentiate between boolean expressions and any other scalar expressions, you can use `EXISTS` in both `SELECT` and `WHERE` clauses. This behavior is unlike T-SQL, where a boolean expression is restricted to only filters.
 
@@ -703,7 +703,7 @@ JOIN
 
 ## Related content
 
-- [Review the NoSQL query language](overview.md)
-- [Get started with JSON in the NoSQL query language](get-started-json.md)
+- [Review the query language](overview.md)
+- [Get started with JSON in the query language](get-started-json.md)
 - [Perform self-joins](join.md)
 - [Explore system functions](functions.md)

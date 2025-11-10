@@ -1,6 +1,6 @@
 ---
 title: Scalar expressions
-description: Use symbols and operators in scalar expressions within the NoSQL query language to perform complex evaluations to a single result value.
+description: Use symbols and operators in scalar expressions within the query language to perform complex evaluations to a single result value.
 ms.date: 11/10/2025
 ---
 

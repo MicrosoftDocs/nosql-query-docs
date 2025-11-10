@@ -1,13 +1,13 @@
 ---
 title: Self-joins
-description: Use the `JOIN` keyword to perform a self-join on arrays within an item in the NoSQL query language.
+description: Use the `JOIN` keyword to perform a self-join on arrays within an item in the query language.
 ms.date: 11/10/2025
 ai-usage: ai-generated
 ---
 
 # Self-joins - Query language in Cosmos DB (in Azure and Fabric)
 
-In the NoSQL query language, data is schema-free and typically denormalized. Instead of joining data across entities and sets, like you would in a relational database, joins occur within a single item. Specifically, joins are scoped to that item and can't occur across multiple items and containers.
+In the query language, data is schema-free and typically denormalized. Instead of joining data across entities and sets, like you would in a relational database, joins occur within a single item. Specifically, joins are scoped to that item and can't occur across multiple items and containers.
 
 > [!TIP]
 > If you find yourself needing to join across items and containers, consider reworking your data model to avoid this anti-pattern.
@@ -58,7 +58,7 @@ WHERE
 
 This technique can become untenable quickly. The complexity or length of the query syntax increases the number of potential items in the array. Also, this query isn't flexible enough to handle future products, which might have more than three sizes.
 
-In a traditional relational database, the sizes would be separated into a separate table and a cross-table join is performed with a filter applied to the results. In the NoSQl query language, we can perform a self-join operation within the item using the `JOIN` keyword:
+In a traditional relational database, the sizes would be separated into a separate table and a cross-table join is performed with a filter applied to the results. In the query language, we can perform a self-join operation within the item using the `JOIN` keyword:
 
 ```nosql
 SELECT
@@ -262,7 +262,7 @@ WHERE
 
 ## Related content
 
-- [Review the NoSQL query language](overview.md)
-- [Get started with JSON in the NoSQL query language](get-started-json.md)
+- [Review the query language](overview.md)
+- [Get started with JSON in the query language](get-started-json.md)
 - [Work with subqueries](subquery.md)
 - [Explore system functions](functions.md)

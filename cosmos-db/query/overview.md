@@ -1,17 +1,17 @@
 ---
 title: Overview
-description: Discover the NoSQL query language used in Azure Cosmos DB for NoSQL and Cosmos DB in Microsoft Fabric. Learn syntax, features, and best practices.
+description: Discover the query language used in Azure Cosmos DB for NoSQL and Cosmos DB in Microsoft Fabric. Learn syntax, features, and best practices.
 ms.date: 11/10/2025
 ai-usage: ai-generated
 ---
 
 # What is the query language in Cosmos DB (in Azure and Fabric)
 
-The NoSQL query language provides a powerful, SQL-like syntax for working with JSON data. This language is designed to be familiar to users with SQL experience, while also supporting the flexibility and hierarchical nature of JSON documents. This article introduces the core concepts, syntax, and features of the NoSQL query language.
+The query language provides a powerful, SQL-like syntax for working with JSON data. This language is designed to be familiar to users with SQL experience, while also supporting the flexibility and hierarchical nature of JSON documents. This article introduces the core concepts, syntax, and features of the query language.
 
 ## Core concepts of the query language
 
-The NoSQL query language is built to provide expressive and efficient access to data stored as JSON documents. At its foundation, the language is designed to work natively with hierarchical and flexible data, supporting both simple and complex queries over documents that could have varying structures.
+The query language is built to provide expressive and efficient access to data stored as JSON documents. At its foundation, the language is designed to work natively with hierarchical and flexible data, supporting both simple and complex queries over documents that could have varying structures.
 
 Queries are composed using a familiar SQL-like syntax, but are adapted for the document model. This adaptation means that, unlike traditional relational databases, there's no fixed schema—properties can be missing or have different types across documents. The language is case-sensitive and supports referencing nested properties, arrays, and objects directly within queries. Logical, comparison, and arithmetic operators are available, and the language is designed to be intuitive for those developers with SQL experience while embracing the flexibility of NoSQL data.
 
@@ -108,7 +108,7 @@ WHERE EXISTS (
 
 ## Related content
 
-- [Get started with JSON in the NoSQL query language](get-started-json.md)
+- [Get started with JSON in the query language](get-started-json.md)
 - [Explore clauses](clauses.md)
 - [Explore keywords](keywords.md)
 - [Explore system functions](functions.md)
