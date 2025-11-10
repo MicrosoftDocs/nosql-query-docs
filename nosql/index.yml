@@ -5,7 +5,7 @@ brand: azure
 metadata:
   title: Documentation
   ms.topic: hub-page
-  ms.date: 07/02/2025
+  ms.date: 11/10/2025
   ai-usage: ai-assisted
 highlightedContent:
   items:
@@ -62,7 +62,17 @@ additionalContent:
     - title: Cosmos DB in Microsoft Fabric
       summary: Cosmos DB in Microsoft Fabric provides a unified data platform for building and deploying applications with NoSQL capabilities.
       items:
-        - title: Learn more
+        - title: Get started
           links:
-            - text: Announcement
-              url: https://blog.fabric.microsoft.com/blog/22987
+            - text: Overview
+              url: /fabric/database/cosmos-db/overview
+            - text: Query cross-database data
+              url: /fabric/database/cosmos-db/how-to-query-cross-database
+        - title: Integrate
+          links:
+            - text: Mirror to OneLake
+              url: /fabric/database/cosmos-db/mirror-onelake
+            - text: Create Power BI reports
+              url: /fabric/database/cosmos-db/how-to-create-reports
+            - text: Access mirrored data from Lakehouse
+              url: /fabric/database/cosmos-db/how-to-access-data-lakehouse
