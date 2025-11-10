@@ -1,7 +1,7 @@
 ---
 title: Query Advisor
 description: Learn how to use Query Advisor to optimize queries for performance, cost, and scalability in Azure Cosmos DB. Get actionable recommendations to improve your data queries. Try Query Advisor now!
-ms.date: 11/04/2025
+ms.date: 11/11/2025
 ms.custom:
   - sfi-ropc-nochange
 appliesto:
