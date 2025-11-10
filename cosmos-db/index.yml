@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Cosmos DB (in Azure and Fabric)
+title: Cosmos DB (in Azure and Fabric) documentation
 summary: Learn about the core engine and query language used by Cosmos DB in both Azure Cosmos DB for NoSQL and Cosmos DB in Microsoft Fabric.
 brand: azure
 metadata:
-  title: Cosmos DB (in Azure and Fabric)
-  description: Learn about the core engine and query language used by Cosmos DB in both Azure Cosmos DB for NoSQL and Cosmos DB in Microsoft Fabric.
+  title: Cosmos DB (in Azure and Fabric) Documentation
+  description: Learn about the Cosmos DB (in Azure and Fabric) core engine and query language for databases. Explore features, query data, and build scalable applications.
   ms.topic: hub-page
   ms.date: 11/10/2025
   ai-usage: ai-generated
@@ -54,6 +54,21 @@ conceptualContent:
             - text: Time-to-live (TTL)
               itemType: concept
               url: time-to-live.md
+            - text: Autoscale throughput
+              itemType: concept
+              url: autoscale-throughput.md
+        - title: Vector search and Gen AI concepts
+          summary: Explore the vector search and generative AI capabilities of Cosmos DB (in Azure and Fabric) designed to enhance your applications with advanced search features.
+          links:
+            - text: Full text indexing
+              itemType: concept
+              url: full-text-indexing.md
+            - text: Index vector data
+              itemType: concept
+              url: index-vector-data.md
+            - text: Hybrid search
+              itemType: concept
+              url: hybrid-search.md
     - title: Query data
       summary: Learn how to query and manipulate data stored in Cosmos DB (in Azure and Fabric) using its powerful native query language.
       items:
@@ -122,18 +137,3 @@ conceptualContent:
             - text: OFFSET LIMIT clause
               itemType: reference
               url: query/offset-limit.md
-            - text: Autoscale throughput
-              itemType: concept
-              url: autoscale-throughput.md
-        - title: Vector search and Gen AI concepts
-          summary: Explore the vector search and generative AI capabilities of Cosmos DB (in Azure and Fabric) designed to enhance your applications with advanced search features.
-          links:
-            - text: Full text indexing
-              itemType: concept
-              url: full-text-indexing.md
-            - text: Index vector data
-              itemType: concept
-              url: index-vector-data.md
-            - text: Hybrid search
-              itemType: concept
-              url: hybrid-search.md
