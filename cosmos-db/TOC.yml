@@ -25,6 +25,17 @@ items:
       - name: Autoscale throughput
         displayName: auto, scale, auto-scaling, scaling
         href: autoscale-throughput.md
+  - name: Vector search and Gen AI concepts
+    items:
+      - name: Full text indexing
+        displayName: AI, full-text, search
+        href: full-text-indexing.md
+      - name: Index vector data
+        displayName: AI, embeddings, search
+        href: index-vector-data.md
+      - name: Hybrid search
+        displayName: AI, full-text, vector, search
+        href: hybrid-search.md
   - name: Samples
     items:
       - name: Sample indexing policies
