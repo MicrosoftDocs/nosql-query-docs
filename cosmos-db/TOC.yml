@@ -1,2 +1,21 @@
-- name: Index
-  href: index.md
+## YamlMime:TOC
+items:
+  - name: Cosmos DB (in Azure and Fabric) documentation
+    href: index.yml
+  - name: Overview
+    expanded: true
+    items:
+      - name: What is Cosmos DB (in Azure and Fabric)?
+        displayName: introduction, welcome, intro, overview, explore
+        href: overview.md
+  - name: Core concepts
+    items:
+      - name: Request Units (RUs)
+        displayName: RU, RUs, throughput, capacity, performance
+        href: request-units.md
+      - name: Indexing
+        displayName: query performance, data retrieval, tree, hierarchical
+        href: indexing.md
+      - name: Time to live (TTL)
+        displayName: ttl, expiration, data retention
+        href: time-to-live.md
