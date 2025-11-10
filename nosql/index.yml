@@ -45,11 +45,11 @@ additionalContent:
         - title: Query data
           links:
             - text: NoSQL query language
-              url: /nosql/query
+              url: /cosmos-db/query
             - text: Get started with JSON
-              url: /nosql/query/get-started-json
+              url: /cosmos-db/query/get-started-json
             - text: Functions
-              url: /nosql/query/functions
+              url: /cosmos-db/query/functions
         - title: Samples
           links:
             - text: Solution accelerators
