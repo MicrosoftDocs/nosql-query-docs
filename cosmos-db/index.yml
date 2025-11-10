@@ -84,3 +84,26 @@ conceptualContent:
             - text: Spatial functions
               itemType: reference
               url: query/functions/spatial.md
+        - title: Clauses reference
+          links:
+            - text: SELECT clause
+              itemType: reference
+              url: query/clauses/select.md
+            - text: FROM clause
+              itemType: reference
+              url: query/clauses/from.md
+            - text: WHERE clause
+              itemType: reference
+              url: query/clauses/where.md
+            - text: ORDER BY clause
+              itemType: reference
+              url: query/clauses/order-by.md
+            - text: ORDER BY RANK clause
+              itemType: reference
+              url: query/clauses/order-by-rank.md
+            - text: GROUP BY clause
+              itemType: reference
+              url: query/clauses/group-by.md
+            - text: OFFSET LIMIT clause
+              itemType: reference
+              url: query/clauses/offset-limit.md
