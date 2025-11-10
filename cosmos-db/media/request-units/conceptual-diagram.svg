@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" overflow="hidden" width="3300" height="1650" viewBox="0 0 3300 1650">
+  <defs>
+    <linearGradient id="b" x1="3161.5" x2="3730.3" y1="1614.5" y2="1614.5" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".1" stop-color="#fff"/>
+      <stop offset=".1" stop-color="#737373"/>
+      <stop offset=".9" stop-color="#737373"/>
+      <stop offset=".9" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="c" x1="3161.5" x2="3381.6" y1="968.5" y2="968.5" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".3" stop-color="#fff"/>
+      <stop offset=".3" stop-color="#737373"/>
+      <stop offset=".7" stop-color="#737373"/>
+      <stop offset=".8" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="d" x1="3161.5" x2="3381.6" y1="1183.5" y2="1183.5" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".3" stop-color="#fff"/>
+      <stop offset=".3" stop-color="#737373"/>
+      <stop offset=".7" stop-color="#737373"/>
+      <stop offset=".8" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="e" x1="3161.5" x2="3381.6" y1="1399.5" y2="1399.5" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".3" stop-color="#fff"/>
+      <stop offset=".3" stop-color="#737373"/>
+      <stop offset=".7" stop-color="#737373"/>
+      <stop offset=".8" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="a">
+      <path d="M692 222h3300v1650H692z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(-692 -222)">
+    <path fill="#fff" d="M692 222h3300v1650H692z"/>
+    <path fill="#b3b3b3" d="M991 1045h990v330H991z"/>
+    <path fill="#2f2f2f" d="M991 1372h990v132H991z"/>
+    <text fill="#fff" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="64" font-weight="600" transform="translate(1213 1462)">Request Unit (RUs)</text>
+    <path fill="none" stroke="#333" stroke-miterlimit="8" stroke-width="6.9" d="M827 265h1320v198H827z"/>
+    <text font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(967 384)">Usage is expressed in Request Units (RUs)</text>
+    <path fill="none" stroke="#333" stroke-miterlimit="8" stroke-width="6.9" d="M2408 265h1320v198H2408z"/>
+    <text font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2691 351)">Database operations consume</text>
+    <text font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2753 417)">a variable</text>
+    <text font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(3007 417)">number</text>
+    <text font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(3218 417)">of</text>
+    <text font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(3284 417)">RU</text>
+    <text font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(3357 417)">s</text>
+    <path fill="none" stroke="#737373" stroke-miterlimit="8" stroke-width="6.9" d="M1113 926a25 25 0 1 1 49 0 25 25 0 0 1-49 0Z"/>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="48" font-weight="600" transform="translate(1018 1015)">% Memory</text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="41" font-weight="600" transform="translate(3054 867)">1 RU</text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="48" font-weight="600" transform="translate(3184 1814)">Variable number of RUs</text>
+    <path fill="#e6e6e6" d="M897 566h198v198H897z"/>
+    <path fill="#666" stroke="#666" stroke-miterlimit="8" stroke-width="4.6" d="M918 723h158v24H918zm0-46h158v24H918zm0-46h158v24H918z"/>
+    <path fill="#f2f2f2" stroke="#666" stroke-miterlimit="8" stroke-width="4.6" d="M918 586h158v23H918z"/>
+    <path fill="#e6e6e6" d="M1334 632h297v132h-297z"/>
+    <path fill="#666" stroke="#666" stroke-miterlimit="8" stroke-width="3.4" d="M1358 654h39v39h-39z"/>
+    <path fill="#f2f2f2" stroke="#666" stroke-miterlimit="8" stroke-width="4.6" d="M1411 654h39v39h-39z"/>
+    <path fill="#666" stroke="#666" stroke-miterlimit="8" stroke-width="3.4" d="M1464 654h39v39h-39zm107 0h38v39h-38zm-53 0h38v39h-38zm-160 52h39v39h-39zm53 0h39v39h-39zm53 0h39v39h-39zm107 0h38v39h-38z"/>
+    <path fill="#f2f2f2" stroke="#666" stroke-miterlimit="8" stroke-width="4.6" d="M1518 706h38v39h-38z"/>
+    <path fill="#e6e6e6" d="M1870 599h198v165h-198z"/>
+    <path fill="#666" fill-rule="evenodd" d="M1897 638h49v-16l31 31-31 31v-15h-49Zm144 57h-48v-15l-31 31 31 30v-15h48Z"/>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="48" font-weight="600" transform="translate(1413 1015)">% </text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="48" font-weight="600" transform="translate(1467 1015)">CPU</text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="48" font-weight="600" transform="translate(1756 1015)">% </text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="48" font-weight="600" transform="translate(1810 1015)">IOPS</text>
+    <path fill="none" stroke="#737373" stroke-miterlimit="8" stroke-width="6.9" d="M1462 929a25 25 0 1 1 49 0 25 25 0 0 1-49 0Zm349 0c0-14 11-24 25-24 13 0 25 10 25 24s-12 25-25 25c-14 0-25-11-25-25Z"/>
+    <path fill="none" stroke="#737373" stroke-dasharray="28 21" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.9" d="m997 765 122 143m365-143 3 139m483-139-116 146"/>
+    <path fill="#243a5e" d="M1378 1091h99v99h-99z"/>
+    <path fill="#f2f2f2" d="M1393 1106h28v27h-28z"/>
+    <path fill="#0078d4" d="M1435 1106h27v27h-27zm-42 41h28v28h-28z"/>
+    <path fill="#f2f2f2" d="M1435 1147h27v28h-27z"/>
+    <path fill="#243a5e" d="M1494 1091h99v99h-99z"/>
+    <path fill="#f2f2f2" d="M1509 1106h28v27h-28z"/>
+    <path fill="#0078d4" d="M1551 1106h27v27h-27zm-42 41h28v28h-28z"/>
+    <path fill="#f2f2f2" d="M1551 1147h27v28h-27z"/>
+    <path fill="#243a5e" d="M1378 1204h99v99h-99z"/>
+    <path fill="#f2f2f2" d="M1393 1219h28v28h-28z"/>
+    <path fill="#0078d4" d="M1435 1219h27v28h-27zm-42 42h28v27h-28z"/>
+    <path fill="#f2f2f2" d="M1435 1261h27v27h-27z"/>
+    <path fill="#243a5e" d="M1493 1203h99v99h-99z"/>
+    <path fill="#f2f2f2" d="M1508 1218h27v28h-27z"/>
+    <path fill="#0078d4" d="M1549 1218h28v28h-28zm-41 41h27v28h-27z"/>
+    <path fill="#f2f2f2" d="M1549 1259h28v28h-28z"/>
+    <path fill="#243a5e" d="M1759 1091h149v211h-149z"/>
+    <path fill="#f2f2f2" fill-rule="evenodd" d="M1771 1150h49v-15l30 31-30 30v-15h-49Zm126 62h-49v-16l-31 31 31 31v-15h49Z"/>
+    <path fill="#243a5e" d="M1087 1091h99v211h-99z"/>
+    <path fill="#fff" d="M1095 1266h83v26h-83zm0-33h83v26h-83zm0-33h83v26h-83zm0-33h83v26h-83zm0-33h83v26h-83z"/>
+    <path fill="#0078d4" d="M1095 1101h83v26h-83z"/>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2624 1635)">Query</text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2885 1635)">=</text>
+    <path fill="#e6e6e6" d="M3029 1548h132v132h-132z"/>
+    <path fill="#737373" d="M3102 1621h50v49h-50z"/>
+    <path fill="#d2d2d2" fill-rule="evenodd" d="M3114 1631h17v-5l9 10-9 9v-5h-17Zm26 20h-17v-5l-9 9 9 10v-5h17Z"/>
+    <path fill="#525252" d="M3071 1589h49v49h-49z"/>
+    <path fill="#e6e6e6" d="M3098 1616h17v17h-17z"/>
+    <path fill="#2f2f2f" d="M3098 1595h17v16h-17zm-22 21h17v17h-17zm0-21h17v16h-17z"/>
+    <path fill="#2f2f2f" d="M3039 1557h49v50h-49z"/>
+    <path fill="#d2d2d2" d="M3044 1563h39v16h-39zm0 22h39v16h-39z"/>
+    <path fill="#e6e6e6" d="M3727 1548h132v132h-132z"/>
+    <path fill="#737373" d="M3800 1621h49v49h-49z"/>
+    <path fill="#d2d2d2" fill-rule="evenodd" d="M3811 1631h18v-5l9 10-9 9v-5h-18Zm27 20h-17v-5l-10 9 10 10v-5h17Z"/>
+    <path fill="#525252" d="M3768 1589h49v49h-49z"/>
+    <path fill="#e6e6e6" d="M3796 1616h16v17h-16z"/>
+    <path fill="#2f2f2f" d="M3796 1595h16v16h-16zm-23 21h17v17h-17zm0-21h17v16h-17z"/>
+    <path fill="#2f2f2f" d="M3736 1557h50v50h-50z"/>
+    <path fill="#d2d2d2" d="M3741 1563h40v16h-40zm0 22h40v16h-40z"/>
+    <path fill="none" stroke="url(#b)" stroke-dasharray="28 21" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.9" d="M3162 1615h565"/>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2635 989)">Insert</text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2885 989)">=</text>
+    <path fill="#e6e6e6" d="M3029 902h132v132h-132z"/>
+    <path fill="#737373" d="M3102 975h50v50h-50z"/>
+    <path fill="#d2d2d2" fill-rule="evenodd" d="M3114 985h16v-5l10 10-10 10v-5h-16Zm26 20h-16v-5l-10 10 10 10v-5h16Z"/>
+    <path fill="#525252" d="M3071 943h49v50h-49z"/>
+    <path fill="#e6e6e6" d="M3098 971h17v16h-17z"/>
+    <path fill="#2f2f2f" d="M3098 949h17v16h-17zm-22 22h17v16h-17zm0-22h17v16h-17z"/>
+    <path fill="#2f2f2f" d="M3039 912h49v49h-49z"/>
+    <path fill="#d2d2d2" d="M3044 917h39v17h-39zm0 22h39v16h-39z"/>
+    <path fill="#e6e6e6" d="M3378 902h132v132h-132z"/>
+    <path fill="#737373" d="M3451 975h50v50h-50z"/>
+    <path fill="#d2d2d2" fill-rule="evenodd" d="M3463 985h16v-5l10 10-10 10v-5h-16Zm26 20h-16v-5l-10 10 10 10v-5h16Z"/>
+    <path fill="#525252" d="M3419 943h50v50h-50z"/>
+    <path fill="#e6e6e6" d="M3447 971h16v16h-16z"/>
+    <path fill="#2f2f2f" d="M3447 949h16v16h-16zm-22 22h16v16h-16zm0-22h16v16h-16z"/>
+    <path fill="#2f2f2f" d="M3388 912h49v49h-49z"/>
+    <path fill="#d2d2d2" d="M3393 917h39v17h-39zm0 22h39v16h-39z"/>
+    <path fill="none" stroke="url(#c)" stroke-dasharray="28 21" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.9" d="M3162 969h216"/>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2611 1204)">Upsert</text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2885 1204)">=</text>
+    <path fill="#e6e6e6" d="M3029 1117h132v132h-132z"/>
+    <path fill="#737373" d="M3102 1190h50v50h-50z"/>
+    <path fill="#d2d2d2" fill-rule="evenodd" d="M3114 1200h16v-5l10 10-10 10v-5h-16Zm26 20h-16v-5l-10 10 10 10v-5h16Z"/>
+    <path fill="#525252" d="M3071 1159h49v49h-49z"/>
+    <path fill="#e6e6e6" d="M3098 1186h17v16h-17z"/>
+    <path fill="#2f2f2f" d="M3098 1164h17v17h-17zm-22 22h17v16h-17zm0-22h17v17h-17z"/>
+    <path fill="#2f2f2f" d="M3039 1127h49v49h-49z"/>
+    <path fill="#d2d2d2" d="M3044 1132h39v17h-39zm0 22h39v17h-39z"/>
+    <path fill="#e6e6e6" d="M3378 1117h132v132h-132z"/>
+    <path fill="#737373" d="M3451 1190h50v50h-50z"/>
+    <path fill="#d2d2d2" fill-rule="evenodd" d="M3463 1200h16v-5l10 10-10 10v-5h-16Zm26 20h-16v-5l-10 10 10 10v-5h16Z"/>
+    <path fill="#525252" d="M3419 1159h50v49h-50z"/>
+    <path fill="#e6e6e6" d="M3447 1186h16v16h-16z"/>
+    <path fill="#2f2f2f" d="M3447 1164h16v17h-16zm-22 22h16v16h-16zm0-22h16v17h-16z"/>
+    <path fill="#2f2f2f" d="M3388 1127h49v49h-49z"/>
+    <path fill="#d2d2d2" d="M3393 1132h39v17h-39zm0 22h39v17h-39z"/>
+    <path fill="none" stroke="url(#d)" stroke-dasharray="28 21" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.9" d="M3162 1184h216"/>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2617 1419)">Delete</text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2885 1419)">=</text>
+    <path fill="#e6e6e6" d="M3029 1333h132v132h-132z"/>
+    <path fill="#737373" d="M3102 1406h50v49h-50z"/>
+    <path fill="#d2d2d2" fill-rule="evenodd" d="M3114 1415h16v-5l10 10-10 10v-5h-16Zm26 20h-16v-5l-10 10 10 10v-5h16Z"/>
+    <path fill="#525252" d="M3071 1374h49v49h-49z"/>
+    <path fill="#e6e6e6" d="M3098 1401h17v17h-17z"/>
+    <path fill="#2f2f2f" d="M3098 1379h17v17h-17zm-22 22h17v17h-17zm0-22h17v17h-17z"/>
+    <path fill="#2f2f2f" d="M3039 1342h49v50h-49z"/>
+    <path fill="#d2d2d2" d="M3044 1348h39v16h-39zm0 21h39v17h-39z"/>
+    <path fill="#e6e6e6" d="M3378 1333h132v132h-132z"/>
+    <path fill="#737373" d="M3451 1406h50v49h-50z"/>
+    <path fill="#d2d2d2" fill-rule="evenodd" d="M3463 1415h16v-5l10 10-10 10v-5h-16Zm26 20h-16v-5l-10 10 10 10v-5h16Z"/>
+    <path fill="#525252" d="M3419 1374h50v49h-50z"/>
+    <path fill="#e6e6e6" d="M3447 1401h16v17h-16z"/>
+    <path fill="#2f2f2f" d="M3447 1379h16v17h-16zm-22 22h16v17h-16zm0-22h16v17h-16z"/>
+    <path fill="#2f2f2f" d="M3388 1342h49v50h-49z"/>
+    <path fill="#d2d2d2" d="M3393 1348h39v16h-39zm0 21h39v17h-39z"/>
+    <path fill="none" stroke="url(#e)" stroke-dasharray="28 21" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.9" d="M3162 1400h216"/>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2654 774)">Read</text>
+    <text fill="#333" font-family="Segoe UI Semibold,Segoe UI Semibold_MSFontService,sans-serif" font-size="55" font-weight="600" transform="translate(2885 774)">=</text>
+    <path fill="#e6e6e6" d="M3029 687h132v132h-132z"/>
+    <path fill="#737373" d="M3102 760h50v49h-50z"/>
+    <path fill="#d2d2d2" fill-rule="evenodd" d="M3114 770h16v-5l10 10-10 10v-5h-16Zm26 20h-17v-5l-9 9 9 10v-5h17Z"/>
+    <path fill="#525252" d="M3071 728h49v50h-49z"/>
+    <path fill="#e6e6e6" d="M3098 755h17v17h-17z"/>
+    <path fill="#2f2f2f" d="M3098 734h17v16h-17zm-22 21h17v17h-17zm0-21h17v16h-17z"/>
+    <path fill="#2f2f2f" d="M3039 696h49v50h-49z"/>
+    <path fill="#d2d2d2" d="M3044 702h39v16h-39zm0 22h39v16h-39z"/>
+    <path fill="#737373" d="M1491 1504v31h-10v-31Zm0 42v31h-10v-31Zm0 41v31h-10v-31Zm0 41v25l-5-5h6v10h-6q-5 0-5-5v-25Zm11 20h31v10h-31Zm41 0h31v10h-31Zm42 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm42 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm42 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm42 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm42 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm30-1v-31h10v31Zm0-41v-31h10v31Zm0-42v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-42v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-42v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-42v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-42v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-42v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-41v-31h10v31Zm0-42v-31h10v31Zm10-41h31v10h-31Zm42 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm42 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm42 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm42 0h31v10h-31Zm41 0h31v10h-31Zm41 0h31v10h-31Zm41 0h28q5 0 5 5v4h-10v-4l5 5h-28Zm33 19v31h-10v-31Zm0 41v31h-10v-31Zm0 42v6h-10v-6Zm20 0-25 52-26-52Z"/>
+    <path fill="none" stroke="#737373" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.9" d="M3816 1698c0 27-2 49-5 49h-733c-3 0-4-22-4-49"/>
+  </g>
+</svg>
