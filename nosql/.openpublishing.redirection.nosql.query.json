@@ -1,0 +1,729 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/nosql/query/index.yml",
+      "redirect_url": "/cosmos-db/query",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/abs.md",
+      "redirect_url": "/cosmos-db/query/abs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/acos.md",
+      "redirect_url": "/cosmos-db/query/acos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/advisor.md",
+      "redirect_url": "/cosmos-db/query/advisor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/array-concat.md",
+      "redirect_url": "/cosmos-db/query/array-concat",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/array-contains-all.md",
+      "redirect_url": "/cosmos-db/query/array-contains-all",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/array-contains-any.md",
+      "redirect_url": "/cosmos-db/query/array-contains-any",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/array-contains.md",
+      "redirect_url": "/cosmos-db/query/array-contains",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/array-length.md",
+      "redirect_url": "/cosmos-db/query/array-length",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/array-slice.md",
+      "redirect_url": "/cosmos-db/query/array-slice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/asin.md",
+      "redirect_url": "/cosmos-db/query/asin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/atan.md",
+      "redirect_url": "/cosmos-db/query/atan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/atn2.md",
+      "redirect_url": "/cosmos-db/query/atn2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/avg.md",
+      "redirect_url": "/cosmos-db/query/avg",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/between.md",
+      "redirect_url": "/cosmos-db/query/between",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/ceiling.md",
+      "redirect_url": "/cosmos-db/query/ceiling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/choose.md",
+      "redirect_url": "/cosmos-db/query/choose",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/clauses.md",
+      "redirect_url": "/cosmos-db/query/clauses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/concat.md",
+      "redirect_url": "/cosmos-db/query/concat",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/constants.md",
+      "redirect_url": "/cosmos-db/query/constants",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/contains.md",
+      "redirect_url": "/cosmos-db/query/contains",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/cos.md",
+      "redirect_url": "/cosmos-db/query/cos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/cot.md",
+      "redirect_url": "/cosmos-db/query/cot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/count.md",
+      "redirect_url": "/cosmos-db/query/count",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/datetimeadd.md",
+      "redirect_url": "/cosmos-db/query/datetimeadd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/datetimebin.md",
+      "redirect_url": "/cosmos-db/query/datetimebin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/datetimediff.md",
+      "redirect_url": "/cosmos-db/query/datetimediff",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/datetimefromparts.md",
+      "redirect_url": "/cosmos-db/query/datetimefromparts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/datetimepart.md",
+      "redirect_url": "/cosmos-db/query/datetimepart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/datetimetoticks.md",
+      "redirect_url": "/cosmos-db/query/datetimetoticks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/datetimetotimestamp.md",
+      "redirect_url": "/cosmos-db/query/datetimetotimestamp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/degrees.md",
+      "redirect_url": "/cosmos-db/query/degrees",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/documentid.md",
+      "redirect_url": "/cosmos-db/query/documentid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/endswith.md",
+      "redirect_url": "/cosmos-db/query/endswith",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/exp.md",
+      "redirect_url": "/cosmos-db/query/exp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/floor.md",
+      "redirect_url": "/cosmos-db/query/floor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/from.md",
+      "redirect_url": "/cosmos-db/query/from",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/fulltextcontains.md",
+      "redirect_url": "/cosmos-db/query/fulltextcontains",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/fulltextcontainsall.md",
+      "redirect_url": "/cosmos-db/query/fulltextcontainsall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/fulltextcontainsany.md",
+      "redirect_url": "/cosmos-db/query/fulltextcontainsany",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/fulltextscore.md",
+      "redirect_url": "/cosmos-db/query/fulltextscore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/functions.md",
+      "redirect_url": "/cosmos-db/query/functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/geospatial.md",
+      "redirect_url": "/cosmos-db/query/geospatial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/get-started-json.md",
+      "redirect_url": "/cosmos-db/query/get-started-json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/getcurrentdatetime.md",
+      "redirect_url": "/cosmos-db/query/getcurrentdatetime",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/getcurrentdatetimestatic.md",
+      "redirect_url": "/cosmos-db/query/getcurrentdatetimestatic",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/getcurrentticks.md",
+      "redirect_url": "/cosmos-db/query/getcurrentticks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/getcurrentticksstatic.md",
+      "redirect_url": "/cosmos-db/query/getcurrentticksstatic",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/getcurrenttimestamp.md",
+      "redirect_url": "/cosmos-db/query/getcurrenttimestamp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/getcurrenttimestampstatic.md",
+      "redirect_url": "/cosmos-db/query/getcurrenttimestampstatic",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/group-by.md",
+      "redirect_url": "/cosmos-db/query/group-by",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/iif.md",
+      "redirect_url": "/cosmos-db/query/iif",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/index-of.md",
+      "redirect_url": "/cosmos-db/query/index-of",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intadd.md",
+      "redirect_url": "/cosmos-db/query/intadd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intbitand.md",
+      "redirect_url": "/cosmos-db/query/intbitand",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intbitleftshift.md",
+      "redirect_url": "/cosmos-db/query/intbitleftshift",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intbitnot.md",
+      "redirect_url": "/cosmos-db/query/intbitnot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intbitor.md",
+      "redirect_url": "/cosmos-db/query/intbitor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intbitrightshift.md",
+      "redirect_url": "/cosmos-db/query/intbitrightshift",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intbitxor.md",
+      "redirect_url": "/cosmos-db/query/intbitxor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intdiv.md",
+      "redirect_url": "/cosmos-db/query/intdiv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intmod.md",
+      "redirect_url": "/cosmos-db/query/intmod",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intmul.md",
+      "redirect_url": "/cosmos-db/query/intmul",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/intsub.md",
+      "redirect_url": "/cosmos-db/query/intsub",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-array.md",
+      "redirect_url": "/cosmos-db/query/is-array",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-bool.md",
+      "redirect_url": "/cosmos-db/query/is-bool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-defined.md",
+      "redirect_url": "/cosmos-db/query/is-defined",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-finite-number.md",
+      "redirect_url": "/cosmos-db/query/is-finite-number",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-integer.md",
+      "redirect_url": "/cosmos-db/query/is-integer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-null.md",
+      "redirect_url": "/cosmos-db/query/is-null",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-number.md",
+      "redirect_url": "/cosmos-db/query/is-number",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-object.md",
+      "redirect_url": "/cosmos-db/query/is-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-primitive.md",
+      "redirect_url": "/cosmos-db/query/is-primitive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/is-string.md",
+      "redirect_url": "/cosmos-db/query/is-string",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/join.md",
+      "redirect_url": "/cosmos-db/query/join",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/keywords.md",
+      "redirect_url": "/cosmos-db/query/keywords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/left.md",
+      "redirect_url": "/cosmos-db/query/left",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/length.md",
+      "redirect_url": "/cosmos-db/query/length",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/log.md",
+      "redirect_url": "/cosmos-db/query/log",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/log10.md",
+      "redirect_url": "/cosmos-db/query/log10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/lower.md",
+      "redirect_url": "/cosmos-db/query/lower",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/ltrim.md",
+      "redirect_url": "/cosmos-db/query/ltrim",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/max.md",
+      "redirect_url": "/cosmos-db/query/max",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/min.md",
+      "redirect_url": "/cosmos-db/query/min",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/numberbin.md",
+      "redirect_url": "/cosmos-db/query/numberbin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/objecttoarray.md",
+      "redirect_url": "/cosmos-db/query/objecttoarray",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/offset-limit.md",
+      "redirect_url": "/cosmos-db/query/offset-limit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/order-by-rank.md",
+      "redirect_url": "/cosmos-db/query/order-by-rank",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/order-by.md",
+      "redirect_url": "/cosmos-db/query/order-by",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/overview.md",
+      "redirect_url": "/cosmos-db/query/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/pi.md",
+      "redirect_url": "/cosmos-db/query/pi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/power.md",
+      "redirect_url": "/cosmos-db/query/power",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/radians.md",
+      "redirect_url": "/cosmos-db/query/radians",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/rand.md",
+      "redirect_url": "/cosmos-db/query/rand",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/regexmatch.md",
+      "redirect_url": "/cosmos-db/query/regexmatch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/replace.md",
+      "redirect_url": "/cosmos-db/query/replace",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/replicate.md",
+      "redirect_url": "/cosmos-db/query/replicate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/reverse.md",
+      "redirect_url": "/cosmos-db/query/reverse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/right.md",
+      "redirect_url": "/cosmos-db/query/right",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/round.md",
+      "redirect_url": "/cosmos-db/query/round",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/rrf.md",
+      "redirect_url": "/cosmos-db/query/rrf",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/rtrim.md",
+      "redirect_url": "/cosmos-db/query/rtrim",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/scalar.md",
+      "redirect_url": "/cosmos-db/query/scalar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/select.md",
+      "redirect_url": "/cosmos-db/query/select",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/setintersect.md",
+      "redirect_url": "/cosmos-db/query/setintersect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/setunion.md",
+      "redirect_url": "/cosmos-db/query/setunion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/sign.md",
+      "redirect_url": "/cosmos-db/query/sign",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/sin.md",
+      "redirect_url": "/cosmos-db/query/sin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/sqrt.md",
+      "redirect_url": "/cosmos-db/query/sqrt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/square.md",
+      "redirect_url": "/cosmos-db/query/square",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/st-area.md",
+      "redirect_url": "/cosmos-db/query/st-area",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/st-distance.md",
+      "redirect_url": "/cosmos-db/query/st-distance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/st-intersects.md",
+      "redirect_url": "/cosmos-db/query/st-intersects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/st-isvalid.md",
+      "redirect_url": "/cosmos-db/query/st-isvalid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/st-isvaliddetailed.md",
+      "redirect_url": "/cosmos-db/query/st-isvaliddetailed",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/st-within.md",
+      "redirect_url": "/cosmos-db/query/st-within",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/startswith.md",
+      "redirect_url": "/cosmos-db/query/startswith",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/stringequals.md",
+      "redirect_url": "/cosmos-db/query/stringequals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/stringjoin.md",
+      "redirect_url": "/cosmos-db/query/stringjoin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/stringsplit.md",
+      "redirect_url": "/cosmos-db/query/stringsplit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/stringtoarray.md",
+      "redirect_url": "/cosmos-db/query/stringtoarray",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/stringtoboolean.md",
+      "redirect_url": "/cosmos-db/query/stringtoboolean",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/stringtonull.md",
+      "redirect_url": "/cosmos-db/query/stringtonull",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/stringtonumber.md",
+      "redirect_url": "/cosmos-db/query/stringtonumber",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/stringtoobject.md",
+      "redirect_url": "/cosmos-db/query/stringtoobject",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/subquery.md",
+      "redirect_url": "/cosmos-db/query/subquery",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/substring.md",
+      "redirect_url": "/cosmos-db/query/substring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/sum.md",
+      "redirect_url": "/cosmos-db/query/sum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/tan.md",
+      "redirect_url": "/cosmos-db/query/tan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/tickstodatetime.md",
+      "redirect_url": "/cosmos-db/query/tickstodatetime",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/timestamptodatetime.md",
+      "redirect_url": "/cosmos-db/query/timestamptodatetime",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/tostring.md",
+      "redirect_url": "/cosmos-db/query/tostring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/trim.md",
+      "redirect_url": "/cosmos-db/query/trim",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/trunc.md",
+      "redirect_url": "/cosmos-db/query/trunc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/upper.md",
+      "redirect_url": "/cosmos-db/query/upper",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/vectordistance.md",
+      "redirect_url": "/cosmos-db/query/vectordistance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/where.md",
+      "redirect_url": "/cosmos-db/query/where",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/advisor/QA1000.md",
+      "redirect_url": "/cosmos-db/query/advisor/QA1000",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/advisor/QA1002.md",
+      "redirect_url": "/cosmos-db/query/advisor/QA1002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/advisor/QA1003.md",
+      "redirect_url": "/cosmos-db/query/advisor/QA1003",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/advisor/QA1004.md",
+      "redirect_url": "/cosmos-db/query/advisor/QA1004",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/advisor/QA1006.md",
+      "redirect_url": "/cosmos-db/query/advisor/QA1006",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/advisor/QA1007.md",
+      "redirect_url": "/cosmos-db/query/advisor/QA1007",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/advisor/QA1008.md",
+      "redirect_url": "/cosmos-db/query/advisor/QA1008",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/nosql/query/advisor/QA1009.md",
+      "redirect_url": "/cosmos-db/query/advisor/QA1009",
+      "redirect_document_id": false
+    }
+  ]
+}
