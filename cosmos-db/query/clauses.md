@@ -4,7 +4,7 @@ description: The NoSQL query language provides many language clauses that can be
 ms.date: 11/10/2025
 ---
 
-# NoSQL query language clauses
+# Clauses - Query language in Cosmos DB (in Azure and Fabric)
 
 Queries built in the NoSQL query language are constructed of various supported clauses that are built in to the query language.
 

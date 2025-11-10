@@ -4,7 +4,7 @@ description: The `DATETIMEADD` function returns a date and time string value tha
 ms.date: 11/10/2025
 ---
 
-# `DATETIMEADD` (NoSQL query)
+# `DATETIMEADD` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `DATETIMEADD` function returns a date and time string value that is the result of adding a specified number value to the provided date and time string.
 

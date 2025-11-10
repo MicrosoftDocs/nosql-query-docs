@@ -5,7 +5,7 @@ ms.date: 11/10/2025
 ai-usage: ai-generated
 ---
 
-# Get started with JSON in the NoSQL query language
+# Get started with JSON - Query language in Cosmos DB (in Azure and Fabric)
 
 Working with JavaScript Object Notation (JSON) is at the heart of the NoSQL query language. Items are stored as JSON, and all queries, expressions, and types are designed to work with JSON data. For more information about JSON itself, see the [formal JSON specification](https://www.json.org/).
 

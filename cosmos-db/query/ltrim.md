@@ -4,7 +4,7 @@ description: The `LTRIM` function returns a string expression after it removes l
 ms.date: 11/10/2025
 ---
 
-# `LTRIM` (NoSQL query)
+# `LTRIM` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `LTRIM` function returns a string expression after it removes leading whitespace or specified characters.
 

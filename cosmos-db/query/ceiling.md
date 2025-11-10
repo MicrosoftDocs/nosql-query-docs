@@ -4,7 +4,7 @@ description: The `CEILING` function calculates the smallest integer value greate
 ms.date: 11/10/2025
 ---
 
-# `CEILING` (NoSQL query)
+# `CEILING` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `CEILING` function calculates the smallest integer value greater than or equal to the specified numeric expression.
 

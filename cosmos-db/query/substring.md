@@ -4,7 +4,7 @@ description: The `SUBSTRING` function returns part of a string expression starti
 ms.date: 11/10/2025
 ---
 
-# `SUBSTRING` (NoSQL query)
+# `SUBSTRING` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `SUBSTRING` function returns part of a string expression starting at the specified position and of the specified length, or to the end of the string.
 

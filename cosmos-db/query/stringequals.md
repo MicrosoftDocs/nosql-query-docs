@@ -4,7 +4,7 @@ description: The `STRINGEQUALS` function returns a boolean indicating whether th
 ms.date: 11/10/2025
 ---
 
-# `STRINGEQUALS` (NoSQL query)
+# `STRINGEQUALS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `STRINGEQUALS` function returns a boolean indicating whether the first string expression matches the second.
 

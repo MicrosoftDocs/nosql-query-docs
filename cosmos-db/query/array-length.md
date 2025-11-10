@@ -4,7 +4,7 @@ description: The `ARRAY_LENGTH` function returns the number of elements in the s
 ms.date: 11/10/2025
 ---
 
-# `ARRAY_LENGTH` (NoSQL query)
+# `ARRAY_LENGTH` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ARRAY_LENGTH` function returns the number of elements in the specified array expression.
 

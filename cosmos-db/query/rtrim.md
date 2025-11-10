@@ -4,7 +4,7 @@ description: The `RTRIM` function returns a string expression after it removes t
 ms.date: 11/10/2025
 ---
 
-# `RTRIM` (NoSQL query)
+# `RTRIM` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `RTRIM` function returns a string expression after it removes trailing whitespace or specified characters.
 

@@ -4,7 +4,7 @@ description: The `SQRT` function returns the square root of the specified numeri
 ms.date: 11/10/2025
 ---
 
-# `SQRT` (NoSQL query)
+# `SQRT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `SQRT` function returns the square root of the specified numeric value.
 

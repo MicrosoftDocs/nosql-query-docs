@@ -4,7 +4,7 @@ description: The `LOG` function returns the natural logarithm of the specified n
 ms.date: 11/10/2025
 ---
 
-# `LOG` (NoSQL query)
+# `LOG` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `LOG` function returns the natural logarithm of the specified numeric expression.
 

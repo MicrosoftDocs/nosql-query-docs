@@ -4,7 +4,7 @@ description: The `IS_FINITE_NUMBER` function returns a boolean indicating if a n
 ms.date: 11/10/2025
 ---
 
-# `IS_FINITE_NUMBER` (NoSQL query)
+# `IS_FINITE_NUMBER` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `IS_FINITE_NUMBER` function returns a boolean indicating if a number is a finite number (not infinite).
 

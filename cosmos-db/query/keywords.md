@@ -4,7 +4,7 @@ description: The NoSQL query language reserves keywords for use in special expre
 ms.date: 11/10/2025
 ---
 
-# NoSQL query language keywords
+# Keywords - Query language in Cosmos DB (in Azure and Fabric)
 
 The NoSQL query language's query language includes a set of reserved keywords that are used in queries for extended functionality.
 

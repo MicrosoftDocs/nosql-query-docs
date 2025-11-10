@@ -4,7 +4,7 @@ description: The `INTBITAND` function returns a comparison of the bits of each o
 ms.date: 11/10/2025
 ---
 
-# `INTBITAND` (NoSQL query)
+# `INTBITAND` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTBITAND` function returns a comparison of the bits of each operand using an inclusive AND operator.
 

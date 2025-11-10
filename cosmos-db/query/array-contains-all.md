@@ -4,7 +4,7 @@ description: The `ARRAY_CONTAINS_ALL` function returns a boolean indicating whet
 ms.date: 11/10/2025
 ---
 
-# `ARRAY_CONTAINS_ALL` (NoSQL query)
+# `ARRAY_CONTAINS_ALL` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ARRAY_CONTAINS_ALL` function returns a boolean indicating whether the array contains all of the specified values.
 

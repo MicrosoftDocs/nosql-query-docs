@@ -4,7 +4,7 @@ description: The `AVG` function calculates the average of the values in the expr
 ms.date: 11/10/2025
 ---
 
-# `AVG` (NoSQL query)
+# `AVG` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `AVG` function calculates the average of the values in the expression.
 

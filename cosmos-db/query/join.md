@@ -5,7 +5,7 @@ ms.date: 11/10/2025
 ai-usage: ai-generated
 ---
 
-# Self-joins in the NoSQL query language
+# Self-joins - Query language in Cosmos DB (in Azure and Fabric)
 
 In the NoSQL query language, data is schema-free and typically denormalized. Instead of joining data across entities and sets, like you would in a relational database, joins occur within a single item. Specifically, joins are scoped to that item and can't occur across multiple items and containers.
 

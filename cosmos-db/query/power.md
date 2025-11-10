@@ -4,7 +4,7 @@ description: The `POWER` function returns the value of the specified expression 
 ms.date: 11/10/2025
 ---
 
-# `POWER` (NoSQL query)
+# `POWER` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `POWER` function returns the value of the specified expression multipled by itself the given number of times.
 

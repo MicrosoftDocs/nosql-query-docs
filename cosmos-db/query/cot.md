@@ -4,7 +4,7 @@ description: The `COT` function calculates the trigonometric cotangent of the sp
 ms.date: 11/10/2025
 ---
 
-# `COT` (NoSQL query)
+# `COT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `COT` function calculates the trigonometric cotangent of the specified angle in radians.
 

@@ -6,7 +6,7 @@ ai-usage: ai-generated
 show_latex: true
 ---
 
-# Subqueries in the NoSQL query language
+# Subqueries - Query language in Cosmos DB (in Azure and Fabric)
 
 A subquery is a query nested within another query within the NoSQL query language. A subquery is also called an *inner query* or *inner `SELECT`*. The statement that contains a subquery is typically called an *outer query*.
 

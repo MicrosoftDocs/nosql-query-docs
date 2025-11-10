@@ -4,7 +4,7 @@ description: The `VECTORDISTANCE` function returns the similarity score between 
 ms.date: 11/10/2025
 ---
 
-# `VECTORDISTANCE` (NoSQL query)
+# `VECTORDISTANCE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `VECTORDISTANCE` function returns the similarity score between two specified vectors.
 

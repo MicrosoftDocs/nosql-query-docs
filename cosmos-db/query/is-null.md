@@ -4,7 +4,7 @@ description: The `IS_NULL` function returns a boolean value indicating if the ty
 ms.date: 11/10/2025
 ---
 
-# `IS_NULL` (NoSQL query)
+# `IS_NULL` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `IS_NULL` function returns a boolean value indicating if the type of the specified expression is `null`.
 

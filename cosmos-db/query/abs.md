@@ -4,7 +4,7 @@ description: The `ABS` function calculates the absolute (positive) value of the 
 ms.date: 11/10/2025
 ---
 
-# `ABS` (NoSQL query)
+# `ABS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ABS` function calculates the absolute (positive) value of the specified numeric expression.
 

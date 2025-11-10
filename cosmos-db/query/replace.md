@@ -4,7 +4,7 @@ description: The `REPLACE` function returns a string with all occurrences of a s
 ms.date: 11/10/2025
 ---
 
-# `REPLACE` (NoSQL query)
+# `REPLACE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `REPLACE` function returns a string with all occurrences of a specified string replaced.
 

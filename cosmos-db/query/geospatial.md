@@ -4,7 +4,7 @@ description: The NoSQL query language provides support for geometrics shapes, lo
 ms.date: 11/10/2025
 ---
 
-# Geospatial data in NoSQL query language
+# Geospatial data - Query language in Cosmos DB (in Azure and Fabric)
 
 The NoSQL query language has built-in geospatial functionality to represent geometric shapes or actual locations/polygons on a map. Geospatial data often involves proximity queries. For example, the question "find all retail locations near my current location" is answered using a proximity query over multiple geospatial data object.
 

@@ -4,7 +4,7 @@ description: The `IS_DEFINED` function returns a boolean indicating if the prope
 ms.date: 11/10/2025
 ---
 
-# `IS_DEFINED` (NoSQL query)
+# `IS_DEFINED` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `IS_DEFINED` function returns a boolean indicating if the property has been assigned a value.
 

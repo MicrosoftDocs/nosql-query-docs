@@ -4,7 +4,7 @@ description: The `SIN` function returns the trigonometric sine of the specified 
 ms.date: 11/10/2025
 ---
 
-# `SIN` (NoSQL query)
+# `SIN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `SIN` function returns the trigonometric sine of the specified angle in radians.
 

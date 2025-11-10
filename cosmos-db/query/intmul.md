@@ -4,7 +4,7 @@ description: The `INTMUL` function returns the product of two integer values.
 ms.date: 11/10/2025
 ---
 
-# `INTMUL` (NoSQL query)
+# `INTMUL` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTMUL` function returns the product of two integer values.
 

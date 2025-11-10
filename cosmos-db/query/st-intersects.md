@@ -4,7 +4,7 @@ description: The `ST_INTERSECTS` function returns a boolean indicating whether t
 ms.date: 11/10/2025
 ---
 
-# `ST_INTERSECTS` (NoSQL query)
+# `ST_INTERSECTS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ST_INTERSECTS` function returns a boolean indicating whether the GeoJSON object specified in the first argument intersects the GeoJSON object in the second argument.
 

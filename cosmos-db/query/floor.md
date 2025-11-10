@@ -4,7 +4,7 @@ description: The `FLOOR` function calculates the largest integer less than or eq
 ms.date: 11/10/2025
 ---
 
-# `FLOOR` (NoSQL query)
+# `FLOOR` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `FLOOR` function calculates the largest integer less than or equal to the specified numeric expression.
 

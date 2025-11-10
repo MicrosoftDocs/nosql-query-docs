@@ -4,7 +4,7 @@ description: The `CHOOSE` function returns the expression at the specified index
 ms.date: 11/10/2025
 ---
 
-# `CHOOSE` (NoSQL query)
+# `CHOOSE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `CHOOSE` function returns the expression at the specified index of a list, or Undefined if the index exceeds the bounds of the list.
 

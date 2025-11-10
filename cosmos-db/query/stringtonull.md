@@ -4,7 +4,7 @@ description: The `STRINGTONULL` function converts a string expression to `null`.
 ms.date: 11/10/2025
 ---
 
-# `STRINGTONULL` (NoSQL query)
+# `STRINGTONULL` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `STRINGTONULL` function converts a string expression to `null`.
 

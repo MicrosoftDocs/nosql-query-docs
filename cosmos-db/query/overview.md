@@ -5,11 +5,11 @@ ms.date: 11/10/2025
 ai-usage: ai-generated
 ---
 
-# What is the NoSQL query language?
+# What is the query language in Cosmos DB (in Azure and Fabric)
 
 The NoSQL query language provides a powerful, SQL-like syntax for working with JSON data. This language is designed to be familiar to users with SQL experience, while also supporting the flexibility and hierarchical nature of JSON documents. This article introduces the core concepts, syntax, and features of the NoSQL query language.
 
-## Core concepts of the NoSQL query language
+## Core concepts of the query language
 
 The NoSQL query language is built to provide expressive and efficient access to data stored as JSON documents. At its foundation, the language is designed to work natively with hierarchical and flexible data, supporting both simple and complex queries over documents that could have varying structures.
 

@@ -4,7 +4,7 @@ description: The `IIF` function returns one of two values, depending on whether 
 ms.date: 11/10/2025
 ---
 
-# `IIF` (NoSQL query)
+# `IIF` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `IIF` function returns one of two values, depending on whether the Boolean expression evaluates to true or false.
 

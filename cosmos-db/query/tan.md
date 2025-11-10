@@ -4,7 +4,7 @@ description: The `TAN` function returns the trigonometric tangent of the specifi
 ms.date: 11/10/2025
 ---
 
-# `TAN` (NoSQL query)
+# `TAN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `TAN` function returns the trigonometric tangent of the specified angle in radians.
 

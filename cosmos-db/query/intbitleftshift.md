@@ -4,7 +4,7 @@ description: The `INTBITLEFTSHIFT` function returns the result of a bitwise left
 ms.date: 11/10/2025
 ---
 
-# `INTBITLEFTSHIFT` (NoSQL query)
+# `INTBITLEFTSHIFT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTBITLEFTSHIFT` function returns the result of a bitwise left shift operation on an integer value.
 

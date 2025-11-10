@@ -4,7 +4,7 @@ description: The `ENDSWITH` function returns a boolean indicating whether a stri
 ms.date: 11/10/2025
 ---
 
-# `ENDSWITH` (NoSQL query)
+# `ENDSWITH` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ENDSWITH` function returns a boolean indicating whether a string ends with the specified suffix. Optionally, the comparison can be case-insensitive.
 

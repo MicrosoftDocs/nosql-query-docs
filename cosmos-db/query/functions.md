@@ -4,7 +4,7 @@ description: The NoSQL query language provides many built-in functions for commo
 ms.date: 11/10/2025
 ---
 
-# NoSQL query language functions
+# Functions - Query language in Cosmos DB (in Azure and Fabric)
 
 The NoSQL query language includes a series of system functions that are built in to the query language and designed to handle a wide variety of common tasks.
 

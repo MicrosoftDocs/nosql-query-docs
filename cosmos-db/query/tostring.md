@@ -4,7 +4,7 @@ description: The `TOSTRING` function returns a string representation of a value.
 ms.date: 11/10/2025
 ---
 
-# `TOSTRING` (NoSQL query)
+# `TOSTRING` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `TOSTRING` function returns a string representation of a value.
 
