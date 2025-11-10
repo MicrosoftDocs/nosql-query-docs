@@ -49,7 +49,7 @@ conceptualContent:
           links:
             - text: NoSQL query language
               itemType: concept
-              url: query/index.md
+              url: query/index.yml
             - text: Get started with JSON
               itemType: concept
               url: query/get-started-json.md
