@@ -42,14 +42,6 @@ additionalContent:
               url: /azure/cosmos-db/nosql/quickstart-nodejs
             - text: Deploy a Python application template
               url: /azure/cosmos-db/nosql/quickstart-python
-        - title: Query data
-          links:
-            - text: NoSQL query language
-              url: /nosql/query
-            - text: Get started with JSON
-              url: /nosql/query/get-started-json
-            - text: Functions
-              url: /nosql/query/functions
         - title: Samples
           links:
             - text: Solution accelerators
