@@ -4,7 +4,7 @@ description: The `FULLTEXTSCORE` function returns a BM25 score value that can on
 ms.date: 11/10/2025
 ---
 
-# `FULLTEXTSCORE` (NoSQL query)
+# `FULLTEXTSCORE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `FULLTEXTSCORE` function returns a BM25 score value that can only be used in an `ORDER BY RANK` clause to sort results from highest relevancy to lowest relevancy of the specified terms.
 

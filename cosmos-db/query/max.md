@@ -4,7 +4,7 @@ description: The `MAX` function returns the maximum value of the specified expre
 ms.date: 11/10/2025
 ---
 
-# `MAX` (NoSQL query)
+# `MAX` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `MAX` function returns the maximum value of the specified expression.
 

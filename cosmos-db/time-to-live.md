@@ -7,7 +7,10 @@ ms.date: 11/10/2025
 
 # Time-to-live (TTL) in Cosmos DB (in Azure and Fabric)
 
-The time-to-live (TTL) feature in Cosmos DB (in Azure and Fabric) helps you manage your data's lifecycle by automatically deleting items after a specified period. TTL is especially useful for scenarios where data is only relevant for a limited time, such as session data, metrics, or logs. By enabling TTL, you can keep your database lean, reduce storage costs, and ensure that only current, relevant data is retained.
+The time-to-live (TTL) feature in Cosmos DB (in Azure and Fabric) helps you manage your data's lifecycle by automatically deleting items after a specified period, **in seconds**. TTL is especially useful for scenarios where data is only relevant for a limited time, such as session data, metrics, or logs. By enabling TTL, you can keep your database lean, reduce storage costs, and ensure that only current, relevant data is retained.
+
+> [!NOTE]
+> When you apply a TTL policy on a container in Cosmos DB in Microsoft Fabric, items expired via TTL are reflected in the data mirrored in OneLake.
 
 ## How TTL works
 
@@ -81,3 +84,7 @@ This table illustrates example scenarios with different TTL values assigned at t
 
 > [!NOTE]
 > Setting TTL to null on an item isn't supported. The item TTL value must be a nonzero positive integer less than or equal to `2147483647`. Alternatively, you can set the TTL to `-1`, which means the individual items don't expire. To use the default TTL on an item, ensure the `ttl` property isn't present.
+
+## Related content
+
+- [Indexing in Cosmos DB (in Azure and Fabric)](indexing.md)

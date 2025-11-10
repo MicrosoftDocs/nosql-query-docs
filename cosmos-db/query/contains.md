@@ -4,7 +4,7 @@ description: The `CONTAINS` function returns a boolean indicating whether the fi
 ms.date: 11/10/2025
 ---
 
-# `CONTAINS` (NoSQL query)
+# `CONTAINS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `CONTAINS` function returns a boolean indicating whether the first string expression contains the second string expression.
 

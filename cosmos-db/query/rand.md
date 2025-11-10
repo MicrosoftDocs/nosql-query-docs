@@ -4,7 +4,7 @@ description: The `RAND` function returns a randomly generated numeric value from
 ms.date: 11/10/2025
 ---
 
-# `RAND` (NoSQL query)
+# `RAND` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `RAND` function returns a randomly generated numeric value from zero to one.
 

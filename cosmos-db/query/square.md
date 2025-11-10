@@ -4,7 +4,7 @@ description: The `SQUARE` function returns the square of the specified numeric v
 ms.date: 11/10/2025
 ---
 
-# `SQUARE` (NoSQL query)
+# `SQUARE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `SQUARE` function returns the square of the specified numeric value.
 

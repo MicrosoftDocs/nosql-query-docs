@@ -4,7 +4,7 @@ description: The `SIGN` function returns the positive (+1), zero (0), or negativ
 ms.date: 11/10/2025
 ---
 
-# `SIGN` (NoSQL query)
+# `SIGN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `SIGN` function returns the positive (+1), zero (0), or negative (-1) sign of the specified numeric expression.
 

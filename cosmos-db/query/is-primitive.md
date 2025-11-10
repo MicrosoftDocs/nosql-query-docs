@@ -4,7 +4,7 @@ description: The `IS_PRIMITIVE` function returns a boolean value indicating if t
 ms.date: 11/10/2025
 ---
 
-# `IS_PRIMITIVE` (NoSQL query)
+# `IS_PRIMITIVE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `IS_PRIMITIVE` function returns a boolean value indicating if the type of the specified expression is a primitive (string, boolean, numeric, or null).
 

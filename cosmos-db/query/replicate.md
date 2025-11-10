@@ -4,7 +4,7 @@ description: The `REPLICATE` function returns a string value repeated a specific
 ms.date: 11/10/2025
 ---
 
-# `REPLICATE` (NoSQL query)
+# `REPLICATE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `REPLICATE` function returns a string value repeated a specific number of times.
 

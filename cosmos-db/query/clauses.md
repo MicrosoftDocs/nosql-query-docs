@@ -1,16 +1,16 @@
 ---
 title: Clauses
-description: The NoSQL query language provides many language clauses that can be used to build complex query language expressions.
+description: The query language provides many language clauses that can be used to build complex query language expressions.
 ms.date: 11/10/2025
 ---
 
-# NoSQL query language clauses
+# Clauses - Query language in Cosmos DB (in Azure and Fabric)
 
-Queries built in the NoSQL query language are constructed of various supported clauses that are built in to the query language.
+Queries built in the query language are constructed of various supported clauses that are built in to the query language.
 
 ## Clauses
 
-Here's a list of clauses that the NoSQL query language currently supports:
+Here's a list of clauses that the query language currently supports:
 
 | | Description |
 | --- | --- |

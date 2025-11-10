@@ -4,7 +4,7 @@ description: The `LOG10` function returns the base-10 logarithm of the specified
 ms.date: 11/10/2025
 ---
 
-# `LOG10` (NoSQL query)
+# `LOG10` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `LOG10` function returns the base-10 logarithm of the specified numeric expression.
 

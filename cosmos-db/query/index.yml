@@ -53,7 +53,7 @@ highlightedContent:
       url: https://github.com/azure-samples/cosmos-db-nosql-query-samples
 productDirectory:
   title: Fundamentals
-  summary: Learn the fundamentals of finding data using the NoSQL query language.
+  summary: Learn the fundamentals of finding data using the query language.
   items:
     - title: Basic queries
       imageSrc: ./media/index/query-simple.png

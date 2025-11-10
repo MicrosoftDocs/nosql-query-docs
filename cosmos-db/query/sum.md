@@ -4,7 +4,7 @@ description: The `SUM` function calculates the sum of the values in the expressi
 ms.date: 11/10/2025
 ---
 
-# `SUM` (NoSQL query)
+# `SUM` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `SUM` function calculates the sum of the values in the expression.
 

@@ -4,7 +4,7 @@ description: The `GETCURRENTTIMESTAMP` function returns the current timestamp in
 ms.date: 11/10/2025
 ---
 
-# `GETCURRENTTIMESTAMP` (NoSQL query)
+# `GETCURRENTTIMESTAMP` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `GETCURRENTTIMESTAMP` function returns the current timestamp in milliseconds since the Unix epoch.
 

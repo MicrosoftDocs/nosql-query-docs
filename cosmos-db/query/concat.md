@@ -4,7 +4,7 @@ description: The `CONCAT` function returns a string that is the result of concat
 ms.date: 11/10/2025
 ---
 
-# `CONCAT` (NoSQL query)
+# `CONCAT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `CONCAT` function returns a string that is the result of concatenating multiple fields from a document.
 

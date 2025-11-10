@@ -4,7 +4,7 @@ description: The `GROUP BY` clause collects rows that have the same values into 
 ms.date: 11/10/2025
 ---
 
-# `GROUP BY` (NoSQL query)
+# `GROUP BY` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `GROUP BY` clause collects rows that have the same values into summary rows.
 

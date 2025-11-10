@@ -4,7 +4,7 @@ description: The `TRUNC` function returns a numeric value truncated to the close
 ms.date: 11/10/2025
 ---
 
-# `TRUNC` (NoSQL query)
+# `TRUNC` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `TRUNC` function returns a numeric value truncated to the closest integer value.
 

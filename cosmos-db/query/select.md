@@ -4,7 +4,7 @@ description: The `SELECT` clause identifies fields to return in query results. T
 ms.date: 11/10/2025
 ---
 
-# `SELECT` (NoSQL query)
+# `SELECT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `SELECT` clause identifies fields to return in query results. The clause then projects those fields into the JSON result set.
 

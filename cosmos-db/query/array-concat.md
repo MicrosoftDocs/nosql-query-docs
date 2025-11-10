@@ -4,7 +4,7 @@ description: The `ARRAY_CONCAT` function returns an array that is the result of 
 ms.date: 11/10/2025
 ---
 
-# `ARRAY_CONCAT` (NoSQL query)
+# `ARRAY_CONCAT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ARRAY_CONCAT` function returns an array that is the result of concatenating two or more array values.
 

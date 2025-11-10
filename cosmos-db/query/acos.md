@@ -4,7 +4,7 @@ description: The `ACOS` function calculates the trigonometric arccosine of the s
 ms.date: 11/10/2025
 ---
 
-# `ACOS` (NoSQL query)
+# `ACOS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ACOS` function calculates the trigonometric arccosine of the specified numeric value. The arccosine is the angle, in radians, whose cosine is the specified numeric expression.
 

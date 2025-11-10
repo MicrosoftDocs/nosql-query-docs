@@ -4,7 +4,7 @@ description: The `DATETIMEDIFF` function returns the difference, as a signed int
 ms.date: 11/10/2025
 ---
 
-# `DATETIMEDIFF` (NoSQL query)
+# `DATETIMEDIFF` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `DATETIMEDIFF` function returns the difference, as a signed integer, of the specified date and time part between two date and time values.
 

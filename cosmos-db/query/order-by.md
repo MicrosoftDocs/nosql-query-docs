@@ -4,7 +4,7 @@ description: The `ORDER BY` clause returns the sorted result set of a query base
 ms.date: 11/10/2025
 ---
 
-# `ORDER BY` (NoSQL query)
+# `ORDER BY` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ORDER BY` clause returns the sorted result set of a query based on one or more expressions.
 

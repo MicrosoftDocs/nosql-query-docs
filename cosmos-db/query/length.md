@@ -4,7 +4,7 @@ description: The `LENGTH` function returns the number of characters in the speci
 ms.date: 11/10/2025
 ---
 
-# `LENGTH` (NoSQL query)
+# `LENGTH` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `LENGTH` function returns the number of characters in the specified string expression.
 

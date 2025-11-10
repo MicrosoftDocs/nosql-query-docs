@@ -4,7 +4,7 @@ description: The `REVERSE` function returns the reverse order of a string value.
 ms.date: 11/10/2025
 ---
 
-# `REVERSE` (NoSQL query)
+# `REVERSE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `REVERSE` function returns the reverse order of a string value.
 

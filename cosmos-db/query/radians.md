@@ -4,7 +4,7 @@ description: The `RADIANS` function returns the corresponding angle in radians f
 ms.date: 11/10/2025
 ---
 
-# `RADIANS` (NoSQL query)
+# `RADIANS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `RADIANS` function returns the corresponding angle in radians for an angle specified in degrees.
 

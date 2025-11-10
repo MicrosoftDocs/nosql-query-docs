@@ -4,7 +4,7 @@ description: The `PI` function returns the constant value of Pi.
 ms.date: 11/10/2025
 ---
 
-# `PI` (NoSQL query)
+# `PI` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `PI` function returns the constant value of Pi.
 

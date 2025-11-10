@@ -4,7 +4,7 @@ description: The `DATETIMETOTICKS` function converts the specified DateTime to t
 ms.date: 11/10/2025
 ---
 
-# `DATETIMETOTICKS` (NoSQL query)
+# `DATETIMETOTICKS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `DATETIMETOTICKS` function converts the specified DateTime to ticks. A single tick represents 100 nanoseconds or 0.0000001 of a second.
 

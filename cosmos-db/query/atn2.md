@@ -4,7 +4,7 @@ description: The `ATN2` function calculates the principal value of the arctangen
 ms.date: 11/10/2025
 ---
 
-# `ATN2` (NoSQL query)
+# `ATN2` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ATN2` function calculates the principal value of the arctangent of `y/x`, expressed in radians.
 

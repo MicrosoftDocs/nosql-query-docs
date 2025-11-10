@@ -4,7 +4,7 @@ description: The `RRF` function returns a fused score by combining two or more s
 ms.date: 11/10/2025
 ---
 
-# `RRF` (NoSQL query)
+# `RRF` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `RRF` function returns a fused score by combining two or more scores provided by other functions.
 

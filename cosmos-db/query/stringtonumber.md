@@ -4,7 +4,7 @@ description: The `STRINGTONUMBER` function converts a string expression to a num
 ms.date: 11/10/2025
 ---
 
-# `STRINGTONUMBER` (NoSQL query)
+# `STRINGTONUMBER` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `STRINGTONUMBER` function converts a string expression to a number.
 
