@@ -3,6 +3,7 @@ title: Indexing Policies
 description: Learn how to use custom indexing policies to optimize Cosmos DB (in Azure and Fabric) performance. Configure indexing modes, include or exclude paths, and improve query performance.
 ms.topic: concept-article
 ms.date: 11/10/2025
+ai-usage: ai-assisted
 ---
 
 # Indexing policies in Cosmos DB (in Azure and Fabric)
@@ -47,14 +48,16 @@ Consider this JSON item again:
 
 ```json
 {
-  "locations": [
-    { "country": "Germany", "city": "Berlin" },
-    { "country": "France", "city": "Paris" }
+  "id": "00000000-0000-0000-0000-000000004368",
+  "name": "Cofaz Jacket",
+  "tags": [
+    { "category": "clothing", "type": "jacket" },
+    { "category": "outdoor", "type": "winter" }
   ],
-  "headquarters": { "country": "Belgium", "employees": 250 },
-  "exports": [
-    { "city": "Moscow" },
-    { "city": "Athens" }
+  "inventory": { "warehouse": "Seattle", "quantity": 50 },
+  "distributors": [
+    { "name": "Contoso" },
+    { "name": "AdventureWorks" }
   ]
 }
 ```
@@ -63,14 +66,16 @@ This indexing policy results in these indexing paths:
 
 | Path | Value |
 | --- | --- |
-| `/locations/0/country` | `"Germany"` |
-| `/locations/0/city` | `"Berlin"` |
-| `/locations/1/country` | `"France"` |
-| `/locations/1/city` | `"Paris"` |
-| `/headquarters/country` | `"Belgium"` |
-| `/headquarters/employees` | `250` |
-| `/exports/0/city` | `"Moscow"` |
-| `/exports/1/city` | `"Athens"` |
+| `/id` | `"00000000-0000-0000-0000-000000004368"` |
+| `/name` | `"Cofaz Jacket"` |
+| `/tags/0/category` | `"clothing"` |
+| `/tags/0/type` | `"jacket"` |
+| `/tags/1/category` | `"outdoor"` |
+| `/tags/1/type` | `"winter"` |
+| `/inventory/warehouse` | `"Seattle"` |
+| `/inventory/quantity` | `50` |
+| `/distributors/0/name` | `"Contoso"` |
+| `/distributors/1/name` | `"AdventureWorks"` |
 
 These paths are defined with the following additions:
 
@@ -80,15 +85,15 @@ These paths are defined with the following additions:
 
 - the `/*` wildcard can be used to match any elements below the node
 
-A baseline indexing policy fo the example item could include these optimizations:
+A baseline indexing policy for the example item could include these optimizations:
 
-- the `headquarters`'s `employees` path is `/headquarters/employees/?`
+- the `inventory`'s `quantity` path is `/inventory/quantity/?`
 
-- the `locations`' `country` path is `/locations/[]/country/?`
+- the `tags`' `category` path is `/tags/[]/category/?`
 
-- the path to anything under `headquarters` is `/headquarters/*`
+- the path to anything under `inventory` is `/inventory/*`
 
-For example, we could include the `/headquarters/employees/?` path. This path would ensure that we index the `employees` property but wouldn't index extra nested JSON within this property.
+For example, we could include the `/inventory/quantity/?` path. This path would ensure that we index the `quantity` property but wouldn't index extra nested JSON within this property.
 
 ## Include/exclude strategy
 
@@ -116,11 +121,11 @@ If your included paths and excluded paths have a conflict, the more precise path
 
 Consider this example:
 
-- **Included Path**: `/food/ingredients/nutrition/*`
+- **Included Path**: `/model/manufacturer/*`
 
-- **Excluded Path**: `/food/ingredients/*`
+- **Excluded Path**: `/model/*`
 
-In this case, the included path takes precedence over the excluded path because it's more precise. Based on these paths, any data in the `/food/ingredients` path or nested within the path would be excluded from the index. The exception would be data within the included path: `/food/ingredients/nutrition/*`, which would be indexed.
+In this case, the included path takes precedence over the excluded path because it's more precise. Based on these paths, any data in the `/model` path or nested within the path would be excluded from the index. The exception would be data within the included path: `/model/manufacturer/*`, which would be indexed.
 
 Here are some rules for included and excluded paths precedence in Cosmos DB:
 
@@ -136,23 +141,23 @@ Here are some rules for included and excluded paths precedence in Cosmos DB:
 
 ```json
 {
-    "indexingMode": "consistent",
-    "automatic": true,
-    "includedPaths": [
-        {
-            "path": "/*"
-        }
-    ],
-    "excludedPaths": [
-        {
-            "path": "/\"_etag\"/?"
-        },
-    ],
-    "fullTextIndexes": [
-        {
-            "path": "/text"
-        }
-    ]
+  "indexingMode": "consistent",
+  "automatic": true,
+  "includedPaths": [
+    {
+      "path": "/*"
+    }
+  ],
+  "excludedPaths": [
+    {
+      "path": "/\"_etag\"/?"
+    },
+  ],
+  "fullTextIndexes": [
+    {
+      "path": "/name"
+    }
+  ]
 }
 ```
 
@@ -249,7 +254,7 @@ Consider these important rules for array tuples:
 
 - Each part of the tuple is separated by a comma.
 
-- The first part, the path prefix, is the path that's common between the tuples. It's the path from root to array. In our example, it's `/events`.
+- The first part, the path prefix, is the path that's common between the tuples. It's the path from root to array. In our example, it's `/tags`.
 
 - After the first part, the tuple should include the array wildcard specifier `[]`. All array tuple paths should have an array wildcard specifier before the tuple specifier `{}`.
 
@@ -265,18 +270,18 @@ Consider these important rules for array tuples:
 
   - `?` is the last segment in a tuple path and should be specified immediately after the tuple specifier segment.
 
-For example, this specification is a valid tuple path: `/events/[]/{name, category}/?`
+For example, this specification is a valid tuple path: `/tags/[]/{category, type}/?`
 
 Here are a few more valid examples of array tuple paths:
 
 ```json
 [
-  { "path": "/events/[]/{name/first, name/last}/?" },
-  { "path": "/events/[]/{name/first, category}/?" },
-  { "path": "/events/[]/{name/first, category/subcategory}/?" },
-  { "path": "/events/[]/{name/[1]/first, category}/?" },
-  { "path": "/events/[]/{[1], [3]}/?" },
-  { "path": "/city/[1]/events/[]/{name, category}/?" }
+  { "path": "/tags/[]/{category, type}/?" },
+  { "path": "/distributors/[]/{name}/?" },
+  { "path": "/tags/[]/{category}/?" },
+  { "path": "/tags/[]/{{category, type}}/?" },
+  { "path": "/tags/[]/{[0], [1]}/?" },
+  { "path": "/inventory/items/[]/tags/[]/{category, type}/?" }
 ]
 ```
 
@@ -284,13 +289,13 @@ Here are a few examples of *invalid* array tuple paths with explanations:
 
 | Invalid path | Explanation |
 | --- | --- |
-| `/events/[]/{name/[]/first, category}/?` | One of the tuples has array wildcard |
-| `/events/[]/{name, category}/*` | The last segment in array tuple path should be `?` and not `*` |
-| `/events/[]/{{name, first},category}/?` | The tuple specifier is nested |
-| `/events/{name, category}/?` | The array wildcard is missing before the tuple specifier |
-| `/events/[]/{/name,/category}/?` | Tuples must start with a leading `/` |
-| `/events/[]/{name/?,category/?}/?` | Tuples must end with an `?` |
-| `/city/[]/events/[]/{name, category}/?` | The path prefix as two array wildcards |
+| `/tags/[]/{category/[]/type}/?` | One of the tuples has array wildcard |
+| `/tags/[]/{category, type}/*` | The last segment in array tuple path should be `?` and not `*` |
+| `/tags/[]/{{category, type}}/?` | The tuple specifier is nested |
+| `/tags/{category, type}/?` | The array wildcard is missing before the tuple specifier |
+| `/tags/[]/{/category,/type}/?` | Tuples must start with a leading `/` |
+| `/tags/[]/{category/?,type/?}/?` | Tuples must end with an `?` |
+| `/inventory/[]/tags/[]/{category, type}/?` | The path prefix as two array wildcards |
 
 ## Composite indexes
 
@@ -319,16 +324,16 @@ The following considerations are used when using composite indexes for queries w
 
 - The composite index also supports an `ORDER BY` clause with the opposite order on all paths.
 
-Consider the following example where a composite index is defined on properties name, age, and _ts:
+Consider the following example where a composite index is defined on properties name, quantity, and _ts:
 
 | Composite Index | Sample `ORDER BY` Query | Supported by Composite Index? |
 | ----------------------- | -------------------------------- | -------------- |
-| `(name ASC, age ASC)` | `SELECT * FROM c ORDER BY c.name ASC, c.age asc` | `Yes` |
-| `(name ASC, age ASC)` | `SELECT * FROM c ORDER BY c.age ASC, c.name asc` | `No` |
-| `(name ASC, age ASC)` | `SELECT * FROM c ORDER BY c.name DESC, c.age DESC` | `Yes` |
-| `(name ASC, age ASC)` | `SELECT * FROM c ORDER BY c.name ASC, c.age DESC` | `No` |
-| `(name ASC, age ASC, timestamp ASC)` | `SELECT * FROM c ORDER BY c.name ASC, c.age ASC, timestamp ASC` | `Yes` |
-| `(name ASC, age ASC, timestamp ASC)` | `SELECT * FROM c ORDER BY c.name ASC, c.age ASC` | `No` |
+| `(name ASC, quantity ASC)` | `SELECT * FROM c ORDER BY c.name ASC, c.inventory.quantity asc` | `Yes` |
+| `(name ASC, quantity ASC)` | `SELECT * FROM c ORDER BY c.inventory.quantity ASC, c.name asc` | `No` |
+| `(name ASC, quantity ASC)` | `SELECT * FROM c ORDER BY c.name DESC, c.inventory.quantity DESC` | `Yes` |
+| `(name ASC, quantity ASC)` | `SELECT * FROM c ORDER BY c.name ASC, c.inventory.quantity DESC` | `No` |
+| `(name ASC, quantity ASC, timestamp ASC)` | `SELECT * FROM c ORDER BY c.name ASC, c.inventory.quantity ASC, timestamp ASC` | `Yes` |
+| `(name ASC, quantity ASC, timestamp ASC)` | `SELECT * FROM c ORDER BY c.name ASC, c.inventory.quantity ASC` | `No` |
 
 You should customize your indexing policy so you can serve all necessary `ORDER BY` queries.
 
@@ -344,10 +349,10 @@ SELECT
 FROM
   container c
 WHERE
-  c.name = "John" AND c.age > 18
+  c.name = "Cofaz Jacket" AND c.inventory.quantity > 18
 ```
 
-This query is more efficient, taking less time and consuming fewer request units (RUs), if it's able to apply a composite index on `(name ASC, age ASC)`.
+This query is more efficient, taking less time and consuming fewer request units (RUs), if it's able to apply a composite index on `(name ASC, quantity ASC)`.
 
 Queries with multiple range filters can also be optimized with a composite index. However, each individual composite index can only optimize a single range filter. Range filters include `>`, `<`, `<=`, `>=`, and `!=`. The range filter should be defined last in the composite index.
 
@@ -359,12 +364,12 @@ SELECT
 FROM
   container c
 WHERE
-  c.name = "John" AND
-  c.age > 18 AND
+  c.name = "Cofaz Jacket" AND
+  c.inventory.quantity > 18 AND
   c._ts > 1612212188
 ```
 
-This query is more efficient with a composite index on `(name ASC, age ASC)` and `(name ASC, _ts ASC)`. However, the query wouldn't utilize a composite index on `(age ASC, name ASC)` because the properties with equality filters must be defined first in the composite index. Two separate composite indexes are required instead of a single composite index on `(name ASC, age ASC, _ts ASC)` since each composite index can only optimize a single range filter.
+This query is more efficient with a composite index on `(name ASC, quantity ASC)` and `(name ASC, _ts ASC)`. However, the query wouldn't utilize a composite index on `(quantity ASC, name ASC)` because the properties with equality filters must be defined first in the composite index. Two separate composite indexes are required instead of a single composite index on `(name ASC, quantity ASC, _ts ASC)` since each composite index can only optimize a single range filter.
 
 The following considerations are used when creating composite indexes for queries with filters on multiple properties:
 
@@ -378,18 +383,18 @@ The following considerations are used when creating composite indexes for querie
 
 - When creating a composite index to optimize queries with multiple filters, the `ORDER` of the composite index has no effect on the results. This property is optional.
 
-Consider the following examples where a composite index is defined on properties name, age, and timestamp:
+Consider the following examples where a composite index is defined on properties name, quantity, and timestamp:
 
 | Composite Index | Sample Query | Supported by Composite Index? |
 | ----------------------- | -------------------------------- | -------------- |
-| `(name ASC, age ASC)` | `SELECT * FROM c WHERE c.name = "John" AND c.age = 18` | `Yes` |
-| `(name ASC, age ASC)` | `SELECT * FROM c WHERE c.name = "John" AND c.age > 18` | `Yes` |
-| `(name ASC, age ASC)` | `SELECT COUNT(1) FROM c WHERE c.name = "John" AND c.age > 18` | `Yes` |
-| `(name DESC, age ASC)` | `SELECT * FROM c WHERE c.name = "John" AND c.age > 18` | `Yes` |
-| `(name ASC, age ASC)` | `SELECT * FROM c WHERE c.name != "John" AND c.age > 18` | `No` |
-| `(name ASC, age ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "John" AND c.age = 18 AND c.timestamp > 123049923` | `Yes` |
-| `(name ASC, age ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "John" AND c.age < 18 AND c.timestamp = 123049923` | `No` |
-| `(name ASC, age ASC) and (name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "John" AND c.age < 18 AND c.timestamp > 123049923` | `Yes` |
+| `(name ASC, quantity ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" AND c.inventory.quantity = 18` | `Yes` |
+| `(name ASC, quantity ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" AND c.inventory.quantity > 18` | `Yes` |
+| `(name ASC, quantity ASC)` | `SELECT COUNT(1) FROM c WHERE c.name = "Cofaz Jacket" AND c.inventory.quantity > 18` | `Yes` |
+| `(name DESC, quantity ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" AND c.inventory.quantity > 18` | `Yes` |
+| `(name ASC, quantity ASC)` | `SELECT * FROM c WHERE c.name != "Cofaz Jacket" AND c.inventory.quantity > 18` | `No` |
+| `(name ASC, quantity ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" AND c.inventory.quantity = 18 AND c.timestamp > 123049923` | `Yes` |
+| `(name ASC, quantity ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" AND c.inventory.quantity < 18 AND c.timestamp = 123049923` | `No` |
+| `(name ASC, quantity ASC) and (name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" AND c.inventory.quantity < 18 AND c.timestamp > 123049923` | `Yes` |
 
 ### Queries with a filter and ORDER BY
 
@@ -405,7 +410,7 @@ SELECT
 FROM
   container c
 WHERE
-  c.name = "John"
+  c.name = "Cofaz Jacket"
 ORDER BY
   c.timestamp
 ```
@@ -418,7 +423,7 @@ SELECT
 FROM
   container c
 WHERE
-  c.name = "John"
+  c.name = "Cofaz Jacket"
 ORDER BY
   c.name,
   c.timestamp
@@ -434,8 +439,8 @@ SELECT
 FROM
   container c
 WHERE
-  c.name = "John" AND
-  c.age = 18 AND
+  c.name = "Cofaz Jacket" AND
+  c.inventory.quantity = 18 AND
   c.timestamp > 1611947901
 ORDER BY
   c.timestamp
@@ -449,12 +454,12 @@ SELECT
 FROM
   container c
 WHERE
-  c.name = "John" AND
-  c.age = 18 AND
+  c.name = "Cofaz Jacket" AND
+  c.inventory.quantity = 18 AND
   c.timestamp > 1611947901
 ORDER BY
   c.name,
-  c.age,
+  c.inventory.quantity,
   c.timestamp
 ```
 
@@ -468,10 +473,10 @@ SELECT
 FROM
   container c
 WHERE
-  c.firstName = "John" AND
-  CONTAINS(c.lastName, "Smith", true)
+  c.name = "Cofaz Jacket" AND
+  CONTAINS(c.distributors[0].name, "Contoso", true)
 ORDER BY
-  c.lastName
+  c.distributors[0].name
 ```
 
 Query using composite index:
@@ -482,10 +487,10 @@ SELECT
 FROM
   container c
 WHERE
-  c.firstName = "John" AND
-  CONTAINS(c.lastName, "Smith", true)
+  c.name = "Cofaz Jacket" AND
+  CONTAINS(c.distributors[0].name, "Contoso", true)
 ORDER BY
-  c.firstName, c.lastName
+  c.name, c.distributors[0].name
 ```
 
 The following considerations apply when creating composite indexes to optimize a query with a filter and `ORDER BY` clause:
@@ -502,13 +507,13 @@ The following considerations apply when creating composite indexes to optimize a
 
 | Composite Index | Sample `ORDER BY` Query | Supported by Composite Index? |
 | ---------------------------------------- | ------------------------------------------------------------ | --------------------------------- |
-| `(name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "John" ORDER BY c.name ASC, c.timestamp ASC` | `Yes` |
-| `(name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "John" AND c.timestamp > 1589840355 ORDER BY c.name ASC, c.timestamp ASC` | `Yes` |
-| `(timestamp ASC, name ASC)` | `SELECT * FROM c WHERE c.timestamp > 1589840355 AND c.name = "John" ORDER BY c.timestamp ASC, c.name ASC` | `No` |
-| `(name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "John" ORDER BY c.timestamp ASC, c.name ASC` | `No` |
-| `(name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "John" ORDER BY c.timestamp ASC` | `No` |
-| `(age ASC, name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.age = 18 and c.name = "John" ORDER BY c.age ASC, c.name ASC,c.timestamp ASC` | `Yes` |
-| `(age ASC, name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.age = 18 and c.name = "John" ORDER BY c.timestamp ASC` | `No` |
+| `(name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" ORDER BY c.name ASC, c.timestamp ASC` | `Yes` |
+| `(name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" AND c.timestamp > 1589840355 ORDER BY c.name ASC, c.timestamp ASC` | `Yes` |
+| `(timestamp ASC, name ASC)` | `SELECT * FROM c WHERE c.timestamp > 1589840355 AND c.name = "Cofaz Jacket" ORDER BY c.timestamp ASC, c.name ASC` | `No` |
+| `(name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" ORDER BY c.timestamp ASC, c.name ASC` | `No` |
+| `(name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.name = "Cofaz Jacket" ORDER BY c.timestamp ASC` | `No` |
+| `(quantity ASC, name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.inventory.quantity = 18 and c.name = "Cofaz Jacket" ORDER BY c.inventory.quantity ASC, c.name ASC,c.timestamp ASC` | `Yes` |
+| `(quantity ASC, name ASC, timestamp ASC)` | `SELECT * FROM c WHERE c.inventory.quantity = 18 and c.name = "Cofaz Jacket" ORDER BY c.timestamp ASC` | `No` |
 
 ### Queries with a filter and an aggregate
 
@@ -528,11 +533,11 @@ The following considerations apply when creating composite indexes to optimize a
 
 | Composite Index | Sample Query | Supported by Composite Index? |
 | ---------------------------------------- | ------------------------------------------------------------ | --------------------------------- |
-| `(name ASC, timestamp ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name = "John"` | `Yes` |
-| `(timestamp ASC, name ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name = "John"` | `No` |
-| `(name ASC, timestamp ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name > "John"` | `No` |
-| `(name ASC, age ASC, timestamp ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name = "John" AND c.age = 25` | `Yes` |
-| `(age ASC, timestamp ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name = "John" AND c.age > 25` | `No` |
+| `(name ASC, timestamp ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name = "Cofaz Jacket"` | `Yes` |
+| `(timestamp ASC, name ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name = "Cofaz Jacket"` | `No` |
+| `(name ASC, timestamp ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name > "Cofaz Jacket"` | `No` |
+| `(name ASC, quantity ASC, timestamp ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name = "Cofaz Jacket" AND c.inventory.quantity = 25` | `Yes` |
+| `(quantity ASC, timestamp ASC)` | `SELECT AVG(c.timestamp) FROM c WHERE c.name = "Cofaz Jacket" AND c.inventory.quantity > 25` | `No` |
 
 ### Composite indexes with an array wildcard
 
@@ -551,11 +556,11 @@ Here's an example for a composite index that contains an array wildcard:
   "compositeIndexes": [
     [
       {
-        "path": "/familyname",
+        "path": "/name",
         "order": "ascending"
       },
       {
-        "path": "/children/[]/age",
+        "path": "/distributors/[]/name",
         "order": "descending"
       }
     ]
@@ -571,10 +576,10 @@ SELECT VALUE
 FROM
   products p
 JOIN
-  t IN p.tags
+  d IN p.distributors
 WHERE
-  p.category = 'apparel' AND
-  p.order > 20
+  p.name = "Cofaz Jacket" AND
+  d.name > "Contoso"
 ```
 
 ## Modifying the indexing policy
