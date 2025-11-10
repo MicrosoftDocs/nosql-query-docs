@@ -1,7 +1,7 @@
 ---
 title: ASIN
 description: The `ASIN` function calculates the trigonometric arcsine of the specified numeric value. The arcsine is the angle, in radians, whose sine is the specified numeric expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `ASIN` (NoSQL query)

@@ -1,7 +1,7 @@
 ---
 title: GETCURRENTTIMESTAMPSTATIC
 description: The `GETCURRENTTIMESTAMPSTATIC` function returns a static timestamp value (milliseconds since the Unix epoch) for all items in the same partition.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `GETCURRENTTIMESTAMPSTATIC` (NoSQL query)

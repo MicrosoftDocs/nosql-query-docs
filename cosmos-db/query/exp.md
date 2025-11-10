@@ -1,7 +1,7 @@
 ---
 title: EXP
 description: The `EXP` function calculates the exponential value of the specified numeric expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `EXP` (NoSQL query)

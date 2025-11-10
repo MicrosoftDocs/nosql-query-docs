@@ -1,7 +1,7 @@
 ---
 title: DEGREES
 description: The `DEGREES` function calculates the corresponding angle in degrees for an angle specified in radians.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `DEGREES` (NoSQL query)

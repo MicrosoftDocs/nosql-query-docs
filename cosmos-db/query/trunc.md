@@ -1,7 +1,7 @@
 ---
 title: TRUNC
 description: The `TRUNC` function returns a numeric value truncated to the closest integer value.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `TRUNC` (NoSQL query)

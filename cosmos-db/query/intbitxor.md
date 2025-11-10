@@ -1,7 +1,7 @@
 ---
 title: INTBITXOR
 description: The `INTBITXOR` function returns the result of a bitwise exclusive OR operation on two integer values.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `INTBITXOR` (NoSQL query)

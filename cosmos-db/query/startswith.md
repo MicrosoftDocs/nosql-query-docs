@@ -1,7 +1,7 @@
 ---
 title: STARTSWITH
 description: The `STARTSWITH` function returns a boolean value indicating whether the first string expression starts with the second.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `STARTSWITH` (NoSQL query)

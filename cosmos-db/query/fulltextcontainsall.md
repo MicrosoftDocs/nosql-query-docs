@@ -1,7 +1,7 @@
 ---
 title: FULLTEXTCONTAINSALL
 description: The `FULLTEXTCONTAINSALL` function returns a boolean indicating whether all of the provided string expressions are contained in a specified property path.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `FULLTEXTCONTAINSALL` (NoSQL query)

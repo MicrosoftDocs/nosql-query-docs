@@ -1,7 +1,7 @@
 ---
 title: SQUARE
 description: The `SQUARE` function returns the square of the specified numeric value.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `SQUARE` (NoSQL query)

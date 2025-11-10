@@ -1,7 +1,7 @@
 ---
 title: INTDIV
 description: The `INTDIV` function returns the result of dividing the first integer value by the second.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `INTDIV` (NoSQL query)

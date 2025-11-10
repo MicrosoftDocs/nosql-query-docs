@@ -1,7 +1,7 @@
 ---
 title: SQRT
 description: The `SQRT` function returns the square root of the specified numeric value.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `SQRT` (NoSQL query)

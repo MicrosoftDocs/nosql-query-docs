@@ -1,7 +1,7 @@
 ---
 title: GETCURRENTDATETIMESTATIC
 description: The `GETCURRENTDATETIMESTATIC` function returns the same UTC date and time value for all items in the query, as an ISO 8601 string. This is useful for consistent timestamps across query results.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `GETCURRENTDATETIMESTATIC` (NoSQL query)

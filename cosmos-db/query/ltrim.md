@@ -1,7 +1,7 @@
 ---
 title: LTRIM
 description: The `LTRIM` function returns a string expression after it removes leading whitespace or specified characters.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `LTRIM` (NoSQL query)

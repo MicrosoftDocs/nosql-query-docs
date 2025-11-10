@@ -1,7 +1,7 @@
 ---
 title: ARRAY_CONTAINS
 description: The `ARRAY_CONTAINS` function returns a boolean indicating whether the array contains the specified value. You can check for a partial or full match of an object by using a boolean expression within the function.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `ARRAY_CONTAINS` (NoSQL query)

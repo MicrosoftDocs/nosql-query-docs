@@ -1,7 +1,7 @@
 ---
 title: LOG
 description: The `LOG` function returns the natural logarithm of the specified numeric expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `LOG` (NoSQL query)

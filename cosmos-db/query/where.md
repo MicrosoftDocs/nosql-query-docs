@@ -1,7 +1,7 @@
 ---
 title: WHERE
 description: The `WHERE` clause returns a subset of items that satisfy the specified filter condition.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `WHERE` (NoSQL query)

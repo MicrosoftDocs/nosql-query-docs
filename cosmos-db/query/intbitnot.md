@@ -1,7 +1,7 @@
 ---
 title: INTBITNOT
 description: The `INTBITNOT` function returns the result of a bitwise NOT operation on an integer value.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `INTBITNOT` (NoSQL query)

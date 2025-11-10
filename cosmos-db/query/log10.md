@@ -1,7 +1,7 @@
 ---
 title: LOG10
 description: The `LOG10` function returns the base-10 logarithm of the specified numeric expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `LOG10` (NoSQL query)

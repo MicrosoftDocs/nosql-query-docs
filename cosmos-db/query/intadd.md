@@ -1,7 +1,7 @@
 ---
 title: INTADD
 description: The `INTADD` function returns the sum of two integer values.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `INTADD` (NoSQL query)

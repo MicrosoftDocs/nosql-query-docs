@@ -1,7 +1,7 @@
 ---
 title: ARRAY_CONTAINS_ALL
 description: The `ARRAY_CONTAINS_ALL` function returns a boolean indicating whether the array contains all of the specified values.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `ARRAY_CONTAINS_ALL` (NoSQL query)

@@ -1,7 +1,7 @@
 ---
 title: REPLACE
 description: The `REPLACE` function returns a string with all occurrences of a specified string replaced.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `REPLACE` (NoSQL query)

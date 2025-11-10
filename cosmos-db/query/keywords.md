@@ -1,7 +1,7 @@
 ---
 title: Keywords
 description: The NoSQL query language reserves keywords for use in special expressions for queries.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # NoSQL query language keywords

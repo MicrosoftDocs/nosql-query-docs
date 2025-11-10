@@ -1,7 +1,7 @@
 ---
 title: TOSTRING
 description: The `TOSTRING` function returns a string representation of a value.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `TOSTRING` (NoSQL query)

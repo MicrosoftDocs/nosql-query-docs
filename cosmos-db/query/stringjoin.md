@@ -1,7 +1,7 @@
 ---
 title: STRINGJOIN
 description: The `STRINGJOIN` function returns a string, which concatenates the elements of a specified array, using the specified separator between each element.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `STRINGJOIN` (NoSQL query)

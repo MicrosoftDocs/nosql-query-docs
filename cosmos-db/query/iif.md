@@ -1,7 +1,7 @@
 ---
 title: IIF
 description: The `IIF` function returns one of two values, depending on whether the Boolean expression evaluates to true or false.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `IIF` (NoSQL query)

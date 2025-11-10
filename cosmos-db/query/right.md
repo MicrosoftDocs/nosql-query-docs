@@ -1,7 +1,7 @@
 ---
 title: RIGHT
 description: The `RIGHT` function returns the right part of a string up to the specified number of characters.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `RIGHT` (NoSQL query)

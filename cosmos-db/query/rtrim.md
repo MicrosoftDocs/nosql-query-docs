@@ -1,7 +1,7 @@
 ---
 title: RTRIM
 description: The `RTRIM` function returns a string expression after it removes trailing whitespace or specified characters.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `RTRIM` (NoSQL query)

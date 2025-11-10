@@ -1,7 +1,7 @@
 ---
 title: DOCUMENTID
 description: The `DOCUMENTID` function returns the unique document ID for a given item in the container.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `DOCUMENTID` (NoSQL query)

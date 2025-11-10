@@ -1,7 +1,7 @@
 ---
 title: IS_OBJECT
 description: The `IS_OBJECT` function returns a boolean value indicating if the type of the specified expression is a JSON object.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `IS_OBJECT` (NoSQL query)

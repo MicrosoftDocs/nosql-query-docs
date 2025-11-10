@@ -1,7 +1,7 @@
 ---
 title: COUNT
 description: The `COUNT` function returns the count of the values in the expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `COUNT` (NoSQL query)

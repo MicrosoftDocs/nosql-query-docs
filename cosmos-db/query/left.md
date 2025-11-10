@@ -1,7 +1,7 @@
 ---
 title: LEFT
 description: The `LEFT` function returns the left part of a string up to the specified number of characters.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `LEFT` (NoSQL query)

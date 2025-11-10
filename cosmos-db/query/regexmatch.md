@@ -1,7 +1,7 @@
 ---
 title: REGEXMATCH
 description: The `REGEXMATCH` function returns a boolean indicating whether the provided string matches the specified regular expression. Regular expressions are a concise and flexible notation for finding patterns of text.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `REGEXMATCH` (NoSQL query)

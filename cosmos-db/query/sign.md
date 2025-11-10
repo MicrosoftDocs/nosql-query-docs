@@ -1,7 +1,7 @@
 ---
 title: SIGN
 description: The `SIGN` function returns the positive (+1), zero (0), or negative (-1) sign of the specified numeric expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `SIGN` (NoSQL query)

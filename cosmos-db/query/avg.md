@@ -1,7 +1,7 @@
 ---
 title: AVG
 description: The `AVG` function calculates the average of the values in the expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `AVG` (NoSQL query)

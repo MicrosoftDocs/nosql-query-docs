@@ -1,7 +1,7 @@
 ---
 title: ST_WITHIN
 description: The `ST_WITHIN` function returns a boolean expression indicating whether the GeoJSON object specified in the first argument is within the GeoJSON object in the second argument.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `ST_WITHIN` (NoSQL query)

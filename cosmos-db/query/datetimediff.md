@@ -1,7 +1,7 @@
 ---
 title: DATETIMEDIFF
 description: The `DATETIMEDIFF` function returns the difference, as a signed integer, of the specified date and time part between two date and time values.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `DATETIMEDIFF` (NoSQL query)

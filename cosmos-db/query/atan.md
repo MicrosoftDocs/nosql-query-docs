@@ -1,7 +1,7 @@
 ---
 title: ATAN
 description: The `ATAN` function calculates the trigonometric arctangent of the specified numeric value. The arctangent is the angle, in radians, whose tangent is the specified numeric expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `ATAN` (NoSQL query)

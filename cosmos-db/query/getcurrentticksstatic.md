@@ -1,7 +1,7 @@
 ---
 title: GETCURRENTTICKSSTATIC
 description: The `GETCURRENTTICKSSTATIC` function returns a static nanosecond ticks value (100-nanosecond intervals since the Unix epoch) for all items in the same partition.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `GETCURRENTTICKSSTATIC` (NoSQL query)

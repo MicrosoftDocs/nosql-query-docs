@@ -1,7 +1,7 @@
 ---
 title: FLOOR
 description: The `FLOOR` function calculates the largest integer less than or equal to the specified numeric expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `FLOOR` (NoSQL query)

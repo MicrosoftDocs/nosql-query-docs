@@ -1,7 +1,7 @@
 ---
 title: FULLTEXTSCORE
 description: The `FULLTEXTSCORE` function returns a BM25 score value that can only be used in an `ORDER BY RANK` clause to sort results from highest relevancy to lowest relevancy of the specified terms.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `FULLTEXTSCORE` (NoSQL query)

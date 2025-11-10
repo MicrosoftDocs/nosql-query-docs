@@ -1,7 +1,7 @@
 ---
 title: SIN
 description: The `SIN` function returns the trigonometric sine of the specified angle in radians.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `SIN` (NoSQL query)

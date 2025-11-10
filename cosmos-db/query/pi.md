@@ -1,7 +1,7 @@
 ---
 title: PI
 description: The `PI` function returns the constant value of Pi.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `PI` (NoSQL query)

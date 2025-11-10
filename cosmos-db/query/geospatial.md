@@ -1,7 +1,7 @@
 ---
 title: Geospatial data
 description: The NoSQL query language provides support for geometrics shapes, locations, and polygons.
-ms.date: 07/07/2025
+ms.date: 11/10/2025
 ---
 
 # Geospatial data in NoSQL query language

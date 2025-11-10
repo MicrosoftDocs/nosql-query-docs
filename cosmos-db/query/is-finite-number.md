@@ -1,7 +1,7 @@
 ---
 title: IS_FINITE_NUMBER
 description: The `IS_FINITE_NUMBER` function returns a boolean indicating if a number is a finite number (not infinite).
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `IS_FINITE_NUMBER` (NoSQL query)

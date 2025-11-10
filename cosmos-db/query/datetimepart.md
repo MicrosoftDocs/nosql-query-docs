@@ -1,7 +1,7 @@
 ---
 title: DATETIMEPART
 description: The `DATETIMEPART` function returns the value of the specified date and time part for the provided date and time.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `DATETIMEPART` (NoSQL query)

@@ -1,7 +1,7 @@
 ---
 title: ABS
 description: The `ABS` function calculates the absolute (positive) value of the specified numeric expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `ABS` (NoSQL query)

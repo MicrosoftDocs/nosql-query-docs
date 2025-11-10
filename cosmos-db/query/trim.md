@@ -1,7 +1,7 @@
 ---
 title: TRIM
 description: The `TRIM` function returns a string expression after it removes leading and trailing whitespace or custom characters.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `TRIM` (NoSQL query)

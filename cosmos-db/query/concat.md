@@ -1,7 +1,7 @@
 ---
 title: CONCAT
 description: The `CONCAT` function returns a string that is the result of concatenating multiple fields from a document.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `CONCAT` (NoSQL query)

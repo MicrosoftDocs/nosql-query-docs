@@ -1,7 +1,7 @@
 ---
 title: ENDSWITH
 description: The `ENDSWITH` function returns a boolean indicating whether a string ends with the specified suffix. Optionally, the comparison can be case-insensitive.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `ENDSWITH` (NoSQL query)

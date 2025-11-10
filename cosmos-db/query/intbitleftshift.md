@@ -1,7 +1,7 @@
 ---
 title: INTBITLEFTSHIFT
 description: The `INTBITLEFTSHIFT` function returns the result of a bitwise left shift operation on an integer value.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `INTBITLEFTSHIFT` (NoSQL query)

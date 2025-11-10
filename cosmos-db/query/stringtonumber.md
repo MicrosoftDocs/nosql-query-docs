@@ -1,7 +1,7 @@
 ---
 title: STRINGTONUMBER
 description: The `STRINGTONUMBER` function converts a string expression to a number.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `STRINGTONUMBER` (NoSQL query)

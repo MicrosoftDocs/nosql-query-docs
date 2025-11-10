@@ -1,7 +1,7 @@
 ---
 title: TAN
 description: The `TAN` function returns the trigonometric tangent of the specified angle in radians.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `TAN` (NoSQL query)

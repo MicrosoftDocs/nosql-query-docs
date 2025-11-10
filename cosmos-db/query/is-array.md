@@ -1,7 +1,7 @@
 ---
 title: IS_ARRAY
 description: The `IS_ARRAY` function returns a boolean value indicating if the type of the specified expression is an array.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `IS_ARRAY` (NoSQL query)

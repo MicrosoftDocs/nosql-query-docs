@@ -1,7 +1,7 @@
 ---
 title: INTBITOR
 description: The `INTBITOR` function returns the result of a bitwise inclusive OR operation on two integer values.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `INTBITOR` (NoSQL query)

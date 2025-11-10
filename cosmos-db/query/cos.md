@@ -1,7 +1,7 @@
 ---
 title: COS
 description: The `COS` function calculates the trigonometric cosine of the specified angle in radians.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `COS` (NoSQL query)

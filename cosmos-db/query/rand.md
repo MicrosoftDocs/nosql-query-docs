@@ -1,7 +1,7 @@
 ---
 title: RAND
 description: The `RAND` function returns a randomly generated numeric value from zero to one.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `RAND` (NoSQL query)

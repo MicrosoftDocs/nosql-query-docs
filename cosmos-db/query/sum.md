@@ -1,7 +1,7 @@
 ---
 title: SUM
 description: The `SUM` function calculates the sum of the values in the expression.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `SUM` (NoSQL query)

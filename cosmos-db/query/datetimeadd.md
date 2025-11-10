@@ -1,7 +1,7 @@
 ---
 title: DATETIMEADD
 description: The `DATETIMEADD` function returns a date and time string value that is the result of adding a specified number value to the provided date and time string.
-ms.date: 07/02/2025
+ms.date: 11/10/2025
 ---
 
 # `DATETIMEADD` (NoSQL query)
