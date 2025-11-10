@@ -1,10 +1,8 @@
 ---
 title: Indexing
 description: Learn how indexing works in Cosmos DB (in Azure and Fabric). Optimize query performance and reduce costs by using range, spatial, composite, and vector indexes.
-author: seesharprun
-ms.author: sidandrews
 ms.topic: concept-article
-ms.date: 11/09/2025
+ms.date: 11/10/2025
 ai-usage: ai-assisted
 ---
 

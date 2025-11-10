@@ -1,10 +1,8 @@
 ---
 title: Request Units (RUs)
 description: Learn how request units function as a currency and how to estimate request unit requirements in your Cosmos DB (in Azure and Fabric) database.
-author: seesharprun
-ms.author: sidandrews
 ms.topic: concept-article
-ms.date: 11/09/2025
+ms.date: 11/10/2025
 ---
 
 # Request units (RUs) in Cosmos DB (in Azure and Fabric)
