@@ -4,7 +4,7 @@ description: The `ST_DISTANCE` function returns the distance between two GeoJSON
 ms.date: 11/10/2025
 ---
 
-# `ST_DISTANCE` (NoSQL query)
+# `ST_DISTANCE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ST_DISTANCE` function returns the distance between two GeoJSON Point, Polygon, MultiPolygon or LineString expressions.
 

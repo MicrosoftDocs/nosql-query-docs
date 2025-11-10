@@ -4,7 +4,7 @@ description: The `STRINGJOIN` function returns a string, which concatenates the 
 ms.date: 11/10/2025
 ---
 
-# `STRINGJOIN` (NoSQL query)
+# `STRINGJOIN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `STRINGJOIN` function returns a string, which concatenates the elements of a specified array, using the specified separator between each element.
 

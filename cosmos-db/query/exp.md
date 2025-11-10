@@ -4,7 +4,7 @@ description: The `EXP` function calculates the exponential value of the specifie
 ms.date: 11/10/2025
 ---
 
-# `EXP` (NoSQL query)
+# `EXP` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `EXP` function calculates the exponential value of the specified numeric expression.
 

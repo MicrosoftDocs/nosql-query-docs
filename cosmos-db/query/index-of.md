@@ -4,7 +4,7 @@ description: The `INDEX_OF` function returns the index of the first occurrence o
 ms.date: 11/10/2025
 ---
 
-# `INDEX-OF` (NoSQL query)
+# `INDEX-OF` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INDEX_OF` function returns the index of the first occurrence of a string.
 

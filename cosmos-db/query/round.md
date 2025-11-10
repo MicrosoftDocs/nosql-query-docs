@@ -4,7 +4,7 @@ description: The `ROUND` function returns a numeric value rounded to the closest
 ms.date: 11/10/2025
 ---
 
-# `ROUND` (NoSQL query)
+# `ROUND` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ROUND` function returns a numeric value rounded to the closest integer value.
 

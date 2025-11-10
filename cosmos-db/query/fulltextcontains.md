@@ -4,7 +4,7 @@ description: The `FULLTEXTCONTAINS` function returns a boolean indicating whethe
 ms.date: 11/10/2025
 ---
 
-# `FULLTEXTCONTAINS` (NoSQL query)
+# `FULLTEXTCONTAINS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `FULLTEXTCONTAINS` function returns a boolean indicating whether the keyword string expression is contained in a specified property path.
 

@@ -4,7 +4,7 @@ description: The `DEGREES` function calculates the corresponding angle in degree
 ms.date: 11/10/2025
 ---
 
-# `DEGREES` (NoSQL query)
+# `DEGREES` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `DEGREES` function calculates the corresponding angle in degrees for an angle specified in radians.
 

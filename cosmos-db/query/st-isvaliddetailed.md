@@ -4,7 +4,7 @@ description: The `ST_ISVALIDDETAILED` function returns a JSON value containing a
 ms.date: 11/10/2025
 ---
 
-# `ST_ISVALIDDETAILED` (NoSQL query)
+# `ST_ISVALIDDETAILED` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ST_ISVALIDDETAILED` function returns a JSON value containing a Boolean value if the specified GeoJSON Point, Polygon, or LineString expression is valid, and if invalid, the reason.
 

@@ -4,7 +4,7 @@ description: The `WHERE` clause returns a subset of items that satisfy the speci
 ms.date: 11/10/2025
 ---
 
-# `WHERE` (NoSQL query)
+# `WHERE` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `WHERE` clause returns a subset of items that satisfy the specified filter condition.
 

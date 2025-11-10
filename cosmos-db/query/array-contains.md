@@ -4,7 +4,7 @@ description: The `ARRAY_CONTAINS` function returns a boolean indicating whether 
 ms.date: 11/10/2025
 ---
 
-# `ARRAY_CONTAINS` (NoSQL query)
+# `ARRAY_CONTAINS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ARRAY_CONTAINS` function returns a boolean indicating whether the array contains the specified value. You can check for a partial or full match of an object by using a boolean expression within the function.
 

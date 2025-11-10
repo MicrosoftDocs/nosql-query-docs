@@ -4,7 +4,7 @@ description: The `FROM` clause identifies the source of data for a query.
 ms.date: 11/10/2025
 ---
 
-# `FROM` (NoSQL query)
+# `FROM` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `FROM` clause identifies the source of data for a query.
 

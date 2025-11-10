@@ -4,7 +4,7 @@ description: The `GETCURRENTTICKSSTATIC` function returns a static nanosecond ti
 ms.date: 11/10/2025
 ---
 
-# `GETCURRENTTICKSSTATIC` (NoSQL query)
+# `GETCURRENTTICKSSTATIC` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `GETCURRENTTICKSSTATIC` function returns a static nanosecond ticks value (100-nanosecond intervals since the Unix epoch) for all items in the same partition.
 

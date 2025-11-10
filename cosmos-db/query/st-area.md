@@ -4,7 +4,7 @@ description: The `ST_AREA` function returns the total area of a GeoJSON Polygon 
 ms.date: 11/10/2025
 ---
 
-# `ST_AREA` (NoSQL query)
+# `ST_AREA` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ST_AREA` function returns the total area of a GeoJSON Polygon or MultiPolygon expression.
 

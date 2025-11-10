@@ -1,10 +1,10 @@
 ---
 title: Constants
-description: Use literal or scalar value constants in the NoSQL query language to represent a specific data value.
+description: Use literal or scalar value constants in the query language to represent a specific data value.
 ms.date: 11/10/2025
 ---
 
-# Constants in NoSQL query language
+# Constants - Query language in Cosmos DB (in Azure and Fabric)
 
 A constant, also known as a literal or a scalar value, is a symbol that represents a specific data value. The format of a constant depends on the data type of the value it represents.
 

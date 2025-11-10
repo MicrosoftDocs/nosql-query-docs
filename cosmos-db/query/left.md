@@ -4,7 +4,7 @@ description: The `LEFT` function returns the left part of a string up to the spe
 ms.date: 11/10/2025
 ---
 
-# `LEFT` (NoSQL query)
+# `LEFT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `LEFT` function returns the left part of a string up to the specified number of characters.
 

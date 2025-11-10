@@ -4,7 +4,7 @@ description: The `IS_OBJECT` function returns a boolean value indicating if the 
 ms.date: 11/10/2025
 ---
 
-# `IS_OBJECT` (NoSQL query)
+# `IS_OBJECT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `IS_OBJECT` function returns a boolean value indicating if the type of the specified expression is a JSON object.
 

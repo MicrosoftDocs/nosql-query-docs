@@ -4,7 +4,7 @@ description: The `DATETIMEFROMPARTS` function returns a date and time string val
 ms.date: 11/10/2025
 ---
 
-# `DATETIMEFROMPARTS` (NoSQL query)
+# `DATETIMEFROMPARTS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `DATETIMEFROMPARTS` function returns a date and time string value constructed from input numeric values for various date and time parts.
 

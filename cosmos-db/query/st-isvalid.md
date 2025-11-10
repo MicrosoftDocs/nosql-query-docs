@@ -4,7 +4,7 @@ description: The `ST_ISVALID` function returns a boolean value indicating whethe
 ms.date: 11/10/2025
 ---
 
-# `ST_ISVALID` (NoSQL query)
+# `ST_ISVALID` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ST_ISVALID` function returns a boolean value indicating whether the specified GeoJSON Point, Polygon, MultiPolygon, or LineString expression is valid.
 

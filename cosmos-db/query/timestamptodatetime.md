@@ -4,7 +4,7 @@ description: The `TIMESTAMPTODATETIME` function converts the specified timestamp
 ms.date: 11/10/2025
 ---
 
-# `TIMESTAMPTODATETIME` (NoSQL query)
+# `TIMESTAMPTODATETIME` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `TIMESTAMPTODATETIME` function converts the specified timestamp to a date and time value.
 

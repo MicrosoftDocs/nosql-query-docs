@@ -4,7 +4,7 @@ description: The `ST_WITHIN` function returns a boolean expression indicating wh
 ms.date: 11/10/2025
 ---
 
-# `ST_WITHIN` (NoSQL query)
+# `ST_WITHIN` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ST_WITHIN` function returns a boolean expression indicating whether the GeoJSON object specified in the first argument is within the GeoJSON object in the second argument.
 

@@ -4,7 +4,7 @@ description: The `COS` function calculates the trigonometric cosine of the speci
 ms.date: 11/10/2025
 ---
 
-# `COS` (NoSQL query)
+# `COS` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `COS` function calculates the trigonometric cosine of the specified angle in radians.
 

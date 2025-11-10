@@ -4,7 +4,7 @@ description: The `INTBITXOR` function returns the result of a bitwise exclusive 
 ms.date: 11/10/2025
 ---
 
-# `INTBITXOR` (NoSQL query)
+# `INTBITXOR` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTBITXOR` function returns the result of a bitwise exclusive OR operation on two integer values.
 

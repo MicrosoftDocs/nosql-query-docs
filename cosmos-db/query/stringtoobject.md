@@ -4,7 +4,7 @@ description: The `STRINGTOOBJECT` function converts a string expression to an ob
 ms.date: 11/10/2025
 ---
 
-# `STRINGTOOBJECT` (NoSQL query)
+# `STRINGTOOBJECT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `STRINGTOOBJECT` function converts a string expression to an object.
 

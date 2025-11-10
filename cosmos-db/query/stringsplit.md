@@ -4,7 +4,7 @@ description: The `STRINGSPLIT` function returns an array of substrings obtained 
 ms.date: 11/10/2025
 ---
 
-# `STRINGSPLIT` (NoSQL query)
+# `STRINGSPLIT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `STRINGSPLIT` function returns an array of substrings obtained from separating the source string by the specified delimiter.
 

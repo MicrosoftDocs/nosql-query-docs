@@ -4,7 +4,7 @@ description: The `INTBITNOT` function returns the result of a bitwise NOT operat
 ms.date: 11/10/2025
 ---
 
-# `INTBITNOT` (NoSQL query)
+# `INTBITNOT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTBITNOT` function returns the result of a bitwise NOT operation on an integer value.
 

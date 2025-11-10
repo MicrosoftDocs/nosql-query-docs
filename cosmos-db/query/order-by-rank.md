@@ -4,7 +4,7 @@ description: The `ORDER BY RANK` clause returns the sorted result set of a query
 ms.date: 11/10/2025
 ---
 
-# `ORDER BY RANK` (NoSQL query)
+# `ORDER BY RANK` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `ORDER BY RANK` clause returns the sorted result set of a query based on the rank of scoring functions.
 

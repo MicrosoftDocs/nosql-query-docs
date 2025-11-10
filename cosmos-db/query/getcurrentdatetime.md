@@ -4,7 +4,7 @@ description: The `GETCURRENTDATETIME` function returns the current UTC (Coordina
 ms.date: 11/10/2025
 ---
 
-# `GETCURRENTDATETIME` (NoSQL query)
+# `GETCURRENTDATETIME` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `GETCURRENTDATETIME` function returns the current UTC (Coordinated Universal Time) date and time as an **ISO 8601** string.
 

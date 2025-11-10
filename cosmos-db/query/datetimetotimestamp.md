@@ -4,7 +4,7 @@ description: The `DATETIMETOTIMESTAMP` function converts the specified date and 
 ms.date: 11/10/2025
 ---
 
-# `DATETIMETOTIMESTAMP` (NoSQL query)
+# `DATETIMETOTIMESTAMP` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `DATETIMETOTIMESTAMP` function converts the specified date and time to a numeric timestamp. The timestamp is a signed numeric integer that measures the milliseconds since the Unix epoch.
 

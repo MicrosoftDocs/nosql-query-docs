@@ -4,7 +4,7 @@ description: The `OBJECTTOARRAY` function converts field/value pairs in a JSON o
 ms.date: 11/10/2025
 ---
 
-# `OBJECTTOARRAY` (NoSQL query)
+# `OBJECTTOARRAY` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `OBJECTTOARRAY` function converts field/value pairs in a JSON object to a JSON array.
 

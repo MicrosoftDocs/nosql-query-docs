@@ -1,13 +1,13 @@
 ---
 title: Get started with JSON
-description: Query and access nested JSON properties and use special characters in the NoSQL query language.
+description: Query and access nested JSON properties and use special characters in the query language.
 ms.date: 11/10/2025
 ai-usage: ai-generated
 ---
 
-# Get started with JSON in the NoSQL query language
+# Get started with JSON - Query language in Cosmos DB (in Azure and Fabric)
 
-Working with JavaScript Object Notation (JSON) is at the heart of the NoSQL query language. Items are stored as JSON, and all queries, expressions, and types are designed to work with JSON data. For more information about JSON itself, see the [formal JSON specification](https://www.json.org/).
+Working with JavaScript Object Notation (JSON) is at the heart of the query language. Items are stored as JSON, and all queries, expressions, and types are designed to work with JSON data. For more information about JSON itself, see the [formal JSON specification](https://www.json.org/).
 
 Here are some key things to know about JSON in this context:
 
@@ -71,7 +71,7 @@ And you would get this expected output:
 
 JSON supports arrays, and you can work with them in your queries. To access a specific element, use its position in the array.
 
-Using the same example from the previous section, we can access an item in the array using its index. For example, if we want to access the first item in the array, we would use an index of `0` since it's a **zero-based index** system for arrays in the NoSQL query language:
+Using the same example from the previous section, we can access an item in the array using its index. For example, if we want to access the first item in the array, we would use an index of `0` since it's a **zero-based index** system for arrays in the query language:
 
 ```nosql
 SELECT
@@ -211,7 +211,7 @@ WHERE
 
 ## Iteration
 
-The NoSQL query language supports iteration over JSON arrays using the `IN` keyword in the `FROM` source.
+The query language supports iteration over JSON arrays using the `IN` keyword in the `FROM` source.
 
 Consider this example data set:
 
@@ -690,7 +690,7 @@ FROM
   products AS p
 ```
 
-The NoSQL query language also has a shorthand syntax where the alias can be defined immediately after the target container's reference without the `AS` keyword. This shorthand is functionally equivalent to using the `AS` keyword:
+The query language also has a shorthand syntax where the alias can be defined immediately after the target container's reference without the `AS` keyword. This shorthand is functionally equivalent to using the `AS` keyword:
 
 ```nosql
 SELECT
@@ -894,7 +894,7 @@ WHERE
 
 ## Related content
 
-- [Review the NoSQL query language](overview.md)
+- [Review the query language](overview.md)
 - [Work with subqueries](subquery.md)
 - [Perform self-joins](join.md)
 - [Explore system functions](functions.md)

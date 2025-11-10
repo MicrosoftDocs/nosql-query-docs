@@ -4,7 +4,7 @@ description: The `TICKSTODATETIME` function converts the specified number of tic
 ms.date: 11/10/2025
 ---
 
-# `TICKSTODATETIME` (NoSQL query)
+# `TICKSTODATETIME` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `TICKSTODATETIME` function converts the specified number of ticks to a date and time value.
 

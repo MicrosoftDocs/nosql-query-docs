@@ -4,7 +4,7 @@ description: The `INTBITRIGHTSHIFT` function returns the result of a bitwise rig
 ms.date: 11/10/2025
 ---
 
-# `INTBITRIGHTSHIFT` (NoSQL query)
+# `INTBITRIGHTSHIFT` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTBITRIGHTSHIFT` function returns the result of a bitwise right shift operation on an integer value.
 

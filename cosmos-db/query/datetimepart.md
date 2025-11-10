@@ -4,7 +4,7 @@ description: The `DATETIMEPART` function returns the value of the specified date
 ms.date: 11/10/2025
 ---
 
-# `DATETIMEPART` (NoSQL query)
+# `DATETIMEPART` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `DATETIMEPART` function returns the value of the specified date and time part for the provided date and time.
 

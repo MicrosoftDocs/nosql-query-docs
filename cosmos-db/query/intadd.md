@@ -4,7 +4,7 @@ description: The `INTADD` function returns the sum of two integer values.
 ms.date: 11/10/2025
 ---
 
-# `INTADD` (NoSQL query)
+# `INTADD` - Query language in Cosmos DB (in Azure and Fabric)
 
 The `INTADD` function returns the sum of two integer values.
 
