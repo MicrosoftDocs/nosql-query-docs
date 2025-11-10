@@ -56,3 +56,31 @@ conceptualContent:
             - text: Functions
               itemType: concept
               url: query/functions.md
+        - title: Query Advisor
+          links:
+            - text: Overview of Query Advisor
+              itemType: overview
+              url: query/advisor.md
+            - text: QA1002 - CONTAINS function performance effect
+              itemType: reference
+              url: query/advisor/qa1002.md
+            - text: QA1003 - Case Insensitivity
+              itemType: reference
+              url: query/advisor/qa1003.md
+        - title: Functions reference
+          links:
+            - text: String functions
+              itemType: reference
+              url: query/functions/string.md
+            - text: Mathematical functions
+              itemType: reference
+              url: query/functions/mathematical.md
+            - text: Date and time functions
+              itemType: reference
+              url: query/functions/date-time.md
+            - text: Array functions
+              itemType: reference
+              url: query/functions/array.md
+            - text: Spatial functions
+              itemType: reference
+              url: query/functions/spatial.md
