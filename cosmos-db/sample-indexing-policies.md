@@ -7,7 +7,7 @@ ms.date: 11/10/2025
 
 # Sample indexing policies in Cosmos DB (in Azure and Fabric)
 
-Indexing policies in Cosmos DB (in Azure and Fabric) help you optimize query performance and reduce costs by controlling which properties are indexed. Indexing in Cosmos DB is designed to deliver fast and flexible query performance, no matter how your data evolves. Each sample demonstrates a different way to control which properties are indexed, how, and why, so you can tailor indexing to your specific workload.
+Cosmos DB (in Azure and Fabric) is a schema-agnostic database that allows you to iterate on your application without having to deal with schema or index management. Indexing policies in Cosmos DB help you optimize query performance and reduce costs by controlling which properties are indexed. Indexing in Cosmos DB is designed to deliver fast and flexible query performance, no matter how your data evolves. Each sample demonstrates a different way to control which properties are indexed, how, and why, so you can tailor indexing to your specific workload.
 
 ## Index all properties (default)
 
@@ -16,8 +16,16 @@ This policy indexes every property in every item, which is the default behavior.
 ```json
 {
   "indexingMode": "consistent",
-  "includedPaths": [ { "path": "/*" } ],
-  "excludedPaths": []
+  "includedPaths": [ 
+    { 
+      "path": "/*" 
+    } 
+  ],
+  "excludedPaths": [
+    {
+      path: '/_etag/?'
+    }
+  ]
 }
 ```
 
@@ -28,8 +36,19 @@ This policy indexes all properties except for a specific property, reducing stor
 ```json
 {
   "indexingMode": "consistent",
-  "includedPaths": [ { "path": "/*" } ],
-  "excludedPaths": [ { "path": "/nonIndexedProperty/?" } ]
+  "includedPaths": [ 
+    { 
+      "path": "/*" 
+    } 
+  ],
+  "excludedPaths": [ 
+    {
+      path: '/_etag/?'
+    },
+    { 
+      "path": "/nonIndexedProperty/?" 
+    } 
+  ]
 }
 ```
 
@@ -41,35 +60,50 @@ This policy only performs indexing of the properties you specify, which can impr
 {
   "indexingMode": "consistent",
   "includedPaths": [
-    { "path": "/name/?" },
-    { "path": "/address/city/?" }
+    { 
+      "path": "/name/?" 
+    },
+    { 
+      "path": "/address/city/?" 
+    }
   ],
-  "excludedPaths": [ { "path": "/*" } ]
+  "excludedPaths": [ 
+    {
+      path: '/_etag/?'
+    },
+    { 
+      "path": "/*" 
+    } 
+  ]
 }
 ```
 
-## Use range and spatial indexes
+## Use spatial indexes
 
-This policy demonstrates how to use different index types for different properties, such as range indexes for numbers and spatial indexes for geospatial data.
+This policy demonstrates how to use a spatial index for geospatial data.
 
 ```json
 {
   "indexingMode": "consistent",
   "includedPaths": [
+    { 
+      "path": "/*" 
+    },
     {
       "path": "/location/?",
       "indexes": [
-        { "kind": "Spatial", "dataType": "Point" }
-      ]
-    },
-    {
-      "path": "/age/?",
-      "indexes": [
-        { "kind": "Range", "dataType": "Number", "precision": -1 }
+        { 
+          "kind": "Spatial", 
+          "dataType": "Point" 
+        }
       ]
     }
   ],
-  "excludedPaths": [ { "path": "/*" } ]
+  "excludedPaths": [ 
+    {
+      path: '/_etag/?'
+    }
+  ]
 }
 ```
 
@@ -80,12 +114,26 @@ This policy adds a composite index to optimize queries that filter or sort on mu
 ```json
 {
   "indexingMode": "consistent",
-  "includedPaths": [ { "path": "/*" } ],
-  "excludedPaths": [],
+  "includedPaths": [ 
+    { 
+      "path": "/*" 
+    } 
+  ],
+  "excludedPaths": [ 
+    {
+      path: '/_etag/?'
+    }
+  ]
   "compositeIndexes": [
     [
-      { "path": "/category/?", "order": "ascending" },
-      { "path": "/timestamp/?", "order": "descending" }
+      { 
+        "path": "/category/?", 
+        "order": "ascending" 
+      },
+      { 
+        "path": "/timestamp/?", 
+        "order": "descending" 
+      }
     ]
   ]
 }
@@ -93,7 +141,7 @@ This policy adds a composite index to optimize queries that filter or sort on mu
 
 ## Disable indexing
 
-This policy disables indexing for the container, which is useful for write-heavy workloads where you don’t need to query the data.
+This policy disables indexing for the container, which is useful for write-heavy workloads where you don’t need to query the data and only use point-read operations to get fetch data.
 
 ```json
 {
@@ -101,19 +149,18 @@ This policy disables indexing for the container, which is useful for write-heavy
 }
 ```
 
-
 ## Vector indexing policy
 
-This policy enables vector indexing on the `/vector` property, allowing efficient similarity searches using cosine distance on three-dimensional `float32` vectors.
+This policy enables vector indexing on a property you named, `/vectors` you're using to store embeddings for that item, `/vectors`. This indexing allows for efficient similarity searches using cosine distance with 512 dimensions with `float32` vectors.
 
 ```json
 {
   "vectorEmbeddings": [
     {
-      "path": "/vector",
+      "path": "/vectors",
       "dataType": "float32",
       "distanceFunction": "cosine",
-      "dimensions": 3
+      "dimensions": 512
     },
   ]
 }
@@ -121,7 +168,7 @@ This policy enables vector indexing on the `/vector` property, allowing efficien
 
 ## Full text indexing policy
 
-This policy configures the `/text` property for full text search using English language analysis, allowing efficient text search queries.
+This policy configures a property you named, `/text` property for full text search using English language analysis, allowing efficient text search queries.
 
 ```json
 {
@@ -199,7 +246,7 @@ This policy combines full text and vector indexing to enable hybrid search capab
       "path": "/\"_etag\"/?"
     },
     {
-      "path": "/vector/*"
+      "path": "/vectors/*"
     }
   ],
   "fullTextIndexes": [
@@ -209,13 +256,15 @@ This policy combines full text and vector indexing to enable hybrid search capab
   ],
   "vectorIndexes": [
     {
-      "path": "/vector",
+      "path": "/vectors",
       "type": "DiskANN"
     }
   ]
 }
 ```
 
+
 ## Related content
 
+- [Indexing in Cosmos DB (in Azure and Fabric)](indexing.md)
 - [Indexing policies in Cosmos DB (in Azure and Fabric)](indexing-policies.md)

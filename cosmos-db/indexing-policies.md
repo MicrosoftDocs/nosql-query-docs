@@ -608,4 +608,5 @@ For scenarios where no property path needs to be indexed, but TTL is required, y
 
 ## Related content
 
+- [Indexing in Cosmos DB (in Azure and Fabric)](indexing.md)
 - [Sample indexing policies in Cosmos DB (in Azure and Fabric)](sample-indexing-policies.md)
