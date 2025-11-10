@@ -1,10 +1,8 @@
 ---
 title: Time-To-Live (TTL)
 description: Use time-to-live (TTL) in Cosmos DB (in Azure and Fabric) to automatically delete items after a specified period. Reduce costs and manage data lifecycle efficiently.
-author: seesharprun
-ms.author: sidandrews
 ms.topic: concept-article
-ms.date: 11/09/2025
+ms.date: 11/10/2025
 ---
 
 # Time-to-live (TTL) in Cosmos DB (in Azure and Fabric)
