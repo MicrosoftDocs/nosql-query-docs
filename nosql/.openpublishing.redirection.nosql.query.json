@@ -4,7 +4,7 @@
       "source_path_from_root": "/nosql/query/index.yml",
       "redirect_url": "/cosmos-db/query",
       "redirect_document_id": true
-    }
+    },
     {
       "source_path_from_root": "/nosql/query/abs.md",
       "redirect_url": "/cosmos-db/query/abs",
