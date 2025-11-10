@@ -1,16 +1,16 @@
 ---
 title: Indexing
 description: Learn how indexing works in Cosmos DB (in Azure and Fabric). Optimize query performance and reduce costs by using range, spatial, composite, and vector indexes.
-author: seesharprun
-ms.author: sidandrews
 ms.topic: concept-article
-ms.date: 11/09/2025
+ms.date: 11/10/2025
 ai-usage: ai-assisted
 ---
 
 # Indexing in Cosmos DB (in Azure and Fabric)
 
-Cosmos DB (in Azure and Fabric) is a schema-agnostic database that allows you to iterate on your application without having to deal with schema or index management. Indexing within Cosmos DB is designed to deliver fast and flexible query performance, no matter how your data evolves. By default, Cosmos DB automatically indexes every property for all items in your container without having to define any schema or configure secondary indexes.
+Cosmos DB (in Azure and Fabric) is a schema-agnostic database that allows you to iterate on your application without having to deal with schema or index management. This functionality is also referred to as, *schema on read*, meaning that Cosmos DB doesn't enforce a schema on your data when written to the database. Your schema is defined in the classes you create within your application as you deserialize data from the database during read or write operations.
+
+Indexing within Cosmos DB in Microsoft Fabric is designed to deliver fast and flexible query performance, no matter how your data evolves. By default, Cosmos DB automatically indexes every property for all items in your container without having to define any schema or configure secondary indexes.
 
 ## Conceptual tree
 
@@ -575,3 +575,8 @@ Queries with the following aggregate functions must rely exclusively on the inde
 - [`MAX`](/nosql/query/max)
 - [`MIN`](/nosql/query/min)
 - [`SUM`](/nosql/query/sum)
+
+## Related content
+
+- [Indexing policies in Cosmos DB (in Azure and Fabric)](indexing-policies.md)
+- [Sample indexing policies in Cosmos DB (in Azure and Fabric)](sample-indexing-policies.md)
