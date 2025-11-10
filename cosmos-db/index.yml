@@ -58,7 +58,7 @@ conceptualContent:
               itemType: concept
               url: autoscale-throughput.md
         - title: Vector search and Gen AI concepts
-          summary: Explore the vector search and generative AI capabilities of Cosmos DB (in Azure and Fabric) to enhance your applications with advanced search features.
+          summary: Explore the vector search and generative AI capabilities of Cosmos DB (in Azure and Fabric) designed to enhance your applications with advanced search features.
           links:
             - text: Full text indexing
               itemType: concept
