@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # YEAR (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns the value of the year for the provided date and time.
 
 ## Syntax

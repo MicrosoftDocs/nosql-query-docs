@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # SETDIFFERENCE (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns a set containing only the elements from the first input set that aren't in the second input set with no duplicates.
 
 ## Syntax

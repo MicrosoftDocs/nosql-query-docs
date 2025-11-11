@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # SETEQUAL (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns a boolean value indicating whether two sets are equal after removing duplicated elements.
 
 ## Syntax

@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # IS_DATETIME (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns a boolean value indicating if the datetime string is valid.
 
 ## Syntax

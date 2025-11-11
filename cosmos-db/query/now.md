@@ -7,8 +7,6 @@ ms.date: 11/10/2025
 
 # NOW (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns a datetime string representing either the current UTC time or the result of adding a specified numeric offset to it.
 
 ## Syntax

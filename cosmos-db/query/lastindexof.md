@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # LASTINDEXOF (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns the starting position of the last occurrence of the second string expression within the first specified string expression, or -1 if the string isn't found.
 
 ## Syntax

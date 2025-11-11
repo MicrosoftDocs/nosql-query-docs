@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # DATETIMEFORMAT (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Formats a datetime value based on the specified format string.
 
 ## Syntax

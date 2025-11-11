@@ -7,8 +7,6 @@ ms.date: 11/10/2025
 
 # MONTH (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns the value of the month for the provided date and time.
 
 ## Syntax
