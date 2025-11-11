@@ -59,6 +59,5 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`SETINTERSECT`](setintersect.md)
 - [`SETUNION`](setunion.md)

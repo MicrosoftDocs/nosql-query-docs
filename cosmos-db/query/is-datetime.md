@@ -73,6 +73,5 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`IS_STRING`](is-string.md)
 - [`IS_NUMBER`](is-number.md)

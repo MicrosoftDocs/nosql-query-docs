@@ -54,7 +54,6 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`YEAR`](year.md)
 - [`DAY`](day.md)
 - [`DATETIMEPART`](datetimepart.md)

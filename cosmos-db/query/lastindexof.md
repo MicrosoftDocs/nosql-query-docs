@@ -56,6 +56,5 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`INDEX_OF`](index-of.md)
 - [`CONTAINS`](contains.md)

@@ -55,5 +55,4 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`DATETIMEPART`](datetimepart.md)

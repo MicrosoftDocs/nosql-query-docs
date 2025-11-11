@@ -70,5 +70,4 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`AGO`](ago.md)

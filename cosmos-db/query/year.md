@@ -53,7 +53,6 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`MONTH`](month.md)
 - [`DAY`](day.md)
 - [`DATETIMEPART`](datetimepart.md)
