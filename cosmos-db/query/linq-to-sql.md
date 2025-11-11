@@ -95,9 +95,9 @@ The LINQ provider included with the NoSQL .NET SDK supports the following operat
 - **Math functions**: Supports translation from .NET `Abs`, `Acos`, `Asin`, `Atan`, `Ceiling`, `Cos`, `Exp`, `Floor`, `Log`, `Log10`, `Pow`, `Round`, `Sign`, `Sin`, `Sqrt`, `Tan`, and `Truncate` to the equivalent [built-in mathematical functions](functions.md#mathematical-functions).
 - **String functions**: Supports translation from .NET `Concat`, `Contains`, `Count`, `EndsWith`,`IndexOf`, `Replace`, `Reverse`, `StartsWith`, `SubString`, `ToLower`, `ToUpper`, `TrimEnd`, and `TrimStart` to the equivalent [built-in string functions](functions.md#string-functions).
 - **Array functions**: Supports translation from .NET `Concat`, `Contains`, and `Count` to the equivalent [built-in array functions](functions.md#array-functions).
-- **Geospatial Extension functions**: Supports translation from stub methods `Distance`, `IsValid`, `IsValidDetailed`, and `Within` to the equivalent [built-in geospatial functions](geospatial-query.md).
+- **Geospatial Extension functions**: Supports translation from stub methods `Distance`, `IsValid`, `IsValidDetailed`, and `Within` to the equivalent [built-in geospatial functions](functions.md#spatial-functions).
 - **User-Defined Function Extension function**: Supports translation from the stub method [CosmosLinq.InvokeUserDefinedFunction](/dotnet/api/microsoft.azure.cosmos.linq.cosmoslinq.invokeuserdefinedfunction?view=azure-dotnet&preserve-view=true) to the corresponding user-defined function.
-- **Miscellaneous**: Supports translation of `Coalesce` and [conditional operators](logical-operators.md). Can translate `Contains` to String CONTAINS, ARRAY_CONTAINS, or IN, depending on context.
+- **Miscellaneous**: Supports translation of `Coalesce` and [conditional operators](operators.md#logical-operators). Can translate `Contains` to String CONTAINS, ARRAY_CONTAINS, or IN, depending on context.
 
 ## Examples
 

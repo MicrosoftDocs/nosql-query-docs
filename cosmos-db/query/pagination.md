@@ -12,7 +12,7 @@ In Cosmos DB (in Azure and Fabric), queries may have multiple pages of results. 
 
 Sometimes query results are split over multiple pages. A separate query execution generates each page's results. When query results can't be returned in one single execution, Cosmos DB automatically splits results into multiple pages.
 
-You can specify the maximum number of items returned by a query by setting the `MaxItemCount``. The `MaxItemCount`` is specified per request and tells the query engine to return that number of items or fewer. You can set `MaxItemCount`` to `-1`` if you don't want to place a limit on the number of results per query execution.
+You can specify the maximum number of items returned by a query by setting the `MaxItemCount`. The `MaxItemCount` is specified per request and tells the query engine to return that number of items or fewer. You can set `MaxItemCount` to `-1` if you don't want to place a limit on the number of results per query execution.
 
 In addition, there are other reasons that the query engine might need to split query results into multiple pages. These reasons include:
 
@@ -47,13 +47,13 @@ Here are some example for using continuation tokens:
 
 If the query returns a continuation token, then there are extra query results.
 
-In Cosmos DB's REST API, you can manage continuation tokens with the `x-ms-continuation`` header. As with querying with the .NET or Java SDK, if the `x-ms-continuation`` response header isn't empty, it means the query has extra results.
+In Cosmos DB's REST API, you can manage continuation tokens with the `x-ms-continuation` header. As with querying with the .NET or Java SDK, if the `x-ms-continuation` response header isn't empty, it means the query has extra results.
 
 As long as you're using the same SDK version, continuation tokens never expire. You can optionally [restrict the size of a continuation token](/dotnet/api/microsoft.azure.documents.client.feedoptions.responsecontinuationtokenlimitinkb). Regardless of the amount of data or number of physical partitions in your container, queries return a single continuation token.
 
-You can't use continuation tokens for queries with [GROUP BY](group-by.md) or [DISTINCT](keywords.md#distinct) because these queries would require storing a significant amount of state. For queries with `DISTINCT``, you can use continuation tokens if you add `ORDER BY`` to the query.
+You can't use continuation tokens for queries with [`GROUP BY`](group-by.md) or [`DISTINCT`](distinct.md) because these queries would require storing a significant amount of state. For queries with `DISTINCT`, you can use continuation tokens if you add `ORDER BY` to the query.
 
-Here's an example of a query with `DISTINCT`` that could use a continuation token:
+Here's an example of a query with `DISTINCT` that could use a continuation token:
 
 ```nosql
 SELECT DISTINCT VALUE

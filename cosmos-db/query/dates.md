@@ -85,4 +85,4 @@ For more information about the query language and the LINQ provider, see [LINQ t
 
 Queries are common with `DateTime` values. To execute these queries efficiently, you must have an index defined on any properties in the query's filter.
 
-For more information about how to configure indexing policies, see [indexing policies](../../index-policy.md).
+For more information about how to configure indexing policies, see [indexing policies](../indexing-policies.md).

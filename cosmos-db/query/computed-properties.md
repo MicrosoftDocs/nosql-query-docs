@@ -231,17 +231,11 @@ You can use the Data Explorer to create a computed property for a container.
     ]
     ```
 
-    :::image type="content" source="media/computed-properties/data-explorer-editor.png" alt-text="Screenshot of the computed properties JSON editor in the Data Explorer interface.":::
-
 1. **Save** the computed property.
 
 ## Use computed properties in queries
 
 Computed properties can be referenced in queries the same way that persisted properties are referenced. Values for computed properties that aren't indexed are evaluated during runtime by using the computed property definition. If a computed property is indexed, the index is used the same way that it's used for persisted properties, and the computed property is evaluated on an as-needed basis. We recommend that you [add indexes on your computed properties](#index-computed-properties) for the best cost and performance.
-
-The following examples use the quickstart products dataset that's available in [Data Explorer](../../data-explorer.md) in the Azure portal. To get started, select **Launch the quick start** and load the dataset in a new container.
-
-:::image type="content" source="./media/computed-properties/data-explorer-home.png" alt-text="Screenshot illustrating how to load a sample data set into a database and container." border="false":::
 
 Here's an example of an item:
 
@@ -341,7 +335,7 @@ GROUP BY
 ```
 
 > [!TIP]
-> Although you could also achieve this query without using computed properties, using the computed properties greatly simplifies writing the query and allows for increased performance because `cp_primaryCategory` can be indexed. Both [SUBSTRING()](./substring.md) and [INDEX_OF()](./index-of.md) require a [full scan](../../index-overview.md#index-usage) of all items in the container, but if you index the computed property, then the entire query can be served from the index instead. The ability to serve the query from the index instead of relying on a full scan increases performance and lowers query request unit (RU) costs.
+> Although you could also achieve this query without using computed properties, using the computed properties greatly simplifies writing the query and allows for increased performance because `cp_primaryCategory` can be indexed. Both [SUBSTRING()](./substring.md) and [INDEX_OF()](./index-of.md) require a [full scan](../indexing.md#full-index-scan) of all items in the container, but if you index the computed property, then the entire query can be served from the index instead. The ability to serve the query from the index instead of relying on a full scan increases performance and lowers query request unit (RU) costs.
 
 ### ORDER BY clause
 
@@ -369,7 +363,7 @@ ORDER BY
 
 ## Index computed properties
 
-Computed properties aren't indexed by default and aren't covered by wildcard paths in the [indexing policy](../../index-policy.md). You can add single or composite indexes on computed properties in the indexing policy the same way you would add indexes on persisted properties. We recommend that you add relevant indexes to all computed properties. We recommend these indexes because they're beneficial in increasing performance and reducing request units (RUs). When computed properties are indexed, actual values are evaluated during item write operations to generate and persist index terms.
+Computed properties aren't indexed by default and aren't covered by wildcard paths in the [indexing policy](../indexing-policies.md). You can add single or composite indexes on computed properties in the indexing policy the same way you would add indexes on persisted properties. We recommend that you add relevant indexes to all computed properties. We recommend these indexes because they're beneficial in increasing performance and reducing request units (RUs). When computed properties are indexed, actual values are evaluated during item write operations to generate and persist index terms.
 
 There are a few considerations for indexing computed properties, including:
 
