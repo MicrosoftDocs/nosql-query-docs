@@ -59,6 +59,5 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`CONTAINS_ANY_CI`](contains-any-ci.md)
 - [`CONTAINS`](contains.md)

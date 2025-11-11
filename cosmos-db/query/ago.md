@@ -65,5 +65,4 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`NOW`](now.md)

@@ -63,6 +63,5 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`ARRAY_MIN`](array-min.md)
 - [`ARRAY_AVG`](array-avg.md)

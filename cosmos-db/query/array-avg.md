@@ -56,6 +56,5 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`ARRAY_SUM`](array-sum.md)
 - [`ARRAY_MEDIAN`](array-median.md)

@@ -54,6 +54,5 @@ SELECT VALUE {
 
 ## Related content
 
-- [System functions](system-functions.yml)
 - [`ARRAY_AVG`](array-avg.md)
 - [`ARRAY_MAX`](array-max.md)
