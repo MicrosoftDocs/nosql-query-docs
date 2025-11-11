@@ -62,7 +62,3 @@ SELECT VALUE {
   - **Millisecond**: millisecond, ms
   - **Microsecond**: microsecond, mcs
   - **Nanosecond**: nanosecond, ns
-
-## Related content
-
-- [`NOW`](now.md)
