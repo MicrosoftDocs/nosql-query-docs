@@ -6,6 +6,7 @@ items:
     displayName: introduction, welcome, start, getting started
     href: overview.md
   - name: Get started
+    expanded: true
     items:
       - name: Work with JSON
         displayName: get started, quickstart, first query, JSON, JSON documents, JSON arrays, JSON objects
@@ -16,18 +17,6 @@ items:
       - name: Perform self-joins
         displayName: self-joins, join
         href: join.md
-  - name: Constants
-    displayName: literals, values
-    href: constants.md
-  - name: Scalar expressions
-    displayName: scalar values
-    href: scalar.md
-  - name: Subqueries
-    displayName: clause, subquery
-    href: subquery.md
-  - name: Geospatial data
-    displayName: spatial, polygon, line, geojson, geometry, geography, location, geo
-    href: geospatial.md
   - name: Clauses
     displayName: clauses, expressions
     expanded: true
@@ -40,6 +29,47 @@ items:
     displayName: commands, operators
     expanded: true
     href: functions/toc.yml
+  - name: Syntax
+    displayName: concepts, parts, elements, features
+    expanded: false
+    items:
+      - name: Constants
+        displayName: literals, values
+        href: constants.md
+      - name: Keywords
+        displayName: reserved words
+        href: keywords.md
+      - name: Scalar expressions
+        displayName: scalar values
+        href: scalar.md
+      - name: Subqueries
+        displayName: clause, subquery
+        href: subquery.md
+      - name: Geospatial data
+        displayName: spatial, polygon, line, geojson, geometry, geography, location, geo
+        href: geospatial.md
+      - name: Dates and times
+        displayName: datetime, timestamp, timezone, datepart, timepart
+        href: dates.md
+      - name: Operators
+        displayName: arithmetic, logical, comparison, bitwise, ternary, coalesce
+        href: operators.md
+  - name: Concepts
+    displayName: syntax, parts, elements, features
+    expanded: false
+    items:
+      - name: Computed properties
+        displayName: property, field, calculated, preprocessed
+        href: computed-properties.md
+      - name: LINQ to SQL
+        displayName: LINQ, Language Integrated Query, .NET, C#
+        href: linq-to-sql.md
+      - name: Pagination
+        displayName: paginate, continuation token, next page, page size
+        href: pagination.md
+      - name: Parameterized queries
+        displayName: parameters, parameter, injection, cross site scripting, cross-site, css
+        href: parameterized-queries.md
   - name: Query Advisor
     displayName: improve query performance, optimize queries
     expanded: false
