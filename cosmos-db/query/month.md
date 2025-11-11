@@ -50,7 +50,7 @@ SELECT VALUE {
 ## Remarks
 
 - This function behaves the same as the DateTimePart function when the month is specified.
-- This function benefits from the use of a [range index](../../index-policy.md#includeexclude-strategy).
+- This function benefits from the use of a [range index](../indexing-policies.md#includeexclude-strategy).
 
 ## Related content
 
