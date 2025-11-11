@@ -1,12 +1,12 @@
 ---
 title: Keywords
-description: The query language reserves keywords for use in special expressions for queries.
+description: Learn about reserved keywords in the query language in Cosmos DB (in Azure and Fabric) including BETWEEN, DISTINCT, LIKE, IN, and TOP. Use these keywords to build powerful queries.
 ms.date: 11/10/2025
 ---
 
 # Keywords - Query language in Cosmos DB (in Azure and Fabric)
 
-The query language's query language includes a set of reserved keywords that are used in queries for extended functionality.
+The query language in Cosmos DB (in Azure and Fabric) includes reserved keywords that provide extended functionality for building queries. These keywords enable operations like filtering with BETWEEN and LIKE, eliminating duplicates with DISTINCT, and limiting results with TOP.
 
 ## Keywords
 

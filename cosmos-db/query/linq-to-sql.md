@@ -1,12 +1,12 @@
 ---
 title: LINQ Translation
-description: Learn the LINQ operators supported and how the LINQ queries are mapped to NoSQL queries in Cosmos DB.
+description: Learn which LINQ operators are supported in Cosmos DB (in Azure and Fabric) and how LINQ queries translate to NoSQL queries. Includes code examples and best practices for .NET developers.
 ms.date: 11/10/2025
 ---
 
 # LINQ translation - Query language in Cosmos DB (in Azure and Fabric)
 
-The Cosmos DB (in Azure and Fabric) query provider performs a best effort mapping from a LINQ query into an Cosmos DB query. If you want to get the NoSQL query that is translated from LINQ, use the `ToString()` method on the generated `IQueryable` object. The following description assumes a basic familiarity with [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries). In addition to LINQ, Cosmos DB also supports [Entity Framework Core](/ef/core/providers/cosmos/?tabs=dotnet-core-cli), which works with API for NoSQL.
+The Cosmos DB (in Azure and Fabric) query provider translates language-integrated queries (LINQ) into NoSQL queries for efficient data retrieval. This article explains which LINQ operators are supported and how LINQ queries map to Cosmos DB syntax, helping .NET developers optimize their database queries. To view the translated NoSQL query from your LINQ code, use the `ToString()` method on the generated `IQueryable` object. The following description assumes a basic familiarity with [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries). In addition to LINQ, Cosmos DB also supports [Entity Framework Core](/ef/core/providers/cosmos/?tabs=dotnet-core-cli), which works with API for NoSQL.
 
 > [!NOTE]
 > We recommend using the latest [.NET SDK (`Microsoft.Azure.Cosmos`) version](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/)
@@ -85,19 +85,19 @@ while (setIterator.HasMoreResults)
 
 The LINQ provider included with the NoSQL .NET SDK supports the following operators:
 
-- **Select**: Projections translate to [SELECT](select.md), including object construction.
-- **Where**: Filters translate to [WHERE](where.md), and support translation between `&&`, `||`, and `!` to the NoSQL operators
-- **SelectMany**: Allows unwinding of arrays to the [JOIN](join.md) clause. Use to chain or nest expressions to filter on array elements.
-- **OrderBy** and **OrderByDescending**: Translate to [ORDER BY](order-by.md) with ASC or DESC.
+- **Select**: Projections translate to [`SELECT`](select.md), including object construction.
+- **Where**: Filters translate to [`WHERE`](where.md), and support translation between `&&`, `||`, and `!` to the NoSQL operators
+- **SelectMany**: Allows unwinding of arrays to the [`JOIN`](join.md) clause. Use to chain or nest expressions to filter on array elements.
+- **OrderBy** and **OrderByDescending**: Translate to [`ORDER BY`](order-by.md) with `ASC` or `DESC`.
 - **Count**, **Sum**, **Min**, **Max**, and **Average** operators for aggregation, and their async equivalents **CountAsync**, **SumAsync**, **MinAsync**, **MaxAsync**, and **AverageAsync**.
 - **CompareTo**: Translates to range comparisons. This operator is commonly used for strings, since they're not comparable in .NET.
-- **Skip** and **Take**: Translates to [OFFSET and LIMIT](offset-limit.md) for limiting results from a query and doing pagination.
+- **Skip** and **Take**: Translates to [`OFFSET` and `LIMIT`](offset-limit.md) for limiting results from a query and doing pagination.
 - **Math functions**: Supports translation from .NET `Abs`, `Acos`, `Asin`, `Atan`, `Ceiling`, `Cos`, `Exp`, `Floor`, `Log`, `Log10`, `Pow`, `Round`, `Sign`, `Sin`, `Sqrt`, `Tan`, and `Truncate` to the equivalent [built-in mathematical functions](functions.md#mathematical-functions).
 - **String functions**: Supports translation from .NET `Concat`, `Contains`, `Count`, `EndsWith`,`IndexOf`, `Replace`, `Reverse`, `StartsWith`, `SubString`, `ToLower`, `ToUpper`, `TrimEnd`, and `TrimStart` to the equivalent [built-in string functions](functions.md#string-functions).
 - **Array functions**: Supports translation from .NET `Concat`, `Contains`, and `Count` to the equivalent [built-in array functions](functions.md#array-functions).
 - **Geospatial Extension functions**: Supports translation from stub methods `Distance`, `IsValid`, `IsValidDetailed`, and `Within` to the equivalent [built-in geospatial functions](functions.md#spatial-functions).
-- **User-Defined Function Extension function**: Supports translation from the stub method [CosmosLinq.InvokeUserDefinedFunction](/dotnet/api/microsoft.azure.cosmos.linq.cosmoslinq.invokeuserdefinedfunction?view=azure-dotnet&preserve-view=true) to the corresponding user-defined function.
-- **Miscellaneous**: Supports translation of `Coalesce` and [conditional operators](operators.md#logical-operators). Can translate `Contains` to String CONTAINS, ARRAY_CONTAINS, or IN, depending on context.
+- **User-Defined Function Extension function**: Supports translation from the stub method [`CosmosLinq.InvokeUserDefinedFunction`](/dotnet/api/microsoft.azure.cosmos.linq.cosmoslinq.invokeuserdefinedfunction?view=azure-dotnet&preserve-view=true) to the corresponding user-defined function.
+- **Miscellaneous**: Supports translation of `Coalesce` and [conditional operators](operators.md#logical-operators). Can translate `Contains` to String `CONTAINS`, `ARRAY_CONTAINS`, or `IN`, depending on context.
 
 ## Examples
 

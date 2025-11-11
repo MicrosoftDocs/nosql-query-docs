@@ -1,6 +1,6 @@
 ---
 title: Operators
-description: 
+description: Learn about operators in the query language for Cosmos DB (in Azure and Fabric) including bitwise, equality, comparison, logical, ternary, and coalesce operators for complex queries.
 ms.date: 11/10/2025
 ---
 
@@ -10,7 +10,7 @@ Cosmos DB (in Azure and Fabric) supports a comprehensive set of operators that e
 
 ## Bitwise operators
 
-Bitwise operators are useful for performing low-level operations on integer values when constructing JSON result sets. These operators work similarly to those in higher-level programming languages like C# and JavaScript. For examples of C# bitwise operators, see [Bitwise and shift operators](/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators).
+Bitwise operators are useful for performing low-level operations on integer values when constructing JSON result sets. These operators work similarly to similar operators in higher-level programming languages like C# and JavaScript. For examples of C# bitwise operators, see [Bitwise and shift operators](/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators).
 
 The following table describes the bitwise operations supported in the API for NoSQL:
 
@@ -53,7 +53,7 @@ This query returns the following results:
 ```
 
 > [!IMPORTANT]
-> The bitwise operators in Cosmos DB follow the same behavior as bitwise operators in JavaScript. JavaScript stores numbers as 64 bits floating point numbers, but all bitwise operations are performed on 32 bits binary numbers. Before a bitwise operation is performed, JavaScript converts numbers to 32 bits signed integers. After the bitwise operation is performed, the result is converted back to 64 bits JavaScript numbers. For more information about the bitwise operators in JavaScript, see [JavaScript binary bitwise operators at MDN Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#binary_bitwise_operators).
+> The bitwise operators in Cosmos DB follow the same behavior as bitwise operators in JavaScript. JavaScript stores numbers as 64 bits floating point numbers, but all bitwise operations are performed on 32-bits binary numbers. Before a bitwise operation is performed, JavaScript converts numbers to 32 bits signed integers. After the bitwise operation is performed, the result is converted back to 64-bits JavaScript numbers. For more information about the bitwise operators in JavaScript, see [JavaScript binary bitwise operators at Mozilla Developer Network (MDN) Web Docs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#binary_bitwise_operators).
 
 ## Equality and comparison operators
 
@@ -134,7 +134,7 @@ The special operator `*` projects the entire item as is. When used, it must be t
 
 ## Ternary and coalesce operators
 
-Ternary and coalesce operators evaluate expressions and return results based on boolean operands or field existence. These operators function similarly to those in popular programming languages like C# and JavaScript. Use the ternary (``?``) and coalesce (``??``) operators to build conditional expressions that are resilient against semi-structured or mixed-type data.
+Ternary and coalesce operators evaluate expressions and return results based on boolean operands or field existence. These operators function similarly to similar operators in popular programming languages like C# and JavaScript. Use the ternary (``?``) and coalesce (``??``) operators to build conditional expressions that are resilient against semi-structured or mixed-type data.
 
 ### Ternary operator
 
@@ -158,7 +158,7 @@ The `?` operator returns a value based on the evaluation of a boolean expression
 
 #### Examples
 
-This example uses items in a container that contain multiple metadata properties related to pricing. Note that the `collapsible` property doesn't exist on all items:
+This example uses items in a container that contain multiple metadata properties related to pricing. The `collapsible` property doesn't exist on all items:
 
 ```json
 [

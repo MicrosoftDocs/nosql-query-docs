@@ -1,6 +1,6 @@
 ---
 title: Computed Properties
-description: Computed properties in Cosmos DB simplify complex queries and can increase query performance.
+description: Learn how to use computed properties in Cosmos DB (in Azure and Fabric) to simplify complex queries, improve performance, and create efficient indexes. Get started with examples and best practices.
 ms.date: 11/10/2025
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: Pagination
-description: Page through multiple sets of results and use continuation tokens to continue pagination operators.
+description: Learn how to page through query results in Cosmos DB (in Azure and Fabric) using continuation tokens and pagination operators to manage multiple result sets efficiently.
 ms.date: 11/10/2025
 ---
 
 # Pagination - Query language in Cosmos DB (in Azure and Fabric)
 
-In Cosmos DB (in Azure and Fabric), queries may have multiple pages of results. This document explains criteria that Cosmos DB's query engine uses to decide whether to split query results into multiple pages. You can optionally use continuation tokens to manage query results that span multiple pages.
+In Cosmos DB (in Azure and Fabric), queries could have multiple pages of results. This document explains criteria that Cosmos DB's query engine uses to decide whether to split query results into multiple pages. You can optionally use continuation tokens to manage query results that span multiple pages.
 
 ## Query executions
 
@@ -16,12 +16,12 @@ You can specify the maximum number of items returned by a query by setting the `
 
 In addition, there are other reasons that the query engine might need to split query results into multiple pages. These reasons include:
 
-- The container was throttled and there weren't available RUs to return more query results
+- The container was throttled and there weren't available request units (RUs) to return more query results
 - The query execution's response was too large
 - The query execution's time was too long
 - It was more efficient for the query engine to return results in extra executions
 
-The number of items returned per query execution are less than or equal to `MaxItemCount``. However, it's possible that other criteria might have limited the number of results the query could return. If you execute the same query multiple times, the number of pages might not be constant. For example, if a query is throttled there may be fewer available results per page, which means the query has extra pages. In some cases, it's also possible that your query may return an empty page of results.
+The number of items returned per query execution are less than or equal to `MaxItemCount``. However, it's possible that other criteria limited the number of results the query could return. If you execute the same query multiple times, the number of pages might not be constant. For example, if a query is throttled there might be fewer available results per page, which means the query has extra pages. In some cases, it's also possible that your query could return an empty page of results.
 
 ## Handle multiple pages of results
 

@@ -18,4 +18,4 @@ WHERE
 ```
 
 > [!TIP]
-> If you include your partition key in the `IN` filter, your query will automatically filter to only the relevant partitions.
+> If you include your partition key in the `IN` filter, your query automatically filters to only the relevant partitions.
