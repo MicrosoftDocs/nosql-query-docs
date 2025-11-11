@@ -1,0 +1,63 @@
+---
+title: SETDIFFERENCE
+description: This function returns a set containing only the elements from the first input set that isn't in the second input set with no duplicates.
+ms.date: 11/10/2025
+---
+
+# SETDIFFERENCE (NoSQL query)
+
+Returns a set containing only the elements from the first input set that isn't in the second input set with no duplicates.
+
+## Syntax
+
+```nosql
+SETDIFFERENCE(<arr_expr1>, <arr_expr2>)  
+```  
+
+## Arguments
+
+| | Description |
+| --- | --- |
+| **`arr_expr1`** | The first array expression. |
+| **`arr_expr2`** | The second array expression. |
+
+## Return types
+
+Returns an array expression.
+
+## Examples
+
+The following example shows the results of using this function to find set differences between arrays.
+
+```nosql
+SELECT VALUE {
+    "case1": SETDIFFERENCE([1, 2, 3], [1, 2, 6, 7]),
+    "case2": SETDIFFERENCE([1, 2, 6, 7], [1, 2, 3]),
+    "case3": SETDIFFERENCE([1, 2, 3, 4], [1, 2, 3, 4, 5, 6]),
+    "case4": SETDIFFERENCE([], [1, 2, 3]),
+    "case5": SETDIFFERENCE([1, 2, 3], []),
+    "case6": SETDIFFERENCE([1, 1, 1, 1], [2, 3, 4])
+}
+```
+
+```json
+[
+    {
+        "case1": [3],
+        "case2": [6, 7],
+        "case3": [],
+        "case4": [],
+        "case5": [1, 2, 3],
+        "case6": [1]
+    }
+]
+```
+
+## Remarks
+
+- This system function doesn't utilize the index.
+
+## Related content
+
+- [`SETINTERSECT`](setintersect.md)
+- [`SETUNION`](setunion.md)
