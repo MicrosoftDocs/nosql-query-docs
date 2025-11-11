@@ -138,6 +138,10 @@ items:
       - name: OBJECTTOARRAY
         displayName: array, objecttoarray
         href: ../objecttoarray.md
+      - name: SETDIFFERENCE
+        href: ../setdifference.md
+      - name: SETEQUAL
+        href: ../setequal.md
       - name: SETINTERSECT
         displayName: array, setintersect
         href: ../setintersect.md
@@ -175,6 +179,8 @@ items:
       - name: INDEX-OF
         displayName: index, index of, index-of, of, string
         href: ../index-of.md
+      - name: LASTINDEXOF
+        href: ../lastindexof.md
       - name: LEFT
         displayName: left, string
         href: ../left.md
@@ -246,6 +252,8 @@ items:
       - name: DATETIMEDIFF
         displayName: and, date, date and time, date-and-time, dateandtime, datetimediff, time
         href: ../datetimediff.md
+      - name: DATETIMEFORMAT
+        href: ../datetimeformat.md
       - name: DATETIMEFROMPARTS
         displayName: and, date, date and time, date-and-time, dateandtime, datetimefromparts, time
         href: ../datetimefromparts.md
@@ -258,6 +266,8 @@ items:
       - name: DATETIMETOTIMESTAMP
         displayName: and, date, date and time, date-and-time, dateandtime, datetimetotimestamp, time
         href: ../datetimetotimestamp.md
+      - name: DAY
+        href: ../day.md
       - name: GETCURRENTDATETIME
         displayName: and, date, date and time, date-and-time, dateandtime, getcurrentdatetime, time
         href: ../getcurrentdatetime.md
@@ -276,12 +286,20 @@ items:
       - name: GETCURRENTTIMESTAMPSTATIC
         displayName: and, date, date and time, date-and-time, dateandtime, getcurrenttimestampstatic, time
         href: ../getcurrenttimestampstatic.md
+      - name: IS_DATETIME
+        href: ../is-datetime.md
+      - name: MONTH
+        href: ../month.md
+      - name: NOW
+        href: ../now.md
       - name: TICKSTODATETIME
         displayName: and, date, date and time, date-and-time, dateandtime, tickstodatetime, time
         href: ../tickstodatetime.md
       - name: TIMESTAMPTODATETIME
         displayName: and, date, date and time, date-and-time, dateandtime, time, timestamptodatetime
         href: ../timestamptodatetime.md
+      - name: YEAR
+        href: ../year.md
   - name: Item functions
     items:
       - name: DOCUMENTID
