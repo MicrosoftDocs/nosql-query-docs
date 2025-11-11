@@ -1,12 +1,12 @@
 ---
 title: SETDIFFERENCE
-description: This function returns a set containing only the elements from the first input set that aren't in the second input set with no duplicates.
+description: This function returns a set containing only the elements from the first input set that isn't in the second input set with no duplicates.
 ms.date: 11/10/2025
 ---
 
 # SETDIFFERENCE (NoSQL query)
 
-Returns a set containing only the elements from the first input set that aren't in the second input set with no duplicates.
+Returns a set containing only the elements from the first input set that isn't in the second input set with no duplicates.
 
 ## Syntax
 
@@ -55,7 +55,7 @@ SELECT VALUE {
 
 ## Remarks
 
-- This system function won't utilize the index.
+- This system function doesn't utilize the index.
 
 ## Related content
 

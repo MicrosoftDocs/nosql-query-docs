@@ -55,7 +55,7 @@ SELECT VALUE {
 
 ## Remarks
 
-- This system function will not utilize the index.
+- This system function doesn't utilize the index.
 
 ## Related content
 

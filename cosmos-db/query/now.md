@@ -30,7 +30,7 @@ Returns a string expression.
 ## Examples
 
 The following example shows various uses of the NOW function with and without time modifications.
-Assume the current datetime is 2024-10-14T14:20:30.6668888Z.
+Assume the current datetime is `2024-10-14T14:20:30.6668888Z`.
 
 ```nosql
 SELECT VALUE {
@@ -58,15 +58,15 @@ SELECT VALUE {
 
 - This function performs a full scan.
 - The ISO 8601 date format specifies valid date and time parts to use with this function:
-  - **Year**: year, yyyy, yy
-  - **Month**: month, mm, m
-  - **Day**: day, dd, d
-  - **Hour**: hour, hh
-  - **Minute**: minute, mi, n
-  - **Second**: second, ss, s
-  - **Millisecond**: millisecond, ms
-  - **Microsecond**: microsecond, mcs
-  - **Nanosecond**: nanosecond, ns
+  - **Year**: `year`, `yyyy`, `yy`
+  - **Month**: `month`, `mm`, `m`
+  - **Day**: `day`, `dd`, `d`
+  - **Hour**: `hour`, `hh`
+  - **Minute**: `minute`, `mi`, `n`
+  - **Second**: `second`, `ss`, `s`
+  - **Millisecond**: `millisecond`, `ms`
+  - **Microsecond**: `microsecond`, `mcs`
+  - **Nanosecond**: `nanosecond`, `ns`
 
 ## Related content
 

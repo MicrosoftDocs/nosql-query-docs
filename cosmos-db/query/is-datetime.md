@@ -58,17 +58,17 @@ SELECT VALUE {
 
 ## Remarks
 
-- A valid DateTime string must begin with four digits for the year (YYYY) followed by a dash `-` for example, 2023-
-- A valid DateTime string must then have a two digit month followed by a dash `-` for example, 2023-03-
-- A valid DateTime string must then have a two digit day, for example, 2023-03-06
+- A valid DateTime string must begin with four digits for the year (YYYY) followed by a dash `-` for example, `2023-`
+- A valid DateTime string must then have a two digit month followed by a dash `-` for example, `2023-03-`
+- A valid DateTime string must then have a two digit day, for example, `2023-03-06`
 - A valid DateTime string can end with the two digit day and be valid without a time
-- It can also end after the day of the month with "Z" and still be valid, for example, 2023-03-06Z
-- If the DateTime string includes time, the day of the month can include a space or "T" time designator for example, 2023-03-06 15:29:00Z or 2023-03-06T15:29:00Z
-- Any other character besides space or "T" is invalid
-- After the time designator character, there must be a two digit hour followed by `:` colon time separator, followed by a two digit minute portion followed by `:` colon time separator, followed by a two digit second portion, which can conclude a valid DateTime string, for example, 2023-03-06T15:29:59
-- The seconds can also be followed by "Z" (UTC) and be valid, for example, 2023-03-06T15:29:59Z
+- It can also end after the day of the month with `Z` and still be valid, for example, `2023-03-06Z`
+- If the DateTime string includes time, the day of the month can include a space or `T` time designator for example, `2023-03-06 15:29:00Z` or `2023-03-06T15:29:00Z`
+- Any other character besides space or `T` is invalid
+- After the time designator character, there must be a two digit hour followed by `:` colon time separator, followed by a two digit minute portion followed by `:` colon time separator, followed by a two digit second portion, which can conclude a valid DateTime string, for example, `2023-03-06T15:29:59`
+- The seconds can also be followed with a `Z` (UTC) and be valid, for example, `2023-03-06T15:29:59Z`
 - If there are fractional seconds, they must be preceded with a `.`
-- To be valid this `.` Fractional seconds designator must be followed with at minimum one digit and maximum of seven digits, for example, 2023-03-06T15:29:59.9 or 2023-03-06T15:29:59.9Z or 2023-03-06T15:29:59.1234567 or 2023-03-06T15:29:59.1234567Z
+- To be valid this `.` Fractional seconds designator must be followed with at minimum one digit and maximum of seven digits, for example, `2023-03-06T15:29:59.9` or `2023-03-06T15:29:59.9Z` or `2023-03-06T15:29:59.1234567` or `2023-03-06T15:29:59.1234567Z`
 - This function performs a full scan.
 
 ## Related content
