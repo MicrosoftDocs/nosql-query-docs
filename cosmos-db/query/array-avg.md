@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # ARRAY_AVG (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns the average value of elements in the specified array expression.
 
 ## Syntax

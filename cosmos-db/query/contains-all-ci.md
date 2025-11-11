@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # CONTAINS_ALL_CI (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns a boolean value indicating if the source string contains all strings from a list through case-insensitive search.
 
 ## Syntax

@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # AGO (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns a datetime string representing the current UTC time minus a specified numeric offset.
 
 ## Syntax

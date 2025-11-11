@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # ARRAY_MEDIAN (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns the median value of elements in the specified array expression.
 
 ## Syntax

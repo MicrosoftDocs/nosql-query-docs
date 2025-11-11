@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # ARRAY_MAX (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns the maximal value of elements in the specified array expression.
 
 ## Syntax

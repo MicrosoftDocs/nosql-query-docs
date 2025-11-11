@@ -6,8 +6,6 @@ ms.date: 11/10/2025
 
 # ARRAY_SUM (NoSQL query)
 
-[!INCLUDE[NoSQL](../../includes/appliesto-nosql.md)]
-
 Returns the sum value of elements in the specified array expression.
 
 ## Syntax
