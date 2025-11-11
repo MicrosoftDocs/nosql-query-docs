@@ -114,6 +114,8 @@ items:
         href: ../trunc.md
   - name: Array functions
     items:
+      - name: ARRAY_AVG
+        href: ../array-avg.md
       - name: ARRAY_CONCAT
         displayName: array, array concat, array-concat, arrayconcat, concat
         href: ../array-concat.md
@@ -129,9 +131,17 @@ items:
       - name: ARRAY_LENGTH
         displayName: array, array length, array-length, arraylength, length
         href: ../array-length.md
+      - name: ARRAY_MAX
+        href: ../array-max.md
+      - name: ARRAY_MEDIAN
+        href: ../array-median.md
+      - name: ARRAY_MIN
+        href: ../array-min.md
       - name: ARRAY_SLICE
         displayName: array, array slice, array-slice, arrayslice, slice
         href: ../array-slice.md
+      - name: ARRAY_SUM
+        href: ../array-sum.md
       - name: CHOOSE
         displayName: array, choose
         href: ../choose.md
@@ -169,6 +179,14 @@ items:
       - name: CONTAINS
         displayName: contains, string
         href: ../contains.md
+      - name: CONTAINS_ALL_CI
+        href: ../contains-all-ci.md
+      - name: CONTAINS_ALL_CS
+        href: ../contains-all-cs.md
+      - name: CONTAINS_ANY_CI
+        href: ../contains-any-ci.md
+      - name: CONTAINS_ANY_CS
+        href: ../contains-any-cs.md
       - name: ENDSWITH
         displayName: endswith, string
         href: ../endswith.md
@@ -237,6 +255,8 @@ items:
         href: ../upper.md
   - name: Date and time functions
     items:
+      - name: AGO
+        href: ../ago.md
       - name: DATETIMEADD
         displayName: and, date, date and time, date-and-time, dateandtime, datetimeadd, time
         href: ../datetimeadd.md
