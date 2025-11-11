@@ -152,9 +152,9 @@ The `?` operator returns a value based on the evaluation of a boolean expression
 
 | | Description |
 | --- | --- |
-| **``bool_expr``** | A boolean expression. |
-| **``expr_true``** | The expression to evaluate if `bool_expr` evaluates to `true``. |
-| **``expr_false``** | The expression to evaluate if `bool_expr` evaluates to `false``. |
+| **`bool_expr`** | A boolean expression. |
+| **`expr_true`** | The expression to evaluate if `bool_expr` evaluates to `true`. |
+| **`expr_false`** | The expression to evaluate if `bool_expr` evaluates to `false`. |
 
 #### Examples
 
