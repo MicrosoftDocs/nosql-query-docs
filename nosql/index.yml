@@ -18,7 +18,7 @@ highlightedContent:
     - title: DocumentDB
       itemType: reference
       url: https://github.com/microsoft/documentdb
-    - title: Azure Cosmos DB for MongoDB (vCore)
+    - title: Azure DocumentDB
       itemType: overview
       url: /azure/cosmos-db/mongodb/vcore
     - title: Azure Redis
@@ -46,8 +46,8 @@ additionalContent:
           links:
             - text: Solution accelerators
               url: /azure/cosmos-db/solutions?pivots=api-nosql
-    - title: Azure Cosmos DB for MongoDB (vCore)
-      summary: Azure Cosmos DB for MongoDB (vCore) is a managed MongoDB-compatible database service with flexible scaling and high availability.
+    - title: Azure DocumentDB
+      summary: Azure DocumentDB is a managed MongoDB-compatible database service with flexible scaling and high availability.
       items:
         - title: Get started
           links:

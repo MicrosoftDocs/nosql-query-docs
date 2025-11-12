@@ -4,7 +4,7 @@ groups:
     title: DocumentDB platforms
     prompt: Choose a platform
     pivots:
-      - id: azure-cosmos-db-mongodb-vcore
-        title: Azure Cosmos DB for MongoDB (vCore)
+      - id: azure-documentdb
+        title: Azure DocumentDB
       - id: documentdb
         title: DocumentDB
