@@ -18,12 +18,12 @@ jobs:
           operations-per-run: 1300
           ascending: false
           stale-pr-message: >
-            #### Inactive pull request
+            ### Inactive pull request
 
-            This pull request has been inactive for at least seven days.
+            This pull request has been inactive for at least **7 days**.
 
-            > [!IMPORTANT]
-            > The pull request will automatically close after 30 days of inactivity.
+            > [!WARNING]
+            > The pull request will automatically close after **30 days** of inactivity.
 
             If you are finished with your changes, don't forget to add a `#sign-off` comment to trigger pull request review.
 
