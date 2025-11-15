@@ -64,6 +64,10 @@
       "feedback_help_link_type": "get-help-at-qna"
     },
     "fileMetadata": {
+      "titleSuffix": {
+        "**/*.md": "NoSQL",
+        "**/*.yml": "NoSQL"
+      },
       "author": {
         "**/*.md": "seesharprun",
         "**/*.yml": "seesharprun"
