@@ -64,12 +64,6 @@
       "feedback_help_link_type": "get-help-at-qna"
     },
     "fileMetadata": {
-      "titleSuffix": {
-        "**/*.md": "Cosmos DB (in Azure and Fabric)",
-        "**/*.yml": "Cosmos DB (in Azure and Fabric)",
-        "query/**/*.md": "Query Language for Cosmos DB (in Azure and Fabric)",
-        "query/**/*.yml": "Query Language for Cosmos DB (in Azure and Fabric)"
-      },
       "author": {
         "**/*.md": "seesharprun",
         "**/*.yml": "seesharprun"
@@ -77,12 +71,6 @@
       "ms.author": {
         "**/*.md": "sidandrews",
         "**/*.yml": "sidandrews"
-      },
-      "ms.reviewer": {
-        "*.md": "mjbrown",
-        "*.yml": "mjbrown",
-        "query/**/*.md": "jacodel",
-        "query/**/*.yml": "jacodel"
       },
       "ms.service": {
         "**/*.md": "azure-cosmos-db",
@@ -92,31 +80,9 @@
         "**/*.md": "nosql",
         "**/*.yml": "nosql"
       },
-      "ms.topic": {
-        "query/**/*.md": "generated-reference",
-        "query/**/*.yml": "generated-reference"
-      },
       "ms.devlang": {
         "**/*.md": "nosql",
         "**/*.yml": "nosql"
-      },
-      "ms.collection": {
-        "query/**/*.md": "cosmos-db-query-reference",
-        "query/**/*.yml": "cosmos-db-query-reference"
-      },
-      "ai-usage": {
-        "query/**/*.md": "ai-assisted",
-        "query/**/*.yml": "ai-assisted"
-      },
-      "appliesto": {
-        "query/**/*.md": [
-          "✅ Azure Cosmos DB for NoSQL",
-          "✅ Cosmos DB in Microsoft Fabric"
-        ],
-        "query/**/*.yml": [
-          "✅ Azure Cosmos DB for NoSQL",
-          "✅ Cosmos DB in Microsoft Fabric"
-        ]
       }
     },
     "template": []
