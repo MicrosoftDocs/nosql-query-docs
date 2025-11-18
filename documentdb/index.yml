@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: DocumentDB (in Azure)
-summary: Learn about the open-source DocumentDB platform and query language used by Azure Cosmos DB for MongoDB (vCore).
+summary: Learn about the open-source DocumentDB platform and query language used by Azure DocumentDB.
 brand: azure
 metadata:
   title: DocumentDB (in Azure)
-  description: Learn about the open-source DocumentDB platform and query language used by Azure Cosmos DB for MongoDB (vCore).
+  description: Learn about the open-source DocumentDB platform and query language used by Azure DocumentDB.
   ms.topic: hub-page
   ms.date: 11/07/2025
   ai-usage: ai-generated
@@ -17,7 +17,7 @@ productDirectory:
   title: Implementations
   summary: Explore the service that uses the DocumentDB open-source platform to provide MongoDB-compatible database capabilities in Azure.
   items:
-    - title: Azure Cosmos DB for MongoDB (vCore)
+    - title: Azure DocumentDB
       summary: Fully managed MongoDB-compatible database service with vCore architecture, vector search capabilities, and native Azure integration.
       imageSrc: media/index/azure.svg
       url: /azure/cosmos-db/mongodb/vcore
@@ -35,6 +35,8 @@ additionalContent:
         - title: Linux Foundation membership blog post
           url: https://opensource.microsoft.com/blog/2025/08/25/documentdb-joins-the-linux-foundation/
   footer: |
+    Azure DocumentDB (with MongoDB compatibility) is based on the open-source [DocumentDB](https://github.com/documentdb/documentdb) project.
+
     DocumentDB is an open-source powerful, scalable, and MongoDB compatible open-source document database built for modern applications.
 
     DocumentDB is built on the principles of transparency, developer freedom, and standardization, our mission is to build a MongoDB compatible open source document database based on PostgreSQL.
