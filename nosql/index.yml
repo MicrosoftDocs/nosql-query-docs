@@ -52,7 +52,7 @@ additionalContent:
         - title: Get started
           links:
             - text: Overview
-              url: /azure/documentdb/introduction
+              url: /azure/documentdb/overview
         - title: Query data
           links:
             - text: MongoDB Query Language (MQL) operators
