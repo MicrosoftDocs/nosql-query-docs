@@ -20,7 +20,7 @@ highlightedContent:
       url: https://github.com/microsoft/documentdb
     - title: Azure DocumentDB
       itemType: overview
-      url: /azure/cosmos-db/mongodb/vcore
+      url: /azure/documentdb
     - title: Azure Redis
       itemType: overview
       url: /azure/redis
@@ -52,13 +52,13 @@ additionalContent:
         - title: Get started
           links:
             - text: Overview
-              url: /azure/cosmos-db/mongodb/vcore/introduction
+              url: /azure/documentdb/introduction
         - title: Query data
           links:
             - text: MongoDB Query Language (MQL) operators
-              url: /azure/cosmos-db/mongodb/vcore/operators/
+              url: /azure/documentdb/operators/
             - text: MongoDB Query Language (MQL) commands
-              url: /azure/cosmos-db/mongodb/vcore/commands/
+              url: /azure/documentdb/commands/
     - title: Cosmos DB in Microsoft Fabric
       summary: Cosmos DB in Microsoft Fabric provides a unified data platform for building and deploying applications with NoSQL capabilities.
       items:
