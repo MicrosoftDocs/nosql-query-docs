@@ -85,12 +85,8 @@
         "query/**/*.yml": "avgupt"
       },
       "ms.service": {
-        "**/*.md": "azure-cosmos-db",
-        "**/*.yml": "azure-cosmos-db"
-      },
-      "ms.subservice": {
-        "**/*.md": "mongodb-vcore",
-        "**/*.yml": "mongodb-vcore"
+        "**/*.md": "documentdb",
+        "**/*.yml": "documentdb"
       },
       "ms.topic": {
         "**/*.md": "reference",
