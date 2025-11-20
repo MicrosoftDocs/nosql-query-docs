@@ -77,16 +77,12 @@
         "**/*.yml": "sidandrews"
       },
       "ms.service": {
-        "**/*.md": "azure-cosmos-db",
-        "**/*.yml": "azure-cosmos-db"
-      },
-      "ms.subservice": {
-        "**/*.md": "nosql",
-        "**/*.yml": "nosql"
+        "**/*.md": "cosmos-db-engine",
+        "**/*.yml": "cosmos-db-engine"
       },
       "ms.devlang": {
-        "**/*.md": "nosql",
-        "**/*.yml": "nosql"
+        "**/*.md": "cosmos-db",
+        "**/*.yml": "cosmos-db"
       }
     },
     "template": []
