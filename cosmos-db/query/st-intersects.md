@@ -12,7 +12,7 @@ The `ST_INTERSECTS` function returns a boolean indicating if two GeoJSON objects
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ST_INTERSECTS(<spatial_expr_1>, <spatial_expr_2>)
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ST_INTERSECTS` function is used to determine if two GeoJSON polygons intersect.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   highWayAndCampusIntersect: ST_INTERSECTS({
       "type": "Polygon",

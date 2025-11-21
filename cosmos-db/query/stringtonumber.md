@@ -12,7 +12,7 @@ The `STRINGTONUMBER` function converts a string expression to a number in Azure 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 STRINGTONUMBER(<string_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `STRINGTONUMBER` function is used to convert various string expressions to numbers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   parseIntegerString: STRINGTONUMBER("100"),
   parseDecimalString: STRINGTONUMBER("3.14"),

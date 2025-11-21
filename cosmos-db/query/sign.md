@@ -12,7 +12,7 @@ The `SIGN` function returns the sign of a numeric value in Azure Cosmos DB for N
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SIGN(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `SIGN` function is used to return the sign of various numbers from -2 to 2.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   signNegativeTwo: SIGN(-2),
   signNegativeOne: SIGN(-1),

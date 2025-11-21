@@ -10,7 +10,7 @@ The `INTDIV` function returns the result of dividing the first integer value by 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTDIV(<numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTDIV` function is used to divide two numbers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   divide: INTDIV(10, 2),
   negativeResult: INTDIV(10, -2),

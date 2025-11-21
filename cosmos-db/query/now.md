@@ -11,7 +11,7 @@ Returns a datetime string representing either the current UTC time or the result
 
 ## Syntax
 
-```nosql
+```cosmos-db
 NOW(<date_time_part>, <numeric_expr>)
 NOW()
 ```  
@@ -32,7 +32,7 @@ Returns a string expression.
 The following example shows various uses of the NOW function with and without time modifications.
 Assume the current datetime is `2024-10-14T14:20:30.6668888Z`.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": NOW(),
     "case2": NOW("yyyy", 1),

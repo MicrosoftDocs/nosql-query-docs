@@ -162,7 +162,7 @@ Here are a few examples of each function in use.
 
 In this example, we want to obtain the first 10 results where the phrase "red bicycle" is contained in the property `c.text`.
 
-```nosql
+```cosmos-db
 SELECT TOP 10
   *
 FROM
@@ -175,7 +175,7 @@ WHERE
 
 In this example, we want to obtain first 10 results where the keywords "red" and "bicycle" are contained in the property `c.text`, but not necessarily together.
 
-```nosql
+```cosmos-db
 SELECT TOP 10 *
 FROM c
 WHERE FULLTEXTCONTAINSALL(c.text, "red", "bicycle")
@@ -185,7 +185,7 @@ WHERE FULLTEXTCONTAINSALL(c.text, "red", "bicycle")
 
 In this example, we want to obtain the first 10 results where the keywords "red" and either "bicycle" or "skateboard"  are contained in the property `c.text`.
 
-```nosql
+```cosmos-db
 SELECT TOP 10
   *
 FROM
@@ -199,7 +199,7 @@ WHERE
 
 In this example, we want to obtain the first 10 results where "mountain" and "bicycle" are included, and sorted by order of relevance. That is, documents that have these terms more often should appear higher in the list.
 
-```nosql
+```cosmos-db
 SELECT TOP 10
   *
 FROM
@@ -218,7 +218,7 @@ Fuzzy search can improve resilience to typos and text variations. You can specif
 > [!NOTE]
 > Fuzzy search is in early preview. Performance, quality, and functionality are subject to change through the evolution of the preview.
 
-```nosql
+```cosmos-db
 SELECT TOP 10
   *
 FROM

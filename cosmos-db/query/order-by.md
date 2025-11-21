@@ -10,7 +10,7 @@ The `ORDER BY` clause returns the sorted result set of a query based on one or m
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ORDER BY <sort_specification>
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ORDER BY` clause is used to sort employees by their last name.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   firstName: e.name.first,
   lastName: e.name.last

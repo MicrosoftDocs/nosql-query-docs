@@ -10,7 +10,7 @@ The `NUMBERBIN` function calculates the input value rounded to a multiple of the
 
 ## Syntax
 
-```nosql
+```cosmos-db
 NUMBERBIN(<numeric_expr> [, <bin_size>])
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `NUMBERBIN` function is used to round a number to various bin sizes.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   roundToNegativeHundreds: NUMBERBIN(37.752, -100),
   roundToTens: NUMBERBIN(37.752, 10),

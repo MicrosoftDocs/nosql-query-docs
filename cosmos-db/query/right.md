@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a substring from the r
 
 ## Syntax
 
-```nosql
+```cosmos-db
 RIGHT(<string_expr>, <numeric_expr>)
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `RIGHT` function is used to return the right part of the string `AdventureWorks` for various length values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   lastZero: RIGHT("AdventureWorks", 0),
   lastOne: RIGHT("AdventureWorks", 1),

@@ -10,7 +10,7 @@ The `ACOS` function calculates the trigonometric arccosine of the specified nume
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ACOS(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ACOS` function is used to calculate the arccosine of -1.
 
-```nosql
+```cosmos-db
 SELECT VALUE { 
   arccosine: ACOS(-1) 
 }

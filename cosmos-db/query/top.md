@@ -10,7 +10,7 @@ The `TOP` keyword returns the first `N` number of query results in an undefined 
 
 You can use `TOP` with a constant value, as in the following example, or with a variable value using parameterized queries.
 
-```nosql
+```cosmos-db
 SELECT TOP 10
     *
 FROM

@@ -10,7 +10,7 @@ The `MIN` function returns the minimum value of the specified expression.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 MIN(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `MIN` function is used to return the minimum value of the `price` property.
 
-```nosql
+```cosmos-db
 SELECT
   MIN(p.price) AS minPrice
 FROM 

@@ -10,7 +10,7 @@ Returns a boolean value indicating if the source string contains all strings fro
 
 ## Syntax
 
-```nosql
+```cosmos-db
 CONTAINS_ALL_CS(<string_expr>, <expr1>, ... [,<exprN>])  
 ```  
 
@@ -30,7 +30,7 @@ Returns a Boolean expression.
 
 The following example shows various uses of the CONTAINS_ALL_CS function with case-sensitive matching.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": CONTAINS_ALL_CS("Have a nice day!", "have", "nice", "day!"),
     "case2": CONTAINS_ALL_CS("Have a nice day!", "HAVE", "NICE", "DAY!"),

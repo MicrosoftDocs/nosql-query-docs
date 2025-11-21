@@ -10,7 +10,7 @@ The `GETCURRENTDATETIME` function returns the current UTC (Coordinated Universal
 
 ## Syntax
 
-```nosql
+```cosmos-db
 GETCURRENTDATETIME()
 ```
 
@@ -26,7 +26,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `GETCURRENTDATETIME` function is used to return the current UTC date and time.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   currentUtcDateTime: GETCURRENTDATETIME()
 }

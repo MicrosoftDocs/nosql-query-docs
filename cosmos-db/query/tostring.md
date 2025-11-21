@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a value converted to a
 
 ## Syntax
 
-```nosql
+```cosmos-db
 TOSTRING(<expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `TOSTRING` function is used to convert multiple scalar and object values to a string.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   integerToString: TOSTRING(125),
   floatToString: TOSTRING(0.1234),

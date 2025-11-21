@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a string with leading 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 TRIM(<string_expr_1> [, <string_expr_2>])
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `TRIM` function is used to trim whitespace and custom characters from strings.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   trimPrefix: TRIM("   AdventureWorks"),
   trimSuffix: TRIM("AdventureWorks   "),

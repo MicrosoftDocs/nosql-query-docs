@@ -277,7 +277,7 @@ Here's an example computed property definition to convert the `name` property to
 
 This property could then be projected in a query:
 
-```nosql
+```cosmos-db
 SELECT 
     c.cp_lowerName 
 FROM 
@@ -299,7 +299,7 @@ Here's an example computed property definition to calculate a 20 percent price d
 
 This property could then be filtered on to ensure that only products where the discount would be less than $50 are returned:
 
-```nosql
+```cosmos-db
 SELECT 
     c.price - c.cp_20PercentDiscount as discountedPrice, 
     c.name 
@@ -324,7 +324,7 @@ Here's an example computed property definition that finds the primary category f
 
 You can then group by `cp_primaryCategory` to get the count of items in each primary category:
 
-```nosql
+```cosmos-db
 SELECT 
     COUNT(1), 
     c.cp_primaryCategory 
@@ -352,7 +352,7 @@ Here's an example computed property definition that gets the month out of the `_
 
 Before you can ORDER BY `cp_monthUpdated`, you must add it to your indexing policy. After your indexing policy is updated, you can order by the computed property.
 
-```nosql
+```cosmos-db
 SELECT
     *
 FROM

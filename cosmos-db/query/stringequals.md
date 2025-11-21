@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a boolean indicating w
 
 ## Syntax
 
-```nosql
+```cosmos-db
 STRINGEQUALS(<string_expr_1>, <string_expr_2> [, <boolean_expr>])
 ```
 
@@ -36,7 +36,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `STRINGEQUALS` function is used to check if two strings are equal, with and without case sensitivity.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   compareSameCase: STRINGEQUALS("AdventureWorks", "AdventureWorks"),
   compareDifferentCase: STRINGEQUALS("AdventureWorks", "adventureworks"),

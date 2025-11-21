@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a string expression co
 
 ## Syntax
 
-```nosql
+```cosmos-db
 STRINGTOARRAY(<string_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `STRINGTOARRAY` function is used to parse various string values into arrays.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   parseEmptyArray: STRINGTOARRAY("[]"),
   parseArray: STRINGTOARRAY('[ "coats", "gloves", "hats" ]'),

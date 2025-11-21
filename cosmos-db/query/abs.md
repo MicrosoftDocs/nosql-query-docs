@@ -10,7 +10,7 @@ The `ABS` function calculates the absolute (positive) value of the specified num
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ABS(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ABS` function is used on negative, zero, and positive numbers.
 
-```nosql
+```cosmos-db
 SELECT VALUE { 
   absoluteNegativeOne: ABS(-1),
   absoluteZero: ABS(0),

@@ -10,7 +10,7 @@ The `OFFSET LIMIT` clause returns a subset of the result set by skipping a speci
 
 ## Syntax
 
-```nosql
+```cosmos-db
 OFFSET <offset_amount> LIMIT <limit_amount>
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `OFFSET LIMIT` clause is used to skip one result and take the next three.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   name: e.name
 }

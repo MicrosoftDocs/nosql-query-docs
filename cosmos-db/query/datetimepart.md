@@ -10,7 +10,7 @@ The `DATETIMEPART` function returns the value of the specified date and time par
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DATETIMEPART(<date_time_part>, <date_time>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `DATETIMEPART` function is used to extract year, month, day, hour, minute, second, millisecond, microsecond, and nanosecond from a date.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   getYear: DATETIMEPART("yyyy", "2016-05-29T08:30:00.1301617"),
   getMonth: DATETIMEPART("mm", "2016-05-29T08:30:00.1301617"),

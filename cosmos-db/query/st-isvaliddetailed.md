@@ -12,7 +12,7 @@ The `ST_ISVALIDDETAILED` function returns a JSON object indicating if a GeoJSON 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ST_ISVALIDDETAILED(<spatial_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ST_ISVALIDDETAILED` function is used to check the validity of multiple GeoJSON objects.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   valid: ST_ISVALIDDETAILED({ 
       "type": "Point",

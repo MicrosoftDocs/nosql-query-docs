@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns the natural logarithm 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 LOG(<numeric_expr> [, <numeric_base>])
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `LOG` function is used to return the logarithm value of various values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   logFive: LOG(5),
   logTwoBaseTen: LOG(2, 10)

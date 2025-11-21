@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a boolean indicating w
 
 ## Syntax
 
-```nosql
+```cosmos-db
 STARTSWITH(<string_expr_1>, <string_expr_2> [, <bool_expr>])
 ```
 
@@ -36,7 +36,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `STARTSWITH` function is used to check if a string starts with a given prefix, with and without case sensitivity.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   startsWithWrongPrefix: STARTSWITH("AdventureWorks", "Works"),
   startsWithCorrectPrefix: STARTSWITH("AdventureWorks", "Adventure"),

@@ -10,7 +10,7 @@ The `DATETIMETOTICKS` function converts the specified DateTime to ticks. A singl
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DATETIMETOTICKS(<date_time>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `DATETIMETOTICKS` function is used to convert a date and time to ticks.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   ticks: DATETIMETOTICKS("2015-05-19T12:00:00.0000000")
 }

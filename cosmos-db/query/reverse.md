@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a reversed string.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 REVERSE(<string_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the function reverses multiple strings.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   reverseAdventureWorks: REVERSE("AdventureWorks"),
   reverseAdventureWorksBack: REVERSE("skroWerutnevdA"),

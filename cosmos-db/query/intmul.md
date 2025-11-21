@@ -10,7 +10,7 @@ The `INTMUL` function returns the product of two integer values.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTMUL(<numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTMUL` function is used to multiply two numbers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   multiply: INTMUL(5, 2),
   negativeResult: INTMUL(5, -2),

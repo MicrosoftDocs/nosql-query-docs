@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns the similarity score b
 
 ## Syntax
 
-```nosql
+```cosmos-db
 VECTORDISTANCE(<vector_expr_1>, <vector_expr_2>, <bool_expr>, <obj_expr>)
 ```
 
@@ -37,7 +37,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `VECTORDISTANCE` function is used to return the similarity score between a document vector and a query vector.
 
-```nosql
+```cosmos-db
 SELECT
   c.name,
   VECTORDISTANCE(c.vector, [1,2,3]) AS SimilarityScore 

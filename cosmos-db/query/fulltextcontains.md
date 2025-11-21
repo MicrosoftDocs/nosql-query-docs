@@ -10,7 +10,7 @@ The `FULLTEXTCONTAINS` function returns a boolean indicating whether the keyword
 
 ## Syntax
 
-```nosql
+```cosmos-db
 FULLTEXTCONTAINS(<property_path>, <string_expr>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `FULLTEXTCONTAINS` function is used to return 10 results that contain "search phrase" in the `c.text` property.
 
-```nosql
+```cosmos-db
 SELECT TOP 10 *
 FROM c
 WHERE FULLTEXTCONTAINS(c.text, "search phrase")
@@ -47,7 +47,7 @@ WHERE FULLTEXTCONTAINS(c.text, "search phrase")
 
 In this example, the `FULLTEXTCONTAINS` function is used with logical operators to ensure multiple keywords or phrases are included.
 
-```nosql
+```cosmos-db
 SELECT *
 FROM c
 WHERE FULLTEXTCONTAINS(c.text, "keyword1") AND FULLTEXTCONTAINS(c.text, "keyword2")

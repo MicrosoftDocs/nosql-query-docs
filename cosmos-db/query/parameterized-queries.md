@@ -12,7 +12,7 @@ Cosmos DB (in Azure and Fabric) supports queries with parameters expressed by th
 
 For example, you can write a query that takes `upperPriceLimit` as a parameter, and execute it for various values of `price` based on user input.
 
-```nosql
+```cosmos-db
 SELECT
     *
 FROM
@@ -38,7 +38,7 @@ You can then send this request to Cosmos DB as a parameterized JSON query object
 
 This next example sets the `TOP` argument with a parameterized query:
 
-```nosql
+```cosmos-db
 {
   "query": "SELECT TOP @pageSize * FROM products",
   "parameters": [

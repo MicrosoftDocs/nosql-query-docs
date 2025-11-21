@@ -10,7 +10,7 @@ The `DATETIMEBIN` function returns a date and time string value that is the resu
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DATETIMEBIN(<date_time>, <date_time_part> [, <bin_size>] [, <bin_start_date_time>])
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `DATETIMEBIN` function is used to bin a date and time by day, hour, second, and with custom bin sizes and start dates.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   binDay: DATETIMEBIN("2021-01-08T18:35:00.0000000", "dd"),
   binHour: DATETIMEBIN("2021-01-08T18:35:00.0000000", "hh"),

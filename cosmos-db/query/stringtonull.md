@@ -12,7 +12,7 @@ The `STRINGTONULL` function converts a string expression to `null` in Azure Cosm
 
 ## Syntax
 
-```nosql
+```cosmos-db
 STRINGTONULL(<string_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `STRINGTONULL` function is used to convert various string expressions to `null`.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   parseNullString: STRINGTONULL("null"),
   parseWithPrefix: STRINGTONULL("null  "),

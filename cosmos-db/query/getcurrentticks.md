@@ -10,7 +10,7 @@ The `GETCURRENTTICKS` function returns the current UTC time as the number of 100
 
 ## Syntax
 
-```nosql
+```cosmos-db
 GETCURRENTTICKS()
 ```
 
@@ -26,7 +26,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `GETCURRENTTICKS` function is used to return the current UTC time as ticks.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   currentTicks: GETCURRENTTICKS()
 }

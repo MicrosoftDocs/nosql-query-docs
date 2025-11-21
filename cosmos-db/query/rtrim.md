@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a string expression wi
 
 ## Syntax
 
-```nosql
+```cosmos-db
 RTRIM(<string_expr_1> [, <string_expr_2>])
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `RTRIM` function is used with various parameters inside a query.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   whitespaceStart: RTRIM("  AdventureWorks"),
   whitespaceStartEnd: RTRIM("  AdventureWorks  "),

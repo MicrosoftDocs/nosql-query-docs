@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns true if the type of th
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IS_PRIMITIVE(<expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `IS_PRIMITIVE` function is used to check various values to see if they're a primitive.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   isBooleanAPrimitive: IS_PRIMITIVE(true),
   isNumberAPrimitive: IS_PRIMITIVE(1),

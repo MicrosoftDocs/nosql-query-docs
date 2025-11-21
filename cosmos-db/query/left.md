@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a substring from the l
 
 ## Syntax
 
-```nosql
+```cosmos-db
 LEFT(<string_expr>, <numeric_expr>)
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `LEFT` function is used to return the left part of the string `AdventureWorks` for various length values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   firstZero: LEFT("AdventureWorks", 0),
   firstOne: LEFT("AdventureWorks", 1),

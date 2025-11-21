@@ -10,7 +10,7 @@ Returns the value of the year for the provided date and time.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 YEAR(<date_time>)  
 ```  
 
@@ -28,7 +28,7 @@ Returns a numeric value that is a positive integer.
 
 The following example shows the results of using this function on different date values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": YEAR("2000-10-10"),
     "case2": YEAR("2024-01-10T14:15:20"),

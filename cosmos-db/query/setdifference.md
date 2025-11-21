@@ -10,7 +10,7 @@ Returns a set containing only the elements from the first input set that isn't i
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SETDIFFERENCE(<arr_expr1>, <arr_expr2>)  
 ```  
 
@@ -29,7 +29,7 @@ Returns an array expression.
 
 The following example shows the results of using this function to find set differences between arrays.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": SETDIFFERENCE([1, 2, 3], [1, 2, 6, 7]),
     "case2": SETDIFFERENCE([1, 2, 6, 7], [1, 2, 3]),

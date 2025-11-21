@@ -12,7 +12,7 @@ The `ST_DISTANCE` function returns a numeric value representing the distance bet
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ST_DISTANCE(<spatial_expr_1>, <spatial_expr_2>)
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ST_DISTANCE` function is used to calculate the distance between an office location and a reference point, returning the result in kilometers.
 
-```nosql
+```cosmos-db
 SELECT
     o.name,
     ST_DISTANCE(o.location, {
