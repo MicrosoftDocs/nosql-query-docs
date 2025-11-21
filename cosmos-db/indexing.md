@@ -98,7 +98,7 @@ You can configure these index types when defining the indexing policy.
 
 - Equality queries:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -107,7 +107,7 @@ You can configure these index types when defining the indexing policy.
       c.property = 'value'
     ```
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -118,7 +118,7 @@ You can configure these index types when defining the indexing policy.
 
 - Equality match on an array element
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -129,7 +129,7 @@ You can configure these index types when defining the indexing policy.
 
 - Range queries:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -143,7 +143,7 @@ You can configure these index types when defining the indexing policy.
 
 - Checking for the presence of a property:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -154,7 +154,7 @@ You can configure these index types when defining the indexing policy.
 
 - String system functions:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -163,7 +163,7 @@ You can configure these index types when defining the indexing policy.
       CONTAINS(c.property, "value")
     ```
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -174,7 +174,7 @@ You can configure these index types when defining the indexing policy.
 
 - `ORDER BY` queries:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -185,7 +185,7 @@ You can configure these index types when defining the indexing policy.
 
 - `JOIN` queries:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       d
     FROM
@@ -207,7 +207,7 @@ Range indexes can be used on scalar values (string or number). The default index
 
 - Geospatial distance queries:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -218,7 +218,7 @@ Range indexes can be used on scalar values (string or number). The default index
 
 - Geospatial within queries:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -229,7 +229,7 @@ Range indexes can be used on scalar values (string or number). The default index
 
 - Geospatial intersect queries:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -246,7 +246,7 @@ Spatial indexes can be used on correctly formatted GeoJSON objects. Points, Line
 
 - `ORDER BY` queries on multiple properties:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -258,7 +258,7 @@ Spatial indexes can be used on correctly formatted GeoJSON objects. Points, Line
 
 - Queries with a filter and `ORDER BY`. These queries can utilize a composite index if the filter property is added to the `ORDER BY` clause.
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -272,7 +272,7 @@ Spatial indexes can be used on correctly formatted GeoJSON objects. Points, Line
 
 - Queries with a filter on two or more properties where at least one property is an equality filter:
 
-    ```nosql
+    ```cosmos-db
     SELECT
       *
     FROM
@@ -294,7 +294,7 @@ As long as one filter predicate uses one of the index types, the query engine ev
 
 - `ORDER BY` vector search queries:
 
-    ```nosql
+    ```cosmos-db
     SELECT TOP 10
       *
     FROM
@@ -305,7 +305,7 @@ As long as one filter predicate uses one of the index types, the query engine ev
 
 - Projection of the similarity score in vector search queries:
 
-    ```nosql
+    ```cosmos-db
     SELECT TOP 10
       c.name,
       VECTORDISTANCE(c.vector1, c.vector2) AS score
@@ -317,7 +317,7 @@ As long as one filter predicate uses one of the index types, the query engine ev
 
 - Range filters on the similarity score.
 
-    ```nosql
+    ```cosmos-db
     SELECT TOP 10
       *
     FROM
@@ -419,7 +419,7 @@ The query engine can utilize the inverted index in four different ways:
 
 Consider the following query:
 
-```nosql
+```cosmos-db
 SELECT
   tag
 FROM
@@ -444,7 +444,7 @@ Since this query has an equality filter, after traversing this tree, we can quic
 
 Consider the following query:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -461,7 +461,7 @@ Because the query engine can do a binary search to avoid scanning unnecessary in
 
 Consider the following query:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -478,7 +478,7 @@ For example, when evaluating case-insensitive `StartsWith`, the query engine che
 
 Consider the following query:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -491,7 +491,7 @@ The query predicate (filtering on items that have inventory in a warehouse that 
 
 For example, consider two properties: `name` and `warehouse`. The cardinality of name is 5,000 and the cardinality of `warehouse` is 200. Here are two example queries that each have a [`CONTAINS`](/nosql/query/contains) system function that does a full index scan on the `name` property. The first query uses more request units (RUs) than the second query because the cardinality of name is higher than `warehouse`.
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -500,7 +500,7 @@ WHERE
  CONTAINS(c.name, "Pack", false)
 ```
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -523,7 +523,7 @@ In the earlier examples, we only considered queries that had simple filter expre
 
 Consider the following query:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -544,7 +544,7 @@ For most queries, loading false positive index matches doesn't have any noticeab
 
 For example, consider the following query:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -557,7 +557,7 @@ The `CONTAINS` system function might return some false positive matches, so the 
 
 However, queries with aggregate functions must rely exclusively on the index in order to use it. For example, consider the following query with a `COUNT` aggregate:
 
-```nosql
+```cosmos-db
 SELECT
   COUNT(1)
 FROM
