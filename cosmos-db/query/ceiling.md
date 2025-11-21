@@ -10,7 +10,7 @@ The `CEILING` function calculates the smallest integer value greater than or equ
 
 ## Syntax
 
-```nosql
+```cosmos-db
 CEILING(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `CEILING` function is used on positive, negative, and zero values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   ceilingPositiveInteger: CEILING(123.45), 
   ceilingNegativeInteger: CEILING(-45.72),

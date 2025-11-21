@@ -10,7 +10,7 @@ The `INTADD` function returns the sum of two integer values.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTADD(<numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTADD` function is used to add two numbers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   addNumber: INTADD(20, 10),
   addZero: INTADD(20, 0),

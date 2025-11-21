@@ -10,7 +10,7 @@ The `INTBITOR` function returns the result of a bitwise inclusive OR operation o
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTBITOR(<numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTBITOR` function is used to perform a bitwise inclusive OR operation.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   inclusiveOr: INTBITOR(56, 100),
   inclusiveOrSame: INTBITOR(56, 56),

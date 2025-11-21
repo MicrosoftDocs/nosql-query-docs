@@ -10,7 +10,7 @@ The `SUM` function calculates the sum of the values in the expression.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SUM(<numeric_expr>)
 ```
 
@@ -64,7 +64,7 @@ Consider this sample set of documents within the `Products` collection for these
 
 In this example, the `SUM` function is used to sum the values of the `quantity` property into a single aggregated value.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   SUM(p.quantity)
 FROM

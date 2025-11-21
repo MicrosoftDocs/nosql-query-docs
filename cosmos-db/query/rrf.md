@@ -10,7 +10,7 @@ The `RRF` function returns a fused score by combining two or more scores provide
 
 ## Syntax
 
-```nosql
+```cosmos-db
 RRF(<function1>, <function2>, ..., <weights>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, Hybrid Search combines FullTextScore and VectorDistance.
 
-```nosql
+```cosmos-db
 SELECT TOP 10 *
 FROM c
 ORDER BY RANK RRF(FullTextScore(c.text, "keyword"), VectorDistance(c.vector, [1,2,3]))
@@ -48,7 +48,7 @@ ORDER BY RANK RRF(FullTextScore(c.text, "keyword"), VectorDistance(c.vector, [1,
 
 In this example, Hybrid Search uses weights for the scoring functions.
 
-```nosql
+```cosmos-db
 SELECT TOP 10 *
 FROM c
 ORDER BY RANK RRF(FullTextScore(c.text, "keyword"), VectorDistance(c.vector, [1,2,3]), [2,1])
@@ -62,7 +62,7 @@ ORDER BY RANK RRF(FullTextScore(c.text, "keyword"), VectorDistance(c.vector, [1,
 
 In this example, two FullTextScore functions are fused.
 
-```nosql
+```cosmos-db
 SELECT TOP 10 *
 FROM c
 ORDER BY RANK RRF(FullTextScore(c.text, "keyword1"), FullTextScore(c.text, "keyword2"))
@@ -76,7 +76,7 @@ ORDER BY RANK RRF(FullTextScore(c.text, "keyword1"), FullTextScore(c.text, "keyw
 
 In this example, two VectorDistance functions are fused.
 
-```nosql
+```cosmos-db
 SELECT TOP 5 *
 FROM c
 ORDER BY RANK RRF(VectorDistance(c.vector1, [1,2,3]), VectorDistance(c.vector2, [2,2,4]))

@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns the square root of the
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SQRT(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `SQRT` function is used to return the square roots of various numeric values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   sqrtZero: SQRT(0),
   sqrtOne: SQRT(1),

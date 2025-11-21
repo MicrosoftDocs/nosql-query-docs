@@ -10,7 +10,7 @@ The `RAND` function returns a randomly generated numeric value from zero to one.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 RAND()
 ```
 
@@ -26,7 +26,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `RAND` function is used to return random values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   randomOneToOne: RAND(),
   randomeOneToHundred: RAND() * 100

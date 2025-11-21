@@ -10,7 +10,7 @@ Returns a boolean value indicating if the datetime string is valid.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IS_DATETIME(<expr>)  
 ```  
 
@@ -28,7 +28,7 @@ Returns a Boolean expression.
 
 The following example shows various uses of the IS_DATETIME function with different datetime formats.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": IS_DATETIME("2024-12-12"),
     "case2": IS_DATETIME("2024-12-12Z"),

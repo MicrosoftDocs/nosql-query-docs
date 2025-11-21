@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that provides regular expression ca
 
 ## Syntax
 
-```nosql
+```cosmos-db
 REGEXMATCH(<string_expr_1>, <string_expr_2>[, <string_expr_3>])
 ```
 
@@ -36,7 +36,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `REGEXMATCH` function is used to match various patterns and modifiers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   noModifiers: REGEXMATCH("abcd", "ABC"),
   caseInsensitive: REGEXMATCH("abcd", "ABC", "i"),

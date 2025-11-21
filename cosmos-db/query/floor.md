@@ -10,7 +10,7 @@ The `FLOOR` function calculates the largest integer less than or equal to the sp
 
 ## Syntax
 
-```nosql
+```cosmos-db
 FLOOR(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `FLOOR` function is used on positive, negative, and zero values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   floorPostiveNumber: FLOOR(62.6),
   floorNegativeNumber: FLOOR(-145.12),

@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a boolean indicating w
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IS_ARRAY(<expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `IS_ARRAY` function is used to check objects of various types.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   booleanIsArray: IS_ARRAY(true),
   numberIsArray: IS_ARRAY(65),

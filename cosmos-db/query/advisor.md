@@ -37,7 +37,7 @@ You can enable Query Advisor capabilities by setting the `PopulateQueryAdvice` p
 
 Consider this example query:
 
-```nosql
+```cosmos-db
 SELECT VALUE
     r.id
 FROM
@@ -110,7 +110,7 @@ Consider the following examples of scenarios where you can use Query Advisor.
 
 Consider this example where the `GetCurrentTimestamp` function is used:
 
-```nosql
+```cosmos-db
 SELECT
     GetCurrentTicks() 
 FROM
@@ -131,7 +131,7 @@ QA1008: Consider using GetCurrentTicksStatic instead of GetCurrentTicks in the W
 
 Using this advice, you could rewrite the query to the following alternative:
 
-```nosql
+```cosmos-db
 SELECT
     GetCurrentTicksStatic() 
 FROM

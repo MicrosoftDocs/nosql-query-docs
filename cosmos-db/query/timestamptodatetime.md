@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns the timestamp as a dat
 
 ## Syntax
 
-```nosql
+```cosmos-db
 TIMESTAMPTODATETIME(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `TIMESTAMPTODATETIME` function is used to convert timestamps to date and time values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   parseTicks: TIMESTAMPTODATETIME(1597360794300),
   parseUnixEpoch: TIMESTAMPTODATETIME(0),

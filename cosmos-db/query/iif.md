@@ -10,7 +10,7 @@ The `IIF` function returns one of two values, depending on whether the Boolean e
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IIF(<boolean_expr>, <true_expr>, <false_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `IIF` function is used to return different values based on the Boolean expression.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   evalTrue: IIF(true, 123, 456),
   evalFalse: IIF(false, 123, 456),

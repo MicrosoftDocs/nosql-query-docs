@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a string expression wi
 
 ## Syntax
 
-```nosql
+```cosmos-db
 LOWER(<string_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `LOWER` function is used to modify various strings.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   lowercase: LOWER("adventureworks"),
   uppercase: LOWER("ADVENTUREWORKS"),

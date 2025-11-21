@@ -12,7 +12,7 @@ This can be used for filtering or retrieving the document's internal identifier.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DOCUMENTID(<item_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `DOCUMENTID` function is used to get the internal document ID for each product.
 
-```nosql
+```cosmos-db
 SELECT
   p.id,
   p._rid,
@@ -57,7 +57,7 @@ FROM
 
 In this example, the `DOCUMENTID` function is used in a WHERE clause to filter documents by their internal ID.
 
-```nosql
+```cosmos-db
 SELECT
   p.id,
   DOCUMENTID(p) AS documentId

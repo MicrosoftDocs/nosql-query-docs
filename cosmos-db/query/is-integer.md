@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a boolean indicating i
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IS_INTEGER(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `IS_INTEGER` function is demonstrated with various static values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   smallDecimalValue: IS_INTEGER(3454.123),
   integerValue: IS_INTEGER(5523432),

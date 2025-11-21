@@ -10,7 +10,7 @@ The `CHOOSE` function returns the expression at the specified index of a list, o
 
 ## Syntax
 
-```nosql
+```cosmos-db
 CHOOSE(<numeric_expr>, <expr_1> [, <expr_N>])
 ```
 
@@ -53,7 +53,7 @@ Consider this sample set of documents within the `Products` collection for these
 
 In this example, the `CHOOSE` function is used to select the value at index 1.
 
-```nosql
+```cosmos-db
 SELECT VALUE 
   CHOOSE(1, "Vimero", "Hydration", "Pack")
 ```
@@ -68,7 +68,7 @@ SELECT VALUE
 
 In this example, the `CHOOSE` function is used to select values at different indexes.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   index_0: CHOOSE(0, "Mt.", "Hood", "Hydration", "Pack"),
   index_1: CHOOSE(1, "Mt.", "Hood", "Hydration", "Pack"),
@@ -94,7 +94,7 @@ SELECT VALUE {
 
 In this example, the `CHOOSE` function is used to select the third field from products in the "short-fins" category.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   CHOOSE(3, p.category, p.name, p.sku)
 FROM

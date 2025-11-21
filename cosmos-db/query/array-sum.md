@@ -10,7 +10,7 @@ Returns the sum value of elements in the specified array expression.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ARRAY_SUM(<array_expr>)  
 ```  
 
@@ -28,7 +28,7 @@ Returns a numeric expression.
 
 The following example shows the results of using this function on arrays with numeric values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": ARRAY_SUM([1, 2, 3, 4]),
     "case2": ARRAY_SUM([1, 2, 3, 4, undefined]),

@@ -10,7 +10,7 @@ The `ARRAY_LENGTH` function returns the number of elements in the specified arra
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ARRAY_LENGTH(<array_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ARRAY_LENGTH` function is used to get the length of various arrays.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   length: ARRAY_LENGTH([70, 86, 92, 99, 85, 90, 82]),
   emptyLength: ARRAY_LENGTH([]),

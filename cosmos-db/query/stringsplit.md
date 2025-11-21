@@ -12,7 +12,7 @@ The `STRINGSPLIT` function returns an array of substrings obtained from separati
 
 ## Syntax
 
-```nosql
+```cosmos-db
 STRINGSPLIT(<string_expr1>, <string_expr2>)
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `STRINGSPLIT` function is used to split a string into substrings using various delimiters.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   seperateOnLetter: STRINGSPLIT("Handlebar", "e"),
   seperateOnSymbol: STRINGSPLIT("CARBON_STEEL_BIKE_WHEEL", "_"),

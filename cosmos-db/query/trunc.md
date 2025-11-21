@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a truncated numeric va
 
 ## Syntax
 
-```nosql
+```cosmos-db
 TRUNC(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `TRUNC` function is used to truncate various numbers to their integer part.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   truncateFloatingPoint: TRUNC(2.37),
   truncateNegative: TRUNC(-2.78),

@@ -12,7 +12,7 @@ The `STRINGJOIN` function returns a string by concatenating the elements of an a
 
 ## Syntax
 
-```nosql
+```cosmos-db
 STRINGJOIN(<array_expr>, <string_expr>)
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `STRINGJOIN` function is used to combine multiple strings from an array using various separators.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   joinUsingSpaces: STRINGJOIN(["Iropa", "Mountain", "Bike"], " "),
   joinUsingEmptyString: STRINGJOIN(["Iropa", "Mountain", "Bike"], ""),

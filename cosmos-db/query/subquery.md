@@ -38,7 +38,7 @@ Multi-value subqueries can optimize `JOIN` expressions by pushing predicates aft
 
 Consider the following query:
 
-```nosql
+```cosmos-db
 SELECT VALUE
   COUNT(1)
 FROM
@@ -65,7 +65,7 @@ Using subqueries here can help in filtering out joined array items before joinin
 
 This query is equivalent to the preceding one but uses subqueries:
 
-```nosql
+```cosmos-db
 SELECT VALUE
   COUNT(1)
 FROM
@@ -88,7 +88,7 @@ Subqueries can help optimize queries with expensive expressions such as user-def
 
 This sample query calculates the price with a supplement of **25%** multiples times in the query.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   subtotal: p.price,
   total: (p.price * 1.25)
@@ -101,7 +101,7 @@ WHERE
 
 Here's an equivalent query that runs the calculation only once:
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   subtotal: p.price,
   total: totalPrice
@@ -149,7 +149,7 @@ For instance, consider this set of measurements that represents the length of a 
 
 The following query mimics joining with this data so that you add the name of the unit to the output:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   p.subCategory,
@@ -191,7 +191,7 @@ A simple-expression scalar subquery is a correlated subquery that has a `SELECT`
 
 As a first example, consider this trivial query.
 
-```nosql
+```cosmos-db
 SELECT
   1 AS a,
   2 AS b
@@ -199,7 +199,7 @@ SELECT
 
 You can rewrite this query, by using a simple-expression scalar subquery.
 
-```nosql
+```cosmos-db
 SELECT
   (SELECT VALUE 1) AS a, 
   (SELECT VALUE 2) AS b
@@ -218,7 +218,7 @@ Both queries produce the same output.
 
 This next example query concatenates the unique identifier with a prefix as a simple-expression scalar subquery.
 
-```nosql
+```cosmos-db
 SELECT 
   (SELECT VALUE CONCAT('ID-', p.id)) AS internalId
 FROM
@@ -227,7 +227,7 @@ FROM
 
 This example uses a simple-expression scalar subquery to only return the relevant fields for each item. The query outputs something for each item, but it only includes the projected field if it meets the filter within the subquery.
 
-```nosql
+```cosmos-db
 SELECT
   p.id,
   (SELECT p.name WHERE CONTAINS(p.name, "Shoes")).name
@@ -275,7 +275,7 @@ As a first example, consider an item with the following fields.
 
 Here's a subquery with a single aggregate function expression in its projection. This query counts all tags for each item.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   (SELECT VALUE COUNT(1) FROM c IN p.colors) AS colorsCount
@@ -296,7 +296,7 @@ WHERE
 
 Here's the same subquery with a filter.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   (SELECT VALUE COUNT(1) FROM c IN p.colors) AS colorsCount,
@@ -317,7 +317,7 @@ FROM
 
 Here's another subquery with multiple aggregate function expressions:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   (SELECT VALUE COUNT(1) FROM c IN p.colors) AS colorsCount,
@@ -340,7 +340,7 @@ FROM
 
 Finally, here's a query with an aggregate subquery in both the projection and the filter:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   (SELECT VALUE COUNT(1) FROM s in p.sizes WHERE s.description LIKE "%Small") AS smallSizesCount,
@@ -353,7 +353,7 @@ WHERE
 
 A more optimal way to write this query is to join on the subquery and reference the subquery alias in both the SELECT and WHERE clauses. This query is more efficient because you need to execute the subquery only within the join statement, and not in both the projection and filter.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   colorCount,
@@ -381,14 +381,14 @@ Because the query engine doesn't differentiate between boolean expressions and a
 
 If the `EXISTS` subquery returns a single value that's `undefined`, `EXISTS` evaluates to false. For example, consider the following query that returns nothing.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   undefined
 ```
 
 If you use the `EXISTS` expression and the preceding query as a subquery, the expression returns `false`.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   EXISTS (SELECT VALUE undefined)
 ```
@@ -401,7 +401,7 @@ SELECT VALUE
 
 If the VALUE keyword in the preceding subquery is omitted, the subquery evaluates to an array with a single empty object.
 
-```nosql
+```cosmos-db
 SELECT
   undefined
 ```
@@ -414,7 +414,7 @@ SELECT
 
 At that point, the `EXISTS` expression evaluates to `true` since the object (`{}`) technically exits.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   EXISTS (SELECT undefined)
 ```
@@ -427,7 +427,7 @@ SELECT VALUE
 
 A common use case of `ARRAY_CONTAINS` is to filter an item by the existence of an item in an array. In this case, we're checking to see if the `tags` array contains an item named **"outerwear."**
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   p.colors
@@ -439,7 +439,7 @@ WHERE
 
 The same query can use `EXISTS` as an alternative option.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   p.colors
@@ -475,7 +475,7 @@ Consider this example item in a set with multiple items each containing an `acce
 
 Now, consider the following query that filters based on the `type` and `quantityOnHand` properties in the array within each item.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   t.description AS tag
@@ -503,7 +503,7 @@ $$1,000 x 100$$
 
 Using `EXISTS` helps to avoid this expensive cross-product. In this next example, the query filters on array elements within the `EXISTS` subquery. If an array element matches the filter, then you project it and `EXISTS` evaluates to true.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   p.name
 FROM
@@ -528,7 +528,7 @@ WHERE
 
 Queries are allowed to also alias `EXISTS` and reference the alias in the projection:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   EXISTS (
@@ -586,7 +586,7 @@ For these examples, let's assume there's a container with at least this item.
 
 In this first example, the expression is used within the `SELECT` clause.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   ARRAY (
@@ -618,7 +618,7 @@ WHERE
 
 As with other subqueries, filters with the `ARRAY` expression are possible.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   ARRAY (
@@ -660,7 +660,7 @@ WHERE
 
 Array expressions can also come after the `FROM` clause in subqueries.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   z.s.key AS sizes

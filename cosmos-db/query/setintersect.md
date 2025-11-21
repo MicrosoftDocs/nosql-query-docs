@@ -12,7 +12,7 @@ The `SETINTERSECT` function returns the set of expressions that exist in both in
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SETINTERSECT(<array_expr_1>, <array_expr_2>)
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `SETINTERSECT` function is used with static arrays to demonstrate the intersect functionality.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   simpleIntersect: SETINTERSECT([1, 2, 3, 4], [3, 4, 5, 6]),
   emptyIntersect: SETINTERSECT([1, 2, 3, 4], []),
@@ -61,7 +61,7 @@ SELECT VALUE {
 
 In this example, the `SETINTERSECT` function is used to find the intersection of two array fields in a document.
 
-```nosql
+```cosmos-db
 SELECT
     p.name,
     SETINTERSECT(p.colors, p.inStockColors) AS availableColors

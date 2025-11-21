@@ -10,7 +10,7 @@ The `RADIANS` function returns the corresponding angle in radians for an angle s
 
 ## Syntax
 
-```nosql
+```cosmos-db
 RADIANS(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `RADIANS` function is used to convert degree values to radians.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   degrees90ToRadians: RADIANS(90),
   degrees180ToRadians: RADIANS(180),

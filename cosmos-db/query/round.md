@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns the number rounded to 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ROUND(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, positive and negative numbers are rounded to the nearest integer.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   roundTwoPointFour: ROUND(2.4),
   roundTwoPointSix: ROUND(2.6),

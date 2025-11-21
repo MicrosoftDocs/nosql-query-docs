@@ -10,7 +10,7 @@ The `PI` function returns the constant value of Pi.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 PI()
 ```
 
@@ -26,7 +26,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `PI` function is used to return the constant value of Pi.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   PI()
 ```

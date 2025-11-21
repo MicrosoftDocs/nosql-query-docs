@@ -10,7 +10,7 @@ The `GETCURRENTTICKSSTATIC` function returns a static nanosecond ticks value (10
 
 ## Syntax
 
-```nosql
+```cosmos-db
 GETCURRENTTICKSSTATIC()
 ```
 
@@ -26,7 +26,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `GETCURRENTTICKSSTATIC` function returns the same static ticks for items within the same partition.
 
-```nosql
+```cosmos-db
 SELECT
   i.id,
   i.pk AS partitionKey,

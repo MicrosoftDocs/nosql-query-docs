@@ -12,7 +12,7 @@ The `STRINGTOOBJECT` function converts a string expression to an object in Azure
 
 ## Syntax
 
-```nosql
+```cosmos-db
 STRINGTOOBJECT(<string_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `STRINGTOOBJECT` function is used to convert various string expressions to objects.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   parseEmptyObject: STRINGTOOBJECT("{}"),
   parseObjectWithProperty: STRINGTOOBJECT('{"isAvailable": true}'),

@@ -10,7 +10,7 @@ Returns a boolean value indicating whether two sets are equal after removing dup
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SETEQUAL(<arr_expr1>, <arr_expr2>)  
 ```  
 
@@ -29,7 +29,7 @@ Returns a boolean expression.
 
 The following example shows the results of using this function to compare sets for equality.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": SETEQUAL([1, 2, 3], [1, 2, 3]),
     "case2": SETEQUAL([1, 2, 3], [3, 2, 1]),

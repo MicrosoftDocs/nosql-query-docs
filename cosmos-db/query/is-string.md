@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns true if the type of th
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IS_STRING(<expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `IS_STRING` function is used to check various values to see if they're a string.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   isBooleanAString: IS_STRING(true),
   isNumberAString: IS_STRING(1),

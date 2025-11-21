@@ -10,7 +10,7 @@ The `ATAN` function calculates the trigonometric arctangent of the specified num
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ATAN(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ATAN` function is used to calculate the arctangent of -45.01.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   arctangent: ATAN(-45.01)
 }

@@ -44,7 +44,7 @@ Here's an example document with nested JSON:
 
 You can then project the same nested properties in your queries:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   p.category,
@@ -73,7 +73,7 @@ JSON supports arrays, and you can work with them in your queries. To access a sp
 
 Using the same example from the previous section, we can access an item in the array using its index. For example, if we want to access the first item in the array, we would use an index of `0` since it's a **zero-based index** system for arrays in the query language:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   p.sizes[0].description AS defaultSize
@@ -127,7 +127,7 @@ Now, let's consider an example with a larger array:
 
 Often, you want to use a subquery or a self-join to work with all elements in an array. For example, to get each color as a separate row:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   c AS color
@@ -156,7 +156,7 @@ Which would result in a JSON array like this:
 
 To check if a certain value exists in an array, you can use the array in the filter after the `WHERE` keyword. This example uses a [subquery](subquery.md) to filter the array's items:
 
-```nosql
+```cosmos-db
 SELECT VALUE
   p.name
 FROM
@@ -182,7 +182,7 @@ This query results in a flat JSON array of strings, which would include the item
 
 Finally, you can construct arrays by combining multiple properties. In this example, multiple properties are combined to form a `metadata` array:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   [
@@ -263,7 +263,7 @@ Consider this example data set:
 
 This first example uses the `IN` keyword to perform iteration over the `colors` property for each product:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -280,7 +280,7 @@ FROM
 
 You can also filter individual entries in the array using the `WHERE` clause. In this example, the `sizes` property is filtered:
 
-```nosql
+```cosmos-db
 SELECT
   p.key
 FROM
@@ -305,7 +305,7 @@ WHERE
 
 Using the same `IN` keyword, you can aggregate over the result of an array iteration. In this example, the query returns the count of the number of tags summed across all items in the container:
 
-```nosql
+```cosmos-db
 SELECT VALUE
   COUNT(1)
 FROM
@@ -349,7 +349,7 @@ There are built-in functions to check for these cases:
 
 Here's how you can check for both:
 
-```nosql
+```cosmos-db
 SELECT
   IS_DEFINED(p.sku) AS isSkuDefined,
   IS_NULL(p.sku) AS isSkuDefinedButNull
@@ -376,7 +376,7 @@ Let's start with a simple object with a nested object as the value of the `metad
 
 For that object, we can reference the `metadata.link` property in three distinct ways using combinations of **dot** and **bracket** notation:
 
-```nosql
+```cosmos-db
 SELECT
   p.metadata.link AS metadataLinkDotNotation,
   p["metadata"]["link"] AS metadataLinkBracketNotation,
@@ -429,7 +429,7 @@ You can create JSON objects directly in your query results. Let's start with thi
 
 Using the most straightforward syntax, you can influence the property names of a relatively flat JSON object using angle brackets (`{`/`}`) and the embedded JSON syntax in a NoSQL query:
 
-```nosql
+```cosmos-db
 SELECT {
   "brandName": p.name,
   "department": p.category
@@ -459,7 +459,7 @@ WHERE
 
 In the previous example, the result had an inferred name of `$1` because an explicit name wasn't defined. In this next example, the result has an explicit name of `product` defined using an alias:
 
-```nosql
+```cosmos-db
 SELECT {
   "brandName": p.name,
   "department": p.category
@@ -489,7 +489,7 @@ WHERE
 
 Alternatively, the result can be flattened using the `VALUE` keyword in a `SELECT VALUE` statement:
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   "brandName": p.name,
   "department": p.category
@@ -593,7 +593,7 @@ That schema would allow a JSON object structured in this format:
 
 This NoSQL query remaps the original object\[s\] to be compliant with this new schema:
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   "id": p.sku,
   "name": p.name,
@@ -653,28 +653,28 @@ By default, the term used after the `FROM` keyword references the **container** 
 
 For example, if the container is named `products`, any of these queries work fine and all reference the `products` container as long as that container is the *target* of the query:
 
-```nosql
+```cosmos-db
 SELECT
   products.id
 FROM
   products
 ```
 
-```nosql
+```cosmos-db
 SELECT
   p.id
 FROM
   p
 ```
 
-```nosql
+```cosmos-db
 SELECT
   items.id
 FROM
   items
 ```
 
-```nosql
+```cosmos-db
 SELECT
   targetContainer.id
 FROM
@@ -683,7 +683,7 @@ FROM
 
 To make your NoSQL query more concise, it's common to alias the container name with a shorter name. Aliasing can be done using the `AS` keyword:
 
-```nosql
+```cosmos-db
 SELECT
   p.id
 FROM
@@ -692,7 +692,7 @@ FROM
 
 The query language also has a shorthand syntax where the alias can be defined immediately after the target container's reference without the `AS` keyword. This shorthand is functionally equivalent to using the `AS` keyword:
 
-```nosql
+```cosmos-db
 SELECT
   p.id
 FROM
@@ -731,7 +731,7 @@ You can also rename fields in your results using aliases defines with the same `
 
 In this first example, the `metadataLink` alias is used for the `metadata.link` property's value:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   p.metadata.link AS metadataLink
@@ -761,7 +761,7 @@ FROM
 >
 > For example,
 >
-> ```nosql
+> ```cosmos-db
 > SELECT VALUE {
 >   "product name": p.name,
 >   "from": p.metadata.link,
@@ -855,7 +855,7 @@ Consider this sample data:
 
 This NoSQL query returns the `p.sizes[].key` and `p.tags[].key` properties in the cross-product result but will alias each `key` property to avoid collisions:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   s.key AS sizeKey,

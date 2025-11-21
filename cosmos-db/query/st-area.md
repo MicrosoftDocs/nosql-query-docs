@@ -12,7 +12,7 @@ The `ST_AREA` function returns a numeric value representing the total area of a 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ST_AREA(<spatial_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ST_AREA` function is used to return the area of a GeoJSON polygon.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   areaPolygon: ST_AREA({
       "type": "Polygon",

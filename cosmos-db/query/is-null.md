@@ -10,7 +10,7 @@ The `IS_NULL` function returns a boolean value indicating if the type of the spe
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IS_NULL(<expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `IS_NULL` function is used to check various types for null values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   booleanIsNull: IS_NULL(true),
   numberIsNull: IS_NULL(15),

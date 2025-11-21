@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL clause that applies a filter to return a subset of 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 WHERE <filter_condition>
 <filter_condition> ::= <scalar_expression>
 ```
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `WHERE` clause is used to filter items where the team is "Hospitality".
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   employeeName: e.name,
   currentTeam: e.team

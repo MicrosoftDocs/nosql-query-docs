@@ -10,7 +10,7 @@ The `FULLTEXTSCORE` function returns a BM25 score value that can only be used in
 
 ## Syntax
 
-```nosql
+```cosmos-db
 FULLTEXTSCORE(<property_path>, <string_expr1>, <string_expr2>, ...)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `FULLTEXTSCORE` function is used with `ORDER BY RANK` to sort from highest relevancy to lowest relevancy.
 
-```nosql
+```cosmos-db
 SELECT TOP 10 c.text
 FROM c
 ORDER BY RANK FULLTEXTSCORE(c.text, "keyword")
@@ -48,7 +48,7 @@ ORDER BY RANK FULLTEXTSCORE(c.text, "keyword")
 
 In this example, the `FULLTEXTSCORE` function is used in the `ORDER BY RANK` clause, and `FULLTEXTCONTAINS` is used in the `WHERE` clause.
 
-```nosql
+```cosmos-db
 SELECT TOP 10 c.text
 FROM c
 WHERE FULLTEXTCONTAINS(c.text, "keyword1")

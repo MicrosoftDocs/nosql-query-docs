@@ -10,7 +10,7 @@ The `ORDER BY RANK` clause returns the sorted result set of a query based on the
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ORDER BY RANK <scoring function>
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ORDER BY RANK` clause is used to sort results by the rank of a scoring function.
 
-```nosql
+```cosmos-db
 -- Example query for ORDER BY RANK
 SELECT * FROM c ORDER BY RANK FullTextScore
 ```

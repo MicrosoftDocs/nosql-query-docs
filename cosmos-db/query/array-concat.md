@@ -10,7 +10,7 @@ The `ARRAY_CONCAT` function returns an array that is the result of concatenating
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ARRAY_CONCAT(<array_expr_1>, <array_expr_2> [, <array_expr_N>])
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ARRAY_CONCAT` function concatenates two arrays.
 
-```nosql
+```cosmos-db
 SELECT
   ARRAY_CONCAT([
       "backpacks",

@@ -10,7 +10,7 @@ The `AVG` function calculates the average of the values in the expression.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 AVG(<numeric_expr>)
 ```
 
@@ -49,7 +49,7 @@ Consider this sample set of documents within the `Products` collection for these
 
 In this example, the `AVG` function is used to average the values of the `price` property into a single aggregated value.
 
-```nosql
+```cosmos-db
 SELECT
   AVG(p.price) AS averagePrice
 FROM

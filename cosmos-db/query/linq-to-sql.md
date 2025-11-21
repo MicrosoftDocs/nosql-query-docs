@@ -117,7 +117,7 @@ The syntax is `input.Select(x => f(x))`, where `f` is a scalar expression. The `
   
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT VALUE f.parents[0].familyName
   FROM Families f
   ```
@@ -132,7 +132,7 @@ The syntax is `input.Select(x => f(x))`, where `f` is a scalar expression. The `
   
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT VALUE f.children[0].grade + c
   FROM Families f
   ```
@@ -151,7 +151,7 @@ The syntax is `input.Select(x => f(x))`, where `f` is a scalar expression. The `
   
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT VALUE {
       "name":f.children[0].familyName,
       "grade": f.children[0].grade + 3 
@@ -171,7 +171,7 @@ The syntax is `input.SelectMany(x => f(x))`, where `f` is a scalar expression th
   
 - **NoSQL**
 
-  ```nosql
+  ```cosmos-db
   SELECT VALUE child
   FROM child IN Families.children
   ```
@@ -190,7 +190,7 @@ The syntax is `input.Where(x => f(x))`, where `f` is a scalar expression, which 
   
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT *
   FROM Families f
   WHERE f.parents[0].familyName = "Wakefield"
@@ -208,7 +208,7 @@ The syntax is `input.Where(x => f(x))`, where `f` is a scalar expression, which 
   
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT *
   FROM Families f
   WHERE f.parents[0].familyName = "Wakefield"
@@ -234,7 +234,7 @@ The syntax is `input(.|.SelectMany())(.Select()|.Where())*`. A concatenated quer
 
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT *
   FROM Families f
   WHERE f.parents[0].familyName = "Wakefield"
@@ -251,7 +251,7 @@ The syntax is `input(.|.SelectMany())(.Select()|.Where())*`. A concatenated quer
 
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT VALUE f.parents[0].familyName
   FROM Families f
   WHERE f.children[0].grade > 3
@@ -268,7 +268,7 @@ The syntax is `input(.|.SelectMany())(.Select()|.Where())*`. A concatenated quer
   
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT *
   FROM Families f
   WHERE ({grade: f.children[0].grade}.grade > 3)
@@ -285,7 +285,7 @@ The syntax is `input(.|.SelectMany())(.Select()|.Where())*`. A concatenated quer
   
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT *
   FROM p IN Families.parents
   WHERE p.familyName = "Wakefield"
@@ -308,7 +308,7 @@ A nested query applies the inner query to each element of the outer container. O
 
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT VALUE p.familyName
   FROM Families f
   JOIN p IN f.parents
@@ -325,7 +325,7 @@ A nested query applies the inner query to each element of the outer container. O
 
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT *
   FROM Families f
   JOIN c IN f.children
@@ -343,7 +343,7 @@ A nested query applies the inner query to each element of the outer container. O
 
 - **NoSQL**
   
-  ```nosql
+  ```cosmos-db
   SELECT *
   FROM Families f
   JOIN c IN f.children

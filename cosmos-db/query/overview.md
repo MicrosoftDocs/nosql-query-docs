@@ -29,7 +29,7 @@ A typical query consists of the following clauses:
 
 ### Example: Simple Query
 
-```nosql
+```cosmos-db
 SELECT p.id, p.name
 FROM products p
 WHERE p.price > 20
@@ -42,14 +42,14 @@ This query returns the `id` and `name` of products with a price greater than 20,
 
 You can access nested properties using dot notation or bracket notation:
 
-```nosql
+```cosmos-db
 SELECT p.manufacturer.name, p["metadata"].sku
 FROM products p
 ```
 
 Arrays can be traversed using `JOIN` or subqueries:
 
-```nosql
+```cosmos-db
 SELECT p.name, c AS color
 FROM products p
 JOIN c IN p.metadata.colors
@@ -59,7 +59,7 @@ JOIN c IN p.metadata.colors
 
 The `WHERE` clause supports a wide range of operators, including arithmetic, logical, comparison, and string operations:
 
-```nosql
+```cosmos-db
 SELECT *
 FROM products p
 WHERE p.category IN ("Accessories", "Clothing") AND p.price BETWEEN 10 AND 50
@@ -69,7 +69,7 @@ WHERE p.category IN ("Accessories", "Clothing") AND p.price BETWEEN 10 AND 50
 
 You can use aggregate functions and group results:
 
-```nosql
+```cosmos-db
 SELECT p.category, COUNT(1) AS productCount
 FROM products p
 GROUP BY p.category
@@ -81,7 +81,7 @@ GROUP BY p.category
 - `TOP N` limits the number of results.
 - `LIKE` supports pattern matching with wildcards.
 
-```nosql
+```cosmos-db
 SELECT DISTINCT VALUE p.category
 FROM products p
 
@@ -98,7 +98,7 @@ WHERE p.name LIKE "%bike%"
 
 Subqueries allow for more advanced filtering and projection, including checking for the existence of values in arrays:
 
-```nosql
+```cosmos-db
 SELECT VALUE p.name
 FROM products p
 WHERE EXISTS (

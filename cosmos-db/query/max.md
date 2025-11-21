@@ -10,7 +10,7 @@ The `MAX` function returns the maximum value of the specified expression.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 MAX(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `MAX` function is used to return the maximum value of the `price` property.
 
-```nosql
+```cosmos-db
 SELECT
   MAX(p.price) AS maxPrice
 FROM 

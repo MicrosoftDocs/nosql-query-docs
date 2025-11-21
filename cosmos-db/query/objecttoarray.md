@@ -10,7 +10,7 @@ The `OBJECTTOARRAY` function converts field/value pairs in a JSON object to a JS
 
 ## Syntax
 
-```nosql
+```cosmos-db
 OBJECTTOARRAY(<object_expr> [, <string_expr_1>, <string_expr_2>])
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `OBJECTTOARRAY` function is used to convert a JSON object to an array.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   OBJECTTOARRAY({
     "a": "12345",

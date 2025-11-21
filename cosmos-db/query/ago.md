@@ -10,7 +10,7 @@ Returns a datetime string representing the current UTC time minus a specified nu
 
 ## Syntax
 
-```nosql
+```cosmos-db
 AGO(<date_time_part>, <numeric_expr>)  
 ```  
 
@@ -30,7 +30,7 @@ Returns a string expression.
 The following example shows various uses of the AGO function with different time parts.
 Assume the current datetime is `2024-10-14T14:20:30.6668888Z`.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": AGO("yyyy", 1),
     "case2": AGO("yyyy", -1), 

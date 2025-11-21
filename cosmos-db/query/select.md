@@ -12,7 +12,7 @@ Every query consists of a `SELECT` clause and optionally `FROM` and `WHERE` clau
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SELECT <select_specification>  
 
 <select_specification> ::=
@@ -47,7 +47,7 @@ This section contains examples of how to use this query language construct.
 
 In this example,  two static string values and returns an array with a single object containing both values. Since the values are unnamed, a sequential generated number is used to name the equivalent json field.
 
-```nosql
+```cosmos-db
 SELECT
   "Cosmic", "Works"
 ```
@@ -65,7 +65,7 @@ SELECT
 
 In this example, JSON projection is used to fine tune the exact structure and field names for the resulting JSON object. Here, a JSON object is created with fields named `identifier` and `model`. The outside JSON object is still unnamed, so a generated number (`$1`) is used to name this field.
 
-```nosql
+```cosmos-db
 SELECT {
   identifier: p.name,
   model: p.sku
@@ -96,7 +96,7 @@ FROM
 
 In this example, the VALUE keyword is used with a static string to create an array of strings as the result.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   "Cosmic Works"
 ```
@@ -111,7 +111,7 @@ SELECT VALUE
 
 In this example, the query uses a combination of a `SELECT` clause, the `VALUE` keyword, a `FROM` clause, and JSON projection to perform a common query with the results transformed to a JSON object for the client to parse.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   name: p.name,
   link: p.metadata.link,

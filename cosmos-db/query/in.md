@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `IN` keyword checks whether a specified value matches any value in a list. For example, the following query returns all items where the category matches at least one of the values in a list.
 
-```nosql
+```cosmos-db
 SELECT
     *
 FROM

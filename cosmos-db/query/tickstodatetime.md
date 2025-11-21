@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns the number of ticks as
 
 ## Syntax
 
-```nosql
+```cosmos-db
 TICKSTODATETIME(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `TICKSTODATETIME` function is used to convert ticks to date and time values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   parseTicks: TICKSTODATETIME(15973607943002652),
   parseUnixEpoch: TICKSTODATETIME(0),

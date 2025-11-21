@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a boolean indicating w
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IS_BOOL(<expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `IS_BOOL` function is used to check objects of various types.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   booleanIsBool: IS_BOOL(true),
   numberIsBool: IS_BOOL(65),

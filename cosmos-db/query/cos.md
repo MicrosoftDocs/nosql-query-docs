@@ -10,7 +10,7 @@ The `COS` function calculates the trigonometric cosine of the specified angle in
 
 ## Syntax
 
-```nosql
+```cosmos-db
 COS(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `COS` function is used to calculate the cosine of 14.78 radians.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   cosine: COS(14.78)
 }

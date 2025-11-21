@@ -10,7 +10,7 @@ The `INTBITNOT` function returns the result of a bitwise NOT operation on an int
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTBITNOT(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTBITNOT` function is used to perform a bitwise NOT operation.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   complementNumber: INTBITNOT(65),
   complementZero: INTBITNOT(0),

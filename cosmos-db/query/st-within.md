@@ -12,7 +12,7 @@ The `ST_WITHIN` function returns a boolean indicating if one GeoJSON object is w
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ST_WITHIN(<spatial_expr_1>, <spatial_expr_2>)
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ST_WITHIN` function is used to determine if a GeoJSON Point is within a Polygon.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   isHeadquartersWithinCampus: ST_WITHIN({
       "type": "Point",

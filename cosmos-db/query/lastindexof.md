@@ -10,7 +10,7 @@ Returns the starting position of the last occurrence of the second string expres
 
 ## Syntax
 
-```nosql
+```cosmos-db
 LASTINDEXOF(<string_expr1>, <string_expr2> [, <numeric_expr>])  
 ```  
 
@@ -30,7 +30,7 @@ Returns a numeric expression.
 
 The following example shows the results of using this function to find the last occurrence of substrings.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": LASTINDEXOF("abcdeabc", "abc"),
     "case2": LASTINDEXOF("abcdeabc", "abc", 6),

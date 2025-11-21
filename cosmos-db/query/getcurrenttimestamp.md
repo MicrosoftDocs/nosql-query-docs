@@ -10,7 +10,7 @@ The `GETCURRENTTIMESTAMP` function returns the current timestamp in milliseconds
 
 ## Syntax
 
-```nosql
+```cosmos-db
 GETCURRENTTIMESTAMP()
 ```
 
@@ -26,7 +26,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `GETCURRENTTIMESTAMP` function is used to return the current timestamp.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   currentTimestamp: GETCURRENTTIMESTAMP()
 }

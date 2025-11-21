@@ -11,7 +11,7 @@ Returns the value of the month for the provided date and time.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 MONTH(<date_time>)  
 ```  
 
@@ -29,7 +29,7 @@ Returns a numeric value that is a positive integer.
 
 The following example shows the results of using this function on different date values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": MONTH("2024-01-10"),
     "case2": MONTH("2000-12-12T10:00:00"),

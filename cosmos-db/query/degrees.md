@@ -10,7 +10,7 @@ The `DEGREES` function calculates the corresponding angle in degrees for an angl
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DEGREES(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `DEGREES` function is used to convert various radian values to degrees.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   radiansHalfPiToDegrees: DEGREES(1.5707963267948966),
   radiansPiToDegrees: DEGREES(3.141592653589793),

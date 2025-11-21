@@ -10,7 +10,7 @@ Returns the maximal value of elements in the specified array expression.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ARRAY_MAX(<array_expr>)  
 ```  
 
@@ -28,7 +28,7 @@ Returns a numeric/boolean/string expression.
 
 The following example shows the results of using this function on arrays with different data types.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": ARRAY_MAX([1, 2, 3, 4]),
     "case2": ARRAY_MAX(['abc', 'ABC', 'aBc', 'AbC']),

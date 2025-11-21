@@ -343,7 +343,7 @@ If a query has filters on two or more properties, it might be helpful to create 
 
 For example, consider the following query that has both an equality and range filter:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -358,7 +358,7 @@ Queries with multiple range filters can also be optimized with a composite index
 
 Consider the following query with an equality filter and two range filters:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -404,7 +404,7 @@ For example, by adding the properties in the filter to the `ORDER BY` clause, th
 
 Query using range index:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -417,7 +417,7 @@ ORDER BY
 
 Query using composite index:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -433,7 +433,7 @@ The same query optimizations can be generalized for any `ORDER BY` queries with 
 
 Query using range index:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -448,7 +448,7 @@ ORDER BY
 
 Query using composite index:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -467,7 +467,7 @@ In addition, you can use composite indexes to optimize queries with system funct
 
 Query using range index:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -481,7 +481,7 @@ ORDER BY
 
 Query using composite index:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -570,7 +570,7 @@ Here's an example for a composite index that contains an array wildcard:
 
 An example query that can benefit from this composite index is:
 
-```nosql
+```cosmos-db
 SELECT VALUE
   p.id
 FROM
