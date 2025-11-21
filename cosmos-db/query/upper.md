@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a string expression wi
 
 ## Syntax
 
-```nosql
+```cosmos-db
 UPPER(<string_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `UPPER` function is used to convert various string cases to uppercase.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   lowercase: UPPER("adventureworks"),
   uppercase: UPPER("ADVENTUREWORKS"),

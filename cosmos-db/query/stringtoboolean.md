@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a string expression co
 
 ## Syntax
 
-```nosql
+```cosmos-db
 STRINGTOBOOLEAN(<string_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `STRINGTOBOOLEAN` function is used to parse various string values into booleans.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   parseBooleanString: STRINGTOBOOLEAN("true"),
   parseWithPrefix: STRINGTOBOOLEAN("true  "),

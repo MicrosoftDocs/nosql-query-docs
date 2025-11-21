@@ -12,7 +12,7 @@ The `ST_ISVALID` function returns a boolean indicating if a GeoJSON object is va
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ST_ISVALID(<spatial_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ST_ISVALID` function is used to check the validity of multiple GeoJSON objects.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   valid: ST_ISVALID({ 
       "type": "Point",

@@ -10,7 +10,7 @@ The `CONTAINS` function returns a boolean indicating whether the first string ex
 
 ## Syntax
 
-```nosql
+```cosmos-db
 CONTAINS(<string_expr_1>, <string_expr_2> [, <bool_expr>])
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `CONTAINS` function is used to check for substrings in a string.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   containsPrefix: CONTAINS("AdventureWorks", "Adventure"), 
   containsSuffix: CONTAINS("AdventureWorks", "Works"),

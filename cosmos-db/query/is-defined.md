@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns true if the property h
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IS_DEFINED(<expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `IS_DEFINED` function is used to check for the presence of a property within a JSON document.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   isDefined: IS_DEFINED({ "quantity" : 5 }.quantity),
   isNotDefined: IS_DEFINED({ "quantity" : 5 }.name)

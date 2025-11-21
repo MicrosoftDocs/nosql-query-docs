@@ -10,7 +10,7 @@ The `DATETIMEDIFF` function returns the difference, as a signed integer, of the 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DATETIMEDIFF(<date_time_part>, <start_date_time>, <end_date_time>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `DATETIMEDIFF` function is used to calculate the difference between two dates in years, months, days, hours, and seconds.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   diffPastYears: DATETIMEDIFF("yyyy", "2019-02-04T16:00:00.0000000", "2018-03-05T05:00:00.0000000"),
   diffPastMonths: DATETIMEDIFF("mm", "2019-02-04T16:00:00.0000000", "2018-03-05T05:00:00.0000000"),

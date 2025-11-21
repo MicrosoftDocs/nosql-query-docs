@@ -10,7 +10,7 @@ The `GROUP BY` clause collects rows that have the same values into summary rows.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 GROUP BY <expression>
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `GROUP BY` clause is used to group employees by their software development language.
 
-```nosql
+```cosmos-db
 SELECT 
   e.capabilities.softwareDevelopment AS developmentLang
 FROM

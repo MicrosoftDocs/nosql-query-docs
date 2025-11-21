@@ -10,7 +10,7 @@ The `ENDSWITH` function returns a boolean indicating whether a string ends with 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ENDSWITH(<string_expr_1>, <string_expr_2> [, <bool_expr>])
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ENDSWITH` function is used to check if a string ends with various suffixes and case options.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   endsWithWrongSuffix: ENDSWITH("AdventureWorks", "Adventure"),
   endsWithCorrectSuffix: ENDSWITH("AdventureWorks", "Works"),

@@ -10,7 +10,7 @@ The `ARRAY_CONTAINS_ALL` function returns a boolean indicating whether the array
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ARRAY_CONTAINS_ALL(<array_expr>, <expr> [, exprN])
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ARRAY_CONTAINS_ALL` function is used to check for specific values or objects in an array.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   matchesEntireArray: ARRAY_CONTAINS_ALL([1, true, "3", [1,2,3]], 1, true, "3", [1,2,3]),
   matchesSomeValues: ARRAY_CONTAINS_ALL([1, 2, 3, 4], 2, 3, 4, 5),

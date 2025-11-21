@@ -10,7 +10,7 @@ The `POWER` function returns the value of the specified expression multipled by 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 POWER(<numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `POWER` function is used to raise numbers to various powers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   oneFirstPower: POWER(1, 1),
   twoSquared: POWER(2, 2),

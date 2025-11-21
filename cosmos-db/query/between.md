@@ -12,7 +12,7 @@ You can use the BETWEEN keyword with a WHERE clause to express queries that filt
 
 ## Syntax
 
-```nosql
+```cosmos-db
 <numeric_expr> BETWEEN <numeric_expr_lower_bound> AND <numeric_expr_upper_bound>
 ```
 
@@ -63,7 +63,7 @@ Consider this sample set of documents within the `Products` collection for these
 
 In this example, the `BETWEEN` keyword is used to filter products within a specific price range. The range is inclusive of the lower and upper bounds.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   p.name
 FROM
@@ -84,7 +84,7 @@ WHERE
 
 In this example, the `BETWEEN` keyword is used to evaluate whether each product's price falls within a specific range by using the keyword in the `SELECT` clause. The result includes the product name and a boolean indicating if the price is within the range.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   (p.price BETWEEN 10 AND 20) AS lowPrice

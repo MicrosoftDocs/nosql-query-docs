@@ -10,7 +10,7 @@ Formats a datetime value based on the specified format string.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DATETIMEFORMAT(<date_time>, <string_expr>)  
 ```  
 
@@ -29,7 +29,7 @@ Returns a string expression.
 
 The following example shows different formatting options for datetime values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": DATETIMEFORMAT("2024-10-10 14:40:20", "yyyyMMdd"),
     "case2": DATETIMEFORMAT("2024-10-10 14:40:20", "yyyy-MM-dd [HH:mm:ss]"),

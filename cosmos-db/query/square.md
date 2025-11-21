@@ -12,7 +12,7 @@ The `SQUARE` function returns the square of a numeric value in Azure Cosmos DB f
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SQUARE(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `SQUARE` function is used to return the squares of various numbers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   squareZero: SQUARE(0),
   squareOne: SQUARE(1),

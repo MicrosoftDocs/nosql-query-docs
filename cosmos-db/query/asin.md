@@ -10,7 +10,7 @@ The `ASIN` function calculates the trigonometric arcsine of the specified numeri
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ASIN(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ASIN` function is used to calculate the arcsine of -1.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   arcsine: ACOS(-1)
 }

@@ -10,7 +10,7 @@ The `COT` function calculates the trigonometric cotangent of the specified angle
 
 ## Syntax
 
-```nosql
+```cosmos-db
 COT(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `COT` function is used to calculate the cotangent of 124.1332 radians.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   cotangent: COT(124.1332)
 }

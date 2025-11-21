@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns the trigonometric tang
 
 ## Syntax
 
-```nosql
+```cosmos-db
 TAN(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `TAN` function is used to calculate the tangent of various angles.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   tangentSquareRootPi: TAN(PI()/2),
   tangentArbitraryNumber: TAN(124.1332)

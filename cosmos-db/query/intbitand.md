@@ -10,7 +10,7 @@ The `INTBITAND` function returns a comparison of the bits of each operand using 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTBITAND(<int_expr_1>, <int_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTBITAND` function is used to perform a bitwise AND operation.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   compareNumbers: INTBITAND(15, 25),
   compareZero: INTBITAND(15, 0),

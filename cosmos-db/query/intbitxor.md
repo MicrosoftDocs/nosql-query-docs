@@ -10,7 +10,7 @@ The `INTBITXOR` function returns the result of a bitwise exclusive OR operation 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTBITXOR(<numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTBITXOR` function is used to perform a bitwise exclusive OR operation.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   exclusiveOr: INTBITXOR(56, 100),
   exclusiveOrSame: INTBITXOR(56, 56),

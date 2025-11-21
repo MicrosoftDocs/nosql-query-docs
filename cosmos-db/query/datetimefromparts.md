@@ -10,7 +10,7 @@ The `DATETIMEFROMPARTS` function returns a date and time string value constructe
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DATETIMEFROMPARTS(<numeric_year>, <numeric_month>, <numeric_day> [, <numeric_hour>] [, <numeric_minute>] [, <numeric_second>] [, <numeric_second_fraction>])
 ```
 
@@ -38,7 +38,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `DATETIMEFROMPARTS` function is used to construct date and time values from various arguments.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   constructMinArguments: DATETIMEFROMPARTS(2017, 4, 20),
   constructMinEquivalent: DATETIMEFROMPARTS(2017, 4, 20, 0, 0, 0, 0),

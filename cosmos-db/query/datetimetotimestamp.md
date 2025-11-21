@@ -10,7 +10,7 @@ The `DATETIMETOTIMESTAMP` function converts the specified date and time to a num
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DATETIMETOTIMESTAMP(<date_time>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `DATETIMETOTIMESTAMP` function is used to convert a date and time to a timestamp.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   timestamp: DATETIMETOTIMESTAMP("2015-05-19T12:00:00.0000000")
 }

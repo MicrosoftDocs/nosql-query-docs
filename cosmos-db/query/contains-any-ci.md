@@ -10,7 +10,7 @@ Returns a boolean value indicating if the source string contains any strings fro
 
 ## Syntax
 
-```nosql
+```cosmos-db
 CONTAINS_ANY_CI(<string_expr>, <expr1>, ... [,<exprN>])  
 ```  
 
@@ -30,7 +30,7 @@ Returns a Boolean expression.
 
 The following example shows various uses of the CONTAINS_ANY_CI function with case-insensitive matching.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": CONTAINS_ANY_CI("Have a nice day!", "have", "nice", "day!"),
     "case2": CONTAINS_ANY_CI("Have a nice day!", "HAVE", "NICE", "DAY!"),

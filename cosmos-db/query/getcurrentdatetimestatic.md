@@ -10,7 +10,7 @@ The `GETCURRENTDATETIMESTATIC` function returns the same UTC date and time value
 
 ## Syntax
 
-```nosql
+```cosmos-db
 GETCURRENTDATETIMESTATIC()
 ```
 
@@ -26,7 +26,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `GETCURRENTDATETIMESTATIC` function is used to return the same timestamp for all items, while `GetCurrentDateTime` returns a different value for each item.
 
-```nosql
+```cosmos-db
 SELECT
   i.id,
   i.pk AS partitionKey,

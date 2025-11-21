@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a portion of a string 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SUBSTRING(<string_expr>, <numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -36,7 +36,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `SUBSTRING` function is used to return substrings with various lengths and starting positions.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   substringPrefix: SUBSTRING("AdventureWorks", 0, 9),
   substringSuffix: SUBSTRING("AdventureWorks", 9, 5),

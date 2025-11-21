@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a boolean indicating i
 
 ## Syntax
 
-```nosql
+```cosmos-db
 IS_FINITE_NUMBER(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `IS_FINITE_NUMBER` function is demonstrated with various static values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   finiteValue: IS_FINITE_NUMBER(1234.567),
   infiniteValue: IS_FINITE_NUMBER(8.9 / 0.0),

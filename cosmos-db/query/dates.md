@@ -70,7 +70,7 @@ IQueryable<Order> orders = container
 
 The LINQ query is translated to the following SQL statement and executed on Cosmos DB:
 
-```nosql
+```cosmos-db
 SELECT
     *
 FROM

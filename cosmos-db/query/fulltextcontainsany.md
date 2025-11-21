@@ -10,7 +10,7 @@ The `FULLTEXTCONTAINSANY` function returns a boolean indicating whether any of t
 
 ## Syntax
 
-```nosql
+```cosmos-db
 FULLTEXTCONTAINSANY(<property_path>, <string_expr1>, <string_expr2>, ...)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `FULLTEXTCONTAINSANY` function is used to return all documents that contain either "search phrase" or "keyword" in the path `c.text`, projects the path, and returns only the TOP 10.
 
-```nosql
+```cosmos-db
 SELECT TOP 10 c.text
 FROM c
 WHERE FULLTEXTCONTAINSANY(c.text, "search phrase", "keyword")
@@ -48,7 +48,7 @@ WHERE FULLTEXTCONTAINSANY(c.text, "search phrase", "keyword")
 
 In this example, the `FULLTEXTCONTAINSANY` function is used to return all documents that contain "keyword1", "keyword2", or "keyword3" in the path `c.text`.
 
-```nosql
+```cosmos-db
 SELECT *
 FROM c
 WHERE FULLTEXTCONTAINSANY(c.text, "keyword1", "keyword2", "keyword3")

@@ -10,7 +10,7 @@ The `FROM` clause identifies the source of data for a query.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 FROM <from_specification>
 
 <from_specification> ::= <from_source> {[ JOIN <from_source>][,...n]}
@@ -44,7 +44,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `FROM` clause is used to specify the current container as a source, give it a unique name, and then alias it. The alias is then used to project specific fields in the query results.
 
-```nosql
+```cosmos-db
 SELECT VALUE 
   p.name
 FROM
@@ -63,7 +63,7 @@ FROM
 
 In this example, the `FROM` clause can also reduce the source to a smaller subset. To enumerate only a subtree in each item, the subroot can become the source. An array or object subroot can be used as a source.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   s
 FROM

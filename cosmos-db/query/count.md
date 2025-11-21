@@ -10,7 +10,7 @@ The `COUNT` function returns the count of the values in the expression.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 COUNT(<scalar_expr>)
 ```
 
@@ -79,7 +79,7 @@ Consider this sample set of documents within the `Products` collection for these
 
 In this example, COUNT is used with a scalar and an expression. Both return `1`.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   countScalar: COUNT(1),
   countExpression: COUNT(2 + 3)
@@ -99,7 +99,7 @@ SELECT VALUE {
 
 In this example, the function counts the number of times the `name` field occurs in filtered data.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   COUNT(p.name)
 FROM
@@ -118,7 +118,7 @@ WHERE
 
 In this example, the function is used to count every item within a container that matches the filter.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   COUNT(1)
 FROM

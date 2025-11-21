@@ -10,7 +10,7 @@ The [`SELECT`](select.md) clause supports scalar expressions. A scalar expressio
 
 ## Syntax
   
-```nosql  
+```cosmos-db  
 <scalar_expression> ::=  
        <constant>
      | input_alias
@@ -58,7 +58,7 @@ The [`SELECT`](select.md) clause supports scalar expressions. A scalar expressio
 
 The most common example of a scalar expression is a math equation.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   ((2 + 11 % 7) - 2) / 2
 ```
@@ -71,7 +71,7 @@ SELECT VALUE
 
 In this next example, the result of the scalar expression is a boolean:
 
-```nosql
+```cosmos-db
 SELECT
   ("Redmond" = "WA") AS isCitySameAsState,
   ("WA" = "WA") AS isStateSameAsState

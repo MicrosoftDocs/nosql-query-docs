@@ -10,7 +10,7 @@ The `ATN2` function calculates the principal value of the arctangent of `y/x`, e
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ATN2(<numeric_expr_y>, <numeric_expr_x>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ATN2` function is used to calculate the arctangent for the specified `x` and `y` components.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   arctangentInRadians: ATN2(35.175643, 129.44)
 }

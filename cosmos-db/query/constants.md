@@ -10,7 +10,7 @@ A constant, also known as a literal or a scalar value, is a symbol that represen
 
 ## Syntax
 
-```nosql
+```cosmos-db
 <constant> ::=  
    <undefined_constant>  
      | <null_constant>   

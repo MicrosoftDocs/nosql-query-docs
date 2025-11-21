@@ -10,7 +10,7 @@ The `EXP` function calculates the exponential value of the specified numeric exp
 
 ## Syntax
 
-```nosql
+```cosmos-db
 EXP(<numeric_expr>)
 ```
 
@@ -32,7 +32,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `EXP` function is used to calculate e raised to various powers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   expontentialZero: EXP(0),
   exponentialTen: EXP(10),

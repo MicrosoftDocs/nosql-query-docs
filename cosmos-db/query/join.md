@@ -44,7 +44,7 @@ Let's look at an example of a self-join within an item. Consider a container wit
 
 What if you need to find products with a specific size? Typically, you would need to write a query that has a filter checking every potential index in the `sizes` array for a value with a prefix. In this example, the query finds all products with a size that ends with `Large`:
 
-```nosql
+```cosmos-db
 SELECT
   *
 FROM
@@ -60,7 +60,7 @@ This technique can become untenable quickly. The complexity or length of the que
 
 In a traditional relational database, the sizes would be separated into a separate table and a cross-table join is performed with a filter applied to the results. In the query language, we can perform a self-join operation within the item using the `JOIN` keyword:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   s.key,
@@ -102,7 +102,7 @@ Let's break down the query. The query now has two aliases: `p` for each product 
 
 Finally, we can use a filter to find the sizes that end with `Large`. Because we used the `JOIN` keyword, our filter is flexible enough to handle any variable number of tags:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   s.key AS size
@@ -178,7 +178,7 @@ A join operation on our sample products and colors creates the following items:
 
 This example NoSQl query uses the `JOIN` keyword to create a cross-product and returns all permutations:
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   c AS color
@@ -215,7 +215,7 @@ JOIN
 
 Just like with the single item, you can apply a filter here to find only items that match a specific tag. For example, this query finds all items with a substring that contains `blue` to meet the initial requirement mentioned earlier in this section.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   c AS color
@@ -242,7 +242,7 @@ WHERE
 
 This query can be refined even further to just return the names of the products that meet the filter. This example doesn't project the color values, but the filter still works as expected:
 
-```nosql
+```cosmos-db
 SELECT VALUE
   p.name
 FROM

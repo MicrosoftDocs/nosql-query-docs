@@ -10,7 +10,7 @@ The `CONCAT` function returns a string that is the result of concatenating multi
 
 ## Syntax
 
-```nosql
+```cosmos-db
 CONCAT(<string_expr_1>, <string_expr_2> [, <string_expr_N>])
 ```
 
@@ -71,7 +71,7 @@ Consider this sample set of documents within the `Products` collection for these
 
 In this example, the `CONCAT` function is used to concatenate two arbitrary strings.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   CONCAT("Ferpal", "Ropes")
 ```
@@ -86,7 +86,7 @@ SELECT VALUE
 
 In this example, the `CONCAT` function is used to concatenate fields from a product in the "heavy-coats" category.
 
-```nosql
+```cosmos-db
 SELECT VALUE
   CONCAT(p.sku, "-", p.detailCategory)
 FROM

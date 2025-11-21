@@ -25,7 +25,7 @@ You can use the following wildcard characters with LIKE:
 
 The `%` character matches any string of zero or more characters. For example, by placing a `%` at the beginning and end of the pattern, the following query returns all items where the specified field contains the phrase as a substring:
 
-```nosql
+```cosmos-db
 SELECT VALUE
     p.name
 FROM
@@ -36,7 +36,7 @@ WHERE
 
 If you only used a `%` character at the end of the pattern, you'd only return items with a description that started with `fruit`:
 
-```nosql
+```cosmos-db
 SELECT VALUE
     p.name
 FROM
@@ -47,7 +47,7 @@ WHERE
 
 Similarly, the wildcard at the start of the pattern indicates that you want to match values with the specified value as a prefix:
 
-```nosql
+```cosmos-db
 SELECT VALUE
     p.name
 FROM
@@ -58,7 +58,7 @@ WHERE
 
 The `NOT` keyword inverses the result of the `LIKE` keyword's expression evaluation. This example returns all items that do **not** match the `LIKE` expression.
 
-```nosql
+```cosmos-db
 SELECT VALUE
     p.name
 FROM
@@ -69,7 +69,7 @@ WHERE
 
 You can search for patterns that include one or more wildcard characters using the `ESCAPE` clause. For example, if you wanted to search for descriptions that contained the string `20%`, you wouldn't want to interpret the `%` as a wildcard character. This example interprets the `^` as the escape character so you can escape a specific instance of `%`.
 
-```nosql
+```cosmos-db
 SELECT VALUE
     p.name
 FROM

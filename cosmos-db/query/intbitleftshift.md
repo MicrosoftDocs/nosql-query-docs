@@ -10,7 +10,7 @@ The `INTBITLEFTSHIFT` function returns the result of a bitwise left shift operat
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTBITLEFTSHIFT(<numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTBITLEFTSHIFT` function is used to perform a bitwise left shift operation.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   shiftInteger: INTBITLEFTSHIFT(16, 4),
   shiftDecimal: INTBITLEFTSHIFT(16, 0.4)

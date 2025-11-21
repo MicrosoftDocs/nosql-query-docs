@@ -10,7 +10,7 @@ The `SETUNION` function returns a set of expressions containing all expressions 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SetUnion(<array_expr_1>, <array_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `SetUnion` function is used with static arrays to demonstrate the union functionality.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   simpleUnion: SetUnion([1, 2, 3, 4], [3, 4, 5, 6]),
   emptyUnion: SetUnion([1, 2, 3, 4], []),
@@ -57,7 +57,7 @@ SELECT VALUE {
 
 In this example, the function returns the union of two array properties as a new property.
 
-```nosql
+```cosmos-db
 SELECT
   p.name,
   SetUnion(p.colors[0].values, p.colors[1].values) AS allColors

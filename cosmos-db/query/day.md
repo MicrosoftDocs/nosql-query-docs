@@ -10,7 +10,7 @@ Returns the value of the day for the provided date and time.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DAY(<date_time>)  
 ```  
 
@@ -28,7 +28,7 @@ Returns a numeric value that is a positive integer.
 
 The following example shows the results of using this function on different date values.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
     "case1": DAY("2024-01-10"),
     "case2": DAY("2000-12-12T10:00:00"),

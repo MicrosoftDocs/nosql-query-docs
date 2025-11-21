@@ -10,7 +10,7 @@ The `ARRAY_SLICE` function returns a subset of an array expression using the ind
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ARRAY_SLICE(<array_expr>, <numeric_expr_1> [, <numeric_expr_2>])
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ARRAY_SLICE` function is used to get subsets of an array.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   sliceFromStart: ARRAY_SLICE(["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf"], 0),
   sliceFromSecond: ARRAY_SLICE(["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf"], 1),

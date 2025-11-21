@@ -10,7 +10,7 @@ The `INTMOD` function returns the remainder of dividing the first integer value 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTMOD(<numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTMOD` function is used to return the remainder of two numbers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   mod: INTMOD(12, 5),
   positiveResult: INTMOD(12, -5),

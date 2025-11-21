@@ -10,7 +10,7 @@ The `GETCURRENTTIMESTAMPSTATIC` function returns a static timestamp value (milli
 
 ## Syntax
 
-```nosql
+```cosmos-db
 GETCURRENTTIMESTAMPSTATIC()
 ```
 
@@ -26,7 +26,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `GETCURRENTTIMESTAMPSTATIC` function returns the same static timestamp for items within the same partition.
 
-```nosql
+```cosmos-db
 SELECT
   i.id,
   i.pk AS partitionKey,

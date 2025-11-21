@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a string value repeate
 
 ## Syntax
 
-```nosql
+```cosmos-db
 REPLICATE(<string_expr>, <numeric_expr>)
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the function builds a repeating string.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   catchPhrase: REPLICATE("Cosmic", 3)
 }

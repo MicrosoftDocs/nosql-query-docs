@@ -10,7 +10,7 @@ The `DATETIMEADD` function returns a date and time string value that is the resu
 
 ## Syntax
 
-```nosql
+```cosmos-db
 DATETIMEADD(<date_time_part>, <numeric_expr>, <date_time>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `DATETIMEADD` function is used to add and subtract years, months, days, and hours from a date.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   addOneYear: DATETIMEADD("yyyy", 1, "2020-07-03T00:00:00.0000000"),
   addOneMonth: DATETIMEADD("mm", 1, "2020-07-03T00:00:00.0000000"),

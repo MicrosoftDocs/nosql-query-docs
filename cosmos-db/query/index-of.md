@@ -10,7 +10,7 @@ The `INDEX_OF` function returns the index of the first occurrence of a string.
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INDEX_OF(<string_expr_1>, <string_expr_2> [, <numeric_expr>])
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INDEX_OF` function is used to find the index of various substrings.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   indexOfFirstLetter: INDEX_OF("AdventureWorks", "A"),
   indexOfLastLetter: INDEX_OF("AdventureWorks", "s"),

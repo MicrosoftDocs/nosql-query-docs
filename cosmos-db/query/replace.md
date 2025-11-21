@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns a string with all occu
 
 ## Syntax
 
-```nosql
+```cosmos-db
 REPLACE(<string_expr_1>, <string_expr_2>, <string_expr_3>)
 ```
 
@@ -36,7 +36,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, a static value is replaced in the string.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   replaceSubstring: REPLACE("AdventureWorksLT", "LT", "LT2")
 }

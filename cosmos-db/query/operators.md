@@ -27,7 +27,7 @@ The following table describes the bitwise operations supported in the API for No
 
 The following query demonstrates each bitwise operator:
 
-```nosql
+```cosmos-db
 SELECT 
     (100 >> 2) AS rightShift,
     (100 << 2) AS leftShift,
@@ -75,7 +75,7 @@ For comparison operators such as `>``, `>=``, `!=``, `<``, and `<=``, comparison
 
 The following query compares a number and string value, which produces `undefined``. Therefore, the filter doesn't include any results:
 
-```nosql
+```cosmos-db
 SELECT
     *
 FROM
@@ -187,7 +187,7 @@ This example uses items in a container that contain multiple metadata properties
 
 This query evaluates the `onSale` expression, which is equivalent to `onSale = true``. The query returns the price multiplied by `0.85` if `true``, or the price unchanged if `false``:
 
-```nosql
+```cosmos-db
 SELECT
     p.name,
     p.price AS subtotal,
@@ -220,7 +220,7 @@ This query returns:
 
 You can also nest calls to the `?` operator. This example adds an extra calculation based on a second property (``onCloseout``):
 
-```nosql
+```cosmos-db
 SELECT
     p.name,
     p.price AS subtotal,
@@ -261,7 +261,7 @@ Use the `??` operator to efficiently check for a property in an item when queryi
 
 This query assumes that any item where the `collapsible` property isn't present, isn't collapsible:
 
-```nosql
+```cosmos-db
 SELECT
     p.name,
     p.collapsible ?? false AS isCollapsible

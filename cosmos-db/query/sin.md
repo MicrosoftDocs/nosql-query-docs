@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns the trigonometric sine
 
 ## Syntax
 
-```nosql
+```cosmos-db
 SIN(<numeric_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `SIN` function is used to calculate the sine of a specified angle.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   sine: SIN(45.175643)
 }

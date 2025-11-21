@@ -10,7 +10,7 @@ The `ARRAY_CONTAINS` function returns a boolean indicating whether the array con
 
 ## Syntax
 
-```nosql
+```cosmos-db
 ARRAY_CONTAINS(<array_expr>, <expr> [, <bool_expr>])
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `ARRAY_CONTAINS` function is used to check for the presence of values and objects in arrays.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   containsItem: ARRAY_CONTAINS(["coats", "jackets", "sweatshirts"], "coats"),
   missingItem: ARRAY_CONTAINS(["coats", "jackets", "sweatshirts"], "hoodies"),

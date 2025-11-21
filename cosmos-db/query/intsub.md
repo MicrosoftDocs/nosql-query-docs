@@ -10,7 +10,7 @@ The `INTSUB` function returns the result of subtracting the second integer value
 
 ## Syntax
 
-```nosql
+```cosmos-db
 INTSUB(<numeric_expr_1>, <numeric_expr_2>)
 ```
 
@@ -33,7 +33,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `INTSUB` function is used to subtract two numbers.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   negativeResult: INTSUB(25, 50),
   positiveResult: INTSUB(25, 15),

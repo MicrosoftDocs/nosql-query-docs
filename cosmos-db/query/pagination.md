@@ -55,7 +55,7 @@ You can't use continuation tokens for queries with [`GROUP BY`](group-by.md) or 
 
 Here's an example of a query with `DISTINCT` that could use a continuation token:
 
-```nosql
+```cosmos-db
 SELECT DISTINCT VALUE
     e.name
 FROM

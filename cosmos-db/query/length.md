@@ -12,7 +12,7 @@ An Azure Cosmos DB for NoSQL system function that returns the numeric length of 
 
 ## Syntax
 
-```nosql
+```cosmos-db
 LENGTH(<string_expr>)
 ```
 
@@ -34,7 +34,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `LENGTH` function is used to return the length of a static string.
 
-```nosql
+```cosmos-db
 SELECT VALUE {
   stringValue: LENGTH("AdventureWorks"),
   emptyString: LENGTH("")
