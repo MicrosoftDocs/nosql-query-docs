@@ -1,12 +1,13 @@
 ### YamlMime:Hub
-title: DocumentDB (in Azure)
+title: DocumentDB (in Azure) documentation
 summary: Learn about the open-source DocumentDB platform and query language used by Azure DocumentDB.
 brand: azure
 metadata:
-  title: DocumentDB (in Azure)
+  title: DocumentDB (in Azure) Documentation
+  titleSuffix:
   description: Learn about the open-source DocumentDB platform and query language used by Azure DocumentDB.
   ms.topic: hub-page
-  ms.date: 11/07/2025
+  ms.date: 12/02/2025
   ai-usage: ai-generated
 highlightedContent:
   items:
