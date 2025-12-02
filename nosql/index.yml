@@ -32,7 +32,7 @@ highlightedContent:
     - title: Cosmos DB Query Language
       itemType: reference
       url: /cosmos-db/query/
-    - title: Generative AI with Cosmos DB
+    - title: Generative AI with Azure Cosmos DB
       itemType: concept
       url: /azure/cosmos-db/gen-ai/why-cosmos-ai
 productDirectory:
