@@ -1,11 +1,12 @@
 ### YamlMime:Hub
-title: NoSQL Documentation
+title: NoSQL documentation
 summary: NoSQL databases are designed to handle large volumes of data and provide flexible schemas, making them suitable for modern applications. Use Microsoft's NoSQL offerings to build scalable solutions that meet your growing data estate needs.
 brand: azure
 metadata:
-  title: Documentation
+  title: NoSQL Documentation
+  titleSuffix:
   ms.topic: hub-page
-  ms.date: 11/10/2025
+  ms.date: 12/02/2025
   ai-usage: ai-assisted
 highlightedContent:
   items:
