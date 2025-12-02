@@ -5,13 +5,13 @@ brand: azure
 metadata:
   title: NoSQL documentation
   titleSuffix:
-  description: Explore Microsoft's NoSQL database offerings including Azure Cosmos DB for NoSQL, Azure DocumentDB, Cosmos DB in Microsoft Fabric, and Azure Redis. Learn how to build scalable, high-performance applications with flexible data models.
+  description: Explore Microsoft's NoSQL database offerings including Azure Cosmos DB, Azure DocumentDB, Cosmos DB in Microsoft Fabric, and Azure Redis. Learn how to build scalable, high-performance applications with flexible data models.
   ms.topic: hub-page
   ms.date: 12/02/2025
   ai-usage: ai-assisted
 highlightedContent:
   items:
-    - title: Azure Cosmos DB for NoSQL
+    - title: Azure Cosmos DB
       itemType: overview
       url: /azure/cosmos-db/nosql/overview
     - title: Azure DocumentDB
@@ -39,30 +39,30 @@ productDirectory:
   title: NoSQL Database Offerings
   summary: Explore Microsoft's comprehensive suite of NoSQL database services designed for different workloads and scenarios.
   items:
-    - title: Azure Cosmos DB for NoSQL
+    - title: Azure Cosmos DB
       summary: Fully managed cloud database service with global distribution, multi-region replication, and fine-grained control over throughput and indexing.
-      imageSrc: ./media/index/azure.svg
+      imageSrc: media/index/azure.svg
       url: /azure/cosmos-db/nosql/overview
     - title: Azure DocumentDB
-      summary: Fully managed MongoDB-compatible database service with vCore architecture, vector search capabilities, and native Azure integration.
-      imageSrc: ./media/index/azure.svg
+      summary: Fully managed MongoDB-compatible database service with vector search capabilities and native Azure integration.
+      imageSrc: media/index/azure.svg
       url: /azure/documentdb/overview
     - title: Cosmos DB in Microsoft Fabric
       summary: AI-optimized NoSQL database tightly integrated into Fabric with autonomous defaults, OneLake integration, and built-in AI capabilities.
-      imageSrc: ./media/index/fabric.svg
+      imageSrc: media/index/fabric.svg
       url: /fabric/database/cosmos-db/overview
     - title: Azure Managed Redis
       summary: Fully managed Redis service for high-performance caching and data storage with enterprise-grade security and scalability.
-      imageSrc: ./media/index/azure.svg
+      imageSrc: media/index/azure.svg
       url: /azure/redis/
     - title: Azure Cache for Redis
       summary: Secure data caching and messaging broker service for low-latency access to frequently accessed data.
-      imageSrc: ./media/index/azure.svg
+      imageSrc: media/index/azure.svg
       url: /azure/azure-cache-for-redis/
 conceptualContent:
   sections:
-    - title: Azure Cosmos DB for NoSQL
-      summary: Build globally distributed, scalable applications with Azure Cosmos DB for NoSQL using various programming languages and frameworks.
+    - title: Azure Cosmos DB
+      summary: Build globally distributed, scalable applications with Azure Cosmos DB using various programming languages and frameworks.
       items:
         - title: Get started
           summary: Quickly deploy Azure Cosmos DB applications with step-by-step quickstarts for popular programming languages.
@@ -95,9 +95,9 @@ conceptualContent:
             url: /azure/cosmos-db/
             text: See more
         - title: Tools and solutions
-          summary: Enhance your development experience with tools, extensions, and pre-built solution accelerators.
+          summary: Enhance your development experience with tools, extensions, and prebuilt solution accelerators.
           links:
-            - text: VS Code extension
+            - text: Visual Studio Code extension
               itemType: how-to-guide
               url: /azure/cosmos-db/visual-studio-code-extension?pivots=api-nosql
             - text: Solution accelerators
@@ -107,7 +107,7 @@ conceptualContent:
               itemType: concept
               url: /azure/cosmos-db/gen-ai/why-cosmos-ai
         - title: Core concepts
-          summary: Understand the fundamental concepts and features of Azure Cosmos DB for NoSQL to effectively design and manage your databases.
+          summary: Understand the fundamental concepts and features of Azure Cosmos DB to effectively design and manage your databases.
           links:
             - text: Request units (RUs)
               itemType: concept
@@ -134,7 +134,7 @@ conceptualContent:
               itemType: concept
               url: /cosmos-db/hybrid-search
     - title: Azure DocumentDB
-      summary: Leverage MongoDB compatibility with Azure DocumentDB for seamless migration and modern application development.
+      summary: Use MongoDB compatibility with Azure DocumentDB for seamless migration and modern application development.
       items:
         - title: Get started
           summary: Start building MongoDB-compatible applications with Azure DocumentDB using various programming languages.
@@ -197,7 +197,7 @@ conceptualContent:
             url: /fabric/database/cosmos-db/
             text: See more
         - title: Query and analyze data
-          summary: Query cross-database data and create powerful reports with integrated analytics capabilities.
+          summary: Query data across databases and create powerful reports with integrated analytics capabilities.
           links:
             - text: Query cross-database data
               itemType: how-to-guide
@@ -225,19 +225,19 @@ tools:
   summary: Learn about the query languages and APIs available for Microsoft's NoSQL database offerings.
   items:
     - title: Cosmos DB Query Language
-      imageSrc: ./media/index/azure.svg
+      imageSrc: media/index/azure.svg
       url: /cosmos-db/query/
     - title: MongoDB Query Language (MQL)
-      imageSrc: ./media/index/azure.svg
+      imageSrc: media/index/azure.svg
       url: https://documentdb.io/docs/reference
     - title: DocumentDB Open Source
-      imageSrc: ./media/index/azure.svg
+      imageSrc: media/index/azure.svg
       url: https://documentdb.io
     - title: DocumentDB on GitHub
-      imageSrc: ./media/index/azure.svg
+      imageSrc: media/index/azure.svg
       url: https://github.com/documentdb/documentdb
     - title: Redis Open Source
-      imageSrc: ./media/index/azure.svg
+      imageSrc: media/index/azure.svg
       url: https://redis.io
 additionalContent:
   sections:
@@ -260,7 +260,7 @@ additionalContent:
               url: https://documentdb.io/docs
             - text: Redis Open Source
               url: https://redis.io
-        - title: Additional resources
+        - title: Extra resources
           links:
             - text: Azure Architecture Center
               url: /azure/architecture/
