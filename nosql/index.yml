@@ -1,78 +1,271 @@
 ### YamlMime:Hub
-title: NoSQL Documentation
+title: NoSQL documentation
 summary: NoSQL databases are designed to handle large volumes of data and provide flexible schemas, making them suitable for modern applications. Use Microsoft's NoSQL offerings to build scalable solutions that meet your growing data estate needs.
 brand: azure
 metadata:
-  title: Documentation
+  title: NoSQL documentation
+  titleSuffix:
+  description: Explore Microsoft's NoSQL database offerings including Azure Cosmos DB for NoSQL, Azure DocumentDB, Cosmos DB in Microsoft Fabric, and Azure Redis. Learn how to build scalable, high-performance applications with flexible data models.
   ms.topic: hub-page
-  ms.date: 11/10/2025
+  ms.date: 12/02/2025
   ai-usage: ai-assisted
 highlightedContent:
   items:
     - title: Azure Cosmos DB for NoSQL
       itemType: overview
-      url: /azure/cosmos-db/nosql
-    - title: Cosmos DB in Microsoft Fabric
-      itemType: whats-new
-      url: https://blog.fabric.microsoft.com/blog/22987
-    - title: DocumentDB
-      itemType: reference
-      url: https://github.com/microsoft/documentdb
+      url: /azure/cosmos-db/nosql/overview
     - title: Azure DocumentDB
       itemType: overview
-      url: /azure/documentdb
-    - title: Azure Redis
+      url: /azure/documentdb/overview
+    - title: Cosmos DB in Microsoft Fabric
       itemType: overview
-      url: /azure/redis
-    - title: Azure HDInsight
+      url: /fabric/database/cosmos-db/overview
+    - title: DocumentDB Open Source
+      itemType: reference
+      url: https://documentdb.io
+    - title: Azure Managed Redis
       itemType: overview
-      url: /azure/hdinsight
-additionalContent:
+      url: /azure/redis/
+    - title: Azure Cache for Redis
+      itemType: overview
+      url: /azure/azure-cache-for-redis/
+    - title: Cosmos DB Query Language
+      itemType: reference
+      url: /cosmos-db/query/
+    - title: Generative AI with Cosmos DB
+      itemType: concept
+      url: /azure/cosmos-db/gen-ai/why-cosmos-ai
+productDirectory:
+  title: NoSQL Database Offerings
+  summary: Explore Microsoft's comprehensive suite of NoSQL database services designed for different workloads and scenarios.
+  items:
+    - title: Azure Cosmos DB for NoSQL
+      summary: Fully managed cloud database service with global distribution, multi-region replication, and fine-grained control over throughput and indexing.
+      imageSrc: ./media/index/azure.svg
+      url: /azure/cosmos-db/nosql/overview
+    - title: Azure DocumentDB
+      summary: Fully managed MongoDB-compatible database service with vCore architecture, vector search capabilities, and native Azure integration.
+      imageSrc: ./media/index/azure.svg
+      url: /azure/documentdb/overview
+    - title: Cosmos DB in Microsoft Fabric
+      summary: AI-optimized NoSQL database tightly integrated into Fabric with autonomous defaults, OneLake integration, and built-in AI capabilities.
+      imageSrc: ./media/index/fabric.svg
+      url: /fabric/database/cosmos-db/overview
+    - title: Azure Managed Redis
+      summary: Fully managed Redis service for high-performance caching and data storage with enterprise-grade security and scalability.
+      imageSrc: ./media/index/azure.svg
+      url: /azure/redis/
+    - title: Azure Cache for Redis
+      summary: Secure data caching and messaging broker service for low-latency access to frequently accessed data.
+      imageSrc: ./media/index/azure.svg
+      url: /azure/azure-cache-for-redis/
+conceptualContent:
   sections:
     - title: Azure Cosmos DB for NoSQL
-      summary: Azure Cosmos DB for NoSQL is a fully managed NoSQL database service that offers high availability, low latency, and global distribution.
+      summary: Build globally distributed, scalable applications with Azure Cosmos DB for NoSQL using various programming languages and frameworks.
       items:
         - title: Get started
+          summary: Quickly deploy Azure Cosmos DB applications with step-by-step quickstarts for popular programming languages.
           links:
             - text: Overview
+              itemType: overview
               url: /azure/cosmos-db/nosql/overview
-            - text: Deploy a .NET application template
+            - text: Build an app with C#/.NET
+              itemType: quickstart
               url: /azure/cosmos-db/nosql/quickstart-dotnet
-            - text: Deploy a Node.js application template
-              url: /azure/cosmos-db/nosql/quickstart-nodejs
-            - text: Deploy a Python application template
+            - text: Build an app with Python
+              itemType: quickstart
               url: /azure/cosmos-db/nosql/quickstart-python
-        - title: Samples
+            - text: Build an app with TypeScript/Node.js
+              itemType: quickstart
+              url: /azure/cosmos-db/nosql/quickstart-nodejs?pivots=programming-language-ts
+            - text: Build an app with JavaScript/Node.js
+              itemType: quickstart
+              url: /azure/cosmos-db/nosql/quickstart-nodejs?pivots=programming-language-js
+            - text: Build an app with Java
+              itemType: quickstart
+              url: /azure/cosmos-db/nosql/quickstart-java
+            - text: Build an app with Go
+              itemType: quickstart
+              url: /azure/cosmos-db/nosql/quickstart-go
+            - text: Build an app with Rust
+              itemType: quickstart
+              url: /azure/cosmos-db/nosql/quickstart-rust
+          footerLink:
+            url: /azure/cosmos-db/
+            text: See more
+        - title: Tools and solutions
+          summary: Enhance your development experience with tools, extensions, and pre-built solution accelerators.
           links:
+            - text: VS Code extension
+              itemType: how-to-guide
+              url: /azure/cosmos-db/visual-studio-code-extension?pivots=api-nosql
             - text: Solution accelerators
+              itemType: sample
               url: /azure/cosmos-db/solutions?pivots=api-nosql
+            - text: Generative AI solutions
+              itemType: concept
+              url: /azure/cosmos-db/gen-ai/why-cosmos-ai
+        - title: Core concepts
+          summary: Understand the fundamental concepts and features of Azure Cosmos DB for NoSQL to effectively design and manage your databases.
+          links:
+            - text: Request units (RUs)
+              itemType: concept
+              url: /cosmos-db/request-units
+            - text: Indexing
+              itemType: concept
+              url: /cosmos-db/indexing
+            - text: Indexing policies
+              itemType: concept
+              url: /cosmos-db/indexing-policies
+            - text: Time-to-live (TTL)
+              itemType: concept
+              url: /cosmos-db/time-to-live
+            - text: Autoscale throughput
+              itemType: concept
+              url: /cosmos-db/autoscale-throughput
+            - text: Vector search
+              itemType: concept
+              url: /cosmos-db/index-vector-data
+            - text: Full text indexing
+              itemType: concept
+              url: /cosmos-db/full-text-indexing
+            - text: Hybrid search
+              itemType: concept
+              url: /cosmos-db/hybrid-search
     - title: Azure DocumentDB
-      summary: Azure DocumentDB is a managed MongoDB-compatible database service with flexible scaling and high availability.
+      summary: Leverage MongoDB compatibility with Azure DocumentDB for seamless migration and modern application development.
       items:
         - title: Get started
+          summary: Start building MongoDB-compatible applications with Azure DocumentDB using various programming languages.
           links:
             - text: Overview
+              itemType: overview
               url: /azure/documentdb/overview
-        - title: Query data
+            - text: Add vector search with Python
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-python-vector-search
+            - text: Add vector search with TypeScript/Node.js
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-nodejs-vector-search
+            - text: Add vector search with C#/.NET
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-dotnet-vector-search
+          footerLink:
+            url: /azure/documentdb/
+            text: See more
+        - title: Tools and migration
+          summary: Migrate existing MongoDB applications and optimize performance with Azure DocumentDB tools.
           links:
-            - text: MongoDB Query Language (MQL) operators
-              url: /azure/documentdb/operators/
-            - text: MongoDB Query Language (MQL) commands
-              url: /azure/documentdb/commands/
+            - text: Migrate with Visual Studio Code
+              itemType: how-to-guide
+              url: /azure/documentdb/how-to-migrate-vs-code-extension
+            - text: Tune performance with Index Advisor
+              itemType: how-to-guide
+              url: /azure/documentdb/index-advisor
+        - title: Industry solutions
+          summary: Discover industry-specific solutions and patterns for Azure DocumentDB implementations.
+          links:
+            - text: Retail and e-commerce solutions
+              itemType: architecture
+              url: /azure/documentdb/solutions-retail
+            - text: Financial services solutions
+              itemType: architecture
+              url: /azure/documentdb/solutions-finance
+            - text: Healthcare solutions
+              itemType: architecture
+              url: /azure/documentdb/solutions-healthcare
     - title: Cosmos DB in Microsoft Fabric
-      summary: Cosmos DB in Microsoft Fabric provides a unified data platform for building and deploying applications with NoSQL capabilities.
+      summary: Integrate Cosmos DB seamlessly with Microsoft Fabric for unified analytics and AI-powered insights.
       items:
         - title: Get started
+          summary: Create and configure Cosmos DB databases in Microsoft Fabric with step-by-step guides.
           links:
             - text: Overview
+              itemType: overview
               url: /fabric/database/cosmos-db/overview
-            - text: Query cross-database data
-              url: /fabric/database/cosmos-db/how-to-query-cross-database
-        - title: Integrate
+            - text: Create a database
+              itemType: quickstart
+              url: /fabric/database/cosmos-db/quickstart-portal
+            - text: Use Python notebooks
+              itemType: how-to-guide
+              url: /fabric/database/cosmos-db/how-to-use-python-notebooks
+            - text: Use Spark connector
+              itemType: how-to-guide
+              url: /fabric/database/cosmos-db/how-to-use-spark-notebooks
+          footerLink:
+            url: /fabric/database/cosmos-db/
+            text: See more
+        - title: Query and analyze data
+          summary: Query cross-database data and create powerful reports with integrated analytics capabilities.
           links:
-            - text: Mirror to OneLake
-              url: /fabric/database/cosmos-db/mirror-onelake
+            - text: Query cross-database data
+              itemType: how-to-guide
+              url: /fabric/database/cosmos-db/how-to-query-cross-database
             - text: Create Power BI reports
+              itemType: how-to-guide
               url: /fabric/database/cosmos-db/how-to-create-reports
+        - title: Data integration
+          summary: Mirror your Cosmos DB data to OneLake and access it from Lakehouse for advanced analytics.
+          links:
+            - text: Mirror your database
+              itemType: tutorial
+              url: /fabric/database/cosmos-db/tutorial-mirroring
             - text: Access mirrored data from Lakehouse
+              itemType: how-to-guide
               url: /fabric/database/cosmos-db/how-to-access-data-lakehouse
+            - text: Authorization
+              itemType: concept
+              url: /fabric/database/cosmos-db/authorization
+            - text: Billing and utilization
+              itemType: concept
+              url: /fabric/database/cosmos-db/billing-usage
+tools:
+  title: Query Languages and APIs
+  summary: Learn about the query languages and APIs available for Microsoft's NoSQL database offerings.
+  items:
+    - title: Cosmos DB Query Language
+      imageSrc: ./media/index/azure.svg
+      url: /cosmos-db/query/
+    - title: MongoDB Query Language (MQL)
+      imageSrc: ./media/index/azure.svg
+      url: https://documentdb.io/docs/reference
+    - title: DocumentDB Open Source
+      imageSrc: ./media/index/azure.svg
+      url: https://documentdb.io
+    - title: DocumentDB on GitHub
+      imageSrc: ./media/index/azure.svg
+      url: https://github.com/documentdb/documentdb
+    - title: Redis Open Source
+      imageSrc: ./media/index/azure.svg
+      url: https://redis.io
+additionalContent:
+  sections:
+    - title: Learning resources and support
+      summary: Expand your knowledge with training modules, community resources, and documentation.
+      items:
+        - title: Training and certification
+          links:
+            - text: Azure Cosmos DB training modules
+              url: /training/browse/?products=azure-cosmos-db
+            - text: Build a Java app with Cosmos DB
+              url: /training/modules/build-cosmos-db-java-app/
+            - text: Explore Microsoft Learn
+              url: /training/
+        - title: Community and open source
+          links:
+            - text: DocumentDB GitHub repository
+              url: https://github.com/documentdb/documentdb
+            - text: DocumentDB documentation
+              url: https://documentdb.io/docs
+            - text: Redis Open Source
+              url: https://redis.io
+        - title: Additional resources
+          links:
+            - text: Azure Architecture Center
+              url: /azure/architecture/
+            - text: Azure updates
+              url: https://azure.microsoft.com/updates/
+            - text: Free Azure account
+              url: https://azure.microsoft.com/pricing/purchase-options/azure-account
+  footer: "Explore [Azure Cosmos DB](/azure/cosmos-db/), [Azure DocumentDB](/azure/documentdb/), and [Cosmos DB in Microsoft Fabric](/fabric/database/cosmos-db) to build scalable NoSQL solutions."
