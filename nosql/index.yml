@@ -36,7 +36,7 @@ highlightedContent:
       itemType: concept
       url: /azure/cosmos-db/gen-ai/why-cosmos-ai
 productDirectory:
-  title: NoSQL Database Offerings
+  title: NoSQL databases (in Azure and Fabric)
   summary: Explore Microsoft's comprehensive suite of NoSQL database services designed for different workloads and scenarios.
   items:
     - title: Azure Cosmos DB
