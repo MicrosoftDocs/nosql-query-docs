@@ -3,7 +3,7 @@ title: NoSQL documentation
 summary: NoSQL databases are designed to handle large volumes of data and provide flexible schemas, making them suitable for modern applications. Use Microsoft's NoSQL offerings to build scalable solutions that meet your growing data estate needs.
 brand: azure
 metadata:
-  title: NoSQL NoSQL documentation
+  title: NoSQL documentation
   titleSuffix:
   description: Explore Microsoft's NoSQL database offerings including Azure Cosmos DB, Azure DocumentDB, Cosmos DB in Microsoft Fabric, and Azure Redis. Learn how to build scalable, high-performance applications with flexible data models.
   ms.topic: hub-page
