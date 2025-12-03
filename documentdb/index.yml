@@ -59,8 +59,8 @@ additionalContent:
   footer: |
     Azure DocumentDB (with MongoDB compatibility) is based on the open-source [DocumentDB](https://github.com/documentdb/documentdb) project.
 
-    DocumentDB is an open-source powerful, scalable, and MongoDB compatible open-source document database built for modern applications.
+    DocumentDB is a powerful, scalable, and MongoDB-compatible open-source document database built for modern applications.
 
-    DocumentDB is built on the principles of transparency, developer freedom, and standardization, our mission is to build a MongoDB compatible open source document database based on PostgreSQL.
+    DocumentDB is built on the principles of transparency, developer freedom, and standardization. Our mission is to build a MongoDB-compatible open-source document database based on PostgreSQL.
 
     To participate in the community, file issues, and contribute to the project, please visit [https://github.com/documentdb](https://github.com/documentdb/documentdb).
