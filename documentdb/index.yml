@@ -43,6 +43,22 @@ productDirectory:
       summary: Fully managed MongoDB-compatible database service with vCore architecture, vector search capabilities, and native Azure integration.
       imageSrc: media/index/azure.svg
       url: /azure/documentdb
+tools:
+  title: More resources
+  summary: Explore open-source projects, community resources, and developer tools for DocumentDB and Azure DocumentDB.
+  items:
+    - title: DocumentDB Open Source
+      imageSrc: media/index/azure.svg
+      url: https://documentdb.io
+    - title: DocumentDB on GitHub
+      imageSrc: media/index/azure.svg
+      url: https://github.com/documentdb/documentdb
+    - title: DocumentDB Reference
+      imageSrc: media/index/azure.svg
+      url: https://documentdb.io/docs/reference
+    - title: MongoDB Compatibility Guide
+      imageSrc: media/index/azure.svg
+      url: /azure/documentdb/compatibility-features
 additionalContent:
   sections:
     - title: Learning resources and community
