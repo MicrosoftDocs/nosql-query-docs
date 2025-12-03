@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 title: DocumentDB (in Azure) documentation
-summary: Learn about the open-source DocumentDB platform and query language used by Azure DocumentDB.
+summary: Learn about the open-source DocumentDB platform and query language used by Azure DocumentDB. Build modern MongoDB-compatible applications with vector search, flexible scaling, and seamless Azure integration.
 brand: azure
 metadata:
   title: DocumentDB (in Azure) Documentation
   titleSuffix:
-  description: Learn about the open-source DocumentDB platform and query language used by Azure DocumentDB.
+  description: Learn about the open-source DocumentDB platform and query language used by Azure DocumentDB. Explore MongoDB compatibility and vector search capabilities.
   ms.topic: hub-page
-  ms.date: 12/02/2025
+  ms.date: 12/03/2025
   ai-usage: ai-generated
 highlightedContent:
   items:
