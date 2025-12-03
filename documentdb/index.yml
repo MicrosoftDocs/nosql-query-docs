@@ -45,17 +45,39 @@ productDirectory:
       url: /azure/documentdb
 additionalContent:
   sections:
-    - title: DocumentDB
-      summary: Accelerate your NoSQL journey by discovering the open-source DocumentDB project, its documentation, and community resources.
+    - title: Learning resources and community
+      summary: Expand your knowledge with documentation, community resources, and migration guides.
       items:
-        - title: GitHub repository
-          url: https://github.com/documentdb/documentdb
-        - title: DocumentDB Documentation
-          url: https://documentdb.io/docs
-        - title: Announcement blog post
-          url: https://opensource.microsoft.com/blog/2025/01/23/documentdb-open-source-announcement/
-        - title: Linux Foundation membership blog post
-          url: https://opensource.microsoft.com/blog/2025/08/25/documentdb-joins-the-linux-foundation/
+        - title: Azure DocumentDB documentation
+          links:
+            - text: Azure DocumentDB overview
+              url: /azure/documentdb/overview
+            - text: Frequently asked questions
+              url: /azure/documentdb/faq
+            - text: Release notes
+              url: /azure/documentdb/release-notes
+            - text: Compare to MongoDB Atlas
+              url: /azure/documentdb/compare-mongodb-atlas
+        - title: Community and open source
+          links:
+            - text: DocumentDB GitHub repository
+              url: https://github.com/documentdb/documentdb
+            - text: DocumentDB documentation
+              url: https://documentdb.io/docs
+            - text: DocumentDB blogs
+              url: https://documentdb.io/blogs
+            - text: DocumentDB packages
+              url: https://documentdb.io/packages
+        - title: Migration and tools
+          links:
+            - text: Migration options
+              url: /azure/documentdb/migration-options
+            - text: Visual Studio Code migration extension
+              url: /azure/documentdb/how-to-migrate-vs-code-extension
+            - text: Assess migration readiness
+              url: /azure/documentdb/how-to-assess-plan-migration-readiness
+            - text: Index Advisor
+              url: /azure/documentdb/index-advisor
   footer: |
     Azure DocumentDB (with MongoDB compatibility) is based on the open-source [DocumentDB](https://github.com/documentdb/documentdb) project.
 
