@@ -43,6 +43,140 @@ productDirectory:
       summary: Fully managed MongoDB-compatible database service with vCore architecture, vector search capabilities, and native Azure integration.
       imageSrc: media/index/azure.svg
       url: /azure/documentdb
+conceptualContent:
+  sections:
+    - title: Azure DocumentDB
+      summary: Build globally distributed, scalable applications with Azure DocumentDB using MongoDB drivers and tools across various programming languages.
+      items:
+        - title: Get started
+          summary: Quickly deploy Azure DocumentDB applications with step-by-step quickstarts for popular programming languages.
+          links:
+            - text: Overview
+              itemType: overview
+              url: /azure/documentdb/overview
+            - text: Build an app with Python
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-python
+            - text: Build an app with TypeScript/Node.js
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-nodejs?pivots=programming-language-ts
+            - text: Build an app with JavaScript/Node.js
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-nodejs?pivots=programming-language-js
+            - text: Build an app with C#/.NET
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-dotnet
+            - text: Build an app with Java
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-java
+            - text: Build an app with Go
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-go
+          footerLink:
+            url: /azure/documentdb/
+            text: See more
+        - title: Tools and migration
+          summary: Migrate existing MongoDB applications and optimize performance with Azure DocumentDB tools and extensions.
+          links:
+            - text: Visual Studio Code extension
+              itemType: how-to-guide
+              url: /azure/documentdb/how-to-migrate-vs-code-extension
+            - text: Migration options
+              itemType: how-to-guide
+              url: /azure/documentdb/migration-options
+            - text: Assess migration readiness
+              itemType: how-to-guide
+              url: /azure/documentdb/how-to-assess-plan-migration-readiness
+            - text: Index Advisor
+              itemType: how-to-guide
+              url: /azure/documentdb/index-advisor
+        - title: Core concepts
+          summary: Understand the fundamental concepts and features of Azure DocumentDB to effectively design and manage your MongoDB-compatible databases.
+          links:
+            - text: MongoDB compatibility
+              itemType: concept
+              url: /azure/documentdb/compatibility-features
+            - text: Query language compatibility
+              itemType: concept
+              url: /azure/documentdb/compatibility-query-language
+            - text: Indexing best practices
+              itemType: concept
+              url: /azure/documentdb/how-to-create-indexes
+            - text: Manage indexing
+              itemType: how-to-guide
+              url: /azure/documentdb/indexing
+            - text: Partitioning
+              itemType: concept
+              url: /azure/documentdb/partitioning
+            - text: Performance tuning
+              itemType: concept
+              url: /azure/documentdb/faq
+        - title: Vector search and AI concepts
+          summary: Explore the vector search and generative AI capabilities of Azure DocumentDB designed to enhance your applications with advanced search features.
+          links:
+            - text: Vector search
+              itemType: concept
+              url: /azure/documentdb/vector-search
+            - text: Hybrid search
+              itemType: concept
+              url: /azure/documentdb/hybrid-search
+            - text: Vector search with Python
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-python-vector-search
+            - text: Vector search with Node.js
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-nodejs-vector-search
+            - text: Vector search with .NET
+              itemType: quickstart
+              url: /azure/documentdb/quickstart-dotnet-vector-search
+    - title: Query data
+      summary: Learn how to query and manipulate data stored in Azure DocumentDB using MongoDB Query Language (MQL) and explore the open-source DocumentDB reference.
+      items:
+        - title: MongoDB Query Language (MQL)
+          summary: Use MongoDB-compatible query syntax to interact with your data in Azure DocumentDB.
+          links:
+            - text: DocumentDB reference
+              itemType: reference
+              url: https://documentdb.io/docs/reference
+            - text: Commands reference
+              itemType: reference
+              url: https://documentdb.io/docs/reference/command
+            - text: Aggregation commands
+              itemType: reference
+              url: https://documentdb.io/docs/reference/command/aggregation
+            - text: Operators reference
+              itemType: reference
+              url: https://documentdb.io/docs/reference/operator
+            - text: Evaluation query operators
+              itemType: reference
+              url: https://documentdb.io/docs/reference/operator/evaluation-query
+          footerLink:
+            url: https://documentdb.io/docs
+            text: See more
+        - title: DocumentDB architecture
+          summary: Understand the underlying architecture and design principles of the DocumentDB open-source project.
+          links:
+            - text: Architecture overview
+              itemType: concept
+              url: https://documentdb.io/docs/architecture
+            - text: PostgreSQL integration
+              itemType: concept
+              url: https://documentdb.io/docs/postgresql
+            - text: PostgreSQL functions
+              itemType: reference
+              url: https://documentdb.io/docs/postgresql/functions
+        - title: Quickstarts and tutorials
+          summary: Get started with DocumentDB using practical guides and hands-on tutorials.
+          links:
+            - text: Quickstart guide
+              itemType: quickstart
+              url: https://documentdb.io/docs/quickstart
+            - text: Use DocumentDB extension
+              itemType: quickstart
+              url: https://documentdb.io/docs/quickstart/extension
+            - text: Use MongoDB shell
+              itemType: quickstart
+              url: https://documentdb.io/docs/quickstart/mongodb-shell
 tools:
   title: More resources
   summary: Explore open-source projects, community resources, and developer tools for DocumentDB and Azure DocumentDB.
