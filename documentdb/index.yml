@@ -14,6 +14,27 @@ highlightedContent:
     - title: Overview
       itemType: overview
       url: overview.md
+    - title: Azure DocumentDB
+      itemType: overview
+      url: /azure/documentdb/overview
+    - title: Azure DocumentDB vector search
+      itemType: concept
+      url: /azure/documentdb/vector-search
+    - title: Azure DocumentDB hybrid search
+      itemType: concept
+      url: /azure/documentdb/hybrid-search
+    - title: DocumentDB Open Source
+      itemType: reference
+      url: https://documentdb.io
+    - title: Azure DocumentDB Index Advisor
+      itemType: how-to-guide
+      url: /azure/documentdb/index-advisor
+    - title: Azure DocumentDB migration tools
+      itemType: how-to-guide
+      url: /azure/documentdb/migration-options
+    - title: Azure DocumentDB release notes
+      itemType: whats-new
+      url: /azure/documentdb/release-notes
 productDirectory:
   title: Implementations
   summary: Explore the service that uses the DocumentDB open-source platform to provide MongoDB-compatible database capabilities in Azure.
