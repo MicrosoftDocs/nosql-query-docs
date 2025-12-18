@@ -30,14 +30,14 @@ productDirectory:
       url: /azure/cosmos-db/nosql
       azureCategories:
         - featured
-        - azure
+        - databases
     - title: Cosmos DB in Microsoft Fabric
       summary: AI-optimized NoSQL database tightly integrated into Fabric with autonomous defaults, OneLake integration, and built-in AI capabilities.
       imageSrc: media/index/fabric.svg
       url: /fabric/database/cosmos-db
       azureCategories:
         - featured
-        - fabric
+        - analytics
 conceptualContent:
   sections:
     - title: Features
