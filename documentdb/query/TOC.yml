@@ -1,7 +1,5 @@
 ### YamlMime:TOC
 items:
-  - name: Query Language for Cosmos DB (in Azure and Fabric) documentation
-    href: index.yml
   - name: Overview
     displayName: introduction, welcome, start, getting started
     href: overview.md
