@@ -5,7 +5,7 @@ ms.date: 11/10/2025
 ai-usage: ai-generated
 ---
 
-# What is the query language in Cosmos DB (in Azure and Fabric)
+# What is the query language in Cosmos DB (in Azure and Fabric)?
 
 The query language provides a powerful, SQL-like syntax for working with JSON data. This language is designed to be familiar to users with SQL experience, while also supporting the flexibility and hierarchical nature of JSON documents. This article introduces the core concepts, syntax, and features of the query language.
 
