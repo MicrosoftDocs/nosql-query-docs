@@ -1,0 +1,17 @@
+### YamlMime:Hub
+title: Query language for DocumentDB (in Azure) documentation
+summary: Learn about the open-source DocumentDB platform and the MongoDB Query Language (MQL) used by Azure DocumentDB. Build modern MongoDB-compatible applications with familiar MQL syntax.
+brand: sql
+metadata:
+  title: Query Language for DocumentDB (in Azure) Documentation
+  summary: Learn about the open-source DocumentDB platform and the MongoDB Query Language (MQL) used by Azure DocumentDB. Build modern MongoDB-compatible applications with familiar MQL syntax.
+  ms.topic: hub-page
+  ms.date: 12/31/2025
+  ai-usage: ai-generated
+  no-loc:
+    - VECTORDISTANCE
+highlightedContent:
+  items:
+    - title: Overview
+      itemType: overview
+      url: overview.md
