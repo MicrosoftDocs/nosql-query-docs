@@ -1,7 +1,7 @@
 ---
 title: Overview
 description: Discover the MongoDB Query Language (MQL) used in DocumentDB. Learn syntax, features, and best practices.
-ms.date: 12/30/2025
+ms.date: 12/31/2025
 ai-usage: ai-generated
 ---
 
