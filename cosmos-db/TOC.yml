@@ -41,3 +41,5 @@ items:
       - name: Sample indexing policies
         displayName: examples, templates, JSON
         href: sample-indexing-policies.md
+  - name: Query language
+    href: query/toc.yml
