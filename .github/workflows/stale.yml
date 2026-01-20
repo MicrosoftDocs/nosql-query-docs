@@ -1,5 +1,6 @@
 name: Mark stale pull requests
 permissions:
+  issues: read
   pull-requests: write
 on:
   schedule:
