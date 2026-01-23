@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `ST_ISVALIDDETAILED` function returns a JSON value containing a Boolean value if the specified GeoJSON Point, Polygon, or LineString expression is valid, and if invalid, the reason.
 
-The `ST_ISVALIDDETAILED` function returns a JSON object indicating if a GeoJSON object is valid and, if not, the reason in Azure Cosmos DB for NoSQL.
+The `ST_ISVALIDDETAILED` function returns a JSON object indicating if a GeoJSON object is valid and, if not, the reason in Azure Cosmos DB.
 
 ## Syntax
 

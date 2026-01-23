@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `IS_DEFINED` function returns a boolean indicating if the property has been assigned a value.
 
-An Azure Cosmos DB for NoSQL system function that returns true if the property has been assigned a value.
+An Azure Cosmos DB system function that returns true if the property has been assigned a value.
 
 ## Syntax
 

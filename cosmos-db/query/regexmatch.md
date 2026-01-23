@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `REGEXMATCH` function returns a boolean indicating whether the provided string matches the specified regular expression. Regular expressions are a concise and flexible notation for finding patterns of text.
 
-An Azure Cosmos DB for NoSQL system function that provides regular expression capabilities.
+An Azure Cosmos DB system function that provides regular expression capabilities.
 
 ## Syntax
 

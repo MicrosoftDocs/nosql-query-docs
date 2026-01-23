@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `LOWER` function returns a string expression after converting uppercase character data to lowercase.
 
-An Azure Cosmos DB for NoSQL system function that returns a string expression with uppercase characters converted to lowercase.
+An Azure Cosmos DB system function that returns a string expression with uppercase characters converted to lowercase.
 
 ## Syntax
 

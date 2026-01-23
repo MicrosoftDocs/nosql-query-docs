@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `TICKSTODATETIME` function converts the specified number of ticks to a date and time value.
 
-An Azure Cosmos DB for NoSQL system function that returns the number of ticks as a date and time value.
+An Azure Cosmos DB system function that returns the number of ticks as a date and time value.
 
 ## Syntax
 

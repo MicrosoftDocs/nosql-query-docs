@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `LEFT` function returns the left part of a string up to the specified number of characters.
 
-An Azure Cosmos DB for NoSQL system function that returns a substring from the left side of a string.
+An Azure Cosmos DB system function that returns a substring from the left side of a string.
 
 ## Syntax
 

@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `RIGHT` function returns the right part of a string up to the specified number of characters.
 
-An Azure Cosmos DB for NoSQL system function that returns a substring from the right side of a string.
+An Azure Cosmos DB system function that returns a substring from the right side of a string.
 
 ## Syntax
 

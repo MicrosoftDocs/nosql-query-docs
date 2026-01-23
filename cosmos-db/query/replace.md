@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `REPLACE` function returns a string with all occurrences of a specified string replaced.
 
-An Azure Cosmos DB for NoSQL system function that returns a string with all occurrences of a specified string replaced.
+An Azure Cosmos DB system function that returns a string with all occurrences of a specified string replaced.
 
 ## Syntax
 

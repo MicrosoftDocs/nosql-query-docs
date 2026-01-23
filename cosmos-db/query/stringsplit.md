@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `STRINGSPLIT` function returns an array of substrings obtained from separating the source string by the specified delimiter.
 
-The `STRINGSPLIT` function returns an array of substrings obtained from separating the source string by the specified delimiter in Azure Cosmos DB for NoSQL.
+The `STRINGSPLIT` function returns an array of substrings obtained from separating the source string by the specified delimiter in Azure Cosmos DB.
 
 ## Syntax
 

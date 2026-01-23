@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `ST_WITHIN` function returns a boolean expression indicating whether the GeoJSON object specified in the first argument is within the GeoJSON object in the second argument.
 
-The `ST_WITHIN` function returns a boolean indicating if one GeoJSON object is within another in Azure Cosmos DB for NoSQL.
+The `ST_WITHIN` function returns a boolean indicating if one GeoJSON object is within another in Azure Cosmos DB.
 
 ## Syntax
 

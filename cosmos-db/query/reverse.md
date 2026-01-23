@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `REVERSE` function returns the reverse order of a string value.
 
-An Azure Cosmos DB for NoSQL system function that returns a reversed string.
+An Azure Cosmos DB system function that returns a reversed string.
 
 ## Syntax
 

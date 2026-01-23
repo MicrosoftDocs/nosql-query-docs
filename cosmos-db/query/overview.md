@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Discover the query language used in Azure Cosmos DB for NoSQL and Cosmos DB in Microsoft Fabric. Learn syntax, features, and best practices.
+description: Discover the query language used in Azure Cosmos DB and Cosmos DB in Microsoft Fabric. Learn syntax, features, and best practices.
 ms.date: 12/31/2025
 ai-usage: ai-generated
 ---
