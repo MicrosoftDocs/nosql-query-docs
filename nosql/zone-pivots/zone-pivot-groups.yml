@@ -5,6 +5,6 @@ groups:
     prompt: Choose a platform
     pivots:
       - id: azure-cosmos-db-nosql
-        title: Azure Cosmos DB for NoSQL
+        title: Azure Cosmos DB
       - id: microsoft-fabric-cosmos-db
         title: Cosmos DB in Microsoft Fabric

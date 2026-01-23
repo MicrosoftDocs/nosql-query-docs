@@ -108,19 +108,19 @@
       },
       "appliesto": {
         "**/*.md": [
-          "✅ Azure Cosmos DB for NoSQL",
+          "✅ Azure Cosmos DB",
           "✅ Cosmos DB in Microsoft Fabric"
         ],
         "**/*.yml": [
-          "✅ Azure Cosmos DB for NoSQL",
+          "✅ Azure Cosmos DB",
           "✅ Cosmos DB in Microsoft Fabric"
         ],
         "query/**/*.md": [
-          "✅ Azure Cosmos DB for NoSQL",
+          "✅ Azure Cosmos DB",
           "✅ Cosmos DB in Microsoft Fabric"
         ],
         "query/**/*.yml": [
-          "✅ Azure Cosmos DB for NoSQL",
+          "✅ Azure Cosmos DB",
           "✅ Cosmos DB in Microsoft Fabric"
         ]
       }
