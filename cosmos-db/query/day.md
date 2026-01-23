@@ -1,7 +1,7 @@
 ---
 title: DAY
 description: This function returns the value of the day for the provided date and time.
-ms.date: 11/10/2025
+ms.date: 01/23/2026
 ---
 
 # DAY (NoSQL query)
@@ -18,7 +18,7 @@ DAY(<date_time>)
 
 | | Description |
 | --- | --- |
-| **`date_time`** | A date/time value. |
+| **`date_time`** | A Coordinated Universal Time (UTC) date and time string in the ISO 8601 format `YYYY-MM-DDThh:mm:ss.fffffffZ`. |
 
 ## Return types
 
@@ -48,6 +48,7 @@ SELECT VALUE {
 
 ## Remarks
 
+- Returns a value in the range 1-31, representing the day of the month.
 - This function behaves the same as the DateTimePart function when the day is specified.
 - This function benefits from the use of a [range index](../indexing-policies.md#includeexclude-strategy).
 

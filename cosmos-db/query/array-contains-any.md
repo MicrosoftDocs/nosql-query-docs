@@ -1,7 +1,7 @@
 ---
 title: ARRAY_CONTAINS_ANY
 description: The `ARRAY_CONTAINS_ANY` function returns a boolean indicating whether the array contains any of the specified values.
-ms.date: 11/10/2025
+ms.date: 01/23/2026
 ---
 
 # `ARRAY_CONTAINS_ANY` - Query language in Cosmos DB (in Azure and Fabric)
@@ -48,14 +48,17 @@ SELECT VALUE {
 ```json
 [
   {
+    "emptyArray": false,
+    "matchSingleValue": true,
     "matchesEntireArray": true,
     "matchesSomeValues": true,
-    "matchSingleValue": true,
-    "noMatches": false,
-    "emptyArray": false
+    "noMatches": false
   }
 ]
 ```
+
+> [!NOTE]
+> In the examples above, `undefined` is used as a search value. When `undefined` is passed as an argument, it doesn't match any value in the array. Only explicitly defined values are compared.
 
 ## Remarks
 
