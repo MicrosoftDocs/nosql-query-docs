@@ -27,7 +27,7 @@ productDirectory:
     - title: Azure Cosmos DB for NoSQL
       summary: Fully managed cloud database service with global distribution, multi-region replication, and fine-grained control over throughput and indexing.
       imageSrc: media/index/azure.svg
-      url: /azure/cosmos-db/nosql
+      url: /azure/cosmos-db
       azureCategories:
         - featured
         - databases

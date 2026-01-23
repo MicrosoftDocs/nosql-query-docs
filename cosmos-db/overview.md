@@ -31,7 +31,7 @@ The Cosmos DB engine is implemented in two services that share the same core tec
 
 Azure Cosmos DB for NoSQL is a fully managed cloud database service that uses the Cosmos DB engine to provide support for querying items with flexible schemas and native support for JSON. It offers global distribution with multi-region replication, allowing applications to achieve low-latency reads and writes across geographic regions. The service provides fine-grained control over throughput provisioning, indexing policies, and consistency levels, enabling you to optimize performance and cost for your specific workload. Azure Cosmos DB for NoSQL integrates with Azure services. The service supports software development kits (SDKs) for .NET, Java, Python, Node.js, and Go. This compatibility makes it suitable for mission-critical applications. These applications require predictable performance and high availability.
 
-For more information about Azure Cosmos DB for NoSQL, see [Azure Cosmos DB for NoSQL documentation](/azure/cosmos-db/nosql).
+For more information about Azure Cosmos DB for NoSQL, see [Azure Cosmos DB for NoSQL documentation](/azure/cosmos-db).
 
 ### Cosmos DB in Microsoft Fabric
 
