@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `STRINGJOIN` function returns a string, which concatenates the elements of a specified array, using the specified separator between each element.
 
-The `STRINGJOIN` function returns a string by concatenating the elements of an array using a specified separator in Azure Cosmos DB for NoSQL.
+The `STRINGJOIN` function returns a string by concatenating the elements of an array using a specified separator in Azure Cosmos DB.
 
 ## Syntax
 

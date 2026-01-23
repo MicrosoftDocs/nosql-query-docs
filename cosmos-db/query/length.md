@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `LENGTH` function returns the number of characters in the specified string expression.
 
-An Azure Cosmos DB for NoSQL system function that returns the numeric length of a string expression.
+An Azure Cosmos DB system function that returns the numeric length of a string expression.
 
 ## Syntax
 

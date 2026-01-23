@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `STRINGTONUMBER` function converts a string expression to a number.
 
-The `STRINGTONUMBER` function converts a string expression to a number in Azure Cosmos DB for NoSQL.
+The `STRINGTONUMBER` function converts a string expression to a number in Azure Cosmos DB.
 
 ## Syntax
 

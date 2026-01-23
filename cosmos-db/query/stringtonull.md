@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `STRINGTONULL` function converts a string expression to `null`.
 
-The `STRINGTONULL` function converts a string expression to `null` in Azure Cosmos DB for NoSQL.
+The `STRINGTONULL` function converts a string expression to `null` in Azure Cosmos DB.
 
 ## Syntax
 

@@ -59,4 +59,4 @@ SELECT VALUE {
 
 ## Remarks
 
-- STATIC-NOTIFY-NO-INDEX-USAGE
+- This function doesn't utilize the index.

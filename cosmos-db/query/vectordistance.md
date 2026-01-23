@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `VECTORDISTANCE` function returns the similarity score between two specified vectors.
 
-An Azure Cosmos DB for NoSQL system function that returns the similarity score between two vectors for one or more items in a container.
+An Azure Cosmos DB system function that returns the similarity score between two vectors for one or more items in a container.
 
 ## Syntax
 

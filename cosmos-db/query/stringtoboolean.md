@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `STRINGTOBOOLEAN` function converts a string expression to a boolean.
 
-An Azure Cosmos DB for NoSQL system function that returns a string expression converted to a boolean.
+An Azure Cosmos DB system function that returns a string expression converted to a boolean.
 
 ## Syntax
 

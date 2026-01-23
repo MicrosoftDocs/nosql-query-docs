@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `STRINGTOOBJECT` function converts a string expression to an object.
 
-The `STRINGTOOBJECT` function converts a string expression to an object in Azure Cosmos DB for NoSQL.
+The `STRINGTOOBJECT` function converts a string expression to an object in Azure Cosmos DB.
 
 ## Syntax
 

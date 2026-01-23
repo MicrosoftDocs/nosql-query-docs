@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `ST_INTERSECTS` function returns a boolean indicating whether the GeoJSON object specified in the first argument intersects the GeoJSON object in the second argument.
 
-The `ST_INTERSECTS` function returns a boolean indicating if two GeoJSON objects intersect in Azure Cosmos DB for NoSQL.
+The `ST_INTERSECTS` function returns a boolean indicating if two GeoJSON objects intersect in Azure Cosmos DB.
 
 ## Syntax
 

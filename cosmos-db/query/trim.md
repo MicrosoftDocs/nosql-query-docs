@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `TRIM` function returns a string expression after it removes leading and trailing whitespace or custom characters.
 
-An Azure Cosmos DB for NoSQL system function that returns a string with leading or trailing whitespace trimmed.
+An Azure Cosmos DB system function that returns a string with leading or trailing whitespace trimmed.
 
 ## Syntax
 

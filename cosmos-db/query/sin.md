@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `SIN` function returns the trigonometric sine of the specified angle in radians.
 
-An Azure Cosmos DB for NoSQL system function that returns the trigonometric sine of the specified angle.
+An Azure Cosmos DB system function that returns the trigonometric sine of the specified angle.
 
 ## Syntax
 
