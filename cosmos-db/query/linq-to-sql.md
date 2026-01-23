@@ -1,7 +1,7 @@
 ---
 title: LINQ Translation
 description: Learn which LINQ operators are supported in Cosmos DB (in Azure and Fabric) and how LINQ queries translate to NoSQL queries. Includes code examples and best practices for .NET developers.
-ms.date: 11/10/2025
+ms.date: 01/23/2026
 ---
 
 # LINQ translation - Query language in Cosmos DB (in Azure and Fabric)
@@ -69,14 +69,14 @@ You can create a LINQ query with `GetItemLinqQueryable`. This example shows LINQ
 ```csharp
 using FeedIterator<Book> setIterator = container.GetItemLinqQueryable<Book>()
     .Where(b => b.Title == "War and Peace")
-    .ToFeedIterator<Book>());
+    .ToFeedIterator();
 
 //Asynchronous query execution
 while (setIterator.HasMoreResults)
 {
-    foreach(var item in await setIterator.ReadNextAsync()){
+    foreach (var item in await setIterator.ReadNextAsync())
     {
-        Console.WriteLine(item.cost);
+        Console.WriteLine(item.Cost);
     }
 }
 ```
@@ -90,10 +90,10 @@ The LINQ provider included with the NoSQL .NET SDK supports the following operat
 - **SelectMany**: Allows unwinding of arrays to the [`JOIN`](join.md) clause. Use to chain or nest expressions to filter on array elements.
 - **OrderBy** and **OrderByDescending**: Translate to [`ORDER BY`](order-by.md) with `ASC` or `DESC`.
 - **Count**, **Sum**, **Min**, **Max**, and **Average** operators for aggregation, and their async equivalents **CountAsync**, **SumAsync**, **MinAsync**, **MaxAsync**, and **AverageAsync**.
-- **CompareTo**: Translates to range comparisons. This operator is commonly used for strings, since they're not comparable in .NET.
+- **CompareTo**: Translates to range comparisons. This operator is commonly used for strings, since strings don't support `<` and `>` comparison operators directly in .NET.
 - **Skip** and **Take**: Translates to [`OFFSET` and `LIMIT`](offset-limit.md) for limiting results from a query and doing pagination.
 - **Math functions**: Supports translation from .NET `Abs`, `Acos`, `Asin`, `Atan`, `Ceiling`, `Cos`, `Exp`, `Floor`, `Log`, `Log10`, `Pow`, `Round`, `Sign`, `Sin`, `Sqrt`, `Tan`, and `Truncate` to the equivalent [built-in mathematical functions](functions.md#mathematical-functions).
-- **String functions**: Supports translation from .NET `Concat`, `Contains`, `Count`, `EndsWith`,`IndexOf`, `Replace`, `Reverse`, `StartsWith`, `SubString`, `ToLower`, `ToUpper`, `TrimEnd`, and `TrimStart` to the equivalent [built-in string functions](functions.md#string-functions).
+- **String functions**: Supports translation from .NET `Concat`, `Contains`, `Count`, `EndsWith`,`IndexOf`, `Replace`, `Reverse`, `StartsWith`, `Substring`, `ToLower`, `ToUpper`, `TrimEnd`, and `TrimStart` to the equivalent [built-in string functions](functions.md#string-functions).
 - **Array functions**: Supports translation from .NET `Concat`, `Contains`, and `Count` to the equivalent [built-in array functions](functions.md#array-functions).
 - **Geospatial Extension functions**: Supports translation from stub methods `Distance`, `IsValid`, `IsValidDetailed`, and `Within` to the equivalent [built-in geospatial functions](functions.md#spatial-functions).
 - **User-Defined Function Extension function**: Supports translation from the stub method [`CosmosLinq.InvokeUserDefinedFunction`](/dotnet/api/microsoft.azure.cosmos.linq.cosmoslinq.invokeuserdefinedfunction?view=azure-dotnet&preserve-view=true) to the corresponding user-defined function.
@@ -173,7 +173,8 @@ The syntax is `input.SelectMany(x => f(x))`, where `f` is a scalar expression th
 
   ```cosmos-db
   SELECT VALUE child
-  FROM child IN Families.children
+  FROM Families f
+  JOIN child IN f.children
   ```
 
 ### Where operator
@@ -271,7 +272,7 @@ The syntax is `input(.|.SelectMany())(.Select()|.Where())*`. A concatenated quer
   ```cosmos-db
   SELECT *
   FROM Families f
-  WHERE ({grade: f.children[0].grade}.grade > 3)
+  WHERE ({grade: f.children[0].grade}.grade < 3)
   ```
 
 **Concatenation, example 4:**
@@ -280,14 +281,15 @@ The syntax is `input(.|.SelectMany())(.Select()|.Where())*`. A concatenated quer
   
   ```csharp
   input.SelectMany(family => family.parents)
-      .Where(parent => parents.familyName == "Wakefield");
+      .Where(parent => parent.familyName == "Wakefield");
   ```
   
 - **NoSQL**
   
   ```cosmos-db
   SELECT *
-  FROM p IN Families.parents
+  FROM Families f
+  JOIN p IN f.parents
   WHERE p.familyName = "Wakefield"
   ```
 
