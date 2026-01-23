@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 title: Query language for Cosmos DB (in Azure and Fabric) documentation
-summary: Learn about the query language for Cosmos DB used throughout products like Azure Cosmos DB for NoSQL and Cosmos DB in Fabric. Use the query language for Cosmos DB to query data in loosely structured schemas while still using familiar American National Standards Institute (ANSI) Structured Query Language (SQL) keywords.
+summary: Learn about the query language for Cosmos DB used throughout products like Azure Cosmos DB and Cosmos DB in Fabric. Use the query language for Cosmos DB to query data in loosely structured schemas while still using familiar American National Standards Institute (ANSI) Structured Query Language (SQL) keywords.
 brand: sql
 metadata:
   title: Query Language for Cosmos DB (in Azure and Fabric) Documentation
   titleSuffix:
-  description: Learn about the query language for Cosmos DB used in products like Azure Cosmos DB for NoSQL and Cosmos DB in Fabric. Use familiar ANSI SQL keywords to query loosely structured data.
+  description: Learn about the query language for Cosmos DB used in products like Azure Cosmos DB and Cosmos DB in Fabric. Use familiar ANSI SQL keywords to query loosely structured data.
   ms.topic: hub-page
   ms.date: 12/31/2025
   ai-usage: ai-generated

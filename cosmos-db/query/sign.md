@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `SIGN` function returns the positive (+1), zero (0), or negative (-1) sign of the specified numeric expression.
 
-The `SIGN` function returns the sign of a numeric value in Azure Cosmos DB for NoSQL.
+The `SIGN` function returns the sign of a numeric value in Azure Cosmos DB.
 
 ## Syntax
 

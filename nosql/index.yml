@@ -13,7 +13,7 @@ highlightedContent:
   items:
     - title: Azure Cosmos DB
       itemType: overview
-      url: /azure/cosmos-db/nosql/overview
+      url: /azure/cosmos-db/overview
     - title: Azure DocumentDB
       itemType: overview
       url: /azure/documentdb/overview
@@ -42,7 +42,7 @@ productDirectory:
     - title: Azure Cosmos DB
       summary: Fully managed cloud database service with global distribution, multi-region replication, and fine-grained control over throughput and indexing.
       imageSrc: media/index/azure.svg
-      url: /azure/cosmos-db/nosql/overview
+      url: /azure/cosmos-db/overview
     - title: Azure DocumentDB
       summary: Fully managed MongoDB-compatible database service with vector search capabilities and native Azure integration.
       imageSrc: media/index/azure.svg
@@ -69,28 +69,28 @@ conceptualContent:
           links:
             - text: Overview
               itemType: overview
-              url: /azure/cosmos-db/nosql/overview
+              url: /azure/cosmos-db/overview
             - text: Build an app with C#/.NET
               itemType: quickstart
-              url: /azure/cosmos-db/nosql/quickstart-dotnet
+              url: /azure/cosmos-db/quickstart-dotnet
             - text: Build an app with Python
               itemType: quickstart
-              url: /azure/cosmos-db/nosql/quickstart-python
+              url: /azure/cosmos-db/quickstart-python
             - text: Build an app with TypeScript/Node.js
               itemType: quickstart
-              url: /azure/cosmos-db/nosql/quickstart-nodejs?pivots=programming-language-ts
+              url: /azure/cosmos-db/quickstart-nodejs?pivots=programming-language-ts
             - text: Build an app with JavaScript/Node.js
               itemType: quickstart
-              url: /azure/cosmos-db/nosql/quickstart-nodejs?pivots=programming-language-js
+              url: /azure/cosmos-db/quickstart-nodejs?pivots=programming-language-js
             - text: Build an app with Java
               itemType: quickstart
-              url: /azure/cosmos-db/nosql/quickstart-java
+              url: /azure/cosmos-db/quickstart-java
             - text: Build an app with Go
               itemType: quickstart
-              url: /azure/cosmos-db/nosql/quickstart-go
+              url: /azure/cosmos-db/quickstart-go
             - text: Build an app with Rust
               itemType: quickstart
-              url: /azure/cosmos-db/nosql/quickstart-rust
+              url: /azure/cosmos-db/quickstart-rust
           footerLink:
             url: /azure/cosmos-db/
             text: See more

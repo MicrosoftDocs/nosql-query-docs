@@ -24,7 +24,7 @@ Cosmos DB containers (or databases) configured with autoscale provisioned throug
 - **Highly available:** Containers using autoscale use the same fault-tolerant, highly available Cosmos DB backend to ensure data durability and high availability.
 
 > [!IMPORTANT]
-> Database and container-level throughput provisioning is available in Azure Cosmos DB for NoSQL. Container-level throughout provisioning is available in Cosmos DB in Microsoft Fabric.
+> Database and container-level throughput provisioning is available in Azure Cosmos DB. Container-level throughout provisioning is available in Cosmos DB in Microsoft Fabric.
 
 ## Use cases
 

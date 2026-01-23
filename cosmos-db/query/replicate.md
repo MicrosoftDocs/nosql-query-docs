@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `REPLICATE` function returns a string value repeated a specific number of times.
 
-An Azure Cosmos DB for NoSQL system function that returns a string value repeated a specific number of times.
+An Azure Cosmos DB system function that returns a string value repeated a specific number of times.
 
 ## Syntax
 

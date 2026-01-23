@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `IS_BOOL` function returns a boolean value indicating if the type of the specified expression is a boolean.
 
-An Azure Cosmos DB for NoSQL system function that returns a boolean indicating whether an expression is a boolean.
+An Azure Cosmos DB system function that returns a boolean indicating whether an expression is a boolean.
 
 ## Syntax
 
