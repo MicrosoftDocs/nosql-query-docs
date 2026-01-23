@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `ROUND` function returns a numeric value rounded to the closest integer value.
 
-An Azure Cosmos DB for NoSQL system function that returns the number rounded to the closest integer.
+An Azure Cosmos DB system function that returns the number rounded to the closest integer.
 
 ## Syntax
 

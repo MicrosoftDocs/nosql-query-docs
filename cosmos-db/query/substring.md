@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `SUBSTRING` function returns part of a string expression starting at the specified position and of the specified length, or to the end of the string.
 
-An Azure Cosmos DB for NoSQL system function that returns a portion of a string using a starting position and length.
+An Azure Cosmos DB system function that returns a portion of a string using a starting position and length.
 
 ## Syntax
 

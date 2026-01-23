@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Cosmos DB (in Azure and Fabric) documentation
-summary: Learn about the core engine and query language used by Cosmos DB in both Azure Cosmos DB for NoSQL and Cosmos DB in Microsoft Fabric.
+summary: Learn about the core engine and query language used by Cosmos DB in both Azure Cosmos DB and Cosmos DB in Microsoft Fabric.
 brand: azure
 metadata:
   title: Cosmos DB (in Azure and Fabric) Documentation
@@ -24,7 +24,7 @@ productDirectory:
   title: Implementations
   summary: Explore the two services that use the Cosmos DB engine to provide NoSQL database capabilities in Azure and Microsoft Fabric.
   items:
-    - title: Azure Cosmos DB for NoSQL
+    - title: Azure Cosmos DB
       summary: Fully managed cloud database service with global distribution, multi-region replication, and fine-grained control over throughput and indexing.
       imageSrc: media/index/azure.svg
       url: /azure/cosmos-db

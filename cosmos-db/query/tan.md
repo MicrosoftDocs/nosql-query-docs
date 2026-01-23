@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `TAN` function returns the trigonometric tangent of the specified angle in radians.
 
-An Azure Cosmos DB for NoSQL system function that returns the trigonometric tangent of the specified angle.
+An Azure Cosmos DB system function that returns the trigonometric tangent of the specified angle.
 
 ## Syntax
 

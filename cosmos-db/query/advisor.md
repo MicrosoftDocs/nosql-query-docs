@@ -5,7 +5,7 @@ ms.date: 11/11/2025
 ms.custom:
   - sfi-ropc-nochange
 appliesto:
-  - ✅ Azure Cosmos DB for NoSQL
+  - ✅ Azure Cosmos DB
 ---
 
 # Query Advisor for Cosmos DB

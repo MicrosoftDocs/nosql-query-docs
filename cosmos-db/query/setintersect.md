@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `SETINTERSECT` function returns the set of expressions that is contained in both input arrays with no duplicates.
 
-The `SETINTERSECT` function returns the set of expressions that exist in both input arrays, with no duplicates, in Azure Cosmos DB for NoSQL.
+The `SETINTERSECT` function returns the set of expressions that exist in both input arrays, with no duplicates, in Azure Cosmos DB.
 
 ## Syntax
 

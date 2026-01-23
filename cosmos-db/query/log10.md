@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `LOG10` function returns the base-10 logarithm of the specified numeric expression.
 
-An Azure Cosmos DB for NoSQL system function that returns the base-10 logarithm of the specified numeric expression.
+An Azure Cosmos DB system function that returns the base-10 logarithm of the specified numeric expression.
 
 ## Syntax
 

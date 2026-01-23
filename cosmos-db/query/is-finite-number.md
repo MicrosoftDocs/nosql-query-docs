@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `IS_FINITE_NUMBER` function returns a boolean indicating if a number is a finite number (not infinite).
 
-An Azure Cosmos DB for NoSQL system function that returns a boolean indicating if a number is a countable (finite) number.
+An Azure Cosmos DB system function that returns a boolean indicating if a number is a countable (finite) number.
 
 ## Syntax
 

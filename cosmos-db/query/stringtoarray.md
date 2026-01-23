@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `STRINGTOARRAY` function converts a string expression to an array.
 
-An Azure Cosmos DB for NoSQL system function that returns a string expression converted to an array.
+An Azure Cosmos DB system function that returns a string expression converted to an array.
 
 ## Syntax
 

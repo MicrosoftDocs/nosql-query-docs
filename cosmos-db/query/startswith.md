@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `STARTSWITH` function returns a boolean value indicating whether the first string expression starts with the second.
 
-An Azure Cosmos DB for NoSQL system function that returns a boolean indicating whether one string expression starts with another.
+An Azure Cosmos DB system function that returns a boolean indicating whether one string expression starts with another.
 
 ## Syntax
 

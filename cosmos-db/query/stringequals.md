@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `STRINGEQUALS` function returns a boolean indicating whether the first string expression matches the second.
 
-An Azure Cosmos DB for NoSQL system function that returns a boolean indicating whether two strings are equivalent.
+An Azure Cosmos DB system function that returns a boolean indicating whether two strings are equivalent.
 
 ## Syntax
 

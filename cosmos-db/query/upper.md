@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `UPPER` function returns a string expression after converting lowercase character data to uppercase.
 
-An Azure Cosmos DB for NoSQL system function that returns a string expression with lowercase characters converted to uppercase.
+An Azure Cosmos DB system function that returns a string expression with lowercase characters converted to uppercase.
 
 ## Syntax
 

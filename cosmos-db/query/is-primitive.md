@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `IS_PRIMITIVE` function returns a boolean value indicating if the type of the specified expression is a primitive (string, boolean, numeric, or null).
 
-An Azure Cosmos DB for NoSQL system function that returns true if the type of the specified expression is a primitive (string, boolean, numeric, or null).
+An Azure Cosmos DB system function that returns true if the type of the specified expression is a primitive (string, boolean, numeric, or null).
 
 ## Syntax
 
