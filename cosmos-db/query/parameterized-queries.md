@@ -1,7 +1,7 @@
 ---
 title: Parameterized Queries
 description: Execute parameterized queries in Cosmos DB to provide robust handling and escaping of user input, and prevent accidental exposure of data through SQL injection.
-ms.date: 11/10/2025
+ms.date: 01/23/2026
 ---
 
 # Parameterized queries - Query language in Cosmos DB (in Azure and Fabric)
@@ -51,6 +51,9 @@ This next example sets the `TOP` argument with a parameterized query:
 ```
 
 Parameter values can be any valid JSON: strings, numbers, booleans, null, even arrays or nested JSON. Since Cosmos DB is schemaless, parameters aren't validated against any type.
+
+> [!NOTE]
+> Parameter names in the `parameters` array must include the leading `@` symbol in the `name` field (for example, `"name": "@upperPriceLimit"`). Parameters are not type-validated at query time.
 
 Here are examples for parameterized queries in each Cosmos DB SDK:
 

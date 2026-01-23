@@ -1,12 +1,12 @@
 ---
 title: SUBSTRING
-description: The `SUBSTRING` function returns part of a string expression starting at the specified position and of the specified length, or to the end of the string.
-ms.date: 11/10/2025
+description: The `SUBSTRING` function returns part of a string expression starting at the specified position and of the specified length.
+ms.date: 01/23/2026
 ---
 
 # `SUBSTRING` - Query language in Cosmos DB (in Azure and Fabric)
 
-The `SUBSTRING` function returns part of a string expression starting at the specified position and of the specified length, or to the end of the string.
+The `SUBSTRING` function returns part of a string expression starting at the specified position and of the specified length.
 
 An Azure Cosmos DB for NoSQL system function that returns a portion of a string using a starting position and length.
 
@@ -21,7 +21,7 @@ SUBSTRING(<string_expr>, <numeric_expr_1>, <numeric_expr_2>)
 | | Description |
 | --- | --- |
 | **`string_expr`** | A string expression. |
-| **`numeric_expr_1`** | A numeric expression to denote the start character. |
+| **`numeric_expr_1`** | A zero-based numeric expression to denote the start character. A value of `0` refers to the first character. |
 | **`numeric_expr_2`** | A numeric expression to denote the maximum number of characters of `string_expr` to be returned. |
 
 ## Return types
@@ -58,4 +58,7 @@ SELECT VALUE {
 
 ## Remarks
 
+- This function uses zero-based indexing, meaning `0` refers to the first character in the string.
+- If `numeric_expr_2` (length) is negative, the function returns an empty string.
+- To return a substring to the end of the string, use the `LENGTH` function to calculate the remaining characters (for example, `SUBSTRING(str, start, LENGTH(str) - start)`).
 - This function benefits from the use of a range index. For more information, see [range indexes](/azure/cosmos-db/index-policy#includeexclude-strategy).
