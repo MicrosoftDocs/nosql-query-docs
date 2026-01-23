@@ -1,12 +1,12 @@
 ---
 title: CHOOSE
-description: The `CHOOSE` function returns the expression at the specified index of a list, or Undefined if the index exceeds the bounds of the list.
-ms.date: 11/10/2025
+description: The `CHOOSE` function returns the expression at the specified index of a list, or undefined if the index exceeds the bounds of the list.
+ms.date: 01/23/2026
 ---
 
 # `CHOOSE` - Query language in Cosmos DB (in Azure and Fabric)
 
-The `CHOOSE` function returns the expression at the specified index of a list, or Undefined if the index exceeds the bounds of the list.
+The `CHOOSE` function returns the expression at the specified index of a list, or `undefined` if the index exceeds the bounds of the list.
 
 ## Syntax
 
@@ -90,9 +90,12 @@ SELECT VALUE {
 ]
 ```
 
+> [!NOTE]
+> In this example, `index_0` and `index_5` are omitted from the output because `CHOOSE` returns `undefined` for out-of-range indices, and properties with `undefined` values aren't included in JSON objects.
+
 ### Choose field from product
 
-In this example, the `CHOOSE` function is used to select the third field from products in the "short-fins" category.
+In this example, the `CHOOSE` function is used to select the third field from products in the `gear-hike-hydration-packs` category.
 
 ```cosmos-db
 SELECT VALUE
@@ -114,3 +117,4 @@ WHERE
 
 - This function doesn't utilize the index.
 - This function uses *one-based indexing*, meaning that the first item in the list is at index `1` instead of the typical zero-based indexing found in many programming languages.
+- If the index is out of range, the function returns `undefined`. When constructing an object, properties with `undefined` values are omitted from the result.

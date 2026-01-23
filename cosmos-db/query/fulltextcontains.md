@@ -1,7 +1,7 @@
 ---
 title: FULLTEXTCONTAINS
 description: The `FULLTEXTCONTAINS` function returns a boolean indicating whether the keyword string expression is contained in a specified property path.
-ms.date: 11/10/2025
+ms.date: 01/23/2026
 ---
 
 # `FULLTEXTCONTAINS` - Query language in Cosmos DB (in Azure and Fabric)
@@ -39,10 +39,6 @@ FROM c
 WHERE FULLTEXTCONTAINS(c.text, "search phrase")
 ```
 
-```json
--- Example result not available (result not provided in markdown)
-```
-
 ### Full text contains with logical operators
 
 In this example, the `FULLTEXTCONTAINS` function is used with logical operators to ensure multiple keywords or phrases are included.
@@ -51,10 +47,6 @@ In this example, the `FULLTEXTCONTAINS` function is used with logical operators 
 SELECT *
 FROM c
 WHERE FULLTEXTCONTAINS(c.text, "keyword1") AND FULLTEXTCONTAINS(c.text, "keyword2")
-```
-
-```json
--- Example result not available (result not provided in markdown)
 ```
 
 ## Remarks

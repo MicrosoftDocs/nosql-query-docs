@@ -1,7 +1,7 @@
 ---
 title: CONTAINS_ANY_CI
 description: This function returns a boolean value indicating if the source string contains any strings from a list through case-insensitive search.
-ms.date: 11/10/2025
+ms.date: 01/23/2026
 ---
 
 # CONTAINS_ANY_CI (NoSQL query)
@@ -46,16 +46,19 @@ SELECT VALUE {
         "case1": true,
         "case2": true,
         "case3": true,
-        "case4": true,
-        "case5": undefined
+        "case4": true
     }
 ]
 ```
+
+> [!NOTE]
+> In this example, `case5` is omitted from the output because the function returns `undefined` when no valid search expressions match, and properties with `undefined` values aren't included in JSON objects.
 
 ## Remarks
 
 - This function is equivalent to `CONTAINS(<string_expr>, expr1, true) OR ... OR CONTAINS(<string_expr>, exprN, true)`.
 - This function performs a full scan.
+- Search expressions with `undefined` values are skipped. If all search expressions are `undefined` or no valid search expressions match, the function returns `undefined`.
 
 ## Related content
 
