@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `ST_DISTANCE` function returns the distance between two GeoJSON Point, Polygon, MultiPolygon or LineString expressions.
 
-The `ST_DISTANCE` function returns a numeric value representing the distance between two GeoJSON objects in Azure Cosmos DB for NoSQL.
+The `ST_DISTANCE` function returns a numeric value representing the distance between two GeoJSON objects in Azure Cosmos DB.
 
 ## Syntax
 

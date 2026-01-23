@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `TIMESTAMPTODATETIME` function converts the specified timestamp to a date and time value.
 
-An Azure Cosmos DB for NoSQL system function that returns the timestamp as a date and time value.
+An Azure Cosmos DB system function that returns the timestamp as a date and time value.
 
 ## Syntax
 

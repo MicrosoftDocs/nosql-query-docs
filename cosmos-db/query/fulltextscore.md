@@ -40,10 +40,6 @@ FROM c
 ORDER BY RANK FULLTEXTSCORE(c.text, "keyword")
 ```
 
-```json
--- Example result not available (result not provided in markdown)
-```
-
 ### Full text score with WHERE and ORDER BY RANK
 
 In this example, the `FULLTEXTSCORE` function is used in the `ORDER BY RANK` clause, and `FULLTEXTCONTAINS` is used in the `WHERE` clause.
@@ -53,10 +49,6 @@ SELECT TOP 10 c.text
 FROM c
 WHERE FULLTEXTCONTAINS(c.text, "keyword1")
 ORDER BY RANK FULLTEXTSCORE(c.text, "keyword1", "keyword2")
-```
-
-```json
--- Example result not available (result not provided in markdown)
 ```
 
 ## Remarks

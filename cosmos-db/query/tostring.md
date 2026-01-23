@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `TOSTRING` function returns a string representation of a value.
 
-An Azure Cosmos DB for NoSQL system function that returns a value converted to a string.
+An Azure Cosmos DB system function that returns a value converted to a string.
 
 ## Syntax
 

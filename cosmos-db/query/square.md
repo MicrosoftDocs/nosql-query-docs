@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `SQUARE` function returns the square of the specified numeric value.
 
-The `SQUARE` function returns the square of a numeric value in Azure Cosmos DB for NoSQL.
+The `SQUARE` function returns the square of a numeric value in Azure Cosmos DB.
 
 ## Syntax
 

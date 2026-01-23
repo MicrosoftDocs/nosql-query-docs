@@ -1,7 +1,7 @@
 ---
 title: YEAR
 description: This function returns the value of the year for the provided date and time.
-ms.date: 11/10/2025
+ms.date: 01/23/2026
 ---
 
 # YEAR (NoSQL query)
@@ -18,7 +18,7 @@ YEAR(<date_time>)
 
 | | Description |
 | --- | --- |
-| **`date_time`** | A date/time value. |
+| **`date_time`** | A Coordinated Universal Time (UTC) date and time string in the ISO 8601 format `YYYY-MM-DDThh:mm:ss.fffffffZ`. |
 
 ## Return types
 

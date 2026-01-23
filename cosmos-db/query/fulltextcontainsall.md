@@ -40,10 +40,6 @@ FROM c
 WHERE FULLTEXTCONTAINSALL(c.text, "search phrase", "keyword")
 ```
 
-```json
--- Example result not available (result not provided in markdown)
-```
-
 ### Full text contains all with multiple keywords
 
 In this example, the `FULLTEXTCONTAINSALL` function is used to return all documents that contain "keyword1", "keyword2", and "keyword3" in the path `c.text`.
@@ -52,10 +48,6 @@ In this example, the `FULLTEXTCONTAINSALL` function is used to return all docume
 SELECT *
 FROM c
 WHERE FULLTEXTCONTAINSALL(c.text, "keyword1", "keyword2", "keyword3")
-```
-
-```json
--- Example result not available (result not provided in markdown)
 ```
 
 ## Remarks

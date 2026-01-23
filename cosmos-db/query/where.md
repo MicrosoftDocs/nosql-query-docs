@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `WHERE` clause returns a subset of items that satisfy the specified filter condition.
 
-An Azure Cosmos DB for NoSQL clause that applies a filter to return a subset of items in the query results.
+An Azure Cosmos DB clause that applies a filter to return a subset of items in the query results.
 
 ## Syntax
 

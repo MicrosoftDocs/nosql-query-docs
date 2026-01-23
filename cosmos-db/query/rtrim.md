@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `RTRIM` function returns a string expression after it removes trailing whitespace or specified characters.
 
-An Azure Cosmos DB for NoSQL system function that returns a string expression with trailing whitespace or specified characters removed.
+An Azure Cosmos DB system function that returns a string expression with trailing whitespace or specified characters removed.
 
 ## Syntax
 

@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `SQRT` function returns the square root of the specified numeric value.
 
-An Azure Cosmos DB for NoSQL system function that returns the square root of the specified numeric value.
+An Azure Cosmos DB system function that returns the square root of the specified numeric value.
 
 ## Syntax
 

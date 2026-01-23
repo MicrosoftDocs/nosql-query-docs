@@ -8,7 +8,7 @@ ms.date: 11/10/2025
 
 The `LTRIM` function returns a string expression after it removes leading whitespace or specified characters.
 
-An Azure Cosmos DB for NoSQL system function that returns a string expression with leading whitespace or specified characters removed.
+An Azure Cosmos DB system function that returns a string expression with leading whitespace or specified characters removed.
 
 ## Syntax
 
