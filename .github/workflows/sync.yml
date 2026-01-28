@@ -1,0 +1,205 @@
+name: Sync DocumentDB reference content
+on:
+  schedule:
+    - cron: "0 13 * * 1" # Runs every Monday at 8:00 AM EST (1:00 PM UTC)
+  workflow_dispatch:
+jobs:
+  sync:
+    name: Retrieve reference content from DocumentDB
+    if: github.repository_visibility == 'private'
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/dotnet/sdk:10.0
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Checkout target repository
+        uses: actions/checkout@v6
+        with:
+          repository: documentdb/docs
+          ref: main
+          path: target
+      - name: Run .NET script
+        run: |
+          # Execute the sync script to transform DocumentDB API reference content
+          # --output: Directory where transformed markdown files will be written
+          # ./target/api-reference: Source directory containing the original API docs
+          dotnet run ./.github/tools/sync-documentdb.cs --output ./out ./target/api-reference
+      - name: Upload output artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: documentdb-reference-content
+          path: ./out
+  stage:
+    environment:
+      name: automation
+      url: ${{ steps.create-pr.outputs.url }}
+    name: Stage updated content in pull request
+    if: github.repository_visibility == 'private'
+    runs-on: ubuntu-latest
+    needs: sync
+    permissions:
+      contents: read
+      pull-requests: write
+    env:
+      PULL_REQUEST_TITLE_TEMPLATE: "DocumentDB | Merge latest DocumentDB reference content (<date>) [AUTO]"
+    steps:
+      - name: Retrieve GitHub App token
+        uses: actions/create-github-app-token@v2
+        id: app-token
+        with:
+          app-id: ${{ vars.DOCUMENTDB_DOCS_SYNC_AGENT_APP_ID }}
+          private-key: ${{ secrets.DOCUMENTDB_DOCS_SYNC_AGENT_PRIVATE_KEY }}
+      - name: Get GitHub App User ID
+        id: get-user-id
+        run: |
+          # Query the GitHub API to get the numeric user ID for the GitHub App bot account
+          # This ID is required to construct a valid noreply email address for git commits
+          echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+      - name: Configure git
+        run: |
+          # Configure git to use the GitHub App's identity for commits
+          # This ensures commits appear as authored by the bot, not the workflow runner
+          git config --global user.name '${{ steps.app-token.outputs.app-slug }}[bot]'
+          # Use GitHub's noreply email format: <user-id>+<username>@users.noreply.github.com
+          git config --global user.email '${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com'
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          ref: ${{ github.head_ref }}
+          path: repo
+      - name: Download output artifact
+        uses: actions/download-artifact@v7
+        with:
+          name: documentdb-reference-content
+          path: content
+      - name: Generate date variables
+        run: |
+          # Store current date for use in commit messages and PR titles
+          echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+          # Generate a unique branch name with timestamp to avoid conflicts
+          # Format: documentdb/sync-YYYYMMDDHHMMSS
+          echo "WORKING_BRANCH=documentdb/sync-$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
+      - name: Create working branch
+        working-directory: repo
+        run: |
+          # Create and switch to a new branch for the sync changes
+          # This branch will be used as the head branch for the pull request
+          git checkout -b $WORKING_BRANCH
+      - name: Copy content to repository
+        run: |
+          # Copy transformed content from the artifact to the repository
+          # -r: Recursive copy for directories
+          # -a: Archive mode (preserves permissions, timestamps, etc.)
+          # content/. : The trailing /. copies contents without creating a subdirectory
+          cp -ra content/. repo/documentdb/query/
+      - name: Add changes to git
+        working-directory: repo
+        run: |
+          # Stage all changes (new, modified, and deleted files) for commit
+          git add .
+      - name: Check if files changed
+        id: check-files
+        working-directory: repo
+        run: |
+          # Get a summary of staged changes (e.g., "3 files changed, 10 insertions(+), 2 deletions(-)")
+          # This will be empty if there are no changes, which we use to conditionally skip later steps
+          # xargs trims leading/trailing whitespace from the output
+          echo "status=$(git diff --shortstat --staged | xargs)" >> $GITHUB_OUTPUT
+
+          # Count the number of files changed for the summary table
+          echo "file-count=$(git diff --staged --name-only | wc -l)" >> $GITHUB_OUTPUT
+
+          # Get list of changed files, base64-encoded to preserve filenames containing $ characters
+          # Base64 encoding prevents shell expansion of $ in filenames like "$avg.md"
+          # -w 0: Output as a single line without wrapping
+          echo "file-list=$(git diff --staged --name-only | base64 -w 0)" >> $GITHUB_OUTPUT
+      - name: Commit and push changes
+        if: ${{ steps.check-files.outputs.status != '' }}
+        working-directory: repo
+        run: |
+          # Commit staged changes with a descriptive message including the sync date
+          git commit -m "Sync DocumentDB reference content ($CURRENT_DATE)"
+          # Push the new branch to origin and set up tracking
+          git push --set-upstream origin $WORKING_BRANCH
+      - name: Create pull request
+        id: create-pr
+        if: ${{ steps.check-files.outputs.status != '' }}
+        working-directory: repo
+        env:
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          PULL_REQUEST_TITLE: ${{ env.PULL_REQUEST_TITLE_TEMPLATE }}
+        run: |
+          # Replace <date> placeholder in title template with actual date
+          title="${PULL_REQUEST_TITLE//<date>/$CURRENT_DATE}"
+
+          # Decode the base64 file list and format as a Markdown checklist
+          # Each file becomes: - [x] path/to/file.md
+          checklist=$(echo "${{ steps.check-files.outputs.file-list }}" | base64 -d | sed 's/^/- [x] /')
+
+          # Build the PR body with status summary and important note first
+          # Using heredoc with 'EOFBODY' (quoted) to prevent variable expansion
+          body=$(cat << 'EOFBODY'
+          > *${{ steps.check-files.outputs.status }}*
+
+          > [!IMPORTANT]
+          > This is an auto-generated pull request.
+
+          ### Files changed
+
+          EOFBODY
+          )
+          # Append the checklist to the body
+          body+="$checklist"
+
+          # Create the pull request using GitHub CLI
+          gh pr create --title "$title" --body "$body" --base ${{ github.ref_name }} --head $WORKING_BRANCH
+
+          # Retrieve the PR URL for use in the job summary and environment URL
+          pr_url=$(gh pr view $WORKING_BRANCH --json url --jq '.url')
+          echo "url=$pr_url" >> $GITHUB_OUTPUT
+      - name: Write job summary
+        run: |
+          # Check if there were any file changes (status is non-empty)
+          if [ -n "${{ steps.check-files.outputs.status }}" ]; then
+            # Decode base64 file list and format as Markdown list with code formatting
+            # Each file becomes: - `path/to/file.md`
+            list=$(echo "${{ steps.check-files.outputs.file-list }}" | base64 -d | sed 's/.*/1. `&`/')
+
+            # Write the success summary using a heredoc
+            # 'EOFSUMMARY' is quoted to prevent shell expansion of special characters
+            cat >> $GITHUB_STEP_SUMMARY << 'EOFSUMMARY'
+          ## ✅ Pull Request Created
+
+          | | Value |
+          | --- | --- |
+          | **Files changed** | *${{ steps.check-files.outputs.file-count }}* |
+          | **Pull request** | <${{ steps.create-pr.outputs.url }}> |
+          | **Branch** | <${{ github.server_url }}/${{ github.repository }}/tree/${{ env.WORKING_BRANCH }}> |
+          | **Git status** | `${{ steps.check-files.outputs.status }}` |
+
+          <details>
+          <summary>📋 Files</summary>
+
+          EOFSUMMARY
+            # Append the formatted file list to the summary
+            echo "$list" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            # Close the collapsible details section
+            echo "</details>" >> $GITHUB_STEP_SUMMARY
+          else
+            # No changes detected - write a different summary
+            cat >> $GITHUB_STEP_SUMMARY << 'EOF'
+          ## ⏭️ No Changes Detected
+
+          No files were modified. Pull request creation was skipped.
+          EOF
+          fi
