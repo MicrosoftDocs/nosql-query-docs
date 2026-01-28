@@ -6,11 +6,697 @@ metadata:
   title: Query Language for DocumentDB (in Azure) Documentation
   summary: Learn about the open-source DocumentDB platform and the MongoDB Query Language (MQL) used by Azure DocumentDB. Build modern MongoDB-compatible applications with familiar MQL syntax.
   ms.topic: hub-page
-  ai-usage: ai-generated
-  no-loc:
-    - VECTORDISTANCE
+  aiUsage: ai-generated
+  noLoc:
+    - $
+    - $[]
+    - $[identifier]
+    - $abs
+    - $add
+    - $addFields
+    - $addToSet
+    - $all
+    - $allElementsTrue
+    - $and
+    - $anyElementTrue
+    - $arrayElemAt
+    - $arrayToObject
+    - $avg
+    - $binarySize
+    - $bit
+    - $bitAnd
+    - $bitNot
+    - $bitOr
+    - $bitsAllClear
+    - $bitsAllSet
+    - $bitsAnyClear
+    - $bitsAnySet
+    - $bitXor
+    - $bottom
+    - $bottomN
+    - $box
+    - $bsonSize
+    - $bucket
+    - $ceil
+    - $center
+    - $centerSphere
+    - $changeStream
+    - $cmp
+    - $collStats
+    - $comment
+    - $concatArrays
+    - $cond
+    - $convert
+    - $count
+    - $covariancePop
+    - $covarianceSamp
+    - $currentDate
+    - $dateAdd
+    - $dateDiff
+    - $dateFromParts
+    - $dateFromString
+    - $dateSubtract
+    - $dateToParts
+    - $dateToString
+    - $dateTrunc
+    - $dayOfMonth
+    - $dayOfWeek
+    - $dayOfYear
+    - $denseRank
+    - $densify
+    - $derivative
+    - $divide
+    - $documentNumber
+    - $documents
+    - $each
+    - $elemMatch
+    - $eq
+    - $exists
+    - $exp
+    - $expMovingAvg
+    - $expr
+    - $facet
+    - $fill
+    - $filter
+    - $first
+    - $firstN
+    - $floor
+    - $geoIntersects
+    - $geometry
+    - $geoNear
+    - $geoWithin
+    - $getField
+    - $group
+    - $gt
+    - $gte
+    - $hour
+    - $ifNull
+    - $in
+    - $inc
+    - $indexOfArray
+    - $indexStats
+    - $integral
+    - $isArray
+    - $jsonSchema
+    - $last
+    - $lastN
+    - $let
+    - $linearFill
+    - $literal
+    - $ln
+    - $locf
+    - $log
+    - $log10
+    - $lt
+    - $lte
+    - $map
+    - $max
+    - $maxDistance
+    - $maxN
+    - $median
+    - $mergeObjects
+    - $meta
+    - $min
+    - $minDistance
+    - $mod
+    - $mul
+    - $multiply
+    - $natural
+    - $ne
+    - $near
+    - $nearSphere
+    - $nin
+    - $nor
+    - $not
+    - $objectToArray
+    - $or
+    - $polygon
+    - $pop
+    - $position
+    - $pow
+    - $pull
+    - $pullAll
+    - $push
+    - $rand
+    - $range
+    - $rank
+    - $reduce
+    - $regex
+    - $rename
+    - $reverseArray
+    - $round
+    - $sampleRate
+    - $setDifference
+    - $setEquals
+    - $setField
+    - $setIntersection
+    - $setIsSubset
+    - $setOnInsert
+    - $setUnion
+    - $shift usage on DocumentDB
+    - $size
+    - $slice
+    - $sortArray
+    - $switch
+    - $text
+    - $tsIncrement
+    - $tsSecond
+    - $type
+    - Aggregate
+    - Count
+    - delete
+    - Distinct
+    - find
+    - findAndModify
+    - getMore
+    - insert
+    - update
 highlightedContent:
   items:
     - title: Overview
       itemType: overview
       url: overview.md
+    - title: DocumentDB OSS documentation
+      itemType: get-started
+      url: https://documentdb.io/docs
+    - title: Commands
+      itemType: reference
+      url: commands/index.md
+    - title: Operators
+      itemType: reference
+      url: operators/index.md
+conceptualContent:
+  sections:
+    - title: Commands
+      items:
+        - title: Aggregation
+          links:
+            - text: Aggregate
+              itemType: reference
+              url: commands/aggregation/aggregate.md
+            - text: Count
+              itemType: reference
+              url: commands/aggregation/count.md
+            - text: Distinct
+              itemType: reference
+              url: commands/aggregation/distinct.md
+          summary: Aggregation commands process data records and return computed results. They group values from multiple documents, perform operations on the grouped data, and return a single result. Common aggregation tasks include calculating averages, sums, and counts.
+          footerLink:
+            text: See more
+            url: commands/aggregation/index.md
+        - title: Query and Write
+          links:
+            - text: delete
+              itemType: reference
+              url: commands/query-and-write/delete.md
+            - text: find
+              itemType: reference
+              url: commands/query-and-write/find.md
+            - text: findAndModify
+              itemType: reference
+              url: commands/query-and-write/findandmodify.md
+            - text: getMore
+              itemType: reference
+              url: commands/query-and-write/getMore.md
+            - text: insert
+              itemType: reference
+              url: commands/query-and-write/insert.md
+            - text: update
+              itemType: reference
+              url: commands/query-and-write/update.md
+          summary: Query and write commands allow you to retrieve, insert, update, and delete documents in your DocumentDB collections. These operations are fundamental for interacting with your data, enabling you to perform CRUD (Create, Read, Update, Delete) tasks efficiently.
+          footerLink:
+            text: See more
+            url: commands/query-and-write/index.md
+      summary: MongoDB Query Language (MQL) commands are direct instructions for managing and interacting with your database server. They are essential for performing administrative tasks, optimizing performance, and maintaining security.
+    - title: Operators
+      items:
+        - title: Accumulators
+          links:
+            - text: $avg
+              itemType: reference
+              url: operators/accumulators/$avg.md
+            - text: $bottom
+              itemType: reference
+              url: operators/accumulators/$bottom.md
+            - text: $bottomN
+              itemType: reference
+              url: operators/accumulators/$bottomn.md
+            - text: $count
+              itemType: reference
+              url: operators/accumulators/$count.md
+            - text: $first
+              itemType: reference
+              url: operators/accumulators/$first.md
+            - text: $firstN
+              itemType: reference
+              url: operators/accumulators/$firstn.md
+            - text: $last
+              itemType: reference
+              url: operators/accumulators/$last.md
+            - text: $lastN
+              itemType: reference
+              url: operators/accumulators/$lastn.md
+            - text: $max
+              itemType: reference
+              url: operators/accumulators/$max.md
+            - text: $maxN
+              itemType: reference
+              url: operators/accumulators/$maxn.md
+            - text: $median
+              itemType: reference
+              url: operators/accumulators/$median.md
+            - text: $min
+              itemType: reference
+              url: operators/accumulators/$min.md
+          summary: Accumulator operators are used in aggregation pipelines to perform calculations on grouped data.
+          footerLink:
+            text: See more
+            url: operators/accumulators/index.md
+        - title: Aggregation
+          links:
+            - text: $addFields
+              itemType: reference
+              url: operators/aggregation/$addfields.md
+            - text: $bucket
+              itemType: reference
+              url: operators/aggregation/$bucket.md
+            - text: $changeStream
+              itemType: reference
+              url: operators/aggregation/$changestream.md
+            - text: $collStats
+              itemType: reference
+              url: operators/aggregation/$collstats.md
+            - text: $convert
+              itemType: reference
+              url: operators/aggregation/$convert.md
+            - text: $densify
+              itemType: reference
+              url: operators/aggregation/$densify.md
+            - text: $documents
+              itemType: reference
+              url: operators/aggregation/$documents.md
+            - text: $facet
+              itemType: reference
+              url: operators/aggregation/$facet.md
+            - text: $fill
+              itemType: reference
+              url: operators/aggregation/$fill.md
+            - text: $geoNear
+              itemType: reference
+              url: operators/aggregation/$geonear.md
+            - text: $group
+              itemType: reference
+              url: operators/aggregation/$group.md
+            - text: $indexStats
+              itemType: reference
+              url: operators/aggregation/$indexstats.md
+          summary: Aggregation operators are used to perform operations on grouped data in aggregation pipelines.
+          footerLink:
+            text: See more
+            url: operators/aggregation/index.md
+        - title: Arithmetic Expression
+          links:
+            - text: $abs
+              itemType: reference
+              url: operators/arithmetic-expression/$abs.md
+            - text: $add
+              itemType: reference
+              url: operators/arithmetic-expression/$add.md
+            - text: $ceil
+              itemType: reference
+              url: operators/arithmetic-expression/$ceil.md
+            - text: $divide
+              itemType: reference
+              url: operators/arithmetic-expression/$divide.md
+            - text: $exp
+              itemType: reference
+              url: operators/arithmetic-expression/$exp.md
+            - text: $floor
+              itemType: reference
+              url: operators/arithmetic-expression/$floor.md
+            - text: $ln
+              itemType: reference
+              url: operators/arithmetic-expression/$ln.md
+            - text: $log
+              itemType: reference
+              url: operators/arithmetic-expression/$log.md
+            - text: $log10
+              itemType: reference
+              url: operators/arithmetic-expression/$log10.md
+            - text: $multiply
+              itemType: reference
+              url: operators/arithmetic-expression/$multiply.md
+            - text: $pow
+              itemType: reference
+              url: operators/arithmetic-expression/$pow.md
+            - text: $round
+              itemType: reference
+              url: operators/arithmetic-expression/$round.md
+          summary: Arithmetic expression operators perform mathematical operations on numeric values.
+          footerLink:
+            text: See more
+            url: operators/arithmetic-expression/index.md
+        - title: Array Expression
+          links:
+            - text: $arrayElemAt
+              itemType: reference
+              url: operators/array-expression/$arrayelemat.md
+            - text: $arrayToObject
+              itemType: reference
+              url: operators/array-expression/$arraytoobject.md
+            - text: $concatArrays
+              itemType: reference
+              url: operators/array-expression/$concatarrays.md
+            - text: $filter
+              itemType: reference
+              url: operators/array-expression/$filter.md
+            - text: $indexOfArray
+              itemType: reference
+              url: operators/array-expression/$indexofarray.md
+            - text: $isArray
+              itemType: reference
+              url: operators/array-expression/$isarray.md
+            - text: $map
+              itemType: reference
+              url: operators/array-expression/$map.md
+            - text: $range
+              itemType: reference
+              url: operators/array-expression/$range.md
+            - text: $reduce
+              itemType: reference
+              url: operators/array-expression/$reduce.md
+            - text: $reverseArray
+              itemType: reference
+              url: operators/array-expression/$reversearray.md
+            - text: $slice
+              itemType: reference
+              url: operators/array-expression/$slice.md
+            - text: $sortArray
+              itemType: reference
+              url: operators/array-expression/$sortarray.md
+          summary: Array expression operators perform operations on arrays and array elements.
+          footerLink:
+            text: See more
+            url: operators/array-expression/index.md
+        - title: Array Query
+          links:
+            - text: $all
+              itemType: reference
+              url: operators/array-query/$all.md
+            - text: $elemMatch
+              itemType: reference
+              url: operators/array-query/$elemmatch.md
+            - text: $size
+              itemType: reference
+              url: operators/array-query/$size.md
+          summary: Array query operators are used to query and filter array elements.
+          footerLink:
+            text: See more
+            url: operators/array-query/index.md
+        - title: Array Update
+          links:
+            - text: $
+              itemType: reference
+              url: operators/array-update/$.md
+            - text: $addToSet
+              itemType: reference
+              url: operators/array-update/$addtoset.md
+            - text: $each
+              itemType: reference
+              url: operators/array-update/$each.md
+            - text: $pop
+              itemType: reference
+              url: operators/array-update/$pop.md
+            - text: $position
+              itemType: reference
+              url: operators/array-update/$positional.md
+            - text: $[]
+              itemType: reference
+              url: operators/array-update/$positional-all.md
+            - text: $[identifier]
+              itemType: reference
+              url: operators/array-update/$positional-filtered.md
+            - text: $pull
+              itemType: reference
+              url: operators/array-update/$pull.md
+            - text: $pullAll
+              itemType: reference
+              url: operators/array-update/$pullall.md
+            - text: $push
+              itemType: reference
+              url: operators/array-update/$push.md
+          summary: Array update operators are used to modify array elements and structure.
+          footerLink:
+            text: See more
+            url: operators/array-update/index.md
+        - title: Bitwise
+          links:
+            - text: $bitAnd
+              itemType: reference
+              url: operators/bitwise/$bitand.md
+            - text: $bitNot
+              itemType: reference
+              url: operators/bitwise/$bitnot.md
+            - text: $bitOr
+              itemType: reference
+              url: operators/bitwise/$bitor.md
+            - text: $bitXor
+              itemType: reference
+              url: operators/bitwise/$bitxor.md
+          summary: Bitwise operators perform operations on the binary representation of numbers.
+          footerLink:
+            text: See more
+            url: operators/bitwise/index.md
+        - title: Bitwise Query
+          links:
+            - text: $bitsAllClear
+              itemType: reference
+              url: operators/bitwise-query/$bitsAllClear.md
+            - text: $bitsAllSet
+              itemType: reference
+              url: operators/bitwise-query/$bitsAllSet.md
+            - text: $bitsAnyClear
+              itemType: reference
+              url: operators/bitwise-query/$bitsAnyClear.md
+            - text: $bitsAnySet
+              itemType: reference
+              url: operators/bitwise-query/$bitsAnySet.md
+          summary: Bitwise query operators are used to query and filter based on bitwise operations.
+          footerLink:
+            text: See more
+            url: operators/bitwise-query/index.md
+        - title: Bitwise Update
+          links:
+            - text: $bit
+              itemType: reference
+              url: operators/bitwise-update/$bit.md
+          summary: Bitwise update operators are used to modify values using bitwise operations.
+          footerLink:
+            text: See more
+            url: operators/bitwise-update/index.md
+        - title: Comparison Query
+          links:
+            - text: $cmp
+              itemType: reference
+              url: operators/comparison-query/$cmp.md
+            - text: $eq
+              itemType: reference
+              url: operators/comparison-query/$eq.md
+            - text: $gt
+              itemType: reference
+              url: operators/comparison-query/$gt.md
+            - text: $gte
+              itemType: reference
+              url: operators/comparison-query/$gte.md
+            - text: $in
+              itemType: reference
+              url: operators/comparison-query/$in.md
+            - text: $lt
+              itemType: reference
+              url: operators/comparison-query/$lt.md
+            - text: $lte
+              itemType: reference
+              url: operators/comparison-query/$lte.md
+            - text: $ne
+              itemType: reference
+              url: operators/comparison-query/$ne.md
+            - text: $nin
+              itemType: reference
+              url: operators/comparison-query/$nin.md
+          summary: Comparison query operators are used to compare values and create boolean expressions.
+          footerLink:
+            text: See more
+            url: operators/comparison-query/index.md
+        - title: Conditional Expression
+          links:
+            - text: $cond
+              itemType: reference
+              url: operators/conditional-expression/$cond.md
+            - text: $ifNull
+              itemType: reference
+              url: operators/conditional-expression/$ifnull.md
+            - text: $switch
+              itemType: reference
+              url: operators/conditional-expression/$switch.md
+          summary: Conditional expression operators provide control flow and conditional logic in expressions.
+          footerLink:
+            text: See more
+            url: operators/conditional-expression/index.md
+        - title: Data Size
+          links:
+            - text: $binarySize
+              itemType: reference
+              url: operators/data-size/$binarysize.md
+            - text: $bsonSize
+              itemType: reference
+              url: operators/data-size/$bsonsize.md
+          summary: Data size operators are used to determine the size of data structures and values.
+          footerLink:
+            text: See more
+            url: operators/data-size/index.md
+        - title: Date Expression
+          links:
+            - text: $dateAdd
+              itemType: reference
+              url: operators/date-expression/$dateadd.md
+            - text: $dateDiff
+              itemType: reference
+              url: operators/date-expression/$datediff.md
+            - text: $dateFromParts
+              itemType: reference
+              url: operators/date-expression/$datefromparts.md
+            - text: $dateFromString
+              itemType: reference
+              url: operators/date-expression/$datefromstring.md
+            - text: $dateSubtract
+              itemType: reference
+              url: operators/date-expression/$datesubtract.md
+            - text: $dateToParts
+              itemType: reference
+              url: operators/date-expression/$datetoparts.md
+            - text: $dateToString
+              itemType: reference
+              url: operators/date-expression/$datetostring.md
+            - text: $dateTrunc
+              itemType: reference
+              url: operators/date-expression/$datetrunc.md
+            - text: $dayOfMonth
+              itemType: reference
+              url: operators/date-expression/$dayofmonth.md
+            - text: $dayOfWeek
+              itemType: reference
+              url: operators/date-expression/$dayofweek.md
+            - text: $dayOfYear
+              itemType: reference
+              url: operators/date-expression/$dayofyear.md
+            - text: $hour
+              itemType: reference
+              url: operators/date-expression/$hour.md
+          summary: Date expression operators perform operations on date and time values.
+          footerLink:
+            text: See more
+            url: operators/date-expression/index.md
+        - title: Element Query
+          links:
+            - text: $exists
+              itemType: reference
+              url: operators/element-query/$exists.md
+            - text: $type
+              itemType: reference
+              url: operators/element-query/$type.md
+          summary: Element query operators are used to query document elements based on their existence and type.
+          footerLink:
+            text: See more
+            url: operators/element-query/index.md
+        - title: Evaluation Query
+          links:
+            - text: $expr
+              itemType: reference
+              url: operators/evaluation-query/$expr.md
+            - text: $jsonSchema
+              itemType: reference
+              url: operators/evaluation-query/$jsonschema.md
+            - text: $mod
+              itemType: reference
+              url: operators/evaluation-query/$mod.md
+            - text: $regex
+              itemType: reference
+              url: operators/evaluation-query/$regex.md
+            - text: $text
+              itemType: reference
+              url: operators/evaluation-query/$text.md
+          summary: Evaluation query operators are used to evaluate expressions and perform dynamic operations.
+          footerLink:
+            text: See more
+            url: operators/evaluation-query/index.md
+        - title: Field Update
+          links:
+            - text: $currentDate
+              itemType: reference
+              url: operators/field-update/$currentdate.md
+            - text: $inc
+              itemType: reference
+              url: operators/field-update/$inc.md
+            - text: $mul
+              itemType: reference
+              url: operators/field-update/$mul.md
+            - text: $rename
+              itemType: reference
+              url: operators/field-update/$rename.md
+            - text: $setOnInsert
+              itemType: reference
+              url: operators/field-update/$setoninsert.md
+          summary: Field update operators are used to modify specific fields in documents during update operations.
+          footerLink:
+            text: See more
+            url: operators/field-update/index.md
+        - title: Geospatial
+          links:
+            - text: $box
+              itemType: reference
+              url: operators/geospatial/$box.md
+            - text: $center
+              itemType: reference
+              url: operators/geospatial/$center.md
+            - text: $centerSphere
+              itemType: reference
+              url: operators/geospatial/$centersphere.md
+            - text: $geoIntersects
+              itemType: reference
+              url: operators/geospatial/$geointersects.md
+            - text: $geometry
+              itemType: reference
+              url: operators/geospatial/$geometry.md
+            - text: $geoWithin
+              itemType: reference
+              url: operators/geospatial/$geowithin.md
+            - text: $maxDistance
+              itemType: reference
+              url: operators/geospatial/$maxdistance.md
+            - text: $minDistance
+              itemType: reference
+              url: operators/geospatial/$mindistance.md
+            - text: $near
+              itemType: reference
+              url: operators/geospatial/$near.md
+            - text: $nearSphere
+              itemType: reference
+              url: operators/geospatial/$nearsphere.md
+            - text: $polygon
+              itemType: reference
+              url: operators/geospatial/$polygon.md
+          summary: Geospatial operators perform operations on geographic data and spatial relationships.
+          footerLink:
+            text: See more
+            url: operators/geospatial/index.md
+        - title: Literal Expression
+          links:
+            - text: $literal
+              itemType: reference
+              url: operators/literal-expression/$literal.md
+          summary: Literal expression operators are used to represent literal values in aggregation expressions.
+          footerLink:
+            text: See more
+            url: operators/literal-expression/index.md
+      summary: MongoDB Query Language (MQL) operators enable powerful filtering, comparison, and data manipulation within queries. Mastering these operators helps you write expressive queries to efficiently retrieve and update documents in your collections.

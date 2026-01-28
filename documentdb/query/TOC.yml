@@ -3,3 +3,539 @@ items:
   - name: Overview
     displayName: introduction, welcome, start, getting started
     href: overview.md
+  - name: Commands
+    items:
+      - name: Overview
+        href: commands/index.md
+      - name: Aggregation
+        items:
+          - name: Overview
+            href: commands/aggregation/index.md
+          - name: Aggregate
+            href: commands/aggregation/aggregate.md
+          - name: Count
+            href: commands/aggregation/count.md
+          - name: Distinct
+            href: commands/aggregation/distinct.md
+      - name: Query and Write
+        items:
+          - name: Overview
+            href: commands/query-and-write/index.md
+          - name: delete
+            href: commands/query-and-write/delete.md
+          - name: find
+            href: commands/query-and-write/find.md
+          - name: findAndModify
+            href: commands/query-and-write/findandmodify.md
+          - name: getMore
+            href: commands/query-and-write/getMore.md
+          - name: insert
+            href: commands/query-and-write/insert.md
+          - name: update
+            href: commands/query-and-write/update.md
+  - name: Operators
+    items:
+      - name: Overview
+        href: operators/index.md
+      - name: Accumulators
+        items:
+          - name: Overview
+            href: operators/accumulators/index.md
+          - name: $avg
+            href: operators/accumulators/$avg.md
+          - name: $bottom
+            href: operators/accumulators/$bottom.md
+          - name: $bottomN
+            href: operators/accumulators/$bottomn.md
+          - name: $count
+            href: operators/accumulators/$count.md
+          - name: $first
+            href: operators/accumulators/$first.md
+          - name: $firstN
+            href: operators/accumulators/$firstn.md
+          - name: $last
+            href: operators/accumulators/$last.md
+          - name: $lastN
+            href: operators/accumulators/$lastn.md
+          - name: $max
+            href: operators/accumulators/$max.md
+          - name: $maxN
+            href: operators/accumulators/$maxn.md
+          - name: $median
+            href: operators/accumulators/$median.md
+          - name: $min
+            href: operators/accumulators/$min.md
+          - name: $minN
+            href: operators/accumulators/$minn.md
+          - name: $percentile
+            href: operators/accumulators/$percentile.md
+          - name: $stddevpop
+            href: operators/accumulators/$stddevpop.md
+          - name: $stddevsamp
+            href: operators/accumulators/$stddevsamp.md
+          - name: $sum
+            href: operators/accumulators/$sum.md
+          - name: $top
+            href: operators/accumulators/$top.md
+          - name: $topN
+            href: operators/accumulators/$topn.md
+      - name: Aggregation
+        items:
+          - name: Overview
+            href: operators/aggregation/index.md
+          - name: $addFields
+            href: operators/aggregation/$addfields.md
+          - name: $bucket
+            href: operators/aggregation/$bucket.md
+          - name: $changeStream
+            href: operators/aggregation/$changestream.md
+          - name: $collStats
+            href: operators/aggregation/$collstats.md
+          - name: $convert
+            href: operators/aggregation/$convert.md
+          - name: $densify
+            href: operators/aggregation/$densify.md
+          - name: $documents
+            href: operators/aggregation/$documents.md
+          - name: $facet
+            href: operators/aggregation/$facet.md
+          - name: $fill
+            href: operators/aggregation/$fill.md
+          - name: $geoNear
+            href: operators/aggregation/$geonear.md
+          - name: $group
+            href: operators/aggregation/$group.md
+          - name: $indexStats
+            href: operators/aggregation/$indexstats.md
+          - name: $isNumber
+            href: operators/aggregation/$isnumber.md
+          - name: $lookup
+            href: operators/aggregation/$lookup.md
+          - name: $match
+            href: operators/aggregation/$match.md
+          - name: $merge
+            href: operators/aggregation/$merge.md
+          - name: $out
+            href: operators/aggregation/$out.md
+          - name: $redact
+            href: operators/aggregation/$redact.md
+          - name: $replaceWith
+            href: operators/aggregation/$replacewith.md
+          - name: $sample
+            href: operators/aggregation/$sample.md
+          - name: $set
+            href: operators/aggregation/$set.md
+          - name: $skip
+            href: operators/aggregation/$skip.md
+          - name: $sort
+            href: operators/aggregation/$sort.md
+          - name: $sortByCount
+            href: operators/aggregation/$sortbycount.md
+          - name: $toBool
+            href: operators/aggregation/$tobool.md
+          - name: $toDate
+            href: operators/aggregation/$todate.md
+          - name: $toDecimal
+            href: operators/aggregation/$todecimal.md
+          - name: $toDouble
+            href: operators/aggregation/$todouble.md
+          - name: $toInt
+            href: operators/aggregation/$toint.md
+          - name: $toLong
+            href: operators/aggregation/$tolong.md
+          - name: $toObjectId
+            href: operators/aggregation/$toobjectid.md
+          - name: $toString
+            href: operators/aggregation/$tostring.md
+          - name: $unset
+            href: operators/aggregation/$unset.md
+          - name: $unwind
+            href: operators/aggregation/$unwind.md
+      - name: Arithmetic Expression
+        items:
+          - name: Overview
+            href: operators/arithmetic-expression/index.md
+          - name: $abs
+            href: operators/arithmetic-expression/$abs.md
+          - name: $add
+            href: operators/arithmetic-expression/$add.md
+          - name: $ceil
+            href: operators/arithmetic-expression/$ceil.md
+          - name: $divide
+            href: operators/arithmetic-expression/$divide.md
+          - name: $exp
+            href: operators/arithmetic-expression/$exp.md
+          - name: $floor
+            href: operators/arithmetic-expression/$floor.md
+          - name: $ln
+            href: operators/arithmetic-expression/$ln.md
+          - name: $log
+            href: operators/arithmetic-expression/$log.md
+          - name: $log10
+            href: operators/arithmetic-expression/$log10.md
+          - name: $multiply
+            href: operators/arithmetic-expression/$multiply.md
+          - name: $pow
+            href: operators/arithmetic-expression/$pow.md
+          - name: $round
+            href: operators/arithmetic-expression/$round.md
+          - name: $sqrt
+            href: operators/arithmetic-expression/$sqrt.md
+          - name: $subtract
+            href: operators/arithmetic-expression/$subtract.md
+          - name: $trunc
+            href: operators/arithmetic-expression/$trunc.md
+          - name: Index
+            href: operators/arithmetic-expression/index.md
+      - name: Array Expression
+        items:
+          - name: Overview
+            href: operators/array-expression/index.md
+          - name: $arrayElemAt
+            href: operators/array-expression/$arrayelemat.md
+          - name: $arrayToObject
+            href: operators/array-expression/$arraytoobject.md
+          - name: $concatArrays
+            href: operators/array-expression/$concatarrays.md
+          - name: $filter
+            href: operators/array-expression/$filter.md
+          - name: $indexOfArray
+            href: operators/array-expression/$indexofarray.md
+          - name: $isArray
+            href: operators/array-expression/$isarray.md
+          - name: $map
+            href: operators/array-expression/$map.md
+          - name: $range
+            href: operators/array-expression/$range.md
+          - name: $reduce
+            href: operators/array-expression/$reduce.md
+          - name: $reverseArray
+            href: operators/array-expression/$reversearray.md
+          - name: $slice
+            href: operators/array-expression/$slice.md
+          - name: $sortArray
+            href: operators/array-expression/$sortarray.md
+          - name: $zip
+            href: operators/array-expression/$zip.md
+      - name: Array Query
+        items:
+          - name: Overview
+            href: operators/array-query/index.md
+          - name: $all
+            href: operators/array-query/$all.md
+          - name: $elemMatch
+            href: operators/array-query/$elemmatch.md
+          - name: $size
+            href: operators/array-query/$size.md
+      - name: Array Update
+        items:
+          - name: Overview
+            href: operators/array-update/index.md
+          - name: $
+            href: operators/array-update/$.md
+          - name: $addToSet
+            href: operators/array-update/$addtoset.md
+          - name: $each
+            href: operators/array-update/$each.md
+          - name: $pop
+            href: operators/array-update/$pop.md
+          - name: $position
+            href: operators/array-update/$positional.md
+          - name: $[]
+            href: operators/array-update/$positional-all.md
+          - name: $[identifier]
+            href: operators/array-update/$positional-filtered.md
+          - name: $pull
+            href: operators/array-update/$pull.md
+          - name: $pullAll
+            href: operators/array-update/$pullall.md
+          - name: $push
+            href: operators/array-update/$push.md
+      - name: Bitwise
+        items:
+          - name: Overview
+            href: operators/bitwise/index.md
+          - name: $bitAnd
+            href: operators/bitwise/$bitand.md
+          - name: $bitNot
+            href: operators/bitwise/$bitnot.md
+          - name: $bitOr
+            href: operators/bitwise/$bitor.md
+          - name: $bitXor
+            href: operators/bitwise/$bitxor.md
+      - name: Bitwise Query
+        items:
+          - name: Overview
+            href: operators/bitwise-query/index.md
+          - name: $bitsAllClear
+            href: operators/bitwise-query/$bitsAllClear.md
+          - name: $bitsAllSet
+            href: operators/bitwise-query/$bitsAllSet.md
+          - name: $bitsAnyClear
+            href: operators/bitwise-query/$bitsAnyClear.md
+          - name: $bitsAnySet
+            href: operators/bitwise-query/$bitsAnySet.md
+      - name: Bitwise Update
+        items:
+          - name: Overview
+            href: operators/bitwise-update/index.md
+          - name: $bit
+            href: operators/bitwise-update/$bit.md
+      - name: Comparison Query
+        items:
+          - name: Overview
+            href: operators/comparison-query/index.md
+          - name: $cmp
+            href: operators/comparison-query/$cmp.md
+          - name: $eq
+            href: operators/comparison-query/$eq.md
+          - name: $gt
+            href: operators/comparison-query/$gt.md
+          - name: $gte
+            href: operators/comparison-query/$gte.md
+          - name: $in
+            href: operators/comparison-query/$in.md
+          - name: $lt
+            href: operators/comparison-query/$lt.md
+          - name: $lte
+            href: operators/comparison-query/$lte.md
+          - name: $ne
+            href: operators/comparison-query/$ne.md
+          - name: $nin
+            href: operators/comparison-query/$nin.md
+      - name: Conditional Expression
+        items:
+          - name: Overview
+            href: operators/conditional-expression/index.md
+          - name: $cond
+            href: operators/conditional-expression/$cond.md
+          - name: $ifNull
+            href: operators/conditional-expression/$ifnull.md
+          - name: $switch
+            href: operators/conditional-expression/$switch.md
+      - name: Data Size
+        items:
+          - name: Overview
+            href: operators/data-size/index.md
+          - name: $binarySize
+            href: operators/data-size/$binarysize.md
+          - name: $bsonSize
+            href: operators/data-size/$bsonsize.md
+      - name: Date Expression
+        items:
+          - name: Overview
+            href: operators/date-expression/index.md
+          - name: $dateAdd
+            href: operators/date-expression/$dateadd.md
+          - name: $dateDiff
+            href: operators/date-expression/$datediff.md
+          - name: $dateFromParts
+            href: operators/date-expression/$datefromparts.md
+          - name: $dateFromString
+            href: operators/date-expression/$datefromstring.md
+          - name: $dateSubtract
+            href: operators/date-expression/$datesubtract.md
+          - name: $dateToParts
+            href: operators/date-expression/$datetoparts.md
+          - name: $dateToString
+            href: operators/date-expression/$datetostring.md
+          - name: $dateTrunc
+            href: operators/date-expression/$datetrunc.md
+          - name: $dayOfMonth
+            href: operators/date-expression/$dayofmonth.md
+          - name: $dayOfWeek
+            href: operators/date-expression/$dayofweek.md
+          - name: $dayOfYear
+            href: operators/date-expression/$dayofyear.md
+          - name: $hour
+            href: operators/date-expression/$hour.md
+          - name: $isoDayOfWeek
+            href: operators/date-expression/$isodayofweek.md
+          - name: $isoWeek
+            href: operators/date-expression/$isoweek.md
+          - name: $isoWeekYear
+            href: operators/date-expression/$isoweekyear.md
+          - name: $millisecond
+            href: operators/date-expression/$millisecond.md
+          - name: $minute
+            href: operators/date-expression/$minute.md
+          - name: $month
+            href: operators/date-expression/$month.md
+          - name: $second
+            href: operators/date-expression/$second.md
+          - name: $week
+            href: operators/date-expression/$week.md
+          - name: $year
+            href: operators/date-expression/$year.md
+      - name: Element Query
+        items:
+          - name: Overview
+            href: operators/element-query/index.md
+          - name: $exists
+            href: operators/element-query/$exists.md
+          - name: $type
+            href: operators/element-query/$type.md
+      - name: Evaluation Query
+        items:
+          - name: Overview
+            href: operators/evaluation-query/index.md
+          - name: $expr
+            href: operators/evaluation-query/$expr.md
+          - name: $jsonSchema
+            href: operators/evaluation-query/$jsonschema.md
+          - name: $mod
+            href: operators/evaluation-query/$mod.md
+          - name: $regex
+            href: operators/evaluation-query/$regex.md
+          - name: $text
+            href: operators/evaluation-query/$text.md
+      - name: Field Update
+        items:
+          - name: Overview
+            href: operators/field-update/index.md
+          - name: $currentDate
+            href: operators/field-update/$currentdate.md
+          - name: $inc
+            href: operators/field-update/$inc.md
+          - name: $mul
+            href: operators/field-update/$mul.md
+          - name: $rename
+            href: operators/field-update/$rename.md
+          - name: $setOnInsert
+            href: operators/field-update/$setoninsert.md
+      - name: Geospatial
+        items:
+          - name: Overview
+            href: operators/geospatial/index.md
+          - name: $box
+            href: operators/geospatial/$box.md
+          - name: $center
+            href: operators/geospatial/$center.md
+          - name: $centerSphere
+            href: operators/geospatial/$centersphere.md
+          - name: $geoIntersects
+            href: operators/geospatial/$geointersects.md
+          - name: $geometry
+            href: operators/geospatial/$geometry.md
+          - name: $geoWithin
+            href: operators/geospatial/$geowithin.md
+          - name: $maxDistance
+            href: operators/geospatial/$maxdistance.md
+          - name: $minDistance
+            href: operators/geospatial/$mindistance.md
+          - name: $near
+            href: operators/geospatial/$near.md
+          - name: $nearSphere
+            href: operators/geospatial/$nearsphere.md
+          - name: $polygon
+            href: operators/geospatial/$polygon.md
+      - name: Literal Expression
+        items:
+          - name: Overview
+            href: operators/literal-expression/index.md
+          - name: $literal
+            href: operators/literal-expression/$literal.md
+      - name: Logical Query
+        items:
+          - name: Overview
+            href: operators/logical-query/index.md
+          - name: $and
+            href: operators/logical-query/$and.md
+          - name: $nor
+            href: operators/logical-query/$nor.md
+          - name: $not
+            href: operators/logical-query/$not.md
+          - name: $or
+            href: operators/logical-query/$or.md
+      - name: Miscellaneous
+        items:
+          - name: Overview
+            href: operators/miscellaneous/index.md
+          - name: $getField
+            href: operators/miscellaneous/$getfield.md
+          - name: $sampleRate
+            href: operators/miscellaneous/$samplerate.md
+      - name: Miscellaneous Query
+        items:
+          - name: Overview
+            href: operators/miscellaneous-query/index.md
+          - name: $comment
+            href: operators/miscellaneous-query/$comment.md
+          - name: $natural
+            href: operators/miscellaneous-query/$natural.md
+          - name: $rand
+            href: operators/miscellaneous-query/$rand.md
+      - name: Object Expression
+        items:
+          - name: Overview
+            href: operators/object-expression/index.md
+          - name: $mergeObjects
+            href: operators/object-expression/$mergeobjects.md
+          - name: $objectToArray
+            href: operators/object-expression/$objectToArray.md
+          - name: $setField
+            href: operators/object-expression/$setField.md
+      - name: Projection
+        items:
+          - name: Overview
+            href: operators/projection/index.md
+          - name: $meta
+            href: operators/projection/$meta.md
+      - name: Set Expression
+        items:
+          - name: Overview
+            href: operators/set-expression/index.md
+          - name: $allElementsTrue
+            href: operators/set-expression/$allelementstrue.md
+          - name: $anyElementTrue
+            href: operators/set-expression/$anyelementtrue.md
+          - name: $setDifference
+            href: operators/set-expression/$setdifference.md
+          - name: $setEquals
+            href: operators/set-expression/$setequals.md
+          - name: $setIntersection
+            href: operators/set-expression/$setintersection.md
+          - name: $setIsSubset
+            href: operators/set-expression/$setissubset.md
+          - name: $setUnion
+            href: operators/set-expression/$setunion.md
+      - name: Timestamp Expression
+        items:
+          - name: Overview
+            href: operators/timestamp-expression/index.md
+          - name: $tsIncrement
+            href: operators/timestamp-expression/$tsincrement.md
+          - name: $tsSecond
+            href: operators/timestamp-expression/$tssecond.md
+      - name: Variable Expression
+        items:
+          - name: Overview
+            href: operators/variable-expression/index.md
+          - name: $let
+            href: operators/variable-expression/$let.md
+      - name: Window Operators
+        items:
+          - name: Overview
+            href: operators/window-operators/index.md
+          - name: $covariancePop
+            href: operators/window-operators/$covariancepop.md
+          - name: $covarianceSamp
+            href: operators/window-operators/$covariancesamp.md
+          - name: $denseRank
+            href: operators/window-operators/$denserank.md
+          - name: $derivative
+            href: operators/window-operators/$derivative.md
+          - name: $documentNumber
+            href: operators/window-operators/$documentnumber.md
+          - name: $expMovingAvg
+            href: operators/window-operators/$expmovingavg.md
+          - name: $integral
+            href: operators/window-operators/$integral.md
+          - name: $linearFill
+            href: operators/window-operators/$linearfill.md
+          - name: $locf
+            href: operators/window-operators/$locf.md
+          - name: $rank
+            href: operators/window-operators/$rank.md
+          - name: $shift usage on DocumentDB
+            href: operators/window-operators/$shift.md
