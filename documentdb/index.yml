@@ -140,16 +140,16 @@ conceptualContent:
               url: https://documentdb.io/docs/reference
             - text: Commands reference
               itemType: reference
-              url: https://documentdb.io/docs/reference/command
+              url: https://documentdb.io/docs/reference/commands
             - text: Aggregation commands
               itemType: reference
-              url: https://documentdb.io/docs/reference/command/aggregation
+              url: https://documentdb.io/docs/reference/commands/aggregation
             - text: Operators reference
               itemType: reference
-              url: https://documentdb.io/docs/reference/operator
+              url: https://documentdb.io/docs/reference/operators
             - text: Evaluation query operators
               itemType: reference
-              url: https://documentdb.io/docs/reference/operator/evaluation-query
+              url: https://documentdb.io/docs/reference/operators/evaluation-query
           footerLink:
             url: https://documentdb.io/docs
             text: See more
@@ -161,22 +161,22 @@ conceptualContent:
               url: https://documentdb.io/docs/architecture
             - text: PostgreSQL integration
               itemType: concept
-              url: https://documentdb.io/docs/postgresql
+              url: https://documentdb.io/docs/postgres-api
             - text: PostgreSQL functions
               itemType: reference
-              url: https://documentdb.io/docs/postgresql/functions
+              url: https://documentdb.io/docs/postgres-api/functions
         - title: Quickstarts and tutorials
           summary: Get started with DocumentDB using practical guides and hands-on tutorials.
           links:
             - text: Quickstart guide
               itemType: quickstart
-              url: https://documentdb.io/docs/quickstart
+              url: https://documentdb.io/docs/getting-started
             - text: Use DocumentDB extension
               itemType: quickstart
-              url: https://documentdb.io/docs/quickstart/extension
+              url: https://documentdb.io/docs/getting-started/vscode-quickstart
             - text: Use MongoDB shell
               itemType: quickstart
-              url: https://documentdb.io/docs/quickstart/mongodb-shell
+              url: https://documentdb.io/docs/getting-started/mongo-shell-quickstart
 tools:
   title: More resources
   summary: Explore open-source projects, community resources, and developer tools for DocumentDB and Azure DocumentDB.
