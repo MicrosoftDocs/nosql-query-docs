@@ -20,10 +20,20 @@ VECTORDISTANCE(<vector_expr_1>, <vector_expr_2>, <bool_expr>, <obj_expr>)
 
 | | Description |
 | --- | --- |
-| **`vector_expr_1`** | A one-dimensional array of `float32` or smaller. |
-| **`vector_expr_2`** | A one-dimensional array of `float32` or smaller. |
+| **`vector_expr_1`** | A one-dimensional array of `float32`, `float16`, `int8` or `unit8` types. |
+| **`vector_expr_2`** | A one-dimensional array of `float32`, `float16`, `int8` or `unit8` types.|
 | **`bool_expr`** | An optional boolean specifying how the computed value is used in an ORDER BY expression. If `true`, then brute force is used. A value of `false` uses any index defined on the vector property, if it exists. Default value is `false`. |
-| **`obj_expr`** | An optional JSON formatted object literal used to specify options for the vector distance calculation. Valid items include `distanceFunction`, `dataType`, and `searchListSizeMultiplier`. |
+| **`obj_expr`** | An optional JSON formatted object literal used to specify options for the vector distance calculation. Valid items include `distanceFunction`, `dataType`, and `searchListSizeMultiplier`, `quantizedVectorListMultiplier`, and `filterPriority`. |
+
+## Options (optional)
+| Property | Type | Description |
+|----------|------|-------------|
+| `distanceFunction` | string | Distance function override (`Cosine`, `DotProduct`, `Euclidean`) |
+| `dataType` | string | Data type override (`Float32`, `Float16`, `Int8`, `Uint8`) |
+| `searchListSizeMultiplier` | number | Multiplier for DiskANN search list size. Increasing this may increase recall at expense of latency/RUs. Examples: 5, 10, 20|
+| `quantizedVectorListMultiplier` | number | Multiplier for quantized vector candidate list. Increasing this may increase recall at expense of latency/RUs. Examples: 5, 10, 20 |
+| `filterPriority` | number | Priority weight for query filter in WHERE clause vs. vector search in DiskANN. Examples: 0.0, 0.1, 0.5, 1.0 |
+
 
 ## Return types
 
@@ -35,15 +45,12 @@ This section contains examples of how to use this query language construct.
 
 ### Vector similarity search
 
-In this example, the `VECTORDISTANCE` function is used to return the similarity score between a document vector and a query vector.
+In this example, the `VECTORDISTANCE` function is used to return the similarity score between a document vector and a query vector, while sorting by the similarity score.
 
 ```cosmos-db
-SELECT
-  c.name,
-  VECTORDISTANCE(c.vector, [1,2,3]) AS SimilarityScore 
-FROM
-  c
-ORDER BY VECTORDISTANCE(c.vector, [1,2,3]) AS SimilarityScore
+SELECT c.id, c.name, VECTORDISTANCE(c.vector, [1,2,3]) AS SimilarityScore 
+FROM c
+ORDER BY VECTORDISTANCE(c.vector, [1,2,3])
 ```
 
 ```json
@@ -58,6 +65,17 @@ ORDER BY VECTORDISTANCE(c.vector, [1,2,3]) AS SimilarityScore
   }
 ]
 ```
+In this example, the VECTORDISTANCE function is used to order by similarity score. Optional parameters are provided to override the `dataType` and the `quantizedVectorListMultiplier`
+
+```cosmos-db
+SELECT c.id, c.name,
+FROM c
+ORDER BY VectorDistance(c.embedding, [-0.008861,0.097097,0.100236,0.070044,-0.079279], false, {dataType:'Float32',quantizedVectorListMultiplier:1})
+SELECT c.id, c.name
+FROM c
+ 
+```
+
 
 ## Remarks
 
