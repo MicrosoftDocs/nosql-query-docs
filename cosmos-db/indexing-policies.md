@@ -174,8 +174,8 @@ Here are some rules for included and excluded paths precedence in Cosmos DB:
 | **`quantizedFlat`** | Quantizes (compresses) vectors before storing on the index. This type can improve latency and throughput at the cost of a small amount of accuracy. | `4096` |
 | **`diskANN`** | Creates an index based on DiskANN for fast and efficient approximate search. | `4096` |
 
-> [!IMPORTANT]
-> Vector policies and vector indexes are immutable after creation. To make changes, create a new collection.
+> [!NOTE]
+>  In general, you can add new path configurations or remove existing ones, but you cannot change the settings of a vector emebdding policy or vector indexing policy. To do so you must first drop the existing vector policy and index, then add it back with new configuration. 
 
 A few points to note:
 
@@ -219,9 +219,6 @@ Here's an example of an indexing policy with a vector index:
 }
 ```
 
-> [!IMPORTANT]
-> The vector path should be added to the `excludedPaths` section of the indexing policy to ensure optimized performance for insertion. Not adding the vector path to `excludedPaths` results in higher RU charge and latency for vector insertions.
->
 > A vector indexing policy must also be on the path defined in the container's vector policy. For more information, see [vector policies](index-vector-data.md#vector-indexing-policies).
 >
 
