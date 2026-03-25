@@ -328,8 +328,8 @@ As long as one filter predicate uses one of the index types, the query engine ev
       VECTORDISTANCE(c.vector1, c.vector2)
     ```
 
-> [!IMPORTANT]
-> Vector policies and vector indexes are immutable after creation. To make changes, create a new collection.
+> [!NOTE]
+>  In general, you can add new path configurations or remove existing ones, but you cannot change the settings of a vector emebdding policy or vector indexing policy. To do so you must first drop the existing vector policy and index, then add it back with the new configuration. 
 
 ## How queries use indexes
 
