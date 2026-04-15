@@ -41,7 +41,18 @@ ORDER BY RANK RRF(FullTextScore(c.text, "keyword"), VectorDistance(c.vector, [1,
 ```
 
 ```json
--- Example result not available (see documentation)
+[
+  {
+    "id": "doc-042",
+    "text": "The keyword appears frequently in this document about distributed systems.",
+    "vector": [0.12, 0.87, 0.34]
+  },
+  {
+    "id": "doc-119",
+    "text": "Another relevant document mentioning the keyword in context.",
+    "vector": [0.45, 0.22, 0.91]
+  }
+]
 ```
 
 ### Weighted Hybrid Search
@@ -55,7 +66,18 @@ ORDER BY RANK RRF(FullTextScore(c.text, "keyword"), VectorDistance(c.vector, [1,
 ```
 
 ```json
--- Example result not available (see documentation)
+[
+  {
+    "id": "doc-007",
+    "text": "This document contains the keyword and is semantically close to the query vector.",
+    "vector": [0.98, 0.11, 0.23]
+  },
+  {
+    "id": "doc-355",
+    "text": "A document with strong keyword relevance boosted by the higher weight.",
+    "vector": [0.67, 0.44, 0.18]
+  }
+]
 ```
 
 ### Fusion with two FullTextScore functions
@@ -69,7 +91,16 @@ ORDER BY RANK RRF(FullTextScore(c.text, "keyword1"), FullTextScore(c.text, "keyw
 ```
 
 ```json
--- Example result not available (see documentation)
+[
+  {
+    "id": "doc-201",
+    "text": "This article discusses both keyword1 and keyword2 in the context of data engineering."
+  },
+  {
+    "id": "doc-088",
+    "text": "A comprehensive overview that mentions keyword1 and covers keyword2 in detail."
+  }
+]
 ```
 
 ### Fusion with two VectorDistance functions
@@ -83,7 +114,18 @@ ORDER BY RANK RRF(VectorDistance(c.vector1, [1,2,3]), VectorDistance(c.vector2, 
 ```
 
 ```json
--- Example result not available (see documentation)
+[
+  {
+    "id": "doc-014",
+    "vector1": [0.12, 0.87, 0.34],
+    "vector2": [0.56, 0.78, 0.90]
+  },
+  {
+    "id": "doc-092",
+    "vector1": [0.45, 0.22, 0.91],
+    "vector2": [0.33, 0.67, 0.45]
+  }
+]
 ```
 
 ## Remarks
