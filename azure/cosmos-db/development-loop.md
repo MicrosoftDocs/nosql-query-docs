@@ -49,18 +49,18 @@ Use the Docker container image for the Linux-based Azure Cosmos DB emulator to c
     docker ps --filter "name=cosmos-db"
     ```
 
-> [!TIP]
->The emulator gateway endpoint is available at `https://localhost:8081` and the data explorer is available at `http://localhost:1234`. The emulator uses a well-known authentication key:
->
-> ```connection-string
-> AccountEndpoint=http://localhost:8081/;AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==;
-> ```
->
-> | Setting | Value |
-> | --- | --- |
-> | **Endpoint** | `https://localhost:8081` |
-> | **Key** | `C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==` |
->
+    > [!IMPORTANT]
+    > The emulator gateway endpoint is available at `https://localhost:8081` and the data explorer is available at `http://localhost:1234`. The emulator uses a well-known authentication key:
+    >
+    > ```connection-string
+    > AccountEndpoint=http://localhost:8081/;AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==;
+    > ```
+    >
+    > | Setting | Value |
+    > | --- | --- |
+    > | **Endpoint** | `https://localhost:8081` |
+    > | **Key** | `C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==` |
+    >
 
 ## Create the application
 

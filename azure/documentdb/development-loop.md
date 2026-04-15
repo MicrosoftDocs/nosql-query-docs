@@ -53,23 +53,23 @@ Use the Docker container image for DocumentDB to create a local development data
     docker ps --filter "name=documentdb"
     ```
 
-> [!TIP]
-> The DocumentDB gateway endpoint is available on port `10260`. Use the following connection string format to connect:
->
-> ```connection-string
-> mongodb://<admin-username>:<admin-password>@localhost:10260/?tls=true&tlsAllowInvalidCertificates=true
-> ```
->
-> | Setting | Value |
-> | --- | --- |
-> | **Endpoint** | `https://localhost:10260` |
-> | **Username** | `<admin-username>` |
-> | **Password** | `<admin-password>` |
-> | **TLS** | `true` |
-> | **TLS Allow Invalid Certificates** | `true` |
->
-> Replace `<admin-username>` and `<admin-password>` with your own credentials.
->
+    > [!IMPORTANT]
+    > The DocumentDB gateway endpoint is available on port `10260`. Use the following connection string format to connect:
+    >
+    > ```connection-string
+    > mongodb://<admin-username>:<admin-password>@localhost:10260/?tls=true&tlsAllowInvalidCertificates=true
+    > ```
+    >
+    > | Setting | Value |
+    > | --- | --- |
+    > | **Endpoint** | `https://localhost:10260` |
+    > | **Username** | `<admin-username>` |
+    > | **Password** | `<admin-password>` |
+    > | **TLS** | `true` |
+    > | **TLS Allow Invalid Certificates** | `true` |
+    >
+    > Replace `<admin-username>` and `<admin-password>` with your own credentials.
+    >
 
 ## Create the application
 
