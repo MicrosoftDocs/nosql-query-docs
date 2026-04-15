@@ -33,12 +33,20 @@ This section contains examples of how to use this query language construct.
 In this example, the `ORDER BY RANK` clause is used to sort results by the rank of a scoring function.
 
 ```cosmos-db
--- Example query for ORDER BY RANK
-SELECT * FROM c ORDER BY RANK FullTextScore
+SELECT TOP 10 *
+FROM c
+ORDER BY RANK FullTextScore(c.text, "keyword")
 ```
 
 ```json
 [
-  -- Example result set
+  {
+    "id": "1",
+    "text": "The keyword appears in this document multiple times with keyword variations."
+  },
+  {
+    "id": "7",
+    "text": "This document also references the keyword in context."
+  }
 ]
 ```
