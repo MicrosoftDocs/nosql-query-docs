@@ -48,6 +48,7 @@ productDirectory:
       imageSrc: media/index/azure.svg
       url: /azure/documentdb/overview
       azureCategories:
+        - featured
         - databases
     - title: Azure Managed Redis
       summary: Fully managed Redis service for high-performance caching and data storage with enterprise-grade security and scalability.
