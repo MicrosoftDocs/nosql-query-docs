@@ -69,12 +69,10 @@ ORDER BY VECTORDISTANCE(c.vector, [1,2,3])
 In this example, the VECTORDISTANCE function is used to order by similarity score. Optional parameters are provided to override the `dataType`, specify a larger  `searchListSizeMultiplier`, and specify a `filterPriority` on the `WHERE clause.
 
 ```cosmos-db
-SELECT c.id, c.name,
+SELECT c.id, c.name
 FROM c
 WHERE c.Date >= "2025-09-30"
 ORDER BY VectorDistance(c.embedding, [1, 2, 3], false, {dataType:'Float32', quantizedVectorListMultiplier:10, filterPriority: 0.75})
-SELECT c.id, c.name
-FROM c
 ```
 
 

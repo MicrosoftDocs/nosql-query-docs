@@ -36,7 +36,10 @@ Here are some examples for processing results from queries with multiple pages:
 
 ## Continuation tokens
 
-In the .NET SDK and Java SDK, you can optionally use continuation tokens as a bookmark for your query's progress. Cosmos DB query executions are stateless at the server side and can be resumed at any time using the continuation token. For the Python SDK, continuation tokens are only supported for single partition queries. The partition key must be specified in the options object because it's not sufficient to have it in the query itself.
+In the .NET SDK and Java SDK, you can optionally use continuation tokens as a bookmark for your query's progress. Cosmos DB query executions are stateless at the server side and can be resumed at any time using the continuation token.
+
+> [!IMPORTANT]
+> **Python SDK:** Continuation tokens for cross-partition queries are supported for streamable queries (e.g., `SELECT * FROM c WHERE ...`). Aggregate cross-partition queries (sorting, counting, distinct) do not support continuation tokens. The partition key must be specified in the options object.
 
 Here are some example for using continuation tokens:
 
