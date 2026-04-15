@@ -198,6 +198,8 @@ Create a Next.js application and connect it to the local emulator.
 
 1. Open `http://localhost:3000` in your browser to verify the application is running and connected to the emulator.
 
+    :::image type="content" source="media/development-loop/running-app.png" lightbox="media/development-loop/running-app-full.png" alt-text="Screenshot of the new application running in a web browser with multiple items persisted to the database.":::
+
     > [!TIP]
     > You can review the data this application creates in the Azure Cosmos DB Emulator Data Explorer at `http://localhost:1234`. You can also use the  [Azure Cosmos DB extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) The database is named `work-management` and the container is named `tasks`.
 

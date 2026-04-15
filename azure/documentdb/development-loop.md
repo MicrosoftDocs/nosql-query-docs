@@ -201,6 +201,8 @@ Create a Next.js application and connect it to the local database.
 
 1. Open `http://localhost:3000` in your browser to verify the application is running and connected to the local database.
 
+    :::image type="content" source="media/development-loop/running-app.png" lightbox="media/development-loop/running-app-full.png" alt-text="Screenshot of the new application running in a web browser with multiple items persisted to the database.":::
+
     > [!TIP]
     > You can view the data this application creates by connecting to the DocumentDB container with the  [DocumentDB extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-documentdb). The database is named `work-management` and the collection is named `tasks`.
 
