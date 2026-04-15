@@ -66,7 +66,8 @@
     "fileMetadata": {
       "ms.service": {
         "cosmos-db/**/*": "azure-cosmos-db",
-        "documentdb/**/*": "azure-documentdb"
+        "documentdb/**/*": "azure-documentdb",
+        "nosql/**/*": "azure"
       },
       "ms.subservice": {
         "cosmos-db/**/*": "nosql",
@@ -87,11 +88,13 @@
       },
       "ms.author": {
         "cosmos-db/**/*": "sidandrews",
-        "documentdb/**/*": "sidandrews"
+        "documentdb/**/*": "sidandrews",
+        "nosql/**/*": "sidandrews"
       },
       "author": {
         "cosmos-db/**/*": "seesharprun",
-        "documentdb/**/*": "seesharprun"
+        "documentdb/**/*": "seesharprun",
+        "nosql/**/*": "seesharprun"
       },
       "titleSuffix": {
         "cosmos-db/**/*": "Azure Cosmos DB",
@@ -100,7 +103,8 @@
         "cosmos-db/cassandra/**/*": "Azure Cosmos DB for Apache Cassandra",
         "cosmos-db/gremlin/**/*": "Azure Cosmos DB for Apache Gremlin",
         "cosmos-db/table/**/*": "Azure Cosmos DB for Table",
-        "documentdb/**/*": "Azure DocumentDB"
+        "documentdb/**/*": "Azure DocumentDB",
+        "nosql/**/*": "Azure"
       },
       "appliesto": {
         "cosmos-db/**/*": [
@@ -162,6 +166,10 @@
         "documentdb/**/*": [
           "Azure",
           "Azure DocumentDB"
+        ],
+        "nosql/**/*": [
+          "Azure",
+          "Azure NoSQL"
         ]
       }
     }
