@@ -5,6 +5,7 @@ titleSuffix:
 description: In this tutorial, use DocumentDB for local development, build a TypeScript app with the MongoDB driver, and deploy to Azure DocumentDB.
 ms.topic: tutorial
 ms.date: 04/15/2026
+ai-usage: ai-generated
 # Customer intent: As a developer, I want to build and test an app locally using DocumentDB so that I can migrate to Azure DocumentDB with minimal friction.
 ---
 
