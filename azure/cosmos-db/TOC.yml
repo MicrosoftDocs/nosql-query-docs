@@ -1,0 +1,5 @@
+- name: Azure Cosmos DB NoSQL documentation
+  expanded: true
+  items:
+    - name: Inner and outer loop development
+      href: development-loop.md
