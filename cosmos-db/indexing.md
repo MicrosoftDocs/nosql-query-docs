@@ -329,7 +329,7 @@ As long as one filter predicate uses one of the index types, the query engine ev
     ```
 
 > [!NOTE]
-> You can add new path configurations or remove existing ones, but you cannot change the settings of a vector emebdding policy or vector indexing policy directly. To do so you must first drop the existing vector policy and/or index, then add it back with new configuration. 
+> In general, you can add new path configurations or remove existing ones, but you cannot change the settings of a vector emebdding policy or vector indexing policy. To do so you must first drop the existing vector policy and index, then add it back with the new configuration. 
 
 ## How queries use indexes
 
