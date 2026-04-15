@@ -94,21 +94,16 @@ Container container = await client.GetDatabase("myDatabase").CreateContainerAsyn
 ### [Java](#tab/java)
 
 ```java
- const { resource: contDefinition } = await containerWithComputedProperty.read();
-  const upperName = {
-    name: "upperLastName",
-    query:
-      "SELECT VALUE UPPER(IS_DEFINED(c.lastName) ? c.lastName : c.parents[0].familyName) FROM c",
-  };
-  if (contDefinition) {
-    // update computed properties
-    contDefinition.computedProperties = [upperName];
-    // replace container definition with updated computed properties
-    await containerWithComputedProperty.replace(contDefinition);
-    console.log("Computed properties updated");
-  } else {
-    console.log("Container definition is undefined.");
-  }
+CosmosContainerProperties containerProperties = containerWithComputedProperty.read().getProperties();
+List<ComputedProperty> computedProperties = new ArrayList<>();
+computedProperties.add(
+    new ComputedProperty(
+        "upperLastName",
+        "SELECT VALUE UPPER(IS_DEFINED(c.lastName) ? c.lastName : c.parents[0].familyName) FROM c"
+    )
+);
+containerProperties.setComputedProperties(computedProperties);
+containerWithComputedProperty.replace(containerProperties);
 ```
 
 ### [JavaScript](#tab/javascript)

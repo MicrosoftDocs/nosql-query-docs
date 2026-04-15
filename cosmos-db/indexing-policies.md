@@ -175,7 +175,7 @@ Here are some rules for included and excluded paths precedence in Cosmos DB:
 | **`diskANN`** | Creates an index based on DiskANN for fast and efficient approximate search. | `4096` |
 
 > [!NOTE]
->  In general, you can add new path configurations or remove existing ones, but you cannot change the settings of a vector emebdding policy or vector indexing policy. To do so you must first drop the existing vector policy and index, then add it back with new configuration. 
+> You can add new path configurations or remove existing ones, but you cannot change the settings of a vector embedding policy or vector indexing policy directly. To do so you must first drop the existing vector policy and/or index, then add it back with new configuration. 
 
 A few points to note:
 

@@ -1,6 +1,6 @@
 ---
-title: Index Vector Data
-description: Learn how to index vector data in Cosmos DB (in Azure and Fabric). Store vectors with documents, choose indexing methods (flat, quantizedFlat, DiskANN), and optimize vector search performance.
+title: Vector Database
+description: Learn how to index and search vector data in Cosmos DB (in Azure and Fabric). Store vectors with documents, choose indexing methods (flat, quantizedFlat, DiskANN), and optimize vector search performance.
 ms.topic: concept-article
 ms.date: 11/10/2025
 ---
@@ -111,8 +111,6 @@ For more information and examples of settings a container vector policy, see [ve
 | **`quantizedFlat`** | Quantizes (compresses) vectors before storing on the index. This policy can improve latency and throughput at the cost of a small amount of accuracy. | 4096 |
 | **`diskANN`** | Creates an index based on DiskANN for fast and efficient approximate search. | 4096 |
 
-> [!NOTE]
-> The `quantizedFlat` and `diskANN` indexes requires that at least **1,000 vectors** to be inserted. This minimum is to ensure accuracy of the quantization process. If there are fewer than 1,000 vectors, a full scan is executed instead and leads to higher RU charges for a vector search query.
 
 A few points to note:
 
@@ -121,6 +119,8 @@ A few points to note:
 - The `quantizedFlat` index stores quantized (compressed) vectors on the index. Vector searches with `quantizedFlat` index are also brute-force searches, however their accuracy might be slightly less than 100% since the vectors are quantized before adding to the index. However, vector searches with `quantized flat` should have lower latency, higher throughput, and lower RU cost than vector searches on a `flat` index. This index is a good option for smaller scenarios, or scenarios where you're using query filters to narrow down the vector search to a relatively small set of vectors. `quantizedFlat` is recommended when the number of vectors to be indexed is somewhere around 50,000 or fewer per physical partition. However, this recommendation is just a general guideline and actual performance should be tested as each scenario can be different.
 
 - The `diskANN` index is a separate index defined specifically for vectors using [DiskANN](https://www.microsoft.com/research/publication/diskann-fast-accurate-billion-point-nearest-neighbor-search-on-a-single-node/), a suite of high performance vector indexing algorithms developed by Microsoft Research. DiskANN indexes can offer some of the lowest latency, highest throughput, and lowest RU cost queries, while still maintaining high accuracy. In general, DiskANN is the most performant of all index types if there are more than 50,000 vectors per physical partition.
+
+- `quantizedFlat` and `diskANN` indexes support two quantization methods in the `vectorIndexes` object through the `quantizerType` property: `product` and `spherical`.
 
 Here are examples of valid vector index policies:
 
@@ -182,12 +182,25 @@ Here are examples of valid vector index policies:
   ]
 }
 ```
+### Quantization methods
+Additionally you can specify the quantization method directly in the `vectorIndexes` object. Cosmos DB supports two quantization methods: `product`, the default method, and `spherical` (in Public Preview), which may exhibit better perfromance characteristics including faster indexing times and higher recall. The quantization method can be specified using the `quantizerType` property in the `vectorIndexes` object as shown below:
 
-> [!IMPORTANT]
-> The vector path added to the `excludedPaths` section of the indexing policy to ensure optimized performance for insertion. Not adding the vector path to `excludedPaths` results in higher request unit charge and latency for vector insertions.
+```json
+{
+  "vectorIndexes": [
+    {
+      "path": "/vector1",
+      "type": "diskANN",
+      "quantizerType": "spherical"
+    }
+  ]
+}
+```
 
 > [!IMPORTANT]
 > Wild card characters (`*`, `[]`) aren't currently supported in the vector policy or vector index.
+
+
 
 ## Perform vector search with queries using `VECTORDISTANCE`
 

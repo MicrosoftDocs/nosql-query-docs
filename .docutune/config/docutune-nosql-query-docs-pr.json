@@ -1,6 +1,10 @@
 {
   "Docsets": [
     {
+      "DocsetName": "azure-nosql",
+      "BuildSourceFolder": "azure"
+    },
+    {
       "DocsetName": "cosmos-db",
       "BuildSourceFolder": "cosmos-db"
     },

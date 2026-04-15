@@ -1,0 +1,178 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "SECURITY.md"
+        ]
+      },
+      {
+        "files": [
+          "zone-pivot-groups.yml"
+        ],
+        "src": "zone-pivots",
+        "dest": "zone-pivots/azure-nosql/"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.gif",
+          "**/*.jpeg",
+          "**/*.jpg",
+          "**/*.png",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "**/docfx.json",
+          "_repo.en-us/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-NoSQL",
+      "brand": "Azure",
+      "permissioned-type": "public",
+      "recommendations": true,
+      "recommendation_types": [
+        "Training",
+        "Certification"
+      ],
+      "breadcrumb_path": "~/breadcrumb/azure-nosql/toc.yml",
+      "zone_pivot_group_filename": "zone-pivots/zone-pivot-groups.json",
+      "feedback_system": "Standard",
+      "feedback_product_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
+      "feedback_help_link_url": "https://learn.microsoft.com/answers/tags/187/azure-cosmos-db",
+      "feedback_help_link_type": "get-help-at-qna"
+    },
+    "fileMetadata": {
+      "ms.service": {
+        "cosmos-db/**/*": "azure-cosmos-db",
+        "documentdb/**/*": "azure-documentdb",
+        "nosql/**/*": "azure"
+      },
+      "ms.subservice": {
+        "cosmos-db/**/*": "nosql",
+        "cosmos-db/mongodb/**/*": "mongodb",
+        "cosmos-db/postgresql/**/*": "postgresql",
+        "cosmos-db/cassandra/**/*": "apache-cassandra",
+        "cosmos-db/table/**/*": "table",
+        "cosmos-db/gremlin/**/*": "apache-gremlin"
+      },
+      "ms.reviewer": {
+        "cosmos-db/**/*": "mjbrown",
+        "cosmos-db/mongodb/**/*": "gahllevy",
+        "cosmos-db/postgresql/**/*": "gahllevy",
+        "cosmos-db/cassandra/**/*": "thvankra",
+        "cosmos-db/gremlin/**/*": "mansha",
+        "cosmos-db/table/**/*": "skhera",
+        "documentdb/**/*": "gahllevy"
+      },
+      "ms.author": {
+        "cosmos-db/**/*": "sidandrews",
+        "documentdb/**/*": "sidandrews",
+        "nosql/**/*": "sidandrews"
+      },
+      "author": {
+        "cosmos-db/**/*": "seesharprun",
+        "documentdb/**/*": "seesharprun",
+        "nosql/**/*": "seesharprun"
+      },
+      "titleSuffix": {
+        "cosmos-db/**/*": "Azure Cosmos DB",
+        "cosmos-db/mongodb/**/*": "Azure Cosmos DB for MongoDB",
+        "cosmos-db/postgresql/**/*": "Azure Cosmos DB for PostgreSQL",
+        "cosmos-db/cassandra/**/*": "Azure Cosmos DB for Apache Cassandra",
+        "cosmos-db/gremlin/**/*": "Azure Cosmos DB for Apache Gremlin",
+        "cosmos-db/table/**/*": "Azure Cosmos DB for Table",
+        "documentdb/**/*": "Azure DocumentDB",
+        "nosql/**/*": "Azure"
+      },
+      "appliesto": {
+        "cosmos-db/**/*": [
+          "✅ NoSQL"
+        ],
+        "cosmos-db/mongodb/**/*": [
+          "✅ MongoDB"
+        ],
+        "cosmos-db/postgresql/**/*": [
+          "✅ PostgreSQL"
+        ],
+        "cosmos-db/cassandra/**/*": [
+          "✅ Apache Cassandra"
+        ],
+        "cosmos-db/gremlin/**/*": [
+          "✅ Apache Gremlin"
+        ],
+        "cosmos-db/table/**/*": [
+          "✅ Table"
+        ]
+      },
+      "ms.update-cycle": {
+        "cosmos-db/mongodb/**/*": "1825-days",
+        "cosmos-db/postgresql/**/*": "1825-days",
+        "cosmos-db/cassandra/**/*": "1825-days",
+        "cosmos-db/gremlin/**/*": "1825-days",
+        "cosmos-db/table/**/*": "1825-days"
+      },
+      "searchScope": {
+        "cosmos-db/**/*": [
+          "Azure",
+          "Azure Cosmos DB"
+        ],
+        "cosmos-db/mongodb/**/*": [
+          "Azure",
+          "Azure Cosmos DB",
+          "Azure Cosmos DB for MongoDB"
+        ],
+        "cosmos-db/postgresql/**/*": [
+          "Azure",
+          "Azure Cosmos DB",
+          "Azure Cosmos DB for PostgreSQL"
+        ],
+        "cosmos-db/cassandra/**/*": [
+          "Azure",
+          "Azure Cosmos DB",
+          "Azure Cosmos DB for Apache Cassandra"
+        ],
+        "cosmos-db/gremlin/**/*": [
+          "Azure",
+          "Azure Cosmos DB",
+          "Azure Cosmos DB for Apache Gremlin"
+        ],
+        "cosmos-db/table/**/*": [
+          "Azure",
+          "Azure Cosmos DB",
+          "Azure Cosmos DB for Table"
+        ],
+        "documentdb/**/*": [
+          "Azure",
+          "Azure DocumentDB"
+        ],
+        "nosql/**/*": [
+          "Azure",
+          "Azure NoSQL"
+        ]
+      }
+    }
+  },
+  "template": []
+}
