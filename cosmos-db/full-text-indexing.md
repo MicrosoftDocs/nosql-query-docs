@@ -91,6 +91,20 @@ Multi-language support allows you to index and search text in languages beyond E
 > [!NOTE]
 > Multi-language support is in early preview. Performance and quality of search might be different than full text search in English. For example, stopword removal is only available for English (`en-us`) at this time. The functionality is subject to change through the evolution of the preview.
 
+The following languages are supported:
+
+| Language | Code | Stopword Removal |
+|---|---|:---:|
+| English | `en-US` | Yes |
+| German (preview) | `de-DE` | No |
+| French (preview) | `fr-FR` | No |
+| Italian (preview) | `it-IT` | No |
+| Portuguese - Brazil (preview) | `pt-BR` | No |
+| Portuguese - Portugal (preview) | `pt-PT` | No |
+| Spanish (preview) | `es-ES` | No |
+
+Language codes are **case-sensitive** (for example, `en-US` not `en-us`).
+
 ### Full text index
 
 Any full text search operations should make use of a *full text index*. A full text index can easily be defined in any Cosmos DB index policy per the example here:
