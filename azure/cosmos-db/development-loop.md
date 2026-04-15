@@ -200,3 +200,86 @@ Create a Next.js application and connect it to the local emulator.
 
     > [!TIP]
     > You can review the data this application creates in the Azure Cosmos DB Emulator Data Explorer at `http://localhost:1234`. You can also use the  [Azure Cosmos DB extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) The database is named `work-management` and the container is named `tasks`.
+
+1. Stop the application.
+
+## Create an Azure Cosmos DB account
+
+Create an Azure Cosmos DB account to host your application data in the cloud.
+
+1. Create variables for the account name and target resource group name.
+
+    ```azurecli
+    RESOURCE_GROUP_NAME="<resource-group-name>"
+    ACCOUNT_NAME="<account-name>"
+    ```
+
+    > [!IMPORTANT]
+    > Replace `<resource-group-name>` and `<account-name>` with your own values. The account name must be globally unique.
+
+1. Create an Azure Cosmos DB account.
+
+    ```azurecli
+    az cosmosdb create \
+      --resource-group $RESOURCE_GROUP_NAME \
+      --name $ACCOUNT_NAME
+    ```
+
+1. Get the connection string for the account.
+
+    ```azurecli
+    az cosmosdb keys list \
+      --resource-group $RESOURCE_GROUP_NAME \
+      --name $ACCOUNT_NAME \
+      --type connection-strings \
+      --query "connectionStrings[0].connectionString" \
+      --output tsv
+    ```
+
+1. Record the connection string value. You use it in the next step.
+
+## Connect the application to Azure Cosmos DB
+
+Update the application to connect to Azure Cosmos DB instead of the local emulator.
+
+1. In `app/data.tsx`, replace the emulator connection string with the Azure Cosmos DB connection string.
+
+    ```typescript
+    const connectionString = "<azure-cosmos-db-connection-string>";
+    ```
+
+    > [!IMPORTANT]
+    > Replace `<azure-cosmos-db-connection-string>` with the connection string you recorded in the previous step.
+
+1. Start the application again.
+
+    ```bash
+    npm run dev
+    ```
+
+1. Open `http://localhost:3000` in your browser. The application now reads and writes data to your Azure Cosmos DB account.
+
+## Clean up resources
+
+When you no longer need the resources created in this tutorial, delete them to avoid incurring charges.
+
+1. Delete the Azure Cosmos DB account.
+
+    ```azurecli
+    az cosmosdb delete \
+      --resource-group $RESOURCE_GROUP_NAME \
+      --name $ACCOUNT_NAME \
+      --yes
+    ```
+
+1. Stop and remove the emulator container.
+
+    ```bash
+    docker stop cosmos-db
+    docker rm cosmos-db
+    ```
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Quickstart: Azure Cosmos DB with Node.js](/azure/cosmos-db/quickstart-nodejs)

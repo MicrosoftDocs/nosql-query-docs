@@ -203,3 +203,108 @@ Create a Next.js application and connect it to the local database.
 
     > [!TIP]
     > You can view the data this application creates by connecting to the DocumentDB container with the  [DocumentDB extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-documentdb). The database is named `work-management` and the collection is named `tasks`.
+
+1. Stop the application.
+
+## Create an Azure DocumentDB cluster
+
+Create an Azure DocumentDB cluster to host your application data in the cloud.
+
+1. Create variables for the cluster name and target resource group name.
+
+    ```azurecli
+    RESOURCE_GROUP_NAME="<resource-group-name>"
+    CLUSTER_NAME="<cluster-name>"
+    ADMIN_USERNAME="<admin-username>"
+    ADMIN_PASSWORD="<admin-password>"
+    ```
+
+    > [!IMPORTANT]
+    > Replace the placeholder values with your own values. The cluster name must be globally unique.
+
+1. Create an Azure DocumentDB cluster.
+
+    ```azurecli
+    az cosmosdb mongocluster create \
+      --resource-group $RESOURCE_GROUP_NAME \
+      --cluster-name $CLUSTER_NAME \
+      --location "eastus" \
+      --administrator-login $ADMIN_USERNAME \
+      --administrator-login-password $ADMIN_PASSWORD \
+      --server-version "8.0" \
+      --shard-node-tier "M30" \
+      --shard-node-ha false \
+      --shard-node-disk-size-gb 128 \
+      --shard-node-count 1
+    ```
+
+1. Create a firewall rule to allow access from your current IP address.
+
+    ```azurecli
+    MY_IP=$(curl -s ifconfig.me)
+
+    az cosmosdb mongocluster firewall rule create \
+      --resource-group $RESOURCE_GROUP_NAME \
+      --cluster-name $CLUSTER_NAME \
+      --rule-name "allow-my-ip" \
+      --start-ip-address $MY_IP \
+      --end-ip-address $MY_IP
+    ```
+
+1. Get the connection string for the cluster.
+
+    ```azurecli
+    az cosmosdb mongocluster show \
+      --resource-group $RESOURCE_GROUP_NAME \
+      --cluster-name $CLUSTER_NAME \
+      --query "connectionString" \
+      --output tsv
+    ```
+
+1. Record the connection string value. You use it in the next step.
+
+## Connect the application to Azure DocumentDB
+
+Update the application to connect to Azure DocumentDB instead of the local container.
+
+1. In `app/data.tsx`, replace the local connection string with the Azure DocumentDB connection string.
+
+    ```typescript
+    const connectionString = "<azure-documentdb-connection-string>";
+    ```
+
+    > [!IMPORTANT]
+    > Replace `<azure-documentdb-connection-string>` with the connection string you recorded in the previous step. The connection string from the portal doesn't include the password. Replace the `<password>` placeholder in the connection string with the password you specified when creating the cluster.
+
+1. Start the application again.
+
+    ```bash
+    npm run dev
+    ```
+
+1. Open `http://localhost:3000` in your browser. The application now reads and writes data to your Azure DocumentDB cluster.
+
+## Clean up resources
+
+When you no longer need the resources created in this tutorial, delete them to avoid incurring charges.
+
+1. Delete the Azure DocumentDB cluster.
+
+    ```azurecli
+    az cosmosdb mongocluster delete \
+      --resource-group $RESOURCE_GROUP_NAME \
+      --cluster-name $CLUSTER_NAME \
+      --yes
+    ```
+
+1. Stop and remove the DocumentDB container.
+
+    ```bash
+    docker stop documentdb
+    docker rm documentdb
+    ```
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Quickstart: Azure DocumentDB with Node.js](/azure/documentdb/quickstart-nodejs)
