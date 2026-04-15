@@ -1,6 +1,18 @@
 {
   "docsets_to_publish": [
     {
+      "docset_name": "azure-nosql",
+      "build_source_folder": "azure",
+      "build_output_subfolder": "azure-nosql",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs"
+    },
+    {
       "docset_name": "cosmos-db",
       "build_source_folder": "cosmos-db",
       "build_output_subfolder": "cosmos-db",
