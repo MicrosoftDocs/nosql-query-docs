@@ -110,6 +110,12 @@ WHERE EXISTS (
 )
 ```
 
+## Query execution and partitioning
+
+How you structure queries affects their execution cost. Including the partition key in the WHERE clause enables efficient single-partition queries. Queries without the partition key execute across all physical partitions, which increases latency and Request Unit (RU) consumption.
+
+For detailed guidance on partition-aware query design, see [Query an Azure Cosmos DB container](/azure/cosmos-db/how-to-query-container) and [Partitioning and horizontal scaling](/azure/cosmos-db/partitioning-overview).
+
 ## Related content
 
 - [Get started with JSON in the query language](get-started-json.md)
