@@ -62,7 +62,7 @@ The API for Cassandra is well-suited for applications that require high write th
 
 For some workloads, adapting to Azure Cosmos DB for Cassandra can be a challenge due to differences in behavior or configuration from the native platform. This constraint is especially applicable for lift-and-shift migrations. Azure Managed Instance for Apache Cassandra is a first-party Azure service for hosting and maintaining pure open-source Apache Cassandra clusters with full native platform compatibility.
 
-For more information, see [Azure Managed Instance for Apache Cassandra](../../managed-instance-apache-cassandra/introduction.md)
+For more information, see [Azure Managed Instance for Apache Cassandra](/azure/managed-instance-apache-cassandra/introduction)
 
 ## Next step
 
