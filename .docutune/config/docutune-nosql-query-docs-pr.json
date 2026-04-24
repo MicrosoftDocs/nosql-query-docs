@@ -13,6 +13,10 @@
       "BuildSourceFolder": "documentdb"
     },
     {
+      "DocsetName": "documentdb-generated",
+      "BuildSourceFolder": "documentdb-autogen"
+    },
+    {
       "DocsetName": "nosql",
       "BuildSourceFolder": "nosql"
     }
