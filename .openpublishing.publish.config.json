@@ -7,6 +7,10 @@
       "locale": "en-us",
       "monikers": [],
       "open_to_public_contributors": false,
+      "xref_query_tags": [
+        "/dotnet",
+        "/python"
+      ],
       "type_mapping": {
         "Conceptual": "Content"
       },
