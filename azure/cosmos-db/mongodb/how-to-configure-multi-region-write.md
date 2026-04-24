@@ -11,7 +11,7 @@ ms.custom: sfi-image-nochange
 ---
 
 # Configure multi-region writes in Azure Cosmos DB for MongoDB
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -49,4 +49,5 @@ On multi-region write accounts, Azure portal supports generation of region-speci
    :::image type="content" source="./media/how-to-multi-region-write/connect-multi-region-writes.png" alt-text="Screenshot to connect to multi-region writes account using Azure portal." lightbox="./media/how-to-multi-region-write/connect-multi-region-writes.png":::
 
 We recommend applications deployed to different regions to use the region-specific connection string with the correct preferred region for low-latency writes.
+
 

@@ -12,7 +12,7 @@ ms.custom: build-2023
 
 # Configure your Azure Cosmos DB for MongoDB account capabilities
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -148,3 +148,4 @@ Capabilities are features that can be added or removed to your API for MongoDB a
 - Trying to do capacity planning for a migration to Azure Cosmos DB? You can use information about your existing database cluster for capacity planning.
   - If all you know is the number of vCores and servers in your existing database cluster, learn how to [estimate request units by using vCores or vCPUs](../convert-vcore-to-request-unit.md).
   - If you know typical request rates for your current database workload, learn how to [estimate request units by using the Azure Cosmos DB capacity planner](estimate-ru-capacity-planner.md).
+

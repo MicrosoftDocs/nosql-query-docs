@@ -11,7 +11,7 @@ show_latex: true
 ---
 
 # Estimate RU/s using the Azure Cosmos DB capacity planner - Azure Cosmos DB for MongoDB
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -78,3 +78,4 @@ The prices shown in the capacity planner are estimates based on the public prici
 * Learn how to [optimize provisioned throughput cost](../optimize-cost-throughput.md).
 * Learn how to [optimize cost with reserved capacity](../reserved-capacity.md).
 * Trying to do capacity planning for a migration to Azure Cosmos DB? You can use information about your existing database cluster for capacity planning.
+

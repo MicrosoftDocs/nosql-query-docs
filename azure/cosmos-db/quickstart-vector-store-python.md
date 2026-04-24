@@ -115,7 +115,7 @@ Find the sample code with resource provisioning on [GitHub](https://github.com/A
 
 1. Create a `requirements.txt` file in your project root with the following content:
 
-    :::code language="plaintext" source="~/cosmos-db-vector-samples/nosql-vector-search-python/requirements.txt" :::
+    :::code language="plaintext" source="~../cosmos-db-vector-samples/nosql-vector-search-python/requirements.txt" :::
 
 1. Install the required packages:
 
@@ -215,7 +215,7 @@ New-Item -ItemType File -Path src/utils.py | Out-Null
 
 Paste the following code into the `vector_search.py` file.
 
-:::code language="python" source="~/cosmos-db-vector-samples/nosql-vector-search-python/src/vector_search.py" :::
+:::code language="python" source="~../cosmos-db-vector-samples/nosql-vector-search-python/src/vector_search.py" :::
 
 This code:
 
@@ -289,7 +289,7 @@ For more information on the `VectorDistance` function, see [VectorDistance docum
 
 Paste the following code into `utils.py`:
 
-:::code language="python" source="~/cosmos-db-vector-samples/nosql-vector-search-python/src/utils.py" :::
+:::code language="python" source="~../cosmos-db-vector-samples/nosql-vector-search-python/src/utils.py" :::
 
 This utility module provides these **key** functions:
 
@@ -351,11 +351,11 @@ The app logging and output show:
 
 ### [DiskANN](#tab/tab-diskann)
 
-:::code language="output" source="~/cosmos-db-vector-samples/nosql-vector-search-python/output/diskann.txt" :::
+:::code language="output" source="~../cosmos-db-vector-samples/nosql-vector-search-python/output/diskann.txt" :::
 
 ### [Quantized flat](#tab/tab-quantizedflat)
 
-:::code language="output" source="~/cosmos-db-vector-samples/nosql-vector-search-python/output/quantizedflat.txt" :::
+:::code language="output" source="~../cosmos-db-vector-samples/nosql-vector-search-python/output/quantizedflat.txt" :::
 
 ---
 
@@ -505,3 +505,4 @@ For detailed information on distance functions, see [What are distance functions
 - [Document Indexer for Azure Cosmos DB (preview)](gen-ai/document-indexer.md)
 - [Vector embeddings in Azure Cosmos DB](gen-ai/vector-embeddings.md)
 - [Azure RBAC built-in roles](/azure/role-based-access-control/built-in-roles)
+

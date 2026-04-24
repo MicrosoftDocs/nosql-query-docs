@@ -13,7 +13,7 @@ ms.custom: devx-track-csharp
 ---
 
 # Change streams in Azure Cosmos DB’s API for MongoDB
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -181,3 +181,4 @@ The following error codes and messages are supported when using change streams:
 
 * [Use time to live to expire data automatically in Azure Cosmos DB's API for MongoDB](time-to-live.md)
 * [Indexing in Azure Cosmos DB's API for MongoDB](indexing.md)
+

@@ -21,7 +21,7 @@ Azure Cosmos DB is Microsoft’s fast NoSQL database with open APIs for any scal
 
 An Azure subscription or free Azure Cosmos DB trial account
 
-- [!INCLUDE [quickstarts-free-trial-note](~/reusable-content/ce-skilling/azure/includes/quickstarts-free-trial-note.md)]
+- [!INCLUDE [quickstarts-free-trial-note](~../reusable-content/ce-skilling/azure/includes/quickstarts-free-trial-note.md)]
 
 Terraform should be installed on your local computer. Installation instructions can be found [here](https://learn.hashicorp.com/tutorials/terraform/install-cli).
 
@@ -42,11 +42,11 @@ The following table summarizes the critical variables used in this quickstart, t
 
 ### Provider Terraform File
 
-:::code language="terraform" source="~/terraform_samples/quickstart/101-cosmos-db-autoscale/providers.tf":::
+:::code language="terraform" source="~../terraform_samples/quickstart/101-cosmos-db-autoscale/providers.tf":::
 
 ### Main Terraform File
 
-:::code language="terraform" source="~/terraform_samples/quickstart/101-cosmos-db-manualscale/main.tf":::
+:::code language="terraform" source="~../terraform_samples/quickstart/101-cosmos-db-manualscale/main.tf":::
 
 Three Cosmos DB resources are defined in the main terraform file.
 
@@ -58,7 +58,7 @@ Three Cosmos DB resources are defined in the main terraform file.
 
 ### Variables Terraform File
 
-:::code language="terraform" source="~/terraform_samples/quickstart/101-cosmos-db-manualscale/variables.tf":::
+:::code language="terraform" source="~../terraform_samples/quickstart/101-cosmos-db-manualscale/variables.tf":::
 
 ## Deploy via terraform
 
@@ -128,3 +128,4 @@ In this quickstart, you created an Azure Cosmos account, a database and a contai
 - Trying to do capacity planning for a migration to Azure Cosmos DB? You can use information about your existing database cluster for capacity planning.
   - If all you know is the number of vCores and servers in your existing database cluster, read about [estimating request units using vCores or vCPUs](convert-vcore-to-request-unit.md).
   - If you know typical request rates for your current database workload, read about [estimating request units using Azure Cosmos DB capacity planner](estimate-ru-with-capacity-planner.md).
+

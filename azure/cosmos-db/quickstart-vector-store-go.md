@@ -102,7 +102,7 @@ Find the sample code with resource provisioning on [GitHub](https://github.com/A
 
 1. Create a `go.mod` file in the project root with the module configuration:
 
-    :::code language="text" source="~/cosmos-db-vector-samples/nosql-vector-search-go/go.mod" :::
+    :::code language="text" source="~../cosmos-db-vector-samples/nosql-vector-search-go/go.mod" :::
 
     Key dependencies:
 
@@ -235,7 +235,7 @@ New-Item -ItemType File -Path internal/query/vector_search.go | Out-Null
 
 Paste the following code into the `cmd/vector-search/main.go` file.
 
-:::code language="go" source="~/cosmos-db-vector-samples/nosql-vector-search-go/cmd/vector-search/main.go" :::
+:::code language="go" source="~../cosmos-db-vector-samples/nosql-vector-search-go/cmd/vector-search/main.go" :::
 
 This code:
 
@@ -309,7 +309,7 @@ For more information on the `VectorDistance` function, see [VectorDistance docum
 
 Paste the following code into `internal/client/clients.go`:
 
-:::code language="go" source="~/cosmos-db-vector-samples/nosql-vector-search-go/internal/client/clients.go" :::
+:::code language="go" source="~../cosmos-db-vector-samples/nosql-vector-search-go/internal/client/clients.go" :::
 
 This file provides these **key** functions:
 
@@ -320,7 +320,7 @@ This file provides these **key** functions:
 
 Paste the following code into `internal/config/config.go`:
 
-:::code language="go" source="~/cosmos-db-vector-samples/nosql-vector-search-go/internal/config/config.go" :::
+:::code language="go" source="~../cosmos-db-vector-samples/nosql-vector-search-go/internal/config/config.go" :::
 
 This file reads environment variables from the `.env` file and provides a structured configuration object used by the rest of the application. It validates required fields and returns clear error messages for missing configuration.
 
@@ -328,7 +328,7 @@ This file reads environment variables from the `.env` file and provides a struct
 
 Paste the following code into `internal/data/loader.go`:
 
-:::code language="go" source="~/cosmos-db-vector-samples/nosql-vector-search-go/internal/data/loader.go" :::
+:::code language="go" source="~../cosmos-db-vector-samples/nosql-vector-search-go/internal/data/loader.go" :::
 
 This file provides these **key** functions:
 
@@ -339,7 +339,7 @@ This file provides these **key** functions:
 
 Paste the following code into `internal/query/vector_search.go`:
 
-:::code language="go" source="~/cosmos-db-vector-samples/nosql-vector-search-go/internal/query/vector_search.go" :::
+:::code language="go" source="~../cosmos-db-vector-samples/nosql-vector-search-go/internal/query/vector_search.go" :::
 
 This file provides these **key** functions:
 
@@ -399,11 +399,11 @@ The app logging and output show:
 
 ### [DiskANN](#tab/tab-diskann)
 
-:::code language="output" source="~/cosmos-db-vector-samples/nosql-vector-search-go/output/diskann.txt" :::
+:::code language="output" source="~../cosmos-db-vector-samples/nosql-vector-search-go/output/diskann.txt" :::
 
 ### [Quantized flat](#tab/tab-quantizedflat)
 
-:::code language="output" source="~/cosmos-db-vector-samples/nosql-vector-search-go/output/quantizedflat.txt" :::
+:::code language="output" source="~../cosmos-db-vector-samples/nosql-vector-search-go/output/quantizedflat.txt" :::
 
 ---
 
@@ -551,4 +551,5 @@ For detailed information on distance functions, see [What are distance functions
 - [Document Indexer for Azure Cosmos DB (preview)](gen-ai/document-indexer.md)
 - [Vector embeddings in Azure Cosmos DB](gen-ai/vector-embeddings.md)
 - [Azure RBAC built-in roles](/azure/role-based-access-control/built-in-roles)
+
 

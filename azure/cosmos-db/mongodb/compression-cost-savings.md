@@ -10,7 +10,7 @@ ms.subservice: mongodb
 ---
 
 # Improve performance and optimize costs when upgrading to Azure Cosmos DB API for MongoDB 4.0+
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -34,3 +34,4 @@ Learn more about upgrading and the API for MongoDB versions:
 * [Introduction to the API for MongoDB](introduction.md)
 * [Upgrade guide](upgrade-version.md)
 * [Version 4.2](feature-support-42.md)
+

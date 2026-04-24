@@ -21,7 +21,7 @@ This article explains how to manage consistency levels in Azure Cosmos DB. You l
 
 As you change your account level consistency, ensure you redeploy your applications and make any necessary code modifications to apply these changes.
 
-[!INCLUDE [updated-for-az](~/reusable-content/ce-skilling/azure/includes/updated-for-az.md)]
+[!INCLUDE [updated-for-az](~/../reusable-content/ce-skilling/azure/includes/updated-for-az.md)]
 
 ## Configure the default consistency level
 
@@ -113,13 +113,13 @@ var response = await client.GetContainer(databaseName, containerName)
 
    Java SDK V4 (Maven com.azure::azure-cosmos) Async API
 
-   [!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=ManageConsistencyAsync)]
+  [!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=ManageConsistencyAsync)]
 
 # [Sync](#tab/api-sync)
 
    Java SDK V4 (Maven com.azure::azure-cosmos) Sync API
 
-   [!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/sync/SampleDocumentationSnippets.java?name=ManageConsistencySync)]
+  [!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/sync/SampleDocumentationSnippets.java?name=ManageConsistencySync)]
 
 --- 
 
@@ -234,13 +234,13 @@ ItemResponse<SalesOrder> response = await container.ReadItemAsync<SalesOrder>(sa
 
    Java SDK V4 (Maven com.azure::azure-cosmos) Async API
 
-   [!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=ManageConsistencySessionAsync)]
+  [!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=ManageConsistencySessionAsync)]
 
 # [Sync](#tab/api-sync)
 
    Java SDK V4 (Maven com.azure::azure-cosmos) Sync API
 
-   [!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/sync/SampleDocumentationSnippets.java?name=ManageConsistencySessionSync)]
+  [!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/sync/SampleDocumentationSnippets.java?name=ManageConsistencySessionSync)]
 
 --- 
 

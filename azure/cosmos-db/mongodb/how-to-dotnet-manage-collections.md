@@ -13,7 +13,7 @@ ms.custom: devx-track-dotnet, devguide-csharp, cosmos-db-dev-journey
 
 # Manage a collection in Azure Cosmos DB for MongoDB using .NET
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -44,7 +44,7 @@ To create a collection, insert a document into the collection.
 - [MongoClient.Database.Collection.InsertOne](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_IMongoCollection_1_InsertOne_1.htm)
 - [MongoClient.Database.Collection.InsertMany](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_IMongoCollection_1_InsertMany_1.htm)
 
-:::code language="csharp" source="~/azure-cosmos-mongodb-dotnet/110-manage-collections/program.cs" id="create_collection":::
+:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/110-manage-collections/program.cs" id="create_collection":::
 
 ## Drop a collection
 
@@ -52,7 +52,7 @@ To create a collection, insert a document into the collection.
 
 Drop the collection from the database to remove it permanently. However, the next insert or update operation that accesses the collection will create a new collection with that name.
 
-:::code language="csharp" source="~/azure-cosmos-mongodb-dotnet/110-manage-collections/program.cs" id="drop_collection":::
+:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/110-manage-collections/program.cs" id="drop_collection":::
 
 ## Get collection indexes
 
@@ -60,9 +60,10 @@ An index is used by the MongoDB query engine to improve performance to database 
 
 - [MongoClient.Database.Collection.indexes](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/P_MongoDB_Driver_IMongoCollection_1_Indexes.htm)
 
-:::code language="csharp" source="~/azure-cosmos-mongodb-dotnet/110-manage-collections/program.cs" id="get_indexes":::
+:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/110-manage-collections/program.cs" id="get_indexes":::
 
 ## See also
 
 - [Get started with Azure Cosmos DB for MongoDB and .NET](how-to-dotnet-get-started.md)
 - [Create a database](how-to-dotnet-manage-databases.md)
+

@@ -177,19 +177,19 @@ vector-search-quickstart
 
 Add the following code to the `src/diskann.go` file:
 
-:::code language="go" source="~/documentdb-samples/ai/vector-search-go/src/diskann.go" :::
+:::code language="go" source="~../documentdb-samples/ai/vector-search-go/src/diskann.go" :::
 
 #### [IVF](#tab/tab-ivf)
 
 Add the following code to the `src/ivf.go` file:
 
-:::code language="go" source="~/documentdb-samples/ai/vector-search-go/src/ivf.go" :::
+:::code language="go" source="~../documentdb-samples/ai/vector-search-go/src/ivf.go" :::
 
 #### [HNSW](#tab/tab-hnsw)
 
 Add the following code to the `src/hnsw.go` file:
 
-:::code language="go" source="~/documentdb-samples/ai/vector-search-go/src/hnsw.go" :::
+:::code language="go" source="~../documentdb-samples/ai/vector-search-go/src/hnsw.go" :::
 
 ----
 
@@ -207,7 +207,7 @@ This main module provides these features:
 
 Add the following code to `src/utils.go`:
 
-:::code language="go" source="~/documentdb-samples/ai/vector-search-go/src/utils.go" :::
+:::code language="go" source="~../documentdb-samples/ai/vector-search-go/src/utils.go" :::
 
 This utility module provides these features:
 

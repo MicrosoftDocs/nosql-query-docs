@@ -13,7 +13,7 @@ ms.custom: devx-track-js, devguide-js, cosmos-db-dev-journey, sfi-ropc-blocked
 
 # Get started with Azure Cosmos DB for MongoDB using JavaScript
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -107,11 +107,11 @@ Skip this step and use the information for the portal in the next step.
 
 1. Add dependencies to reference the MongoDB and DotEnv npm packages.
 
-    :::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/101-client-connection-string/index.js" id="package_dependencies":::
+    :::code language="javascript" source="~../samples-cosmosdb-mongodb-javascript/101-client-connection-string/index.js" id="package_dependencies":::
 
 1. Define a new instance of the ``MongoClient`` class using the constructor, and [``process.env.``](https://nodejs.org/dist/latest-v8.x/docs/api/process.html#process_process_env) to use the connection string.
 
-    :::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/101-client-connection-string/index.js" id="client_credentials":::
+    :::code language="javascript" source="~../samples-cosmosdb-mongodb-javascript/101-client-connection-string/index.js" id="client_credentials":::
 
 For more information on different ways to create a ``MongoClient`` instance, see [MongoDB NodeJS Driver Quick Start](https://www.npmjs.com/package/mongodb#quick-start).
 
@@ -155,3 +155,4 @@ Now that you've connected to an API for MongoDB account, use the next guide to c
 
 > [!div class="nextstepaction"]
 > [Create a database in Azure Cosmos DB for MongoDB using JavaScript](how-to-javascript-manage-databases.md)
+

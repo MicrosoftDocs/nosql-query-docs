@@ -27,10 +27,11 @@ the link in the **Version** column to view the source on the
 
 ## Azure Cosmos DB
 
-[!INCLUDE [azure-policy-reference-rp-cosmosdb](~/azure-policy-autogen-docs/includes/policy/reference/byrp/microsoft.documentdb.md)]
+[!INCLUDE [azure-policy-reference-rp-cosmosdb](~../azure-policy-autogen-docs/includes/policy/reference/byrp/microsoft.documentdb.md)]
 
 ## Next steps
 
 - See the built-ins on the [Azure Policy GitHub repo](https://github.com/Azure/azure-policy).
 - Review the [Azure Policy definition structure](/azure/governance/policy/concepts/definition-structure).
 - Review [Understanding policy effects](/azure/governance/policy/concepts/effects).
+

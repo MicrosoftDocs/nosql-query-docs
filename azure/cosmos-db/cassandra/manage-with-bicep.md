@@ -34,7 +34,7 @@ To create any of the Azure Cosmos DB resources below, copy the following example
 
 Create an Azure Cosmos DB account in two regions with options for consistency and failover, with a keyspace and table configured for autoscale throughput.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-cassandra-autoscale/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-cassandra-autoscale/main.bicep":::
 
 <a id="create-manual"></a>
 
@@ -42,7 +42,7 @@ Create an Azure Cosmos DB account in two regions with options for consistency an
 
 Create an Azure Cosmos DB account in two regions with options for consistency and failover, with a keyspace and table configured for standard throughput.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-cassandra/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-cassandra/main.bicep":::
 
 ## Next steps
 

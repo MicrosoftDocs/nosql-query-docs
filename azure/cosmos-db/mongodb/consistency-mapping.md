@@ -10,7 +10,7 @@ ms.date: 10/12/2020
 ---
 
 # Consistency levels for Azure Cosmos DB and the API for MongoDB
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -46,3 +46,4 @@ Learn more about global distribution and consistency levels for Azure Cosmos DB:
 * [Global distribution overview](../distribute-data-globally.md)
 * [Consistency Level overview](../consistency-levels.md)
 * [High availability](../high-availability.md)
+

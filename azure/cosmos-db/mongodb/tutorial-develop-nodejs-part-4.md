@@ -11,7 +11,7 @@ ms.author: gahllevy
 ms.custom: devx-track-js, devx-track-azurecli, sfi-image-nochange
 ---
 # Create an Angular app with Azure Cosmos DB's API for MongoDB - Create an Azure Cosmos DB account
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -33,11 +33,11 @@ Before starting this part of the tutorial, ensure you've completed the steps in 
 
 In this tutorial section, you can either use the Azure Cloud Shell (in your internet browser) or [the Azure CLI](/cli/azure/install-azure-cli) installed locally.
 
-[!INCLUDE [cloud-shell-try-it](~/reusable-content/ce-skilling/azure/includes/cloud-shell-try-it.md)]
+[!INCLUDE [cloud-shell-try-it](~../reusable-content/ce-skilling/azure/includes/cloud-shell-try-it.md)]
 
 [!INCLUDE [Log in to Azure](../includes/login-to-azure.md)]
 
-[!INCLUDE [Create resource group](~/reusable-content/ce-skilling/azure/includes/app-service-web-create-resource-group.md)]
+[!INCLUDE [Create resource group](~../reusable-content/ce-skilling/azure/includes/app-service-web-create-resource-group.md)]
 
 > [!TIP]
 > This tutorial walks you through the steps to build the application step-by-step. If you want to download the finished project, you can get the completed application from the [angular-cosmosdb repo](https://github.com/Azure-Samples/angular-cosmosdb) on GitHub.
@@ -82,3 +82,4 @@ You can proceed to the next part of the tutorial to connect Azure Cosmos DB to y
 Trying to do capacity planning for a migration to Azure Cosmos DB? You can use information about your existing database cluster for capacity planning.
 * If all you know is the number of vcores and servers in your existing database cluster, read about [estimating request units using vCores or vCPUs](../convert-vcore-to-request-unit.md) 
 * If you know typical request rates for your current database workload, read about [estimating request units using Azure Cosmos DB capacity planner](estimate-ru-capacity-planner.md)
+

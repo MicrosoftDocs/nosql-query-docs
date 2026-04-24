@@ -118,7 +118,7 @@ To use OpenTelemetry with the Azure Cosmos DB SDKs, add the `Azure.Cosmos.Operat
 
 This sample shows how to configure OpenTelemetry for a .NET console app. See the [complete sample](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/master/Microsoft.Azure.Cosmos.Samples/Usage/OpenTelemetry) on GitHub.
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/OpenTelemetry/Program.cs?name=SetUpOpenTelemetry)]
+[!code-csharp[Main](~../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/OpenTelemetry/Program.cs?name=SetUpOpenTelemetry)]
 
 ## Configure the Application Insights SDK
 
@@ -129,7 +129,7 @@ There are many different ways to configure Application Insights depending on the
 
 The following sample shows how to configure Application Insights for a .NET console app. See the [complete sample](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/master/Microsoft.Azure.Cosmos.Samples/Usage/OpenTelemetry) on GitHub.
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ApplicationInsights/Program.cs?name=SetUpApplicationInsights)]
+[!code-csharp[Main](~../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ApplicationInsights/Program.cs?name=SetUpApplicationInsights)]
 
 Once trace data is ingested into Application Insights, you can visualize it in the Azure portal to understand the request flow in your application. Here's an example of trace data from a cross partition query in the transaction search in the left navigation of the Azure portal.
 
@@ -140,3 +140,4 @@ Once trace data is ingested into Application Insights, you can visualize it in t
 - [Get started with the .NET SDK](./quickstart-dotnet.md)
 - [Get started with the Java SDK](./quickstart-java.md)
 - [Monitor Azure Cosmos DB](monitor.md)
+

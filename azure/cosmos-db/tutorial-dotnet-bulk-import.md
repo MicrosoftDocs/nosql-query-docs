@@ -124,7 +124,7 @@ public class Program
 
 Inside the `Main` method, add the following code to initialize the CosmosClient object:
 
-[!code-csharp[Main](~/cosmos-dotnet-bulk-import/src/Program.cs?name=CreateClient)]
+[!code-csharp[Main](~../cosmos-dotnet-bulk-import/src/Program.cs?name=CreateClient)]
 
 > [!NOTE]
 > Once bulk execution is specified in the [CosmosClientOptions](/dotnet/api/microsoft.azure.cosmos.cosmosclientoptions), they're effectively immutable for the lifetime of the CosmosClient. Changing the values has no effect.
@@ -133,7 +133,7 @@ After the bulk execution is enabled, the CosmosClient internally groups concurre
 
 You can then create a container to store all our items. Define `/pk` as the partition key, 50000 RU/s as provisioned throughput, and a custom indexing policy that excludes all fields to optimize the write throughput. Add the following code after the CosmosClient initialization statement:
 
-[!code-csharp[Main](~/cosmos-dotnet-bulk-import/src/Program.cs?name=Initialize)]
+[!code-csharp[Main](~../cosmos-dotnet-bulk-import/src/Program.cs?name=Initialize)]
 
 ## Step 6: Populate a list of concurrent tasks
 
@@ -148,19 +148,19 @@ First, add the Bogus package to the solution by using the dotnet add package com
 
 Define the definition of the items that you want to save. You need to define the `Item` class within the *Program.cs* file:
 
-[!code-csharp[Main](~/cosmos-dotnet-bulk-import/src/Program.cs?name=Model)]
+[!code-csharp[Main](~../cosmos-dotnet-bulk-import/src/Program.cs?name=Model)]
 
 Next, create a helper function inside the `Program` class. This helper function gets the number of items you defined to insert and generates random data:
 
-[!code-csharp[Main](~/cosmos-dotnet-bulk-import/src/Program.cs?name=Bogus)]
+[!code-csharp[Main](~../cosmos-dotnet-bulk-import/src/Program.cs?name=Bogus)]
 
 Use the helper function to initialize a list of documents to work with:
 
-[!code-csharp[Main](~/cosmos-dotnet-bulk-import/src/Program.cs?name=Operations)]
+[!code-csharp[Main](~../cosmos-dotnet-bulk-import/src/Program.cs?name=Operations)]
 
 Next, use the list of documents to create concurrent tasks and populate the task list to insert the items into the container. To perform this operation, add the following code to the `Program` class:
 
-[!code-csharp[Main](~/cosmos-dotnet-bulk-import/src/Program.cs?name=ConcurrentTasks)]
+[!code-csharp[Main](~../cosmos-dotnet-bulk-import/src/Program.cs?name=ConcurrentTasks)]
 
 All these concurrent point operations are executed together (that is in bulk) as described in the introduction section.
 
@@ -193,3 +193,4 @@ dotnet run
 Trying to do capacity planning for a migration to Azure Cosmos DB? You can use information about your existing database cluster for capacity planning.
 * If all you know is the number of vCores and servers in your existing database cluster, read about [estimating request units using vCores or vCPUs](convert-vcore-to-request-unit.md)
 * If you know typical request rates for your current database workload, read about [estimating request units using Azure Cosmos DB capacity planner](estimate-ru-with-capacity-planner.md)
+

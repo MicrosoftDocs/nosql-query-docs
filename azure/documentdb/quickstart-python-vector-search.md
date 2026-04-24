@@ -163,20 +163,20 @@ touch src/utils.py
 
 Paste the following code into the `diskann.py` file.
 
-:::code language="python" source="~/documentdb-samples/ai/vector-search-python/src/diskann.py" :::
+:::code language="python" source="~../documentdb-samples/ai/vector-search-python/src/diskann.py" :::
 
 
 #### [IVF](#tab/tab-ivf)
 
 Paste the following code into the `ivf.py` file.
 
-:::code language="python" source="~/documentdb-samples/ai/vector-search-python/src/ivf.py" :::
+:::code language="python" source="~../documentdb-samples/ai/vector-search-python/src/ivf.py" :::
 
 #### [HNSW](#tab/tab-hnsw)
 
 Paste the following code into the `hnsw.py` file.
 
-:::code language="python" source="~/documentdb-samples/ai/vector-search-python/src/hnsw.py" :::
+:::code language="python" source="~../documentdb-samples/ai/vector-search-python/src/hnsw.py" :::
 
 ----
 
@@ -195,7 +195,7 @@ This main module provides these features:
 
 Paste the following code into `utils.py`:
 
-:::code language="python" source="~/documentdb-samples/ai/vector-search-python/src/utils.py" :::
+:::code language="python" source="~../documentdb-samples/ai/vector-search-python/src/utils.py" :::
 
 This utility module provides these features:
 

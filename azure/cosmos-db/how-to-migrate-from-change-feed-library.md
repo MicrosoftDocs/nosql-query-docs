@@ -29,11 +29,11 @@ The .NET V3 SDK has several breaking changes, the following are the key steps to
 
 For example, if the original code to build the change feed processor looks as follows:
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=ChangeFeedProcessorLibrary)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=ChangeFeedProcessorLibrary)]
 
 The migrated code looks like:
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=ChangeFeedProcessorMigrated)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=ChangeFeedProcessorMigrated)]
 
 For the delegate, you can have a static method to receive the events. If you were consuming information from the `IChangeFeedObserverContext` you can migrate to use the `ChangeFeedProcessorContext`:
 
@@ -41,7 +41,7 @@ For the delegate, you can have a static method to receive the events. If you wer
 * `ChangeFeedProcessorContext.Headers` can be used instead of `IChangeFeedObserverContext.FeedResponse`
 * `ChangeFeedProcessorContext.Diagnostics` contains detailed information about request latency for troubleshooting
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=Delegate)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=Delegate)]
 
 ## Health events and observability
 

@@ -97,7 +97,7 @@ Find the sample code with resource provisioning on [GitHub](https://github.com/A
 
 1. Create a `pom.xml` file in the project root with the Maven configuration:
 
-    :::code language="xml" source="~/cosmos-db-vector-samples/nosql-vector-search-java/pom.xml" :::
+    :::code language="xml" source="~../cosmos-db-vector-samples/nosql-vector-search-java/pom.xml" :::
 
     Key dependencies:
 
@@ -210,7 +210,7 @@ New-Item -ItemType File -Path src/main/java/com/example/cosmos/vectorsearch/Util
 
 Paste the following code into the `VectorSearch.java` file.
 
-:::code language="java" source="~/cosmos-db-vector-samples/nosql-vector-search-java/src/main/java/com/example/cosmos/vectorsearch/VectorSearch.java" :::
+:::code language="java" source="~../cosmos-db-vector-samples/nosql-vector-search-java/src/main/java/com/example/cosmos/vectorsearch/VectorSearch.java" :::
 
 This code:
 
@@ -276,7 +276,7 @@ For more information on the `VectorDistance` function, see [VectorDistance docum
 
 Paste the following code into `Utils.java`:
 
-:::code language="java" source="~/cosmos-db-vector-samples/nosql-vector-search-java/src/main/java/com/example/cosmos/vectorsearch/Utils.java" :::
+:::code language="java" source="~../cosmos-db-vector-samples/nosql-vector-search-java/src/main/java/com/example/cosmos/vectorsearch/Utils.java" :::
 
 This utility class provides these **key** functions:
 
@@ -337,11 +337,11 @@ The app logging and output show:
 
 ### [DiskANN](#tab/tab-diskann)
 
-:::code language="output" source="~/cosmos-db-vector-samples/nosql-vector-search-java/output/diskann.txt" :::
+:::code language="output" source="~../cosmos-db-vector-samples/nosql-vector-search-java/output/diskann.txt" :::
 
 ### [Quantized flat](#tab/tab-quantizedflat)
 
-:::code language="output" source="~/cosmos-db-vector-samples/nosql-vector-search-java/output/quantizedflat.txt" :::
+:::code language="output" source="~../cosmos-db-vector-samples/nosql-vector-search-java/output/quantizedflat.txt" :::
 
 ---
 
@@ -491,4 +491,5 @@ For detailed information on distance functions, see [What are distance functions
 - [Document Indexer for Azure Cosmos DB (preview)](gen-ai/document-indexer.md)
 - [Vector embeddings in Azure Cosmos DB](gen-ai/vector-embeddings.md)
 - [Azure RBAC built-in roles](/azure/role-based-access-control/built-in-roles)
+
 

@@ -145,7 +145,7 @@ Find the sample code with resource provisioning on [GitHub](https://github.com/A
 
 1. Add a `tsconfig.json` file to configure TypeScript:
 
-    :::code language="json" source="~/cosmos-db-vector-samples/nosql-vector-search-typescript/tsconfig.json" :::
+    :::code language="json" source="~../cosmos-db-vector-samples/nosql-vector-search-typescript/tsconfig.json" :::
 
 
 ## Understand the document schema
@@ -238,7 +238,7 @@ New-Item -ItemType File -Path src/utils.ts | Out-Null
 
 Paste the following code into the `vector-search.ts` file.
 
-:::code language="typescript" source="~/cosmos-db-vector-samples/nosql-vector-search-typescript/src/vector-search.ts" :::
+:::code language="typescript" source="~../cosmos-db-vector-samples/nosql-vector-search-typescript/src/vector-search.ts" :::
 
 This code:
 
@@ -305,7 +305,7 @@ For more information on the `VectorDistance` function, see [VectorDistance docum
 
 Paste the following code into `utils.ts`:
 
-:::code language="typescript" source="~/cosmos-db-vector-samples/nosql-vector-search-typescript/src/utils.ts" :::
+:::code language="typescript" source="~../cosmos-db-vector-samples/nosql-vector-search-typescript/src/utils.ts" :::
 
 This utility module provides these **key** functions:
 
@@ -353,11 +353,11 @@ The app logging and output show:
 
 ### [DiskANN](#tab/tab-diskann)
 
-:::code language="output" source="~/cosmos-db-vector-samples/nosql-vector-search-typescript/output/diskann.txt" :::
+:::code language="output" source="~../cosmos-db-vector-samples/nosql-vector-search-typescript/output/diskann.txt" :::
 
 ### [Quantized flat](#tab/tab-quantizedflat)
 
-:::code language="output" source="~/cosmos-db-vector-samples/nosql-vector-search-typescript/output/quantizedflat.txt" :::
+:::code language="output" source="~../cosmos-db-vector-samples/nosql-vector-search-typescript/output/quantizedflat.txt" :::
 
 ---
 

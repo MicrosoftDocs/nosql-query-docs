@@ -33,7 +33,7 @@ To create any of the Azure Cosmos DB resources below, copy the following example
 
 Create an Azure Cosmos DB account in two regions with options for consistency and failover, with database and container configured for autoscale throughput that has most index policy options enabled.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql-autoscale/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql-autoscale/main.bicep":::
 
 <a id="create-analytical-store"></a>
 
@@ -41,7 +41,7 @@ Create an Azure Cosmos DB account in two regions with options for consistency an
 
 Create an Azure Cosmos DB account in one region with a container with Analytical TTL enabled and options for manual or autoscale throughput.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql-analytical-store/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql-analytical-store/main.bicep":::
 
 <a id="create-manual"></a>
 
@@ -49,7 +49,7 @@ Create an Azure Cosmos DB account in one region with a container with Analytical
 
 Create an Azure Cosmos DB account in two regions with options for consistency and failover, with database and container configured for standard throughput that has most policy options enabled.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql/main.bicep":::
 
 <a id="create-sproc"></a>
 
@@ -57,7 +57,7 @@ Create an Azure Cosmos DB account in two regions with options for consistency an
 
 Create an Azure Cosmos DB account, database and container with a stored procedure, trigger, and user-defined function.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql-container-sprocs/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql-container-sprocs/main.bicep":::
 
 <a id="create-rbac"></a>
 
@@ -67,7 +67,7 @@ Create an Azure Cosmos DB account, database and container with a stored procedur
 
 Create an Azure Cosmos DB account, a natively maintained Role Definition, and a natively maintained Role Assignment for a Microsoft Entra identity.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql-rbac/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-sql-rbac/main.bicep":::
 
 <a id="free-tier"></a>
 
@@ -75,7 +75,7 @@ Create an Azure Cosmos DB account, a natively maintained Role Definition, and a 
 
 Create a free-tier Azure Cosmos DB account and a database with shared throughput that can be shared with up to 25 containers.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-free/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-free/main.bicep":::
 
 ## Next steps
 

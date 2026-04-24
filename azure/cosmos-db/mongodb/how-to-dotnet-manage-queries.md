@@ -13,7 +13,7 @@ ms.custom: devx-track-dotnet, devguide-csharp, cosmos-db-dev-journey
 
 # Query documents in Azure Cosmos DB for MongoDB using .NET
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -32,9 +32,10 @@ To find documents, use a query filter on the collection to define how the docume
 - [FilterDefinition](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/T_MongoDB_Driver_FilterDefinition_1.htm)
 - [FilterDefinitionBuilder](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/T_MongoDB_Driver_FilterDefinitionBuilder_1.htm)
 
-:::code language="csharp" source="~/azure-cosmos-mongodb-dotnet/125-manage-queries/program.cs" id="query_documents":::
+:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/125-manage-queries/program.cs" id="query_documents":::
 
 ## See also
 
 - [Get started with Azure Cosmos DB for MongoDB and .NET](how-to-dotnet-get-started.md)
 - [Create a database](how-to-dotnet-manage-databases.md)
+

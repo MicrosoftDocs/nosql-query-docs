@@ -12,7 +12,7 @@ ms.author: gahllevy
 
 # Manage Azure Cosmos DB for MongoDB resources using Bicep
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -34,7 +34,7 @@ To create any of the Azure Cosmos DB resources below, copy the following example
 
 This template will create an Azure Cosmos DB account for API for MongoDB (3.2, 3.6, 4.0, or 4.2) with two collections that share autoscale throughput at the database level.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-mongodb-autoscale/main.bicep":::
+:::code language="bicep" source="~../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-mongodb-autoscale/main.bicep":::
 
 <a id="create-manual"></a>
 
@@ -42,7 +42,7 @@ This template will create an Azure Cosmos DB account for API for MongoDB (3.2, 3
 
 Create an Azure Cosmos DB account for API for MongoDB (3.2, 3.6, 4.0, or 4.2) with two collections that share 400 RU/s standard (manual) throughput at the database level.
 
-:::code language="bicep" source="~/quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-mongodb/main.bicep":::
+:::code language="bicep" source="~../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-mongodb/main.bicep":::
 
 ## Next steps
 
@@ -53,3 +53,4 @@ Here are some additional resources:
 * Trying to do capacity planning for a migration to Azure Cosmos DB? You can use information about your existing database cluster for capacity planning.
   * If all you know is the number of vcores and servers in your existing database cluster, read about [estimating request units using vCores or vCPUs](../convert-vcore-to-request-unit.md)
   * If you know typical request rates for your current database workload, read about [estimating request units using Azure Cosmos DB capacity planner](estimate-ru-capacity-planner.md)
+

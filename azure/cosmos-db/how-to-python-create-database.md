@@ -37,13 +37,13 @@ To create a database, call one of the following methods:
 
 The following example creates a database with the [`CosmosClient.create_database`](/python/api/azure-cosmos/azure.cosmos.cosmosclient#azure-cosmos-cosmosclient-create-database) method. This method throws an exception if a database with the same name exists.
 
-:::code language="python" source="~/cosmos-db-nosql-python-samples/004-create-db/app.py" id="create_database":::
+:::code language="python" source="~/../cosmos-db-nosql-python-samples/004-create-db/app.py" id="create_database":::
 
 ### Create a database if it doesn't already exist
 
 The following example creates a database with the [`CosmosClient.create_database_if_not_exists`](/python/api/azure-cosmos/azure.cosmos.cosmosclient#azure-cosmos-cosmosclient-create-database-if-not-exists) method. If the database exists, this method returns the database settings. Compared to the previous create method, this method doesn't throw an exception if the database already exists. This method is useful for avoiding errors if you run the same code multiple times.
 
-:::code language="python" source="~/cosmos-db-nosql-python-samples/004-create-db/app_exists.py" id="create_database":::
+:::code language="python" source="~/../cosmos-db-nosql-python-samples/004-create-db/app_exists.py" id="create_database":::
 
 ### Create a database asynchronously
 
@@ -57,7 +57,7 @@ In the examples above, the response from the requests is a  [``DatabaseProxy``](
 
 The following example shows the **create_database_if_not_exists** method returning a **database** object.
 
-:::code language="python" source="~/cosmos-db-nosql-python-samples/004-create-db/app_exists.py" id="parse_response":::
+:::code language="python" source="~/../cosmos-db-nosql-python-samples/004-create-db/app_exists.py" id="parse_response":::
 
 ## Next steps
 

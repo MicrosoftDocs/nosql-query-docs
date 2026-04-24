@@ -13,7 +13,7 @@ ms.custom: devx-track-js, devguide-js, cosmos-db-dev-journey
 
 # Manage a collection in Azure Cosmos DB for MongoDB using JavaScript
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -44,7 +44,7 @@ To create a collection, insert a document into the collection.
 - [MongoClient.Db.Collection.insertOne](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#insertOne)
 - [MongoClient.Db.Collection.insertMany](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#insertMany)
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/203-insert-doc/index.js" id="database_object":::
+:::code language="javascript" source="~../samples-cosmosdb-mongodb-javascript/203-insert-doc/index.js" id="database_object":::
 
 ## Drop a collection
 
@@ -52,11 +52,11 @@ To create a collection, insert a document into the collection.
 
 Drop the collection from the database to remove it permanently. However, the next insert or update operation that accesses the collection will create a new collection with that name.
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/299-drop-collection/index.js" id="drop_collection":::
+:::code language="javascript" source="~../samples-cosmosdb-mongodb-javascript/299-drop-collection/index.js" id="drop_collection":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/299-drop-collection/index.js" id="console_result":::
+:::code language="console" source="~../samples-cosmosdb-mongodb-javascript/299-drop-collection/index.js" id="console_result":::
 
 ## Get collection indexes
 
@@ -64,13 +64,14 @@ An index is used by the MongoDB query engine to improve performance to database 
 
 - [MongoClient.Db.Collection.indexes](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#indexes)
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/225-get-collection-indexes/index.js" id="collection":::
+:::code language="javascript" source="~../samples-cosmosdb-mongodb-javascript/225-get-collection-indexes/index.js" id="collection":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/225-get-collection-indexes/index.js" id="console_result":::
+:::code language="console" source="~../samples-cosmosdb-mongodb-javascript/225-get-collection-indexes/index.js" id="console_result":::
 
 ## See also
 
 - [Get started with Azure Cosmos DB for MongoDB and JavaScript](how-to-javascript-get-started.md)
 - [Create a database](how-to-javascript-manage-databases.md)
+
