@@ -73,7 +73,7 @@ Review the following considerations before you use this feature:
 
 ::: zone pivot="rest-api,azure-resource-manager-bicep,azure-terraform"
 
-[!INCLUDE[External - Azure CLI prerequisites](~../reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
+[!INCLUDE[External - Azure CLI prerequisites](~/../reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
 
 ::: zone-end
 

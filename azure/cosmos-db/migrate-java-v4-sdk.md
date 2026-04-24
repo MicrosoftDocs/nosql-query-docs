@@ -192,7 +192,7 @@ The following code snippet shows the differences in how resources are created be
 
 # [Java SDK 4.0 Async API](#tab/java-v4-async)
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateJavaSDKv4ResourceAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateJavaSDKv4ResourceAsync)]
 
 # [Java SDK 3.x.x Async API](#tab/java-v3-async)
 
@@ -285,7 +285,7 @@ The following code snippet shows the differences in how item operations are perf
 
 # [Java SDK 4.0 Async API](#tab/java-v4-async)
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateItemOpsAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateItemOpsAsync)]
 
 # [Java SDK 3.x.x Async API](#tab/java-v3-async)
 
@@ -331,7 +331,7 @@ The following code snippet shows the differences in how indexing is created betw
 
 # [Java SDK 4.0 Async API](#tab/java-v4-async)
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateIndexingAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateIndexingAsync)]
 
 # [Java SDK 3.x.x Async API](#tab/java-v3-async)
 
@@ -424,7 +424,7 @@ The following code snippet shows the differences in how stored procedures are cr
 
 # [Java SDK 4.0 Async API](#tab/java-v4-async)
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateSprocAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateSprocAsync)]
 
 # [Java SDK 3.x.x Async API](#tab/java-v3-async)
 
@@ -553,7 +553,7 @@ The following code snippet shows the differences in how change feed operations a
 
 # [Java SDK 4.0 Async API](#tab/java-v4-async)
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateCFAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateCFAsync)]
 
 # [Java SDK 3.x.x Async API](#tab/java-v3-async)
 
@@ -606,7 +606,7 @@ The following code snippet shows the differences in how to create time to live f
 
 # [Java SDK 4.0 Async API](#tab/java-v4-async)
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateContainerTTLAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateContainerTTLAsync)]
 
 # [Java SDK 3.x.x Async API](#tab/java-v3-async)
 
@@ -650,9 +650,9 @@ The following code snippet shows the differences in how to create time to live f
 
 # [Java SDK 4.0 Async API](#tab/java-v4-async)
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateItemTTLClassAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateItemTTLClassAsync)]
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateItemTTLAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=MigrateItemTTLAsync)]
 
 # [Java SDK 3.x.x Async API](#tab/java-v3-async)
 

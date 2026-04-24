@@ -13,7 +13,7 @@ ms.custom: devx-track-js, devguide-js, cosmos-db-dev-journey
 
 # Query data in Azure Cosmos DB for MongoDB using JavaScript
 
-[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -32,11 +32,11 @@ To find documents, use a query to define how the documents are found.
 - [MongoClient.Db.Collection.find](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#find)
 - [FindCursor](https://mongodb.github.io/node-mongodb-native/4.7/classes/FindCursor.html)
 
-:::code language="javascript" source="~../samples-cosmosdb-mongodb-javascript/275-find/index.js" id="read_doc":::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/275-find/index.js" id="read_doc":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~../samples-cosmosdb-mongodb-javascript/275-find/index.js" id="console_result_findone":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/275-find/index.js" id="console_result_findone":::
 
 ## Aggregation pipelines
 
@@ -152,13 +152,13 @@ The aggregations below use the [sample products collection](https://github.com/A
 
 Use the following [sample code](https://github.com/Azure-Samples/cosmos-db-mongodb-api-javascript-samples/blob/main/280-aggregation/average-price-in-each-product-subcategory.js) to report on average price in each product subcategory.
 
-:::code language="javascript" source="~../samples-cosmosdb-mongodb-javascript/280-aggregation/average-price-in-each-product-subcategory.js" id="aggregation_1" :::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/280-aggregation/average-price-in-each-product-subcategory.js" id="aggregation_1" :::
 
 ### Example 2: Bike types with price range
 
 Use the following [sample code](https://github.com/Azure-Samples/cosmos-db-mongodb-api-javascript-samples/blob/main/280-aggregation/bike-types-and-price-ranges.js) to report on the `Bikes` subcategory.
 
-:::code language="javascript" source="~../samples-cosmosdb-mongodb-javascript/280-aggregation/bike-types-and-price-ranges.js" id="aggregation_1" :::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/280-aggregation/bike-types-and-price-ranges.js" id="aggregation_1" :::
 
 ## See also
 

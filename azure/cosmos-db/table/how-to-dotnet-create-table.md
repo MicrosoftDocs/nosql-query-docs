@@ -35,7 +35,7 @@ To create a table, call one of the following methods:
 
 The following example creates a table asynchronously:
 
-:::code language="csharp" source="~../azure-cosmos-db-table-dotnet-v12/201-create-table-options/Program.cs" id="create_table" highlight="3":::
+:::code language="csharp" source="~/../azure-cosmos-db-table-dotnet-v12/201-create-table-options/Program.cs" id="create_table" highlight="3":::
 
 The [``TableCient.CreateAsync``](/dotnet/api/azure.data.tables.tableclient.createasync) method will throw an exception if a database with the same name already exists.
 
@@ -43,7 +43,7 @@ The [``TableCient.CreateAsync``](/dotnet/api/azure.data.tables.tableclient.creat
 
 The following example creates a table asynchronously only if it doesn't already exist on the account:
 
-:::code language="csharp" source="~../azure-cosmos-db-table-dotnet-v12/201-create-table-options/Program.cs" id="create_table_check" highlight="3":::
+:::code language="csharp" source="~/../azure-cosmos-db-table-dotnet-v12/201-create-table-options/Program.cs" id="create_table_check" highlight="3":::
 
 The [``TableClient.CreateIfNotExistsAsync``](/dotnet/api/azure.data.tables.tableclient.createifnotexistsasync) method will only create a new table if it doesn't already exist. This method is useful for avoiding errors if you run the same code multiple times.
 

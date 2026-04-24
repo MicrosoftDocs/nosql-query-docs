@@ -12,7 +12,7 @@ ms.custom: devx-track-azurecli, devx-track-csharp, devx-track-azurepowershell, d
 ---
 
 # Provision database, container or autoscale throughput on Azure Cosmos DB for MongoDB resources
-[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 

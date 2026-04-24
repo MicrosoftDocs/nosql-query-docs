@@ -13,7 +13,7 @@ ms.custom: devx-track-dotnet, devguide-csharp, cosmos-db-dev-journey
 
 # Manage a document in Azure Cosmos DB for MongoDB using .NET
 
-[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -31,7 +31,7 @@ Insert one or many documents, defined with a JSON schema, into your collection.
 - [MongoClient.Database.Collection.InsertOne](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_IMongoCollection_1_InsertOne_1.htm)
 - [MongoClient.Database.Collection.InsertMany](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_IMongoCollection_1_InsertMany_1.htm)
 
-:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/115-manage-documents/program.cs" id="insert_document":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/115-manage-documents/program.cs" id="insert_document":::
 
 ## Update a document
 
@@ -40,7 +40,7 @@ To update a document, specify the query filter used to find the document along w
 - [MongoClient.Database.Collection.UpdateOne](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_IMongoCollection_1_UpdateOne_1.htm)
 - [MongoClient.Database.Collection.UpdateMany](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_IMongoCollection_1_UpdateMany_1.htm)
 
-:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/115-manage-documents/program.cs" id="update_document":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/115-manage-documents/program.cs" id="update_document":::
 
 ## Bulk updates to a collection
 
@@ -60,7 +60,7 @@ The following bulk operations are available:
   
   - deleteMany
 
-:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/115-manage-documents/program.cs" id="bulk_write":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/115-manage-documents/program.cs" id="bulk_write":::
 
 ## Delete a document
 
@@ -69,7 +69,7 @@ To delete documents, use a query to define how the documents are found.
 - [MongoClient.Database.Collection.DeleteOne](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_IMongoCollection_1_DeleteOne_1.htm)
 - [MongoClient.Database.Collection.DeleteMany](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_IMongoCollection_1_DeleteMany_1.htm)
 
-:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/115-manage-documents/program.cs" id="delete_document":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/115-manage-documents/program.cs" id="delete_document":::
 
 ## See also
 

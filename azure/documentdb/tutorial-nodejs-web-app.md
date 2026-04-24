@@ -270,7 +270,7 @@ Now, let's validate that the application works seamlessly with Azure DocumentDB.
 
 1. Within the shell, run the following commands to create your database, create your collection, and seed with starter data.
 
-    :::code language="mongosh" source="~../azure-cosmos-db-mongodb-mern-web-app/data/products.mongodb" highlight="5-16":::
+    :::code language="mongosh" source="~/../azure-cosmos-db-mongodb-mern-web-app/data/products.mongodb" highlight="5-16":::
 
 1. The commands should result in a list of documents in the local MongoDB collection. Here's a truncated example of the output.
 

@@ -13,7 +13,7 @@ ms.custom: devx-track-python
 
 # Manage a MongoDB database using Python
 
-[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -47,11 +47,11 @@ Access server info with the [server_info](https://pymongo.readthedocs.io/en/stab
 
 You can also list databases using the [MongoClient.list_database_names](https://pymongo.readthedocs.io/en/stable/api/pymongo/mongo_client.html#pymongo.mongo_client.MongoClient.list_database_names) method and issue a [MongoDB command](https://www.mongodb.com/docs/manual/reference/command/nav-diagnostic/) to a database with the [MongoClient.db.command](https://pymongo.readthedocs.io/en/stable/api/pymongo/database.html#pymongo.database.Database.command) method.
 
-:::code language="python" source="~../azure-cosmos-db-mongodb-python-getting-started/200-admin/run.py" id="server_info":::
+:::code language="python" source="~/../azure-cosmos-db-mongodb-python-getting-started/200-admin/run.py" id="server_info":::
 
 The preceding code snippet displays output similar to the following example console output:
 
-:::code language="python" source="~../azure-cosmos-db-mongodb-python-getting-started/200-admin/run.py" id="console_result":::
+:::code language="python" source="~/../azure-cosmos-db-mongodb-python-getting-started/200-admin/run.py" id="console_result":::
 
 ## Does database exist?
 
@@ -59,11 +59,11 @@ The PyMongo driver for Python creates a database if it doesn't exist when you ac
 
 To see if the database already exists before using it, get the list of current databases with the [list_database_names](https://pymongo.readthedocs.io/en/stable/api/pymongo/mongo_client.html#pymongo.mongo_client.MongoClient.list_database_names) method.
 
-:::code language="python" source="~../azure-cosmos-db-mongodb-python-getting-started/201-does-database-exist/run.py" id="does_database_exist":::
+:::code language="python" source="~/../azure-cosmos-db-mongodb-python-getting-started/201-does-database-exist/run.py" id="does_database_exist":::
 
 The preceding code snippet displays output similar to the following example console output:
 
-:::code language="console" source="~../azure-cosmos-db-mongodb-python-getting-started/201-does-database-exist/run.py" id="console_result":::
+:::code language="console" source="~/../azure-cosmos-db-mongodb-python-getting-started/201-does-database-exist/run.py" id="console_result":::
 
 ## Get list of databases, collections, and document count
 
@@ -73,11 +73,11 @@ When you manage your MongoDB server programmatically, it's helpful to know what 
 * [Getting a collection](https://pymongo.readthedocs.io/en/stable/tutorial.html#getting-a-collection)
 * [Counting documents](https://pymongo.readthedocs.io/en/stable/tutorial.html#counting)
 
-:::code language="python" source="~../azure-cosmos-db-mongodb-python-getting-started/202-get-doc-count/run.py" id="database_object":::
+:::code language="python" source="~/../azure-cosmos-db-mongodb-python-getting-started/202-get-doc-count/run.py" id="database_object":::
 
 The preceding code snippet displays output similar to the following example console output:
 
-:::code language="python" source="~../azure-cosmos-db-mongodb-python-getting-started/202-get-doc-count/run.py" id="console_result":::
+:::code language="python" source="~/../azure-cosmos-db-mongodb-python-getting-started/202-get-doc-count/run.py" id="console_result":::
 
 ## Get database object instance
 
@@ -96,11 +96,11 @@ For an overview of working with databases using the PyMongo driver, see [Databas
 
 A database is removed from the server using the [drop_database](https://pymongo.readthedocs.io/en/stable/api/pymongo/mongo_client.html#pymongo.mongo_client.MongoClient.drop_database) method of the MongoClient.
 
-:::code language="python" source="~../azure-cosmos-db-mongodb-python-getting-started/300-drop-database/run.py" id="drop_database":::
+:::code language="python" source="~/../azure-cosmos-db-mongodb-python-getting-started/300-drop-database/run.py" id="drop_database":::
 
 The preceding code snippet displays output similar to the following example console output:
 
-:::code language="console" source="~../azure-cosmos-db-mongodb-python-getting-started/300-drop-database/run.py" id="console_result":::
+:::code language="console" source="~/../azure-cosmos-db-mongodb-python-getting-started/300-drop-database/run.py" id="console_result":::
 
 ## See also
 

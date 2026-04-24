@@ -35,7 +35,7 @@ To create any of the Azure Cosmos DB resources below, copy the following example
 
 Create an Azure Cosmos DB account for API for Table with one table with autoscale throughput.
 
-:::code language="bicep" source="~../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-table-autoscale/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-table-autoscale/main.bicep":::
 
 <a id="create-manual"></a>
 
@@ -43,7 +43,7 @@ Create an Azure Cosmos DB account for API for Table with one table with autoscal
 
 Create an Azure Cosmos DB account for API for Table with one table with standard throughput.
 
-:::code language="bicep" source="~../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-table/main.bicep":::
+:::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.documentdb/cosmosdb-table/main.bicep":::
 
 ## Next steps
 

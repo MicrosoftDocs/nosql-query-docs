@@ -103,7 +103,7 @@ Find the [sample code](https://github.com/Azure-Samples/documentdb-samples/tree/
 
 1. Add a `tsconfig.json` file to configure TypeScript:
 
-    :::code language="json" source="~../documentdb-samples/ai/vector-search-typescript/tsconfig.json" :::
+    :::code language="json" source="~/../documentdb-samples/ai/vector-search-typescript/tsconfig.json" :::
 
 
 
@@ -186,19 +186,19 @@ touch src/utils.ts
 
 Paste the following code into the `diskann.ts` file.
 
-:::code language="typescript" source="~../documentdb-samples/ai/vector-search-typescript/src/diskann.ts" :::
+:::code language="typescript" source="~/../documentdb-samples/ai/vector-search-typescript/src/diskann.ts" :::
 
 #### [IVF](#tab/tab-ivf)
 
 Paste the following code into the `ivf.ts` file.
 
-:::code language="typescript" source="~../documentdb-samples/ai/vector-search-typescript/src/ivf.ts" :::
+:::code language="typescript" source="~/../documentdb-samples/ai/vector-search-typescript/src/ivf.ts" :::
 
 #### [HNSW](#tab/tab-hnsw)
 
 Paste the following code into the `hnsw.ts` file.
 
-:::code language="typescript" source="~../documentdb-samples/ai/vector-search-typescript/src/hnsw.ts" :::
+:::code language="typescript" source="~/../documentdb-samples/ai/vector-search-typescript/src/hnsw.ts" :::
 
 ----
 
@@ -216,7 +216,7 @@ This main module provides these features:
 
 Paste the following code into `utils.ts`:
 
-:::code language="typescript" source="~../documentdb-samples/ai/vector-search-typescript/src/utils.ts" :::
+:::code language="typescript" source="~/../documentdb-samples/ai/vector-search-typescript/src/utils.ts" :::
 
 This utility module provides these features:
 
@@ -274,14 +274,14 @@ The app logging and output show:
 
 ### [DiskANN](#tab/tab-diskann)
 
-:::code language="output" source="~../documentdb-samples/ai/vector-search-typescript/output/diskann.txt" :::
+:::code language="output" source="~/../documentdb-samples/ai/vector-search-typescript/output/diskann.txt" :::
 
 #### [IVF](#tab/tab-ivf)
 
-:::code language="output" source="~../documentdb-samples/ai/vector-search-typescript/output/ivf.txt" :::
+:::code language="output" source="~/../documentdb-samples/ai/vector-search-typescript/output/ivf.txt" :::
 #### [HNSW](#tab/tab-hnsw)
 
-:::code language="output" source="~../documentdb-samples/ai/vector-search-typescript/output/hnsw.txt" :::
+:::code language="output" source="~/../documentdb-samples/ai/vector-search-typescript/output/hnsw.txt" :::
 
 ----
 

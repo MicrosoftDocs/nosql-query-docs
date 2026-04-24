@@ -13,7 +13,7 @@ ms.custom: devx-track-dotnet, devguide-csharp, cosmos-db-dev-journey
 
 # Manage a MongoDB database using .NET
 
-[!INCLUDE[MongoDB](~../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -41,7 +41,7 @@ You can use the `MongoClient` to get an instance of a database, or create one if
 
 The following code snippet creates a new database by inserting a document into a collection. Remember, the database won't be created until it's needed for this type of operation.
 
-:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="create_database":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="create_database":::
 
 ## Get an existing database
 
@@ -49,7 +49,7 @@ You can also retrieve an existing database by name using the `GetDatabase` metho
 
 - [MongoClient.GetDatabase](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_MongoClient_GetDatabase.htm)
 
-:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="get_database":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="get_database":::
 
 ## Get a list of all databases
 
@@ -57,11 +57,11 @@ You can retrieve a list of all the databases on the server using the `MongoClien
 
 - [MongoClient.Database.ListDatabaseNames](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_MongoClient_ListDatabaseNames_3.htm)
 
-:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="get_all_databases":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="get_all_databases":::
 
 This technique can then be used to check if a database already exists.
 
-:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="check_database_exists":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="check_database_exists":::
 
 ## Drop a database
 
@@ -69,7 +69,7 @@ A database is removed from the server using the `DropDatabase` method on the DB 
 
 - [MongoClient.DropDatabase](https://mongodb.github.io/mongo-csharp-driver/2.17/apidocs/html/M_MongoDB_Driver_MongoClient_DropDatabase_1.htm)
 
-:::code language="csharp" source="~../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="drop_database":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/105-manage-databases/program.cs" id="drop_database":::
 
 ## See also
 

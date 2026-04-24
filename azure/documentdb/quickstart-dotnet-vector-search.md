@@ -50,7 +50,7 @@ Complete the following steps to configure the app with your own values and run s
 
 Update the `appsettings.json` placeholder values with your own:
 
-:::code language="json" source="~../documentdb-samples/ai/vector-search-dotnet/appsettings.json" :::
+:::code language="json" source="~/../documentdb-samples/ai/vector-search-dotnet/appsettings.json" :::
 
 ### Authenticate to Azure
 
@@ -240,7 +240,7 @@ The following sections provide details about the most important services and cod
 
 The `VectorSearchService` orchestrates an end‑to‑end vector similarity search using IVF, HNSW, and DiskANN search techniques with Azure OpenAI embeddings.
 
-:::code language="csharp" source="~../documentdb-samples/ai/vector-search-dotnet/services/vectorsearchservice.cs" :::
+:::code language="csharp" source="~/../documentdb-samples/ai/vector-search-dotnet/services/vectorsearchservice.cs" :::
 
 In the preceding code, the `VectorSearchService` performs the following tasks:
 
@@ -255,7 +255,7 @@ In the preceding code, the `VectorSearchService` performs the following tasks:
 
 The `MongoDbService` manages interactions with Azure DocumentDB to handle tasks like loading data, vector index creation, index listing, and bulk inserts for hotel vector search.
 
-:::code language="csharp" source="~../documentdb-samples/ai/vector-search-dotnet/services/MongoDbService.cs" :::
+:::code language="csharp" source="~/../documentdb-samples/ai/vector-search-dotnet/services/MongoDbService.cs" :::
 
 In the preceding code, the `MongoDbService` performs the following tasks:
 

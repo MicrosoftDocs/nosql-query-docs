@@ -54,7 +54,7 @@ The app uses a sample hotel dataset in a JSON file with pre-calculated vectors f
 
 1. Create a `pom.xml` file in the project root with the following content:
 
-    :::code language="xml" source="~../documentdb-samples/ai/vector-search-java/pom.xml" :::
+    :::code language="xml" source="~/../documentdb-samples/ai/vector-search-java/pom.xml" :::
 
     The app uses the following Maven dependencies specified in the `pom.xml`:
     
@@ -114,19 +114,19 @@ The app uses a sample hotel dataset in a JSON file with pre-calculated vectors f
 
 Create a `DiskAnn.java` file in the `src` directory and paste in the following code:
 
-:::code language="java" source="~../documentdb-samples/ai/vector-search-java/src/main/java/com/azure/documentdb/samples/DiskAnn.java" :::
+:::code language="java" source="~/../documentdb-samples/ai/vector-search-java/src/main/java/com/azure/documentdb/samples/DiskAnn.java" :::
 
 #### [IVF](#tab/tab-ivf)
 
 Create an `IVF.java` file in the `src` directory and paste in the following code:
 
-:::code language="java" source="~../documentdb-samples/ai/vector-search-java/src/main/java/com/azure/documentdb/samples/IVF.java" :::
+:::code language="java" source="~/../documentdb-samples/ai/vector-search-java/src/main/java/com/azure/documentdb/samples/IVF.java" :::
 
 #### [HNSW](#tab/tab-hnsw)
 
 Create an `HNSW.java` file in the `src` directory and paste in the following code:
 
-:::code language="java" source="~../documentdb-samples/ai/vector-search-java/src/main/java/com/azure/documentdb/samples/HNSW.java" :::
+:::code language="java" source="~/../documentdb-samples/ai/vector-search-java/src/main/java/com/azure/documentdb/samples/HNSW.java" :::
 
 ---
 
@@ -173,7 +173,7 @@ DiskANN is optimized for large datasets that don't fit in memory, efficient disk
 
 Example output:
 
-:::code language="output" source="~../documentdb-samples/ai/vector-search-java/output/diskann.txt" :::
+:::code language="output" source="~/../documentdb-samples/ai/vector-search-java/output/diskann.txt" :::
 
 #### [IVF](#tab/tab-ivf)
 
@@ -187,7 +187,7 @@ IVF clusters vectors by similarity and provides fast search through cluster cent
 
 Example output:
 
-:::code language="output" source="~../documentdb-samples/ai/vector-search-java/output/ivf.txt" :::
+:::code language="output" source="~/../documentdb-samples/ai/vector-search-java/output/ivf.txt" :::
 
 #### [HNSW](#tab/tab-hnsw)
 
@@ -201,7 +201,7 @@ HNSW provides excellent search performance with high recall rates using a hierar
 
 Example output:
 
-:::code language="output" source="~../documentdb-samples/ai/vector-search-java/output/hnsw.txt" :::
+:::code language="output" source="~/../documentdb-samples/ai/vector-search-java/output/hnsw.txt" :::
 
 ---
 

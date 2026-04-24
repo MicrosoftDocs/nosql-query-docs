@@ -45,13 +45,13 @@ You can configure the connection mode in the client builder using the *directMod
 
 Java SDK V4 (Maven com.azure::azure-cosmos) Async API
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=PerformanceClientConnectionModeAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=PerformanceClientConnectionModeAsync)]
 
 # [Sync](#tab/api-sync)
 
 Java SDK V4 (Maven com.azure::azure-cosmos) Sync API
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/sync/SampleDocumentationSnippets.java?name=PerformanceClientConnectionModeSync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/sync/SampleDocumentationSnippets.java?name=PerformanceClientConnectionModeSync)]
 
 --- 
 
@@ -81,13 +81,13 @@ Control plane operations such as database and container CRUD *always* utilize Ga
 
 Java SDK V4 (Maven com.azure::azure-cosmos) Async API
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=PerformanceClientDirectOverrideAsync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/async/SampleDocumentationSnippetsAsync.java?name=PerformanceClientDirectOverrideAsync)]
 
 # [Sync](#tab/api-sync)
 
 Java SDK V4 (Maven com.azure::azure-cosmos) Sync API
 
-[!code-java[](~../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/sync/SampleDocumentationSnippets.java?name=PerformanceClientDirectOverrideSync)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/documentationsnippets/sync/SampleDocumentationSnippets.java?name=PerformanceClientDirectOverrideSync)]
 
 --- 
 

@@ -21,7 +21,7 @@ Azure Cosmos DB is Microsoft’s fast NoSQL database with open APIs for any scal
 
 An Azure subscription or free Azure Cosmos DB trial account
 
-- [!INCLUDE [quickstarts-free-trial-note](~../reusable-content/ce-skilling/azure/includes/quickstarts-free-trial-note.md)]
+- [!INCLUDE [quickstarts-free-trial-note](~/../reusable-content/ce-skilling/azure/includes/quickstarts-free-trial-note.md)]
 
 Terraform should be installed on your local computer. Installation instructions can be found [here](https://learn.hashicorp.com/tutorials/terraform/install-cli).
 
@@ -42,11 +42,11 @@ The following table summarizes the critical variables used in this quickstart, t
 
 ### Provider Terraform File
 
-:::code language="terraform" source="~../terraform_samples/quickstart/101-cosmos-db-autoscale/providers.tf":::
+:::code language="terraform" source="~/../terraform_samples/quickstart/101-cosmos-db-autoscale/providers.tf":::
 
 ### Main Terraform File
 
-:::code language="terraform" source="~../terraform_samples/quickstart/101-cosmos-db-manualscale/main.tf":::
+:::code language="terraform" source="~/../terraform_samples/quickstart/101-cosmos-db-manualscale/main.tf":::
 
 Three Cosmos DB resources are defined in the main terraform file.
 
@@ -58,7 +58,7 @@ Three Cosmos DB resources are defined in the main terraform file.
 
 ### Variables Terraform File
 
-:::code language="terraform" source="~../terraform_samples/quickstart/101-cosmos-db-manualscale/variables.tf":::
+:::code language="terraform" source="~/../terraform_samples/quickstart/101-cosmos-db-manualscale/variables.tf":::
 
 ## Deploy via terraform
 

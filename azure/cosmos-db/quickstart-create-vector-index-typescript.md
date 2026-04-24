@@ -127,13 +127,13 @@ The `VECTOR_INDEX_TYPE` can be either `diskANN` or `quantizedFlat`.
 
 The main orchestrator imports configuration from `config.ts`, validates environment variables, and coordinates the control plane and data plane operations:
 
-:::code language="typescript" source="~../cosmos-db-vector-samples/nosql-create-index-typescript/src/index.ts" :::
+:::code language="typescript" source="~/../cosmos-db-vector-samples/nosql-create-index-typescript/src/index.ts" :::
 
 ### Configuration: config.ts
 
 The configuration module loads environment variables and provides a typed `SampleConfig` interface used by all modules:
 
-:::code language="typescript" source="~../cosmos-db-vector-samples/nosql-create-index-typescript/src/config.ts" :::
+:::code language="typescript" source="~/../cosmos-db-vector-samples/nosql-create-index-typescript/src/config.ts" :::
 
 ### Control plane: Create container with vector index
 
@@ -143,7 +143,7 @@ The control plane uses the Azure Resource Manager SDK (`@azure/arm-cosmosdb`) to
 
 DiskANN is optimized for large-scale vector search with high recall and low latency. It uses disk-based indexing for memory efficiency:
 
-:::code language="typescript" source="~../cosmos-db-vector-samples/nosql-create-index-typescript/src/control-plane.ts" range="1-150" :::
+:::code language="typescript" source="~/../cosmos-db-vector-samples/nosql-create-index-typescript/src/control-plane.ts" range="1-150" :::
 
 The DiskANN configuration in the vector embedding policy:
 
@@ -178,7 +178,7 @@ And the indexing policy:
 
 Quantized flat indexing uses quantization to reduce memory footprint while maintaining good accuracy. It's suitable for smaller datasets or scenarios where memory efficiency is critical:
 
-:::code language="typescript" source="~../cosmos-db-vector-samples/nosql-create-index-typescript/src/control-plane.ts" range="1-150" :::
+:::code language="typescript" source="~/../cosmos-db-vector-samples/nosql-create-index-typescript/src/control-plane.ts" range="1-150" :::
 
 The Quantized flat configuration in the vector embedding policy:
 
@@ -217,7 +217,7 @@ The control plane also creates a custom RBAC role definition for data plane acce
 
 The data plane uses the Cosmos DB SDK (`@azure/cosmos`) to insert documents and run queries:
 
-:::code language="typescript" source="~../cosmos-db-vector-samples/nosql-create-index-typescript/src/data-plane.ts" :::
+:::code language="typescript" source="~/../cosmos-db-vector-samples/nosql-create-index-typescript/src/data-plane.ts" :::
 
 Key operations:
 - **Verify dimensions**: Ensure the OpenAI model's embedding dimensions match the container configuration
