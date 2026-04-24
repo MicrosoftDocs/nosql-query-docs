@@ -13,7 +13,7 @@ ms.custom: devx-track-dotnet, devguide-csharp, cosmos-db-dev-journey
 
 # Get started with Azure Cosmos DB for MongoDB using .NET
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -98,7 +98,7 @@ Skip this step and use the information for the portal in the next step.
 
 Define a new instance of the ``MongoClient`` class using the constructor and the connection string variable you set previously.
 
-:::code language="csharp" source="~/azure-cosmos-mongodb-dotnet/101-manage-connection/program.cs" id="client_credentials":::
+:::code language="csharp" source="~/../azure-cosmos-mongodb-dotnet/101-manage-connection/program.cs" id="client_credentials":::
 
 ## Use the MongoDB client classes with Azure Cosmos DB for API for MongoDB
 
@@ -132,3 +132,4 @@ Now that you've connected to an API for MongoDB account, use the next guide to c
 
 > [!div class="nextstepaction"]
 > [Create a database in Azure Cosmos DB for MongoDB using .NET](how-to-dotnet-manage-databases.md)
+

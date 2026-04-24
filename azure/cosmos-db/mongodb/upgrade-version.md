@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Upgrade the API version of your Azure Cosmos DB for MongoDB account
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -73,3 +73,4 @@ You can also downgrade your account to 4.0 or 3.6 via the same steps in the [upg
 - [MongoDB version 4.0 features](feature-support-40.md)
 - [MongoDB version 3.6 features](feature-support-36.md)
 - [MongoDB version history](https://www.mongodb.com/resources/products/mongodb-version-history)
+

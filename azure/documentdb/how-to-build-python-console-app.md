@@ -23,7 +23,7 @@ This guide walks you through building a Python console application to connect to
 
 [!INCLUDE[Prerequisite - Existing cluster](includes/prerequisite-existing-cluster.md)]
 
-[!INCLUDE[External - Azure CLI prerequisites](~/reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
+[!INCLUDE[External - Azure CLI prerequisites](~/../reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
 
 - Microsoft Entra authentication configured for the cluster with your identity granted `root` role.
 
@@ -193,3 +193,4 @@ Finally, use the official library to perform common tasks with databases, collec
 - [Microsoft Entra authentication overview](how-to-connect-role-based-access-control.md)
 - [Python web application template](quickstart-python.md)
 - [Microsoft Entra configuration for cluster](how-to-connect-role-based-access-control.md)
+

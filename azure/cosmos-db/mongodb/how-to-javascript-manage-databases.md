@@ -13,7 +13,7 @@ ms.custom: devx-track-js, devguide-js, cosmos-db-dev-journey
 
 # Manage a MongoDB database using JavaScript
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -50,11 +50,11 @@ Access the **Admin** class to retrieve server information. You don't need to spe
 
 - [MongoClient.Db.Admin](https://mongodb.github.io/node-mongodb-native/4.7/classes/Admin.html)
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/200-admin/index.js" id="server_info":::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/200-admin/index.js" id="server_info":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/200-admin/index.js" id="console_result":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/200-admin/index.js" id="console_result":::
 
 ## Does database exist?
 
@@ -62,11 +62,11 @@ The native MongoDB driver for JavaScript creates the database if it doesn't exis
 
 - [MongoClient.Db.Admin.listDatabases](https://mongodb.github.io/node-mongodb-native/4.7/classes/Db.html)
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/201-does-database-exist/index.js" id="does_database_exist":::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/201-does-database-exist/index.js" id="does_database_exist":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/201-does-database-exist/index.js" id="console_result":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/201-does-database-exist/index.js" id="console_result":::
 
 ## Get list of databases, collections, and document count
 
@@ -77,11 +77,11 @@ When you manage your MongoDB server programmatically, it's helpful to know what 
 - [MongoClient.Db.Collection](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html)
 - [MongoClient.Db.Collection.countDocuments](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#countDocuments)
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/202-get-doc-count/index.js" id="database_object":::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/202-get-doc-count/index.js" id="database_object":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/202-get-doc-count/index.js" id="console_result":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/202-get-doc-count/index.js" id="console_result":::
 
 ## Get database object instance
 
@@ -103,13 +103,14 @@ A database is removed from the server using the dropDatabase method on the DB cl
 
 - [DB.dropDatabase](https://mongodb.github.io/node-mongodb-native/4.7/classes/Db.html#dropDatabase)
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/300-drop-database/index.js" id="drop_database":::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/300-drop-database/index.js" id="drop_database":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/300-drop-database/index.js" id="console_result":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/300-drop-database/index.js" id="console_result":::
 
 ## See also
 
 - [Get started with Azure Cosmos DB for MongoDB and JavaScript](how-to-javascript-get-started.md)
 - [Work with a collection](how-to-javascript-manage-collections.md)
+

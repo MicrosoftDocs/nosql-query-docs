@@ -11,7 +11,7 @@ ms.author: gahllevy
 ---
 
 # Post-migration optimization steps when using Azure Cosmos DB's API for MongoDB
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -21,11 +21,11 @@ ms.author: gahllevy
 
 This MongoDB post-migration guide is part of series on MongoDB migration. The critical MongoDB migration steps are [pre-migration](pre-migration-steps.md), migration, and post-migration, as shown below.
 
-![Diagram of migration steps.](~/reusable-content/ce-skilling/azure/media/cosmos-db/overall-migration-steps.png)
+![Diagram of migration steps.](~/../reusable-content/ce-skilling/azure/media/cosmos-db/overall-migration-steps.png)
 
 ## Overview of post-migration
 
-After you migrate the data stored in MongoDB database to Azure Cosmos DB's API for MongoDB, you can connect to Azure Cosmos DB and manage the data. This guide provides the steps you should consider after the migration. See the [Migrate MongoDB to Azure Cosmos DB's API for MongoDB tutorial](../../dms/tutorial-mongodb-cosmos-db.md) for the migration steps.
+After you migrate the data stored in MongoDB database to Azure Cosmos DB's API for MongoDB, you can connect to Azure Cosmos DB and manage the data. This guide provides the steps you should consider after the migration. See the [Migrate MongoDB to Azure Cosmos DB's API for MongoDB tutorial](/azure/dms/tutorial-mongodb-cosmos-db) for the migration steps.
 
 Follow these steps to perform a post-migration
 
@@ -53,7 +53,7 @@ In order to optimize price and performance, we recommend that you step through y
 
    * The indexing capabilities provided by Azure Cosmos DB include adding compound indices, unique indices and time-to-live (TTL) indices. The index management interface is mapped to the createIndex() command. Learn more at Indexing in Azure Cosmos DB and Indexing in Azure Cosmos DB's API for MongoDB.
 2. Apply these index settings during post-migration.
-   * [Azure Database Migration Service](../../dms/tutorial-mongodb-cosmos-db.md) automatically migrates MongoDB collections with unique indexes. However, the unique indexes must be created before the migration. Azure Cosmos DB does not support the creation of unique indexes, when there is already data in your collections. For more information, see [Unique keys in Azure Cosmos DB](../unique-keys.md).
+   * [Azure Database Migration Service](/azure/dms/tutorial-mongodb-cosmos-db) automatically migrates MongoDB collections with unique indexes. However, the unique indexes must be created before the migration. Azure Cosmos DB does not support the creation of unique indexes, when there is already data in your collections. For more information, see [Unique keys in Azure Cosmos DB](../unique-keys.md).
 
 ## Globally distribute your data
 
@@ -97,3 +97,4 @@ One convenient fact about [indexing](#optimize-the-indexing-policy), [global dis
 * [Consistency Levels in Azure Cosmos DB](../consistency-levels.md)
 * [Indexing in Azure Cosmos DB](../index-overview.md)
 * [Request Units in Azure Cosmos DB](../request-units.md)
+

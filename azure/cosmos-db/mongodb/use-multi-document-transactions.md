@@ -11,7 +11,7 @@ ms.devlang: javascript
 ---
 
 # Use Multi-document transactions in Azure Cosmos DB for MongoDB
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -77,3 +77,4 @@ All drivers that support wire protocol version 4.0 or greater will support Azure
 ## Next steps
 
 Explore what's new in [Azure Cosmos DB for MongoDB 4.0](feature-support-40.md)
+

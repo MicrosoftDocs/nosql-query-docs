@@ -78,9 +78,9 @@ landingContent:
           - text: Offline migration with native tools
             url: tutorial-mongotools-cosmos-db.md
           - text: Online migration with Azure Database Migration Service
-            url: ../../dms/tutorial-mongodb-cosmos-db-online.md?toc=%2Fazure%2Fcosmos-db%2Ftoc.json&bc=%2Fazure%2Fcosmos-db%2Fbreadcrumb%2Ftoc.json
+            url: /azure/dms/tutorial-mongodb-cosmos-db-online?toc=%2Fazure%2Fcosmos-db%2Ftoc.json&bc=%2Fazure%2Fcosmos-db%2Fbreadcrumb%2Ftoc.json
           - text: Offline migration with Azure Database Migration Service
-            url: ../../dms/tutorial-mongodb-cosmos-db.md?toc=%2Fazure%2Fcosmos-db%2Ftoc.json&bc=%2Fazure%2Fcosmos-db%2Fbreadcrumb%2Ftoc.json
+            url: /azure/dms/tutorial-mongodb-cosmos-db?toc=%2Fazure%2Fcosmos-db%2Ftoc.json&bc=%2Fazure%2Fcosmos-db%2Fbreadcrumb%2Ftoc.json
           - text: Offline migration with Azure Databricks
             url: migrate-databricks.md
       - linkListType: architecture

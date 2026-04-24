@@ -13,7 +13,7 @@ ms.custom: devx-track-js, devguide-js, cosmos-db-dev-journey
 
 # Manage a document in Azure Cosmos DB for MongoDB using JavaScript
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -31,11 +31,11 @@ Insert a document, defined with a JSON schema, into your collection.
 - [MongoClient.Db.Collection.insertOne](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#insertOne)
 - [MongoClient.Db.Collection.insertMany](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#insertMany)
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/203-insert-doc/index.js" id="database_object":::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/203-insert-doc/index.js" id="database_object":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/203-insert-doc/index.js" id="console_result":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/203-insert-doc/index.js" id="console_result":::
 
 ## Document ID
 
@@ -56,15 +56,15 @@ To update a document, specify the query used to find the document along with a s
 - [MongoClient.Db.Collection.updateOne](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#updateOne)
 - [MongoClient.Db.Collection.updateMany](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#updateMany)
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/250-upsert-doc/index.js" id="upsert":::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/250-upsert-doc/index.js" id="upsert":::
 
 The preceding code snippet displays the following example console output for an insert:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/250-upsert-doc/index.js" id="console_result_insert":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/250-upsert-doc/index.js" id="console_result_insert":::
 
 The preceding code snippet displays the following example console output for an update:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/250-upsert-doc/index.js" id="console_result_update":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/250-upsert-doc/index.js" id="console_result_update":::
 
 ## Bulk updates to a collection
 
@@ -84,11 +84,11 @@ The following bulk operations are available:
 
   - deleteMany
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/251-bulk_write/index.js" id="bulk_write":::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/251-bulk_write/index.js" id="bulk_write":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/251-bulk_write/index.js" id="console_result_bulk_write":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/251-bulk_write/index.js" id="console_result_bulk_write":::
 
 ## Delete a document
 
@@ -97,13 +97,14 @@ To delete documents, use a query to define how the documents are found.
 - [MongoClient.Db.Collection.deleteOne](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#deleteOne)
 - [MongoClient.Db.Collection.deleteMany](https://mongodb.github.io/node-mongodb-native/4.7/classes/Collection.html#deleteMany)
 
-:::code language="javascript" source="~/samples-cosmosdb-mongodb-javascript/290-delete-doc/index.js" id="delete":::
+:::code language="javascript" source="~/../samples-cosmosdb-mongodb-javascript/290-delete-doc/index.js" id="delete":::
 
 The preceding code snippet displays the following example console output:
 
-:::code language="console" source="~/samples-cosmosdb-mongodb-javascript/290-delete-doc/index.js" id="console_result":::
+:::code language="console" source="~/../samples-cosmosdb-mongodb-javascript/290-delete-doc/index.js" id="console_result":::
 
 ## See also
 
 - [Get started with Azure Cosmos DB for MongoDB and JavaScript](how-to-javascript-get-started.md)
 - [Create a database](how-to-javascript-manage-databases.md)
+

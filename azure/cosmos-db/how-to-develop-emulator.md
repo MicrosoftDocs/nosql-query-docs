@@ -571,19 +571,19 @@ Use the [Azure Cosmos DB API for NoSQL .NET SDK](quickstart-dotnet.md) to connec
 
 1. Add a using block for the `Microsoft.Azure.Cosmos` namespace.
 
-    :::code language="csharp" source="~/cosmos-db-nosql-dotnet-samples/601-emulator/Program.cs" id="imports":::
+    :::code language="csharp" source="~/../cosmos-db-nosql-dotnet-samples/601-emulator/Program.cs" id="imports":::
 
 1. Create a new instance of <xref:Microsoft.Azure.Cosmos.CosmosClient> using the emulator's credentials.
 
-    :::code language="csharp" source="~/cosmos-db-nosql-dotnet-samples/601-emulator/Program.cs" highlight="2-3" id="client":::
+    :::code language="csharp" source="~/../cosmos-db-nosql-dotnet-samples/601-emulator/Program.cs" highlight="2-3" id="client":::
 
 1. Create a new database and container using <xref:Microsoft.Azure.Cosmos.CosmosClient.CreateDatabaseIfNotExistsAsync%2A> and <xref:Microsoft.Azure.Cosmos.Database.CreateContainerIfNotExistsAsync%2A>.
 
-    :::code language="csharp" source="~/cosmos-db-nosql-dotnet-samples/601-emulator/Program.cs" highlight="1,6" id="resources":::
+    :::code language="csharp" source="~/../cosmos-db-nosql-dotnet-samples/601-emulator/Program.cs" highlight="1,6" id="resources":::
 
 1. Create a new item in the container using <xref:Microsoft.Azure.Cosmos.Container.UpsertItemAsync%2A>.
 
-    :::code language="csharp" source="~/cosmos-db-nosql-dotnet-samples/601-emulator/Program.cs" highlight="7" id="upsert":::
+    :::code language="csharp" source="~/../cosmos-db-nosql-dotnet-samples/601-emulator/Program.cs" highlight="7" id="upsert":::
 
 1. Run the .NET application.
 
@@ -631,19 +631,19 @@ Use the [Azure Cosmos DB API for NoSQL Python SDK](quickstart-python.md) to conn
 
 1. Import `CosmosClient` and `PartitionKey` from the `azure.cosmos` module.
 
-    :::code language="python" source="~/cosmos-db-nosql-python-samples/601-emulator/app.py" id="imports":::
+    :::code language="python" source="~/../cosmos-db-nosql-python-samples/601-emulator/app.py" id="imports":::
 
 1. Create a new <xref:azure.cosmos.CosmosClient> using the emulator's credentials.
 
-    :::code language="python" source="~/cosmos-db-nosql-python-samples/601-emulator/app.py" highlight="2,4-5" id="client":::
+    :::code language="python" source="~/../cosmos-db-nosql-python-samples/601-emulator/app.py" highlight="2,4-5" id="client":::
 
 1. Create a new database and container using <xref:azure.cosmos.CosmosClient.create_database_if_not_exists> and <xref:azure.cosmos.DatabaseProxy.create_container_if_not_exists>.
 
-    :::code language="python" source="~/cosmos-db-nosql-python-samples/601-emulator/app.py" highlight="1,6" id="resources":::
+    :::code language="python" source="~/../cosmos-db-nosql-python-samples/601-emulator/app.py" highlight="1,6" id="resources":::
 
 1. Use <xref:azure.cosmos.ContainerProxy.upsert_item> to create a new item in the container.
 
-    :::code language="python" source="~/cosmos-db-nosql-python-samples/601-emulator/app.py" highlight="3" id="upsert":::
+    :::code language="python" source="~/../cosmos-db-nosql-python-samples/601-emulator/app.py" highlight="3" id="upsert":::
 
 1. Run the Python application.
 
@@ -721,19 +721,19 @@ Use the [Azure Cosmos DB API for NoSQL Node.js SDK](quickstart-nodejs.md) to con
 
 1. Import the `CosmosClient` type from the `@azure/cosmos` module.
 
-    :::code language="javascript" source="~/cosmos-db-nosql-javascript-samples/601-emulator/app.js" id="imports":::
+    :::code language="javascript" source="~/../cosmos-db-nosql-javascript-samples/601-emulator/app.js" id="imports":::
 
 1. Use [`CosmosClient`](/javascript/api/@azure/cosmos/cosmosclient) to create a new client instance using the emulator's credentials.
 
-    :::code language="javascript" source="~/cosmos-db-nosql-javascript-samples/601-emulator/app.js" highlight="2-3" id="client":::
+    :::code language="javascript" source="~/../cosmos-db-nosql-javascript-samples/601-emulator/app.js" highlight="2-3" id="client":::
 
 1. Use [`Databases.createIfNotExists`](/javascript/api/@azure/cosmos/databases#@azure-cosmos-databases-createifnotexists) and [`Containers.createIfNotExists`](/javascript/api/%40azure/cosmos/containers#@azure-cosmos-containers-createifnotexists) to create a database and container.
 
-    :::code language="javascript" source="~/cosmos-db-nosql-javascript-samples/601-emulator/app.js" highlight="1,6" id="resources":::
+    :::code language="javascript" source="~/../cosmos-db-nosql-javascript-samples/601-emulator/app.js" highlight="1,6" id="resources":::
 
 1. Upsert a new item using [`Items.upsert`](/javascript/api/@azure/cosmos/items#@azure-cosmos-items-upsert).
 
-    :::code language="javascript" source="~/cosmos-db-nosql-javascript-samples/601-emulator/app.js" highlight="6" id="upsert":::
+    :::code language="javascript" source="~/../cosmos-db-nosql-javascript-samples/601-emulator/app.js" highlight="6" id="upsert":::
 
 1. Run the Node.js application.
 
@@ -779,19 +779,19 @@ Use the [MongoDB .NET driver](mongodb/quickstart-dotnet.md) to connect to the em
 
 1. Add a using block for the [`MongoDB.Driver`](https://mongodb.github.io/mongo-csharp-driver/2.21/apidocs/html/N_MongoDB_Driver.htm) namespace.
 
-    :::code language="csharp" source="~/cosmos-db-mongodb-dotnet-samples/601-emulator/Program.cs" id="imports":::
+    :::code language="csharp" source="~/../cosmos-db-mongodb-dotnet-samples/601-emulator/Program.cs" id="imports":::
 
 1. Create a new instance of [`MongoClient`](https://mongodb.github.io/mongo-csharp-driver/2.21/apidocs/html/T_MongoDB_Driver_MongoClient.htm) using the emulator's credentials.
 
-    :::code language="csharp" source="~/cosmos-db-mongodb-dotnet-samples/601-emulator/Program.cs" highlight="2" id="client":::
+    :::code language="csharp" source="~/../cosmos-db-mongodb-dotnet-samples/601-emulator/Program.cs" highlight="2" id="client":::
 
 1. Get the database and container using [`GetDatabase`](https://mongodb.github.io/mongo-csharp-driver/2.21/apidocs/html/M_MongoDB_Driver_MongoClient_GetDatabase.htm) and [`GetCollection<>`](https://mongodb.github.io/mongo-csharp-driver/2.21/apidocs/html/Overload_MongoDB_Driver_MongoDatabase_GetCollection.htm).
 
-    :::code language="csharp" source="~/cosmos-db-mongodb-dotnet-samples/601-emulator/Program.cs" id="resources":::
+    :::code language="csharp" source="~/../cosmos-db-mongodb-dotnet-samples/601-emulator/Program.cs" id="resources":::
 
 1. Create a new item in the XXX using [`InsertOneAsync`](https://mongodb.github.io/mongo-csharp-driver/2.21/apidocs/html/Overload_MongoDB_Driver_MongoCollectionBase_1_InsertOneAsync.htm).
 
-    :::code language="csharp" source="~/cosmos-db-mongodb-dotnet-samples/601-emulator/Program.cs" highlight="6" id="insert":::
+    :::code language="csharp" source="~/../cosmos-db-mongodb-dotnet-samples/601-emulator/Program.cs" highlight="6" id="insert":::
 
 1. Run the .NET application.
 
@@ -815,19 +815,19 @@ Use the [MongoDB Python driver](mongodb/quickstart-python.md) to connect to the 
 
 1. Import the `os`, `sys`, and `pymongo` modules.
 
-    :::code language="python" source="~/cosmos-db-mongodb-python-samples/601-emulator/app.py" id="imports":::
+    :::code language="python" source="~/../cosmos-db-mongodb-python-samples/601-emulator/app.py" id="imports":::
 
 1. Create a new [`MongoClient`](https://pymongo.readthedocs.io/en/stable/api/pymongo/mongo_client.html#pymongo.mongo_client.MongoClient) using the emulator's credentials.
 
-    :::code language="python" source="~/cosmos-db-mongodb-python-samples/601-emulator/app.py" highlight="3-5" id="client":::
+    :::code language="python" source="~/../cosmos-db-mongodb-python-samples/601-emulator/app.py" highlight="3-5" id="client":::
 
 1. Create a new database and container using [`list_database_names`](https://pymongo.readthedocs.io/en/stable/api/pymongo/mongo_client.html#pymongo.mongo_client.MongoClient.list_database_names) and [`list_collection_names`](https://pymongo.readthedocs.io/en/stable/api/pymongo/database.html#pymongo.database.Database.list_collection_names) along with the [`CreateDatabase`](mongodb/custom-commands.md#create-database) and [`CreateCollection`](mongodb/custom-commands.md#create-collection) custom commands.
 
-    :::code language="python" source="~/cosmos-db-mongodb-python-samples/601-emulator/app.py" highlight="2,5,12" id="resources":::
+    :::code language="python" source="~/../cosmos-db-mongodb-python-samples/601-emulator/app.py" highlight="2,5,12" id="resources":::
 
 1. Use [`update_one`](https://pymongo.readthedocs.io/en/stable/api/pymongo/collection.html#pymongo.collection.Collection.update_one) to create a new item in the container.
 
-    :::code language="python" source="~/cosmos-db-mongodb-python-samples/601-emulator/app.py" highlight="3" id="upsert":::
+    :::code language="python" source="~/../cosmos-db-mongodb-python-samples/601-emulator/app.py" highlight="3" id="upsert":::
 
 1. Run the Python application.
 
@@ -857,19 +857,19 @@ Use the [MongoDB Node.js driver](mongodb/quickstart-nodejs.md) to connect to the
 
 1. Import the `MongoClient` type from the `mongodb` module.
 
-    :::code language="javascript" source="~/cosmos-db-mongodb-javascript-samples/601-emulator/app.js" id="imports":::
+    :::code language="javascript" source="~/../cosmos-db-mongodb-javascript-samples/601-emulator/app.js" id="imports":::
 
 1. Use [`MongoClient`](https://mongodb.github.io/node-mongodb-native/6.1/classes/MongoClient.html) to create a new client instance using the emulator's credentials. Use [`connect`](https://mongodb.github.io/node-mongodb-native/6.1/classes/MongoClient.html#connect) to connect to the emulator.
 
-    :::code language="javascript" source="~/cosmos-db-mongodb-javascript-samples/601-emulator/app.js" highlight="2" id="client":::
+    :::code language="javascript" source="~/../cosmos-db-mongodb-javascript-samples/601-emulator/app.js" highlight="2" id="client":::
 
 1. Use [`db`](https://mongodb.github.io/node-mongodb-native/6.1/classes/MongoClient.html#db) and [`collection`](https://mongodb.github.io/node-mongodb-native/6.1/classes/Db.html#collection) to create a database and container.
 
-    :::code language="javascript" source="~/cosmos-db-mongodb-javascript-samples/601-emulator/app.js" id="resources":::
+    :::code language="javascript" source="~/../cosmos-db-mongodb-javascript-samples/601-emulator/app.js" id="resources":::
 
 1. Create a new item using [`insertOne`](https://mongodb.github.io/node-mongodb-native/6.1/classes/Collection.html#insertOne).
 
-    :::code language="javascript" source="~/cosmos-db-mongodb-javascript-samples/601-emulator/app.js" highlight="5" id="upsert":::
+    :::code language="javascript" source="~/../cosmos-db-mongodb-javascript-samples/601-emulator/app.js" highlight="5" id="upsert":::
 
 1. Run the Node.js application.
 
@@ -918,19 +918,19 @@ Use the [Apache Cassandra .NET driver](cassandra/manage-data-dotnet.md) to conne
 
 1. Add a using block for the [`Cassandra`](https://docs.datastax.com/en/latest-csharp-driver-api/api/Cassandra.html) namespace.
 
-    :::code language="csharp" source="~/cosmos-db-apache-cassandra-dotnet-samples/601-emulator/Program.cs" id="imports":::
+    :::code language="csharp" source="~/../cosmos-db-apache-cassandra-dotnet-samples/601-emulator/Program.cs" id="imports":::
 
 1. Create a new instance of [`Cluster`](https://docs.datastax.com/en/latest-csharp-driver-api/api/Cassandra.Cluster.html) using the emulator's credentials. Create a new session using [`Connect`](https://docs.datastax.com/en/latest-csharp-driver-api/api/Cassandra.Cluster.html#Cassandra_Cluster_Connect).
 
-    :::code language="csharp" source="~/cosmos-db-apache-cassandra-dotnet-samples/601-emulator/Program.cs" highlight="8-9" id="client":::
+    :::code language="csharp" source="~/../cosmos-db-apache-cassandra-dotnet-samples/601-emulator/Program.cs" highlight="8-9" id="client":::
 
 1. Create a new database and container using [`PrepareAsync`](https://docs.datastax.com/en/latest-csharp-driver-api/api/Cassandra.ISession.html#Cassandra_ISession_PrepareAsync_System_String_) and [`ExecuteAsync`](https://docs.datastax.com/en/latest-csharp-driver-api/api/Cassandra.ISession.html#Cassandra_ISession_ExecuteAsync_Cassandra_IStatement_).
 
-    :::code language="csharp" source="~/cosmos-db-apache-cassandra-dotnet-samples/601-emulator/Program.cs" highlight="2,5" id="resources":::
+    :::code language="csharp" source="~/../cosmos-db-apache-cassandra-dotnet-samples/601-emulator/Program.cs" highlight="2,5" id="resources":::
 
 1. Create a new item in the table using `ExecuteAsync`. Use [`Bind`](https://docs.datastax.com/en/latest-csharp-driver-api/api/Cassandra.PreparedStatement.html#Cassandra_PreparedStatement_Bind_System_Object___) to assign properties to the item.
 
-    :::code language="csharp" source="~/cosmos-db-apache-cassandra-dotnet-samples/601-emulator/Program.cs" highlight="9,11" id="insert":::
+    :::code language="csharp" source="~/../cosmos-db-apache-cassandra-dotnet-samples/601-emulator/Program.cs" highlight="9,11" id="insert":::
 
 1. Run the .NET application.
 
@@ -954,23 +954,23 @@ Use the [Apache Cassandra Python driver](cassandra/manage-data-python.md) to con
 
 1. Import `PROTOCOL_TLS_CLIENT`, `SSLContext`, and `CERT_NONE` from the `ssl` module. Then, import `Cluster` from the `cassandra.cluster` module. Finally, import `PlainTextAuthProvider` from the `cassandra.auth` module.
 
-    :::code language="python" source="~/cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" id="imports":::
+    :::code language="python" source="~/../cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" id="imports":::
 
 1. Create a new TLS/SSL context variable using `SSLContext`. Configure the context to not verify the emulator's self-signed certificate.
 
-    :::code language="python" source="~/cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" highlight="1" id="ssl":::
+    :::code language="python" source="~/../cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" highlight="1" id="ssl":::
 
 1. Create a new `session` using the emulator's credentials, `PlainTextAuthProvider`, `Cluster`, and `cluster.connect()`.
 
-    :::code language="python" source="~/cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" highlight="1,4-5,9,15" id="client":::
+    :::code language="python" source="~/../cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" highlight="1,4-5,9,15" id="client":::
 
 1. Create a new keyspace and table using `session.execute`.
 
-    :::code language="python" source="~/cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" highlight="1,6" id="resources":::
+    :::code language="python" source="~/../cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" highlight="1,6" id="resources":::
 
 1. Use `session.execute` to create a new item in the table.
 
-    :::code language="python" source="~/cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" highlight="2" id="upsert":::
+    :::code language="python" source="~/../cosmos-db-apache-cassandra-python-samples/601-emulator/app.py" highlight="2" id="upsert":::
 
 1. Run the Python application.
 
@@ -1000,19 +1000,19 @@ Use the [Apache Cassandra Node.js driver](cassandra/manage-data-nodejs.md) to us
 
 1. Import the `Client` type and `auth` namespace from the `cassandra-driver` module.
 
-    :::code language="javascript" source="~/cosmos-db-apache-cassandra-javascript-samples/601-emulator/app.js" id="imports":::
+    :::code language="javascript" source="~/../cosmos-db-apache-cassandra-javascript-samples/601-emulator/app.js" id="imports":::
 
 1. Use [`PlainTextAuthProvider`](https://docs.datastax.com/en/developer/nodejs-driver/4.6/api/module.auth/class.PlainTextAuthProvider/) to create a new object for the emulator's credentials. Use [`Client`](https://docs.datastax.com/en/developer/nodejs-driver/4.6/api/class.Client/index.html) to connect to the emulator using the credentials.
 
-    :::code language="javascript" source="~/cosmos-db-apache-cassandra-javascript-samples/601-emulator/app.js" highlight="2-3" id="client":::
+    :::code language="javascript" source="~/../cosmos-db-apache-cassandra-javascript-samples/601-emulator/app.js" highlight="2-3" id="client":::
 
 1. Use [`execute`](https://docs.datastax.com/en/developer/nodejs-driver/4.6/api/class.Client/index.html#execute) to run a command server-side to create a **keyspace** and **table**.
 
-    :::code language="javascript" source="~/cosmos-db-apache-cassandra-javascript-samples/601-emulator/app.js" highlight="1,5" id="resources":::
+    :::code language="javascript" source="~/../cosmos-db-apache-cassandra-javascript-samples/601-emulator/app.js" highlight="1,5" id="resources":::
 
 1. Use `execute` again to create a new item with parameters.
 
-    :::code language="javascript" source="~/cosmos-db-apache-cassandra-javascript-samples/601-emulator/app.js" highlight="6" id="insert":::
+    :::code language="javascript" source="~/../cosmos-db-apache-cassandra-javascript-samples/601-emulator/app.js" highlight="6" id="insert":::
 
 1. Run the Node.js application.
 
@@ -1068,19 +1068,19 @@ Use the [Apache Gremlin .NET driver](gremlin/quickstart-dotnet.md) to connect to
 
 1. Add a using block for the [`Gremlin.Net.Driver`](https://tinkerpop.apache.org/dotnetdocs/3.4.6/api/Gremlin.Net.Driver.html) namespace.
 
-    :::code language="csharp" source="~/cosmos-db-apache-gremlin-dotnet-samples/601-emulator/Program.cs" id="imports":::
+    :::code language="csharp" source="~/../cosmos-db-apache-gremlin-dotnet-samples/601-emulator/Program.cs" id="imports":::
 
 1. Create a new instance of [`GremlinServer`](https://tinkerpop.apache.org/dotnetdocs/3.4.6/api/Gremlin.Net.Driver.GremlinServer.html) and [`GremlinClient`](https://tinkerpop.apache.org/dotnetdocs/3.4.6/api/Gremlin.Net.Driver.GremlinClient.html) using the emulator's credentials.
 
-    :::code language="csharp" source="~/cosmos-db-apache-gremlin-dotnet-samples/601-emulator/Program.cs" highlight="" id="client":::
+    :::code language="csharp" source="~/../cosmos-db-apache-gremlin-dotnet-samples/601-emulator/Program.cs" highlight="" id="client":::
 
 1. Clean up the graph using [`SubmitAsync`](https://tinkerpop.apache.org/dotnetdocs/3.4.6/api/Gremlin.Net.Driver.GremlinClient.html#Gremlin_Net_Driver_GremlinClient_SubmitAsync__1_RequestMessage_).
 
-    :::code language="csharp" source="~/cosmos-db-apache-gremlin-dotnet-samples/601-emulator/Program.cs" highlight="1" id="graph":::
+    :::code language="csharp" source="~/../cosmos-db-apache-gremlin-dotnet-samples/601-emulator/Program.cs" highlight="1" id="graph":::
 
 1. Use `SubmitAsync` again to add a new item to the graph with the specified parameters.
 
-    :::code language="csharp" source="~/cosmos-db-apache-gremlin-dotnet-samples/601-emulator/Program.cs" highlight="1" id="insert":::
+    :::code language="csharp" source="~/../cosmos-db-apache-gremlin-dotnet-samples/601-emulator/Program.cs" highlight="1" id="insert":::
 
 1. Run the .NET application.
 
@@ -1104,19 +1104,19 @@ Use the [Apache Gremlin Python driver](gremlin/quickstart-python.md) to connect 
 
 1. Import `client` from the `gremlin_python.driver` module.
 
-    :::code language="python" source="~/cosmos-db-apache-gremlin-python-samples/601-emulator/app.py" id="imports":::
+    :::code language="python" source="~/../cosmos-db-apache-gremlin-python-samples/601-emulator/app.py" id="imports":::
 
 1. Create a new `Client` using the emulator's credentials.
 
-    :::code language="python" source="~/cosmos-db-apache-gremlin-python-samples/601-emulator/app.py" highlight="1" id="client":::
+    :::code language="python" source="~/../cosmos-db-apache-gremlin-python-samples/601-emulator/app.py" highlight="1" id="client":::
 
 1. Clean up the graph using `client.submit`.
 
-    :::code language="python" source="~/cosmos-db-apache-gremlin-python-samples/601-emulator/app.py" id="graph":::
+    :::code language="python" source="~/../cosmos-db-apache-gremlin-python-samples/601-emulator/app.py" id="graph":::
 
 1. Use `client.submit` again to add a new item to the graph with the specified parameters.
 
-    :::code language="python" source="~/cosmos-db-apache-gremlin-python-samples/601-emulator/app.py" highlight="1" id="insert":::
+    :::code language="python" source="~/../cosmos-db-apache-gremlin-python-samples/601-emulator/app.py" highlight="1" id="insert":::
 
 1. Run the Python application.
 
@@ -1146,19 +1146,19 @@ Use the [Apache Gremlin Node.js driver](gremlin/quickstart-nodejs.md) to use the
 
 1. Import the `gremlin` module.
 
-    :::code language="javascript" source="~/cosmos-db-apache-gremlin-javascript-samples/601-emulator/app.js" id="imports":::
+    :::code language="javascript" source="~/../cosmos-db-apache-gremlin-javascript-samples/601-emulator/app.js" id="imports":::
 
 1. Use [`PlainTextSaslAuthenticator`](https://tinkerpop.apache.org/jsdocs/3.7.0/PlainTextSaslAuthenticator.html) to create a new object for the emulator's credentials. Use [`Client`](https://tinkerpop.apache.org/jsdocs/3.7.0/Client.html) to connect to the emulator using the credentials.
 
-    :::code language="javascript" source="~/cosmos-db-apache-gremlin-javascript-samples/601-emulator/app.js" highlight="1" id="client":::
+    :::code language="javascript" source="~/../cosmos-db-apache-gremlin-javascript-samples/601-emulator/app.js" highlight="1" id="client":::
 
 1. Use [`submit`](https://tinkerpop.apache.org/jsdocs/3.7.0/Client.html#submit) to run a command server-side to clear the graph if it already has data.
 
-    :::code language="javascript" source="~/cosmos-db-apache-gremlin-javascript-samples/601-emulator/app.js" id="graph":::
+    :::code language="javascript" source="~/../cosmos-db-apache-gremlin-javascript-samples/601-emulator/app.js" id="graph":::
 
 1. Use `submit` again to add a new item to the graph with the specified parameters.
 
-    :::code language="javascript" source="~/cosmos-db-apache-gremlin-javascript-samples/601-emulator/app.js" highlight="1" id="insert":::
+    :::code language="javascript" source="~/../cosmos-db-apache-gremlin-javascript-samples/601-emulator/app.js" highlight="1" id="insert":::
 
 1. Run the Node.js application.
 
@@ -1196,23 +1196,23 @@ Use the [Azure Tables SDK for .NET](table/quickstart-dotnet.md) to connect to th
 
 1. Add a using block for the [`Azure.Data.Tables`](/dotnet/api/azure.data.tables) namespace.
 
-    :::code language="csharp" source="~/cosmos-db-table-dotnet-samples/601-emulator/Program.cs" id="imports":::
+    :::code language="csharp" source="~/../cosmos-db-table-dotnet-samples/601-emulator/Program.cs" id="imports":::
 
 1. Create a new instance of [`TableServiceClient`](/dotnet/api/azure.data.tables.tableserviceclient) using the emulator's credentials.
 
-    :::code language="csharp" source="~/cosmos-db-table-dotnet-samples/601-emulator/Program.cs" highlight="2" id="client":::
+    :::code language="csharp" source="~/../cosmos-db-table-dotnet-samples/601-emulator/Program.cs" highlight="2" id="client":::
 
 1. Use [`GetTableClient`](/dotnet/api/azure.data.tables.tableserviceclient.gettableclient) to create a new instance of [`TableClient`](/dotnet/api/azure.data.tables.tableclient) with the table's name. Then ensure the table exists using [`CreateIfNotExistsAsync`](/dotnet/api/azure.data.tables.tableclient.createifnotexistsasync).
 
-    :::code language="csharp" source="~/cosmos-db-table-dotnet-samples/601-emulator/Program.cs" highlight="1,5" id="resources":::
+    :::code language="csharp" source="~/../cosmos-db-table-dotnet-samples/601-emulator/Program.cs" highlight="1,5" id="resources":::
 
 1. Create a new `record` type for items.
 
-    :::code language="csharp" source="~/cosmos-db-table-dotnet-samples/601-emulator/Product.cs" id="entity":::
+    :::code language="csharp" source="~/../cosmos-db-table-dotnet-samples/601-emulator/Product.cs" id="entity":::
 
 1. Create a new item in the table using [`UpsertEntityAsync`](/dotnet/api/azure.data.tables.tableclient.upsertentityasync) and the `Replace` mode.
 
-    :::code language="csharp" source="~/cosmos-db-table-dotnet-samples/601-emulator/Program.cs" highlight="9,11" id="upsert":::
+    :::code language="csharp" source="~/../cosmos-db-table-dotnet-samples/601-emulator/Program.cs" highlight="9,11" id="upsert":::
 
 1. Run the .NET application.
 
@@ -1236,19 +1236,19 @@ Use the [Azure Tables Python SDK](table/quickstart-python.md) to connect to the 
 
 1. Import [`TableServiceClient`](/python/api/azure-data-tables/azure.data.tables.tableserviceclient) and [`UpdateMode`](/python/api/azure-data-tables/azure.data.tables.updatemode) from the `azure.data.tables` module.
 
-    :::code language="python" source="~/cosmos-db-table-python-samples/601-emulator/app.py" id="imports":::
+    :::code language="python" source="~/../cosmos-db-table-python-samples/601-emulator/app.py" id="imports":::
 
 1. Use [`TableServiceClient.from_connection_string`](/python/api/azure-data-tables/azure.data.tables.tableserviceclient#azure-data-tables-tableserviceclient-from-connection-string) to create a new service-level client.
 
-    :::code language="python" source="~/cosmos-db-table-python-samples/601-emulator/app.py" highlight="1" id="client":::
+    :::code language="python" source="~/../cosmos-db-table-python-samples/601-emulator/app.py" highlight="1" id="client":::
 
 1. Create a new table-level client using [`create_table_if_not_exists`](/python/api/azure-data-tables/azure.data.tables.tableserviceclient#azure-data-tables-tableserviceclient-create-table-if-not-exists).
 
-    :::code language="python" source="~/cosmos-db-table-python-samples/601-emulator/app.py" id="resources":::
+    :::code language="python" source="~/../cosmos-db-table-python-samples/601-emulator/app.py" id="resources":::
 
 1. Use [`upsert_entity`](/python/api/azure-data-tables/azure.data.tables.tableclient#azure-data-tables-tableclient-upsert-entity) to create a new item in the container.
 
-    :::code language="python" source="~/cosmos-db-table-python-samples/601-emulator/app.py" highlight="7" id="upsert":::
+    :::code language="python" source="~/../cosmos-db-table-python-samples/601-emulator/app.py" highlight="7" id="upsert":::
 
 1. Run the Python application.
 
@@ -1278,19 +1278,19 @@ Use the [Azure Tables JavaScript SDK](cassandra/manage-data-nodejs.md) to use th
 
 1. Import the `TableClient` type from the `@azure/data-tables` module.
 
-    :::code language="javascript" source="~/cosmos-db-table-javascript-samples/601-emulator/app.js" id="imports":::
+    :::code language="javascript" source="~/../cosmos-db-table-javascript-samples/601-emulator/app.js" id="imports":::
 
 1. Use [`TableClient.fromConnectionString`](/javascript/api/@azure/data-tables/tableclient#@azure-data-tables-tableclient-fromconnectionstring) to create a new client instance using the emulator's connection string.
 
-    :::code language="javascript" source="~/cosmos-db-table-javascript-samples/601-emulator/app.js" highlight="2" id="client":::
+    :::code language="javascript" source="~/../cosmos-db-table-javascript-samples/601-emulator/app.js" highlight="2" id="client":::
 
 1. Use [`createTable`](/javascript/api/@azure/data-tables/tableclient#@azure-data-tables-tableclient-createtable) to create a new table if it doesn't already exist.
 
-    :::code language="javascript" source="~/cosmos-db-table-javascript-samples/601-emulator/app.js" id="resources":::
+    :::code language="javascript" source="~/../cosmos-db-table-javascript-samples/601-emulator/app.js" id="resources":::
 
 1. Use [`upsertEntity`](/javascript/api/%40azure/data-tables/tableclient#@azure-data-tables-tableclient-upsertentity) to create or replace the item.
 
-    :::code language="javascript" source="~/cosmos-db-table-javascript-samples/601-emulator/app.js" highlight="7" id="upsert":::
+    :::code language="javascript" source="~/../cosmos-db-table-javascript-samples/601-emulator/app.js" highlight="7" id="upsert":::
 
 1. Run the Node.js application.
 

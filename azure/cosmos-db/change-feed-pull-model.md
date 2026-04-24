@@ -256,21 +256,21 @@ If you specify `FeedRange.forFullRange()`, you can process the change feed for a
 
 Here's an example of how to obtain a `responseIterator` value in latest version mode:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=FeedResponseIterator)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=FeedResponseIterator)]
 
 Here's an example of how to obtain a `responseIterator` in all versions and deletes mode:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModelForAllVersionsAndDeletesMode.java?name=FeedResponseIterator)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModelForAllVersionsAndDeletesMode.java?name=FeedResponseIterator)]
 
 We can then iterate over the results. Because the change feed is effectively an infinite list of items that encompasses all future writes and updates, the value of `responseIterator.hasNext()` is always `true`. Here's an example in latest version mode, which reads all changes, starting from the beginning. Each iteration persists a continuation token after it processes all events. It picks up from the last processed point in the change feed and is handled by using `createForProcessingFromContinuation`:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=AllFeedRanges)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=AllFeedRanges)]
 
 ### Consume a partition key's changes
 
 In some cases, you might want to process only the changes for a specific partition key. You can process the changes for a specific partition key the same way that you can for an entire container. Here's an example that uses latest version mode:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=PartitionKeyProcessing)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=PartitionKeyProcessing)]
 
 ### Use FeedRange for parallelization
 
@@ -278,7 +278,7 @@ In the [change feed processor](change-feed-processor.md), work is automatically 
 
 Here's an example that uses latest version mode showing how to obtain a list of ranges for your container:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=GetFeedRanges)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=GetFeedRanges)]
 
 When you obtain of list of FeedRanges for your container, you get one `FeedRange` per [physical partition](partitioning.md#physical-partitions).
 
@@ -293,11 +293,11 @@ Here's a sample that uses latest version mode. It shows how to read from the beg
 
 Machine 1:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=Machine1)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=Machine1)]
 
 Machine 2:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=Machine2)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeedpull/SampleChangeFeedPullModel.java?name=Machine2)]
 
 ### [Python](#tab/python)
 

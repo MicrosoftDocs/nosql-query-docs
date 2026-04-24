@@ -26,7 +26,7 @@ The Azure Cosmos DB for Apache Cassandra is compatible with Cassandra Query Lang
 
 ## Azure Managed Instance for Apache Cassandra
 
-For some customers, adapting to API for Cassandra can be a challenge due to differences in behavior and configuration, especially for lift-and-shift migrations. If a feature that is critical for your application is listed as not supported later in this article, consider using [Azure Managed Instance for Apache Cassandra](../../managed-instance-apache-cassandra/introduction.md). This service is a first-party Azure service for hosting and maintaining pure open-source Apache Cassandra clusters with 100% compatibility.
+For some customers, adapting to API for Cassandra can be a challenge due to differences in behavior and configuration, especially for lift-and-shift migrations. If a feature that is critical for your application is listed as not supported later in this article, consider using [Azure Managed Instance for Apache Cassandra](/azure/managed-instance-apache-cassandra/introduction). This service is a first-party Azure service for hosting and maintaining pure open-source Apache Cassandra clusters with 100% compatibility.
 
 ## Cassandra driver
 

@@ -10,7 +10,7 @@ ms.author: gahllevy
 ---
 
 # Troubleshoot common issues in Azure Cosmos DB's API for MongoDB
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -48,3 +48,4 @@ The following article describes common errors and solutions for deployments usin
 - Learn how to [use Studio 3T](connect-using-mongochef.md) with Azure Cosmos DB's API for MongoDB.
 - Learn how to [use Robo 3T](connect-using-robomongo.md) with Azure Cosmos DB's API for MongoDB.
 - Explore MongoDB [samples](nodejs-console-app.md) with Azure Cosmos DB's API for MongoDB.
+

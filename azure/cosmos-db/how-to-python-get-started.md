@@ -63,7 +63,7 @@ pip install azure-cosmos
 
 In your environment, create a new *app.py* file and add this code:
 
-:::code language="python" source="~/cosmos-db-nosql-python-samples/003-how-to/app.py" id="imports":::
+:::code language="python" source="~/../cosmos-db-nosql-python-samples/003-how-to/app.py" id="imports":::
 
 The preceding code imports modules used in the rest of the article.
 
@@ -101,7 +101,7 @@ In your *app.py* file:
 
 - Create a new instance of the **CosmosClient** class with the **ENDPOINT** and **credential** as parameters.
 
-:::code language="python" source="~/cosmos-db-nosql-python-samples/003-how-to/app_aad_default.py" id="credential":::
+:::code language="python" source="~/../cosmos-db-nosql-python-samples/003-how-to/app_aad_default.py" id="credential":::
 
 > [!IMPORTANT]
 > For details on adding the correct role to enable `DefaultAzureCredential`, see [Configure role-based access control with Microsoft Entra ID for your Azure Cosmos DB account](how-to-connect-role-based-access-control.md#grant-data-plane-role-based-access). In particular, see the section on creating roles and assigning them to a principal ID.

@@ -38,13 +38,13 @@ The [``(string rowKey, string partitionKey)`` constructor](/dotnet/api/azure.dat
 
 For example, you can create a new instance of the **TableEntity** class by first specifying the **row** and **partition** keys in the constructor and then adding new key-value pairs to the dictionary:
 
-:::code language="csharp" source="~/azure-cosmos-db-table-dotnet-v12/250-create-item-tableentity/Program.cs" id="create_object_add" highlight="3-4,8-10,13":::
+:::code language="csharp" source="~/../azure-cosmos-db-table-dotnet-v12/250-create-item-tableentity/Program.cs" id="create_object_add" highlight="3-4,8-10,13":::
 
 The [``(IDictionary<string, object>)`` constructor](/dotnet/api/azure.data.tables.tableentity.-ctor#azure-data-tables-tableentity-ctor(system-collections-generic-idictionary((system-string-system-object)))) of the **TableEntity** class converts an existing dictionary into an item ready to be added to a table.
 
 For example, you can pass in a dictionary to a new instance of the **TableEntity** class:
 
-:::code language="csharp" source="~/azure-cosmos-db-table-dotnet-v12/250-create-item-tableentity/Program.cs" id="create_object_dictionary" highlight="2-9,13,17":::
+:::code language="csharp" source="~/../azure-cosmos-db-table-dotnet-v12/250-create-item-tableentity/Program.cs" id="create_object_dictionary" highlight="2-9,13,17":::
 
 The [``TableClient.AddEntityAsync<>``](/dotnet/api/azure.data.tables.tableclient.addentityasync#azure-data-tables-tableclient-addentityasync-1(-0-system-threading-cancellationtoken)) method takes in a parameter of type **TableEntity** and then creates a server-side item in the table.
 
@@ -53,18 +53,18 @@ The [``TableClient.AddEntityAsync<>``](/dotnet/api/azure.data.tables.tableclient
 > [!NOTE]
 > The examples in this section assume that you have already defined a C# type to represent your data named **Product**:
 >
-> :::code language="csharp" source="~/azure-cosmos-db-table-dotnet-v12/251-create-item-itableentity/Product.cs" id="type":::
+> :::code language="csharp" source="~/../azure-cosmos-db-table-dotnet-v12/251-create-item-itableentity/Product.cs" id="type":::
 >
 
 The [``TableClient.AddEntityAsync<>``](/dotnet/api/azure.data.tables.tableclient.addentityasync#azure-data-tables-tableclient-addentityasync-1(-0-system-threading-cancellationtoken)) method takes in a parameter of any type that implements the [``ITableEntity`` interface](/dotnet/api/azure.data.tables.itableentity). The interface already includes the required ``RowKey`` and ``PartitionKey`` properties.
 
 For example, you can create a new object that implements at least all of the required properties in the **ITableEntity** interface:
 
-:::code language="csharp" source="~/azure-cosmos-db-table-dotnet-v12/251-create-item-itableentity/Program.cs" id="create_object" highlight="4-5":::
+:::code language="csharp" source="~/../azure-cosmos-db-table-dotnet-v12/251-create-item-itableentity/Program.cs" id="create_object" highlight="4-5":::
 
 You can then pass this object to the **AddEntityAsync``<>``** method creating a server-side item:
 
-:::code language="csharp" source="~/azure-cosmos-db-table-dotnet-v12/251-create-item-itableentity/Program.cs" id="create_item" highlight="2":::
+:::code language="csharp" source="~/../azure-cosmos-db-table-dotnet-v12/251-create-item-itableentity/Program.cs" id="create_item" highlight="2":::
 
 ## Next steps
 
@@ -72,3 +72,4 @@ Now that you've created various items, use the next guide to read an item.
 
 > [!div class="nextstepaction"]
 > [Read an item](how-to-dotnet-read-item.md)
+

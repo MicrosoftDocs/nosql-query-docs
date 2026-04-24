@@ -45,7 +45,7 @@ With Premium SSD v2 disks, the cluster will be auto configured with the upper bo
 
 ::: zone pivot="rest-api,azure-resource-manager-bicep"
 
-[!INCLUDE[External - Azure CLI prerequisites](~/reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
+[!INCLUDE[External - Azure CLI prerequisites](~/../reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
 
 ::: zone-end
 
@@ -309,3 +309,4 @@ Configure a cluster using **Premium SSD v2** (high performance) storage as part 
 
 - [Compare Azure DocumentDB to MongoDB](compare-mongodb-atlas.md)
 - [Review supported Mongo API surface area in Azure DocumentDB](compatibility-query-language.md)
+

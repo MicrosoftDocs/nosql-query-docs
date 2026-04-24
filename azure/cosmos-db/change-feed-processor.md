@@ -56,21 +56,21 @@ The change feed processor in .NET is available for [latest version mode](change-
 
 To read using latest version mode, in a `Container` instance, you call `GetChangeFeedProcessorBuilder`:
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-change-feed-processor/src/Program.cs?name=DefineProcessor)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-change-feed-processor/src/Program.cs?name=DefineProcessor)]
 
 To read using all versions and deletes mode, call `GetChangeFeedProcessorBuilderWithAllVersionsAndDeletes` from the `Container` instance:
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeedAllVersionsAndDeletes/Program.cs?name=BasicInitialization)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeedAllVersionsAndDeletes/Program.cs?name=BasicInitialization)]
 
 For both modes, the first parameter is a distinct name that describes the goal of this processor. The second name is the delegate implementation that handles changes.
 
 Here's an example of a delegate for latest version mode:
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-change-feed-processor/src/Program.cs?name=Delegate)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-change-feed-processor/src/Program.cs?name=Delegate)]
 
 Here's an example of a delegate for all versions and deletes mode: 
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeedAllVersionsAndDeletes/Program.cs?name=Delegate)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeedAllVersionsAndDeletes/Program.cs?name=Delegate)]
 
 Afterward, you define the compute instance name or unique identifier by using `WithInstanceName`. The compute instance name should be unique and different for each compute instance you're deploying. You set the container to maintain the lease state by using `WithLeaseContainer`.
 
@@ -165,7 +165,7 @@ You can connect the change feed processor to any relevant event in its [life cyc
 
 Life cycle notifications are available in both change feed modes. Here's an example of life cycle notifications in latest version mode:
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=StartWithNotifications)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=StartWithNotifications)]
 
 ## Deployment unit
 
@@ -195,7 +195,7 @@ By default, when a change feed processor starts for the first time, it initializ
 
 It's possible to initialize the change feed processor to read changes starting at a *specific date and time* by passing an instance of `DateTime` to the `WithStartTime` builder extension:
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=TimeInitialization)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=TimeInitialization)]
 
 The change feed processor is initialized for that specific date and time, and it starts to read the changes that happened afterward.
 
@@ -203,7 +203,7 @@ The change feed processor is initialized for that specific date and time, and it
 
 In other scenarios, like in data migrations or if you're analyzing the entire history of a container, you need to read the change feed from *the beginning of that container's lifetime*. You can use `WithStartTime` on the builder extension, but pass `DateTime.MinValue.ToUniversalTime()`, which generates the UTC representation of the minimum `DateTime` value like in this example:
 
-[!code-csharp[Main](~/samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=StartFromBeginningInitialization)]
+[!code-csharp[Main](~/../samples-cosmosdb-dotnet-v3/Microsoft.Azure.Cosmos.Samples/Usage/ChangeFeed/Program.cs?name=StartFromBeginningInitialization)]
 
 The change feed processor is initialized, and it starts reading changes from the beginning of the lifetime of the container.
 
@@ -216,12 +216,12 @@ The change feed processor is initialized, and it starts reading changes from the
 
 For full working samples, see [this GitHub repository](https://github.com/Azure-Samples/azure-cosmos-java-sql-api-samples/tree/main/src/main/java/com/azure/cosmos/examples/changefeed). An example of a delegate implementation when reading the change feed in [latest version mode](change-feed-modes.md#latest-version-change-feed-mode) is:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeed/SampleChangeFeedProcessor.java?name=Delegate)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeed/SampleChangeFeedProcessor.java?name=Delegate)]
 
 >[!NOTE]
 > In this example, you pass a variable `options` of type `ChangeFeedProcessorOptions`, which can be used to set various values, including `setStartFromBeginning`:
 >
-> [!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeed/SampleChangeFeedProcessor.java?name=ChangeFeedProcessorOptions)]
+> [!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeed/SampleChangeFeedProcessor.java?name=ChangeFeedProcessorOptions)]
 
 > [!WARNING]
 > Change feed payloads include Azure Cosmos DB system metadata fields (`_lsn`, `_rid`, `_ts`, `_etag`, `_self`) in addition to your document properties. When you deserialize change feed events into typed Java objects (POJOs) using Jackson's `ObjectMapper`, these fields cause an `UnrecognizedPropertyException` unless your model class explicitly ignores unknown properties. Add `@JsonIgnoreProperties(ignoreUnknown = true)` to your POJO classes to prevent deserialization failures:
@@ -243,11 +243,11 @@ The delegate implementation for reading the change feed in [all versions and del
 
 Here's an example:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeed/SampleChangeFeedProcessorForAllVersionsAndDeletesMode.java?name=Delegate)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeed/SampleChangeFeedProcessorForAllVersionsAndDeletesMode.java?name=Delegate)]
 
 In either change feed mode, you can assign it to `changeFeedProcessorInstance` and pass the parameters of the compute instance name (`hostName`), the monitored container (here called `feedContainer`), and the `leaseContainer`. Then start the change feed processor:
 
-[!code-java[](~/azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeed/SampleChangeFeedProcessor.java?name=StartChangeFeedProcessor)]
+[!code-java[](~/../azure-cosmos-java-sql-api-samples/src/main/java/com/azure/cosmos/examples/changefeed/SampleChangeFeedProcessor.java?name=StartChangeFeedProcessor)]
 
 > [!IMPORTANT]
 > When creating the `CosmosAsyncClient` for both the feed and lease containers, and initializing a new change feed processor workload:

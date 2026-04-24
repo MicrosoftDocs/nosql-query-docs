@@ -12,7 +12,7 @@ ms.custom: devx-track-python, sfi-ropc-blocked
 ---
 
 # Get started with Azure Cosmos DB for MongoDB and Python
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -115,11 +115,11 @@ Skip this step and use the information for the portal in the next step.
 
 1. Add dependencies to reference the [PyMongo](https://www.mongodb.com/docs/drivers/pymongo/) and [python-dotenv](https://pypi.org/project/python-dotenv/) packages.
 
-    :::code language="python" source="~/azure-cosmos-db-mongodb-python-getting-started/101-client-connection-string/run.py" id="package_dependencies":::
+    :::code language="python" source="~/../azure-cosmos-db-mongodb-python-getting-started/101-client-connection-string/run.py" id="package_dependencies":::
 
 2. Define a new instance of the `MongoClient` class using the constructor and the connection string read from an environment variable.
 
-    :::code language="python" source="~/azure-cosmos-db-mongodb-python-getting-started/101-client-connection-string/run.py" id="client_credentials":::
+    :::code language="python" source="~/../azure-cosmos-db-mongodb-python-getting-started/101-client-connection-string/run.py" id="client_credentials":::
 
 For more information on different ways to create a ``MongoClient`` instance, see [Making a Connection with MongoClient](https://pymongo.readthedocs.io/en/stable/tutorial.html#making-a-connection-with-mongoclient).
 
@@ -158,3 +158,4 @@ Now that you've connected to an API for MongoDB account, use the next guide to c
 
 > [!div class="nextstepaction"]
 > [Create a database in Azure Cosmos DB for MongoDB using Python](how-to-python-manage-databases.md)
+

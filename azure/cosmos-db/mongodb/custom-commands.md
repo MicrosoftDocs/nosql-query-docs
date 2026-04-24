@@ -13,7 +13,7 @@ ms.devlang: javascript
 
 # Use MongoDB extension commands to manage data stored in Azure Cosmos DB for MongoDB
 
-[!INCLUDE[MongoDB](~/reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
+[!INCLUDE[MongoDB](~/../reusable-content/ce-skilling/azure/includes/cosmos-db/includes/appliesto-mongodb.md)]
 
 [!INCLUDE[Note - Recommended services](includes/note-recommended-services.md)]
 
@@ -490,3 +490,4 @@ Next you can proceed to learn the following Azure Cosmos DB concepts:
 
 * [Indexing in Azure Cosmos DB](../index-policy.md)
 * [Expire data in Azure Cosmos DB automatically with time to live](../time-to-live.md)
+

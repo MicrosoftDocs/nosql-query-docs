@@ -82,7 +82,7 @@ dotnet build
 
 In your code editor, add using directives for ``Azure.Core`` and ``Azure.Identity`` namespaces.
 
-:::code language="csharp" source="~/cosmos-db-nosql-dotnet-samples/103-client-default-credential/Program.cs" id="using_identity_directives":::
+:::code language="csharp" source="~/../cosmos-db-nosql-dotnet-samples/103-client-default-credential/Program.cs" id="using_identity_directives":::
 
 > [!NOTE]
 > In addition to Azure.Core and Azure.Identity, your application must reference the Microsoft.Azure.Cosmos namespace. This namespace provides the Azure Cosmos DB client types, such as CosmosClient, Database, and Container, that are used throughout the remainder of this article. Without this namespace reference, the application will not compile.
@@ -93,7 +93,7 @@ If you're testing on a local machine, or your application will run on Azure serv
 
 For this example, we saved the instance in a variable of type [``TokenCredential``](/dotnet/api/azure.core.tokencredential) as that's a more generic type that's reusable across SDKs.
 
-:::code language="csharp" source="~/cosmos-db-nosql-dotnet-samples/103-client-default-credential/Program.cs" id="credential":::
+:::code language="csharp" source="~/../cosmos-db-nosql-dotnet-samples/103-client-default-credential/Program.cs" id="credential":::
 
 Create a new instance of the **CosmosClient** class with your Azure Cosmos DB endpoint and the **TokenCredential** object as parameters.
 

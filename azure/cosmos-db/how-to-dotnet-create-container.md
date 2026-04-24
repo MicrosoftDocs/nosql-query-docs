@@ -44,7 +44,7 @@ To create a container, call one of the following methods:
 
 The following example creates a container asynchronously:
 
-:::code language="csharp" source="~/cosmos-db-nosql-dotnet-samples/226-create-container-options/Program.cs" id="create_container" highlight="2":::
+:::code language="csharp" source="~/../cosmos-db-nosql-dotnet-samples/226-create-container-options/Program.cs" id="create_container" highlight="2":::
 
 The [``Database.CreateContainerAsync``](/dotnet/api/microsoft.azure.cosmos.database.createcontainerasync) method throws an exception if a database with the same name already exists.
 
@@ -52,7 +52,7 @@ The [``Database.CreateContainerAsync``](/dotnet/api/microsoft.azure.cosmos.datab
 
 The following example creates a container asynchronously only if it doesn't already exist on the account:
 
-:::code language="csharp" source="~/cosmos-db-nosql-dotnet-samples/226-create-container-options/Program.cs" id="create_container_check" highlight="2":::
+:::code language="csharp" source="~/../cosmos-db-nosql-dotnet-samples/226-create-container-options/Program.cs" id="create_container_check" highlight="2":::
 
 The [``Database.CreateContainerIfNotExistsAsync``](/dotnet/api/microsoft.azure.cosmos.database.createcontainerifnotexistsasync) method only creates a new container if it doesn't already exist. This method is useful for avoiding errors if you run the same code multiple times.
 
@@ -62,7 +62,7 @@ In all examples so far, the response from the asynchronous request was cast imme
 
 The following example shows the **Database.CreateContainerIfNotExistsAsync** method returning a **ContainerResponse**. Once returned, you can parse response properties and then eventually get the underlying **Container** object:
 
-:::code language="csharp" source="~/cosmos-db-nosql-dotnet-samples/226-create-container-options/Program.cs" id="create_container_response" highlight="2,6":::
+:::code language="csharp" source="~/../cosmos-db-nosql-dotnet-samples/226-create-container-options/Program.cs" id="create_container_response" highlight="2,6":::
 
 ## Next steps
 

@@ -148,7 +148,7 @@ DiskANN enables you to perform highly accurate, low-latency queriers at any scal
 - [Python Notebook - Movie Chatbot](https://github.com/AzureCosmosDB/Fabric-Conf-2024-Build-AI-Apps/tree/main/AzureCosmosDBforMongoDB)
 
 > [!div class="nextstepaction"]
-> [Use Azure Cosmos DB for MongoDB lifetime free tier](mongodb/vcore/free-tier.md)
+> [Use Azure Cosmos DB for MongoDB lifetime free tier](free-tier.md)
   
 ### API for PostgreSQL
 

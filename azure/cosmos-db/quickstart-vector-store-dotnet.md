@@ -111,7 +111,7 @@ Follow the prompts to select your Azure subscription and environment.
 
 Update the `appsettings.json` placeholder values with your own:
 
-:::code language="json" source="~/cosmos-db-vector-samples/nosql-vector-search-dotnet/appsettings.json" :::
+:::code language="json" source="~/../cosmos-db-vector-samples/nosql-vector-search-dotnet/appsettings.json" :::
 
 
 ## Build and run the project
@@ -266,7 +266,7 @@ The following sections provide details about the most important services and cod
 
 The `VectorSearchService` orchestrates an end‑to‑end vector similarity search using Flat, QuantizedFlat, and DiskANN search techniques with Azure OpenAI embeddings.
 
-:::code language="csharp" source="~/cosmos-db-vector-samples/nosql-vector-search-dotnet/services/vectorsearchservice.cs" :::
+:::code language="csharp" source="~/../cosmos-db-vector-samples/nosql-vector-search-dotnet/services/vectorsearchservice.cs" :::
 
 In the preceding code, the `VectorSearchService` performs the following tasks:
 
@@ -281,7 +281,7 @@ In the preceding code, the `VectorSearchService` performs the following tasks:
 
 The `CosmosDBService` manages interactions with Azure Cosmos DB to handle tasks like loading data, vector index creation, index listing, and bulk inserts for hotel vector search.
 
-:::code language="csharp" source="~/cosmos-db-vector-samples/nosql-vector-search-dotnet/services/CosmosDBService.cs" :::
+:::code language="csharp" source="~/../cosmos-db-vector-samples/nosql-vector-search-dotnet/services/CosmosDBService.cs" :::
 
 In the preceding code, the `CosmosDBService` performs the following tasks:
 

@@ -73,7 +73,7 @@ Review the following considerations before you use this feature:
 
 ::: zone pivot="rest-api,azure-resource-manager-bicep,azure-terraform"
 
-[!INCLUDE[External - Azure CLI prerequisites](~/reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
+[!INCLUDE[External - Azure CLI prerequisites](~/../reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
 
 ::: zone-end
 
@@ -1454,3 +1454,4 @@ internal sealed class AzureIdentityTokenHandler(
 
 - [Limitations of Microsoft Entra ID in Azure DocumentDB](./limitations.md#authentication-and-access-control-role-based-access-control)
 - [Connect to Azure DocumentDB using a console application](how-to-build-dotnet-console-app.md)
+

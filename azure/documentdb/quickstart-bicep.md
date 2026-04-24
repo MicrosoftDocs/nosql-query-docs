@@ -18,7 +18,7 @@ In this quickstart, you deploy a new Azure DocumentDB cluster using Bicep. This 
 
 [!INCLUDE[Prerequisites - Azure subscription](includes/prerequisite-azure-subscription.md)]
 
-[!INCLUDE[External - Azure CLI prerequisites](~/reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
+[!INCLUDE[External - Azure CLI prerequisites](~/../reusable-content/azure-cli/azure-cli-prepare-your-environment-no-header.md)]
 
 ## Configure environment
 
@@ -163,3 +163,4 @@ When you're done with your Azure DocumentDB cluster, you can delete the Azure re
 - [Connect from MongoDB Shell](how-to-connect-mongo-shell.md)
 - [Connect from Azure Cloud Shell](how-to-connect-cloud-shell.md)
 - [Migrate data to Azure DocumentDB](migration-options.md)
+
