@@ -176,12 +176,12 @@ Finally, now that you have a view of your existing data estate and a design for 
 
 * Assign responsibility for migrating each existing resource from MongoDB to Azure Cosmos DB. How you apply your team resources in order to shepherd your migration to completion is up to you. For small migrations, you can have one team kick off the entire migration and monitor its progress. For larger migrations, you could assign responsibility to team-members on a per-resource basis for migrating and monitoring that resource.
 * Once you have assigned responsibility for migrating your resources, now you should choose the right migration tool(s) for migration. For small migrations, you might be able to use one migration tool such as a MongoDB native tool or Azure DMS to migrate all of your resources in one shot. For larger migrations or migrations with special requirements, you may want to choose migration tooling at a per-resource granularity.
-  * Before you plan which migration tools to use, we recommend acquainting yourself with the options that are available. The [Azure Database Migration Service for Azure Cosmos DB's API for MongoDB](../../dms/tutorial-mongodb-cosmos-db.md) provides a mechanism that simplifies data migration by providing a fully managed hosting platform, migration monitoring options and automatic throttling handling. Here's a full list of options:
+  * Before you plan which migration tools to use, we recommend acquainting yourself with the options that are available. The [Azure Database Migration Service for Azure Cosmos DB's API for MongoDB](/azure/dms/tutorial-mongodb-cosmos-db) provides a mechanism that simplifies data migration by providing a fully managed hosting platform, migration monitoring options and automatic throttling handling. Here's a full list of options:
 
     |**Migration type**|**Solution**|**Considerations**|
     |---------|---------|---------|
-    |Online|[Azure Database Migration Service](../../dms/tutorial-mongodb-cosmos-db-online.md)|&bull; Uses the [bulk executor library](../bulk-executor-overview.md) for Azure Cosmos DB <br />&bull; Suitable for large datasets and takes care of replicating live changes <br/>&bull; Works only with other MongoDB sources|
-    |Offline|[Azure Database Migration Service](../../dms/tutorial-mongodb-cosmos-db-online.md)|&bull; Uses the [bulk executor library](../bulk-executor-overview.md) for Azure Cosmos DB <br/>&bull; Suitable for large datasets and takes care of replicating live changes <br/>&bull; Works only with other MongoDB sources|
+    |Online|[Azure Database Migration Service](/azure/dms/tutorial-mongodb-cosmos-db-online)|&bull; Uses the [bulk executor library](../bulk-executor-overview.md) for Azure Cosmos DB <br />&bull; Suitable for large datasets and takes care of replicating live changes <br/>&bull; Works only with other MongoDB sources|
+    |Offline|[Azure Database Migration Service](/azure/dms/tutorial-mongodb-cosmos-db-online)|&bull; Uses the [bulk executor library](../bulk-executor-overview.md) for Azure Cosmos DB <br/>&bull; Suitable for large datasets and takes care of replicating live changes <br/>&bull; Works only with other MongoDB sources|
     |Offline|[Azure Data Factory](/azure/data-factory/connector-azure-cosmos-db)|&bull; Uses the [bulk executor library](../bulk-executor-overview.md) for Azure Cosmos DB <br/>&bull; Suitable for large datasets <br/> &bull; Easy to set up and supports multiple sources <br/> &bull; Lack of checkpointing means that any issue during migration would require a restart of the whole migration process<br/>&bull; Lack of a dead letter queue would mean that a few erroneous files could stop the entire migration process <br/>&bull; Needs custom code to increase read throughput for certain data sources|
     |Offline|[Existing Mongo Tools (mongodump, mongorestore, Studio3T)](tutorial-mongotools-cosmos-db.md)|&bull; Easy to set up and integration <br/>&bull; Needs custom handling for throttles|
     *|Offline/online|[Azure Databricks and Spark](migrate-databricks.md)|&bull; Full control of migration rate and data transformation <br/>&bull; Requires custom coding|
@@ -237,6 +237,6 @@ In the pre-migration phase, spend some time to plan what steps you take toward a
 
 * Migrate to Azure Cosmos DB for MongoDB
   * [Offline migration using MongoDB native tools](tutorial-mongotools-cosmos-db.md)
-  * [Offline migration using Azure database migration service (DMS)](../../dms/tutorial-mongodb-cosmos-db.md)
-  * [Online migration using Azure database migration service (DMS)](../../dms/tutorial-mongodb-cosmos-db-online.md)
+  * [Offline migration using Azure database migration service (DMS)](/azure/dms/tutorial-mongodb-cosmos-db)
+  * [Online migration using Azure database migration service (DMS)](/azure/dms/tutorial-mongodb-cosmos-db-online)
 

@@ -126,7 +126,7 @@ In this tutorial, you've learned how to:
 You can proceed to the next tutorial and learn how to import MongoDB data into Azure Cosmos DB.  
 
 > [!div class="nextstepaction"]
-> [Import MongoDB data into Azure Cosmos DB](../../dms/tutorial-mongodb-cosmos-db.md?toc=%2fazure%2fcosmos-db%2ftoc.json%253ftoc%253d%2fazure%2fcosmos-db%2ftoc.json)
+> [Import MongoDB data into Azure Cosmos DB](/azure/dms/tutorial-mongodb-cosmos-db?toc=%2fazure%2fcosmos-db%2ftoc.json%253ftoc%253d%2fazure%2fcosmos-db%2ftoc.json)
 
 Trying to do capacity planning for a migration to Azure Cosmos DB? You can use information about your existing database cluster for capacity planning.
 * If all you know is the number of vcores and servers in your existing database cluster, read about [estimating request units using vCores or vCPUs](../convert-vcore-to-request-unit.md) 

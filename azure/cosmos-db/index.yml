@@ -276,7 +276,7 @@ additionalContent:
             - text: Cassandra Query Language (CQL) shell, Spark – API for Cassandra
               url: cassandra/migrate-data.md
             - text: Azure Database Migration Service – API for MongoDB
-              url: ../dms/tutorial-mongodb-cosmos-db.md
+              url: /azure/dms/tutorial-mongodb-cosmos-db
             - text: Migrate hundreds of terabytes of data
               url: migrate.md
         - title: Migration guides

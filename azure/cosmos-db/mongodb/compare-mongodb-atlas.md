@@ -102,4 +102,4 @@ Azure Cosmos DB for MongoDB is a fully managed, MongoDB-compatible database serv
 
 - [Connect a MongoDB application to Azure Cosmos DB for MongoDB](connect-account.yml)
 - [Use Studio 3T with Azure Cosmos DB for MongoDB](connect-using-mongochef.md)
-- [Import MongoDB data into Azure Cosmos DB for MongoDB](../../dms/tutorial-mongodb-cosmos-db.md?toc=%2fazure%2fcosmos-db%2ftoc.json%253ftoc%253d%2fazure%2fcosmos-db%2ftoc.json)
+- [Import MongoDB data into Azure Cosmos DB for MongoDB](/azure/dms/tutorial-mongodb-cosmos-db?toc=%2fazure%2fcosmos-db%2ftoc.json%253ftoc%253d%2fazure%2fcosmos-db%2ftoc.json)

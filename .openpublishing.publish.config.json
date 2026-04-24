@@ -186,6 +186,24 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "azure-cosmos-mongodb-dotnet",
+      "url": "https://github.com/Azure-Samples/cosmos-db-mongodb-api-dotnet-samples",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "samples-cosmosdb-mongodb-javascript",
+      "url": "https://github.com/Azure-Samples/cosmos-db-mongodb-api-javascript-samples",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure-cosmos-db-mongodb-python-getting-started",
+      "url": "https://github.com/Azure-Samples/azure-cosmos-db-mongodb-python-getting-started",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "azure-cosmos-db-mongodb-mern-web-app",
       "url": "https://github.com/Azure-samples/msdocs-azure-cosmos-db-mongodb-mern-web-app/",
       "branch": "main",
