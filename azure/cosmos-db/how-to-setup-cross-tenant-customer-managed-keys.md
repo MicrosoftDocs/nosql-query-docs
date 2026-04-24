@@ -24,7 +24,7 @@ This article walks through how to configure encryption with customer-managed key
 
 [!INCLUDE [entra-msi-cross-tenant-cmk-overview](~/../reusable-content/ce-skilling/azure/includes/entra-msi-cross-tenant-cmk-overview.md)]
 
-[!INCLUDE [entra-msi-cross-tenant-cmk-create-identities-authorize-key-vault](~/../reusable-content/ce-skilling/azure/includes/entra-msi-cross-tenant-cmk-create-identities-authorize-key-vault.md)]
+[!INCLUDE [entra-msi-cross-tenant-cmk-create-identities-authorize-key-vault](~/reusable-content/ce-skilling/azure/includes/entra-msi-cross-tenant-cmk-create-identities-authorize-key-vault.md)]
 
 ## Create a new Azure Cosmos DB account encrypted with a key from a different tenant
 
