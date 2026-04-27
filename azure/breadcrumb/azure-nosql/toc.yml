@@ -22,6 +22,56 @@ items:
           - name: Table
             tocHref: /azure/cosmos-db/table/
             topicHref: /azure/cosmos-db/table/index
+      - name: Cosmos DB
+        tocHref: /azure/data-factory/
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/search/
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/azure-functions/
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/dms/
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/hdinsight/
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/private-link/
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/logic-apps/
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/stream-analytics/
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/virtual-network/
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/azure-monitor/insights
+        topicHref: /azure/cosmos-db/index
+      - name: Cosmos DB
+        tocHref: /azure/synapse-analytics/
+        topicHref: /azure/cosmos-db/index
       - name: DocumentDB
         tocHref: /azure/documentdb/
+        topicHref: /azure/documentdb/index
+  - name: Azure
+    tocHref: /azure/developer/
+    topicHref: /azure/index
+    items:
+      - name: Cosmos DB
+        tocHref: /azure/developer/
+        topicHref: /azure/cosmos-db/index
+  - name: Azure
+    tocHref: /security/
+    topicHref: /azure/index
+    items:
+      - name: Cosmos DB
+        tocHref: /security/benchmark/
+        topicHref: /azure/cosmos-db/index
+      - name: DocumentDB
+        tocHref: /security/benchmark/
         topicHref: /azure/documentdb/index
