@@ -23,6 +23,9 @@ Find the [sample code](https://github.com/Azure-Samples/documentdb-samples/tree/
 
 [!INCLUDE[Prerequisites - Vector Search Quickstart](includes/prerequisite-quickstart-vector-search-model.md)]
 
+> [!NOTE]
+> The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
+
 - [Go](https://golang.org/dl/) version 1.24 or later
 
 ## Create data file with vectors
@@ -170,6 +173,9 @@ vector-search-quickstart
 ```
 
 ----
+
+> [!TIP]
+> Unlike some databases, DocumentDB allows you to create and drop vector indexes at any time after container creation. You don't need to define the vector indexing policy at container creation time.
 
 ## Create code for vector search
 
