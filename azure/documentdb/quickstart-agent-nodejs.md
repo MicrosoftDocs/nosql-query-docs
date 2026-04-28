@@ -87,6 +87,15 @@ Use the Azure Developer CLI (`azd`) to provision the required Azure OpenAI and D
 
 > [!TIP]
 > Run `azd env get-values` at any time to view the current environment values.
+>
+> To export these values to a `.env` file, run:
+>
+> ```bash
+> azd env get-values > .env
+> ```
+
+> [!NOTE]
+> The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
 
 ## Configure environment variables
 
@@ -185,6 +194,9 @@ DATA_FILE_WITHOUT_VECTORS=../data/Hotels.json
 VECTOR_INDEX_ALGORITHM=vector-ivf
 EMBEDDING_DIMENSIONS=1536
 ```
+
+> [!TIP]
+> Unlike some databases, DocumentDB allows you to create and drop vector indexes at any time after container creation. You don't need to define the vector indexing policy at container creation time.
 
 ## Project structure
 
