@@ -22,10 +22,13 @@ azd env set AZURE_OPENAI_CHAT_MODEL_VERSION 2025-04-14
 |-----------|---------|-------------|
 | `AZURE_OPENAI_LOCATION` | Same as `AZURE_LOCATION` | Region for OpenAI resource deployment |
 | `AZURE_OPENAI_CHAT_MODEL` | `gpt-4.1-mini` | Chat completion model name |
+| `AZURE_OPENAI_CHAT_MODEL_VERSION` | `2025-04-14` | Chat model version |
 | `AZURE_OPENAI_CHAT_MODEL_TYPE` | `Standard` | Deployment type (`Standard` or `GlobalStandard`) |
 | `AZURE_OPENAI_SYNTH_MODEL` | `gpt-4.1` | Synthesis/reasoning model name |
+| `AZURE_OPENAI_SYNTH_MODEL_VERSION` | `2025-04-14` | Synthesis model version |
 | `AZURE_OPENAI_SYNTH_MODEL_TYPE` | `Standard` | Deployment type (`Standard` or `GlobalStandard`) |
 | `AZURE_OPENAI_EMBEDDING_MODEL` | `text-embedding-3-small` | Embedding model name |
+| `AZURE_OPENAI_EMBEDDING_MODEL_VERSION` | `1` | Embedding model version |
 | `AZURE_OPENAI_EMBEDDING_MODEL_TYPE` | `Standard` | Deployment type (`Standard` or `GlobalStandard`) |
 
 > [!NOTE]
