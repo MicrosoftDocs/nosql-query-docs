@@ -64,7 +64,39 @@ This sample uses a custom implementation with the OpenAI SDK directly, without r
     cd ai/vector-search-agent-go
     ```
 
+## Deploy Azure resources (optional)
+
+If you want to use Azure Developer CLI to provision all required resources:
+
+1. Provision and deploy the infrastructure:
+
+    ```bash
+    azd up
+    ```
+
+1. When prompted, select your subscription and a location (for example, `swedencentral` or `eastus2`).
+
+1. After deployment completes, generate your `.env` file from the deployed environment:
+
+    ```bash
+    azd env get-values > .env
+    ```
+
+> [!TIP]
+> Run `azd env get-values` at any time to view the current environment values.
+>
+> To export these values to a `.env` file, run:
+>
+> ```bash
+> azd env get-values > .env
+> ```
+
+> [!NOTE]
+> The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
+
 ## Configure environment variables
+
+If you created your Azure resources manually or want to use your own existing resources, you need to configure environment variables for the application to connect to Azure OpenAI and Azure DocumentDB. If you used `azd up`, you can skip this step, as the necessary environment variables are automatically set in the `azd` environment and can be accessed with `azd env get-values`.
 
 Create a `.env` file in your project root to configure environment variables. You can create a copy of the `.env.sample` file from the repository.
 
