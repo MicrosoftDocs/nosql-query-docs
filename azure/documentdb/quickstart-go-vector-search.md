@@ -26,6 +26,8 @@ Find the [sample code](https://github.com/Azure-Samples/documentdb-samples/tree/
 > [!NOTE]
 > The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
 
+[!INCLUDE[Customize OpenAI deployment](includes/section-quickstart-openai-configuration.md)]
+
 - [Go](https://golang.org/dl/) version 1.24 or later
 
 ## Create data file with vectors

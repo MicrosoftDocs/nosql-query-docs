@@ -97,6 +97,8 @@ Use the Azure Developer CLI (`azd`) to provision the required Azure OpenAI and D
 > [!NOTE]
 > The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
 
+[!INCLUDE[Customize OpenAI deployment](includes/section-quickstart-openai-configuration.md)]
+
 ## Configure environment variables
 
 If you created your Azure resources manually or want to use your own existing resources, you need to configure environment variables for the application to connect to Azure OpenAI and Azure DocumentDB. If you used `azd up`, you can skip this step, as the necessary environment variables are automatically set in the `azd` environment and can be accessed with `azd env get-values`.

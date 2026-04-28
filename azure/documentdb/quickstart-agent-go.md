@@ -38,9 +38,6 @@ You can use the Azure Developer CLI to create the required Azure resources by ru
     - Add your client IP address to the cluster's firewall rules. For more information, see [Grant access from your IP address](/azure/documentdb/how-to-configure-firewall#grant-access-from-your-ip-address).
   - For passwordless authentication, Role Based Access Control (RBAC) enabled
 
-> [!NOTE]
-> The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
-
 ### Development tools
 
 - [Go](https://golang.org/dl/) 1.22 or later
@@ -93,6 +90,8 @@ If you want to use Azure Developer CLI to provision all required resources:
 
 > [!NOTE]
 > The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
+
+[!INCLUDE[Customize OpenAI deployment](includes/section-quickstart-openai-configuration.md)]
 
 ## Configure environment variables
 
