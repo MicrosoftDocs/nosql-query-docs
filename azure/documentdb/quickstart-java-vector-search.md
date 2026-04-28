@@ -27,6 +27,9 @@ The app uses a sample hotel dataset in a JSON file with pre-calculated vectors f
 
 [!INCLUDE[Prerequisites - Vector Search Quickstart](includes/prerequisite-quickstart-vector-search-model.md)]
 
+> [!NOTE]
+> The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
+
 - [Java 21](/java/openjdk/download) or later
 
 - [Maven 3.6](https://maven.apache.org/download.cgi) or later
