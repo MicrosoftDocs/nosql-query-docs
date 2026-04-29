@@ -9,7 +9,7 @@ ms.service: azure-cosmos-db
 ms.subservice: table
 ms.topic: how-to
 ms.devlang: csharp
-ms.date: 09/10/2025
+ms.date: 04/29/2026
 ms.custom:
   - sfi-image-nochange
   - sfi-ropc-nochange
