@@ -10,8 +10,8 @@ The infrastructure deploys Azure OpenAI with default model and region settings d
 # Deploy OpenAI to a different region than your other resources
 azd env set AZURE_OPENAI_LOCATION swedencentral
 
-# Change the deployment type (default is Standard)
-azd env set AZURE_OPENAI_CHAT_MODEL_TYPE Standard
+# Switch deployment type from Standard (default) to GlobalStandard
+azd env set AZURE_OPENAI_CHAT_MODEL_TYPE GlobalStandard
 
 # Change the chat model
 azd env set AZURE_OPENAI_CHAT_MODEL gpt-4.1-mini
