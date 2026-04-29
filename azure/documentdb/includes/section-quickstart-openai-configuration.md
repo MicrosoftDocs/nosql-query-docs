@@ -20,7 +20,7 @@ The infrastructure deploys Azure OpenAI with default model and region settings d
 
 To override a default, use `azd env set` before running `azd up`:
 
-``bash
+```bash
 # Deploy OpenAI to a different region than your other resources
 azd env set AZURE_OPENAI_LOCATION swedencentral
 
@@ -30,7 +30,7 @@ azd env set AZURE_OPENAI_CHAT_MODEL_TYPE GlobalStandard
 # Change the chat model
 azd env set AZURE_OPENAI_CHAT_MODEL gpt-4.1-mini
 azd env set AZURE_OPENAI_CHAT_MODEL_VERSION 2025-04-14
-``
+```
 
 > [!NOTE]
 > Not all models are available in all regions or with all deployment types. Check [Azure OpenAI model availability by region](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability) for supported combinations.
