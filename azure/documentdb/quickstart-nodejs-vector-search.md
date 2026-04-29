@@ -28,11 +28,8 @@ Find the [sample code](https://github.com/Azure-Samples/documentdb-samples/tree/
 
 [!INCLUDE[Prerequisites - Vector Search Quickstart](includes/prerequisite-quickstart-vector-search-model.md)]
 
-> [!NOTE]
-> The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
-
-[!INCLUDE[Customize OpenAI deployment](includes/section-quickstart-openai-configuration-vector-search.md)]
-
+> [!TIP]
+> To customize Azure OpenAI model parameters before deployment, see [Customize Azure OpenAI deployment](#customize-azure-openai-deployment-optional) below.
 - [Node.js LTS](https://nodejs.org/download/)
 
 - [TypeScript](https://www.typescriptlang.org/download): Install TypeScript globally:
@@ -299,6 +296,8 @@ The app logging and output show:
 1. View the data and indexes in the Hotels database.
 
     :::image type="content" source="./media/quickstart-nodejs-vector-search/visual-studio-code-documentdb.png" lightbox="./media/quickstart-nodejs-vector-search/visual-studio-code-documentdb.png" alt-text="Screenshot of DocumentDB extension showing the DocumentDB collection.":::
+
+[!INCLUDE[Customize OpenAI deployment](./includes/section-quickstart-openai-configuration-vector-search.md)]
 
 ## Clean up resources
 
