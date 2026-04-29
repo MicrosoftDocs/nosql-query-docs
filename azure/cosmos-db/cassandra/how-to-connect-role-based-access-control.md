@@ -9,7 +9,7 @@ ms.service: azure-cosmos-db
 ms.subservice: apache-cassandra
 ms.topic: how-to
 ms.devlang: python
-ms.date: 09/11/2025
+ms.date: 04/29/2026
 ms.custom:
   - sfi-image-nochange
   - sfi-ropc-nochange

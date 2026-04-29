@@ -8,7 +8,7 @@ ms.reviewer: skhera
 ms.service: azure-cosmos-db
 ms.subservice: mongodb
 ms.topic: reference
-ms.date: 09/11/2025
+ms.date: 04/29/2026
 appliesto:
   - ✅ MongoDB
 ---
