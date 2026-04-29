@@ -22,8 +22,8 @@ You can use the Azure Developer CLI to create the required Azure resources by ru
 ### Azure resources
 
 - **Azure OpenAI resource** with the following model deployments in Microsoft Foundry:
-  - `gpt-4o` deployment (Synthesizer Agent) - Recommended: **50,000 tokens per minute (TPM)** capacity
-  - `gpt-4o-mini` deployment (Planner Agent) - Recommended: **30,000 tokens per minute (TPM)** capacity
+  - `gpt-4.1` deployment (Synthesizer Agent) - Recommended: **50,000 tokens per minute (TPM)** capacity
+  - `gpt-4.1-mini` deployment (Planner Agent) - Recommended: **30,000 tokens per minute (TPM)** capacity
   - `text-embedding-3-small` deployment (Embeddings) - Recommended: **10,000 tokens per minute (TPM)** capacity
   - **Token quotas**: Configure sufficient TPM for each deployment to avoid rate limiting
     - See [Manage Azure OpenAI quotas](/azure/ai-services/openai/how-to/quota) for quota management
@@ -103,8 +103,8 @@ Edit the `.env` file and replace these placeholder values:
 
 This quickstart uses a two-agent architecture (planner + synthesizer) with three model deployments (two chat models + embeddings). The environment variables are configured for each model deployment. 
 
-- `AZURE_OPENAI_PLANNER_DEPLOYMENT`: Your gpt-4o-mini deployment name
-- `AZURE_OPENAI_SYNTH_DEPLOYMENT`: Your gpt-4o deployment name
+- `AZURE_OPENAI_PLANNER_DEPLOYMENT`: Your gpt-4.1-mini deployment name
+- `AZURE_OPENAI_SYNTH_DEPLOYMENT`: Your gpt-4.1 deployment name
 - `AZURE_OPENAI_EMBEDDING_DEPLOYMENT`: Your text-embedding-3-small deployment name
 
 You can choose between two authentication methods: passwordless authentication using Azure Identity (recommended) or traditional connection string and API key.
