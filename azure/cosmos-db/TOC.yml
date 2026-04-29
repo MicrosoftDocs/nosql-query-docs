@@ -729,8 +729,6 @@
   items:
     - name: High availability and reliability
       href: /azure/reliability/reliability-cosmos-db-nosql?context=/azure/cosmos-db/context/context
-    - name: Disaster Recovery guidance
-      href: disaster-recovery-guidance.md
     - name: Global distribution
       items:
         - name: Global distribution overview
