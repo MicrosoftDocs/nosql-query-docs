@@ -97,7 +97,7 @@ Use the Azure Developer CLI (`azd`) to provision the required Azure OpenAI and D
 > [!NOTE]
 > The infrastructure deploys Azure OpenAI with the **Standard** SKU (not GlobalStandard). You can customize the SKU and model parameters using `azd env set` before deployment. See the sample's README for available parameters.
 
-[!INCLUDE[Customize OpenAI deployment](includes/section-quickstart-openai-configuration.md)]
+[!INCLUDE[Customize OpenAI deployment](./includes/section-quickstart-openai-configuration.md)]
 
 ## Configure environment variables
 
