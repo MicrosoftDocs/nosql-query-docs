@@ -1,22 +1,9 @@
 ---
 ms.custom: include
 ---
-
 ### Customize Azure OpenAI deployment (optional)
 
 The infrastructure deploys Azure OpenAI with default model and region settings defined in `infra/main.bicepparam`. Before running `azd up`, you can customize any of these parameters:
-
-```bash
-# Deploy OpenAI to a different region than your other resources
-azd env set AZURE_OPENAI_LOCATION swedencentral
-
-# Switch deployment type from Standard (default) to GlobalStandard
-azd env set AZURE_OPENAI_CHAT_MODEL_TYPE GlobalStandard
-
-# Change the chat model
-azd env set AZURE_OPENAI_CHAT_MODEL gpt-4.1-mini
-azd env set AZURE_OPENAI_CHAT_MODEL_VERSION 2025-04-14
-```
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
@@ -30,6 +17,20 @@ azd env set AZURE_OPENAI_CHAT_MODEL_VERSION 2025-04-14
 | `AZURE_OPENAI_EMBEDDING_MODEL` | `text-embedding-3-small` | Embedding model name |
 | `AZURE_OPENAI_EMBEDDING_MODEL_VERSION` | `1` | Embedding model version |
 | `AZURE_OPENAI_EMBEDDING_MODEL_TYPE` | `Standard` | Deployment type (`Standard` or `GlobalStandard`) |
+
+To override a default, use `azd env set` before running `azd up`:
+
+``bash
+# Deploy OpenAI to a different region than your other resources
+azd env set AZURE_OPENAI_LOCATION swedencentral
+
+# Switch deployment type from Standard (default) to GlobalStandard
+azd env set AZURE_OPENAI_CHAT_MODEL_TYPE GlobalStandard
+
+# Change the chat model
+azd env set AZURE_OPENAI_CHAT_MODEL gpt-4.1-mini
+azd env set AZURE_OPENAI_CHAT_MODEL_VERSION 2025-04-14
+``
 
 > [!NOTE]
 > Not all models are available in all regions or with all deployment types. Check [Azure OpenAI model availability by region](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability) for supported combinations.
