@@ -1,5 +1,6 @@
 ---
-ms.custom: include
+ms.topic: include
+ms.date: 04/29/2026
 ---
 ### Customize Azure OpenAI deployment (optional)
 
