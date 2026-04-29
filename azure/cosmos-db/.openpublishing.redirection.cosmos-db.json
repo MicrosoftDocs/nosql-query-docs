@@ -46,7 +46,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/azure/cosmos-db/disaster-recovery-guidance.md",
+      "source_path_from_root": "/azure/cosmos-db/disaster-recovery-guidance.md",
       "redirect_url": "/azure/reliability/reliability-cosmos-db",
       "redirect_document_id": false
     }
