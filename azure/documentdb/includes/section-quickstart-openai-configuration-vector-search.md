@@ -14,7 +14,7 @@ The infrastructure deploys Azure OpenAI with default model and region settings d
 
 To override a default, use `azd env set` before running `azd up`:
 
-``bash
+```bash
 # Deploy OpenAI to a different region than your other resources
 azd env set AZURE_OPENAI_LOCATION swedencentral
 
@@ -24,7 +24,7 @@ azd env set AZURE_OPENAI_EMBEDDING_MODEL_TYPE GlobalStandard
 # Change the embedding model
 azd env set AZURE_OPENAI_EMBEDDING_MODEL text-embedding-3-small
 azd env set AZURE_OPENAI_EMBEDDING_MODEL_VERSION 1
-``
+```
 
 > [!NOTE]
 > Not all models are available in all regions or with all deployment types. Check [Azure OpenAI model availability by region](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability) for supported combinations.
