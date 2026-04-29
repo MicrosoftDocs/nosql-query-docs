@@ -23,8 +23,8 @@ You can use the Azure Developer CLI to create the required Azure resources by ru
 ### Azure resources
 
 - **[Azure OpenAI in Microsoft Foundry Models resource (classic)](/azure/foundry-classic/openai/how-to/create-resource)** with the following model deployments in Microsoft Azure AI Foundry:
-  - `gpt-4o` deployment (Synthesizer Agent) - Recommended: **50,000 tokens per minute (TPM)** capacity
-  - `gpt-4o-mini` deployment (Planner Agent) - Recommended: **30,000 tokens per minute (TPM)** capacity
+  - `gpt-4.1` deployment (Synthesizer Agent) - Recommended: **50,000 tokens per minute (TPM)** capacity
+  - `gpt-4.1-mini` deployment (Planner Agent) - Recommended: **30,000 tokens per minute (TPM)** capacity
   - `text-embedding-3-small` deployment (Embeddings) - Recommended: **10,000 tokens per minute (TPM)** capacity
   - **Token quotas**: Configure sufficient TPM for each deployment to avoid rate limiting
     - See [Manage Azure OpenAI quotas](/azure/ai-services/openai/how-to/quota) for quota management
@@ -109,8 +109,8 @@ Edit the `.env` file and replace these placeholder values:
 
 This quickstart uses a two-agent architecture (planner + synthesizer) with three model deployments (two chat models + embeddings). The environment variables are configured for each model deployment. 
 
-- `AZURE_OPENAI_PLANNER_MODEL`: Your gpt-4o-mini model name
-- `AZURE_OPENAI_SYNTH_MODEL`: Your gpt-4o model name
+- `AZURE_OPENAI_PLANNER_MODEL`: Your gpt-4.1-mini model name
+- `AZURE_OPENAI_SYNTH_MODEL`: Your gpt-4.1 model name
 - `AZURE_OPENAI_EMBEDDING_MODEL`: Your text-embedding-3-small model name
 
 You can choose between two authentication methods: passwordless authentication using Azure Identity (recommended) or traditional connection string and API key.
@@ -125,9 +125,9 @@ USE_PASSWORDLESS=true
 
 # Azure OpenAI Configuration (passwordless)
 AZURE_OPENAI_ENDPOINT=your-openai-endpoint
-AZURE_OPENAI_PLANNER_MODEL=gpt-4o-mini
+AZURE_OPENAI_PLANNER_MODEL=gpt-4.1-mini
 AZURE_OPENAI_PLANNER_API_VERSION=2024-08-01-preview
-AZURE_OPENAI_SYNTH_MODEL=gpt-4o
+AZURE_OPENAI_SYNTH_MODEL=gpt-4.1
 AZURE_OPENAI_SYNTH_API_VERSION=2024-08-01-preview
 AZURE_OPENAI_EMBEDDING_MODEL=text-embedding-3-small
 AZURE_OPENAI_EMBEDDING_API_VERSION=2023-05-15
@@ -176,9 +176,9 @@ USE_PASSWORDLESS=false
 # Azure OpenAI Configuration (API key)
 AZURE_OPENAI_ENDPOINT=your-openai-endpoint
 AZURE_OPENAI_API_KEY=your-azure-openai-api-key
-AZURE_OPENAI_PLANNER_MODEL=gpt-4o-mini
+AZURE_OPENAI_PLANNER_MODEL=gpt-4.1-mini
 AZURE_OPENAI_PLANNER_API_VERSION=2024-08-01-preview
-AZURE_OPENAI_SYNTH_MODEL=gpt-4o
+AZURE_OPENAI_SYNTH_MODEL=gpt-4.1
 AZURE_OPENAI_SYNTH_API_VERSION=2024-08-01-preview
 AZURE_OPENAI_EMBEDDING_MODEL=text-embedding-3-small
 AZURE_OPENAI_EMBEDDING_API_VERSION=2023-05-15
