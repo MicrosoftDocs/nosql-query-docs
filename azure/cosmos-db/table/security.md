@@ -8,10 +8,8 @@ ms.reviewer: skhera
 ms.service: azure-cosmos-db
 ms.subservice: table
 ms.topic: best-practice
-ms.date: 04/29/2026
-ms.custom:
-  - security-horizontal-2026
-  - horz-security
+ms.date: 09/11/2025
+ms.custom: security-horizontal-2025
 ai-usage: ai-generated
 ---
 
