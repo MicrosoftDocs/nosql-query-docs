@@ -126,8 +126,8 @@ First, you must prepare a role definition with a list of `dataActions` to grant 
 
 1. Review the output and locate the role definition named **Cosmos DB Built-in Data Contributor**. The output contains the unique identifier of the role definition in the `id` property. Record this value as it is required to use in the assignment step later in this guide.
 
-  > [!NOTE]
-  > In this example, the `id` value would be `/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/msdocs-identity-example/providers/Microsoft.DocumentDB/databaseAccounts/msdocs-identity-example-cassandra/cassandraRoleDefinitions/00000000-0000-0000-0000-000000000004`. This example uses fictitious data and your identifier would be distinct from this example.
+    > [!NOTE]
+    > In this example, the `id` value would be `/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/msdocs-identity-example/providers/Microsoft.DocumentDB/databaseAccounts/msdocs-identity-example-cassandra/cassandraRoleDefinitions/00000000-0000-0000-0000-000000000004`. This example uses fictitious data and your identifier would be distinct from this example.
 
 1. Create a new JSON file named *role-definition.json*. In this file, create a resource definition specifying the data actions you want to allow.
 
