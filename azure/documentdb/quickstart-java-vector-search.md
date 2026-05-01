@@ -1,8 +1,8 @@
 ---
 title: Quickstart - Vector Search with Java
 description: Learn how to use vector search in Azure DocumentDB with Java. Store and query vector data efficiently in your applications.
-author: diberry
-ms.author: diberry
+author: seesharprun
+ms.author: sidandrews
 ms.reviewer: khelanmodi
 ms.devlang: java
 ms.topic: quickstart-sdk

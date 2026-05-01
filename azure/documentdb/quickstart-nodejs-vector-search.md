@@ -2,8 +2,8 @@
 
 title: Quickstart - Vector Search with Node.js
 description: Learn how to use vector search in Azure DocumentDB with Node.js. Store and query vector data efficiently in your applications. 
-author: diberry
-ms.author: diberry
+author: seesharprun
+ms.author: sidandrews
 ms.reviewer: khelanmodi
 ms.devlang: typescript
 ms.topic: quickstart-sdk
