@@ -2,8 +2,8 @@
 title: Quickstart - Vector Search with Python
 description: Learn how to use vector search in Azure DocumentDB
  with Python. Store and query vector data efficiently in your applications. 
-author: rotabor
-ms.author: rotabor
+author: seesharprun
+ms.author: sidandrews
 ms.reviewer: khelanmodi
 ms.devlang: python
 ms.topic: quickstart-sdk

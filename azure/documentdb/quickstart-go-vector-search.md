@@ -1,8 +1,8 @@
 ---
 title: Quickstart - Vector Search with Go
 description: Learn how to use vector search in Azure DocumentDB with Go. Store and query vector data efficiently in your applications. 
-author: PatAltimore
-ms.author: patricka
+author: seesharprun
+ms.author: sidandrews
 ms.reviewer: khelanmodi
 ms.devlang: golang
 ms.topic: quickstart-sdk
