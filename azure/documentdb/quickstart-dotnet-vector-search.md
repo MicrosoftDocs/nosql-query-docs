@@ -2,8 +2,8 @@
 
 title: Quickstart - Vector Search with .NET
 description: Learn how to use vector search in Azure DocumentDB with .NET. Store and query vector data efficiently in your applications. 
-author: alexwolfmsft
-ms.author: alexwolf
+author: seesharprun
+ms.author: sidandrews
 ms.reviewer: khelanmodi
 ms.devlang: csharp
 ms.topic: quickstart-sdk
