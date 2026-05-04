@@ -221,7 +221,7 @@ Here are examples of valid vector index policies:
 > Wild card characters (`*`, `[]`) and vector paths nested inside arrays aren't currently supported in the vector policy or vector index.
 
 
-You can alos optionally configure a `quantizerType` within each vectorIndexes entry. This controls how vectors are quantized prior to indexing.
+You can also optionally configure a `quantizerType` within each vectorIndexes entry. This controls how vectors are quantized prior to indexing.
   - **product** (default)
 Uses standard product quantization. Provides balanced performance and accuracy for most workloads.
   - **spherical** (public preview)
