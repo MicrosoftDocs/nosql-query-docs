@@ -1,5 +1,5 @@
 ---
-title: Optimizing Your Semantic Search
+title: Tips for optimizing vector indexing & search performance
 description: Performance tuning and best practices for vector search in Azure Cosmos DB for NoSQL
 author: jcodella
 ms.author: jacodel
@@ -11,6 +11,8 @@ appliesto:
   - ✅ NoSQL
 ---
 
+# Tips for optimizing vector indexing & search performance
+
 This guide covers practical optimization strategies for semantic search in Azure Cosmos DB for NoSQL. It focuses on the decisions that most affect cost, latency, and recall: embedding shape and precision, index selection, partitioning, throughput sizing, ingestion patterns, SDK concurrency, and query-time tuning.
 
 ## Table of contents
@@ -21,7 +23,7 @@ This guide covers practical optimization strategies for semantic search in Azure
 - [Partition key strategies for insert and query throughput](#partition-key-strategies-for-insert-and-query-throughput)
 - [Sharded DiskANN and partition key design](#sharded-diskann-and-partition-key-design)
 - [Throughput planning (RU/s)](#throughput-planning-rus)
-- [Insert throughput tips](#insert-throughput-tips)
+- [Tips for optimizing insert throughput](#tips-for-optimizing-insert-throughput)
 - [SDK concurrency tuning](#sdk-concurrency-tuning)
 - [Tuning performance at search time](#tuning-performance-at-search-time)
 - [Monitoring and diagnostics](#monitoring-and-diagnostics)
@@ -30,7 +32,7 @@ This guide covers practical optimization strategies for semantic search in Azure
 
 Most teams get the best results by making decisions in this order:
 
-1. Choose the embedding model, dimension count, and numeric precision. [Azure OpenAI models](../../foundry/openai/tutorials/embeddings) are a common choice for text.
+1. Choose the embedding model, dimension count, and numeric precision. Azure OpenAI models are a common choice for text emebddings.
 2. Choose the vector index type for your expected dataset size and query shape.
 3. Choose a partitioning strategy that balances your workloads to spread CRUD operations across partitions while still allowing vector search queries to be scoped to a single or small set of partitions.
 4. Plan throughput and provisioning for both ingestion and search.
@@ -216,7 +218,7 @@ Partition keys can be specified as a `WHERE` clause in a query or as a query req
 **Benefits of HPK for multitenant vector search:**
 
 > [!NOTE]
-> If you want to use vector search on collections with [hierarchical partition keys](hierarchical-partition-keys.md), please reach out to team at: cosmossearch@microsoft.com to configure your account to optimally use the partitioning scheme during search.
+> If you want to use vector search on collections with [hierarchical partition keys](../hierarchical-partition-keys.md), please reach out to team at: cosmossearch@microsoft.com to configure your account to optimally use the partitioning scheme during search.
 
 | Benefit | Detail |
 | --------- | -------- |
@@ -706,14 +708,14 @@ async for page in container.query_items(
 
 ## Related content
 
-- [Vector search overview](vector-search.md)
-- [VectorDistance system function](/cosmos-db/query/vectordistance)
+- [Vector search overview](vector-search-overview.md)
+- [VectorDistance system function](../query/vectordistance.md)
 - [DiskANN + Azure Cosmos DB—Microsoft Mechanics Video](https://www.youtube.com/watch?v=MlMPIYONvfQ)
-- [Hierarchical partition keys](https://learn.microsoft.com/azure/cosmos-db/hierarchical-partition-keys)
-- [Autoscale throughput](https://learn.microsoft.com/azure/cosmos-db/provision-throughput-autoscale)
-- [.NET SDK vector search how-to](https://learn.microsoft.com/azure/cosmos-db/how-to-dotnet-vector-index-query)
-- [Python SDK vector search how-to](https://learn.microsoft.com/azure/cosmos-db/how-to-python-vector-index-query)
-- [Java SDK vector search how-to](https://learn.microsoft.com/azure/cosmos-db/how-to-java-vector-index-query)
-- [JavaScript SDK vector search how-to](https://learn.microsoft.com/azure/cosmos-db/how-to-javascript-vector-index-query)
+- [Hierarchical partition keys](../hierarchical-partition-keys.md)
+- [Autoscale throughput](../provision-throughput-autoscalemd)
+- [.NET SDK vector search how-to](../how-to-dotnet-vector-index-query.md)
+- [Python SDK vector search how-to](../how-to-python-vector-index-query.md)
+- [Java SDK vector search how-to](../how-to-java-vector-index-query.md) 
+- [JavaScript SDK vector search how-to](../how-to-javascript-vector-index-query.md)
 
 
