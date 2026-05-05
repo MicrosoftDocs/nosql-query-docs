@@ -938,9 +938,9 @@
         - name: Command reference
           href: shell/command-reference.md?context=/azure/cosmos-db/context/context
         - name: VS Code extension
-          href: shell/vscode.md?context=/azure/cosmos-db/context/context
+          href: shell/visual-studio-code.md?context=/azure/cosmos-db/context/context
         - name: MCP server setup
-          href: shell/mcp-setup.md?context=/azure/cosmos-db/context/context
+          href: shell/model-context-protocol-setup.md?context=/azure/cosmos-db/context/context
         - name: Security best practices
           href: shell/security.md?context=/azure/cosmos-db/context/context
         - name: Troubleshooting guide

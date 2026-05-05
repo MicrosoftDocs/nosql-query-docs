@@ -67,12 +67,12 @@
     },
     {
       "source_path_from_root": "/azure/cosmos-db/cosmosdb-shell-vscode.md",
-      "redirect_url": "/azure/cosmos-db/shell/vscode",
+      "redirect_url": "/azure/cosmos-db/shell/visual-studio-code",
       "redirect_document_id": true
     },
     {
       "source_path_from_root": "/azure/cosmos-db/cosmosdb-shell-mcp-setup.md",
-      "redirect_url": "/azure/cosmos-db/shell/mcp-setup",
+      "redirect_url": "/azure/cosmos-db/shell/model-context-protocol-setup",
       "redirect_document_id": true
     },
     {
