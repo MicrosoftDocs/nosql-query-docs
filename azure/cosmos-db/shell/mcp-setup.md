@@ -199,47 +199,47 @@ query "SELECT c.status, COUNT(*) as count FROM c GROUP BY c.status"
 
 The MCP server uses the same authentication as Cosmos DB Shell:
 
-1. **Entra ID** (Recommended)
-   - Authenticates using Azure identity
-   - Most secure method
-   - Requires appropriate RBAC roles
+- **Entra ID** (Recommended)
+  - Authenticates using Azure identity
+  - Most secure method
+  - Requires appropriate RBAC roles
 
-2. **Managed Identity** (Production)
-   - Automatically uses VM or App Service managed identity
-   - Best for Azure-hosted applications
-   - Requires identity to have Cosmos DB permissions
+- **Managed Identity** (Production)
+  - Automatically uses VM or App Service managed identity
+  - Best for Azure-hosted applications
+  - Requires identity to have Cosmos DB permissions
 
-3. **Account Key** (Development)
-   - Uses account key from connection string
-   - Quick for testing
-   - Less secure, avoid in production
+- **Account Key** (Development)
+  - Uses account key from connection string
+  - Quick for testing
+  - Less secure, avoid in production
 
 ## Security Considerations
 
 ### MCP Server Security Best Practices
 
-1. **Local Binding Only** (Default)
-   ```json
-   "cosmosDB.shell.MCP.bindToLocalhost": true
-   ```
-   - Restricts MCP server to localhost
-   - Prevents remote access
-   - **Recommended**: Keep this enabled
+- **Local Binding Only** (Default)
+  ```json
+  "cosmosDB.shell.MCP.bindToLocalhost": true
+  ```
+  - Restricts MCP server to localhost
+  - Prevents remote access
+  - **Recommended**: Keep this enabled
 
-2. **Network Isolation**
-   - Run MCP server in isolated network
-   - Use firewall rules to block external access
-   - Don't expose port 6128 to public internet
+- **Network Isolation**
+  - Run MCP server in isolated network
+  - Use firewall rules to block external access
+  - Don't expose port 6128 to public internet
 
-3. **Authentication**
-   - Use Entra ID for authentication
-   - Implement RBAC least-privilege access
-   - Rotate account keys regularly
+- **Authentication**
+  - Use Entra ID for authentication
+  - Implement RBAC least-privilege access
+  - Rotate account keys regularly
 
-4. **Audit and Monitoring**
-   - Enable MCP server logging
-   - Monitor MCP server activity
-   - Review logs regularly for suspicious activity
+- **Audit and Monitoring**
+  - Enable MCP server logging
+  - Monitor MCP server activity
+  - Review logs regularly for suspicious activity
 
 ### Connection Security
 

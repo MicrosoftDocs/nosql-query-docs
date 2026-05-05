@@ -34,17 +34,17 @@ cosmosdb-shell>
 
 When you launch Cosmos DB Shell, it prompts you for authentication. You can:
 
-1. **Use Entra ID** (Recommended)
-   - Follow the browser authentication flow
-   - Most secure method
+- **Use Entra ID** (Recommended)
+  - Follow the browser authentication flow
+  - Most secure method
 
-2. **Use Managed Identity** (Production)
-   - Automatically uses Azure managed identity
-   - Best for production environments
+- **Use Managed Identity** (Production)
+  - Automatically uses Azure managed identity
+  - Best for production environments
 
-3. **Use Account Key** (Development)
-   - Provide connection string or account key
-   - Quick for development/testing
+- **Use Account Key** (Development)
+  - Provide connection string or account key
+  - Quick for development/testing
 
 ## Basic Navigation
 
@@ -139,7 +139,7 @@ cosmosdb-shell mydb/users> query "SELECT COUNT(*) FROM c"
 
 ### Insert Document
 ```bash
-cosmosdb-shell mydb/users> create {"id": "user3", "name": "Charlie", "status": "active"}
+cosmosdb-shell mydb/users> create item {"id": "user3", "name": "Charlie", "status": "active"}
 ```
 
 ### Update Document
@@ -200,9 +200,9 @@ cd mydb
 cd users
 
 # Insert multiple documents
-create {"id": "user10", "name": "David", "status": "active"}
-create {"id": "user11", "name": "Eve", "status": "inactive"}
-create {"id": "user12", "name": "Frank", "status": "active"}
+create item {"id": "user10", "name": "David", "status": "active"}
+create item {"id": "user11", "name": "Eve", "status": "inactive"}
+create item {"id": "user12", "name": "Frank", "status": "active"}
 
 # Query and count
 query "SELECT COUNT(*) as count FROM c"
@@ -241,10 +241,82 @@ cosmosdb-shell mydb/users> query "SELECT c.status, COUNT(*) as count FROM c GROU
 cosmosdb-shell mydb/users> query "SELECT * FROM c" > users_export.json
 ```
 
+The exported file wraps the documents in an `items` envelope:
+
+```json
+{
+  "items": [
+    { "id": "user1", "pk": "tenantA", "name": "Alice", "status": "active",
+      "_rid": "...", "_self": "...", "_etag": "...", "_attachments": "...", "_ts": 1730000000 },
+    { "id": "user2", "pk": "tenantA", "name": "Bob", "status": "active",
+      "_rid": "...", "_self": "...", "_etag": "...", "_attachments": "...", "_ts": 1730000001 }
+  ]
+}
+```
+
 ### Export to CSV-like Format
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq -r '.id, .name, .status' | paste -sd, > users.csv
 ```
+
+### Import a Bare JSON Array
+
+The `create item` command (alias `mkitem`) accepts either a single JSON object
+or a top-level JSON array. Use this form when you control the input file and
+can produce a clean array of documents.
+
+Sample `users_import.json`:
+
+```json
+[
+  { "id": "user10", "pk": "tenantA", "name": "David", "status": "active" },
+  { "id": "user11", "pk": "tenantA", "name": "Eve",   "status": "inactive" },
+  { "id": "user12", "pk": "tenantB", "name": "Frank", "status": "active" }
+]
+```
+
+Import it by piping the file into `mkitem`:
+
+```bash
+cosmosdb-shell mydb/users> cat users_import.json | mkitem
+```
+
+Add `--force` (alias `--upsert`) to replace existing items instead of failing
+on `id` conflicts:
+
+```bash
+cosmosdb-shell mydb/users> cat users_import.json | mkitem --force
+```
+
+### Import a Previously Exported Query Result
+
+A file produced by `query "SELECT * FROM c" > users_export.json` is **not** a
+bare array — it has the `{ "items": [ ... ] }` wrapper shown above and the
+documents still contain Cosmos system fields (`_rid`, `_self`, `_etag`,
+`_attachments`, `_ts`) that must not be sent back on insert.
+
+Use `jq` to unwrap the array and strip system fields before piping to
+`mkitem`:
+
+```bash
+cosmosdb-shell mydb/users> cat users_export.json \
+  | jq '[.items[] | del(._rid, ._self, ._etag, ._attachments, ._ts)]' \
+  | mkitem --force --db=mydb --con=users
+```
+
+What each step does:
+
+- `.items[]` unwraps the envelope and streams each document.
+- `del(...)` removes the read-only Cosmos system fields.
+- `[ ... ]` re-collects the results into the top-level array `mkitem` expects.
+- `--force` makes the import idempotent (re-running replaces existing items).
+- `--db` / `--con` target the destination explicitly so the import works
+  regardless of your current shell location.
+
+`mkitem` iterates the array sequentially and prints a summary with the number
+of items created or replaced and the total RU charge. Per-item failures (for
+example, an `id` conflict without `--force`) are reported inline but do not
+stop the import.
 
 ## Tips and Best Practices
 

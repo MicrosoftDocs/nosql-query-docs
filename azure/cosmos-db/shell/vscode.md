@@ -75,17 +75,17 @@ Explore your Cosmos DB resources in a hierarchical tree view.
 Launch Cosmos DB Shell directly from VS Code.
 
 **Methods:**
-1. **Command Palette**
-   - Press Ctrl+Shift+P (Cmd+Shift+P on macOS)
-   - Type "Cosmos DB Shell: Open"
-   - Press Enter
+- **Command Palette**
+  - Press Ctrl+Shift+P (Cmd+Shift+P on macOS)
+  - Type "Cosmos DB Shell: Open"
+  - Press Enter
 
-2. **Explorer Context Menu**
-   - Right-click on a database or container
-   - Select "Open in Shell"
+- **Explorer Context Menu**
+  - Right-click on a database or container
+  - Select "Open in Shell"
 
-3. **Status Bar**
-   - Click the Cosmos DB icon in the status bar
+- **Status Bar**
+  - Click the Cosmos DB icon in the status bar
 
 ### 3. Command Palette Integration
 

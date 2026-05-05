@@ -254,19 +254,19 @@ Insert a new document.
 
 **Syntax:**
 ```bash
-create <JSON_document>
+create item <JSON_document>
 ```
 
 **Examples:**
 ```bash
 # Create simple document
-cosmosdb-shell mydb/users> create {"id": "user1", "name": "Alice"}
+cosmosdb-shell mydb/users> create item {"id": "user1", "name": "Alice"}
 
 # Create nested document
-cosmosdb-shell mydb/users> create {"id": "user2", "name": "Bob", "address": {"city": "Seattle", "country": "USA"}}
+cosmosdb-shell mydb/users> create item {"id": "user2", "name": "Bob", "address": {"city": "Seattle", "country": "USA"}}
 
 # Create with array
-cosmosdb-shell mydb/users> create {"id": "user3", "name": "Charlie", "tags": ["vip", "premium"]}
+cosmosdb-shell mydb/users> create item {"id": "user3", "name": "Charlie", "tags": ["vip", "premium"]}
 ```
 
 ### `update` - Update Document

@@ -36,17 +36,17 @@ Azure Cosmos DB Shell is a powerful, **open-source** command-line interface (CLI
 
 Choose one of three installation methods:
 
-1. **VS Code Extension** (Recommended)
-   - Install directly from VS Code Marketplace
-   - See: [VS Code Extension Setup](vscode.md)
+- **VS Code Extension** (Recommended)
+  - Install directly from VS Code Marketplace
+  - See: [VS Code Extension Setup](vscode.md)
 
-2. **NuGet Package**
-   - Install as .NET global tool
-   - See: [Installation Guide](install.md)
+- **NuGet Package**
+  - Install as .NET global tool
+  - See: [Installation Guide](install.md)
 
-3. **Self-Contained Binary**
-   - Pre-built binaries for your platform
-   - See: [Installation Guide](install.md)
+- **Self-Contained Binary**
+  - Pre-built binaries for your platform
+  - See: [Installation Guide](install.md)
 
 ## Quick Start
 

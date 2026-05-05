@@ -174,7 +174,7 @@ cosmosdb-shell --connection-string "$CONNECTION_STRING"
 #### 4. Rotate Keys Regularly
 
 **Key Rotation Process:**
-1. Generate new key in Azure Portal
+1. Generate new key in Azure portal
 2. Update applications with new key
 3. Delete old key after verification
 4. Test all applications work
@@ -256,7 +256,7 @@ cosmosdb-shell --min-tls-version 1.3
 
 Azure handles encryption automatically, but verify:
 
-1. Go to Azure Portal > Cosmos DB Account
+1. Go to Azure portal > Cosmos DB Account
 2. Settings > Encryption at Rest
 3. Verify encryption is enabled
 
@@ -295,7 +295,7 @@ az keyvault key create --vault-name myKeyVault \
 
 **Enable Firewall:**
 
-1. Azure Portal > Cosmos DB Account > Firewall
+1. Azure portal > Cosmos DB Account > Firewall
 2. Add your IP address(es)
 3. Save changes
 

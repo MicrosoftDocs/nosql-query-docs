@@ -71,24 +71,24 @@ cosmosdb-shell: No such file or directory
 
 **Solutions:**
 
-1. **Verify Extraction**
-   - Check all files were extracted
-   - Look for `cosmosdb-shell` executable (or `.exe` on Windows)
+- **Verify Extraction**
+  - Check all files were extracted
+  - Look for `cosmosdb-shell` executable (or `.exe` on Windows)
 
-2. **Make Executable (Linux/macOS)**
-   ```bash
-   chmod +x ~/cosmosdb-shell/cosmosdb-shell
-   ```
+- **Make Executable (Linux/macOS)**
+  ```bash
+  chmod +x ~/cosmosdb-shell/cosmosdb-shell
+  ```
 
-3. **Use Full Path**
-   ```bash
-   /full/path/to/cosmosdb-shell
-   ```
+- **Use Full Path**
+  ```bash
+  /full/path/to/cosmosdb-shell
+  ```
 
-4. **Add to PATH**
-   ```bash
-   export PATH="$PATH:~/cosmosdb-shell"
-   ```
+- **Add to PATH**
+  ```bash
+  export PATH="$PATH:~/cosmosdb-shell"
+  ```
 
 ### Issue: "File Corrupted" During Download
 
@@ -104,18 +104,18 @@ Archive is corrupted or incomplete
 
 **Solutions:**
 
-1. **Download Again**
-   - Delete corrupted file
-   - Re-download from official source
-   - Verify file size matches expected
+- **Download Again**
+  - Delete corrupted file
+  - Re-download from official source
+  - Verify file size matches expected
 
-2. **Check MD5/SHA Hash**
-   - Compare hash of downloaded file
-   - Matches hash provided on release page
+- **Check MD5/SHA Hash**
+  - Compare hash of downloaded file
+  - Matches hash provided on release page
 
-3. **Use Different Browser**
-   - Try alternative download method
-   - Try different network connection
+- **Use Different Browser**
+  - Try alternative download method
+  - Try different network connection
 
 ## Authentication Issues
 
@@ -134,27 +134,27 @@ Authentication failed. Please check your credentials.
 
 **Solutions:**
 
-1. **Try Entra ID (Recommended)**
-   - Cosmos DB Shell should prompt for browser authentication
-   - Sign in with your Azure account
-   - Most reliable method
+- **Try Entra ID (Recommended)**
+  - Cosmos DB Shell should prompt for browser authentication
+  - Sign in with your Azure account
+  - Most reliable method
 
-2. **Check Internet Connection**
-   ```bash
-   ping azure.microsoft.com
-   ```
-   - Ensure network connectivity
+- **Check Internet Connection**
+  ```bash
+  ping azure.microsoft.com
+  ```
+  - Ensure network connectivity
 
-3. **Verify Account Key**
-   - Go to Azure Portal
-   - Navigate to Cosmos DB account
-   - Copy Primary Connection String
-   - Verify format is correct
+- **Verify Account Key**
+  - Go to Azure portal
+  - Navigate to Cosmos DB account
+  - Copy Primary Connection String
+  - Verify format is correct
 
-4. **Clear Cached Credentials**
-   - **Windows**: `credman` (Credential Manager)
-   - **macOS**: Keychain
-   - **Linux**: Check ~/.config directory
+- **Clear Cached Credentials**
+  - **Windows**: `credman` (Credential Manager)
+  - **macOS**: Keychain
+  - **Linux**: Check ~/.config directory
 
 ### Issue: "Unauthorized - Insufficient Permissions"
 
@@ -171,7 +171,7 @@ Authorization failed. Your user does not have permission to perform this operati
 **Solutions:**
 
 1. **Check RBAC Roles**
-   - Go to Azure Portal > Cosmos DB Account
+   - Go to Azure portal > Cosmos DB Account
    - Access Control (IAM)
    - Verify your user has "Cosmos DB Account Reader" or higher role
 
@@ -232,13 +232,13 @@ Connection refused to Cosmos DB account
 **Solutions:**
 
 1. **Verify Endpoint URL**
-   - Azure Portal > Cosmos DB Account
+   - Azure portal > Cosmos DB Account
    - Copy correct endpoint URL
    - Format: `https://<account>.documents.azure.com:443/`
 
 2. **Check Firewall**
    - Verify IP allowed in Cosmos DB firewall rules
-   - Azure Portal > Cosmos DB Account > Firewall and virtual networks
+   - Azure portal > Cosmos DB Account > Firewall and virtual networks
    - Add your IP if needed
 
 3. **Test Network Connectivity**
@@ -378,7 +378,7 @@ Syntax error in SQL query
    - Correct: `c.address.city`
    - Not valid: `c.address[0].city` (without proper syntax)
 
-4. **Test Query in Azure Portal**
+4. **Test Query in Azure portal**
    - Verify query works in Data Explorer first
    - Copy working query to shell
 
@@ -398,30 +398,30 @@ cosmosdb-shell mydb/users> query "SELECT * FROM c"
 
 **Solutions:**
 
-1. **Verify Container Has Data**
-   ```bash
-   > query "SELECT COUNT(*) as count FROM c"
-   ```
-   - Should return count > 0
+- **Verify Container Has Data**
+  ```bash
+  > query "SELECT COUNT(*) as count FROM c"
+  ```
+  - Should return count > 0
 
-2. **Check Container Name**
-   ```bash
-   > pwd
-   ```
-   - Verify you're in correct container
+- **Check Container Name**
+  ```bash
+  > pwd
+  ```
+  - Verify you're in correct container
 
-3. **Simplify Query**
-   ```bash
-   # Start with simple query
-   > query "SELECT TOP 1 * FROM c"
-   
-   # Then add filters
-   > query "SELECT * FROM c WHERE c.status = 'active'"
-   ```
+- **Simplify Query**
+  ```bash
+  # Start with simple query
+  > query "SELECT TOP 1 * FROM c"
+  
+  # Then add filters
+  > query "SELECT * FROM c WHERE c.status = 'active'"
+  ```
 
-4. **Review Partition Key**
-   - Ensure partition key is included in query
-   - For better performance: `SELECT * FROM c WHERE c.id = 'value'`
+- **Review Partition Key**
+  - Ensure partition key is included in query
+  - For better performance: `SELECT * FROM c WHERE c.id = 'value'`
 
 ## VS Code Extension Issues
 
@@ -439,20 +439,20 @@ Cannot find "Azure Cosmos DB Shell" in Extensions
 
 **Solutions:**
 
-1. **Check VS Code Version**
-   - Help > About
-   - Should be 1.85 or later
-   - Update if needed
+- **Check VS Code Version**
+  - Help > About
+  - Should be 1.85 or later
+  - Update if needed
 
-2. **Reinstall Extension**
-   - Go to Extensions (Ctrl+Shift+X)
-   - Search "Cosmos DB"
-   - Click Install
+- **Reinstall Extension**
+  - Go to Extensions (Ctrl+Shift+X)
+  - Search "Cosmos DB"
+  - Click Install
 
-3. **Clear VS Code Cache**
-   - Close VS Code
-   - Delete `.vscode` folder in user directory
-   - Restart VS Code
+- **Clear VS Code Cache**
+  - Close VS Code
+  - Delete `.vscode` folder in user directory
+  - Restart VS Code
 
 ### Issue: Resource Explorer Blank
 
@@ -483,7 +483,7 @@ Resource Explorer shows no databases or containers
    - Wait for data to load
 
 4. **Check Account Exists**
-   - Go to Azure Portal
+   - Go to Azure portal
    - Verify Cosmos DB account exists
    - Verify you have access to account
 
