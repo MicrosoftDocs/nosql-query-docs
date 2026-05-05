@@ -32,7 +32,7 @@ This guide covers practical optimization strategies for semantic search in Azure
 
 Most teams get the best results by making decisions in this order:
 
-1. Choose the embedding model, dimension count, and numeric precision. Azure OpenAI models are a common choice for text emebddings.
+1. Choose the embedding model, dimension count, and numeric precision. Azure OpenAI models are a common choice for text embeddings.
 2. Choose the vector index type for your expected dataset size and query shape.
 3. Choose a partitioning strategy that balances your workloads to spread CRUD operations across partitions while still allowing vector search queries to be scoped to a single or small set of partitions.
 4. Plan throughput and provisioning for both ingestion and search.
@@ -127,7 +127,7 @@ Azure Cosmos DB for NoSQL offers three vector index types. Choosing the right on
 - You need the lowest latency and lowest RU cost per query.
 - Multi-million or billion-scale vector datasets.
 
-The following JSON example shows a basic `diskANN` vector index configuration for a container. It highlights the regular index exclusion for the embedding path and the vector index declaration itself.
+The following JSON example shows a basic `diskANN` vector index configuration for a container.
 
 ```json
 // DiskANN index configuration
@@ -320,7 +320,7 @@ Vector workloads can consume more RU/s than traditional point-read-heavy applica
 The following plain-text formula shows a simple way to estimate required RU/s from your expected read, write, and search rates. Use it as an initial sizing model before load testing.
 
 ```text
-Required RU/s = + (writes & deletes/sec × RU_per_write)
+Required RU/s = (writes & deletes/sec × RU_per_write)
               + (searches/sec × RU_per_search)
               + (read/modify/other operations/sec × RU_per_operation)
 ```
@@ -395,7 +395,7 @@ print(f"Request charge: {container.client_connection.last_response_headers['x-ms
 
 ### Enabling bulk execution (.NET, Java, JavaScript)
 
-The Azure Cosmos DB API allows you to insert multiple documents with vectors in a single transaction, which reduces round trips between the client SDK and the server and lets the vector indexer parallelize indexing across items in the batch. Enable this by setting the `AllowBulkExecution` option on the client. The SDK groups operations into batches of up to 100 operations each and dispatches them automatically.
+The Azure Cosmos DB API allows you to batch multiple document insert operations with vectors for higher throughput, which reduces round trips between the client SDK and the server and lets the vector indexer parallelize indexing across items in the batch. Enable this by setting the `AllowBulkExecution` option on the client. The SDK groups operations into batches of up to 100 operations each and dispatches them automatically.
 
 > [!NOTE]
 > The Python SDK does not support bulk execution at this time. Use the async client (`azure.cosmos.aio.CosmosClient`) with concurrent requests instead. See the async guidance in the SDK concurrency section below.
@@ -592,7 +592,7 @@ VectorDistance(<vector_expr_1>, <vector_expr_2>, <bool_expr>, <obj_expr>)
 | `dataType` | string | Overrides the vector data type. Valid values: `Float32`, `Float16`, `Int8`, `Uint8`. |
 | `searchListSizeMultiplier` | number | Multiplier for the DiskANN search list size. Higher values usually improve recall at the cost of more RU and latency. Typical values: `5`, `10`, `20`. |
 | `quantizedVectorListMultiplier` | number | Multiplier for the quantized vector candidate list. Higher values usually improve recall at the cost of more RU and latency. Typical values: `5`, `10`, `20`. |
-| `filterPriority` | number | Relative priority of the `WHERE` filter versus the vector search in DiskANN. Takes any float between 0.0 and 1.0. With a higher priority the search path will bias more on filter matches. This will trade a small recall hit with fewer Rus. To mitigate the impact of reduced recall, try increasing the searchListSizeMultiplier or quanitzedVectorListMuiltiplier|
+| `filterPriority` | number | Relative priority of the `WHERE` filter versus the vector search in DiskANN. Takes any float between 0.0 and 1.0. With a higher priority the search path will bias more on filter matches. This will trade a small recall hit with fewer RUs consumed. To mitigate the impact of reduced recall, try increasing the searchListSizeMultiplier or quantizedVectorListMultiplier.|
 
 > [!TIP]
 > Keep the embedding vector parameterized, but keep the options object literal explicit in the query text. These options are tuning directives, not user input.
