@@ -4,7 +4,7 @@ description: Troubleshoot common issues with Azure Cosmos DB Shell including ins
 author: sajeetharan
 ms.author: sasinnat
 ms.reviewer: mjbrown
-ms.service: cosmos-db
+ms.service: azure-cosmos-db
 ms.topic: troubleshooting
 ms.date: 05/04/2024
 ---
@@ -177,7 +177,7 @@ Authorization failed. Your user does not have permission to perform this operati
 
 2. **Request Role Assignment**
    - Ask your subscription admin
-   - Assign appropriate role (see [Security Best Practices](cosmosdb-shell-security.md))
+   - Assign appropriate role (see [Security Best Practices](security.md))
 
 3. **Verify Subscription**
    ```bash
@@ -670,16 +670,16 @@ Query timeout. Please try again.
 ## Getting Help
 
 1. **Check Docs**
-   - [Command Reference](cosmosdb-shell-commands.md)
-   - [Quick Start](cosmosdb-shell-quickstart.md)
-   - [Security Best Practices](cosmosdb-shell-security.md)
+   - [Command Reference](command-reference.md)
+   - [Quick Start](get-started.md)
+   - [Security Best Practices](security.md)
 
 2. **Azure Support**
    - For Cosmos DB service issues: [Create support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)
 
 ## See Also
 
-- [Installation Guide](cosmosdb-shell-install.md)
-- [Command Reference](cosmosdb-shell-commands.md)
-- [Security Best Practices](cosmosdb-shell-security.md)
+- [Installation Guide](install.md)
+- [Command Reference](command-reference.md)
+- [Security Best Practices](security.md)
 - [Azure Cosmos DB Overview](overview.md)

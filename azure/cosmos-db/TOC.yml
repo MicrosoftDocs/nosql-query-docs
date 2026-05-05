@@ -930,21 +930,21 @@
       displayName: CLI, Command-line, Shell, Tools, Extensions, MCP
       items:
         - name: Overview
-          href: cosmosdb-shell.md?context=/azure/cosmos-db/context/context
+          href: shell/overview.md?context=/azure/cosmos-db/context/context
         - name: Installation guide
-          href: cosmosdb-shell-install.md?context=/azure/cosmos-db/context/context
-        - name: Quick start
-          href: cosmosdb-shell-quickstart.md?context=/azure/cosmos-db/context/context
+          href: shell/install.md?context=/azure/cosmos-db/context/context
+        - name: Get started
+          href: shell/get-started.md?context=/azure/cosmos-db/context/context
         - name: Command reference
-          href: cosmosdb-shell-commands.md?context=/azure/cosmos-db/context/context
+          href: shell/command-reference.md?context=/azure/cosmos-db/context/context
         - name: VS Code extension
-          href: cosmosdb-shell-vscode.md?context=/azure/cosmos-db/context/context
+          href: shell/vscode.md?context=/azure/cosmos-db/context/context
         - name: MCP server setup
-          href: cosmosdb-shell-mcp-setup.md?context=/azure/cosmos-db/context/context
+          href: shell/mcp-setup.md?context=/azure/cosmos-db/context/context
         - name: Security best practices
-          href: cosmosdb-shell-security.md?context=/azure/cosmos-db/context/context
+          href: shell/security.md?context=/azure/cosmos-db/context/context
         - name: Troubleshooting guide
-          href: cosmosdb-shell-troubleshooting.md?context=/azure/cosmos-db/context/context
+          href: shell/troubleshooting.md?context=/azure/cosmos-db/context/context
 - name: Analytics with Microsoft Fabric
   items:
     - name: Overview

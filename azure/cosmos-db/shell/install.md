@@ -4,7 +4,7 @@ description: Step-by-step guide to install Azure Cosmos DB Shell using VS Code M
 author: sajeetharan
 ms.author: sasinnat
 ms.reviewer: mjbrown
-ms.service: cosmos-db
+ms.service: azure-cosmos-db
 ms.topic: how-to
 ms.date: 05/04/2024
 ---
@@ -59,7 +59,7 @@ The VS Code extension provides seamless integration with the code editor.
 - **Supported Platforms**: Windows, macOS, Linux
 - **Disk Space**: ~50 MB
 
-For detailed VS Code integration features, see [VS Code Extension Setup](cosmosdb-shell-vscode.md).
+For detailed VS Code integration features, see [VS Code Extension Setup](vscode.md).
 
 ## Option 2: NuGet Package (.NET Global Tool)
 
@@ -196,17 +196,17 @@ Download and extract a self-contained binary for your platform.
 
 ## Next Steps
 
-- [Quick Start Guide](cosmosdb-shell-quickstart.md) - Get started with basic commands
-- [Command Reference](cosmosdb-shell-commands.md) - Learn all available commands
-- [Security Best Practices](cosmosdb-shell-security.md) - Secure your setup
+- [Quick Start Guide](get-started.md) - Get started with basic commands
+- [Command Reference](command-reference.md) - Learn all available commands
+- [Security Best Practices](security.md) - Secure your setup
 
 ## Support
 
 If you encounter issues:
-- [View Troubleshooting Guide](cosmosdb-shell-troubleshooting.md)
-- [Check Security Considerations](cosmosdb-shell-security.md)
+- [View Troubleshooting Guide](troubleshooting.md)
+- [Check Security Considerations](security.md)
 
 ## See Also
 
-- [Azure Cosmos DB Shell Overview](cosmosdb-shell.md)
+- [Azure Cosmos DB Shell Overview](overview.md)
 - [Azure Cosmos DB Documentation](overview.md)

@@ -4,8 +4,8 @@ description: Quick start guide with examples to get you started with Azure Cosmo
 author: sajeetharan
 ms.author: sasinnat
 ms.reviewer: mjbrown
-ms.service: cosmos-db
-ms.topic: quickstart
+ms.service: azure-cosmos-db
+ms.topic: how-to
 ms.date: 05/04/2024
 ---
 
@@ -15,7 +15,7 @@ Get started with Azure Cosmos DB Shell in just a few minutes with these practica
 
 ## Prerequisites
 
-- Azure Cosmos DB Shell installed ([Installation Guide](cosmosdb-shell-install.md))
+- Azure Cosmos DB Shell installed ([Installation Guide](install.md))
 - Azure Cosmos DB account
 - Authentication configured (Entra ID, Managed Identity, or Account Keys)
 
@@ -310,13 +310,13 @@ cosmosdb-shell mydb/products> query "SELECT COUNT(*) FROM c"
 
 ## Next Steps
 
-- [Complete Command Reference](cosmosdb-shell-commands.md) - Learn all available commands
-- [MCP Server Setup](cosmosdb-shell-mcp-setup.md) - Enable AI integration
-- [Troubleshooting Guide](cosmosdb-shell-troubleshooting.md) - Resolve issues
-- [Security Best Practices](cosmosdb-shell-security.md) - Secure your setup
+- [Complete Command Reference](command-reference.md) - Learn all available commands
+- [MCP Server Setup](mcp-setup.md) - Enable AI integration
+- [Troubleshooting Guide](troubleshooting.md) - Resolve issues
+- [Security Best Practices](security.md) - Secure your setup
 
 ## See Also
 
-- [Azure Cosmos DB Shell Overview](cosmosdb-shell.md)
-- [Installation Guide](cosmosdb-shell-install.md)
+- [Azure Cosmos DB Shell Overview](overview.md)
+- [Installation Guide](install.md)
 - [Azure Cosmos DB Query Reference](query/index.md)

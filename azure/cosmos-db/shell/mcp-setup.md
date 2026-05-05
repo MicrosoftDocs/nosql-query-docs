@@ -4,7 +4,7 @@ description: Set up and configure the Model Context Protocol (MCP) server for Az
 author: sajeetharan
 ms.author: sasinnat
 ms.reviewer: mjbrown
-ms.service: cosmos-db
+ms.service: azure-cosmos-db
 ms.topic: how-to
 ms.date: 05/04/2024
 ---
@@ -24,7 +24,7 @@ The Model Context Protocol (MCP) is an open standard that enables AI assistants 
 
 ## Prerequisites
 
-- Azure Cosmos DB Shell installed ([Installation Guide](cosmosdb-shell-install.md))
+- Azure Cosmos DB Shell installed ([Installation Guide](install.md))
 - VS Code with Cosmos DB Shell extension (recommended)
 - Basic understanding of MCP concepts
 - Network connectivity to localhost (MCP server runs locally)
@@ -420,13 +420,13 @@ print(results)
 
 ## Next Steps
 
-- [Quick Start Guide](cosmosdb-shell-quickstart.md) - Get started with basic commands
-- [Command Reference](cosmosdb-shell-commands.md) - Learn all available commands
-- [Security Best Practices](cosmosdb-shell-security.md) - Review security guidelines
-- [Troubleshooting Guide](cosmosdb-shell-troubleshooting.md) - Resolve common issues
+- [Quick Start Guide](get-started.md) - Get started with basic commands
+- [Command Reference](command-reference.md) - Learn all available commands
+- [Security Best Practices](security.md) - Review security guidelines
+- [Troubleshooting Guide](troubleshooting.md) - Resolve common issues
 
 ## See Also
 
-- [Azure Cosmos DB Shell Overview](cosmosdb-shell.md)
-- [VS Code Extension Guide](cosmosdb-shell-vscode.md)
+- [Azure Cosmos DB Shell Overview](overview.md)
+- [VS Code Extension Guide](vscode.md)
 - [Model Context Protocol Documentation](https://modelcontextprotocol.io)

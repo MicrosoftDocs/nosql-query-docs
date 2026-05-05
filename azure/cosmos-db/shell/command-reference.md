@@ -4,7 +4,7 @@ description: Complete reference for all Azure Cosmos DB Shell commands with synt
 author: sajeetharan
 ms.author: sasinnat
 ms.reviewer: mjbrown
-ms.service: cosmos-db
+ms.service: azure-cosmos-db
 ms.topic: reference
 ms.date: 05/04/2024
 ---
@@ -501,7 +501,7 @@ cosmosdb-shell> connect DefaultEndpointProtocol=https;AccountName=myaccount;... 
 
 ## See Also
 
-- [Quick Start Guide](cosmosdb-shell-quickstart.md)
-- [Troubleshooting Guide](cosmosdb-shell-troubleshooting.md)
-- [Azure Cosmos DB Query Reference](query/index.md)
+- [Quick Start Guide](get-started.md)
+- [Troubleshooting Guide](troubleshooting.md)
 - [SQL Query Syntax](how-to-query-container.md)
+- [Azure Cosmos DB Query Reference](query/index.md)

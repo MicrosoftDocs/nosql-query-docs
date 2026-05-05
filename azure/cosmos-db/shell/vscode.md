@@ -4,7 +4,7 @@ description: Learn how to use the Azure Cosmos DB Shell VS Code extension for se
 author: sajeetharan
 ms.author: sasinnat
 ms.reviewer: mjbrown
-ms.service: cosmos-db
+ms.service: azure-cosmos-db
 ms.topic: how-to
 ms.date: 05/04/2024
 ---
@@ -383,11 +383,11 @@ query "SELECT * FROM c" | jq '.[]'
 
 ## Next Steps
 
-- [Command Reference](cosmosdb-shell-commands.md) - Learn all available commands
-- [Quick Start Guide](cosmosdb-shell-quickstart.md) - Get started with examples
-- [MCP Server Setup](cosmosdb-shell-mcp-setup.md) - Enable AI integration
-- [Troubleshooting Guide](cosmosdb-shell-troubleshooting.md) - Resolve issues
-- [Security Best Practices](cosmosdb-shell-security.md) - Secure your setup
+- [Command Reference](command-reference.md) - Learn all available commands
+- [Quick Start Guide](get-started.md) - Get started with examples
+- [MCP Server Setup](mcp-setup.md) - Enable AI integration
+- [Troubleshooting Guide](troubleshooting.md) - Resolve issues
+- [Security Best Practices](security.md) - Secure your setup
 
 ## Support
 
@@ -397,6 +397,6 @@ query "SELECT * FROM c" | jq '.[]'
 
 ## See Also
 
-- [Azure Cosmos DB Shell Overview](cosmosdb-shell.md)
-- [Installation Guide](cosmosdb-shell-install.md)
+- [Azure Cosmos DB Shell Overview](overview.md)
+- [Installation Guide](install.md)
 - [Azure Cosmos DB Documentation](overview.md)

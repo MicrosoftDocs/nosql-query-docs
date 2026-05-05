@@ -4,7 +4,7 @@ description: Learn security best practices for using Azure Cosmos DB Shell inclu
 author: sajeetharan
 ms.author: sasinnat
 ms.reviewer: mjbrown
-ms.service: cosmos-db
+ms.service: azure-cosmos-db
 ms.topic: conceptual
 ms.date: 05/04/2024
 ---
@@ -528,17 +528,17 @@ cosmosdb-shell --auth-method managed-identity
 
 ## Security Resources
 
-- [Azure Security Best Practices](https://learn.microsoft.com/azure/security/fundamentals/best-practices-and-patterns)
-- [Cosmos DB Security](https://learn.microsoft.com/azure/cosmos-db/database-security)
-- [Key Vault Best Practices](https://learn.microsoft.com/azure/key-vault/general/best-practices)
-- [RBAC in Cosmos DB](https://learn.microsoft.com/azure/cosmos-db/role-based-access-control)
+- [Azure Security Best Practices](/azure/security/fundamentals/best-practices-and-patterns)
+- [Cosmos DB Security](/azure/cosmos-db/database-security)
+- [Key Vault Best Practices](/azure/key-vault/general/best-practices)
+- [RBAC in Cosmos DB](/azure/cosmos-db/role-based-access-control)
 
 ## Next Steps
 
-- [Installation Guide](cosmosdb-shell-install.md) - Get started securely
-- [Command Reference](cosmosdb-shell-commands.md) - Learn available commands
-- [Quick Start Guide](cosmosdb-shell-quickstart.md) - Safe examples
-- [MCP Setup Guide](cosmosdb-shell-mcp-setup.md) - Secure MCP configuration
+- [Installation Guide](install.md) - Get started securely
+- [Command Reference](command-reference.md) - Learn available commands
+- [Quick Start Guide](get-started.md) - Safe examples
+- [MCP Setup Guide](mcp-setup.md) - Secure MCP configuration
 
 ## Support
 

@@ -4,7 +4,7 @@ description: Learn about the Azure Cosmos DB Shell, a powerful command-line inte
 author: sajeetharan
 ms.author: sasinnat
 ms.reviewer: mjbrown
-ms.service: cosmos-db
+ms.service: azure-cosmos-db
 ms.topic: overview
 ms.date: 05/04/2024
 ---
@@ -38,15 +38,15 @@ Choose one of three installation methods:
 
 1. **VS Code Extension** (Recommended)
    - Install directly from VS Code Marketplace
-   - See: [VS Code Extension Setup](cosmosdb-shell-vscode.md)
+   - See: [VS Code Extension Setup](vscode.md)
 
 2. **NuGet Package**
    - Install as .NET global tool
-   - See: [Installation Guide](cosmosdb-shell-install.md)
+   - See: [Installation Guide](install.md)
 
 3. **Self-Contained Binary**
    - Pre-built binaries for your platform
-   - See: [Installation Guide](cosmosdb-shell-install.md)
+   - See: [Installation Guide](install.md)
 
 ## Quick Start
 
@@ -64,7 +64,7 @@ cosmosdb-shell
 > query "SELECT * FROM c WHERE c.name = 'John'"
 ```
 
-For more examples, see the [Quick Start Guide](cosmosdb-shell-quickstart.md).
+For more examples, see the [Quick Start Guide](get-started.md).
 
 ## Use Cases
 
@@ -89,25 +89,25 @@ Azure Cosmos DB Shell is currently in **private preview**. This is a preview ver
 
 ## Documentation
 
-- [Installation Guide](cosmosdb-shell-install.md) - Install using your preferred method
-- [Quick Start Guide](cosmosdb-shell-quickstart.md) - Get started in minutes
-- [Command Reference](cosmosdb-shell-commands.md) - Complete command documentation
-- [MCP Server Setup](cosmosdb-shell-mcp-setup.md) - Enable AI integration
-- [VS Code Extension](cosmosdb-shell-vscode.md) - VS Code integration guide
-- [Troubleshooting Guide](cosmosdb-shell-troubleshooting.md) - Resolve common issues
-- [Security Best Practices](cosmosdb-shell-security.md) - Secure your credentials and data
+- [Installation Guide](install.md) - Install using your preferred method
+- [Quick Start Guide](get-started.md) - Get started in minutes
+- [Command Reference](command-reference.md) - Complete command documentation
+- [MCP Server Setup](mcp-setup.md) - Enable AI integration
+- [VS Code Extension](vscode.md) - VS Code integration guide
+- [Troubleshooting Guide](troubleshooting.md) - Resolve common issues
+- [Security Best Practices](security.md) - Secure your credentials and data
 
 ## Support and Feedback
 
 - [Report Issues](https://github.com) - Found a bug?
 - [Submit Feature Requests](https://github.com) - Have a feature idea?
-- [View Security Considerations](cosmosdb-shell-security.md) - Review security best practices
+- [View Security Considerations](security.md) - Review security best practices
 
 ## Next Steps
 
-- [Install Azure Cosmos DB Shell](cosmosdb-shell-install.md)
-- [Try the Quick Start Guide](cosmosdb-shell-quickstart.md)
-- [Review Security Best Practices](cosmosdb-shell-security.md)
+- [Install Azure Cosmos DB Shell](install.md)
+- [Try the Quick Start Guide](get-started.md)
+- [Review Security Best Practices](security.md)
 
 ## See Also
 
