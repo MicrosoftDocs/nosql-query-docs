@@ -319,4 +319,4 @@ cosmosdb-shell mydb/products> query "SELECT COUNT(*) FROM c"
 
 - [Azure Cosmos DB Shell Overview](overview.md)
 - [Installation Guide](install.md)
-- [Azure Cosmos DB Query Reference](query/index.md)
+- [Azure Cosmos DB Query Reference](../query-cheat-sheet.md)

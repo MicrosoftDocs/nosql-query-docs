@@ -112,5 +112,5 @@ Azure Cosmos DB Shell is currently in **private preview**. This is a preview ver
 ## See Also
 
 - [Azure Cosmos DB Overview](overview.md)
-- [Azure Cosmos DB SDKs](conceptual-resilient-sdk-applications.md)
-- [Data Explorer](data-explorer.md)
+- [Azure Cosmos DB SDKs](../conceptual-resilient-sdk-applications.md)
+- [Data Explorer](../data-explorer.md)

@@ -503,5 +503,5 @@ cosmosdb-shell> connect DefaultEndpointProtocol=https;AccountName=myaccount;... 
 
 - [Quick Start Guide](get-started.md)
 - [Troubleshooting Guide](troubleshooting.md)
-- [SQL Query Syntax](how-to-query-container.md)
-- [Azure Cosmos DB Query Reference](query/index.md)
+- [SQL Query Syntax](../how-to-query-container.md)
+- [Azure Cosmos DB Query Reference](../query-cheat-sheet.md)

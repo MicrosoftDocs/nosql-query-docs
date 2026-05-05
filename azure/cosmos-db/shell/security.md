@@ -550,4 +550,4 @@ For security concerns or vulnerability reports:
 
 - [Azure Cosmos DB Overview](overview.md)
 - [Azure Cosmos DB Security](security.md)
-- [Compliance in Azure](compliance.md)
+- [Compliance in Azure](../compliance.md)
