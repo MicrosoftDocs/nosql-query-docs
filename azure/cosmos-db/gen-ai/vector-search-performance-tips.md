@@ -99,6 +99,10 @@ For most applications, `float16` is the first precision reduction to try. Move t
 
 Azure Cosmos DB for NoSQL offers three vector index types. Choosing the right one for your scenarios is the highest-impact optimization decision for vector search.
 
+> [!NOTE]
+> You can add new path configurations or remove existing ones, but you cannot change the settings of a vector embedding policy or vector indexing policy directly. To do so you must first drop the existing vector policy and/or index, then add it back with new configuration. 
+
+
 ### Comparison matrix
 
 | Characteristic | `flat` | `quantizedFlat` | `diskANN` |
@@ -155,6 +159,7 @@ The following JSON example shows how to set quantization and indexing parameters
         {
             "path": "/embedding",
             "type": "diskANN",
+            "quantizerType": "product",
             "quantizationByteSize": 64,
             "indexingSearchListSize": 100
         }
@@ -167,6 +172,13 @@ The following JSON example shows how to set quantization and indexing parameters
 | `quantizationByteSize` | Dynamic (system decided) | Number of bytes used for the quantized vector. Lower = smaller index / faster search at the cost of recall. Range: 1-512. |
 | `indexingSearchListSize` | 100 (`diskANN`) | Size of the candidate list during DiskANN index build. Higher = better recall at the cost of slower builds and ingestion. Range: 10-500. |
 | `vectorIndexShardKey` | (none) | Partition-scoped DiskANN index. See [Sharded DiskANN](#sharded-diskann-and-partition-key-design). |
+| `quantizerType` | `product` | (Optional) the method used for quantizing vectors. See details below. |
+
+You can also optionally configure a `quantizerType` within each vectorIndexes entry. This controls how vectors are quantized prior to indexing.
+  - **product** (default)
+Uses standard product quantization. Provides balanced performance and accuracy for most workloads.
+  - **spherical** (public preview)
+This quantization method can improve quantization time, leading to slightly faster indexing times and performance. It can also provide higher and more stable recall over time with very high dimensional embeddings. Currently available in public preview. 
 
 ## Partition key strategies for insert and query throughput
 
