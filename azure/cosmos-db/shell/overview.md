@@ -38,7 +38,7 @@ Choose one of three installation methods:
 
 - **VS Code Extension** (Recommended)
   - Install directly from VS Code Marketplace
-  - See: [VS Code Extension Setup](vscode.md)
+  - See: [Visual Studio Code Extension Setup](visual-studio-code.md)
 
 - **NuGet Package**
   - Install as .NET global tool
@@ -92,8 +92,8 @@ Azure Cosmos DB Shell is currently in **private preview**. This is a preview ver
 - [Installation Guide](install.md) - Install using your preferred method
 - [Quick Start Guide](get-started.md) - Get started in minutes
 - [Command Reference](command-reference.md) - Complete command documentation
-- [MCP Server Setup](mcp-setup.md) - Enable AI integration
-- [VS Code Extension](vscode.md) - VS Code integration guide
+- [Model Context Protocol Setup](model-context-protocol-setup.md) - Enable AI integration
+- [Visual Studio Code Extension](visual-studio-code.md) - VS Code integration guide
 - [Troubleshooting Guide](troubleshooting.md) - Resolve common issues
 - [Security Best Practices](security.md) - Secure your credentials and data
 

@@ -538,7 +538,7 @@ cosmosdb-shell --auth-method managed-identity
 - [Installation Guide](install.md) - Get started securely
 - [Command Reference](command-reference.md) - Learn available commands
 - [Quick Start Guide](get-started.md) - Safe examples
-- [MCP Setup Guide](mcp-setup.md) - Secure MCP configuration
+- [MCP Setup Guide](model-context-protocol-setup.md) - Secure MCP configuration
 
 ## Support
 

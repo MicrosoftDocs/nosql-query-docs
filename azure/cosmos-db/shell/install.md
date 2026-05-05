@@ -59,7 +59,7 @@ The VS Code extension provides seamless integration with the code editor.
 - **Supported Platforms**: Windows, macOS, Linux
 - **Disk Space**: ~50 MB
 
-For detailed VS Code integration features, see [VS Code Extension Setup](vscode.md).
+For detailed VS Code integration features, see [Visual Studio Code Extension Setup](visual-studio-code.md).
 
 ## Option 2: NuGet Package (.NET Global Tool)
 

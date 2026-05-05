@@ -1,6 +1,6 @@
 ---
-title: Azure Cosmos DB Shell VS Code Extension
-description: Learn how to use the Azure Cosmos DB Shell VS Code extension for seamless database interactions and resource management.
+title: Azure Cosmos DB Shell Visual Studio Code Extension
+description: Learn how to use the Azure Cosmos DB Shell Visual Studio Code extension for seamless database interactions and resource management.
 author: sajeetharan
 ms.author: sasinnat
 ms.reviewer: mjbrown
@@ -9,9 +9,9 @@ ms.topic: how-to
 ms.date: 05/04/2024
 ---
 
-# Azure Cosmos DB Shell VS Code Extension
+# Azure Cosmos DB Shell Visual Studio Code Extension
 
-The Azure Cosmos DB Shell VS Code extension provides a seamless, integrated experience for managing and querying your Cosmos DB databases directly from the code editor.
+The Azure Cosmos DB Shell Visual Studio Code extension provides a seamless, integrated experience for managing and querying your Cosmos DB databases directly from the code editor.
 
 ## Installation
 
@@ -385,7 +385,7 @@ query "SELECT * FROM c" | jq '.[]'
 
 - [Command Reference](command-reference.md) - Learn all available commands
 - [Quick Start Guide](get-started.md) - Get started with examples
-- [MCP Server Setup](mcp-setup.md) - Enable AI integration
+- [Model Context Protocol Setup](model-context-protocol-setup.md) - Enable AI integration
 - [Troubleshooting Guide](troubleshooting.md) - Resolve issues
 - [Security Best Practices](security.md) - Secure your setup
 

@@ -383,7 +383,7 @@ cosmosdb-shell mydb/products> query "SELECT COUNT(*) FROM c"
 ## Next Steps
 
 - [Complete Command Reference](command-reference.md) - Learn all available commands
-- [MCP Server Setup](mcp-setup.md) - Enable AI integration
+- [MCP Server Setup](model-context-protocol-setup.md) - Enable AI integration
 - [Troubleshooting Guide](troubleshooting.md) - Resolve issues
 - [Security Best Practices](security.md) - Secure your setup
 

@@ -1,5 +1,5 @@
 ---
-title: Azure Cosmos DB Shell MCP Server Setup
+title: Azure Cosmos DB Shell Model Context Protocol Setup
 description: Set up and configure the Model Context Protocol (MCP) server for Azure Cosmos DB Shell to enable AI-powered database interactions.
 author: sajeetharan
 ms.author: sasinnat
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 05/04/2024
 ---
 
-# Azure Cosmos DB Shell MCP Server Setup
+# Azure Cosmos DB Shell Model Context Protocol Setup
 
 Enable the Model Context Protocol (MCP) server in Azure Cosmos DB Shell to allow AI assistants and applications to interact with your Cosmos DB resources programmatically.
 
@@ -428,5 +428,5 @@ print(results)
 ## See Also
 
 - [Azure Cosmos DB Shell Overview](overview.md)
-- [VS Code Extension Guide](vscode.md)
+- [Visual Studio Code Extension Guide](visual-studio-code.md)
 - [Model Context Protocol Documentation](https://modelcontextprotocol.io)
