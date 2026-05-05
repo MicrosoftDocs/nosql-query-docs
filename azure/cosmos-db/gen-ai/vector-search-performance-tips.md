@@ -100,7 +100,7 @@ For most applications, `float16` is the first precision reduction to try. Move t
 Azure Cosmos DB for NoSQL offers three vector index types. Choosing the right one for your scenarios is the highest-impact optimization decision for vector search.
 
 > [!NOTE]
-> You can add new path configurations or remove existing ones, but you cannot change the settings of a vector embedding policy or vector indexing policy directly. To do so you must first drop the existing vector policy and/or index, then add it back with new configuration. 
+> You can always add new path configurations or remove existing ones, but you cannot change the settings of a vector embedding policy or vector indexing policy directly. To do so you must first drop the existing vector policy and/or index, then add it back with new configuration. 
 
 
 ### Comparison matrix
@@ -721,7 +721,7 @@ async for page in container.query_items(
 ## Related content
 
 - [Vector search overview](vector-search-overview.md)
-- [VectorDistance system function](../query/vectordistance)
+- [VectorDistance system function](/cosmos-db/query/vectordistance)
 - [DiskANN + Azure Cosmos DB—Microsoft Mechanics Video](https://www.youtube.com/watch?v=MlMPIYONvfQ)
 - [Hierarchical partition keys](../hierarchical-partition-keys.md)
 - [Autoscale throughput](../provision-throughput-autoscale.md)
