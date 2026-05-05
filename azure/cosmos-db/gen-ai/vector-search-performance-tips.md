@@ -198,7 +198,7 @@ When the natural key has low cardinality or temporally skewed writes.
 
 ### Pattern 2: Hierarchical partition keys for multitenant workloads
 
-[Hierarchical partition keys (HPK)](https://learn.microsoft.com/azure/cosmos-db/hierarchical-partition-keys) solve two challenges for multitenant vector search:
+[Hierarchical partition keys (HPK)](../hierarchical-partition-keys.md) solve two challenges for multitenant vector search:
 
 1. **Large tenants exceed the 20 GB logical partition limit** when partitioned only by `tenantId`.
 2. **Searching across a single tenant's data** should be efficient, not a full cross-partition fan-out.
@@ -721,10 +721,10 @@ async for page in container.query_items(
 ## Related content
 
 - [Vector search overview](vector-search-overview.md)
-- [VectorDistance system function](../query/vectordistance.md)
+- [VectorDistance system function](../query/vectordistance)
 - [DiskANN + Azure Cosmos DB—Microsoft Mechanics Video](https://www.youtube.com/watch?v=MlMPIYONvfQ)
 - [Hierarchical partition keys](../hierarchical-partition-keys.md)
-- [Autoscale throughput](../provision-throughput-autoscalemd)
+- [Autoscale throughput](../provision-throughput-autoscale.md)
 - [.NET SDK vector search how-to](../how-to-dotnet-vector-index-query.md)
 - [Python SDK vector search how-to](../how-to-python-vector-index-query.md)
 - [Java SDK vector search how-to](../how-to-java-vector-index-query.md) 
