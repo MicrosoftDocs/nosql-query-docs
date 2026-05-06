@@ -31,14 +31,14 @@ Secure your Azure Cosmos DB Shell deployments with these comprehensive security 
 When you launch Cosmos DB Shell, you're prompted for authentication:
 
 ```bash
-cosmosdb-shell
+cosmosdbshell
 ```
 
 Browser opens automatically for Azure sign-in. Complete the authentication flow, and the shell uses your Entra ID credentials.
 
 **Configuration:**
 ```bash
-cosmosdb-shell --auth-method entra-id
+cosmosdbshell --auth-method entra-id
 ```
 
 **Security Benefits:**
@@ -73,7 +73,7 @@ Enable managed identity on Azure resource:
 
 **In Cosmos DB Shell:**
 ```bash
-cosmosdb-shell --auth-method managed-identity
+cosmosdbshell --auth-method managed-identity
 ```
 
 **Security Configuration:**
@@ -102,7 +102,7 @@ cosmosdb-shell --auth-method managed-identity
 **Implementation:**
 
 ```bash
-cosmosdb-shell --connection-string "<connection_string>"
+cosmosdbshell --connection-string "<connection_string>"
 ```
 
 **Minimal Risk Usage:**
@@ -115,7 +115,7 @@ cosmosdb-shell --connection-string "<connection_string>"
 export COSMOS_CONNECTION_STRING="your-connection-string"
 
 # Use in script
-cosmosdb-shell --connection-string "$COSMOS_CONNECTION_STRING"
+cosmosdbshell --connection-string "$COSMOS_CONNECTION_STRING"
 ```
 
 ## Credential management
@@ -127,13 +127,13 @@ cosmosdb-shell --connection-string "$COSMOS_CONNECTION_STRING"
 **❌ Bad:**
 ```bash
 #!/bin/bash
-cosmosdb-shell --connection-string "DefaultEndpointProtocol=https;AccountName=myaccount;..."
+cosmosdbshell --connection-string "DefaultEndpointProtocol=https;AccountName=myaccount;..."
 ```
 
 **✅ Good:**
 ```bash
 #!/bin/bash
-cosmosdb-shell --connection-string "$COSMOS_CONNECTION_STRING"
+cosmosdbshell --connection-string "$COSMOS_CONNECTION_STRING"
 ```
 
 #### 2. Use environment variables
@@ -145,7 +145,7 @@ COSMOS_CONNECTION_STRING="your-connection-string"
 
 # Load and use
 source .env
-cosmosdb-shell --connection-string "$COSMOS_CONNECTION_STRING"
+cosmosdbshell --connection-string "$COSMOS_CONNECTION_STRING"
 ```
 
 #### 3. Store in secure vaults
@@ -163,7 +163,7 @@ CONNECTION_STRING=$(az keyvault secret show \
   --name cosmos-connection-string \
   --query value -o tsv)
 
-cosmosdb-shell --connection-string "$CONNECTION_STRING"
+cosmosdbshell --connection-string "$CONNECTION_STRING"
 ```
 
 **Local Development:**
@@ -241,13 +241,13 @@ Cosmos DB Shell uses TLS 1.2 or later:
 
 ```bash
 # Verify TLS version
-cosmosdb-shell --tls-version 1.2
+cosmosdbshell --tls-version 1.2
 ```
 
 **Configuration:**
 ```bash
 # Force TLS 1.3
-cosmosdb-shell --min-tls-version 1.3
+cosmosdbshell --min-tls-version 1.3
 ```
 
 ### 2. Encryption at rest
@@ -414,7 +414,7 @@ az monitor activity-log list \
 **Monitor Query Performance:**
 ```bash
 # Review query metrics
-cosmosdb-shell mydb/users> query "SELECT * FROM c" --show-metrics
+CS > query "SELECT * FROM c" --show-metrics
 ```
 
 **Metrics to Track:**
@@ -455,7 +455,7 @@ az cosmosdb create --resource-group myResourceGroup \
 **Set Time-to-Live (TTL) for Sensitive Data:**
 
 ```bash
-cosmosdb-shell mydb> mkcon sensitive_data -pk /id --ttl 2592000
+CS > mkcon sensitive_data -pk /id --ttl 2592000
 ```
 
 This deletes documents after 30 days.
@@ -483,7 +483,7 @@ This deletes documents after 30 days.
 
 ```bash
 # DON'T do this
-cosmosdb-shell --connection-string "DefaultEndpointProtocol=https;AccountKey=abc123"
+cosmosdbshell --connection-string "DefaultEndpointProtocol=https;AccountKey=abc123"
 ```
 
 ### ✅ Use environment variables
@@ -491,21 +491,21 @@ cosmosdb-shell --connection-string "DefaultEndpointProtocol=https;AccountKey=abc
 ```bash
 # DO this
 export COSMOS_CONNECTION_STRING="..."
-cosmosdb-shell --connection-string "$COSMOS_CONNECTION_STRING"
+cosmosdbshell --connection-string "$COSMOS_CONNECTION_STRING"
 ```
 
 ### ❌ Using account key in production
 
 ```bash
 # DON'T use keys in production
-cosmosdb-shell --auth-method key
+cosmosdbshell --auth-method key
 ```
 
 ### ✅ Use managed identity
 
 ```bash
 # DO use managed identity
-cosmosdb-shell --auth-method managed-identity
+cosmosdbshell --auth-method managed-identity
 ```
 
 ### ❌ Leaving MCP open

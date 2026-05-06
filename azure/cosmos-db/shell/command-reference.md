@@ -29,20 +29,14 @@ cd <path>
 **Examples:**
 ```bash
 # Navigate to a database
-cosmosdb-shell> cd mydb
-cosmosdb-shell mydb>
-
+CS > cd mydb
 # Navigate to a container
-cosmosdb-shell mydb> cd users
-cosmosdb-shell mydb/users>
-
+CS > cd users
 # Go back one level
-cosmosdb-shell mydb/users> cd ..
-cosmosdb-shell mydb>
-
+CS > cd ..
 # Navigate to root
-cosmosdb-shell mydb> cd /
-cosmosdb-shell>
+CS > cd /
+CS >
 ```
 
 ### `ls` - List
@@ -61,13 +55,13 @@ ls [options]
 **Examples:**
 ```bash
 # List databases
-cosmosdb-shell> ls
+CS > ls
 
 # List containers with details
-cosmosdb-shell mydb> ls -l
+CS > ls -l
 
 # List containers in human-readable format
-cosmosdb-shell mydb> ls -h
+CS > ls -h
 ```
 
 ### `pwd` - Print working directory
@@ -81,7 +75,7 @@ pwd
 
 **Examples:**
 ```bash
-cosmosdb-shell mydb/users> pwd
+CS > pwd
 /mydb/users
 ```
 
@@ -96,7 +90,7 @@ endpoint
 
 **Examples:**
 ```bash
-cosmosdb-shell> endpoint
+CS > endpoint
 https://myaccount.documents.azure.com:443/
 ```
 
@@ -120,13 +114,13 @@ mkdb <database_name> [options]
 **Examples:**
 ```bash
 # Create database with default settings
-cosmosdb-shell> mkdb mydb
+CS > mkdb mydb
 
 # Create database with provisioned throughput
-cosmosdb-shell> mkdb mydb --throughput 400
+CS > mkdb mydb --throughput 400
 
 # Create database with autoscale
-cosmosdb-shell> mkdb mydb --autoscale 4000
+CS > mkdb mydb --autoscale 4000
 ```
 
 ### `rmdb` - Remove database
@@ -144,10 +138,10 @@ rmdb <database_name> [--force]
 **Examples:**
 ```bash
 # Delete database (with confirmation)
-cosmosdb-shell> rmdb tempdb
+CS > rmdb tempdb
 
 # Delete database without confirmation
-cosmosdb-shell> rmdb tempdb --force
+CS > rmdb tempdb --force
 ```
 
 ## Container management commands
@@ -173,19 +167,19 @@ mkcon <container_name> -pk <partition_key> [options]
 **Examples:**
 ```bash
 # Create container with partition key
-cosmosdb-shell mydb> mkcon users -pk /id
+CS > mkcon users -pk /id
 
 # Create with provisioned throughput
-cosmosdb-shell mydb> mkcon users -pk /id --throughput 400
+CS > mkcon users -pk /id --throughput 400
 
 # Create with autoscale
-cosmosdb-shell mydb> mkcon users -pk /id --autoscale 4000
+CS > mkcon users -pk /id --autoscale 4000
 
 # Create with TTL
-cosmosdb-shell mydb> mkcon users -pk /id --ttl 86400
+CS > mkcon users -pk /id --ttl 86400
 
 # Create with unique key
-cosmosdb-shell mydb> mkcon users -pk /id --unique-key /email
+CS > mkcon users -pk /id --unique-key /email
 ```
 
 ### `rmcon` - Remove container
@@ -203,10 +197,10 @@ rmcon <container_name> [--force]
 **Examples:**
 ```bash
 # Delete container (with confirmation)
-cosmosdb-shell mydb> rmcon tempcontainer
+CS > rmcon tempcontainer
 
 # Delete without confirmation
-cosmosdb-shell mydb> rmcon tempcontainer --force
+CS > rmcon tempcontainer --force
 ```
 
 ## Data manipulation commands
@@ -230,22 +224,22 @@ query "<SQL_query>" [options]
 **Examples:**
 ```bash
 # Query all documents
-cosmosdb-shell mydb/users> query "SELECT * FROM c"
+CS > query "SELECT * FROM c"
 
 # Query with filter
-cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE c.status = 'active'"
+CS > query "SELECT * FROM c WHERE c.status = 'active'"
 
 # Query with partition key (faster)
-cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE c.id = 'user1'" --partition-key user1
+CS > query "SELECT * FROM c WHERE c.id = 'user1'" --partition-key user1
 
 # Query with limit
-cosmosdb-shell mydb/users> query "SELECT TOP 10 * FROM c"
+CS > query "SELECT TOP 10 * FROM c"
 
 # Aggregate query
-cosmosdb-shell mydb/users> query "SELECT c.status, COUNT(*) as count FROM c GROUP BY c.status"
+CS > query "SELECT c.status, COUNT(*) as count FROM c GROUP BY c.status"
 
 # Join query
-cosmosdb-shell mydb/users> query "SELECT c.id, c.name, o.orderId FROM c JOIN o IN c.orders"
+CS > query "SELECT c.id, c.name, o.orderId FROM c JOIN o IN c.orders"
 ```
 
 ### `create` - Create document
@@ -260,13 +254,13 @@ create item <JSON_document>
 **Examples:**
 ```bash
 # Create simple document
-cosmosdb-shell mydb/users> create item {"id": "user1", "name": "Alice"}
+CS > create item {"id": "user1", "name": "Alice"}
 
 # Create nested document
-cosmosdb-shell mydb/users> create item {"id": "user2", "name": "Bob", "address": {"city": "Seattle", "country": "USA"}}
+CS > create item {"id": "user2", "name": "Bob", "address": {"city": "Seattle", "country": "USA"}}
 
 # Create with array
-cosmosdb-shell mydb/users> create item {"id": "user3", "name": "Charlie", "tags": ["vip", "premium"]}
+CS > create item {"id": "user3", "name": "Charlie", "tags": ["vip", "premium"]}
 ```
 
 ### `update` - Update document
@@ -281,10 +275,10 @@ update <JSON_document>
 **Examples:**
 ```bash
 # Update document
-cosmosdb-shell mydb/users> update {"id": "user1", "name": "Alice", "status": "active"}
+CS > update {"id": "user1", "name": "Alice", "status": "active"}
 
 # Partial update (with JSON merge semantics)
-cosmosdb-shell mydb/users> update {"id": "user1", "status": "inactive"}
+CS > update {"id": "user1", "status": "inactive"}
 ```
 
 ### `rm` - Remove document
@@ -302,10 +296,10 @@ rm <document_id> [--partition-key <value>]
 **Examples:**
 ```bash
 # Delete document
-cosmosdb-shell mydb/users> rm user1
+CS > rm user1
 
 # Delete with partition key
-cosmosdb-shell mydb/users> rm user1 --partition-key user1
+CS > rm user1 --partition-key user1
 ```
 
 ### `get` - Get document
@@ -323,10 +317,10 @@ get <document_id> [--partition-key <value>]
 **Examples:**
 ```bash
 # Get document
-cosmosdb-shell mydb/users> get user1
+CS > get user1
 
 # Get with partition key
-cosmosdb-shell mydb/users> get user1 --partition-key user1
+CS > get user1 --partition-key user1
 ```
 
 ## Utility commands
@@ -345,16 +339,16 @@ Process JSON output using jq syntax.
 **Examples:**
 ```bash
 # Pretty print JSON
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq .
+CS > query "SELECT * FROM c" | jq .
 
 # Extract specific fields
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | {id, name}'
+CS > query "SELECT * FROM c" | jq '.[] | {id, name}'
 
 # Filter results
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | select(.status == "active")'
+CS > query "SELECT * FROM c" | jq '.[] | select(.status == "active")'
 
 # Transform data
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '[.[] | {id, name}]'
+CS > query "SELECT * FROM c" | jq '[.[] | {id, name}]'
 ```
 
 ### `echo` - Display text
@@ -368,7 +362,7 @@ echo "<text>"
 
 **Examples:**
 ```bash
-cosmosdb-shell> echo "Starting operations..."
+CS > echo "Starting operations..."
 Starting operations...
 ```
 
@@ -384,13 +378,13 @@ help [command]
 **Examples:**
 ```bash
 # General help
-cosmosdb-shell> help
+CS > help
 
 # Help for specific command
-cosmosdb-shell> help query
+CS > help query
 
 # Help for container commands
-cosmosdb-shell> help mkcon
+CS > help mkcon
 ```
 
 ### `version` - Show version
@@ -404,7 +398,7 @@ version
 
 **Examples:**
 ```bash
-cosmosdb-shell> version
+CS > version
 Azure Cosmos DB Shell 1.0.213-preview
 ```
 
@@ -419,7 +413,7 @@ exit
 
 **Examples:**
 ```bash
-cosmosdb-shell> exit
+CS > exit
 ```
 
 ## Command chaining and piping
@@ -428,22 +422,22 @@ Commands can be chained using pipes (`|`) and redirects.
 
 ### Pipe to `jq`
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[]'
+CS > query "SELECT * FROM c" | jq '.[]'
 ```
 
 ### Pipe to file
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" > output.json
+CS > query "SELECT * FROM c" > output.json
 ```
 
 ### Pipe to external command
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | grep "active"
+CS > query "SELECT * FROM c" | grep "active"
 ```
 
 ### Combine multiple operations
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | select(.status == "active")' | wc -l
+CS > query "SELECT * FROM c" | jq '.[] | select(.status == "active")' | wc -l
 ```
 
 ## JSON path expressions
@@ -453,16 +447,16 @@ Use JSON path expressions in queries for advanced filtering.
 **Examples:**
 ```bash
 # Query nested properties
-cosmosdb-shell mydb/users> query "SELECT c.address.city FROM c"
+CS > query "SELECT c.address.city FROM c"
 
 # Array operations
-cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE ARRAY_CONTAINS(c.tags, 'vip')"
+CS > query "SELECT * FROM c WHERE ARRAY_CONTAINS(c.tags, 'vip')"
 
 # String functions
-cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE STARTSWITH(c.name, 'A')"
+CS > query "SELECT * FROM c WHERE STARTSWITH(c.name, 'A')"
 
 # Numeric functions
-cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE c.age > 30"
+CS > query "SELECT * FROM c WHERE c.age > 30"
 ```
 
 ## Connection commands
@@ -484,10 +478,10 @@ connect <connection_string|endpoint> [--auth-method <method>]
 **Examples:**
 ```bash
 # Connect with Entra ID
-cosmosdb-shell> connect https://myaccount.documents.azure.com:443/ --auth-method entra-id
+CS > connect https://myaccount.documents.azure.com:443/ --auth-method entra-id
 
 # Connect with account key
-cosmosdb-shell> connect DefaultEndpointProtocol=https;AccountName=myaccount;... --auth-method key
+CS > connect DefaultEndpointProtocol=https;AccountName=myaccount;... --auth-method key
 ```
 
 ## Best practices

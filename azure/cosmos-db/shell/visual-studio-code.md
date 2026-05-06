@@ -216,7 +216,7 @@ Use the integrated terminal for shell operations.
 
 ```bash
 # In the integrated terminal
-cosmosdb-shell
+cosmosdbshell
 
 # Navigate and query
 > cd mydb

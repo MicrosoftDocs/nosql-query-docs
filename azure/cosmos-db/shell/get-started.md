@@ -22,12 +22,12 @@ Get started with Azure Cosmos DB Shell in just a few minutes with these practica
 ## Launch the shell
 
 ```bash
-cosmosdb-shell
+cosmosdbshell
 ```
 
 You'll see a prompt:
 ```
-cosmosdb-shell>
+CS >
 ```
 
 ## Connect to your account
@@ -50,12 +50,12 @@ When you launch Cosmos DB Shell, it prompts you for authentication. You can:
 
 ### View your account endpoint
 ```bash
-cosmosdb-shell> endpoint
+CS > endpoint
 ```
 
 ### List databases
 ```bash
-cosmosdb-shell> ls
+CS > ls
 ```
 
 Output:
@@ -67,13 +67,13 @@ mydb
 
 ### Navigate to a database
 ```bash
-cosmosdb-shell> cd mydb
-cosmosdb-shell mydb>
+CS > cd mydb
+CS >
 ```
 
 ### List containers in database
 ```bash
-cosmosdb-shell mydb> ls
+CS > ls
 ```
 
 Output:
@@ -85,13 +85,13 @@ orders
 
 ### Navigate to a container
 ```bash
-cosmosdb-shell mydb> cd users
-cosmosdb-shell mydb/users>
+CS > cd users
+CS >
 ```
 
 ### Show current path
 ```bash
-cosmosdb-shell mydb/users> pwd
+CS > pwd
 ```
 
 Output:
@@ -103,19 +103,19 @@ Output:
 
 ### Create database
 ```bash
-cosmosdb-shell> mkdb mynewdb
+CS > mkdb mynewdb
 ```
 
 ### Create container
 ```bash
-cosmosdb-shell mydb> mkcon mycontainer -pk /id
+CS > mkcon mycontainer -pk /id
 ```
 
 (Creates container with partition key `/id`)
 
 ### Query documents
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE c.status = 'active'"
+CS > query "SELECT * FROM c WHERE c.status = 'active'"
 ```
 
 Output:
@@ -134,32 +134,32 @@ Output:
 
 ### Count documents
 ```bash
-cosmosdb-shell mydb/users> query "SELECT COUNT(*) FROM c"
+CS > query "SELECT COUNT(*) FROM c"
 ```
 
 ### Insert document
 ```bash
-cosmosdb-shell mydb/users> create item {"id": "user3", "name": "Charlie", "status": "active"}
+CS > create item {"id": "user3", "name": "Charlie", "status": "active"}
 ```
 
 ### Update document
 ```bash
-cosmosdb-shell mydb/users> update {"id": "user1", "name": "Alice", "status": "inactive"}
+CS > update {"id": "user1", "name": "Alice", "status": "inactive"}
 ```
 
 ### Delete document
 ```bash
-cosmosdb-shell mydb/users> rm user1
+CS > rm user1
 ```
 
 ### Delete container
 ```bash
-cosmosdb-shell mydb> rmcon users
+CS > rmcon users
 ```
 
 ### Delete database
 ```bash
-cosmosdb-shell> rmdb mydb
+CS > rmdb mydb
 ```
 
 ## Piping commands
@@ -168,22 +168,22 @@ Combine commands to create powerful workflows.
 
 ### Query and count
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq 'length'
+CS > query "SELECT * FROM c" | jq 'length'
 ```
 
 ### Filter results with jq
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | select(.status == "active")'
+CS > query "SELECT * FROM c" | jq '.[] | select(.status == "active")'
 ```
 
 ### Extract specific fields
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | {id, name}'
+CS > query "SELECT * FROM c" | jq '.[] | {id, name}'
 ```
 
 ### Transform and output
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | .name' | tr '\n' ','
+CS > query "SELECT * FROM c" | jq '.[] | .name' | tr '\n' ','
 ```
 
 ## Shell scripts
@@ -195,7 +195,7 @@ Create a script file for automated operations.
 #!/bin/bash
 
 # Connect to Cosmos DB Shell
-cosmosdb-shell << 'EOF'
+cosmosdbshell << 'EOF'
 cd mydb
 cd users
 
@@ -221,24 +221,24 @@ bash batch_operations.sh
 
 ### Find documents with specific criteria
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE c.age > 30 AND c.status = 'active'"
+CS > query "SELECT * FROM c WHERE c.age > 30 AND c.status = 'active'"
 ```
 
 ### Search in arrays
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE ARRAY_CONTAINS(c.tags, 'vip')"
+CS > query "SELECT * FROM c WHERE ARRAY_CONTAINS(c.tags, 'vip')"
 ```
 
 ### Aggregate results
 ```bash
-cosmosdb-shell mydb/users> query "SELECT c.status, COUNT(*) as count FROM c GROUP BY c.status"
+CS > query "SELECT c.status, COUNT(*) as count FROM c GROUP BY c.status"
 ```
 
 ## Export and import
 
 ### Export data to JSON
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" > users_export.json
+CS > query "SELECT * FROM c" > users_export.json
 ```
 
 The exported file wraps the documents in an `items` envelope:
@@ -256,7 +256,7 @@ The exported file wraps the documents in an `items` envelope:
 
 ### Export to CSV-like format
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq -r '.id, .name, .status' | paste -sd, > users.csv
+CS > query "SELECT * FROM c" | jq -r '.id, .name, .status' | paste -sd, > users.csv
 ```
 
 ### Import a bare JSON array
@@ -278,14 +278,14 @@ Sample `users_import.json`:
 Import it by piping the file into `mkitem`:
 
 ```bash
-cosmosdb-shell mydb/users> cat users_import.json | mkitem
+CS > cat users_import.json | mkitem
 ```
 
 Add `--force` (alias `--upsert`) to replace existing items instead of failing
 on `id` conflicts:
 
 ```bash
-cosmosdb-shell mydb/users> cat users_import.json | mkitem --force
+CS > cat users_import.json | mkitem --force
 ```
 
 ### Import a previously exported query result
@@ -299,7 +299,7 @@ Use `jq` to unwrap the array and strip system fields before piping to
 `mkitem`:
 
 ```bash
-cosmosdb-shell mydb/users> cat users_export.json \
+CS > cat users_export.json \
   | jq '[.items[] | del(._rid, ._self, ._etag, ._attachments, ._ts)]' \
   | mkitem --force --db=mydb --con=users
 ```
@@ -323,7 +323,7 @@ stop the import.
 ### Use aliases for common commands
 ```bash
 # Add to your shell profile
-alias cosmosdb='cosmosdb-shell'
+alias cosmosdb='cosmosdbshell'
 ```
 
 ### Tab completion
@@ -337,47 +337,47 @@ alias cosmosdb='cosmosdb-shell'
 ### Formatting output
 ```bash
 # Pretty-print JSON
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq .
+CS > query "SELECT * FROM c" | jq .
 
 # Compact output
-cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq -c .
+CS > query "SELECT * FROM c" | jq -c .
 ```
 
 ### Performance tips
 
 - **Use partition key in queries** for faster results:
   ```bash
-  cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE c.id = 'user1'"
+  CS > query "SELECT * FROM c WHERE c.id = 'user1'"
   ```
 
 - **Limit result set** for large queries:
   ```bash
-  cosmosdb-shell mydb/users> query "SELECT TOP 100 * FROM c"
+  CS > query "SELECT TOP 100 * FROM c"
   ```
 
 - **Use projections** to reduce data transfer:
   ```bash
-  cosmosdb-shell mydb/users> query "SELECT c.id, c.name FROM c"
+  CS > query "SELECT c.id, c.name FROM c"
   ```
 
 ## Common workflows
 
 ### Bulk insert from file
 ```bash
-cosmosdb-shell mydb/users> jq -r '.[]' data.json | while read line; do
+CS > jq -r '.[]' data.json | while read line; do
   create $line
 done
 ```
 
 ### Backup container
 ```bash
-cosmosdb-shell mydb/users> query "SELECT * FROM c" > backup_users.json
+CS > query "SELECT * FROM c" > backup_users.json
 ```
 
 ### Verify data migration
 ```bash
-cosmosdb-shell mydb/users> query "SELECT COUNT(*) FROM c" 
-cosmosdb-shell mydb/products> query "SELECT COUNT(*) FROM c"
+CS > query "SELECT COUNT(*) FROM c" 
+CS > query "SELECT COUNT(*) FROM c"
 ```
 
 ## Next steps
