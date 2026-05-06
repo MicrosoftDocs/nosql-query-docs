@@ -82,6 +82,8 @@
           href: vector-search.md
         - name: Sharded DiskANN for focused search
           href: gen-ai/sharded-diskann.md
+        - name: Tips for vector search performance
+          href: gen-ai/vector-search-performance-tips.md
     - name: Full text indexing and search
       items:
         - name: Full text search overview
