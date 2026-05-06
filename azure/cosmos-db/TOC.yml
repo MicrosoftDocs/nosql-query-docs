@@ -727,8 +727,10 @@
 
 - name: High availability
   items:
-    - name: Reliability in Azure Comsos DB
+    - name: Reliability in Azure Cosmos DB
       href: /azure/reliability/reliability-cosmos-db?context=/azure/cosmos-db/context/context
+    - name: Disaster recovery guidance
+      href: disaster-recovery-guidance.md
     - name: Enable zone redundancy on an existing account
       href: enable-zone-redundancy.md
     - name: Global distribution
