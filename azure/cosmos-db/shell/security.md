@@ -9,13 +9,13 @@ ms.topic: conceptual
 ms.date: 05/04/2024
 ---
 
-# Azure Cosmos DB Shell Security Best Practices
+# Azure Cosmos DB Shell security best practices
 
 Secure your Azure Cosmos DB Shell deployments with these comprehensive security best practices.
 
-## Authentication Methods
+## Authentication methods
 
-### 1. Microsoft Entra ID (Recommended)
+### 1. Microsoft Entra ID (recommended)
 
 **Best for:** Development, testing, and production environments
 
@@ -47,7 +47,7 @@ cosmosdb-shell --auth-method entra-id
 - MFA provides additional protection
 - RBAC controls what you can access
 
-### 2. Managed Identity (Production)
+### 2. Managed identity (production)
 
 **Best for:** Azure-hosted applications and production environments
 
@@ -88,7 +88,7 @@ cosmosdb-shell --auth-method managed-identity
 - Audit trail for all operations
 - Complies with security standards
 
-### 3. Account Key (Development Only)
+### 3. Account key (development only)
 
 **Best for:** Local development and testing only
 
@@ -118,11 +118,11 @@ export COSMOS_CONNECTION_STRING="your-connection-string"
 cosmosdb-shell --connection-string "$COSMOS_CONNECTION_STRING"
 ```
 
-## Credential Management
+## Credential management
 
-### Best Practices
+### Best practices
 
-#### 1. Never Hardcode Credentials
+#### 1. Never hardcode credentials
 
 **❌ Bad:**
 ```bash
@@ -136,7 +136,7 @@ cosmosdb-shell --connection-string "DefaultEndpointProtocol=https;AccountName=my
 cosmosdb-shell --connection-string "$COSMOS_CONNECTION_STRING"
 ```
 
-#### 2. Use Environment Variables
+#### 2. Use environment variables
 
 **Development:**
 ```bash
@@ -148,7 +148,7 @@ source .env
 cosmosdb-shell --connection-string "$COSMOS_CONNECTION_STRING"
 ```
 
-#### 3. Store in Secure Vaults
+#### 3. Store in secure vaults
 
 **Azure Key Vault:**
 ```bash
@@ -171,7 +171,7 @@ cosmosdb-shell --connection-string "$CONNECTION_STRING"
 - Load via environment variables
 - Never commit secrets
 
-#### 4. Rotate Keys Regularly
+#### 4. Rotate keys regularly
 
 **Key Rotation Process:**
 1. Generate new key in Azure portal
@@ -179,9 +179,9 @@ cosmosdb-shell --connection-string "$CONNECTION_STRING"
 3. Delete old key after verification
 4. Test all applications work
 
-## RBAC (Role-Based Access Control)
+## RBAC (role-based access control)
 
-### Implement Least Privilege
+### Implement least privilege
 
 **Principle:** Grant minimum permissions needed
 
@@ -209,7 +209,7 @@ az role assignment create \
   --scope "$RESOURCE_ID"
 ```
 
-### Scope Access by Container
+### Scope access by container
 
 Create custom roles with limited container access:
 
@@ -231,9 +231,9 @@ cat > custom-role.json << 'EOF'
 EOF
 ```
 
-## Data Protection
+## Data protection
 
-### 1. Encryption in Transit
+### 1. Encryption in transit
 
 **TLS 1.2+ (Default)**
 
@@ -250,7 +250,7 @@ cosmosdb-shell --tls-version 1.2
 cosmosdb-shell --min-tls-version 1.3
 ```
 
-### 2. Encryption at Rest
+### 2. Encryption at rest
 
 **Enable Encryption at Rest:**
 
@@ -268,7 +268,7 @@ az cosmosdb show --resource-group myResourceGroup \
   --query "encryption.keyWrapperProperties" -o table
 ```
 
-### 3. Customer-Managed Keys (CMK)
+### 3. Customer-managed keys (CMK)
 
 **For Enhanced Security:**
 
@@ -289,9 +289,9 @@ az keyvault key create --vault-name myKeyVault \
 # Configure Cosmos DB (via Portal or Terraform)
 ```
 
-## Network Security
+## Network security
 
-### 1. IP Firewall
+### 1. IP firewall
 
 **Enable Firewall:**
 
@@ -307,7 +307,7 @@ az cosmosdb update --resource-group myResourceGroup \
   --ip-range-filter "203.0.113.0/24"
 ```
 
-### 2. Virtual Endpoints
+### 2. Virtual endpoints
 
 **Restrict to VNet:**
 
@@ -318,11 +318,11 @@ az cosmosdb update --resource-group myResourceGroup \
   --enable-virtual-network true
 ```
 
-### 3. Private Endpoints
+### 3. Private endpoints
 
 **For Maximum Network Isolation:**
 
-1. Create private endpoint in Azure Portal
+1. Create private endpoint in Azure portal
 2. Configure DNS settings
 3. Shell connects via private network
 
@@ -331,9 +331,9 @@ az cosmosdb update --resource-group myResourceGroup \
 - Restricted network access
 - Compliant with enterprise policies
 
-## MCP Server Security
+## MCP server security
 
-### 1. Local-Only Binding (Default)
+### 1. Local-only binding (default)
 
 **Configuration:**
 ```json
@@ -358,7 +358,7 @@ az cosmosdb update --resource-group myResourceGroup \
 }
 ```
 
-### 3. MCP Port Security
+### 3. MCP port security
 
 **Secure Configuration:**
 ```json
@@ -371,7 +371,7 @@ az cosmosdb update --resource-group myResourceGroup \
 }
 ```
 
-### 4. Firewall Rules for MCP
+### 4. Firewall rules for MCP
 
 **Block External Access:**
 ```bash
@@ -383,9 +383,9 @@ netsh advfirewall firewall add rule name="Block MCP" \
 sudo iptables -A INPUT ! -i lo -p tcp --dport 6128 -j DROP
 ```
 
-## Audit and Monitoring
+## Audit and monitoring
 
-### 1. Enable Audit Logging
+### 1. Enable audit logging
 
 **Azure Audit Logs:**
 ```bash
@@ -395,7 +395,7 @@ az monitor activity-log list \
   --query "[?resourceId=='<cosmos-resource-id>']"
 ```
 
-### 2. Monitor MCP Activity
+### 2. Monitor MCP activity
 
 **Enable MCP Logging:**
 ```json
@@ -409,7 +409,7 @@ az monitor activity-log list \
 - Application Insights
 - Azure Monitor
 
-### 3. Query Metrics
+### 3. Query metrics
 
 **Monitor Query Performance:**
 ```bash
@@ -422,9 +422,9 @@ cosmosdb-shell mydb/users> query "SELECT * FROM c" --show-metrics
 - Execution time
 - Item count
 
-## Compliance and Standards
+## Compliance and standards
 
-### 1. Data Residency
+### 1. Data residency
 
 **Ensure Data Stays in Region:**
 
@@ -436,7 +436,7 @@ az cosmosdb create --resource-group myResourceGroup \
   --databases only
 ```
 
-### 2. Compliance Standards
+### 2. Compliance standards
 
 **Supported Compliance:**
 - SOC 2 Type II
@@ -446,11 +446,11 @@ az cosmosdb create --resource-group myResourceGroup \
 - PCI DSS
 
 **Verify Compliance:**
-1. Azure Portal > Compliance
+1. Azure portal > Compliance
 2. Download compliance reports
 3. Share with auditors
 
-### 3. Data Retention
+### 3. Data retention
 
 **Set Time-to-Live (TTL) for Sensitive Data:**
 
@@ -460,7 +460,7 @@ cosmosdb-shell mydb> mkcon sensitive_data -pk /id --ttl 2592000
 
 This deletes documents after 30 days.
 
-## Security Checklist
+## Security checklist
 
 - [ ] Use Entra ID for authentication
 - [ ] Enable MFA on Azure account
@@ -477,16 +477,16 @@ This deletes documents after 30 days.
 - [ ] Document security policies
 - [ ] Train users on security practices
 
-## Common Security Mistakes
+## Common security mistakes
 
-### ❌ Storing Keys in Code
+### ❌ Storing keys in code
 
 ```bash
 # DON'T do this
 cosmosdb-shell --connection-string "DefaultEndpointProtocol=https;AccountKey=abc123"
 ```
 
-### ✅ Use Environment Variables
+### ✅ Use environment variables
 
 ```bash
 # DO this
@@ -494,21 +494,21 @@ export COSMOS_CONNECTION_STRING="..."
 cosmosdb-shell --connection-string "$COSMOS_CONNECTION_STRING"
 ```
 
-### ❌ Using Account Key in Production
+### ❌ Using account key in production
 
 ```bash
 # DON'T use keys in production
 cosmosdb-shell --auth-method key
 ```
 
-### ✅ Use Managed Identity
+### ✅ Use managed identity
 
 ```bash
 # DO use managed identity
 cosmosdb-shell --auth-method managed-identity
 ```
 
-### ❌ Leaving MCP Open
+### ❌ Leaving MCP open
 
 ```json
 // DON'T expose MCP publicly
@@ -517,7 +517,7 @@ cosmosdb-shell --auth-method managed-identity
 }
 ```
 
-### ✅ Restrict MCP Access
+### ✅ Restrict MCP access
 
 ```json
 // DO restrict to localhost
@@ -526,14 +526,14 @@ cosmosdb-shell --auth-method managed-identity
 }
 ```
 
-## Security Resources
+## Security resources
 
 - [Azure Security Best Practices](/azure/security/fundamentals/best-practices-and-patterns)
 - [Cosmos DB Security](/azure/cosmos-db/database-security)
 - [Key Vault Best Practices](/azure/key-vault/general/best-practices)
 - [RBAC in Cosmos DB](/azure/cosmos-db/role-based-access-control)
 
-## Next Steps
+## Next steps
 
 - [Installation Guide](install.md) - Get started securely
 - [Command Reference](command-reference.md) - Learn available commands
@@ -546,7 +546,7 @@ For security concerns or vulnerability reports:
 - [Report Security Issues](https://azure.microsoft.com/support/)
 - [Azure Security Advisory](https://msrc.microsoft.com/)
 
-## See Also
+## See also
 
 - [Azure Cosmos DB Overview](overview.md)
 - [Azure Cosmos DB Security](security.md)

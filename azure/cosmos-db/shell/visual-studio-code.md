@@ -9,13 +9,13 @@ ms.topic: how-to
 ms.date: 05/04/2024
 ---
 
-# Azure Cosmos DB Shell Visual Studio Code Extension
+# Azure Cosmos DB Shell Visual Studio Code extension
 
 The Azure Cosmos DB Shell Visual Studio Code extension provides a seamless, integrated experience for managing and querying your Cosmos DB databases directly from the code editor.
 
 ## Installation
 
-### Method 1: VS Code Marketplace (Recommended)
+### Method 1: VS Code Marketplace (recommended)
 
 1. **Open VS Code**
    - Launch Visual Studio Code on your machine
@@ -33,7 +33,7 @@ The Azure Cosmos DB Shell Visual Studio Code extension provides a seamless, inte
    - Wait for installation to complete
    - Reload VS Code if prompted
 
-### Method 2: Install from VSIX File
+### Method 2: Install from VSIX file
 
 1. **Download Extension**
    - Download `vscode-cosmosdb-0.33.3.vsix` (or latest version) from the releases
@@ -56,7 +56,7 @@ The Azure Cosmos DB Shell Visual Studio Code extension provides a seamless, inte
 
 ## Features
 
-### 1. Resource Explorer
+### 1. Resource explorer
 
 Explore your Cosmos DB resources in a hierarchical tree view.
 
@@ -70,7 +70,7 @@ Explore your Cosmos DB resources in a hierarchical tree view.
 - Click the Cosmos DB icon in the Activity Bar
 - Or go to View > Cosmos DB Explorer
 
-### 2. Quick Launch
+### 2. Quick launch
 
 Launch Cosmos DB Shell directly from VS Code.
 
@@ -87,7 +87,7 @@ Launch Cosmos DB Shell directly from VS Code.
 - **Status Bar**
   - Click the Cosmos DB icon in the status bar
 
-### 3. Command Palette Integration
+### 3. Command palette integration
 
 Execute Cosmos DB Shell commands directly from the command palette.
 
@@ -104,7 +104,7 @@ Execute Cosmos DB Shell commands directly from the command palette.
 2. Type the command name
 3. Press Enter
 
-### 4. Azure Account Integration
+### 4. Azure account integration
 
 Seamlessly integrate with your Azure accounts.
 
@@ -119,7 +119,7 @@ Seamlessly integrate with your Azure accounts.
 2. Select subscription and resource group
 3. Choose Cosmos DB account to connect
 
-### 5. MCP Server Integration
+### 5. MCP server integration
 
 Enable Model Context Protocol server for AI integration.
 
@@ -137,13 +137,13 @@ Enable Model Context Protocol server for AI integration.
 }
 ```
 
-## Getting Started
+## Getting started
 
-### Step 1: Install the Extension
+### Step 1: Install the extension
 
 Follow the [Installation](#installation) section above.
 
-### Step 2: Connect to Your Account
+### Step 2: Connect to your account
 
 1. Click the Cosmos DB icon in the Activity Bar
 2. Sign in with your Azure account (if prompted)
@@ -156,7 +156,7 @@ Follow the [Installation](#installation) section above.
 2. Type "Cosmos DB Shell: Open"
 3. Press Enter to launch the integrated shell
 
-### Step 4: Start Querying
+### Step 4: Start querying
 
 ```bash
 # Navigate to a database
@@ -169,9 +169,9 @@ Follow the [Installation](#installation) section above.
 > query "SELECT * FROM c"
 ```
 
-## Working with Resources
+## Working with resources
 
-### Explore Databases
+### Explore databases
 
 **In Resource Explorer:**
 1. Expand your Cosmos DB account
@@ -185,7 +185,7 @@ Follow the [Installation](#installation) section above.
 - Create container
 - Refresh
 
-### Work with Containers
+### Work with containers
 
 **Right-click Container Options:**
 - **Open in Shell** - Launch shell in container context
@@ -194,7 +194,7 @@ Follow the [Installation](#installation) section above.
 - **Delete Container** - Remove container
 - **View Properties** - Display container metadata
 
-### Manage Documents
+### Manage documents
 
 **Document Operations:**
 - View document contents
@@ -203,16 +203,16 @@ Follow the [Installation](#installation) section above.
 - Delete documents
 - Copy document ID
 
-## Integrated Terminal
+## Integrated terminal
 
 Use the integrated terminal for shell operations.
 
-### Launch Terminal
+### Launch terminal
 
 1. View > Integrated Terminal (Ctrl+`)
 2. Or click the Terminal tab at the bottom
 
-### Run Commands
+### Run commands
 
 ```bash
 # In the integrated terminal
@@ -224,15 +224,15 @@ cosmosdb-shell
 > query "SELECT * FROM c"
 ```
 
-## Settings and Configuration
+## Settings and configuration
 
-### Access Extension Settings
+### Access extension settings
 
 1. Open Settings (Ctrl+, / Cmd+,)
 2. Search for "Cosmos DB"
 3. Modify settings as needed
 
-### Available Settings
+### Available settings
 
 | Setting | Default | Description |
 |---------|---------|-------------|
@@ -242,7 +242,7 @@ cosmosdb-shell
 | `cosmosDB.editor.theme` | `dark` | Editor color theme |
 | `cosmosDB.queryTimeout` | `30000` | Query timeout (ms) |
 
-### Example Configuration
+### Example configuration
 
 ```json
 {
@@ -253,7 +253,7 @@ cosmosdb-shell
 }
 ```
 
-## Keyboard Shortcuts
+## Keyboard shortcuts
 
 | Action | Shortcut |
 |--------|----------|
@@ -264,15 +264,15 @@ cosmosdb-shell
 | Copy | Ctrl+C (Cmd+C) |
 | Paste | Ctrl+V (Cmd+V) |
 
-## Tips and Tricks
+## Tips and tricks
 
-### 1. Quick Access to Frequently Used Containers
+### 1. Quick access to frequently used containers
 
 1. Click star icon next to container name
 2. Container appears in "Favorites" section
 3. Quick access without expanding tree
 
-### 2. Multi-Container Queries
+### 2. Multi-container queries
 
 Use multiple terminal tabs to work with different containers:
 
@@ -280,7 +280,7 @@ Use multiple terminal tabs to work with different containers:
 2. Right-click to create new terminal tab
 3. Connect to different containers in each tab
 
-### 3. Save Query Results
+### 3. Save query results
 
 Export query results to file:
 
@@ -289,7 +289,7 @@ Export query results to file:
 query "SELECT * FROM c" > results.json
 ```
 
-### 4. Format JSON Output
+### 4. Format JSON output
 
 Use jq in the integrated terminal:
 
@@ -297,7 +297,7 @@ Use jq in the integrated terminal:
 query "SELECT * FROM c" | jq '.[]'
 ```
 
-### 5. Keyboard Navigation
+### 5. Keyboard navigation
 
 - Tab: Move between panels
 - Arrow keys: Navigate tree
@@ -306,7 +306,7 @@ query "SELECT * FROM c" | jq '.[]'
 
 ## Troubleshooting
 
-### Extension Won't Load
+### Extension won't load
 
 **Issue:** Cosmos DB extension doesn't appear in VS Code
 
@@ -322,7 +322,7 @@ query "SELECT * FROM c" | jq '.[]'
    - Delete `.vscode/extensions` folder
    - Reinstall extension
 
-### Can't Connect to Account
+### Can't connect to account
 
 **Issue:** "Sign in required" or authentication fails
 
@@ -333,7 +333,7 @@ query "SELECT * FROM c" | jq '.[]'
 4. Complete browser authentication
 5. Select subscription and resource group
 
-### MCP Server Won't Start
+### MCP server won't start
 
 **Issue:** MCP server fails to start in extension
 
@@ -355,7 +355,7 @@ query "SELECT * FROM c" | jq '.[]'
 3. Check firewall settings
 4. Review Output panel for errors
 
-### Shell Doesn't Respond
+### Shell doesn't respond
 
 **Issue:** Cosmos DB Shell is frozen or unresponsive
 
@@ -366,7 +366,7 @@ query "SELECT * FROM c" | jq '.[]'
 4. Check network connectivity
 5. Verify Cosmos DB account is accessible
 
-### Extension is Slow
+### Extension is slow
 
 **Issue:** Extension is sluggish or resource-heavy
 
@@ -381,7 +381,7 @@ query "SELECT * FROM c" | jq '.[]'
 4. Check VS Code Activity Monitor (Help > About)
 5. Disable other extensions if conflicting
 
-## Next Steps
+## Next steps
 
 - [Command Reference](command-reference.md) - Learn all available commands
 - [Quick Start Guide](get-started.md) - Get started with examples
@@ -395,7 +395,7 @@ query "SELECT * FROM c" | jq '.[]'
 - [VS Code Issues](https://github.com/microsoft/vscode/issues)
 - [Report Extension Issues](https://github.com/Azure/vscode-cosmosdb/issues)
 
-## See Also
+## See also
 
 - [Azure Cosmos DB Shell Overview](overview.md)
 - [Installation Guide](install.md)

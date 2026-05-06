@@ -9,15 +9,15 @@ ms.topic: reference
 ms.date: 05/04/2024
 ---
 
-# Azure Cosmos DB Shell Command Reference
+# Azure Cosmos DB Shell command reference
 
 Complete reference guide for all Azure Cosmos DB Shell commands.
 
-## Navigation Commands
+## Navigation commands
 
 Commands for navigating databases and containers.
 
-### `cd` - Change Directory
+### `cd` - Change directory
 
 Navigate to a database or container.
 
@@ -70,7 +70,7 @@ cosmosdb-shell mydb> ls -l
 cosmosdb-shell mydb> ls -h
 ```
 
-### `pwd` - Print Working Directory
+### `pwd` - Print working directory
 
 Show the current path.
 
@@ -85,7 +85,7 @@ cosmosdb-shell mydb/users> pwd
 /mydb/users
 ```
 
-### `endpoint` - Show Endpoint
+### `endpoint` - Show endpoint
 
 Display the current Cosmos DB account endpoint.
 
@@ -100,11 +100,11 @@ cosmosdb-shell> endpoint
 https://myaccount.documents.azure.com:443/
 ```
 
-## Database Management Commands
+## Database management commands
 
 Commands for creating and managing databases.
 
-### `mkdb` - Make Database
+### `mkdb` - Make database
 
 Create a new database.
 
@@ -129,7 +129,7 @@ cosmosdb-shell> mkdb mydb --throughput 400
 cosmosdb-shell> mkdb mydb --autoscale 4000
 ```
 
-### `rmdb` - Remove Database
+### `rmdb` - Remove database
 
 Delete a database and all its contents.
 
@@ -150,11 +150,11 @@ cosmosdb-shell> rmdb tempdb
 cosmosdb-shell> rmdb tempdb --force
 ```
 
-## Container Management Commands
+## Container management commands
 
 Commands for creating and managing containers.
 
-### `mkcon` - Make Container
+### `mkcon` - Make container
 
 Create a new container.
 
@@ -188,7 +188,7 @@ cosmosdb-shell mydb> mkcon users -pk /id --ttl 86400
 cosmosdb-shell mydb> mkcon users -pk /id --unique-key /email
 ```
 
-### `rmcon` - Remove Container
+### `rmcon` - Remove container
 
 Delete a container.
 
@@ -209,11 +209,11 @@ cosmosdb-shell mydb> rmcon tempcontainer
 cosmosdb-shell mydb> rmcon tempcontainer --force
 ```
 
-## Data Manipulation Commands
+## Data manipulation commands
 
 Commands for querying and managing data.
 
-### `query` - Execute Query
+### `query` - Execute query
 
 Execute a SQL query against a container.
 
@@ -248,7 +248,7 @@ cosmosdb-shell mydb/users> query "SELECT c.status, COUNT(*) as count FROM c GROU
 cosmosdb-shell mydb/users> query "SELECT c.id, c.name, o.orderId FROM c JOIN o IN c.orders"
 ```
 
-### `create` - Create Document
+### `create` - Create document
 
 Insert a new document.
 
@@ -269,7 +269,7 @@ cosmosdb-shell mydb/users> create item {"id": "user2", "name": "Bob", "address":
 cosmosdb-shell mydb/users> create item {"id": "user3", "name": "Charlie", "tags": ["vip", "premium"]}
 ```
 
-### `update` - Update Document
+### `update` - Update document
 
 Update an existing document.
 
@@ -287,7 +287,7 @@ cosmosdb-shell mydb/users> update {"id": "user1", "name": "Alice", "status": "ac
 cosmosdb-shell mydb/users> update {"id": "user1", "status": "inactive"}
 ```
 
-### `rm` - Remove Document
+### `rm` - Remove document
 
 Delete a document.
 
@@ -308,7 +308,7 @@ cosmosdb-shell mydb/users> rm user1
 cosmosdb-shell mydb/users> rm user1 --partition-key user1
 ```
 
-### `get` - Get Document
+### `get` - Get document
 
 Retrieve a specific document by ID.
 
@@ -329,11 +329,11 @@ cosmosdb-shell mydb/users> get user1
 cosmosdb-shell mydb/users> get user1 --partition-key user1
 ```
 
-## Utility Commands
+## Utility commands
 
 General utility commands.
 
-### `jq` - JSON Processing
+### `jq` - JSON processing
 
 Process JSON output using jq syntax.
 
@@ -357,7 +357,7 @@ cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | select(.status ==
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '[.[] | {id, name}]'
 ```
 
-### `echo` - Display Text
+### `echo` - Display text
 
 Output text to console.
 
@@ -372,7 +372,7 @@ cosmosdb-shell> echo "Starting operations..."
 Starting operations...
 ```
 
-### `help` - Show Help
+### `help` - Show help
 
 Display help information.
 
@@ -393,7 +393,7 @@ cosmosdb-shell> help query
 cosmosdb-shell> help mkcon
 ```
 
-### `version` - Show Version
+### `version` - Show version
 
 Display the shell version.
 
@@ -408,7 +408,7 @@ cosmosdb-shell> version
 Azure Cosmos DB Shell 1.0.213-preview
 ```
 
-### `exit` - Exit Shell
+### `exit` - Exit shell
 
 Exit the Cosmos DB Shell.
 
@@ -422,7 +422,7 @@ exit
 cosmosdb-shell> exit
 ```
 
-## Command Chaining and Piping
+## Command chaining and piping
 
 Commands can be chained using pipes (`|`) and redirects.
 
@@ -431,22 +431,22 @@ Commands can be chained using pipes (`|`) and redirects.
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[]'
 ```
 
-### Pipe to File
+### Pipe to file
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" > output.json
 ```
 
-### Pipe to External Command
+### Pipe to external command
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | grep "active"
 ```
 
-### Combine Multiple Operations
+### Combine multiple operations
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | select(.status == "active")' | wc -l
 ```
 
-## JSON Path Expressions
+## JSON path expressions
 
 Use JSON path expressions in queries for advanced filtering.
 
@@ -465,9 +465,9 @@ cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE STARTSWITH(c.name, 'A')"
 cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE c.age > 30"
 ```
 
-## Connection Commands
+## Connection commands
 
-### `connect` - Connect to Account
+### `connect` - Connect to account
 
 Switch to a different Cosmos DB account.
 
@@ -490,7 +490,7 @@ cosmosdb-shell> connect https://myaccount.documents.azure.com:443/ --auth-method
 cosmosdb-shell> connect DefaultEndpointProtocol=https;AccountName=myaccount;... --auth-method key
 ```
 
-## Best Practices
+## Best practices
 
 - **Use partition keys** for faster queries
 - **Limit result sets** with TOP or --max-items
@@ -499,7 +499,7 @@ cosmosdb-shell> connect DefaultEndpointProtocol=https;AccountName=myaccount;... 
 - **Use jq** for JSON processing and formatting
 - **Save complex queries** in script files
 
-## See Also
+## See also
 
 - [Quick Start Guide](get-started.md)
 - [Troubleshooting Guide](troubleshooting.md)

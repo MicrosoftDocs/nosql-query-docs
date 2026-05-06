@@ -13,7 +13,7 @@ ms.date: 05/04/2024
 
 Azure Cosmos DB Shell is available through three distribution methods. Choose the one that best fits your workflow.
 
-## Option 1: VS Code Extension (Recommended)
+## Option 1: VS Code extension (recommended)
 
 The VS Code extension provides seamless integration with the code editor.
 
@@ -38,7 +38,7 @@ The VS Code extension provides seamless integration with the code editor.
    - The extension should appear in your installed extensions list
    - You can now access Cosmos DB Shell from the command palette
 
-### Method 1b: Install from VSIX File
+### Method 1b: Install from VSIX file
 
 1. **Download Extension**
    - Download `vscode-cosmosdb-0.33.3.vsix` (or latest version) from the releases
@@ -53,7 +53,7 @@ The VS Code extension provides seamless integration with the code editor.
    - Wait for the installation to finish
    - Reload VS Code if prompted
 
-### VS Code Extension Requirements
+### VS Code extension requirements
 
 - **VS Code Version**: 1.85 or later
 - **Supported Platforms**: Windows, macOS, Linux
@@ -61,7 +61,7 @@ The VS Code extension provides seamless integration with the code editor.
 
 For detailed VS Code integration features, see [Visual Studio Code Extension Setup](visual-studio-code.md).
 
-## Option 2: NuGet Package (.NET Global Tool)
+## Option 2: NuGet package (.NET global tool)
 
 Install as a .NET global tool for command-line access.
 
@@ -70,7 +70,7 @@ Install as a .NET global tool for command-line access.
 - **.NET SDK**: Version 10.0 or later
 - **Platform Support**: Windows, macOS (Intel and Apple Silicon), Linux (x64 and ARM)
 
-### Installation Steps
+### Installation steps
 
 1. **Open Terminal or Command Prompt**
    - Windows: Open Command Prompt or PowerShell
@@ -86,7 +86,7 @@ Install as a .NET global tool for command-line access.
    cosmosdb-shell --version
    ```
 
-### Update to Latest Version
+### Update to latest version
 
 ```bash
 dotnet tool update --global CosmosDBShell --prerelease
@@ -98,14 +98,14 @@ dotnet tool update --global CosmosDBShell --prerelease
 dotnet tool uninstall --global CosmosDBShell
 ```
 
-### Package Details
+### Package details
 
 - **Package Name**: CosmosDBShell
 - **Version**: 1.0.213-preview
 - **NuGet URL**: [CosmosDBShell on NuGet.org](https://www.nuget.org/packages/CosmosDBShell/1.0.213-preview)
 - **License**: MIT
 
-## Option 3: Self-Contained Binary (No .NET Required)
+## Option 3: Self-contained binary (no .NET required)
 
 Download and extract a self-contained binary for your platform.
 
@@ -114,7 +114,7 @@ Download and extract a self-contained binary for your platform.
 - No runtime requirements (includes .NET runtime)
 - Sufficient disk space (~200 MB)
 
-### Installation Steps
+### Installation steps
 
 1. **Download**
    - Choose your platform:
@@ -157,7 +157,7 @@ Download and extract a self-contained binary for your platform.
 
 ## Verification
 
-### Test Your Installation
+### Test your installation
 
 1. **For NuGet Installation:**
    ```bash
@@ -176,25 +176,25 @@ Download and extract a self-contained binary for your platform.
 
 ## Troubleshooting
 
-### "Command Not Found" (NuGet Installation)
+### "Command not found" (NuGet installation)
 
 - Ensure .NET SDK 10.0+ is installed: `dotnet --version`
 - Restart your terminal after installation
 - Check that `$HOME/.dotnet/tools` is in your PATH
 
-### "File Not Found" (Binary Installation)
+### "File not found" (binary installation)
 
 - Verify the archive extracted successfully
 - Check file permissions: `chmod +x cosmosdb-shell` (macOS/Linux)
 - Use the full path to the executable
 
-### VS Code Extension Not Appearing
+### VS Code extension not appearing
 
 - Ensure VS Code version is 1.85 or later
 - Restart VS Code
 - Check the Extensions marketplace for "Azure Cosmos DB Shell"
 
-## Next Steps
+## Next steps
 
 - [Quick Start Guide](get-started.md) - Get started with basic commands
 - [Command Reference](command-reference.md) - Learn all available commands
@@ -206,7 +206,7 @@ If you encounter issues:
 - [View Troubleshooting Guide](troubleshooting.md)
 - [Check Security Considerations](security.md)
 
-## See Also
+## See also
 
 - [Azure Cosmos DB Shell Overview](overview.md)
 - [Azure Cosmos DB Documentation](overview.md)

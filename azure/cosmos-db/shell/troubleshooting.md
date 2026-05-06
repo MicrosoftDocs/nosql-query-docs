@@ -9,13 +9,13 @@ ms.topic: troubleshooting
 ms.date: 05/04/2024
 ---
 
-# Azure Cosmos DB Shell Troubleshooting Guide
+# Azure Cosmos DB Shell troubleshooting guide
 
 Resolve common issues with Azure Cosmos DB Shell installation, authentication, connections, and command execution.
 
-## Installation Issues
+## Installation issues
 
-### Issue: "Command Not Found" (NuGet Installation)
+### Issue: "Command not found" (NuGet installation)
 
 **Error:**
 ```
@@ -57,7 +57,7 @@ cosmosdb-shell: command not found
    - **Windows**: Add `%USERPROFILE%\.dotnet\tools` to PATH
    - **macOS/Linux**: `~/.dotnet/tools` should already be in PATH
 
-### Issue: "File Not Found" (Binary Installation)
+### Issue: "File not found" (binary installation)
 
 **Error:**
 ```
@@ -90,7 +90,7 @@ cosmosdb-shell: No such file or directory
   export PATH="$PATH:~/cosmosdb-shell"
   ```
 
-### Issue: "File Corrupted" During Download
+### Issue: "File corrupted" during download
 
 **Error:**
 ```
@@ -117,9 +117,9 @@ Archive is corrupted or incomplete
   - Try alternative download method
   - Try different network connection
 
-## Authentication Issues
+## Authentication issues
 
-### Issue: "Authentication Failed"
+### Issue: "Authentication failed"
 
 **Error:**
 ```
@@ -156,7 +156,7 @@ Authentication failed. Please check your credentials.
   - **macOS**: Keychain
   - **Linux**: Check ~/.config directory
 
-### Issue: "Unauthorized - Insufficient Permissions"
+### Issue: "Unauthorized - insufficient permissions"
 
 **Error:**
 ```
@@ -186,7 +186,7 @@ Authorization failed. Your user does not have permission to perform this operati
    - Ensure you're in correct subscription
    - Switch if needed: `az account set --subscription <ID>`
 
-### Issue: "Token Expired"
+### Issue: "Token expired"
 
 **Error:**
 ```
@@ -214,9 +214,9 @@ Token has expired. Please re-authenticate.
    - Tokens should auto-refresh
    - If issue persists, contact Azure support
 
-## Connection Issues
+## Connection issues
 
-### Issue: "Connection Refused"
+### Issue: "Connection refused"
 
 **Error:**
 ```
@@ -251,7 +251,7 @@ Connection refused to Cosmos DB account
    - If using VPN, ensure it's connected
    - If using proxy, verify proxy settings
 
-### Issue: "Cannot Resolve Endpoint"
+### Issue: "Cannot resolve endpoint"
 
 **Error:**
 ```
@@ -286,7 +286,7 @@ Cannot resolve host: account.documents.azure.com
    ```
    - Should connect successfully
 
-### Issue: "Timeout Connecting to Cosmos DB"
+### Issue: "Timeout connecting to Cosmos DB"
 
 **Error:**
 ```
@@ -317,9 +317,9 @@ Connection timeout. Could not connect to Cosmos DB account.
    - Go to [Azure Status Page](https://status.azure.com)
    - Verify Cosmos DB service is operational
 
-## Command Issues
+## Command issues
 
-### Issue: "Command Not Recognized"
+### Issue: "Command not recognized"
 
 **Error:**
 ```
@@ -349,7 +349,7 @@ Unknown command. Type 'help' for available commands.
    ```
    - Ensure you have latest version
 
-### Issue: "Syntax Error in Query"
+### Issue: "Syntax error in query"
 
 **Error:**
 ```
@@ -382,7 +382,7 @@ Syntax error in SQL query
    - Verify query works in Data Explorer first
    - Copy working query to shell
 
-### Issue: "No Documents Returned"
+### Issue: "No documents returned"
 
 **Error:**
 ```
@@ -423,9 +423,9 @@ cosmosdb-shell mydb/users> query "SELECT * FROM c"
   - Ensure partition key is included in query
   - For better performance: `SELECT * FROM c WHERE c.id = 'value'`
 
-## VS Code Extension Issues
+## VS Code extension issues
 
-### Issue: Extension Not Appearing
+### Issue: Extension not appearing
 
 **Error:**
 ```
@@ -454,7 +454,7 @@ Cannot find "Azure Cosmos DB Shell" in Extensions
   - Delete `.vscode` folder in user directory
   - Restart VS Code
 
-### Issue: Resource Explorer Blank
+### Issue: Resource Explorer blank
 
 **Error:**
 ```
@@ -487,7 +487,7 @@ Resource Explorer shows no databases or containers
    - Verify Cosmos DB account exists
    - Verify you have access to account
 
-### Issue: MCP Server Won't Start in VS Code
+### Issue: MCP server won't start in VS Code
 
 **Error:**
 ```
@@ -528,9 +528,9 @@ Failed to start MCP server
    - Ensure firewall allows localhost connections
    - Disable temporarily to test
 
-## MCP Server Issues
+## MCP server issues
 
-### Issue: "MCP Server Not Responding"
+### Issue: "MCP server not responding"
 
 **Error:**
 ```
@@ -563,7 +563,7 @@ Cannot connect to MCP server
    - Ensure localhost:6128 is accessible
    - Disable firewall temporarily to test
 
-### Issue: "MCP Port Already in Use"
+### Issue: "MCP port already in use"
 
 **Error:**
 ```
@@ -599,9 +599,9 @@ Cannot bind MCP server to port 6128
    }
    ```
 
-## Performance Issues
+## Performance issues
 
-### Issue: Shell is Slow or Unresponsive
+### Issue: Shell is slow or unresponsive
 
 **Causes:**
 - Large query result set
@@ -631,7 +631,7 @@ Cannot bind MCP server to port 6128
    - Check memory usage
    - Close unnecessary applications
 
-### Issue: Queries Timeout
+### Issue: Queries timeout
 
 **Error:**
 ```
@@ -667,7 +667,7 @@ Query timeout. Please try again.
    - Verify service is operational
    - Check [Azure Status Page](https://status.azure.com)
 
-## Getting Help
+## Getting help
 
 1. **Check Docs**
    - [Command Reference](command-reference.md)
@@ -677,7 +677,7 @@ Query timeout. Please try again.
 2. **Azure Support**
    - For Cosmos DB service issues: [Create support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)
 
-## See Also
+## See also
 
 - [Installation Guide](install.md)
 - [Command Reference](command-reference.md)

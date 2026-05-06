@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 05/04/2024
 ---
 
-# Azure Cosmos DB Shell Model Context Protocol Setup
+# Azure Cosmos DB Shell model context protocol setup
 
 Enable the Model Context Protocol (MCP) server in Azure Cosmos DB Shell to allow AI assistants and applications to interact with your Cosmos DB resources programmatically.
 
@@ -29,15 +29,15 @@ The Model Context Protocol (MCP) is an open standard that enables AI assistants 
 - Basic understanding of MCP concepts
 - Network connectivity to localhost (MCP server runs locally)
 
-## Enable MCP Server
+## Enable MCP server
 
-### Step 1: Access VS Code Settings
+### Step 1: Access VS Code settings
 
 1. Open VS Code
 2. Go to Settings (Ctrl+, / Cmd+,)
 3. Search for "Cosmos DB"
 
-### Step 2: Configure MCP Settings
+### Step 2: Configure MCP settings
 
 Add the following settings to your VS Code `settings.json`:
 
@@ -63,9 +63,9 @@ Add the following settings to your VS Code `settings.json`:
 
 Close and reopen VS Code to apply settings.
 
-## Verify MCP Server is Running
+## Verify MCP server is running
 
-### Check MCP Status
+### Check MCP status
 
 1. Open the Cosmos DB Shell output panel
 2. Look for confirmation message:
@@ -73,7 +73,7 @@ Close and reopen VS Code to apply settings.
    MCP Server started on http://localhost:6128
    ```
 
-### Test MCP Connection
+### Test MCP connection
 
 Open a terminal and test the MCP server:
 
@@ -93,9 +93,9 @@ Expected response:
 }
 ```
 
-## MCP Configuration Options
+## MCP configuration options
 
-### Minimal Configuration (Recommended)
+### Minimal configuration (recommended)
 
 For most users, minimal configuration is sufficient:
 
@@ -110,7 +110,7 @@ This uses default settings:
 - Auto-start: Enabled
 - Localhost binding: Enabled
 
-### Advanced Configuration
+### Advanced configuration
 
 For custom configurations:
 
@@ -134,7 +134,7 @@ For custom configurations:
 | `cosmosDB.shell.MCP.maxConnections` | Number | Maximum concurrent connections (default: 10) |
 | `cosmosDB.shell.MCP.logLevel` | `debug`/`info`/`warn`/`error` | Logging level (default: `info`) |
 
-## Manual MCP Server Start
+## Manual MCP server start
 
 If you disabled auto-start, manually start the MCP server:
 
@@ -144,15 +144,15 @@ If you disabled auto-start, manually start the MCP server:
 2. Type "Cosmos DB: Start MCP Server"
 3. Press Enter
 
-### From Command Line
+### From command line
 
 ```bash
 cosmosdb-shell --mcp --mcp-port 6128
 ```
 
-## Using MCP with AI Assistants
+## Using MCP with AI assistants
 
-### Example 1: Claude/ChatGPT via Tools
+### Example 1: Claude/ChatGPT via tools
 
 Configure your AI client to connect to the MCP server:
 
@@ -184,7 +184,7 @@ cd /mydb/users
 query "SELECT * FROM c"
 ```
 
-### Example 3: Data Analysis
+### Example 3: Data analysis
 
 ```
 "Count documents by status in the users container and show me the breakdown"
@@ -214,9 +214,9 @@ The MCP server uses the same authentication as Cosmos DB Shell:
   - Quick for testing
   - Less secure, avoid in production
 
-## Security Considerations
+## Security considerations
 
-### MCP Server Security Best Practices
+### MCP server security best practices
 
 - **Local Binding Only** (Default)
   ```json
@@ -241,7 +241,7 @@ The MCP server uses the same authentication as Cosmos DB Shell:
   - Monitor MCP server activity
   - Review logs regularly for suspicious activity
 
-### Connection Security
+### Connection security
 
 **Secure Configuration:**
 ```json
@@ -254,7 +254,7 @@ The MCP server uses the same authentication as Cosmos DB Shell:
 
 ## Troubleshooting
 
-### MCP Server Won't Start
+### MCP server won't start
 
 **Issue:** MCP server fails to start
 
@@ -276,7 +276,7 @@ The MCP server uses the same authentication as Cosmos DB Shell:
 3. Check firewall settings
 4. Review VS Code output panel for error messages
 
-### Connection Refused
+### Connection refused
 
 **Issue:** AI client can't connect to MCP server
 
@@ -286,7 +286,7 @@ The MCP server uses the same authentication as Cosmos DB Shell:
 3. Ensure localhost binding is enabled
 4. Check firewall allows localhost connections
 
-### Authentication Failures
+### Authentication failures
 
 **Issue:** MCP server can't authenticate to Cosmos DB
 
@@ -300,7 +300,7 @@ The MCP server uses the same authentication as Cosmos DB Shell:
 3. Verify managed identity has correct roles
 4. Test with account key in development
 
-### Performance Issues
+### Performance issues
 
 **Issue:** MCP server is slow or unresponsive
 
@@ -318,7 +318,7 @@ The MCP server uses the same authentication as Cosmos DB Shell:
 3. Check network connectivity
 4. Monitor system resources (CPU, memory, disk)
 
-### Port Already in Use
+### Port already in use
 
 **Issue:** Port 6128 is already in use
 
@@ -339,9 +339,9 @@ The MCP server uses the same authentication as Cosmos DB Shell:
    "cosmosDB.shell.MCP.port": 6129
    ```
 
-## View MCP Logs
+## View MCP logs
 
-### Enable Debug Logging
+### Enable debug logging
 
 ```json
 {
@@ -349,14 +349,14 @@ The MCP server uses the same authentication as Cosmos DB Shell:
 }
 ```
 
-### Access Logs
+### Access logs
 
 Logs are displayed in VS Code Output panel:
 1. Open Output panel (View > Output)
 2. Select "Cosmos DB Shell" from dropdown
 3. Review MCP server logs
 
-## Stop MCP Server
+## Stop MCP server
 
 ### In VS Code
 
@@ -364,7 +364,7 @@ Logs are displayed in VS Code Output panel:
 2. Type "Cosmos DB: Stop MCP Server"
 3. Press Enter
 
-### From Command Line
+### From command line
 
 ```bash
 # Kill the MCP server process
@@ -372,9 +372,9 @@ Logs are displayed in VS Code Output panel:
 exit
 ```
 
-## Advanced Scenarios
+## Advanced scenarios
 
-### MCP with Multiple Cosmos DB Accounts
+### MCP with multiple Cosmos DB accounts
 
 Create separate MCP instances for each account:
 
@@ -397,7 +397,7 @@ Create separate MCP instances for each account:
 }
 ```
 
-### MCP with Custom AI Agents
+### MCP with custom AI agents
 
 Integrate MCP with custom AI agents:
 
@@ -418,14 +418,14 @@ results = response.json()
 print(results)
 ```
 
-## Next Steps
+## Next steps
 
 - [Quick Start Guide](get-started.md) - Get started with basic commands
 - [Command Reference](command-reference.md) - Learn all available commands
 - [Security Best Practices](security.md) - Review security guidelines
 - [Troubleshooting Guide](troubleshooting.md) - Resolve common issues
 
-## See Also
+## See also
 
 - [Azure Cosmos DB Shell Overview](overview.md)
 - [Visual Studio Code Extension Guide](visual-studio-code.md)

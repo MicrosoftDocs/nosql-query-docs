@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 05/04/2024
 ---
 
-# Azure Cosmos DB Shell Quick Start
+# Azure Cosmos DB Shell quick start
 
 Get started with Azure Cosmos DB Shell in just a few minutes with these practical examples.
 
@@ -19,7 +19,7 @@ Get started with Azure Cosmos DB Shell in just a few minutes with these practica
 - Azure Cosmos DB account
 - Authentication configured (Entra ID, Managed Identity, or Account Keys)
 
-## Launch the Shell
+## Launch the shell
 
 ```bash
 cosmosdb-shell
@@ -30,7 +30,7 @@ You'll see a prompt:
 cosmosdb-shell>
 ```
 
-## Connect to Your Account
+## Connect to your account
 
 When you launch Cosmos DB Shell, it prompts you for authentication. You can:
 
@@ -46,14 +46,14 @@ When you launch Cosmos DB Shell, it prompts you for authentication. You can:
   - Provide connection string or account key
   - Quick for development/testing
 
-## Basic Navigation
+## Basic navigation
 
-### View Your Account Endpoint
+### View your account endpoint
 ```bash
 cosmosdb-shell> endpoint
 ```
 
-### List Databases
+### List databases
 ```bash
 cosmosdb-shell> ls
 ```
@@ -65,13 +65,13 @@ database2
 mydb
 ```
 
-### Navigate to a Database
+### Navigate to a database
 ```bash
 cosmosdb-shell> cd mydb
 cosmosdb-shell mydb>
 ```
 
-### List Containers in Database
+### List containers in database
 ```bash
 cosmosdb-shell mydb> ls
 ```
@@ -83,13 +83,13 @@ products
 orders
 ```
 
-### Navigate to a Container
+### Navigate to a container
 ```bash
 cosmosdb-shell mydb> cd users
 cosmosdb-shell mydb/users>
 ```
 
-### Show Current Path
+### Show current path
 ```bash
 cosmosdb-shell mydb/users> pwd
 ```
@@ -99,21 +99,21 @@ Output:
 /mydb/users
 ```
 
-## Basic Operations
+## Basic operations
 
-### Create Database
+### Create database
 ```bash
 cosmosdb-shell> mkdb mynewdb
 ```
 
-### Create Container
+### Create container
 ```bash
 cosmosdb-shell mydb> mkcon mycontainer -pk /id
 ```
 
 (Creates container with partition key `/id`)
 
-### Query Documents
+### Query documents
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE c.status = 'active'"
 ```
@@ -132,65 +132,65 @@ Output:
 }
 ```
 
-### Count Documents
+### Count documents
 ```bash
 cosmosdb-shell mydb/users> query "SELECT COUNT(*) FROM c"
 ```
 
-### Insert Document
+### Insert document
 ```bash
 cosmosdb-shell mydb/users> create item {"id": "user3", "name": "Charlie", "status": "active"}
 ```
 
-### Update Document
+### Update document
 ```bash
 cosmosdb-shell mydb/users> update {"id": "user1", "name": "Alice", "status": "inactive"}
 ```
 
-### Delete Document
+### Delete document
 ```bash
 cosmosdb-shell mydb/users> rm user1
 ```
 
-### Delete Container
+### Delete container
 ```bash
 cosmosdb-shell mydb> rmcon users
 ```
 
-### Delete Database
+### Delete database
 ```bash
 cosmosdb-shell> rmdb mydb
 ```
 
-## Piping Commands
+## Piping commands
 
 Combine commands to create powerful workflows.
 
-### Query and Count
+### Query and count
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq 'length'
 ```
 
-### Filter Results with jq
+### Filter results with jq
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | select(.status == "active")'
 ```
 
-### Extract Specific Fields
+### Extract specific fields
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | {id, name}'
 ```
 
-### Transform and Output
+### Transform and output
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq '.[] | .name' | tr '\n' ','
 ```
 
-## Shell Scripts
+## Shell scripts
 
 Create a script file for automated operations.
 
-### Example Script: `batch_operations.sh`
+### Example script: `batch_operations.sh`
 ```bash
 #!/bin/bash
 
@@ -212,31 +212,31 @@ exit
 EOF
 ```
 
-### Run Script
+### Run script
 ```bash
 bash batch_operations.sh
 ```
 
-## Filtering and Searching
+## Filtering and searching
 
-### Find Documents with Specific Criteria
+### Find documents with specific criteria
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE c.age > 30 AND c.status = 'active'"
 ```
 
-### Search in Arrays
+### Search in arrays
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c WHERE ARRAY_CONTAINS(c.tags, 'vip')"
 ```
 
-### Aggregate Results
+### Aggregate results
 ```bash
 cosmosdb-shell mydb/users> query "SELECT c.status, COUNT(*) as count FROM c GROUP BY c.status"
 ```
 
-## Export and Import
+## Export and import
 
-### Export Data to JSON
+### Export data to JSON
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" > users_export.json
 ```
@@ -254,12 +254,12 @@ The exported file wraps the documents in an `items` envelope:
 }
 ```
 
-### Export to CSV-like Format
+### Export to CSV-like format
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq -r '.id, .name, .status' | paste -sd, > users.csv
 ```
 
-### Import a Bare JSON Array
+### Import a bare JSON array
 
 The `create item` command (alias `mkitem`) accepts either a single JSON object
 or a top-level JSON array. Use this form when you control the input file and
@@ -288,7 +288,7 @@ on `id` conflicts:
 cosmosdb-shell mydb/users> cat users_import.json | mkitem --force
 ```
 
-### Import a Previously Exported Query Result
+### Import a previously exported query result
 
 A file produced by `query "SELECT * FROM c" > users_export.json` is **not** a
 bare array — it has the `{ "items": [ ... ] }` wrapper shown above and the
@@ -318,23 +318,23 @@ of items created or replaced and the total RU charge. Per-item failures (for
 example, an `id` conflict without `--force`) are reported inline but do not
 stop the import.
 
-## Tips and Best Practices
+## Tips and best practices
 
-### Use Aliases for Common Commands
+### Use aliases for common commands
 ```bash
 # Add to your shell profile
 alias cosmosdb='cosmosdb-shell'
 ```
 
-### Tab Completion
+### Tab completion
 - Use Tab to auto-complete database and container names
 - Press Tab twice to see all available options
 
-### Command History
+### Command history
 - Arrow up/down to navigate command history
 - Ctrl+R to search command history
 
-### Formatting Output
+### Formatting output
 ```bash
 # Pretty-print JSON
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq .
@@ -343,7 +343,7 @@ cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq .
 cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq -c .
 ```
 
-### Performance Tips
+### Performance tips
 
 - **Use partition key in queries** for faster results:
   ```bash
@@ -360,34 +360,34 @@ cosmosdb-shell mydb/users> query "SELECT * FROM c" | jq -c .
   cosmosdb-shell mydb/users> query "SELECT c.id, c.name FROM c"
   ```
 
-## Common Workflows
+## Common workflows
 
-### Bulk Insert From File
+### Bulk insert from file
 ```bash
 cosmosdb-shell mydb/users> jq -r '.[]' data.json | while read line; do
   create $line
 done
 ```
 
-### Backup Container
+### Backup container
 ```bash
 cosmosdb-shell mydb/users> query "SELECT * FROM c" > backup_users.json
 ```
 
-### Verify Data Migration
+### Verify data migration
 ```bash
 cosmosdb-shell mydb/users> query "SELECT COUNT(*) FROM c" 
 cosmosdb-shell mydb/products> query "SELECT COUNT(*) FROM c"
 ```
 
-## Next Steps
+## Next steps
 
 - [Complete Command Reference](command-reference.md) - Learn all available commands
 - [MCP Server Setup](model-context-protocol-setup.md) - Enable AI integration
 - [Troubleshooting Guide](troubleshooting.md) - Resolve issues
 - [Security Best Practices](security.md) - Secure your setup
 
-## See Also
+## See also
 
 - [Azure Cosmos DB Shell Overview](overview.md)
 - [Installation Guide](install.md)

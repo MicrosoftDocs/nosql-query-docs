@@ -13,7 +13,7 @@ ms.date: 05/04/2024
 
 Azure Cosmos DB Shell is a powerful, **open-source** command-line interface (CLI) that enables you to interact with your Azure Cosmos DB databases using intuitive bash-like commands. It features optional Model Context Protocol (MCP) server support for AI-powered automation and integrates seamlessly with VS Code through an extension.
 
-## Key Features
+## Key features
 
 - **Bash-like Syntax**: Familiar command structure with commands like `cd`, `ls`, `pwd`, `rm`, `mkdir`
 - **Database Operations**: Create and manage databases and containers
@@ -25,14 +25,14 @@ Azure Cosmos DB Shell is a powerful, **open-source** command-line interface (CLI
 - **VS Code Extension**: Seamless integration with Visual Studio Code
 - **Open Source**: Community-driven development with transparent contributions
 
-## System Requirements
+## System requirements
 
 - **Operating System**: Windows, macOS (Intel and Apple Silicon), Linux (x64 and ARM)
 - **For NuGet Installation**: .NET SDK 10.0 or later
 - **For VS Code Extension**: VS Code 1.85 or later
 - **Authentication**: Microsoft Entra ID, Managed Identity, or Account Keys
 
-## Installation Options
+## Installation options
 
 Choose one of three installation methods:
 
@@ -48,7 +48,7 @@ Choose one of three installation methods:
   - Pre-built binaries for your platform
   - See: [Installation Guide](install.md)
 
-## Quick Start
+## Quick start
 
 ```bash
 # Connect to your Cosmos DB account
@@ -66,7 +66,7 @@ cosmosdb-shell
 
 For more examples, see the [Quick Start Guide](get-started.md).
 
-## Use Cases
+## Use cases
 
 - **Development & Testing**: Quick command-line access during development
 - **Database Administration**: Manage databases, containers, and data
@@ -75,11 +75,11 @@ For more examples, see the [Quick Start Guide](get-started.md).
 - **AI Integration**: Enable AI assistants to work with your data via MCP
 - **Learning**: Educational tool for learning Cosmos DB concepts
 
-## Release Status
+## Release status
 
 Azure Cosmos DB Shell is currently in **private preview**. This is a preview version for testing and feedback purposes only. Your feedback is valuable in helping us improve the tool.
 
-## Available Distributions
+## Available distributions
 
 | Package | Version | Location |
 |---------|---------|----------|
@@ -97,19 +97,19 @@ Azure Cosmos DB Shell is currently in **private preview**. This is a preview ver
 - [Troubleshooting Guide](troubleshooting.md) - Resolve common issues
 - [Security Best Practices](security.md) - Secure your credentials and data
 
-## Support and Feedback
+## Support and feedback
 
 - [Report Issues](https://github.com) - Found a bug?
 - [Submit Feature Requests](https://github.com) - Have a feature idea?
 - [View Security Considerations](security.md) - Review security best practices
 
-## Next Steps
+## Next steps
 
 - [Install Azure Cosmos DB Shell](install.md)
 - [Try the Quick Start Guide](get-started.md)
 - [Review Security Best Practices](security.md)
 
-## See Also
+## See also
 
 - [Azure Cosmos DB Overview](overview.md)
 - [Azure Cosmos DB SDKs](../conceptual-resilient-sdk-applications.md)
