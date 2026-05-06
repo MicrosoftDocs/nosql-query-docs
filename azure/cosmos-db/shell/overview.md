@@ -52,7 +52,7 @@ Choose one of three installation methods:
 
 ```bash
 # Connect to your Cosmos DB account
-cosmosdb-shell
+cosmosdbshell
 
 # Navigate to a database
 > cd database_name

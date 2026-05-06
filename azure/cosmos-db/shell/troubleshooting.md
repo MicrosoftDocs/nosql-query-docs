@@ -19,7 +19,7 @@ Resolve common issues with Azure Cosmos DB Shell installation, authentication, c
 
 **Error:**
 ```
-cosmosdb-shell: command not found
+cosmosdbshell: command not found
 ```
 
 **Causes:**
@@ -61,7 +61,7 @@ cosmosdb-shell: command not found
 
 **Error:**
 ```
-cosmosdb-shell: No such file or directory
+cosmosdbshell: No such file or directory
 ```
 
 **Causes:**
@@ -73,21 +73,21 @@ cosmosdb-shell: No such file or directory
 
 - **Verify Extraction**
   - Check all files were extracted
-  - Look for `cosmosdb-shell` executable (or `.exe` on Windows)
+  - Look for `cosmosdbshell` executable (or `.exe` on Windows)
 
 - **Make Executable (Linux/macOS)**
   ```bash
-  chmod +x ~/cosmosdb-shell/cosmosdb-shell
+  chmod +x ~/cosmosdbshell/cosmosdbshell
   ```
 
 - **Use Full Path**
   ```bash
-  /full/path/to/cosmosdb-shell
+  /full/path/to/cosmosdbshell
   ```
 
 - **Add to PATH**
   ```bash
-  export PATH="$PATH:~/cosmosdb-shell"
+  export PATH="$PATH:~/cosmosdbshell"
   ```
 
 ### Issue: "File corrupted" during download
@@ -202,7 +202,7 @@ Token has expired. Please re-authenticate.
 
 1. **Re-authenticate**
    - Exit shell: `exit`
-   - Restart: `cosmosdb-shell`
+   - Restart: `cosmosdbshell`
    - Sign in again
 
 2. **Check System Time**
@@ -386,7 +386,7 @@ Syntax error in SQL query
 
 **Error:**
 ```
-cosmosdb-shell mydb/users> query "SELECT * FROM c"
+CS > query "SELECT * FROM c"
 (empty result)
 ```
 

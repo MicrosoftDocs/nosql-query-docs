@@ -147,7 +147,7 @@ If you disabled auto-start, manually start the MCP server:
 ### From command line
 
 ```bash
-cosmosdb-shell --mcp --mcp-port 6128
+cosmosdbshell --mcp --mcp-port 6128
 ```
 
 ## Using MCP with AI assistants
@@ -160,7 +160,7 @@ Configure your AI client to connect to the MCP server:
 {
   "mcpServers": {
     "cosmosdb": {
-      "command": "cosmosdb-shell",
+      "command": "cosmosdbshell",
       "args": ["--mcp"],
       "env": {
         "MCP_PORT": "6128"
@@ -293,7 +293,7 @@ The MCP server uses the same authentication as Cosmos DB Shell:
 **Solutions:**
 1. Verify Cosmos DB Shell authentication works:
    ```bash
-   cosmosdb-shell
+   cosmosdbshell
    ```
 
 2. Check Entra ID permissions

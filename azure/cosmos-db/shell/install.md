@@ -83,7 +83,7 @@ Install as a .NET global tool for command-line access.
 
 3. **Verify Installation**
    ```bash
-   cosmosdb-shell --version
+   cosmosdbshell --version
    ```
 
 ### Update to latest version
@@ -118,41 +118,41 @@ Download and extract a self-contained binary for your platform.
 
 1. **Download**
    - Choose your platform:
-     - **Windows (x64)**: `cosmosdb-shell-win-x64.zip`
-     - **Windows (ARM)**: `cosmosdb-shell-win-arm64.zip`
-     - **macOS (Intel)**: `cosmosdb-shell-macos-x64.tar.gz`
-     - **macOS (Apple Silicon)**: `cosmosdb-shell-macos-arm64.tar.gz`
-     - **Linux (x64)**: `cosmosdb-shell-linux-x64.tar.gz`
-     - **Linux (ARM64)**: `cosmosdb-shell-linux-arm64.tar.gz`
+     - **Windows (x64)**: `cosmosdbshell-win-x64.zip`
+     - **Windows (ARM)**: `cosmosdbshell-win-arm64.zip`
+     - **macOS (Intel)**: `cosmosdbshell-macos-x64.tar.gz`
+     - **macOS (Apple Silicon)**: `cosmosdbshell-macos-arm64.tar.gz`
+     - **Linux (x64)**: `cosmosdbshell-linux-x64.tar.gz`
+     - **Linux (ARM64)**: `cosmosdbshell-linux-arm64.tar.gz`
 
 2. **Extract Archive**
    
    **Windows:**
    ```powershell
-   Expand-Archive -Path cosmosdb-shell-win-x64.zip -DestinationPath "C:\Program Files\CosmosDBShell"
+   Expand-Archive -Path cosmosdbshell-win-x64.zip -DestinationPath "C:\Program Files\CosmosDBShell"
    ```
    
    **macOS/Linux:**
    ```bash
-   mkdir -p ~/cosmosdb-shell
-   tar -xzf cosmosdb-shell-macos-x64.tar.gz -C ~/cosmosdb-shell
+   mkdir -p ~/cosmosdbshell
+   tar -xzf cosmosdbshell-macos-x64.tar.gz -C ~/cosmosdbshell
    ```
 
 3. **Add to PATH (Optional)**
    
    **Windows:**
    - Add `C:\Program Files\CosmosDBShell` to your system PATH
-   - Or use the full path: `C:\Program Files\CosmosDBShell\cosmosdb-shell.exe`
+   - Or use the full path: `C:\Program Files\CosmosDBShell\cosmosdbshell.exe`
    
    **macOS/Linux:**
    ```bash
-   export PATH="$HOME/cosmosdb-shell:$PATH"
+   export PATH="$HOME/cosmosdbshell:$PATH"
    # Add to ~/.bashrc or ~/.zshrc for persistence
    ```
 
 4. **Run**
    ```bash
-   cosmosdb-shell
+   cosmosdbshell
    ```
 
 ## Verification
@@ -161,12 +161,12 @@ Download and extract a self-contained binary for your platform.
 
 1. **For NuGet Installation:**
    ```bash
-   cosmosdb-shell --version
+   cosmosdbshell --version
    ```
 
 2. **For Binary Installation:**
    ```bash
-   ./cosmosdb-shell --version
+   ./cosmosdbshell --version
    ```
 
 3. **For VS Code Extension:**
@@ -185,7 +185,7 @@ Download and extract a self-contained binary for your platform.
 ### "File not found" (binary installation)
 
 - Verify the archive extracted successfully
-- Check file permissions: `chmod +x cosmosdb-shell` (macOS/Linux)
+- Check file permissions: `chmod +x cosmosdbshell` (macOS/Linux)
 - Use the full path to the executable
 
 ### VS Code extension not appearing
