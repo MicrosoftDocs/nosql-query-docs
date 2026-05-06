@@ -15,19 +15,6 @@ appliesto:
 
 This guide covers practical optimization strategies for semantic search in Azure Cosmos DB for NoSQL. It focuses on the decisions that most affect cost, latency, and recall: embedding shape and precision, index selection, partitioning, throughput sizing, ingestion patterns, SDK concurrency, and query-time tuning.
 
-## Table of contents
-
-- [Things to consider](#things-to-consider)
-- [Quick reference: Best practices](#quick-reference-best-practices)
-- [Choosing a vector index type: DiskANN vs. Quantized Flat vs. Flat](#choosing-a-vector-index-type)
-- [Partition key strategies for insert and query throughput](#partition-key-strategies-for-insert-and-query-throughput)
-- [Sharded DiskANN and partition key design](#sharded-diskann-and-partition-key-design)
-- [Throughput planning (RU/s)](#throughput-planning-rus)
-- [Tips for optimizing insert throughput](#tips-for-optimizing-insert-throughput)
-- [SDK concurrency tuning](#sdk-concurrency-tuning)
-- [Tuning performance at search time](#tuning-performance-at-search-time)
-- [Monitoring and diagnostics](#monitoring-and-diagnostics)
-
 ## Things to consider
 
 Most teams get the best results by making decisions in this order:
@@ -341,7 +328,7 @@ The following plain-text calculation applies the RU sizing formula to a specific
 | ------------------ | ---------------- |
 | **Manual throughput** | Steady search or ingestion workloads that run all day at consistently high utilization; production workloads where you already know the RU/s envelope and want predictable always-on capacity; low-latency services where waiting for autoscale headroom changes is less desirable than holding fixed capacity. |
 | **Autoscale** | Variable or bursty semantic search traffic, especially when query volume changes by hour or day; bulk vector ingestion followed by quieter search periods; new or growing applications where peak demand is still being discovered, but you still want provisioned throughput guarantees. |
-| **Serverless** | Intermittent and unpredictable traffic with long idle periods, where preprovisioning capacity would sit unused; early-stage projects, proofs of concept, and teams just getting started with Azure Cosmos DB; development, testing, prototyping, or new applications with bursty traffic, a low average-to-peak ratio, or traffic patterns you cannot forecast yet. Note that Serverless is capped at 5,000 RU/s per physical partition, so it may not be suitable for high-throughput vector insert or search workloads. |
+| **Serverless** | Intermittent and unpredictable traffic with long idle periods, where pre-provisioning capacity would sit unused; early-stage projects, proofs of concept, and teams just getting started with Azure Cosmos DB; development, testing, prototyping, or new applications with bursty traffic, a low average-to-peak ratio, or traffic patterns you cannot forecast yet. Note that Serverless is capped at 5,000 RU/s per physical partition, so it may not be suitable for high-throughput vector insert or search workloads. |
 
 The following C# example shows how to provision a container with autoscale throughput using the Azure Cosmos DB .NET SDK. It's useful when you want Cosmos DB to absorb bursty search or ingestion traffic without manually changing RU/s.
 
