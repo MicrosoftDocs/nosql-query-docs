@@ -87,13 +87,13 @@
             - name: Overview
               href: ai-frameworks.md
             - name: Haystack
-              href: agentic-pipelines.md
+              href: build-rag-pipelines.md
             - name: LangChain on Azure
-              href: agentic-integration.md
+              href: build-rag-applications.md
             - name: LangGraph
-              href: persistent-agents.md
+              href: persist-agent-state.md
             - name: LlamaIndex
-              href: agentic-apps.md
+              href: query-knowledge-base.md
             - name: Semantic Kernel
               href: https://learn.microsoft.com/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-mongodb-connector?pivots=programming-language-python
     - name: Connect using Spark connector from Azure Databricks

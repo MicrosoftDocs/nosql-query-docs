@@ -236,6 +236,6 @@ You can browse persisted documents and vector indexes interactively without leav
 
 - [Azure DocumentDB integrations for AI applications](ai-frameworks.md)
 - [Vector search in Azure DocumentDB](vector-search.md)
-- [Use LangGraph with Azure DocumentDB](persistent-agents.md)
+- [Use LangGraph with Azure DocumentDB](persist-agent-state.md)
 - [`langchain-azure-ai` (PyPI)](https://pypi.org/project/langchain-azure-ai/)
 - [LangChain documentation](https://python.langchain.com/)
