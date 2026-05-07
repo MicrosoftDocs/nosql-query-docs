@@ -276,4 +276,4 @@ You can browse the persisted documents, embeddings, and vector indexes without l
 - [Use LangChain on Azure with Azure DocumentDB](build-rag-applications.md)
 - [Use LlamaIndex with Azure DocumentDB](query-knowledge-base.md)
 - [Haystack documentation](https://docs.haystack.deepset.ai/)
-- [Creating custom Haystack components](https://docs.haystack.deepset.ai/docs/creating-custom-components)
+- [Creating custom Haystack components](https://docs.haystack.deepset.ai/docs/custom-components)
