@@ -89,7 +89,7 @@
             - name: LangChain on Azure
               href: langchain-azure.md
             - name: LangGraph
-              href: langgraph.md
+              href: langgraph-documentdb.md
             - name: LlamaIndex
               href: llamaindex.md
             - name: Semantic Kernel
