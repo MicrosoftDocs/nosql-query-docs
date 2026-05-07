@@ -7,6 +7,7 @@ ms.service: azure-cosmos-db
 ms.subservice: nosql
 ms.topic: how-to
 ms.date: 11/03/2025
+ms.update-cycle: 180-days
 ms.custom:
   - references_regions
 ai-usage: ai-generated

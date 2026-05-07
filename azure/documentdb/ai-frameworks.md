@@ -4,6 +4,7 @@ description: Integrate Azure DocumentDB with AI and large language model (LLM) o
 author: khelanmodi
 ms.topic: how-to
 ms.date: 08/06/2025
+ms.update-cycle: 180-days
 ms.author: khelanmodi
 ms.collection:
   - ce-skilling-ai-copilot

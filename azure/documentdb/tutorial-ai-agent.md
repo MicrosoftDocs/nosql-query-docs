@@ -5,6 +5,7 @@ author: seesharprun
 ms.author: sidandrews
 ms.topic: tutorial
 ms.date: 10/20/2025
+ms.update-cycle: 180-days
 ms.custom:
   - devx-track-js
   - devx-track-python
