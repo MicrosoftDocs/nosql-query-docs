@@ -30,7 +30,12 @@ In short, LangGraph is the runtime layer that adds memory, branching, retries, a
 Azure DocumentDB is a natural persistence layer for LangGraph for these reasons:
 
 - **Document model fits agent state.** LangGraph state is a free-form object (messages, tool outputs, scratchpad fields) that varies between threads and over time. A document database stores that shape directly without a fixed schema.
-- **MongoDB-compatible drivers.** Azure DocumentDB exposes the MongoDB wire protocol, so the official [`langgraph-checkpoint-mongodb`](https://pypi.org/project/langgraph-checkpoint-mongodb/) (Python) and [`@langchain/langgraph-checkpoint-mongodb`](https://www.npmjs.com/package/@langchain/langgraph-checkpoint-mongodb) (TypeScript) packages talk to it directly. MongoDB drivers and tools work without application-level rewrites, simplifying migration in common scenarios.
+- **MongoDB-compatible drivers and integrations.** Azure DocumentDB exposes the MongoDB wire protocol, so the official MongoDB LangGraph integrations work against your cluster directly:
+  - **Short-term memory (checkpointer):** [`langgraph-checkpoint-mongodb`](https://pypi.org/project/langgraph-checkpoint-mongodb/) (Python) and [`@langchain/langgraph-checkpoint-mongodb`](https://www.npmjs.com/package/@langchain/langgraph-checkpoint-mongodb) (TypeScript) persist agent state to enable human-in-the-loop, time travel, and fault tolerance.
+  - **Long-term memory (store):** [`langgraph-store-mongodb`](https://pypi.org/project/langgraph-store-mongodb/) lets agents save and retrieve memories across threads.
+  - **Retrieval tools:** [MongoDB LangChain retrievers](https://www.mongodb.com/docs/atlas/atlas-vector-search/ai-integrations/langchain/) (full-text, vector, hybrid, parent-document) plug into LangGraph nodes as tools.
+
+  MongoDB drivers and tools work without application-level rewrites, simplifying migration in common scenarios.
 - **One store for state and retrieval.** Native vector indexing lives alongside document data, enabling RAG and similarity search without introducing a separate vector store. Agent checkpoints, tool call traces, and the knowledge base retrieved by your tools all live in the same cluster.
 - **Portable across environments.** The same MongoDB-compatible interface works on the open-source DocumentDB engine and on the Azure-managed service, which simplifies development against local containers and promotion to production.
 
@@ -59,7 +64,7 @@ npm install @langchain/openai  # any LangChain-supported model provider
 
 ## Connect LangGraph to Azure DocumentDB
 
-The following sample connects to your cluster, configures the official MongoDB checkpointer (`MongoDBSaver`) against a dedicated database, and compiles a minimal `StateGraph` that appends each user message to a running list. The compiled graph uses the checkpointer for persistence on every step.
+Use the official [MongoDB LangGraph checkpointer](https://pypi.org/project/langgraph-checkpoint-mongodb/) (`MongoDBSaver`) to persist short-term memory — the agent's state, message history, and intermediate tool calls — directly to a DocumentDB collection. The following sample connects to your cluster, configures `MongoDBSaver` against a dedicated database, and compiles a minimal `StateGraph` that appends each user message to a running list. The compiled graph uses the checkpointer for persistence on every step.
 
 ### [Python](#tab/python)
 
@@ -257,5 +262,8 @@ A persisted checkpoint document looks like the following. The exact field set de
 - [Azure DocumentDB integrations for AI applications](ai-frameworks.md)
 - [Vector search in Azure DocumentDB](vector-search.md)
 - [LangGraph documentation](https://langchain-ai.github.io/langgraph/)
+- [MongoDB LangGraph checkpointer (short-term memory)](https://www.mongodb.com/docs/languages/python/langchain-driver/current/get-started/checkpointer/)
+- [MongoDB LangGraph store (long-term memory)](https://www.mongodb.com/docs/languages/python/langchain-driver/current/get-started/store/)
+- [MongoDB LangChain retrievers](https://www.mongodb.com/docs/atlas/atlas-vector-search/ai-integrations/langchain/)
 - [`langgraph-checkpoint-mongodb` (PyPI)](https://pypi.org/project/langgraph-checkpoint-mongodb/)
 - [`@langchain/langgraph-checkpoint-mongodb` (npm)](https://www.npmjs.com/package/@langchain/langgraph-checkpoint-mongodb)
