@@ -5,6 +5,7 @@ author: iriaosara
 ms.author: iriaosara
 ms.service: azure-cosmos-db
 ms.subservice: nosql
+ms.collection: ce-skilling-ai-copilot
 ms.topic: how-to
 ms.date: 11/03/2025
 ms.custom:

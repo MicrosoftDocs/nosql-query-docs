@@ -5,6 +5,7 @@ author: jilmal
 ms.author: jmaldonado
 ms.service: azure-cosmos-db
 ms.subservice: nosql
+ms.collection: ce-skilling-ai-copilot
 ms.topic: how-to
 ms.date: 12/05/2025
 ms.custom: build-2023
