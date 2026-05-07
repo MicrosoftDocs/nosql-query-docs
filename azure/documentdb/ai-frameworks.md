@@ -21,9 +21,6 @@ The following integrations have a how-to in this section:
 | **[LangChain on Azure](https://github.com/langchain-ai/langchain-azure)** | Full **RAG applications** that use the `langchain-azure-ai` vector store, DiskANN/HNSW/IVF indexes, and chains. | [Build RAG applications](build-rag-applications.md) |
 | **[LangGraph](https://langchain-ai.github.io/langgraph/)** | **Stateful agents** with checkpoint persistence so threads survive across turns and process restarts. | [Persist agent state](persist-agent-state.md) |
 | **[LlamaIndex](https://www.llamaindex.ai/)** | **Knowledge bases** built from your private documents, queryable through `VectorStoreIndex` and `QueryEngine`s. | [Query a knowledge base](query-knowledge-base.md) |
-
-| Framework | What you build with it | Reference |
-| --- | --- | --- |
 | **[Semantic Kernel](https://github.com/microsoft/semantic-kernel)** | Vector store connector for Semantic Kernel agents and skills (Python and .NET). | [Azure Cosmos DB Mongo connector](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-mongodb-connector?pivots=programming-language-python) |
 | **[CosmosAIGraph](https://aka.ms/cosmosaigraph)** | OmniRAG reference implementation that combines DiskANN vector / hybrid search with an Apache Jena knowledge graph. | [CosmosAIGraph quickstart](https://github.com/AzureCosmosDB/CosmosAIGraph/tree/main/impl) |
 
