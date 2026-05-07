@@ -4,10 +4,10 @@ description: Enhance AI-based applications using retrieval-augmented generation 
 author: khelanmodi
 ms.author: khelanmodi
 ms.topic: how-to
-ms.collection: ce-skilling-ai-copilot
 ms.date: 09/15/2025
 ms.update-cycle: 180-days
 ms.collection:
+  - ce-skilling-ai-copilot
 - ce-skilling-ai-copilot
 ms.custom:
   - sfi-ropc-blocked

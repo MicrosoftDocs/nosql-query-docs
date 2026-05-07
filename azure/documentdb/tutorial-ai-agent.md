@@ -4,7 +4,8 @@ description: Learn how to create an autonomous AI agent that processes traveler 
 author: seesharprun
 ms.author: sidandrews
 ms.topic: tutorial
-ms.collection: ce-skilling-ai-copilot
+ms.collection:
+  - ce-skilling-ai-copilot
 ms.date: 10/20/2025
 ms.custom:
   - devx-track-js
