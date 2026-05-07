@@ -257,6 +257,18 @@ A persisted checkpoint document looks like the following. The exact field set de
 }
 ```
 
+## View and manage data in Visual Studio Code
+
+You can browse persisted LangGraph state, tool call traces, and any retrieval data interactively without leaving your editor.
+
+1. Install the [Azure DocumentDB extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-documentdb) for Visual Studio Code.
+1. Connect to your Azure DocumentDB cluster from the **DocumentDB Connections** view by using the same connection string you set as `DOCUMENTDB_URI`.
+1. Expand your database to view collections — for example, the `checkpoints` and `checkpoint_writes` collections written by `MongoDBSaver`, or any retrieval collections your agent's tools query.
+
+   :::image type="content" source="media/langgraph/vscode-extension.png" alt-text="Screenshot of the Azure DocumentDB extension for Visual Studio Code showing a connected cluster with a database and collection of documents in the table view." lightbox="media/langgraph/vscode-extension.png":::
+
+You can run ad hoc find queries, edit documents, manage indexes, and import or export data from the same window — useful for inspecting agent state during development or replaying a thread from a known checkpoint.
+
 ## Related content
 
 - [Azure DocumentDB integrations for AI applications](ai-frameworks.md)
