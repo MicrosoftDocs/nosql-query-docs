@@ -83,7 +83,11 @@
     - name: Integrate with AI Tools
       items:
         - name: AI Frameworks
-          href: ai-frameworks.md
+          items:
+            - name: Overview
+              href: ai-frameworks.md
+            - name: LangGraph
+              href: langgraph.md
     - name: Connect using Spark connector from Azure Databricks
       href: how-to-connect-from-databricks.md
 - name: Architect secure solutions
