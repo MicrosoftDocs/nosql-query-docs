@@ -8,6 +8,7 @@ ms.service: azure-cosmos-db
 ms.collection:
   - ce-skilling-ai-copilot
 ms.topic: how-to
+ms.update-cycle: 180-days
 ms.date: 05/04/2024
 ---
 

@@ -7,6 +7,7 @@ ms.topic: tutorial
 ms.collection:
   - ce-skilling-ai-copilot
 ms.date: 10/20/2025
+ms.update-cycle: 180-days
 ms.custom:
   - devx-track-js
   - devx-track-python
