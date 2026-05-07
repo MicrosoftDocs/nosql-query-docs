@@ -22,8 +22,6 @@ The following integrations have a how-to in this section:
 | **[LangGraph](https://langchain-ai.github.io/langgraph/)** | **Stateful agents** with checkpoint persistence so threads survive across turns and process restarts. | [Persist agent state](persist-agent-state.md) |
 | **[LlamaIndex](https://www.llamaindex.ai/)** | **Knowledge bases** built from your private documents, queryable through `VectorStoreIndex` and `QueryEngine`s. | [Query a knowledge base](query-knowledge-base.md) |
 
-The following integrations are documented externally but supported against Azure DocumentDB:
-
 | Framework | What you build with it | Reference |
 | --- | --- | --- |
 | **[Semantic Kernel](https://github.com/microsoft/semantic-kernel)** | Vector store connector for Semantic Kernel agents and skills (Python and .NET). | [Azure Cosmos DB Mongo connector](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-mongodb-connector?pivots=programming-language-python) |
