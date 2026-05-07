@@ -1,5 +1,5 @@
 ---
-title: "Use LangChain on Azure with Azure DocumentDB | AI Frameworks"
+title: "Use LangChain on Azure with Azure DocumentDB"
 description: Build retrieval-augmented LangChain apps on Azure DocumentDB by using the langchain-azure-ai vector store, DiskANN/HNSW/IVF indexes, and MMR search.
 author: khelanmodi
 ms.topic: how-to

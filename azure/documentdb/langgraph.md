@@ -271,8 +271,5 @@ You can run ad hoc find queries, edit documents, manage indexes, and import or e
 - [Azure DocumentDB integrations for AI applications](ai-frameworks.md)
 - [Vector search in Azure DocumentDB](vector-search.md)
 - [LangGraph documentation](https://langchain-ai.github.io/langgraph/)
-- [MongoDB LangGraph checkpointer (short-term memory)](https://www.mongodb.com/docs/languages/python/langchain-driver/current/get-started/checkpointer/)
-- [MongoDB LangGraph store (long-term memory)](https://www.mongodb.com/docs/languages/python/langchain-driver/current/get-started/store/)
-- [MongoDB LangChain retrievers](https://www.mongodb.com/docs/atlas/atlas-vector-search/ai-integrations/langchain/)
 - [`langgraph-checkpoint-mongodb` (PyPI)](https://pypi.org/project/langgraph-checkpoint-mongodb/)
 - [`@langchain/langgraph-checkpoint-mongodb` (npm)](https://www.npmjs.com/package/@langchain/langgraph-checkpoint-mongodb)
