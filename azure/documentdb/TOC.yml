@@ -88,6 +88,8 @@
               href: ai-frameworks.md
             - name: LangGraph
               href: langgraph.md
+            - name: Semantic Kernel
+              href: https://learn.microsoft.com/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-mongodb-connector?pivots=programming-language-python
     - name: Connect using Spark connector from Azure Databricks
       href: how-to-connect-from-databricks.md
 - name: Architect secure solutions
