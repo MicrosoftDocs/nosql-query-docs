@@ -239,7 +239,7 @@ You can browse the persisted chunks, embeddings, and vector index without leavin
 
 - [Azure DocumentDB integrations for AI applications](ai-frameworks.md)
 - [Vector search in Azure DocumentDB](vector-search.md)
-- [Use LangGraph with Azure DocumentDB](langgraph-documentdb.md)
-- [Use LangChain on Azure with Azure DocumentDB](langchain-azure.md)
+- [Use LangGraph with Azure DocumentDB](persistent-agents.md)
+- [Use LangChain on Azure with Azure DocumentDB](agentic-integration.md)
 - [LlamaIndex documentation](https://docs.llamaindex.ai)
 - [`llama-index-vector-stores-azurecosmosmongo` (PyPI)](https://pypi.org/project/llama-index-vector-stores-azurecosmosmongo/)

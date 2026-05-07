@@ -272,8 +272,8 @@ You can browse the persisted documents, embeddings, and vector indexes without l
 
 - [Azure DocumentDB integrations for AI applications](ai-frameworks.md)
 - [Vector search in Azure DocumentDB](vector-search.md)
-- [Use LangGraph with Azure DocumentDB](langgraph-documentdb.md)
-- [Use LangChain on Azure with Azure DocumentDB](langchain-azure.md)
-- [Use LlamaIndex with Azure DocumentDB](llamaindex.md)
+- [Use LangGraph with Azure DocumentDB](persistent-agents.md)
+- [Use LangChain on Azure with Azure DocumentDB](agentic-integration.md)
+- [Use LlamaIndex with Azure DocumentDB](agentic-apps.md)
 - [Haystack documentation](https://docs.haystack.deepset.ai/)
 - [Creating custom Haystack components](https://docs.haystack.deepset.ai/docs/creating-custom-components)
