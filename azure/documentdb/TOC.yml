@@ -95,7 +95,7 @@
             - name: LlamaIndex
               href: query-knowledge-base.md
             - name: Semantic Kernel
-              href: https://learn.microsoft.com/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-mongodb-connector?pivots=programming-language-python
+              href: /semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-mongodb-connector
     - name: Connect using Spark connector from Azure Databricks
       href: how-to-connect-from-databricks.md
 - name: Architect secure solutions
