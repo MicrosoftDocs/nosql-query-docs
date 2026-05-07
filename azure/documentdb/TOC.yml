@@ -86,6 +86,8 @@
           items:
             - name: Overview
               href: ai-frameworks.md
+            - name: Haystack
+              href: haystack-documentdb.md
             - name: LangChain on Azure
               href: langchain-azure.md
             - name: LangGraph
