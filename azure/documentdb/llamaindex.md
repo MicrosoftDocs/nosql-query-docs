@@ -1,5 +1,5 @@
 ---
-title: "Use LlamaIndex with Azure DocumentDB | AI Frameworks"
+title: "Use LlamaIndex with Azure DocumentDB"
 description: Build retrieval-augmented LlamaIndex apps on Azure DocumentDB. Embed documents, create a DiskANN vector index, and run semantic search and RAG queries.
 author: khelanmodi
 ms.topic: how-to

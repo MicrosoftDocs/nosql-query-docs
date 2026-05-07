@@ -1,5 +1,5 @@
 ---
-title: "Use LangGraph with Azure DocumentDB | AI Frameworks"
+title: "Use LangGraph with Azure DocumentDB"
 description: Build stateful agents on Azure DocumentDB with LangGraph. Persist agent checkpoints, run multi-turn workflows, and query state from Python or TypeScript.
 author: khelanmodi
 ms.topic: how-to
