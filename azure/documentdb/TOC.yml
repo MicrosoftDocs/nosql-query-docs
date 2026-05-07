@@ -86,6 +86,8 @@
           items:
             - name: Overview
               href: ai-frameworks.md
+            - name: CosmosAIGraph (OmniRAG)
+              href: https://aka.ms/cosmosaigraph
             - name: Haystack
               href: build-rag-pipelines.md
             - name: LangChain on Azure
