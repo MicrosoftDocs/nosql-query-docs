@@ -7,6 +7,7 @@ ms.service: azure-cosmos-db
 ms.subservice: nosql
 ms.topic: concept-article
 ms.date: 03/23/2026
+ms.update-cycle: 180-days
 appliesto:
   - ✅ NoSQL
 ---

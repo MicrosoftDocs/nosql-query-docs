@@ -6,6 +6,7 @@ ms.author: mjbrown
 ms.service: azure-cosmos-db
 ms.topic: overview
 ms.date: 02/02/2026
+ms.update-cycle: 180-days
 ai-usage: ai-assisted
 adobe-target: true
 ms.collection:
