@@ -41,7 +41,7 @@ Azure DocumentDB is a natural persistence layer for LangGraph for these reasons:
 
 ## Get started: install dependencies
 
-Install LangGraph, a model provider, and a MongoDB-compatible driver. The connection string format is identical across both languages — copy the **Connection string** value from the Azure portal for your DocumentDB cluster, append `retrywrites=false`, and store it as `DOCUMENTDB_URI`.
+Install LangGraph, a model provider, and a MongoDB-compatible driver. The connection string format is identical across both languages — copy the **Connection string** value from the Azure portal for your DocumentDB cluster and store it as `DOCUMENTDB_URI`.
 
 ### [Python](#tab/python)
 
@@ -58,9 +58,6 @@ npm install @langchain/openai  # any LangChain-supported model provider
 ```
 
 ---
-
-> [!NOTE]
-> The Azure DocumentDB connection string requires `retrywrites=false`. The full URI shape is `mongodb+srv://<user>:<password>@<cluster>.documents.azure.com/?tls=true&retrywrites=false`. Use the same value in both languages.
 
 ## Connect LangGraph to Azure DocumentDB
 
@@ -84,7 +81,7 @@ class AgentState(TypedDict):
     messages: Annotated[list[AnyMessage], add_messages]
 
 
-client = MongoClient(os.environ["DOCUMENTDB_URI"], retryWrites=False)
+client = MongoClient(os.environ["DOCUMENTDB_URI"])
 checkpointer = MongoDBSaver(client, db_name="langgraph_state")
 
 llm = ChatOpenAI(model="gpt-4o-mini")
@@ -119,7 +116,7 @@ const AgentState = Annotation.Root({
   }),
 });
 
-const client = new MongoClient(process.env.DOCUMENTDB_URI!, { retryWrites: false });
+const client = new MongoClient(process.env.DOCUMENTDB_URI!);
 await client.connect();
 
 const checkpointer = new MongoDBSaver({ client, dbName: "langgraph_state" });
@@ -202,7 +199,7 @@ The MongoDB checkpointer writes one document per step into a `checkpoints` colle
 ```python
 from pymongo import MongoClient
 
-client = MongoClient(os.environ["DOCUMENTDB_URI"], retryWrites=False)
+client = MongoClient(os.environ["DOCUMENTDB_URI"])
 checkpoints = client["langgraph_state"]["checkpoints"]
 
 for doc in checkpoints.find(
@@ -218,7 +215,7 @@ for doc in checkpoints.find(
 ```typescript
 import { MongoClient } from "mongodb";
 
-const client = new MongoClient(process.env.DOCUMENTDB_URI!, { retryWrites: false });
+const client = new MongoClient(process.env.DOCUMENTDB_URI!);
 await client.connect();
 
 const checkpoints = client.db("langgraph_state").collection("checkpoints");
