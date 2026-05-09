@@ -15,7 +15,7 @@ appliesto:
 
 Azure Cosmos DB for NoSQL integrates with the most widely used AI and LLM orchestration frameworks, providing a single persistence layer for vector search, chat history, semantic caching, agent state, and long-term memory. This article summarizes the available integrations and points to the official connector for each language.
 
-All Azure Cosmos DB connectors below support both account-key and Microsoft Entra ID (Managed Identity) authentication unless otherwise noted.
+All Azure Cosmos DB connectors support both account-key and Microsoft Entra ID (Managed Identity) authentication unless otherwise noted.
 
 ## Integration support at a glance
 
@@ -34,15 +34,15 @@ All Azure Cosmos DB connectors below support both account-key and Microsoft Entr
 
 ### Python
 
-The `CosmosNoSqlStore` and `CosmosNoSqlCollection` classes provide vector store access. See the [Semantic Kernel Python connector documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-nosql-connector?pivots=programming-language-python).
+The `CosmosNoSqlStore` and `CosmosNoSqlCollection` classes provide vector store access. See the [Semantic Kernel Python connector documentation](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-nosql-connector?pivots=programming-language-python).
 
 ### .NET / C#
 
-The [`Microsoft.SemanticKernel.Connectors.CosmosNoSql`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSql) NuGet package provides a vector store connector implementing `Microsoft.Extensions.VectorData`. See the [.NET connector documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-nosql-connector?pivots=programming-language-csharp). *Currently in preview.*
+The [`Microsoft.SemanticKernel.Connectors.CosmosNoSql`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSql) NuGet package provides a vector store connector implementing `Microsoft.Extensions.VectorData`. See the [.NET connector documentation](/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-cosmosdb-nosql-connector?pivots=programming-language-csharp). *Currently in preview.*
 
 ### Java
 
-A native Azure Cosmos DB for NoSQL vector store connector is not currently available in Semantic Kernel for Java. Java users can integrate via [LangChain4j](#langchain) or [Spring AI](#spring-ai).
+A native Azure Cosmos DB for NoSQL vector store connector isn't currently available in Semantic Kernel for Java. Java users can integrate via [LangChain4j](#langchain) or [Spring AI](#spring-ai).
 
 ## LangChain
 
@@ -122,9 +122,9 @@ LlamaIndex provides four Azure Cosmos DB for NoSQL integrations across its stora
 | Chat store | [`AzureCosmosNoSqlChatStore`](https://developers.llamaindex.ai/python/framework-api-reference/storage/chat_store/azurecosmosnosql/) | `llama-index-storage-chat-store-azurecosmosnosql` |
 | Key-value store | [`AzureCosmosNoSqlKVStore`](https://developers.llamaindex.ai/python/framework-api-reference/storage/kvstore/) | `llama-index-storage-kvstore-azurecosmosnosql` |
 
-The chat store, document store, index store, and KV store all support authentication via connection string, account endpoint + key, or AAD token (`DefaultAzureCredential`). See the [LlamaIndex vector store example](https://developers.llamaindex.ai/python/examples/vector_stores/azurecosmosdbnosqldemo/) for an end-to-end RAG walkthrough.
+The chat store, document store, index store, and KV store all support authentication via connection string, account endpoint + key, or EntraID (`DefaultAzureCredential`). See the [LlamaIndex vector store example](https://developers.llamaindex.ai/python/examples/vector_stores/azurecosmosdbnosqldemo/) for an end-to-end RAG walkthrough.
 
-A native Azure Cosmos DB for NoSQL integration is not currently available in LlamaIndex.TS, LlamaIndex.NET, or LlamaIndex Java.
+A native Azure Cosmos DB for NoSQL integration isn't currently available in LlamaIndex.TS, LlamaIndex.NET, or LlamaIndex Java.
 
 ## Spring AI
 
