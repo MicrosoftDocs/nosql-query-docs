@@ -6,6 +6,7 @@ ms.author: mjbrown
 ms.service: azure-cosmos-db
 ms.topic: overview
 ms.date: 02/02/2026
+ms.update-cycle: 180-days
 ai-usage: ai-assisted
 adobe-target: true
 ms.collection:
@@ -52,7 +53,7 @@ As a fully managed service, Azure Cosmos DB takes database administration off yo
 The following free options are available:
 
 * [Azure Cosmos DB lifetime free tier](free-tier.md) provides 1000 [RU/s](request-units.md) of throughput and 25 GB of storage free.
-* [Azure free account](https://azure.microsoft.com/pricing/purchase-options/azure-account) gives you $200 in Azure credits for the first 30 days and 400 RU/s of provisioned throughput with 25-GB storage for 12 months.
+* [Azure free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) gives you $200 in Azure credits for the first 30 days and 400 RU/s of provisioned throughput with 25-GB storage for 12 months.
 * [Azure Cosmos DB emulator](emulator.md) provides a local environment that emulates the Azure Cosmos DB service for development and testing at no cost.
 
 When you decide that Azure Cosmos DB is right for you, you can receive up to 63% discount on [Azure Cosmos DB prices through Reserved Capacity](reserved-capacity.md).
