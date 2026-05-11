@@ -74,7 +74,7 @@ Update-AzCosmosDBAccount -ResourceGroupName $resourceGroupName `
 The service sets the default consistency level, but clients can override it. The consistency level can be set on a per-request basis, which overrides the default consistency level set at the account level.
 
 > [!TIP]
-> When using the traditional `ConsistencyLevel` override, consistency can only be **relaxed** at the SDK instance or request level. To move from weaker to stronger consistency using this approach, update the default consistency for the Azure Cosmos DB account. However, the newer [ReadConsistencyStrategy](#use-read-consistency-strategy) feature (Java SDK v4.69+, .NET SDK v3.46+) allows you to set any supported read-consistency strategy per-read — including stronger than the account default — without changing the account configuration.
+> When using the traditional `ConsistencyLevel` override, consistency can only be **relaxed** at the SDK instance or request level. To move from weaker to stronger consistency using this approach, update the default consistency for the Azure Cosmos DB account. However, the newer [ReadConsistencyStrategy](#use-read-consistency-strategy) feature (Java SDK v4.69+, .NET SDK v3.46+) allows you to set any supported read-consistency strategy per-read, including stronger than the account default, without changing the account configuration.
 
 > [!TIP]
 > Overriding the default consistency level only applies to reads within the SDK client. An account configured for strong consistency by default still writes and replicates data synchronously to every region in the account. When the SDK client instance or request overrides this level with Session or weaker consistency, reads are performed using a single replica. For more information, see [Consistency levels and throughput](consistency-levels.md#consistency-levels-and-throughput).
@@ -192,7 +192,7 @@ container.ReadItem(context.Background(), azcosmos.NewPartitionKeyString("Quentin
 
 ## <a id="use-read-consistency-strategy"></a>Use Read Consistency Strategy
 
-The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK v3.46+) provides a more flexible way to control read consistency. Unlike the traditional `ConsistencyLevel` override which can only relax consistency, `ReadConsistencyStrategy` allows you to set any supported read-consistency strategy per-read — including stronger than the account default — without changing your account configuration.
+The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK v3.46+) provides a more flexible way to control read consistency. Unlike the traditional `ConsistencyLevel` override which can only relax consistency, `ReadConsistencyStrategy` allows you to set any supported read-consistency strategy per-read, including stronger than the account default, without changing your account configuration.
 
 > [!IMPORTANT]
 > `ReadConsistencyStrategy` is currently in **preview** and is not subject to Azure Cosmos DB consistency SLAs. It is supported in **direct mode only** and is not available when using gateway mode.
@@ -204,11 +204,11 @@ The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK
 | **DEFAULT** | Uses the account or client-level consistency setting | No override needed |
 | **SESSION** | Read-your-writes and monotonic reads within a session | Per-user consistency in web apps |
 | **EVENTUAL** | Maximum availability, minimum latency | During outages when availability > consistency |
-| **LATEST_COMMITTED** | Performs quorum reads with barrier requests against the local region's replicas. The SDK reads from a read quorum of secondary replicas and uses barrier requests to ensure they have converged to the latest quorum-acknowledged (committed) LSN within that region. This gives you the freshest data that has been committed locally — without requiring cross-region round trips. On the write path, replication across regions remains asynchronous (no RPO boundary), which provides better write availability | **Recommended during outages** — strong local reads without cross-region dependencies |
+| **LATEST_COMMITTED** | Performs quorum reads with barrier requests against the local region's replicas. The SDK reads from a read quorum of secondary replicas and uses barrier requests to ensure they have converged to the latest quorum-acknowledged (committed) LSN within that region. This gives you the freshest data that has been committed locally, without requiring cross-region round trips. On the write path, replication across regions remains asynchronous (no RPO boundary), which provides better write availability | **Recommended during outages** - strong local reads without cross-region dependencies |
 | **GLOBAL_STRONG** | Linearizable reads across all regions (synchronous) | Financial transactions, inventory systems |
 
 > [!TIP]
-> `LATEST_COMMITTED` is often a better choice than bounded staleness when consistent reads are required but an RPO guarantee is not. It performs quorum reads against secondary replicas within the local region, ensuring they have converged to the latest committed version — without requiring cross-region round trips. The trade-off: cross-region replication remains asynchronous (no RPO boundary on writes), but you get better write availability because writes don't block waiting for remote region acknowledgment.
+> `LATEST_COMMITTED` is often a better choice than bounded staleness when consistent reads are required but an RPO guarantee is not. It performs quorum reads against secondary replicas within the local region, ensuring they have converged to the latest committed version, without requiring cross-region round trips. The trade-off: cross-region replication remains asynchronous (no RPO boundary on writes), but you get better write availability because writes don't block waiting for remote region acknowledgment.
 
 ### <a id="read-consistency-strategy-java"></a>Java SDK
 
