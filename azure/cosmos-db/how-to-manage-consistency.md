@@ -195,7 +195,7 @@ container.ReadItem(context.Background(), azcosmos.NewPartitionKeyString("Quentin
 The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK v3.46+) provides a more flexible way to control read consistency. Unlike the traditional `ConsistencyLevel` override which can only relax consistency, `ReadConsistencyStrategy` allows you to set any supported read-consistency strategy per-read, including stronger than the account default, without changing your account configuration.
 
 > [!IMPORTANT]
-> `ReadConsistencyStrategy` is currently in **preview**. It is supported in **direct mode only** and is not available when using gateway mode.
+> `ReadConsistencyStrategy` is currently in **preview**. It's supported in **direct mode only** and isn't available when using gateway mode.
 
 ### Available strategies
 
@@ -208,7 +208,7 @@ The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK
 | **GLOBAL_STRONG** | Linearizable reads across all regions (synchronous) | Financial transactions, inventory systems |
 
 > [!TIP]
-> `LATEST_COMMITTED` is often a better choice than bounded staleness when consistent reads are required but an RPO guarantee is not. It performs quorum reads against secondary replicas within the local region, ensuring they have converged to the latest committed version. The trade-off: unlike bounded staleness, which guarantees reads lag behind writes by at most *K* versions or *T* time interval, `LATEST_COMMITTED` provides no such staleness bound across regions.
+> `LATEST_COMMITTED` is often a better choice than bounded staleness when consistent reads are required but an RPO guarantee isn't. It performs quorum reads against secondary replicas within the local region, ensuring they have converged to the latest committed version. The trade-off: unlike bounded staleness, which guarantees reads lag behind writes by at most *K* versions or *T* time interval, `LATEST_COMMITTED` provides no such staleness bound across regions.
 
 ### <a id="read-consistency-strategy-java"></a>Java SDK
 
