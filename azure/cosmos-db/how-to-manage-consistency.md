@@ -192,10 +192,10 @@ container.ReadItem(context.Background(), azcosmos.NewPartitionKeyString("Quentin
 
 ## <a id="use-read-consistency-strategy"></a>Use Read Consistency Strategy
 
-The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK v3.46+) provides a more flexible way to control read consistency. Unlike the traditional `ConsistencyLevel` override which can only relax consistency, `ReadConsistencyStrategy` allows you to set **any** consistency level per-read — including strengthening consistency beyond the account default — without changing your account configuration.
+The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK v3.46+) provides a more flexible way to control read consistency. Unlike the traditional `ConsistencyLevel` override which can only relax consistency, `ReadConsistencyStrategy` allows you to set any supported read-consistency strategy per-read — including stronger than the account default — without changing your account configuration.
 
 > [!IMPORTANT]
-> `ReadConsistencyStrategy` is currently in **beta/preview** and is not subject to Azure Cosmos DB consistency SLAs. It is supported in **direct mode only** and is not available when using gateway mode.
+> `ReadConsistencyStrategy` is currently in **preview** and is not subject to Azure Cosmos DB consistency SLAs. It is supported in **direct mode only** and is not available when using gateway mode.
 
 ### Available strategies
 
@@ -208,7 +208,7 @@ The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK
 | **GLOBAL_STRONG** | Linearizable reads across all regions (synchronous) | Financial transactions, inventory systems |
 
 > [!TIP]
-> `LATEST_COMMITTED` is often a better choice than bounded staleness when consistent reads are required but an RPO guarantee is not. Under the hood, the SDK maps `LATEST_COMMITTED` to `ReadMode.BoundedStaleness`, which routes reads through the quorum reader. This performs a quorum read (R=2 when write quorum W=3) against secondary replicas within the local region and ensures they have converged to the quorum-acknowledged LSN. The primary replica is excluded as a barrier for async replication to maintain monotonic read guarantees. The result is that reads return the latest committed version from that region (as stated in the SDK documentation: "the read region might have stale data, but this read strategy will return the latest committed version of that region"). The trade-off: cross-region replication remains asynchronous (no RPO boundary on writes), but in return you get better write availability because writes don't block waiting for remote region acknowledgment.
+> `LATEST_COMMITTED` is often a better choice than bounded staleness when consistent reads are required but an RPO guarantee is not. It performs quorum reads against secondary replicas within the local region, ensuring they have converged to the latest committed version — without requiring cross-region round trips. The trade-off: cross-region replication remains asynchronous (no RPO boundary on writes), but you get better write availability because writes don't block waiting for remote region acknowledgment.
 
 ### <a id="read-consistency-strategy-java"></a>Java SDK
 
@@ -235,7 +235,11 @@ container.readItem(id, partitionKey, options, MyItem.class);
 ```java
 CosmosQueryRequestOptions queryOptions = new CosmosQueryRequestOptions();
 queryOptions.setReadConsistencyStrategy(ReadConsistencyStrategy.LATEST_COMMITTED);
-container.queryItems("SELECT * FROM c WHERE c.category = @cat", queryOptions, MyItem.class);
+
+SqlQuerySpec querySpec = new SqlQuerySpec(
+    "SELECT * FROM c WHERE c.category = @cat",
+    new SqlParameter("@cat", "electronics"));
+container.queryItems(querySpec, queryOptions, MyItem.class);
 ```
 
 ### <a id="read-consistency-strategy-dotnet"></a>.NET SDK
@@ -277,7 +281,7 @@ var iterator = container.GetItemQueryIterator<MyItem>("SELECT * FROM c", request
 | Set at client level | ✅ | ✅ |
 | Set per-request | ✅ | ✅ |
 | Dynamic runtime switching | Limited | ✅ Designed for this |
-| Available strategies | Session, Consistent Prefix, Eventual | Default, Session, Eventual, Latest Committed, Global Strong |
+| Available strategies | Strong, Bounded Staleness, Session, Consistent Prefix, Eventual (can only relax from account default) | Default, Session, Eventual, Latest Committed, Global Strong |
 
 > [!NOTE]
 > When both `ConsistencyLevel` and `ReadConsistencyStrategy` are set on the same request, `ReadConsistencyStrategy` takes precedence.
