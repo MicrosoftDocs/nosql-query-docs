@@ -195,7 +195,7 @@ container.ReadItem(context.Background(), azcosmos.NewPartitionKeyString("Quentin
 The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK v3.46+) provides a more flexible way to control read consistency. Unlike the traditional `ConsistencyLevel` override which can only relax consistency, `ReadConsistencyStrategy` allows you to set any supported read-consistency strategy per-read, including stronger than the account default, without changing your account configuration.
 
 > [!IMPORTANT]
-> `ReadConsistencyStrategy` is currently in **preview** and is not subject to Azure Cosmos DB consistency SLAs. It is supported in **direct mode only** and is not available when using gateway mode.
+> `ReadConsistencyStrategy` is currently in **preview**. It is supported in **direct mode only** and is not available when using gateway mode.
 
 ### Available strategies
 
