@@ -204,7 +204,7 @@ The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK
 | **DEFAULT** | Uses the account or client-level consistency setting | No override needed |
 | **SESSION** | Read-your-writes and monotonic reads within a session | Per-user consistency in web apps |
 | **EVENTUAL** | Maximum availability, minimum latency | During outages when availability > consistency |
-| **LATEST_COMMITTED** | Performs quorum reads with barrier requests against the local region's replicas. The SDK reads from a read quorum of secondary replicas and uses barrier requests to ensure they have converged to the latest quorum-acknowledged (committed) LSN within that region. This gives you the freshest data that has been committed locally, without requiring cross-region round trips. On the write path, replication across regions remains asynchronous (no RPO boundary), which provides better write availability | **Recommended during outages** - strong local reads without cross-region dependencies |
+| **LATEST_COMMITTED** | Performs quorum reads with barrier requests against the local region's replicas. The SDK reads from a read quorum of secondary replicas and uses barrier requests to ensure they have converged to the latest quorum-acknowledged (committed) LSN within that region. This gives you the freshest data that has been committed locally, without requiring cross-region round trips. On the write path, replication across regions remains asynchronous (no RPO boundary), which provides better write availability | Strong consistency within a region without an RPO boundary |
 | **GLOBAL_STRONG** | Linearizable reads across all regions (synchronous) | Financial transactions, inventory systems |
 
 > [!TIP]
