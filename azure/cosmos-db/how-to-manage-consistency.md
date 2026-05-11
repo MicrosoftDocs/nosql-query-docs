@@ -208,7 +208,7 @@ The `ReadConsistencyStrategy` feature (available in Java SDK v4.69+ and .NET SDK
 | **GLOBAL_STRONG** | Linearizable reads across all regions (synchronous) | Financial transactions, inventory systems |
 
 > [!TIP]
-> `LATEST_COMMITTED` is often a better choice than bounded staleness when consistent reads are required but an RPO guarantee is not. It performs quorum reads against secondary replicas within the local region, ensuring they have converged to the latest committed version, without requiring cross-region round trips. The trade-off: cross-region replication remains asynchronous (no RPO boundary on writes), but you get better write availability because writes don't block waiting for remote region acknowledgment.
+> `LATEST_COMMITTED` is often a better choice than bounded staleness when consistent reads are required but an RPO guarantee is not. It performs quorum reads against secondary replicas within the local region, ensuring they have converged to the latest committed version, without requiring cross-region round trips. The trade-off: unlike bounded staleness, which guarantees reads lag behind writes by at most *K* versions or *T* time interval, `LATEST_COMMITTED` provides no such staleness bound across regions.
 
 ### <a id="read-consistency-strategy-java"></a>Java SDK
 
