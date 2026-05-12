@@ -105,6 +105,7 @@ The [`Microsoft.Agents.AI.CosmosNoSql`](https://github.com/microsoft/agent-frame
 - `ChatHistoryProvider` — chat history management
 - `WorkflowExtensions` and `ChatExtensions` — DI and integration helpers
 
+>[!NOTE]
 > **AutoGen users:** AutoGen has been merged into Agent Framework. New projects should target Agent Framework directly. The legacy [AutoGen 0.2 Cosmos DB notes](https://microsoft.github.io/autogen/0.2/docs/ecosystem/azure_cosmos_db/) remain available for reference.
 
 ## LlamaIndex
