@@ -4,7 +4,7 @@ These instructions define a unified style and process standard for authoring and
 
 ## Learn-wide Instructions
 
-Below are instructions that apply to all Microsoft Learn documentation authored with AI assistance. Learn product team will update this periodically as needed. Each repository SHOULD NOT update this to avoid being overwritten, but update the repository-specific instructions below as needed.
+Below are instructions that apply to all Microsoft Learn documentation authored with AI assistance. The Learn product team will update this periodically as needed. Each repository SHOULD NOT update this to avoid being overwritten, but update the repository-specific instructions below as needed.
 
 ### AI Usage & Disclosure
 
