@@ -80,6 +80,26 @@ Key subdirectories:
 
 - Procedures must include all steps - check for missing prerequisites or follow-up actions
 - Code samples must be complete and runnable - no placeholder comments like `// add code here`
+- Ensure account creation steps reference the correct Azure portal experience
+- Every article must end with either a "Related content" or "Next step" section (not both)
+- "Related content" must be an H2 with a flat list of 3-5 hyperlinks and no other text or formatting:
+
+```markdown
+## Related content
+
+- [Learn about vector indexing and search](vector-search-overview.md)
+- [Learn about full text search](full-text-search-faq.yml)
+- [Learn about hybrid search](hybrid-search.md)
+```
+
+- "Next step" must be an H2 with a single formatted button:
+
+```markdown
+## Next step
+
+> [!div class="nextstepaction"]
+> [Get started with change data capture](get-started-change-data-capture.md)
+```
 
 ### Alert usage
 
@@ -146,3 +166,33 @@ When providing feedback:
 - Ask clarifying questions when intent is unclear
 - Prioritize terminology issues and technical accuracy
 - Focus on improvements that help readers succeed
+
+### Content review checklist
+
+When performing a pull request review, evaluate every changed file against this checklist. After your review, include the completed checklist in your review summary so the contributor can see exactly what was checked, what passed, and what needs attention. Mark each item as passing (`- [x]`), failing (`- [ ]`), or not applicable (`- N/A`).
+
+```markdown
+#### 📋 Content review checklist
+
+- [ ] **Structure and completeness**
+  - [x] Article has exactly one H1 heading
+  - [x] Heading levels are not skipped (no H2 → H4 without H3)
+  - [ ] Article ends with a "Related content" or "Next step" section (not both)
+  - [x] Procedures include all steps with prerequisites and follow-up actions
+  - N/A No consecutive headings without content between them
+- [x] **Code samples**
+  - [x] All code blocks specify a language identifier
+  - [x] Code samples are complete and runnable
+  - [x] No placeholder comments like `// add code here`
+- [x] **Formatting and style**
+  - [x] UI elements are **bold**
+  - [x] File names and code references use `code style`
+  - [x] Alerts are used correctly and sparingly (max 1-2 per article)
+  - [x] Tables use `| --- |` separators
+- [ ] **Technical accuracy**
+  - [x] Product names follow terminology guidelines
+  - [ ] Links are valid and use relative paths where applicable
+  - [x] Feature flags and preview status are current
+```
+
+Adjust the checklist based on the content reviewed. Omit categories that don't apply (for example, skip "Code samples" for articles without code). Add specific findings as inline notes next to any failing items.
