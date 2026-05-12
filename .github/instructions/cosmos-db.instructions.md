@@ -26,13 +26,15 @@ Product naming and branding rules for prose text in documentation.
 
 ### Product naming
 
-| Correct | Incorrect |
+| Preferred | Avoid in new content |
 | --- | --- |
-| Azure Cosmos DB | Cosmos DB |
+| Azure Cosmos DB | Cosmos DB (missing "Azure" prefix) |
 | Azure Cosmos DB | Azure Cosmos DB for NoSQL |
 | Azure Cosmos DB | Cosmos DB for NoSQL |
 
-Always use "Azure Cosmos DB" as the full product name in prose text.
+Use "Azure Cosmos DB" as the product name in new and substantially revised content. The previous convention of "Azure Cosmos DB for NoSQL" is acceptable in existing articles and doesn't need to be updated retroactively, but new content should use "Azure Cosmos DB" without the API suffix. This aligns with the URI consolidation from `/azure/cosmos-db/nosql` to `/azure/cosmos-db`.
+
+Do not shorten to "Cosmos DB" — always include the "Azure" prefix.
 
 ### Exceptions
 
