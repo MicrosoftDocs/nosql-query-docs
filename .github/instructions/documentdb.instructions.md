@@ -18,7 +18,7 @@ Product naming and branding rules for prose text in documentation.
 | Azure DocumentDB | Cosmos DB for MongoDB vCore |
 | Azure DocumentDB | vCore-based Azure Cosmos DB for MongoDB |
 
-Always use "Azure DocumentDB" for the managed Azure service. Use "DocumentDB" (without "Azure") only when referring to the [open-source project](https://github.com/documentdb/documentdb).
+Always use "Azure DocumentDB" for the managed Azure service. Use "DocumentDB" (without "Azure") only when referring to the [open-source project](https://github.com/documentdb/documentdb). The previous branding ("Azure Cosmos DB for MongoDB vCore" and variants) is acceptable when describing rename history or migration context, but new content should use "Azure DocumentDB."
 
 ### Exceptions
 
