@@ -25,7 +25,7 @@ For delivering low-latency to end users, it is recommended that you deploy both 
 
 For BCDR, it is recommended to add regions based on the region pairs described in the [Cross-region replication in Azure: Business continuity and disaster recovery](/azure/reliability/cross-region-replication-azure) article.
 
-[1]: ./media/cosmos-db-tutorial-global-distribution-portal/repicate-data-globally-manage-regions.png
+[1]: ./media/cosmos-db-tutorial-global-distribution-portal/replicate-data-globally-manage-regions.png
 [2]: ./media/cosmos-db-tutorial-global-distribution-portal/azure-cosmos-db-manual-failover-1.png
 [3]: ./media/cosmos-db-tutorial-global-distribution-portal/azure-cosmos-db-manual-failover-2.png
 
