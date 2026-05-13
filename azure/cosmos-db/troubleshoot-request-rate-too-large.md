@@ -252,6 +252,7 @@ Retry the request. If the error persists for several minutes, file a support tic
 ## TXN_WAIT_FOR_TRANSACTION_END
 
 This error occurs when multiple clients attempt concurrent transactions on the same logical partition key. A new transaction can't start while an existing transaction on the same logical partition is still in progress.
+This issue commonly occurs with operations such as transactional batch requests or stored procedure executions that target the same logical partition key.
 
 ### Recommended solution
 
