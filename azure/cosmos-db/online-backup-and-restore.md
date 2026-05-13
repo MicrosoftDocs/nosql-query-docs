@@ -62,12 +62,12 @@ Yes. However, analytical store data isn't included in backups and restores. When
 
 Yes, but only for the regular transactional data. Within an analytical store, backup and restore of your data isn't supported at this time.
 
-### How do I find Azure Cosmos DB accounts that don't have backups enabled?
+### How do I audit backup configuration across my Azure Cosmos DB accounts?
 
 All Azure Cosmos DB accounts always have automatic backups. You can use Azure Resource Graph to audit *which* backup mode each account uses and review backup settings.
 
 > [!NOTE]
-> The concept of "backups not enabled" is a misconception for Azure Cosmos DB accounts. Every account has automatic backups. Accounts use periodic backup mode by default unless you configure continuous backup mode.
+> The concept of "backups not enabled" is a misconception for Azure Cosmos DB accounts. Accounts use periodic backup mode by default unless you configure continuous backup mode.
 
 Run this Azure Resource Graph query to inventory backup configuration across subscriptions:
 
@@ -82,7 +82,7 @@ resources
 | order by subscriptionId asc, resourceGroup asc, name asc
 ```
 
-Use periodic mode when scheduled backups and support-request restore meet your recovery requirements. Use continuous mode when you need point-in-time restore and self-service restore within your configured retention tier (7 or 30 days).
+When choosing a backup mode, use periodic mode when scheduled backups and support-request restore meet your recovery requirements. Use continuous mode when you need point-in-time restore and self-service restore within your configured retention tier (7 or 30 days).
 
 ## Next steps
 
