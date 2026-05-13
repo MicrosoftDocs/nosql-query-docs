@@ -229,7 +229,7 @@ Azure Cosmos DB for MongoDB is optimized for high-throughput single-collection a
 | `$lookup` with `let` and `pipeline` (uncorrelated subqueries) | ✖️ No |
 | `$graphLookup` (graph traversal) | ✖️ No (versions 4.2–7.0) |
 | `$lookup` across databases | ✖️ No |
-| Transactions spanning multiple collections | ✅ Yes (ACID multi-document) |
+| Transactions spanning multiple collections | ✖️ No (multi-document transactions are limited to a single nonsharded collection) |
 
 These constraints apply regardless of which server version (3.6 through 7.0) your account uses.
 
