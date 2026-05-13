@@ -78,11 +78,11 @@ New-AzCosmosDBAccount `
 
 Azure Cosmos DB accounts can be configured with IP Firewall, Virtual Network service endpoints, and private endpoints. For information on how to configure the IP Firewall for Azure Cosmos DB, see [Configure IP Firewall](how-to-configure-firewall.md). For information on how to enable service endpoints for Azure Cosmos DB, see [Configure access from virtual networks](how-to-configure-vnet-service-endpoint.md). For information on how to enable private endpoints for Azure Cosmos DB, see [Configure access from private endpoints](how-to-configure-private-endpoints.md).
 
-### <a id="list-accounts"></a> Filter and list Azure Cosmos DB accounts by Resource Group
+### <a id="list-accounts"></a> Filter and list Azure Cosmos DB accounts by resource group
 
 Use resource group filtering when you organize accounts by team, environment, or cost center and need to list only the relevant Azure Cosmos DB accounts.
 
-This command lists all Azure Cosmos DB accounts in a Resource Group.
+This command lists all Azure Cosmos DB accounts in a resource group.
 
 ```azurepowershell-interactive
 $resourceGroupName = "myResourceGroup"
