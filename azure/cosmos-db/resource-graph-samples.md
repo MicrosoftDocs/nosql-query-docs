@@ -38,7 +38,7 @@ This query returns the total number of Azure Cosmos DB accounts across all subsc
 ```kusto
 Resources
 | where type =~ 'microsoft.documentdb/databaseaccounts'
-| extend lastModifiedAt = todatetime(properties.systemData.lastModifiedAt)
+| extend lastModifiedAt = todatetime(systemData.lastModifiedAt)
 | where lastModifiedAt >= ago(30d)
 | project subscriptionId, resourceGroup, name, lastModifiedAt
 | order by lastModifiedAt desc
@@ -53,7 +53,7 @@ PolicyResources
 | where type =~ 'microsoft.policyinsights/policystates'
 | extend resourceType = tostring(properties.resourceType), complianceState = tostring(properties.complianceState)
 | where resourceType =~ 'microsoft.documentdb/databaseaccounts' and complianceState =~ 'NonCompliant'
-| project subscriptionId, resourceId = tostring(properties.resourceId), policyAssignment = tostring(properties.policyAssignmentName), policyDefinition = tostring(properties.policyDefinitionName)
+| project subscriptionId, resourceId = tostring(properties.resourceId)
 | summarize nonCompliantPolicies = count() by subscriptionId, resourceId
 | order by nonCompliantPolicies desc
 ```
