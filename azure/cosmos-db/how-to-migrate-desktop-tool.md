@@ -19,7 +19,7 @@ appliesto:
 
 The [Azure Cosmos DB Data Migration Tool](https://github.com/azurecosmosdb/data-migration-desktop-tool) is an open-source command-line application to import or export data from Azure Cosmos DB. The tool is built on an extension model for source and sink objects to migrate data.
 
-If you need MongoDB wire-protocol compatibility, migrate to Azure DocumentDB. Migrating from MongoDB to Azure Cosmos DB is a cross-API migration and requires data model restructuring, including schema and index changes. For guidance, see [Data modeling in Azure Cosmos DB](modeling-data.md).
+If you need MongoDB wire-protocol compatibility, migrate to Azure DocumentDB. If you instead migrate from MongoDB to the NoSQL API in Azure Cosmos DB, it's a cross-API migration and requires data model restructuring, including schema and index changes. For guidance, see [Data modeling in Azure Cosmos DB](modeling-data.md).
 
 ## Supported extensions
 
