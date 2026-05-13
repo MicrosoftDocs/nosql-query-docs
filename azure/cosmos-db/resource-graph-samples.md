@@ -19,6 +19,7 @@ appliesto:
 # Azure Resource Graph sample queries for Azure Cosmos DB
 
 This page is a collection of [Azure Resource Graph](/azure/governance/resource-graph/overview) sample queries for Azure Cosmos DB.
+Use these queries to inventory and evaluate Azure Cosmos DB accounts across subscriptions at scale.
 
 ## Sample queries
 
@@ -42,6 +43,8 @@ Resources
 | project subscriptionId, resourceGroup, name, lastModifiedAt
 | order by lastModifiedAt desc
 ```
+
+This query returns Azure Cosmos DB accounts that were updated in the last 30 days, sorted by most recent modification time.
 
 ### Identify non-compliant Azure Cosmos DB accounts
 
