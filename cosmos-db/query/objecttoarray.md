@@ -68,6 +68,8 @@ FROM p
 JOIN kv IN OBJECTTOARRAY(p.metadata, "key", "value")
 ```
 
+This pattern returns one row per property in `p.metadata` for each item.
+
 If you only need to check whether a specific property exists, use [`IS_DEFINED`](is-defined.md).
 
 ```nosql
@@ -75,4 +77,4 @@ SELECT p.id, IS_DEFINED(p.metadata["region"]) AS hasRegion
 FROM p
 ```
 
-For better query performance and simpler filtering, model variable attributes as arrays when possible instead of using dynamic object keys.
+For better query performance and simpler filtering, model variable attributes as arrays when possible instead of using dynamic object keys. Arrays are easier to index and filter directly than dynamically enumerated object properties.
