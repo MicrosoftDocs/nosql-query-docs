@@ -31,7 +31,7 @@ There are different error messages and error codes that correspond to different 
 - [Request rate is large. More Request Units might be needed, so no changes were made.](#request-rate-is-large)
 - [The request didn't complete due to a high rate of metadata requests.](#rate-limiting-on-metadata-requests)
 - [The request didn't complete due to a transient service error.](#rate-limiting-due-to-transient-service-error)
-- [`TXN_WAIT_FOR_TRANSACTION_END`](#txn_wait_for_transaction_end)
+- [TXN_WAIT_FOR_TRANSACTION_END](#txn-wait-for-transaction-end)
 
 ## Request rate is large
 
@@ -249,7 +249,7 @@ This 429 error is returned when the request encounters a transient service error
 
 Retry the request. If the error persists for several minutes, file a support ticket from the [Azure portal](https://portal.azure.com/).
 
-## `TXN_WAIT_FOR_TRANSACTION_END`
+## TXN_WAIT_FOR_TRANSACTION_END
 
 This error occurs when multiple clients attempt concurrent transactions on the same logical partition key. A new transaction can't start while an existing transaction on the same logical partition is still in progress.
 
