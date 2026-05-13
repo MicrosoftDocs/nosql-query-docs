@@ -26,7 +26,7 @@ This page is a collection of [Azure Resource Graph](/azure/governance/resource-g
 
 ```kusto
 Resources
-| where type == 'microsoft.documentdb/databaseaccounts'
+| where type =~ 'microsoft.documentdb/databaseaccounts'
 | summarize count()
 ```
 
@@ -34,7 +34,7 @@ Resources
 
 ```kusto
 Resources
-| where type == 'microsoft.documentdb/databaseaccounts'
+| where type =~ 'microsoft.documentdb/databaseaccounts'
 | extend lastModifiedAt = todatetime(properties.systemData.lastModifiedAt)
 | where lastModifiedAt >= ago(30d)
 | project subscriptionId, resourceGroup, name, lastModifiedAt
@@ -59,7 +59,7 @@ Replace `'East US'` and `'West US'` with the write regions that you want to quer
 
 ```kusto
 Resources
-| where type == 'microsoft.documentdb/databaseaccounts'
+| where type =~ 'microsoft.documentdb/databaseaccounts'
 | project id, name, writeLocations = (properties.writeLocations)
 | mv-expand writeLocations
 | project id, name, writeLocation = tostring(writeLocations.locationName)
