@@ -80,7 +80,7 @@ Azure Cosmos DB accounts can be configured with IP Firewall, Virtual Network ser
 
 ### <a id="list-accounts"></a> Filter and list Azure Cosmos DB accounts by resource group
 
-Filter by resource group when you organize accounts by team, environment, or cost center and need to list only the relevant Azure Cosmos DB accounts.
+Use resource group filtering when you organize accounts by team, environment, or cost center and need to list only the relevant Azure Cosmos DB accounts.
 
 This command lists all Azure Cosmos DB accounts in a resource group.
 
