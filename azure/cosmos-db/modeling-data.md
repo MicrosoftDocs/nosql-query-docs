@@ -459,7 +459,7 @@ Use [time to live (TTL)](time-to-live.md) to automatically age out older version
 
 ### Analytical store for historical access
 
-Enable [analytical store](analytical-store-introduction.md) to run large historical and trend queries on a synchronized column store without affecting transactional query performance on your operational container.
+Enable [analytical store](analytical-store-introduction.md) to run large historical and trend queries on a synchronized column store without affecting transactional query performance on your operational container. Analytical store reflects the data that you persist, but it doesn't create prior versions when items are overwritten. For versioned or point-in-time reads, first store append-only events or snapshots, and then query that temporal dataset through analytical store.
 
 - **Storage cost:** Adds analytical storage charges, but can reduce transactional RU consumption for historical reporting.
 - **Query complexity:** Lower for long-range analytics because columnar scans and aggregations are optimized for this workload.
