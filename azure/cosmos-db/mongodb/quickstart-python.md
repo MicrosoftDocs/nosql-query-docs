@@ -8,7 +8,7 @@ ms.service: azure-cosmos-db
 ms.subservice: mongodb
 ms.devlang: python
 ms.topic: quickstart-sdk
-ms.date: 05/13/2025
+ms.date: 05/13/2026
 ms.custom: devx-track-python, devx-track-extended-azdevcli, sfi-image-nochange
 ai-usage: ai-assisted
 appliesto:
