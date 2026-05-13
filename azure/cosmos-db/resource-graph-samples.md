@@ -36,7 +36,7 @@ Resources
 Resources
 | where type == 'microsoft.documentdb/databaseaccounts'
 | extend lastModifiedAt = todatetime(properties.systemData.lastModifiedAt)
-| where isnotnull(lastModifiedAt) and lastModifiedAt >= ago(30d)
+| where lastModifiedAt >= ago(30d)
 | project subscriptionId, resourceGroup, name, lastModifiedAt
 | order by lastModifiedAt desc
 ```
@@ -57,7 +57,7 @@ policyresources
 
 ```kusto
 Resources
-| where type =~ 'microsoft.documentdb/databaseaccounts'
+| where type == 'microsoft.documentdb/databaseaccounts'
 | project id, name, writeLocations = (properties.writeLocations)
 | mv-expand writeLocations
 | project id, name, writeLocation = tostring(writeLocations.locationName)
