@@ -60,7 +60,7 @@ SELECT VALUE
 
 ## Dynamic property access
 
-`OBJECT_KEYS` isn't supported in Azure Cosmos DB. To enumerate unknown property names, use `OBJECTTOARRAY` and `JOIN` over the resulting key-value pairs.
+Azure Cosmos DB query language doesn't provide a built-in function to enumerate object property names. To enumerate unknown property names, use `OBJECTTOARRAY` and `JOIN` over the resulting key-value pairs.
 
 ```nosql
 SELECT p.id, kv["key"] AS propertyName, kv["value"] AS propertyValue
