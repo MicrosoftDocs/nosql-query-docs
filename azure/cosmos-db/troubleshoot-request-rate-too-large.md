@@ -256,7 +256,7 @@ Azure Cosmos DB can process only one transactional operation at a time for a giv
 
 You commonly see this with operations such as transactional batch requests or stored procedure executions.
 
-### Recommended solution
+#### Recommended solution
 
 - Reduce transaction scope and duration to minimize contention.
 - Implement retry logic with exponential backoff in your application code.
