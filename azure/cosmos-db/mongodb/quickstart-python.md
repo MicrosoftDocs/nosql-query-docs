@@ -8,7 +8,7 @@ ms.service: azure-cosmos-db
 ms.subservice: mongodb
 ms.devlang: python
 ms.topic: quickstart-sdk
-ms.date: 04/08/2025
+ms.date: 05/13/2025
 ms.custom: devx-track-python, devx-track-extended-azdevcli, sfi-image-nochange
 ai-usage: ai-assisted
 appliesto:
@@ -201,11 +201,12 @@ for document in matched_documents:
 
 ### Delete documents
 
-Delete a single document from the collection using `collection.delete_one`. This method removes the first document that matches the specified filter.
+Delete a single document from the collection using `collection.delete_one`. This method performs a point delete using both the unique identifier (`_id`) and shard key (`category`) fields to efficiently target a single document without a cross-shard operation.
 
 ```python
 filter = {
-    "_id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
+    "_id": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+    "category": "gear-surf-surfboards"
 }
 result = collection.delete_one(filter)
 print(f"Deleted document: {result.deleted_count}")
