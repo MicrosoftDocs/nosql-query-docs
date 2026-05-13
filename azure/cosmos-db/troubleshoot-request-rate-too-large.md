@@ -26,11 +26,12 @@ Before taking an action to change the RU/s, it's important to understand the roo
 > [!TIP]
 > The guidance in this article applies to databases and containers using provisioned throughput - both autoscale and manual throughput.
 
-There are different error messages that correspond to different types of 429 exceptions:
+There are different error messages and error codes that correspond to different types of 429 exceptions:
 
 - [Request rate is large. More Request Units might be needed, so no changes were made.](#request-rate-is-large)
 - [The request didn't complete due to a high rate of metadata requests.](#rate-limiting-on-metadata-requests)
 - [The request didn't complete due to a transient service error.](#rate-limiting-due-to-transient-service-error)
+- [`TXN_WAIT_FOR_TRANSACTION_END`](#txn_wait_for_transaction_end)
 
 ## Request rate is large
 
@@ -247,6 +248,19 @@ This 429 error is returned when the request encounters a transient service error
 #### Recommended solution
 
 Retry the request. If the error persists for several minutes, file a support ticket from the [Azure portal](https://portal.azure.com/).
+
+## `TXN_WAIT_FOR_TRANSACTION_END`
+
+This error occurs when multiple clients attempt concurrent transactions on the same logical partition key. A new transaction can't start while an existing transaction on the same logical partition is still in progress.
+
+### Recommended solution
+
+- Reduce transaction scope and duration to minimize contention.
+- Implement retry logic with exponential backoff in your application code.
+- Redesign your partition key to distribute writes across more logical partitions.
+- If concurrent writes to the same logical partition are unavoidable, serialize writes at the application level.
+
+For more information about transaction boundaries and transaction scope, see [Transactions and optimistic concurrency control](database-transactions-optimistic-concurrency.md).
 
 ## Next steps
 
