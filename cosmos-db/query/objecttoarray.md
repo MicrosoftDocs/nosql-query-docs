@@ -11,7 +11,7 @@ The `OBJECTTOARRAY` function converts field/value pairs in a JSON object to a JS
 
 ## Syntax
 
-```cosmos-db
+```nosql
 OBJECTTOARRAY(<object_expr> [, <string_expr_1>, <string_expr_2>])
 ```
 
@@ -35,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `OBJECTTOARRAY` function is used to convert a JSON object to an array.
 
-```cosmos-db
+```nosql
 SELECT VALUE
   OBJECTTOARRAY({
     "a": "12345",
@@ -72,7 +72,7 @@ Azure Cosmos DB query language doesn't provide a built-in function to enumerate 
 }
 ```
 
-```cosmos-db
+```nosql
 SELECT p.id, kv["key"] AS propertyName, kv["value"] AS propertyValue
 FROM p
 JOIN kv IN OBJECTTOARRAY(p.metadata, "key", "value")
@@ -89,7 +89,7 @@ This pattern returns one row per property in `p.metadata` for each item.
 
 If you only need to check whether a specific property exists, use [`IS_DEFINED`](is-defined.md).
 
-```cosmos-db
+```nosql
 SELECT p.id, IS_DEFINED(p.metadata["region"]) AS hasRegion
 FROM p
 ```
