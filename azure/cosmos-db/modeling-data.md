@@ -389,6 +389,8 @@ FROM o
 WHERE o.customerId = "42"
 ```
 
+To keep these queries efficient, include the partition key in your filter whenever possible. For separate order items, `customerId` is often a good partition key when your common access pattern is "all orders for one customer."
+
 ## Hybrid data models
 
 We explore embedding (or denormalizing) and referencing (or normalizing) data. Each approach offers benefits and involves trade-offs.
