@@ -171,9 +171,9 @@ Choose the service prefix based on which files the PR changes:
 
 | Prefix | When to use |
 | --- | --- |
-| `Cosmos DB \|` | Changes to `azure/cosmos-db/` or `cosmos-db/` files |
-| `DocumentDB \|` | Changes to `azure/documentdb/` or `documentdb/` files |
-| `NoSQL \|` | Changes that span both services, touch `nosql/` files, or affect cross-cutting configuration |
+| `Cosmos DB` | Changes to `azure/cosmos-db/` or `cosmos-db/` files |
+| `DocumentDB` | Changes to `azure/documentdb/` or `documentdb/` files |
+| `NoSQL` | Changes that span both services, touch `nosql/` files, or affect cross-cutting configuration |
 
 Examples:
 
