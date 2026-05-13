@@ -1,7 +1,8 @@
 ---
 title: OBJECTTOARRAY
 description: The `OBJECTTOARRAY` function converts field/value pairs in a JSON object to a JSON array.
-ms.date: 11/10/2025
+ai-usage: ai-assisted
+ms.date: 05/13/2026
 ---
 
 # `OBJECTTOARRAY` - Query language in Cosmos DB (in Azure and Fabric)
@@ -10,7 +11,7 @@ The `OBJECTTOARRAY` function converts field/value pairs in a JSON object to a JS
 
 ## Syntax
 
-```cosmos-db
+```nosql
 OBJECTTOARRAY(<object_expr> [, <string_expr_1>, <string_expr_2>])
 ```
 
@@ -34,7 +35,7 @@ This section contains examples of how to use this query language construct.
 
 In this example, the `OBJECTTOARRAY` function is used to convert a JSON object to an array.
 
-```cosmos-db
+```nosql
 SELECT VALUE
   OBJECTTOARRAY({
     "a": "12345",
@@ -56,3 +57,22 @@ SELECT VALUE
   ]
 ]
 ```
+
+## Dynamic property access
+
+`OBJECT_KEYS` isn't supported in Azure Cosmos DB. To enumerate unknown property names, use `OBJECTTOARRAY` and `JOIN` over the resulting key-value pairs.
+
+```nosql
+SELECT p.id, kv["key"] AS propertyName, kv["value"] AS propertyValue
+FROM p
+JOIN kv IN OBJECTTOARRAY(p.metadata, "key", "value")
+```
+
+If you only need to check whether a specific property exists, use [`IS_DEFINED`](is-defined.md).
+
+```nosql
+SELECT p.id, IS_DEFINED(p.metadata["region"]) AS hasRegion
+FROM p
+```
+
+For better query performance and simpler filtering, model variable attributes as arrays when possible instead of using dynamic object keys.
