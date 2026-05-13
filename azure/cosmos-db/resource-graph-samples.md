@@ -18,8 +18,7 @@ appliesto:
 
 # Azure Resource Graph sample queries for Azure Cosmos DB
 
-This page is a collection of [Azure Resource Graph](/azure/governance/resource-graph/overview) sample queries for Azure Cosmos DB.
-You can use these queries to inventory and evaluate Azure Cosmos DB accounts across subscriptions at scale.
+This page is a collection of [Azure Resource Graph](/azure/governance/resource-graph/overview) sample queries that you can use to inventory and evaluate Azure Cosmos DB accounts across subscriptions at scale.
 
 ## Sample queries
 
@@ -62,7 +61,8 @@ This query returns Azure Cosmos DB accounts with a count of non-compliant polici
 
 ### List Azure Cosmos DB accounts with specific write locations
 
-Replace `'East US'` and `'West US'` with your desired Azure region names.
+> [!TIP]
+> Replace `'East US'` and `'West US'` with your desired Azure region names.
 
 ```kusto
 Resources
