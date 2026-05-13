@@ -350,7 +350,7 @@ In Azure Cosmos DB, a JOIN works within a single item, typically between the roo
 - Use embedding for contained data that is read together.
 - Use references when related entities are large, unbounded, or updated independently.
 
-For JOIN syntax details, see [JOIN in Azure Cosmos DB query language](/cosmos-db/query/join).
+For JOIN syntax details, see [JOIN in Azure Cosmos DB query language](../../cosmos-db/query/join.md).
 
 ### Apply common restructuring patterns
 
@@ -375,7 +375,7 @@ WHERE c.customer_id = 42
 In Azure Cosmos DB, if you embed orders inside a customer item, query that single item and join to the nested array:
 
 ```nosql
-SELECT c.id, c.name, o.id AS orderId, o.total
+SELECT c.id, c.name, o.id AS order_id, o.total
 FROM c
 JOIN o IN c.orders
 WHERE c.id = "42"
