@@ -6,7 +6,7 @@ ms.service: azure-cosmos-db
 ms.subservice: nosql
 ms.custom: devx-track-arm-template
 ms.topic: how-to
-ms.date: 02/18/2022
+ms.date: 05/13/2026
 ms.author: mjbrown
 ai-usage: ai-assisted
 appliesto:
