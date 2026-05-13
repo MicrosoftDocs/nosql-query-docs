@@ -433,7 +433,7 @@ View recent failover operations in control plane logs.
 AzureDiagnostics
 | where ResourceProvider == "MICROSOFT.DOCUMENTDB" and Category == "ControlPlaneRequests"
 | where OperationName contains "Failover"
-| project TimeGenerated, OperationName, regionName_s, activityId_g, statusCode_s
+| project TimeGenerated, OperationName, regionName_s, activityId_g, httpstatusCode_s, statusCode_s
 | order by TimeGenerated desc
 ```
 
