@@ -5,7 +5,7 @@ author: kanshiG
 ms.service: azure-cosmos-db
 ms.custom: build-2023
 ms.topic: how-to
-ms.date: 07/21/2025
+ms.date: 05/13/2026
 ms.author: govindk
 ai-usage: ai-assisted
 appliesto:
@@ -72,7 +72,7 @@ All Azure Cosmos DB accounts always have automatic backups. You can use Azure Re
 Run this Azure Resource Graph query to inventory backup configuration across subscriptions:
 
 ```kusto
-resources
+Resources
 | where type =~ "microsoft.documentdb/databaseaccounts"
 | extend backupMode = tostring(properties.backupPolicy.type)
 | extend periodicBackupIntervalMinutes = toint(properties.backupPolicy.periodicModeProperties.backupIntervalInMinutes)
