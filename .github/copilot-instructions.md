@@ -130,6 +130,10 @@ Key subdirectories:
 - For alignment: `| :-- |` (left), `| :--: |` (center), `| --: |` (right)
 - Empty first column headers are allowed when first column values are bolded
 
+#### File endings
+
+- All Markdown files must end with a trailing newline
+
 ### Writing Style
 
 #### Word choice
