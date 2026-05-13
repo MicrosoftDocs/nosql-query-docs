@@ -431,11 +431,11 @@ Review documents:
 
 ## Versioning and temporal data patterns
 
-If your data changes frequently and you need to query older states, choose a versioning pattern based on retention requirements, query latency goals, and cost limits.
+Choose a versioning pattern based on retention requirements, query latency goals, and cost limits when your data changes frequently and you need to query older states.
 
 ### Event sourcing with change feed
 
-Use an append-only event model where each mutation is written as a new event item, and use the [change feed design patterns](change-feed-design-patterns.md#event-sourcing) guidance to project current state into one or more materialized views.
+Use an append-only event model where each mutation is written as a new event item. Use the [change feed design patterns](change-feed-design-patterns.md#event-sourcing) guidance to project current state into one or more materialized views.
 
 - **Storage cost:** Higher over time because every mutation is retained as an event.
 - **Query complexity:** Higher for point-in-time reconstruction unless you maintain read-optimized projections.
