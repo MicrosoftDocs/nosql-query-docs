@@ -7,6 +7,7 @@ author: manishmsfte
 ms.author: mansha
 ms.service: azure-cosmos-db
 ms.custom: subject-resourcegraph-sample
+ai-usage: ai-assisted
 appliesto:
   - ✅ NoSQL
   - ✅ MongoDB
@@ -17,14 +18,54 @@ appliesto:
 
 # Azure Resource Graph sample queries for Azure Cosmos DB
 
-This page is a collection of [Azure Resource Graph](/azure/governance/resource-graph/overview) sample queries for Azure Cosmos DB. 
+This page is a collection of [Azure Resource Graph](/azure/governance/resource-graph/overview) sample queries for Azure Cosmos DB.
 
 ## Sample queries
 
-[!INCLUDE [azure-resource-graph-samples-cat-cosmosdb](./includes/azure-cosmos-db.md)]
+### Count Azure Cosmos DB accounts
+
+```kusto
+Resources
+| where type == 'microsoft.documentdb/databaseaccounts'
+| summarize count()
+```
+
+### List Azure Cosmos DB accounts modified in the last 30 days
+
+```kusto
+Resources
+| where type == 'microsoft.documentdb/databaseaccounts'
+| extend lastModifiedAt = todatetime(properties.systemData.lastModifiedAt)
+| where isnotnull(lastModifiedAt) and lastModifiedAt >= ago(30d)
+| project subscriptionId, resourceGroup, name, lastModifiedAt
+| order by lastModifiedAt desc
+```
+
+### Identify non-compliant Azure Cosmos DB accounts
+
+```kusto
+policyresources
+| where type =~ 'microsoft.policyinsights/policystates'
+| extend resourceType = tostring(properties.resourceType), complianceState = tostring(properties.complianceState)
+| where resourceType =~ 'microsoft.documentdb/databaseaccounts' and complianceState =~ 'NonCompliant'
+| project subscriptionId, resourceId = tostring(properties.resourceId), policyAssignment = tostring(properties.policyAssignmentName), policyDefinition = tostring(properties.policyDefinitionName), complianceState
+| summarize nonCompliantPolicies = count() by subscriptionId, resourceId
+| order by nonCompliantPolicies desc
+```
+
+### List Azure Cosmos DB accounts with specific write locations
+
+```kusto
+Resources
+| where type =~ 'microsoft.documentdb/databaseaccounts'
+| project id, name, writeLocations = (properties.writeLocations)
+| mv-expand writeLocations
+| project id, name, writeLocation = tostring(writeLocations.locationName)
+| where writeLocation in ('East US', 'West US')
+| summarize by id, name
+```
 
 ## Next steps
 
 - Learn more about the [query language](/azure/governance/resource-graph/concepts/query-language).
 - Learn more about how to [explore resources](/azure/governance/resource-graph/concepts/explore-resources).
-
