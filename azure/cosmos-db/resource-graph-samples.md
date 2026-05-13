@@ -7,7 +7,7 @@ author: manishmsfte
 ms.author: mansha
 ms.service: azure-cosmos-db
 ms.custom:
-- subject-resourcegraph-sample
+  - subject-resourcegraph-sample
 ai-usage: ai-assisted
 appliesto:
   - ✅ NoSQL
@@ -79,4 +79,3 @@ Resources
 
 - Learn more about the [query language](/azure/governance/resource-graph/concepts/query-language).
 - Learn more about how to [explore resources](/azure/governance/resource-graph/concepts/explore-resources).
-
