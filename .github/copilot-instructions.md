@@ -171,6 +171,12 @@ When creating pull requests or issues, follow this naming convention.
 <Service prefix> | <Short description>
 ```
 
+Prepend a 🤖 emoji to the PR title when the pull request is created by an AI agent (such as Copilot cloud agent). The emoji goes before the service prefix:
+
+```text
+🤖 <Service prefix> | <Short description>
+```
+
 Choose the service prefix based on which files the PR changes:
 
 | Prefix | When to use |
@@ -179,11 +185,17 @@ Choose the service prefix based on which files the PR changes:
 | `DocumentDB` | Changes to `azure/documentdb/` or `documentdb/` files |
 | `NoSQL` | Changes that span both services, touch `nosql/` files, or affect cross-cutting configuration |
 
-Examples:
+Examples (AI-generated):
 
-- `Cosmos DB | Update query language TOC`
-- `DocumentDB | Fix broken links`
-- `NoSQL | Enable public contributions`
+- `🤖 Cosmos DB | Update query language TOC`
+- `🤖 DocumentDB | Fix broken links`
+- `🤖 NoSQL | Enable public contributions`
+
+Examples (human-created):
+
+- `Cosmos DB | Add Python example for spatial queries`
+- `DocumentDB | Clarify indexing policy syntax`
+- `NoSQL | Add contributing guidelines`
 
 #### PR title suffixes
 
