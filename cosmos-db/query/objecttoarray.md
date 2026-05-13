@@ -70,6 +70,13 @@ JOIN kv IN OBJECTTOARRAY(p.metadata, "key", "value")
 
 This pattern returns one row per property in `p.metadata` for each item.
 
+```json
+[
+  { "id": "1", "propertyName": "color", "propertyValue": "blue" },
+  { "id": "1", "propertyName": "size", "propertyValue": "small" }
+]
+```
+
 If you only need to check whether a specific property exists, use [`IS_DEFINED`](is-defined.md).
 
 ```nosql
