@@ -31,7 +31,7 @@ There are different error messages that correspond to different types of 429 exc
 - [Request rate is large. More Request Units might be needed, so no changes were made.](#request-rate-is-large)
 - [The request didn't complete due to a high rate of metadata requests.](#rate-limiting-on-metadata-requests)
 - [The request didn't complete due to a transient service error.](#rate-limiting-due-to-transient-service-error)
-- [TXN_WAIT_FOR_TRANSACTION_END](#txn-wait-for-transaction-end)
+- [TXN_WAIT_FOR_TRANSACTION_END](#txn_wait_for_transaction_end)
 
 ## Request rate is large
 
@@ -251,7 +251,8 @@ Retry the request. If the error persists for several minutes, file a support tic
 
 ## TXN_WAIT_FOR_TRANSACTION_END
 
-This error occurs when multiple clients attempt concurrent transactions on the same logical partition key. Azure Cosmos DB can process only one transactional operation at a time for a given logical partition key, so a new transaction can't start while an existing transaction is still in progress.
+This error occurs when multiple clients attempt concurrent transactions on the same logical partition key.
+Azure Cosmos DB can process only one transactional operation at a time for a given logical partition key, so a new transaction can't start while an existing transaction is still in progress.
 
 You commonly see this with operations such as transactional batch requests or stored procedure executions.
 
