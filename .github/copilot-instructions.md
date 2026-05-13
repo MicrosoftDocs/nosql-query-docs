@@ -198,7 +198,7 @@ Examples:
 
 #### Issue title format
 
-AI-generated issues must include an emoji prefix to clearly indicate AI authorship. Choose an emoji that reflects the nature of the issue rather than a generic robot emoji. Use a `[TODO]` suffix for future items or placeholder issues. Do not include a service prefix in issue titles.
+AI-generated issues must include an emoji prefix. The presence of the emoji prefix indicates AI authorship, so there's no need for a "robot" emoji. Choose an emoji that reflects the nature of the issue rather than a generic robot emoji. Use a `[TODO]` suffix for future items or placeholder issues. Do not include a service prefix in issue titles.
 
 Examples:
 
