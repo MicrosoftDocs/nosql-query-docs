@@ -30,6 +30,8 @@ Resources
 | summarize count()
 ```
 
+This query returns the total number of Azure Cosmos DB accounts across all subscriptions that you can access.
+
 ### List Azure Cosmos DB accounts modified in the last 30 days
 
 ```kusto
@@ -53,9 +55,11 @@ policyresources
 | order by nonCompliantPolicies desc
 ```
 
+This query returns Azure Cosmos DB accounts grouped by subscription ID and resource ID, with a count of non-compliant policies for each account.
+
 ### List Azure Cosmos DB accounts with specific write locations
 
-Replace `'East US'` and `'West US'` with the write regions that you want to query.
+Replace `'East US'` and `'West US'` with the Azure region names for write locations that you want to query.
 
 ```kusto
 Resources
