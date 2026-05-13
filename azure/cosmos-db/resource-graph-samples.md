@@ -49,7 +49,7 @@ This query returns Azure Cosmos DB accounts updated in the last 30 days, sorted 
 ### Identify non-compliant Azure Cosmos DB accounts
 
 ```kusto
-policyresources
+PolicyResources
 | where type =~ 'microsoft.policyinsights/policystates'
 | extend resourceType = tostring(properties.resourceType), complianceState = tostring(properties.complianceState)
 | where resourceType =~ 'microsoft.documentdb/databaseaccounts' and complianceState =~ 'NonCompliant'
