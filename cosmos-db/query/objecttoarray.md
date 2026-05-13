@@ -95,3 +95,10 @@ FROM p
 ```
 
 For better query performance and simpler filtering, model variable attributes as arrays when possible instead of using dynamic object keys. Arrays are easier to index and filter directly than dynamically enumerated object properties.
+
+## Related content
+
+- [JOIN](join.md)
+- [IS_DEFINED](is-defined.md)
+- [Keywords](keywords.md)
+- [Subquery](subquery.md)
