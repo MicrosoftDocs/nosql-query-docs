@@ -55,6 +55,8 @@ policyresources
 
 ### List Azure Cosmos DB accounts with specific write locations
 
+Replace `'East US'` and `'West US'` with the write regions that you want to query.
+
 ```kusto
 Resources
 | where type == 'microsoft.documentdb/databaseaccounts'
