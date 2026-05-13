@@ -21,6 +21,30 @@ Only the required storage capacity needs to be selected, while the highest achie
 
 Previously, a jump from 5,000 IOPS to 20,000 IOPS required increasing the size of the disk from 1TB to 20TB, even in the absence of higher storage needs. With Premium SSD v2, 20,000 IOPS can be achieved on the same 1TB disk so long as the cluster's compute tier has the capacity to push and maintain 20,000 IOPS. Moreover, Premium SSD v2 disks can support up to 80,000 IOPS - a 4x increase over Premium SSD.
 
+## Throughput benefits with SSD v2 disks on Azure DocumentDB
+Consider a scenario in which an application with 2 TB of storage experiences an increase in traffic volumes detailed below:
+- 7,000 IOPS in Month 1
+- 10,000 IOPS in Month 2
+- 19,000 IOPS in Month 3
+
+Previously, before the introduction of Premium Managed SSD disks v2, since IOPS was directly related to the size of the disk, the following increases in the size of the disk would have been required:
+- 2 TB disk for 7,000 IOPS in Month 1
+- 8 TB disk for 10,000 IOPS in Month 2
+- 32 TB disk for 19,000 IOPS in Month 3
+
+More importantly, with a 20,000 IOPS limit per disk, any additional increase would have required adding more shards to the cluster to scale out traffic. This would have further complicated management overhead by introducing logical sharding to the architecture to rebalance data across the newly added shard. As the application's requirements continued to scale, larger disks and logical sharding complexities would have continued to grow, despite the application only needing 2 TB of storage.
+
+However, with Premium Managed SSD v2 disks, storage, IOPS and bandwidth can be scaled independently and with 80,000 IOPS available by default for any sized disk at **no added cost**.
+
+Considering the same application above, its growth can now be sustained on the same 2 TB disk with SSD v2:
+- 2 TB disk (with a default capacity of 80,000 IOPS) for 7,000 IOPS in Month 1
+- The same 2 TB disk for 10,000 IOPS (with a default capacity of 80,000 IOPS) in Month 2
+- Still the same 2 TB disk for 19,000 IOPS (with a default capacity of 80,000 IOPS) in Month 3
+
+That's a 16x cost reduction - what previously needed a scale up to 32 TB disks, can now be achieved on a much smaller, 2 TB disk.
+
+That's also a nearly 12x performance boost, where the same 2 TB disk can now achieve upto 80,000 IOPS instead of being capped at 7,000 IOPS.
+
 ## Guidance
 
 The **maximum performance** for your Azure DocumentDB cluster is now only dependent on the **compute tier** and not the storage size. Start by choosing just the desired storage size needed for the cluster, then select a compute tier that provides the required (IOPS) and throughput (MBps) for your workload. Tabulated below are the highest achievable and sustainable IOPS and bandwidth limits per compute tier.
