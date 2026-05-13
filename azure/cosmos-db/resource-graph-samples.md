@@ -48,7 +48,7 @@ policyresources
 | where type =~ 'microsoft.policyinsights/policystates'
 | extend resourceType = tostring(properties.resourceType), complianceState = tostring(properties.complianceState)
 | where resourceType =~ 'microsoft.documentdb/databaseaccounts' and complianceState =~ 'NonCompliant'
-| project subscriptionId, resourceId = tostring(properties.resourceId), policyAssignment = tostring(properties.policyAssignmentName), policyDefinition = tostring(properties.policyDefinitionName), complianceState
+| project subscriptionId, resourceId = tostring(properties.resourceId), policyAssignment = tostring(properties.policyAssignmentName), policyDefinition = tostring(properties.policyDefinitionName)
 | summarize nonCompliantPolicies = count() by subscriptionId, resourceId
 | order by nonCompliantPolicies desc
 ```
@@ -64,7 +64,7 @@ Resources
 | mv-expand writeLocations
 | project id, name, writeLocation = tostring(writeLocations.locationName)
 | where writeLocation in ('East US', 'West US')
-| summarize by id, name
+| distinct id, name
 ```
 
 ## Next steps
