@@ -5,7 +5,7 @@ author: markjbrown
 ms.service: azure-cosmos-db
 ms.subservice: nosql
 ms.topic: how-to
-ms.date: 02/18/2022
+ms.date: 05/14/2026
 ms.author: mjbrown
 ms.custom: devx-track-azurepowershell
 appliesto:
