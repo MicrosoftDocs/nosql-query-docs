@@ -1,6 +1,6 @@
 ---
 title: Create and Manage With Resource Manager Templates
-description: Use Azure Resource Manager templates as infrastructure as code to automate the creation, deployment, and management of Azure Cosmos DB for API for NoSQL resources.
+description: Use Azure Resource Manager templates as infrastructure as code to automate the creation, deployment, and management of Azure Cosmos DB resources.
 author: markjbrown
 ms.service: azure-cosmos-db
 ms.subservice: nosql

@@ -1,6 +1,6 @@
 ---
 title: Manage Resources Using Powershell
-description: Manage and automate the creation and deployment of Azure Cosmos DB for NoSQL resources using PowerShell and infrastructure as code.
+description: Manage and automate the creation and deployment of Azure Cosmos DB resources using PowerShell and infrastructure as code.
 author: markjbrown
 ms.service: azure-cosmos-db
 ms.subservice: nosql
@@ -14,7 +14,7 @@ appliesto:
 
 # Manage Azure Cosmos DB for NoSQL resources using PowerShell
 
-The following guide describes how to use PowerShell as an infrastructure as code approach to script and automate the creation, deployment, and management of Azure Cosmos DB for NoSQL resources, including the Azure Cosmos DB account, database, container, and throughput. For PowerShell cmdlets for other APIs see [PowerShell Samples for Cassandra](cassandra/powershell-samples.md), [PowerShell Samples for API for MongoDB](mongodb/powershell-samples.md), [PowerShell Samples for Gremlin](graph/powershell-samples.md), [PowerShell Samples for Table](table/powershell-samples.md)
+The following guide describes how to use PowerShell as an infrastructure as code approach to script and automate the creation, deployment, and management of Azure Cosmos DB resources, including the Azure Cosmos DB account, database, container, and throughput. For PowerShell cmdlets for other APIs see [PowerShell Samples for Cassandra](cassandra/powershell-samples.md), [PowerShell Samples for API for MongoDB](mongodb/powershell-samples.md), [PowerShell Samples for Gremlin](graph/powershell-samples.md), [PowerShell Samples for Table](table/powershell-samples.md)
 
 > [!NOTE]
 > Samples in this article use [Az.CosmosDB](/powershell/module/az.cosmosdb) management cmdlets. See the [Az.CosmosDB](/powershell/module/az.cosmosdb) API reference page for the latest changes.

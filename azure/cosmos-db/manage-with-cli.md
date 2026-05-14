@@ -1,6 +1,6 @@
 ---
 title: Manage Resources Using Azure CLI
-description: Manage and automate the creation and deployment of Azure Cosmos DB for NoSQL resources using Azure CLI and infrastructure as code.
+description: Manage and automate the creation and deployment of Azure Cosmos DB resources using Azure CLI and infrastructure as code.
 author: markjbrown
 ms.service: azure-cosmos-db
 ms.subservice: nosql

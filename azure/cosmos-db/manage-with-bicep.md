@@ -1,6 +1,6 @@
 ---
 title: Create and Manage With Bicep
-description: Use Bicep as infrastructure as code to automate the creation, deployment, and management of Azure Cosmos DB for API for NoSQL resources.
+description: Use Bicep as infrastructure as code to automate the creation, deployment, and management of Azure Cosmos DB resources.
 author: markjbrown
 ms.service: azure-cosmos-db
 ms.subservice: nosql
