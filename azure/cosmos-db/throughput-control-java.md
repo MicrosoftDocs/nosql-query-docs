@@ -6,13 +6,16 @@ ms.service: azure-cosmos-db
 ms.subservice: nosql
 ms.custom: devx-track-extended-java
 ms.topic: how-to
-ms.date: 07/10/2025
+ms.date: 05/14/2026
 ms.author: thvankra
 appliesto:
   - ✅ NoSQL
 ---
 
 # Throughput control groups in Azure Cosmos DB Java SDK v4
+
+> [!IMPORTANT]
+> The throughput control APIs in the Java SDK are annotated with `@Beta` and are subject to change. Review the [SDK changelog](https://github.com/Azure/azure-sdk-for-java/blob/main/sdk/cosmos/azure-cosmos/CHANGELOG.md) for updates before upgrading.
 
 Throughput control groups allow you to limit the request unit (RU) consumption of your Azure Cosmos DB operations. This is useful when you have multiple applications or workloads sharing the same container and you want to ensure that one workload doesn't consume all available throughput. Throughput control is available in the Azure Cosmos DB Java SDK v4 starting from version 4.13.0.
 
@@ -25,7 +28,8 @@ The Java SDK supports three modes of throughput control:
 ## Prerequisites
 
 - Azure Cosmos DB Java SDK v4 >= 4.13.0 (for local and global throughput control)
-- Azure Cosmos DB Java SDK v4 >= 4.75.0 (for server-side throughput control with throughput buckets)
+- Azure Cosmos DB Java SDK v4 >= 4.54.0 (for throughput control with Change Feed Processor)
+- Azure Cosmos DB Java SDK v4 >= 4.74.0 (for server-side throughput control with throughput buckets)
 
 ## Create a throughput control group
 
@@ -37,11 +41,12 @@ Use the `ThroughputControlGroupConfigBuilder` to create a throughput control gro
 | `targetThroughput` | An absolute RU/s limit for the group (must be > 0). |
 | `targetThroughputThreshold` | A percentage (0, 1] of total provisioned throughput to allocate to this group. |
 | `defaultControlGroup` | Whether this is the default group for all requests that aren't assigned to a specific group. |
-| `priorityLevel` | The priority level (`PriorityLevel.HIGH` or `PriorityLevel.LOW`) for priority-based execution. |
+| `priorityLevel` | The priority level (`PriorityLevel.HIGH` or `PriorityLevel.LOW`) for [priority-based execution](priority-based-execution.md). |
+| `throughputBucket` | The server-side throughput bucket ID (>= 0) to assign to this group. Used with server-side throughput control. |
 | `continueOnInitError` | If `true`, operations fall back to using the container's full throughput if the control group fails to initialize. |
 
 > [!NOTE]
-> You must set at least one of `targetThroughput`, `targetThroughputThreshold`, `priorityLevel`, or `throughputBucket` when building a throughput control group.
+> You must set at least one of `targetThroughput`, `targetThroughputThreshold`, `priorityLevel`, or `throughputBucket` when building a throughput control group. For local and global throughput control, set `targetThroughput` or `targetThroughputThreshold`. For server-side throughput control, set `priorityLevel` or `throughputBucket` (or both).
 
 ## Local throughput control
 
@@ -90,7 +95,8 @@ To assign a specific operation to a non-default group, use `CosmosItemRequestOpt
 CosmosItemRequestOptions requestOptions = new CosmosItemRequestOptions();
 requestOptions.setThroughputControlGroupName("writes");
 
-container.createItem(newItem, new PartitionKey(newItem.getPartitionKey()), requestOptions);
+container.createItem(newItem, new PartitionKey(newItem.getPartitionKey()), requestOptions)
+    .block();
 ```
 
 ## Global throughput control
@@ -103,10 +109,9 @@ The global throughput control feature requires a metadata container to track RU 
 
 ```java
 // Create a dedicated database and container for throughput control metadata
-CosmosAsyncDatabase throughputControlDatabase = client
-    .createDatabaseIfNotExists("ThroughputControlDatabase")
-    .block()
-    .getDatabase();
+client.createDatabaseIfNotExists("ThroughputControlDatabase").block();
+CosmosAsyncDatabase throughputControlDatabase =
+    client.getDatabase("ThroughputControlDatabase");
 
 throughputControlDatabase
     .createContainerIfNotExists("ThroughputControlContainer", "/groupId")
@@ -149,7 +154,7 @@ container.enableGlobalThroughputControlGroup(groupConfig, globalControlConfig);
 
 ## Server-side throughput control
 
-Server-side throughput control uses [throughput buckets](throughput-buckets.md) to enforce RU limits at the server level. This mode requires Azure Cosmos DB Java SDK v4 version 4.75.0 or later.
+Server-side throughput control uses [throughput buckets](throughput-buckets.md) to enforce RU limits at the server level. This mode requires Azure Cosmos DB Java SDK v4 version 4.74.0 or later.
 
 ```java
 ThroughputControlGroupConfig groupConfig =
@@ -168,7 +173,7 @@ For more information on throughput buckets, see [Throughput buckets in Azure Cos
 
 ## Error handling
 
-When using throughput control, if a request exceeds the allocated RU budget for its control group, the SDK throttles the request locally before sending it to the server. This results in increased latency for throttled requests but prevents `429 (Too Many Requests)` errors at the server level.
+When a request would exceed the allocated RU budget for its control group, the SDK rejects it locally and returns a `CosmosException` with status `429 (Too Many Requests)`, without sending the request to the service. Applications must continue to handle 429 responses as usual (the SDK's built-in retry policy applies).
 
 To handle initialization errors gracefully, set `continueOnInitError` to `true`:
 
@@ -181,10 +186,44 @@ ThroughputControlGroupConfig groupConfig =
         .build();
 ```
 
+## Throughput control with Change Feed Processor
+
+You can apply throughput control to the [Change Feed Processor](change-feed-processor.md) to limit RU consumption during change feed processing. This is particularly useful during backfill scenarios where the Change Feed Processor reads large volumes of data. This integration requires Azure Cosmos DB Java SDK v4 version 4.54.0 or later.
+
+To enable throughput control on the Change Feed Processor, configure a throughput control group on the feed container before building the processor:
+
+```java
+// Configure throughput control on the feed container
+ThroughputControlGroupConfig groupConfig =
+    new ThroughputControlGroupConfigBuilder()
+        .groupName("cfpControlGroup")
+        .targetThroughputThreshold(0.3) // limit to 30% of provisioned throughput
+        .defaultControlGroup(true)
+        .build();
+
+feedContainer.enableLocalThroughputControlGroup(groupConfig);
+
+// Build the Change Feed Processor — it inherits the throughput control settings
+ChangeFeedProcessor changeFeedProcessor = new ChangeFeedProcessorBuilder()
+    .hostName("host-1")
+    .feedContainer(feedContainer)
+    .leaseContainer(leaseContainer)
+    .handleChanges(docs -> {
+        for (JsonNode doc : docs) {
+            // process each change
+        }
+    })
+    .buildChangeFeedProcessor();
+```
+
+You can also use global throughput control with the Change Feed Processor to coordinate RU limits across multiple processor instances.
+
 ## Related content
 
 - [Throughput control in the Azure Cosmos DB Spark connector](throughput-control-spark.md)
 - [Throughput buckets in Azure Cosmos DB](throughput-buckets.md)
+- [Change Feed Processor in Azure Cosmos DB](change-feed-processor.md)
+- [Priority-based execution in Azure Cosmos DB](priority-based-execution.md)
 - [Request units in Azure Cosmos DB](request-units.md)
 - [Best practices for Java SDK v4](best-practice-java.md)
 - [Performance tips for Java SDK v4](performance-tips-java-sdk-v4.md)

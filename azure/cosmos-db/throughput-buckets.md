@@ -174,8 +174,9 @@ To assign all requests from a client to a specific bucket, create a `ThroughputC
 import com.azure.cosmos.CosmosAsyncClient;
 import com.azure.cosmos.CosmosAsyncContainer;
 import com.azure.cosmos.CosmosClientBuilder;
-import com.azure.cosmos.models.ThroughputControlGroupConfig;
-import com.azure.cosmos.models.ThroughputControlGroupConfigBuilder;
+import com.azure.cosmos.ThroughputControlGroupConfig;
+import com.azure.cosmos.ThroughputControlGroupConfigBuilder;
+import com.azure.identity.DefaultAzureCredentialBuilder;
 
 CosmosAsyncClient client = new CosmosClientBuilder()
     .endpoint("<endpointUri>")
@@ -200,6 +201,9 @@ container.enableServerThroughputControlGroup(groupConfig);
 To assign individual requests to a different bucket, create a separate control group for that bucket and reference it in the request options.
 
 ```java
+import com.azure.cosmos.models.CosmosItemRequestOptions;
+import com.azure.cosmos.models.PartitionKey;
+
 // Create a second control group for bucket 2
 ThroughputControlGroupConfig bucket2Group =
     new ThroughputControlGroupConfigBuilder()
