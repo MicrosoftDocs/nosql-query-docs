@@ -13,11 +13,11 @@ ai-usage: ai-assisted
 
 # Premium SSD v2 (High performance) storage in Azure DocumentDB
 
-Azure DocumentDB uses **Premium SSD v2** disks to deliver significantly higher performance for I/O-intensive workloads by de-coupling storage capacity from IOPS and bandwidth settings.
+Azure DocumentDB uses **Premium SSD v2** disks to deliver higher performance for I/O-intensive workloads by de-coupling storage capacity from IOPS and bandwidth settings.
 
 With Premium SSD v2 storage on Azure DocumentDB, the maximum configurable IOPS and bandwidth settings are available by default regardless of the storage capacity configured for the cluster. The IOPS and bandwidth capacity of the Compute tier determines the achievable IOPS and bandwidth in the storage layer without the need to scale up storage capacity. 
 
-Only the required storage capacity needs to be selected, while the highest achievable IOPS and bandwidth are auto configured by Azure DocumentDB at no added cost. No additional user intervention is needed to ensure the cluster is set up for optimal performance. The result is a **12x performance boost at no added cost**.
+Only the required storage capacity needs to be selected, while the highest achievable IOPS and bandwidth are auto configured by Azure DocumentDB at no added cost. No extra user intervention is needed to ensure the cluster is set up for optimal performance. The result is a **12x performance boost at no added cost**.
 
 Previously, a jump from 5,000 IOPS to 20,000 IOPS required increasing the size of the disk from 1TB to 20TB, even in the absence of higher storage needs. With Premium SSD v2, 20,000 IOPS can be achieved on the same 1TB disk so long as the cluster's compute tier has the capacity to push and maintain 20,000 IOPS. Moreover, Premium SSD v2 disks can support up to 80,000 IOPS - a 4x increase over Premium SSD.
 
@@ -47,9 +47,9 @@ Considering the same application above, its growth can now be sustained on the s
 - The same 2 TB disk for 10,000 IOPS (with a default capacity of 80,000 IOPS on SSD v2) in Month 2
 - Still the same 2 TB disk for 19,000 IOPS (with a default capacity of 80,000 IOPS on SSD v2) in Month 3
 
-That's a 16x cost reduction. What previously needed 32 TB disks, is now achievable on a much smaller, 2 TB disk.
+What previously needed 32 TB disks, is now achievable on a smaller, 2 TB disk - a 16x cost reduction.
 
-That's also a nearly 12x performance boost. The same 2 TB disk can achieve up to 80,000 IOPS while previously being capped at 7,000 IOPS.
+The same 2 TB disk can achieve up to 80,000 IOPS while previously being capped at 7,500 IOPS - a nearly 11x performance boost.
 
 ## Bandwidth benefits of using Premium SSD v2 disks on Azure DocumentDB (1200 MB/s)
 In addition to storage capacity being decoupled from IOPS on SSD v2 disks, bandwidth (MB/s) limits are also independent of the size of the disk.
@@ -59,18 +59,18 @@ Previously, higher bandwidth required scaling up the storage capacity of the dis
 Consider the same workload that requires 2 TB of storage capacity with an addition need for 900 MB/s of bandwidth:
 - Prior to SSD v2, a 2 TB disk had a capacity of 150 MB/s
 - 900 MB/s of bandwidth required scaling up the 2 TB disk to 32 TB
-- Scaling the disk from 2 TB to 32 TB would have resulted in a 16x increase in storage costs
+- Scaling the disk from 2 TB to 32 TB resulted in a 16x increase in storage costs
 
 With Premium SSD v2 (high performance) disks on Azure DocumentDB:
 - The maximum bandwidth of 1200 MB/s is available **at no added cost** regardless of the provisioned storage capacity
 - Thus, the same 2 TB disk has 1,200 MB/s of available bandwidth
-- That's an 8x performance increase with the same storage capacity
+- 8x performance increase with the same storage capacity
 
 Consider another workload that aims to achieve 1 million writes per second on a single sharded Azure DocumentDB cluster. With Premium SSD v2 (high performance) disks:
 - 1200 MB/s is available regardless of the provisioned storage capacity of the disk
 - For 1 kB documents, 1 million writes per second will require 1000 MB/s
 - With Premium SSD v2 (high performance) disks, 1 million writes can be easily achieved and with room to spare
-- Storage capacity will not need to be increased to consume 1000 MB/s of the available 1,200 MB/s
+- Storage capacity does not need to be increased to consume 1,000 MB/s of the available 1,200 MB/s
 
 ## Resiliency benefits of using Premium SSD v2 disks on Azure DocumentDB
 With a default capacity of 80,000 IOPS and 1,200 MB/s of bandwidth, Premium SSD v2 (high performance) disks provide much more head room for spikes in an application's traffic and higher traffic volumes at steady state.
