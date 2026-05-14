@@ -350,7 +350,7 @@ In Azure Cosmos DB, a JOIN works within a single item, typically between the roo
 - Use embedding for contained data that is read together.
 - Use references when related entities are large, unbounded, or updated independently.
 
-For JOIN syntax details, see [JOIN in Azure Cosmos DB query language](../../cosmos-db/query/join.md).
+For JOIN syntax details, see [JOIN in Azure Cosmos DB query language](/cosmos-db/query/join).
 
 ### Apply common restructuring patterns
 
