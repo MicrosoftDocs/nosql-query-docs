@@ -346,7 +346,7 @@ If you're migrating from PostgreSQL or another relational database, plan to resh
 
 In Azure Cosmos DB, a JOIN works within a single item, typically between the root item and a nested array. It doesn't join items across containers or across top-level items.
 
-- Relational JOINs across tables must be replaced with denormalized item shapes.
+- Relational JOINs across tables typically require you to remodel data based on access patterns, using approaches such as embedding, references, or read-optimized projections.
 - Use embedding for contained data that is read together.
 - Use references when related entities are large, unbounded, or updated independently.
 
@@ -389,7 +389,7 @@ FROM o
 WHERE o.customerId = "42"
 ```
 
-To keep these queries efficient, include the partition key in your filter whenever possible. For separate order items, `customerId` is often a good partition key when your common access pattern is "all orders for one customer."
+To keep these queries efficient, include the partition key in your filter whenever possible. For separate order items, `customerId` is often a good partition key when your common access pattern is "all orders for one customer," but choose it only when each customer's orders fit within the storage and throughput limits of a single logical partition. If some customers can grow without bound or create disproportionately high traffic, use a hierarchical or synthetic partitioning strategy instead of placing all of that customer's orders in one logical partition.
 
 ## Hybrid data models
 
