@@ -378,7 +378,7 @@ In Azure Cosmos DB, if you embed orders inside a customer item, query that singl
 SELECT c.id, c.name, o.id AS order_id, o.total
 FROM c
 JOIN o IN c.orders
-WHERE c.id = "42"
+WHERE c.id = "42" AND c.tenantId = "adventureworks"
 ```
 
 If orders are large or updated independently, store them as separate items and query by `customerId` instead of performing a cross-item JOIN:
