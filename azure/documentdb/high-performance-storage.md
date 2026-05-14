@@ -4,7 +4,7 @@ description: Learn how to use Premium SSD v2 (high performance) storage in Azure
 author: suvishodcitus
 ms.author: suvishod
 ms.topic: feature-guide
-ms.date: 04/13/2026
+ms.date: 05/14/2026
 ms.custom:
   - references_regions
 zone_pivot_groups: azure-interface-portal-rest-bicep-terraform
@@ -87,7 +87,9 @@ The **maximum performance** for your Azure DocumentDB cluster is now only depend
 
 ## IOPS and throughput caps
 
-With Premium SSD v2 disks, the cluster will be auto configured with the upper bound values tabulated below, **at no added cost**.
+The achievable IOPS and bandwidth are only dependent on the compute cluster tier and **not dependent on provisioned storage capacity** when using Premium SSD v2 disks. 
+
+The upper bound IOPS and bandwidth achievable by each compute tier are tabulated below.
 
 | Compute Tier | Max IOPS | Max bandwidth (MBps) |
 |--------------|-------------- |--------------------|
@@ -98,6 +100,37 @@ With Premium SSD v2 disks, the cluster will be auto configured with the upper bo
 | M80 (32 core) | 51,200 | 865 |
 | M200 (64 core) | 80,000 | 1,200 |
 
+Tabulated below is a comparison of the achievable IOPS per storage tier on Azure DocumentDB.
+
+| Storage Capacity | Max IOPS before Premium SSD v2 | Max IOPS with Premium SSD v2 | 
+|--------------|-------------- |--------------------|
+| 32 GB  | 120 | 80,000 |
+| 64 GB | 240 | 80,000 | 
+| 128 GB | 500 | 80,000 | 
+| 256 GB | 1,100 | 80,000 |
+| 512 GB | 2,300 | 80,000 |
+| 1 TB | 5,000 | 80,000 |
+| 2 TB  | 7,500 | 80,000 |
+| 4 TB | 7,500 | 80,000 |
+| 8 TB | 16,000 | 80,000 |
+| 16 TB | 18,000 | 80,000 |
+| 32 TB | 20,300 | 80,000 |
+
+Similarly, tabulated below is a comparison of the achievable bandwidth (MB/s) per storage tier on Azure DocumentDB.
+
+| Storage Capacity | Max MB/s before Premium SSD v2 | Max MB/s with Premium SSD v2 | 
+|--------------|-------------- |--------------------|
+| 32 GB  | 25 MB/s | 1,200 MB/s |
+| 64 GB | 50 MB/s | 1,200 MB/s | 
+| 128 GB | 100 MB/s | 1,200 MB/s | 
+| 256 GB | 125 MB/s | 1,200 MB/s |
+| 512 GB | 150 MB/s | 1,200 MB/s |
+| 1 TB | 200 MB/s | 1,200 MB/s |
+| 2 TB  | 250 MB/s | 1,200 MB/s |
+| 4 TB | 250 MB/s | 1,200 MB/s |
+| 8 TB | 500 MB/s | 1,200 MB/s |
+| 16 TB | 750 MB/s | 1,200 MB/s |
+| 32 TB | 900 MB/s | 1,200 MB/s |
 
 ## Prerequisites
 
