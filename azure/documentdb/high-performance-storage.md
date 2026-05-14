@@ -72,6 +72,15 @@ Consider another workload that aims to achieve 1 million writes per second on a 
 - With Premium SSD v2 (high performance) disks, 1 million writes can be easily achieved and with room to spare
 - Storage capacity will not need to be increased to consume 1000 MB/s of the available 1,200 MB/s
 
+## Resiliency benefits of using Premium SSD v2 disks on Azure DocumentDB
+With a default capacity of 80,000 IOPS and 1,200 MB/s of bandwidth, Premium SSD v2 (high performance) disks provide much more head room for spikes in an application's traffic and higher traffic volumes at steady state.
+
+Moreover, during period spikes, because of the additional head room available, the following resiliency characteristics are improved over the older generation of disks:
+- Faster replication between the primary and standby nodes within a replica set
+- Faster write latencies because of faster replication between the primary and secondary nodes
+- Faster failovers during leader election within a replica set due to faster replication times between the primary and secondary
+- Fewer failovers overall due to lower resource contention on the primary node of a replica set
+
 ## Guidance
 
 The **maximum performance** for your Azure DocumentDB cluster is now only dependent on the **compute tier** and not the storage size. Start by choosing just the desired storage size needed for the cluster, then select a compute tier that provides the required (IOPS) and throughput (MBps) for your workload. Tabulated below are the highest achievable and sustainable IOPS and bandwidth limits per compute tier.
