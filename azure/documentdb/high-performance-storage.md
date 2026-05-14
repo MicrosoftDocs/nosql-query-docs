@@ -83,7 +83,7 @@ Moreover, during period spikes, because of the additional head room available, t
 
 ## Guidance
 
-The **maximum performance** for your Azure DocumentDB cluster is now only dependent on the **compute tier** and not the storage size. Start by choosing just the desired storage size needed for the cluster, then select a compute tier that provides the required (IOPS) and throughput (MBps) for your workload. Tabulated below are the highest achievable and sustainable IOPS and bandwidth limits per compute tier.
+The **maximum performance** for your Azure DocumentDB cluster is now only dependent on the **compute tier** and not the storage size. Start by choosing just the desired storage size needed for the cluster, then select a compute tier that provides the required (IOPS) and throughput (MB/s) for your workload. Tabulated below are the highest achievable and sustainable IOPS and bandwidth limits per compute tier.
 
 ## IOPS and throughput caps
 
@@ -91,7 +91,7 @@ The achievable IOPS and bandwidth are only dependent on the compute cluster tier
 
 The upper bound IOPS and bandwidth achievable by each compute tier are tabulated below.
 
-| Compute Tier | Max IOPS | Max bandwidth (MBps) |
+| Compute Tier | Max IOPS | Max bandwidth (MB/s) |
 |--------------|-------------- |--------------------|
 | M30 (2 core) | 3,750 | 85 |
 | M40 (4 core) | 6,400 | 145 |
@@ -100,7 +100,7 @@ The upper bound IOPS and bandwidth achievable by each compute tier are tabulated
 | M80 (32 core) | 51,200 | 865 |
 | M200 (64 core) | 80,000 | 1,200 |
 
-Tabulated below is a comparison of the achievable IOPS per storage tier on Azure DocumentDB.
+Tabulated below is a comparison of the achievable IOPS per storage tier on Azure DocumentDB. The values shown assume a compute cluster tier that is capable of pushing 80,000 IOPS is provisioned (e.g., M200)
 
 | Storage Capacity | Max IOPS before Premium SSD v2 | Max IOPS with Premium SSD v2 | 
 |--------------|-------------- |--------------------|
@@ -116,7 +116,7 @@ Tabulated below is a comparison of the achievable IOPS per storage tier on Azure
 | 16 TB | 18,000 | 80,000 |
 | 32 TB | 20,300 | 80,000 |
 
-Similarly, tabulated below is a comparison of the achievable bandwidth (MB/s) per storage tier on Azure DocumentDB.
+Similarly, tabulated below is a comparison of the achievable bandwidth (MB/s) per storage tier on Azure DocumentDB. The values shown assume a compute cluster tier that is capable of pushing 1,200 MB/s is provisioned (e.g., M200)
 
 | Storage Capacity | Max MB/s before Premium SSD v2 | Max MB/s with Premium SSD v2 | 
 |--------------|-------------- |--------------------|
