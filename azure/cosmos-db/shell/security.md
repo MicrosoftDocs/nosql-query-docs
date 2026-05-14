@@ -438,7 +438,10 @@ az cosmosdb create --resource-group myResourceGroup \
 
 ### 2. Compliance standards
 
-Azure Cosmos DB maintains a broad set of compliance certifications. For the latest certifications and audit reports, see the [Microsoft Azure Compliance offerings](https://servicetrust.microsoft.com/DocumentPage/7adf2d9e-d7b5-4e71-bad8-713e6a183cf3) and the [Compliance in Azure Cosmos DB](../compliance.md) article.
+Azure Cosmos DB maintains a broad set of compliance certifications.
+
+- For the latest certifications and audit reports, see [Microsoft Azure Compliance offerings](https://servicetrust.microsoft.com/DocumentPage/7adf2d9e-d7b5-4e71-bad8-713e6a183cf3).
+- For compliance information specific to this service, see [compliance in Azure Cosmos DB](../compliance.md).
 
 ### 3. Data retention
 
