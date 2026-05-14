@@ -28,7 +28,7 @@ For cross-platform management of Azure Cosmos DB, you can use the `Az` and `Az.C
 Follow the instructions in [How to install and configure Azure PowerShell][powershell-install-configure] to install and sign in to your Azure account in PowerShell.
 
 > [!IMPORTANT]
-> Azure Cosmos DB resources can't be renamed as this violates how Azure Resource Manager works with resource-specific unique resource identifiers (URIs).
+> Azure Cosmos DB resources can't be renamed as this violates how Azure Resource Manager works with resource-specific Uniform Resource Identifiers (URIs).
 
 ## Azure Cosmos DB accounts
 
@@ -113,7 +113,7 @@ This command allows you to update your Azure Cosmos DB database account properti
 
 > [!NOTE]
 > You can't simultaneously add or remove regions (`locations`) and change other properties for an Azure Cosmos DB account. Modifying regions must be performed as a separate operation from any other change to the account.
-> [!NOTE]
+> 
 > This command allows you to add and remove regions but doesn't allow you to modify failover priorities or trigger a manual failover. See [Modify failover priority](#modify-failover-priority) and [Trigger manual failover](#trigger-manual-failover).
 > [!TIP]
 > When a new region is added, all data must be fully replicated and committed into the new region before the region is marked as available. The amount of time this operation takes will depend upon how much data is stored within the account. If an [asynchronous throughput scaling operation](scaling-provisioned-throughput-best-practices.md#background-on-scaling-rus) is in progress, the throughput scale-up operation will be paused and will resume automatically when the add/remove region operation is complete. 
@@ -246,7 +246,7 @@ Update-AzCosmosDBAccount `
 
 ### <a id="modify-failover-priority"></a> Modify Failover Priority
 
-For accounts configured with Service-Managed Failover, you can change the order in which Azure Cosmos DB promotes secondary replicas to primary should the primary become unavailable.
+For accounts configured with service-managed failover, you can change the order in which Azure Cosmos DB promotes secondary replicas to primary should the primary become unavailable.
 
 For the example here, assume the current failover priority is `West US = 0`, `East US = 1`, `South Central US = 2`. The command changes this to `West US = 0`, `South Central US = 1`, `East US = 2`.
 
