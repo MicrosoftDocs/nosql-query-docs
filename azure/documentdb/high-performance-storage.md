@@ -43,7 +43,7 @@ Considering the same application above, its growth can now be sustained on the s
 
 That's a 16x cost reduction - what previously needed a scale up to 32 TB disks, can now be achieved on a much smaller, 2 TB disk.
 
-That's also a nearly 12x performance boost, where the same 2 TB disk can now achieve upto 80,000 IOPS instead of being capped at 7,000 IOPS.
+That's also a nearly 12x performance boost, where the same 2 TB disk can now achieve up to 80,000 IOPS instead of being capped at 7,000 IOPS.
 
 ## Guidance
 
