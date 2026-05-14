@@ -329,7 +329,7 @@ az cosmosdb update --resource-group myResourceGroup \
 **Benefits:**
 - No internet exposure
 - Restricted network access
-- Compliant with enterprise policies
+- Supports enterprise network isolation policies
 
 ## MCP server security
 
@@ -438,17 +438,7 @@ az cosmosdb create --resource-group myResourceGroup \
 
 ### 2. Compliance standards
 
-**Supported Compliance:**
-- SOC 2 Type II
-- ISO 27001
-- GDPR
-- HIPAA
-- PCI DSS
-
-**Verify Compliance:**
-1. Azure portal > Compliance
-2. Download compliance reports
-3. Share with auditors
+Azure Cosmos DB maintains a broad set of compliance certifications. For the latest certifications and audit reports, see the [Microsoft Azure Compliance offerings](https://servicetrust.microsoft.com/DocumentPage/7adf2d9e-d7b5-4e71-bad8-713e6a183cf3) and the [Compliance in Azure Cosmos DB](../compliance.md) article.
 
 ### 3. Data retention
 
