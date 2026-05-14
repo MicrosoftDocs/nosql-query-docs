@@ -32,7 +32,7 @@ CS >
 
 ## Connect to your account
 
-When launched without connection arguments, Cosmos DB Shell starts in a disconnected state.
+When launched without connection arguments, Azure Cosmos DB Shell starts in a disconnected state.
 Use the `connect` command to authenticate and connect to an account.
 
 **Use Entra ID** (recommended):
