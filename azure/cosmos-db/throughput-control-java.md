@@ -31,6 +31,27 @@ The Java SDK supports three modes of throughput control:
 - Azure Cosmos DB Java SDK v4 >= 4.54.0 (for throughput control with Change Feed Processor)
 - Azure Cosmos DB Java SDK v4 >= 4.74.0 (for server-side throughput control with throughput buckets)
 
+## Required imports
+
+The code samples in this article use the following imports:
+
+```java
+import com.azure.cosmos.CosmosAsyncClient;
+import com.azure.cosmos.CosmosAsyncContainer;
+import com.azure.cosmos.CosmosAsyncDatabase;
+import com.azure.cosmos.CosmosClientBuilder;
+import com.azure.cosmos.GlobalThroughputControlConfig;
+import com.azure.cosmos.ThroughputControlGroupConfig;
+import com.azure.cosmos.ThroughputControlGroupConfigBuilder;
+import com.azure.cosmos.models.CosmosItemRequestOptions;
+import com.azure.cosmos.models.PartitionKey;
+import com.azure.cosmos.models.ChangeFeedProcessor;
+import com.azure.cosmos.models.ChangeFeedProcessorBuilder;
+import com.azure.identity.DefaultAzureCredentialBuilder;
+import com.fasterxml.jackson.databind.JsonNode;
+import java.time.Duration;
+```
+
 ## Create a throughput control group
 
 Use the `ThroughputControlGroupConfigBuilder` to create a throughput control group configuration. You can set:
