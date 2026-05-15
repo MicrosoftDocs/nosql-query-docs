@@ -112,7 +112,7 @@ Seamlessly integrate with your Azure accounts.
 - Automatic authentication with Azure account
 - Support for multiple subscriptions
 - Managed identity integration
-- Azure Entra ID support
+- Microsoft Entra ID support
 
 **Configuration:**
 1. Sign in with your Azure account (prompted on first use)
